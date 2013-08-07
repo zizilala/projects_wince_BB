@@ -1,0 +1,22 @@
+OBJECTS=\
+    obj\ARMV4I\retail\debug.obj\
+    obj\ARMV4I\retail\audiomgr.obj\
+    obj\ARMV4I\retail\strmmgr.obj\
+    obj\ARMV4I\retail\mixermgr.obj\
+    obj\ARMV4I\retail\audiolin.obj\
+    obj\ARMV4I\retail\audioctrl.obj\
+    obj\ARMV4I\retail\istrmmgr.obj\
+    obj\ARMV4I\retail\ostrmmgr.obj\
+    obj\ARMV4I\retail\wav_init.obj\
+    obj\ARMV4I\retail\strmctxt.obj\
+    obj\ARMV4I\retail\output.obj\
+    obj\ARMV4I\retail\input.obj\
+    obj\ARMV4I\retail\StreamClass.obj\
+    obj\ARMV4I\retail\wavemain.obj\
+    obj\ARMV4I\retail\dmtaudioport.obj\
+    obj\ARMV4I\retail\omap35xx_hwbridge.obj\
+    obj\ARMV4I\retail\wavertgctrl.obj\
+    obj\ARMV4I\retail\dtpnotify.obj\
+    obj\ARMV4I\retail\dasfaudioport.obj\
+    obj\ARMV4I\retail\guids.obj
+

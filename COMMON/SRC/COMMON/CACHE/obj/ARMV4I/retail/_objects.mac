@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\global.obj\
+    obj\ARMV4I\retail\ioctl.obj
+

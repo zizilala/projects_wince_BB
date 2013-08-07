@@ -1,0 +1,8 @@
+; All rights reserved ADENEO EMBEDDED 2010
+IF BSP_TPS659XX_PWRKEY
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\TPS659XX_PWRKEY]
+    "Prefix"="PKD"
+    "Dll"="TPS659XX_PWRKEY.dll"
+    "Index"=dword:1
+    "order"=dword:21				; Should be loaded after Triton driver
+ENDIF BSP_TPS659XX_PWRKEY

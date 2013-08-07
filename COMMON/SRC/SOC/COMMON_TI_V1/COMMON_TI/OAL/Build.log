@@ -1,0 +1,509 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\
+BUILD: [00:0000000008:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\
+BUILD: [00:0000000009:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\
+BUILD: [00:0000000010:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\
+BUILD: [00:0000000011:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\
+BUILD: [00:0000000012:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\
+BUILD: [00:0000000013:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\
+BUILD: [00:0000000014:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\
+BUILD: [00:0000000015:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\
+BUILD: [00:0000000016:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\
+BUILD: [00:0000000017:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\
+BUILD: [00:0000000018:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\
+BUILD: [00:0000000019:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\
+BUILD: [00:0000000020:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000021:INFO  ] Done.
+BUILD: [00:0000000022:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\debugserial.c because target: obj\ARMV4I\retail\debugserial.obj is missing.
+BUILD: [00:0000000023:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\ directory.
+BUILD: [00:0000000024:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000025:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000026:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000027:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000028:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\sources
+BUILD: [01:0000000029:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000030:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL
+BUILD: [01:0000000031:INFO  ] TARGETNAME: common_ti_debugserial
+BUILD: [01:0000000032:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000033:PROGC ] Compiling .\debugserial.c
+BUILD: [01:0000000034:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\debugserial.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\debugserial.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\.\debugserial.c
+BUILD: [01:0000000035:INFO  ] debugserial.c
+BUILD: [00:0000000036:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\oali2c.c because target: obj\ARMV4I\retail\oali2c.obj is missing.
+BUILD: [00:0000000037:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\ directory.
+BUILD: [00:0000000038:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000039:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000040:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000041:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000042:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\sources
+BUILD: [01:0000000043:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000044:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C
+BUILD: [01:0000000045:INFO  ] TARGETNAME: common_ti_oali2c
+BUILD: [01:0000000046:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000047:PROGC ] Compiling .\oali2c.c
+BUILD: [01:0000000048:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oali2c.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oali2c.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\.\oali2c.c
+BUILD: [01:0000000049:INFO  ] oali2c.c
+BUILD: [00:0000000050:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\vfphandler.c because target: obj\ARMV4I\retail\vfphandler.obj is missing.
+BUILD: [00:0000000051:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\vfp.s because target: obj\ARMV4I\retail\vfp.obj is missing.
+BUILD: [00:0000000052:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\ directory.
+BUILD: [00:0000000053:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000054:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000055:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000056:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000057:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\sources
+BUILD: [01:0000000058:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000059:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON
+BUILD: [01:0000000060:INFO  ] TARGETNAME: common_ti_vfpneon
+BUILD: [01:0000000061:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000062:PROGC ] Compiling .\vfphandler.c
+BUILD: [01:0000000063:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\vfphandler.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\vfphandler.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\.\vfphandler.c
+BUILD: [01:0000000064:INFO  ] vfphandler.c
+BUILD: [01:0000000065:PROGC ] Assembling .\vfp.s
+BUILD: [01:0000000066:INFO  ] 	armasm -coff  -list obj\ARMV4I\retail\vfp.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\.\vfp.s obj\ARMV4I\retail\vfp.obj
+BUILD: [01:0000000067:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000068:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000069:INFO  ] 
+BUILD: [00:0000000070:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\map.c because target: obj\ARMV4I\retail\map.obj is missing.
+BUILD: [00:0000000071:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\intr.c because target: obj\ARMV4I\retail\intr.obj is missing.
+BUILD: [00:0000000072:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\oem.c because target: obj\ARMV4I\retail\oem.obj is missing.
+BUILD: [00:0000000073:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\ directory.
+BUILD: [00:0000000074:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000075:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000076:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000077:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000078:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\sources
+BUILD: [01:0000000079:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000080:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR
+BUILD: [01:0000000081:INFO  ] TARGETNAME: common_ti_intr
+BUILD: [01:0000000082:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000083:PROGC ] Compiling .\map.c
+BUILD: [01:0000000084:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\map.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\map.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\.\map.c
+BUILD: [01:0000000085:INFO  ] map.c
+BUILD: [01:0000000086:PROGC ] Compiling .\intr.c
+BUILD: [01:0000000087:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\intr.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\intr.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\.\intr.c
+BUILD: [01:0000000088:INFO  ] intr.c
+BUILD: [01:0000000089:PROGC ] Compiling .\oem.c
+BUILD: [01:0000000090:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oem.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oem.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\.\oem.c
+BUILD: [01:0000000091:INFO  ] oem.c
+BUILD: [00:0000000092:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\init.c because target: obj\ARMV4I\retail\init.obj is missing.
+BUILD: [00:0000000093:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\attrib.c because target: obj\ARMV4I\retail\attrib.obj is missing.
+BUILD: [00:0000000094:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\flush.c because target: obj\ARMV4I\retail\flush.obj is missing.
+BUILD: [00:0000000095:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\cacheid.s because target: obj\ARMV4I\retail\cacheid.obj is missing.
+BUILD: [00:0000000096:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\cachemode.s because target: obj\ARMV4I\retail\cachemode.obj is missing.
+BUILD: [00:0000000097:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\icache.s because target: obj\ARMV4I\retail\icache.obj is missing.
+BUILD: [00:0000000098:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\dcache.s because target: obj\ARMV4I\retail\dcache.obj is missing.
+BUILD: [00:0000000099:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\tlb.s because target: obj\ARMV4I\retail\tlb.obj is missing.
+BUILD: [00:0000000100:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\ directory.
+BUILD: [00:0000000101:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000102:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000103:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000104:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000105:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\sources
+BUILD: [01:0000000106:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000107:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE
+BUILD: [01:0000000108:INFO  ] TARGETNAME: common_ti_cortexA8_cache
+BUILD: [01:0000000109:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000110:PROGC ] Compiling .\init.c
+BUILD: [01:0000000111:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\init.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\init.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\.\init.c
+BUILD: [01:0000000112:INFO  ] init.c
+BUILD: [01:0000000113:PROGC ] Compiling .\attrib.c
+BUILD: [01:0000000114:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\attrib.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\attrib.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\.\attrib.c
+BUILD: [01:0000000115:INFO  ] attrib.c
+BUILD: [01:0000000116:PROGC ] Compiling .\flush.c
+BUILD: [01:0000000117:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\flush.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\flush.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\.\flush.c
+BUILD: [01:0000000118:INFO  ] flush.c
+BUILD: [01:0000000119:PROGC ] Assembling .\cacheid.s
+BUILD: [01:0000000120:INFO  ] 	armasm -coff  -list obj\ARMV4I\retail\cacheid.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\.\cacheid.s obj\ARMV4I\retail\cacheid.obj
+BUILD: [01:0000000121:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000122:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000123:INFO  ] 
+BUILD: [01:0000000124:PROGC ] Assembling .\cachemode.s
+BUILD: [01:0000000125:INFO  ] 	armasm -coff  -list obj\ARMV4I\retail\cachemode.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\.\cachemode.s obj\ARMV4I\retail\cachemode.obj
+BUILD: [01:0000000126:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000127:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000128:INFO  ] 
+BUILD: [01:0000000129:PROGC ] Assembling .\icache.s
+BUILD: [01:0000000130:INFO  ] 	armasm -coff  -list obj\ARMV4I\retail\icache.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\.\icache.s obj\ARMV4I\retail\icache.obj
+BUILD: [01:0000000131:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000132:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000133:INFO  ] 
+BUILD: [01:0000000134:PROGC ] Assembling .\dcache.s
+BUILD: [01:0000000135:INFO  ] 	armasm -coff  -list obj\ARMV4I\retail\dcache.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\.\dcache.s obj\ARMV4I\retail\dcache.obj
+BUILD: [01:0000000136:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000137:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000138:INFO  ] 
+BUILD: [01:0000000139:WARNN ] C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\dcache.s(56) warning : A0241: Instruction clz not supported for -cpu "-arch 4t"
+BUILD: [01:0000000140:INFO  ]         clz     r5, r4                          ; r5 find bit position of way size increment
+BUILD: [01:0000000141:WARNN ] C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\dcache.s(140) warning : A0241: Instruction clz not supported for -cpu "-arch 4t"
+BUILD: [01:0000000142:INFO  ]         clz     r5, r4                          ; r5 find bit position of way size increment
+BUILD: [01:0000000143:INFO  ] Assembly terminated, errors: 0, warnings: 2 
+BUILD: [01:0000000144:PROGC ] Assembling .\tlb.s
+BUILD: [01:0000000145:INFO  ] 	armasm -coff  -list obj\ARMV4I\retail\tlb.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\.\tlb.s obj\ARMV4I\retail\tlb.obj
+BUILD: [01:0000000146:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000147:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000148:INFO  ] 
+BUILD: [00:0000000149:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\hwentropy.c because target: obj\ARMV4I\retail\hwentropy.obj is missing.
+BUILD: [00:0000000150:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\reboot.c because target: obj\ARMV4I\retail\reboot.obj is missing.
+BUILD: [00:0000000151:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\rndismac.c because target: obj\ARMV4I\retail\rndismac.obj is missing.
+BUILD: [00:0000000152:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\format.c because target: obj\ARMV4I\retail\format.obj is missing.
+BUILD: [00:0000000153:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\ioctlex.c because target: obj\ARMV4I\retail\ioctlex.obj is missing.
+BUILD: [00:0000000154:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\ directory.
+BUILD: [00:0000000155:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000156:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000157:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000158:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000159:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\sources
+BUILD: [01:0000000160:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000161:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL
+BUILD: [01:0000000162:INFO  ] TARGETNAME: common_ti_ioctl
+BUILD: [01:0000000163:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000164:PROGC ] Compiling .\hwentropy.c
+BUILD: [01:0000000165:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\hwentropy.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\hwentropy.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\.\hwentropy.c
+BUILD: [01:0000000166:INFO  ] hwentropy.c
+BUILD: [01:0000000167:PROGC ] Compiling .\reboot.c
+BUILD: [01:0000000168:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\reboot.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\reboot.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\.\reboot.c
+BUILD: [01:0000000169:INFO  ] reboot.c
+BUILD: [01:0000000170:PROGC ] Compiling .\rndismac.c
+BUILD: [01:0000000171:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\rndismac.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\rndismac.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\.\rndismac.c
+BUILD: [01:0000000172:INFO  ] rndismac.c
+BUILD: [01:0000000173:PROGC ] Compiling .\format.c
+BUILD: [01:0000000174:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\format.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\format.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\.\format.c
+BUILD: [01:0000000175:INFO  ] format.c
+BUILD: [01:0000000176:PROGC ] Compiling .\ioctlex.c
+BUILD: [01:0000000177:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\ioctlex.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\ioctlex.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\.\ioctlex.c
+BUILD: [01:0000000178:INFO  ] ioctlex.c
+BUILD: [00:0000000179:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\profiler.c because target: obj\ARMV4I\retail\profiler.obj is missing.
+BUILD: [00:0000000180:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\ directory.
+BUILD: [00:0000000181:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000182:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000183:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000184:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000185:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\sources
+BUILD: [01:0000000186:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000187:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER
+BUILD: [01:0000000188:INFO  ] TARGETNAME: common_ti_gpt_profiler
+BUILD: [01:0000000189:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000190:PROGC ] Compiling .\profiler.c
+BUILD: [01:0000000191:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\profiler.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\profiler.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\.\profiler.c
+BUILD: [01:0000000192:INFO  ] profiler.c
+BUILD: [00:0000000193:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\timer.c because target: obj\ARMV4I\retail\timer.obj is missing.
+BUILD: [00:0000000194:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\ directory.
+BUILD: [00:0000000195:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000196:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000197:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000198:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000199:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\sources
+BUILD: [01:0000000200:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000201:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER
+BUILD: [01:0000000202:INFO  ] TARGETNAME: common_ti_gpt_systimer
+BUILD: [01:0000000203:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000204:PROGC ] Compiling .\timer.c
+BUILD: [01:0000000205:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\timer.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\timer.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\.\timer.c
+BUILD: [01:0000000206:INFO  ] timer.c
+BUILD: [00:0000000207:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\alloc.c because target: obj\ARMV4I\retail\alloc.obj is missing.
+BUILD: [00:0000000208:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\ directory.
+BUILD: [00:0000000209:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000210:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000211:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000212:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000213:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\sources
+BUILD: [01:0000000214:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000215:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC
+BUILD: [01:0000000216:INFO  ] TARGETNAME: common_ti_oal_alloc
+BUILD: [01:0000000217:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000218:PROGC ] Compiling .\alloc.c
+BUILD: [01:0000000219:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\alloc.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\alloc.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\.\alloc.c
+BUILD: [01:0000000220:INFO  ] alloc.c
+BUILD: [00:0000000221:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\oalrtc.c because target: obj\ARMV4I\retail\oalrtc.obj is missing.
+BUILD: [00:0000000222:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\ directory.
+BUILD: [00:0000000223:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000224:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000225:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000226:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000227:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\sources
+BUILD: [01:0000000228:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000229:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC
+BUILD: [01:0000000230:INFO  ] TARGETNAME: common_ti_s35390_oalrtc
+BUILD: [01:0000000231:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000232:PROGC ] Compiling .\oalrtc.c
+BUILD: [01:0000000233:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oalrtc.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\AM3517\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_s35390_oalrtc.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oalrtc.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\.\oalrtc.c
+BUILD: [01:0000000234:INFO  ] oalrtc.c
+BUILD: [00:0000000235:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\power.c because target: obj\ARMV4I\retail\power.obj is missing.
+BUILD: [00:0000000236:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\ directory.
+BUILD: [00:0000000237:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000238:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000239:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000240:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000241:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\sources
+BUILD: [01:0000000242:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000243:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER
+BUILD: [01:0000000244:INFO  ] TARGETNAME: common_ti_oal_power
+BUILD: [01:0000000245:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000246:PROGC ] Compiling .\power.c
+BUILD: [01:0000000247:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\power.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_power.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\power.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\.\power.c
+BUILD: [01:0000000248:INFO  ] power.c
+BUILD: [00:0000000249:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\oalpadcfg.c because target: obj\ARMV4I\retail\oalpadcfg.obj is missing.
+BUILD: [00:0000000250:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\ directory.
+BUILD: [00:0000000251:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000252:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000253:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000254:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000255:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\sources
+BUILD: [01:0000000256:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000257:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG
+BUILD: [01:0000000258:INFO  ] TARGETNAME: common_ti_oalpadcfg
+BUILD: [01:0000000259:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000260:PROGC ] Compiling .\oalpadcfg.c
+BUILD: [01:0000000261:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oalpadcfg.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oalpadcfg.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\.\oalpadcfg.c
+BUILD: [01:0000000262:INFO  ] oalpadcfg.c
+BUILD: [00:0000000263:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\watchdog.c because target: obj\ARMV4I\retail\watchdog.obj is missing.
+BUILD: [00:0000000264:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\ directory.
+BUILD: [00:0000000265:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000266:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000267:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000268:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000269:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\sources
+BUILD: [01:0000000270:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000271:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG
+BUILD: [01:0000000272:INFO  ] TARGETNAME: common_ti_oal_watchdog
+BUILD: [01:0000000273:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000274:PROGC ] Compiling .\watchdog.c
+BUILD: [01:0000000275:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\watchdog.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\watchdog.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\.\watchdog.c
+BUILD: [01:0000000276:INFO  ] watchdog.c
+BUILD: [00:0000000277:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\obj\ARMV4I\retail\debugserial.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib is missing.
+BUILD: [00:0000000278:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib is missing.
+BUILD: [00:0000000279:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\ directory.
+BUILD: [00:0000000280:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000281:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000282:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000283:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000284:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL\sources
+BUILD: [01:0000000285:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000286:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_DEBUGSERIAL
+BUILD: [01:0000000287:INFO  ] TARGETNAME: common_ti_debugserial
+BUILD: [01:0000000288:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000289:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib
+BUILD: [01:0000000290:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm229.tmp
+BUILD: [00:0000000291:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\obj\ARMV4I\retail\oali2c.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib is missing.
+BUILD: [00:0000000292:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib is missing.
+BUILD: [00:0000000293:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\ directory.
+BUILD: [00:0000000294:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000295:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000296:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000297:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000298:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C\sources
+BUILD: [01:0000000299:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000300:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALI2C
+BUILD: [01:0000000301:INFO  ] TARGETNAME: common_ti_oali2c
+BUILD: [01:0000000302:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000303:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib
+BUILD: [01:0000000304:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm22A.tmp
+BUILD: [00:0000000305:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\obj\ARMV4I\retail\vfphandler.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib is missing.
+BUILD: [00:0000000306:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\obj\ARMV4I\retail\vfp.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib is missing.
+BUILD: [00:0000000307:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib is missing.
+BUILD: [00:0000000308:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\ directory.
+BUILD: [00:0000000309:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000310:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000311:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000312:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000313:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON\sources
+BUILD: [01:0000000314:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000315:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_NEON
+BUILD: [01:0000000316:INFO  ] TARGETNAME: common_ti_vfpneon
+BUILD: [01:0000000317:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000318:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib
+BUILD: [01:0000000319:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm22B.tmp
+BUILD: [00:0000000320:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\obj\ARMV4I\retail\map.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib is missing.
+BUILD: [00:0000000321:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\obj\ARMV4I\retail\intr.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib is missing.
+BUILD: [00:0000000322:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\obj\ARMV4I\retail\oem.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib is missing.
+BUILD: [00:0000000323:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib is missing.
+BUILD: [00:0000000324:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\ directory.
+BUILD: [00:0000000325:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000326:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000327:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000328:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000329:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR\sources
+BUILD: [01:0000000330:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000331:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_INTR
+BUILD: [01:0000000332:INFO  ] TARGETNAME: common_ti_intr
+BUILD: [01:0000000333:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000334:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib
+BUILD: [01:0000000335:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm22C.tmp
+BUILD: [00:0000000336:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_abort_arm920t.lib because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000337:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_cache.lib because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000338:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\obj\ARMV4I\retail\init.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000339:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\obj\ARMV4I\retail\attrib.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000340:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\obj\ARMV4I\retail\flush.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000341:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\obj\ARMV4I\retail\cacheid.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000342:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\obj\ARMV4I\retail\cachemode.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000343:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\obj\ARMV4I\retail\icache.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000344:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\obj\ARMV4I\retail\dcache.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000345:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\obj\ARMV4I\retail\tlb.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000346:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib is missing.
+BUILD: [00:0000000347:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\ directory.
+BUILD: [00:0000000348:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000349:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000350:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000351:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000352:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\sources
+BUILD: [01:0000000353:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000354:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE
+BUILD: [01:0000000355:INFO  ] TARGETNAME: common_ti_cortexA8_cache
+BUILD: [01:0000000356:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000357:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib
+BUILD: [01:0000000358:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm22D.tmp
+BUILD: [01:0000000359:INFO  ] 系統找不到指定的檔案。
+BUILD: [01:0000000360:INFO  ] 檔案不可以複製到檔案本身。
+BUILD: [01:0000000361:INFO  ] 複製了         0 個檔案。
+BUILD: [00:0000000362:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ioctl.lib because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib is missing.
+BUILD: [00:0000000363:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\obj\ARMV4I\retail\hwentropy.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib is missing.
+BUILD: [00:0000000364:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\obj\ARMV4I\retail\reboot.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib is missing.
+BUILD: [00:0000000365:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\obj\ARMV4I\retail\rndismac.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib is missing.
+BUILD: [00:0000000366:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\obj\ARMV4I\retail\format.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib is missing.
+BUILD: [00:0000000367:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\obj\ARMV4I\retail\ioctlex.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib is missing.
+BUILD: [00:0000000368:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib is missing.
+BUILD: [00:0000000369:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\ directory.
+BUILD: [00:0000000370:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000371:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000372:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000373:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000374:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL\sources
+BUILD: [01:0000000375:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000376:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_IOCTL
+BUILD: [01:0000000377:INFO  ] TARGETNAME: common_ti_ioctl
+BUILD: [01:0000000378:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000379:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib
+BUILD: [01:0000000380:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm22E.tmp
+BUILD: [01:0000000381:INFO  ] 檔案不可以複製到檔案本身。
+BUILD: [01:0000000382:INFO  ] 複製了         0 個檔案。
+BUILD: [00:0000000383:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\obj\ARMV4I\retail\profiler.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib is missing.
+BUILD: [00:0000000384:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib is missing.
+BUILD: [00:0000000385:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\ directory.
+BUILD: [00:0000000386:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000387:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000388:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000389:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000390:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER\sources
+BUILD: [01:0000000391:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000392:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\PROFILER
+BUILD: [01:0000000393:INFO  ] TARGETNAME: common_ti_gpt_profiler
+BUILD: [01:0000000394:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000395:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib
+BUILD: [01:0000000396:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm22F.tmp
+BUILD: [00:0000000397:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\obj\ARMV4I\retail\timer.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib is missing.
+BUILD: [00:0000000398:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib is missing.
+BUILD: [00:0000000399:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\ directory.
+BUILD: [00:0000000400:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000401:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000402:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000403:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000404:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER\sources
+BUILD: [01:0000000405:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000406:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_GTP_TIMER\TIMER
+BUILD: [01:0000000407:INFO  ] TARGETNAME: common_ti_gpt_systimer
+BUILD: [01:0000000408:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000409:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib
+BUILD: [01:0000000410:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm230.tmp
+BUILD: [00:0000000411:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\obj\ARMV4I\retail\alloc.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib is missing.
+BUILD: [00:0000000412:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib is missing.
+BUILD: [00:0000000413:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\ directory.
+BUILD: [00:0000000414:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000415:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000416:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000417:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000418:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC\sources
+BUILD: [01:0000000419:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000420:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_ALLOC
+BUILD: [01:0000000421:INFO  ] TARGETNAME: common_ti_oal_alloc
+BUILD: [01:0000000422:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000423:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib
+BUILD: [01:0000000424:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm231.tmp
+BUILD: [00:0000000425:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\obj\ARMV4I\retail\oalrtc.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_s35390_oalrtc.lib is missing.
+BUILD: [00:0000000426:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_s35390_oalrtc.lib is missing.
+BUILD: [00:0000000427:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\ directory.
+BUILD: [00:0000000428:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000429:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000430:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000431:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000432:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC\sources
+BUILD: [01:0000000433:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000434:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\S35390_OALRTC
+BUILD: [01:0000000435:INFO  ] TARGETNAME: common_ti_s35390_oalrtc
+BUILD: [01:0000000436:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000437:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_s35390_oalrtc.lib
+BUILD: [01:0000000438:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_s35390_oalrtc.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm232.tmp
+BUILD: [00:0000000439:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\obj\ARMV4I\retail\power.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_power.lib is missing.
+BUILD: [00:0000000440:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_power.lib is missing.
+BUILD: [00:0000000441:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\ directory.
+BUILD: [00:0000000442:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000443:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000444:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000445:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000446:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER\sources
+BUILD: [01:0000000447:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000448:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_POWER
+BUILD: [01:0000000449:INFO  ] TARGETNAME: common_ti_oal_power
+BUILD: [01:0000000450:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000451:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_power.lib
+BUILD: [01:0000000452:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_power.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm233.tmp
+BUILD: [00:0000000453:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\obj\ARMV4I\retail\oalpadcfg.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib is missing.
+BUILD: [00:0000000454:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib is missing.
+BUILD: [00:0000000455:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\ directory.
+BUILD: [00:0000000456:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000457:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000458:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000459:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000460:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG\sources
+BUILD: [01:0000000461:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000462:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_OALPADCFG
+BUILD: [01:0000000463:INFO  ] TARGETNAME: common_ti_oalpadcfg
+BUILD: [01:0000000464:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000465:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib
+BUILD: [01:0000000466:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm234.tmp
+BUILD: [00:0000000467:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\obj\ARMV4I\retail\watchdog.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib is missing.
+BUILD: [00:0000000468:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib is missing.
+BUILD: [00:0000000469:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\ directory.
+BUILD: [00:0000000470:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000471:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000472:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000473:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000474:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG\sources
+BUILD: [01:0000000475:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000476:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\OMAP_WATCHDOG
+BUILD: [01:0000000477:INFO  ] TARGETNAME: common_ti_oal_watchdog
+BUILD: [01:0000000478:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000479:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib
+BUILD: [01:0000000480:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm235.tmp
+BUILD: [00:0000000481:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000482:INFO  ] Done.
+BUILD: [00:0000000483:PROGC ] Done.
+BUILD: [00:0000000484:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000485:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000486:PROGC ] Message                    0         0       0
+BUILD: [00:0000000487:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000488:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000489:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000490:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000491:PROGC ] ARMASM                     6         2       0
+BUILD: [00:0000000492:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000493:PROGC ] C++                        0         0       0
+BUILD: [00:0000000494:PROGC ] C                         21         0       0
+BUILD: [00:0000000495:PROGC ] Static Libraries          13         0       0
+BUILD: [00:0000000496:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000497:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000000498:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000499:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000500:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000501:PROGC ] Other                      0         0       0
+BUILD: [00:0000000502:PROGC ] 
+BUILD: [00:0000000503:PROGC ] Total                     40         2       0
+BUILD: [00:0000000504:PROGC ] 
+BUILD: [00:0000000505:PROGC ] 2 Warnings,  0 Errors
+BUILD: [00:0000000506:PROGC ] GetSystemTimes (seconds): Idle: 68    Kernel: 77    User: 7    
+BUILD: [00:0000000507:PROGC ] Elapsed  time  (seconds): 21   

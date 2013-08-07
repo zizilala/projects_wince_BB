@@ -1,0 +1,1078 @@
+ CaptureTest
+
+ Timestamp is 51ecf4a0 (Mon Jul 22 17:00:16 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000068H .CRT$XCU                CODE
+ 0001:0000006c 00000004H .CRT$XCZ                CODE
+ 0001:00000070 00000004H .CRT$XIA                CODE
+ 0001:00000074 00000004H .CRT$XIZ                CODE
+ 0001:00000078 00000004H .CRT$XPA                CODE
+ 0001:0000007c 00000004H .CRT$XPZ                CODE
+ 0001:00000080 00000004H .CRT$XTA                CODE
+ 0001:00000084 00000004H .CRT$XTZ                CODE
+ 0001:00000090 00006644H .rdata                  CODE
+ 0001:000066d4 00000028H .rdata$debug            CODE
+ 0001:000066fc 0000543cH .text                   CODE
+ 0001:0000bb38 00000270H .text$yc                CODE
+ 0001:0000bda8 00000478H .text$yd                CODE
+ 0001:0000c220 00000040H .xdata                  CODE
+ 0001:0000c260 0000003cH .idata$2                CODE
+ 0001:0000c29c 00000014H .idata$3                CODE
+ 0001:0000c2b0 0000012cH .idata$4                CODE
+ 0001:0000c3dc 000000baH .idata$6                CODE
+ 0001:0000c496 00000000H .edata                  CODE
+ 0002:00000000 0000012cH .idata$5                DATA
+ 0002:00000130 000004d4H .data                   DATA
+ 0002:00000608 00002afcH .bss                    DATA
+ 0003:00000000 000003e8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     00011000     corelib0:crt0init.obj
+ 0001:0000006c       __xc_z                     0001106c     corelib0:crt0init.obj
+ 0001:00000070       __xi_a                     00011070     corelib0:crt0init.obj
+ 0001:00000074       __xi_z                     00011074     corelib0:crt0init.obj
+ 0001:00000078       __xp_a                     00011078     corelib0:crt0init.obj
+ 0001:0000007c       __xp_z                     0001107c     corelib0:crt0init.obj
+ 0001:00000080       __xt_a                     00011080     corelib0:crt0init.obj
+ 0001:00000084       __xt_z                     00011084     corelib0:crt0init.obj
+ 0001:000000ac       ??_7CPropertyBag@@6B@      000110ac     propertybag.obj
+ 0001:000000c0       ??_C@_1BI@CFNHGJEG@?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AAT?$AAe?$AAs?$AAt?$AA?$AA@ 000110c0     main.obj
+ 0001:000000d8       ??_C@_1BA@BJCCMHBE@?$AAS?$AA?9?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?$AA@ 000110d8     main.obj
+ 0001:000000e8       ??_C@_1BE@LFPMKHJJ@?$AAC?$AAo?$AAm?$AAp?$AAo?$AAs?$AAi?$AAt?$AAe?$AA?$AA@ 000110e8     main.obj
+ 0001:000000fc       ??_C@_1M@MDJKBIGD@?$AAY?$AAP?$AAb?$AAP?$AAr?$AA?$AA@ 000110fc     main.obj
+ 0001:00000108       IID_ISampleGrabber         00011108     main.obj
+ 0001:00000118       ??_C@_1DG@IBDACNHH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAP?$AAU?$AA?5?$AAU?$AAt?$AAi?$AAl?$AAi?$AAz?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00011118     main.obj
+ 0001:00000150       ??_C@_1KG@NHCAFMHI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAa?$AAv?$AAg?$AA?5?$AAf?$AAp?$AAs?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAI?$AA6?$AA4?$AAd?$AA?0?$AA?5?$AAt?$AAi?$AAm?$AAe?$AA?5?$AAb?$AAe?$AAt?$AA?5?$AAf?$AAr@ 00011150     main.obj
+ 0001:000001f8       ??_C@_1FG@MPHJMDGH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAs?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAl?$AAa?$AAs?$AAt?$AA?5?$AA?$CF?$AAd?$AA?5?$AAf?$AAr?$AAa?$AAm?$AAe?$AAs@ 000111f8     main.obj
+ 0001:00000250       ??_C@_1EK@MAJAMDOM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAN?$AAu?$AAm?$AA?5?$AAF?$AAr?$AAa?$AAm?$AAe?$AAs?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?0?$AA?5?$AAt?$AAo?$AAt?$AAa?$AAl?$AAT?$AAi?$AAm?$AAe?$AA?5?$AA?$DN@ 00011250     main.obj
+ 0001:000002a0       ??_C@_1HC@MNDFOEKP@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAi?$AAn?$AAd?$AA?5?$AAf?$AAi?$AAr?$AAs?$AAt?$AA?5?$AAc?$AAa?$AAm?$AAe?$AAr?$AAa?$AA?5?$AAd?$AAe@ 000112a0     main.obj
+ 0001:00000318       ??_C@_1FC@OPHHKAIA@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?5?$AAf?$AAo?$AAr?$AAm?$AAa?$AAt?$AA?5?$AAs?$AAt?$AAr?$AAu?$AAc?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAi?$AAn?$AA?5?$AAm?$AAe?$AAd?$AAi@ 00011318     main.obj
+ 0001:00000370       ??_C@_1FO@PHJBFFHJ@?$AA?$CF?$AAs?$AA?0?$AA?5?$AA?$CF?$AAs?$AA?0?$AA?5?$AA?$CF?$AAl?$AAd?$AAx?$AA?$CF?$AAl?$AAd?$AA?0?$AA?5?$AA?$CF?$AAd?$AA?5?$AAb?$AAp?$AAp?$AA?0?$AA?5?$AA?$CF?$AAl?$AAd?$AA?5?$AAf?$AAp?$AAs@ 00011370     main.obj
+ 0001:000003d0       ??_C@_19FDJKPNJK@?$AAM?$AAP?$AA4?$AAV?$AA?$AA@ 000113d0     main.obj
+ 0001:000003dc       ??_C@_19KHGMJPCI@?$AAV?$AAS?$AAS?$AAH?$AA?$AA@ 000113dc     main.obj
+ 0001:000003e8       ??_C@_1M@PONJEKEK@?$AAH?$AA2?$AA6?$AA4?$AAU?$AA?$AA@ 000113e8     main.obj
+ 0001:000003f4       ??_C@_19PLJKAPJL@?$AAH?$AA2?$AA6?$AA4?$AA?$AA@ 000113f4     main.obj
+ 0001:00000400       ??_C@_1M@HFEPONBK@?$AAR?$AAG?$AAB?$AA2?$AA4?$AA?$AA@ 00011400     main.obj
+ 0001:0000040c       ??_C@_1O@GIPKMDHO@?$AAR?$AAG?$AAB?$AA5?$AA5?$AA5?$AA?$AA@ 0001140c     main.obj
+ 0001:0000041c       ??_C@_1O@OOGOLBNA@?$AAR?$AAG?$AAB?$AA5?$AA6?$AA5?$AA?$AA@ 0001141c     main.obj
+ 0001:0000042c       ??_C@_19MMMKANLF@?$AAI?$AAJ?$AAP?$AAG?$AA?$AA@ 0001142c     main.obj
+ 0001:00000438       ??_C@_19DFBBKOLM@?$AAY?$AAU?$AAY?$AA2?$AA?$AA@ 00011438     main.obj
+ 0001:00000444       ??_C@_19FPDJCEGI@?$AAY?$AAV?$AA1?$AA2?$AA?$AA@ 00011444     main.obj
+ 0001:00000450       ??_C@_19GFPDJJKK@?$AAU?$AAY?$AAV?$AAY?$AA?$AA@ 00011450     main.obj
+ 0001:0000045c       ??_C@_1BA@LEPJIIOK@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?$AA@ 0001145c     main.obj
+ 0001:0000046c       ??_C@_1BM@ICDHMPOG@?$AAV?$AAi?$AAd?$AAe?$AAo?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAe?$AAd?$AA?$AA@ 0001146c     main.obj
+ 0001:00000488       ??_C@_1M@BFEDDODL@?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?$AA@ 00011488     main.obj
+ 0001:00000498       ??_C@_1JC@EEBNIEEK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAD?$AAu?$AAm?$AAp?$AAS?$AAt?$AAr?$AAe?$AAa?$AAm?$AAC?$AAa?$AAp?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAN@ 00011498     main.obj
+ 0001:00000530       ??_C@_1JG@PLAMCFED@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAD?$AAu?$AAm?$AAp?$AAS?$AAt?$AAr?$AAe?$AAa?$AAm?$AAC?$AAa?$AAp?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAS@ 00011530     main.obj
+ 0001:000005c8       ??_C@_1BO@JAFGMJK@?$AA?$CF?$AAs?$AA?3?$AA?$CF?$AAd?$AA?5?$AA?9?$AA?5?$AA?$CI?$AA?$CF?$AAs?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 000115c8     main.obj
+ 0001:000005e8       ??_C@_1GE@NMCAKHDK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAD?$AAu?$AAm?$AAp?$AAS?$AAt?$AAr?$AAe?$AAa?$AAm?$AAC?$AAa?$AAp?$AAs?$AA?3?$AA?5?$AAM?$AAe?$AAm?$AAo@ 000115e8     main.obj
+ 0001:0000064c       ??_C@_1BM@LGOEJGDF@?$AAC?$AAo?$AAm?$AAp?$AAo?$AAs?$AAi?$AAt?$AAe?$AA?$CI?$AAA?$AAV?$AA?$CJ?$AA?$AA@ 0001164c     main.obj
+ 0001:00000668       ??_C@_1CC@FGMADICP@?$AAC?$AAo?$AAm?$AAp?$AAo?$AAn?$AAe?$AAn?$AAt?$AA?$CI?$AAY?$AAP?$AAb?$AAP?$AAr?$AA?$CJ?$AA?$AA@ 00011668     main.obj
+ 0001:00000690       ??_C@_1FO@HAPEFDJD@?$AA?7?$AA?1?$AAv?$AAi?$AAn?$AA?5?$AA?$HL?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAi?$AAn?$AAp?$AAu?$AAt?$AA?$HN?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAs?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?0@ 00011690     main.obj
+ 0001:000006f0       ??_C@_1EO@NBJACCGL@?$AA?7?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAd?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt@ 000116f0     main.obj
+ 0001:00000740       ??_C@_19KLMLHLJG@?$AAN?$AAo?$AAn?$AAe?$AA?$AA@ 00011740     main.obj
+ 0001:0000074c       ??_C@_1M@JPJLJAGN@?$AAM?$AAP?$AAE?$AAG?$AA4?$AA?$AA@ 0001174c     main.obj
+ 0001:00000758       ??_C@_1M@IJFDBELL@?$AAH?$AA?4?$AA2?$AA6?$AA4?$AA?$AA@ 00011758     main.obj
+ 0001:00000768       ??_C@_1GI@BPFMCAJH@?$AA?7?$AA?1?$AAv?$AAe?$AAn?$AAc?$AA?5?$AA?$HL?$AAe?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?$HN?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAh?$AA2?$AA6?$AA4?$AA?0?$AA?5?$AAm@ 00011768     main.obj
+ 0001:000007d0       ??_C@_1HM@FICJINHE@?$AA?7?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$CI?$AAi?$AAg?$AAn?$AAo?$AAr?$AAe?$AAd@ 000117d0     main.obj
+ 0001:00000850       ??_C@_1IA@OMFOBMBK@?$AA?7?$AA?1?$AAt?$AAi?$AAm?$AAe?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAt?$AAi?$AAm?$AAe?$AA?5?$AAi?$AAn@ 00011850     main.obj
+ 0001:000008d0       ??_C@_1IA@ILFBCEOP@?$AA?7?$AA?1?$AAp?$AAv?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5@ 000118d0     main.obj
+ 0001:00000950       ??_C@_1IM@PJCGFGJE@?$AA?7?$AA?1?$AAu?$AAs?$AAb?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?5@ 00011950     main.obj
+ 0001:000009e0       ??_C@_1IK@IGKFIDJF@?$AA?7?$AA?1?$AAn?$AAa?$AAn?$AAd?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?5@ 000119e0     main.obj
+ 0001:00000a70       ??_C@_1IE@CAKEMANG@?$AA?7?$AA?1?$AAs?$AAd?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?5@ 00011a70     main.obj
+ 0001:00000af8       ??_C@_1MC@KELDEKNE@?$AA?7?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAI?$AAf?$AA?5?$AA?1?$AAf?$AAi?$AAl@ 00011af8     main.obj
+ 0001:00000bc0       ??_C@_1GG@BNGKEFCD@?$AA?7?$AA?1?$AAf?$AAi?$AAl?$AAe?$AA?5?$AA?$HL?$AAf?$AAi?$AAl?$AAe?$AAn?$AAa?$AAm?$AAe?$AA?$HN?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAS?$AAp?$AAe?$AAc?$AAi?$AAf?$AAy@ 00011bc0     main.obj
+ 0001:00000c28       ??_C@_1NO@HNLOAMFI@?$AA?7?$AA?1?$AAc?$AAa?$AAp?$AA?5?$AA?$HL?$AAw?$AAx?$AAh?$AA?$EA?$AAf?$AAp?$AAs?$AA?$HN?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAS?$AAp?$AAe?$AAc?$AAi?$AAf?$AAy@ 00011c28     main.obj
+ 0001:00000d08       ??_C@_1FI@EHFNCCAO@?$AA?7?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAd?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt@ 00011d08     main.obj
+ 0001:00000d60       ??_C@_1HC@ELPEONBG@?$AA?7?$AA?1?$AAb?$AAr?$AA?5?$AA?$HL?$AAb?$AAi?$AAt?$AAr?$AAa?$AAt?$AAe?$AA?$HN?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAS?$AAp?$AAe?$AAc?$AAi?$AAf?$AAy@ 00011d60     main.obj
+ 0001:00000dd8       ??_C@_1HK@BGHIOEE@?$AA?7?$AA?1?$AAa?$AAu?$AAt?$AAo?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?9?$AA?5?$AAa?$AAu?$AAt?$AAo?$AA?9?$AAr?$AAu@ 00011dd8     main.obj
+ 0001:00000e54       ??_C@_1BG@GJEAOIOK@?$AAO?$AAp?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?3?$AA?$AN?$AA?6?$AA?$AA@ 00011e54     main.obj
+ 0001:00000e6c       ??_C@_1CM@CENNCFHO@?$AAU?$AAs?$AAa?$AAg?$AAe?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$FL?$AAo?$AAp?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?$FN?$AA?$AN?$AA?6?$AA?$AA@ 00011e6c     main.obj
+ 0001:00000e98       ??_C@_13NOLLCAOD@?$AA?$AA?$AA?$AA@ 00011e98     main.obj
+ 0001:00000e9c       ??_C@_13EFKPHINO@?$AA?$EA?$AA?$AA@ 00011e9c     main.obj
+ 0001:00000ea0       ??_C@_17IKGDOKCB@?$AA?5?$AAx?$AAX?$AA?$AA@ 00011ea0     main.obj
+ 0001:00000ea8       ??_C@_15BAIPABEI@?$AA?1?$AA?$DP?$AA?$AA@ 00011ea8     main.obj
+ 0001:00000eb0       ??_C@_1FI@OALBMLOJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAp?$AAa?$AAr?$AAa?$AAm?$AAe?$AAt?$AAe?$AAr?$AAs?$AA?5?$AAs?$AAp?$AAe?$AAc?$AAi@ 00011eb0     main.obj
+ 0001:00000f08       ??_C@_1M@GGBLPINO@?$AA?1?$AAt?$AAi?$AAm?$AAe?$AA?$AA@ 00011f08     main.obj
+ 0001:00000f14       ??_C@_1M@MHOMCFCB@?$AA?1?$AAa?$AAu?$AAt?$AAo?$AA?$AA@ 00011f14     main.obj
+ 0001:00000f20       ??_C@_17PPPNKCON@?$AA?1?$AAp?$AAv?$AA?$AA@ 00011f20     main.obj
+ 0001:00000f28       ??_C@_1M@JGLOBANO@?$AA?1?$AAv?$AAe?$AAn?$AAc?$AA?$AA@ 00011f28     main.obj
+ 0001:00000f34       ??_C@_19DMBOIJGB@?$AA?1?$AAv?$AAi?$AAn?$AA?$AA@ 00011f34     main.obj
+ 0001:00000f40       ??_C@_19FKAKBAMH@?$AA?1?$AAu?$AAs?$AAb?$AA?$AA@ 00011f40     main.obj
+ 0001:00000f4c       ??_C@_1M@LLFKOHIB@?$AA?1?$AAn?$AAa?$AAn?$AAd?$AA?$AA@ 00011f4c     main.obj
+ 0001:00000f58       ??_C@_17IDHJEPFH@?$AA?1?$AAs?$AAd?$AA?$AA@ 00011f58     main.obj
+ 0001:00000f60       ??_C@_1M@IOBMHKKO@?$AA?1?$AAf?$AAi?$AAl?$AAe?$AA?$AA@ 00011f60     main.obj
+ 0001:00000f6c       ??_C@_19FENABEOP@?$AA?1?$AAc?$AAa?$AAp?$AA?$AA@ 00011f6c     main.obj
+ 0001:00000f78       ??_C@_17DOIBJGCK@?$AA?1?$AAb?$AAr?$AA?$AA@ 00011f78     main.obj
+ 0001:00000f80       ??_C@_1GE@HOHMJAGM@?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAp?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?5?$AA?9?$AA?5?$AAw?$AAi?$AAd?$AAt?$AAh?$AA?$DN?$AA?$CF?$AAl?$AAd?$AA?0?$AA?5?$AAh?$AAe?$AAi?$AAg@ 00011f80     main.obj
+ 0001:00000fe4       ??_C@_19OEJGHIEG@?$AAn?$AAo?$AAn?$AAe?$AA?$AA@ 00011fe4     main.obj
+ 0001:00000ff0       ??_C@_17EBOIPCKB@?$AAr?$AAa?$AAw?$AA?$AA@ 00011ff0     main.obj
+ 0001:00000ff8       ??_C@_1M@DGCNCPCF@?$AAm?$AAp?$AAe?$AAg?$AA4?$AA?$AA@ 00011ff8     main.obj
+ 0001:00001004       ??_C@_19LEMHAMEL@?$AAh?$AA2?$AA6?$AA4?$AA?$AA@ 00012004     main.obj
+ 0001:00001010       ??_C@_1M@JDFKMFHN@?$AAy?$AAp?$AAb?$AAp?$AAr?$AA?$AA@ 00012010     main.obj
+ 0001:0000101c       ??_C@_1O@DBBCMMPF@?$AAs?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?$AA@ 0001201c     main.obj
+ 0001:0000102c       ??_C@_15MDMBHNOD@?$AAa?$AAv?$AA?$AA@ 0001202c     main.obj
+ 0001:00001034       ??_C@_1CG@COCMLJNO@?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAs?$AA?$AN?$AA?6?$AA?$AA@ 00012034     main.obj
+ 0001:0000105c       ??_C@_1CO@FMINLOIG@?$AAg?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAr?$AAu?$AAn?$AAt?$AAi?$AAm?$AAe?$AA?$DN?$AA?$CF?$AAl?$AAd?$AA?5?$AAm?$AAs?$AA?$AN?$AA?6?$AA?$AA@ 0001205c     main.obj
+ 0001:0000108c       ??_C@_1BM@MOFCOEJL@?$AAb?$AAi?$AAt?$AAr?$AAa?$AAt?$AAe?$AA?$DN?$AA?$CF?$AAl?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 0001208c     main.obj
+ 0001:000010a8       ??_C@_1BE@OGIBCNGH@?$AAa?$AAr?$AAg?$AAc?$AA?$DN?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 000120a8     main.obj
+ 0001:000010bc       ??_C@_15DEJJBEOA@?$AA?5?$AA?7?$AA?$AA@ 000120bc     main.obj
+ 0001:000010c4       ??_C@_1BK@DFFGIHDO@?$AAc?$AAm?$AAd?$AAl?$AAi?$AAn?$AAe?$AA?$DN?$AA?$CF?$AAs?$AA?$AN?$AA?6?$AA?$AA@ 000120c4     main.obj
+ 0001:000010e0       _GUID_56a868a9_0ad4_11ce_b03a_0020af0ba770 000120e0     main.obj
+ 0001:000010f0       _GUID_93e5a4e0_2d50_11d2_abfa_00a0c9c6e38d 000120f0     main.obj
+ 0001:00001100       _GUID_56a86895_0ad4_11ce_b03a_0020af0ba770 00012100     main.obj
+ 0001:00001110       _GUID_6a2e0670_28e4_11d0_a18c_00a0c9118956 00012110     main.obj
+ 0001:00001120       _GUID_c6e13370_30ac_11d0_a18c_00a0c9118956 00012120     main.obj
+ 0001:00001130       _GUID_c6e13344_30ac_11d0_a18c_00a0c9118956 00012130     main.obj
+ 0001:00001140       _GUID_c6e13360_30ac_11d0_a18c_00a0c9118956 00012140     main.obj
+ 0001:00001150       _GUID_31efac30_515c_11d0_a9aa_00aa0061be93 00012150     main.obj
+ 0001:00001160       _GUID_37d84f60_42cb_11ce_8135_00aa004bb851 00012160     main.obj
+ 0001:00001170       _GUID_36b73880_c2c8_11cf_8b46_00805f6cef60 00012170     main.obj
+ 0001:00001180       _GUID_56a868b1_0ad4_11ce_b03a_0020af0ba770 00012180     main.obj
+ 0001:00001190       _GUID_56a868b4_0ad4_11ce_b03a_0020af0ba770 00012190     main.obj
+ 0001:000011a0       _GUID_56a868b5_0ad4_11ce_b03a_0020af0ba770 000121a0     main.obj
+ 0001:000011b0       _GUID_c6e13340_30ac_11d0_a18c_00a0c9118956 000121b0     main.obj
+ 0001:000011c0       ??_C@_1FK@KKILKADM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAt?$AAr?$AAe?$AAa?$AAm?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAs?$AA?9?$AA?5?$AAF?$AAr?$AAa?$AAm?$AAe?$AAs?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAD?$AAr?$AAo@ 000121c0     main.obj
+ 0001:00001220       ??_C@_1FC@ECCHBPJK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAt?$AAr?$AAe?$AAa?$AAm?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAs?$AA?9?$AA?5?$AAF?$AAr?$AAa?$AAm?$AAe?$AAs?$AA?5?$AAD?$AAr?$AAo?$AAp?$AAp?$AAe?$AAd@ 00012220     main.obj
+ 0001:00001278       ??_C@_1FK@ECIPIPDG@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAt?$AAr?$AAe?$AAa?$AAm?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAs?$AA?9?$AA?5?$AAA?$AAv?$AAe?$AAr?$AAa?$AAg?$AAe?$AA?5?$AAF?$AAr?$AAa?$AAm?$AAe?$AA?5@ 00012278     main.obj
+ 0001:000012d8       ??_C@_1IA@IKMEOMHH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AAi?$AAn?$AA?5?$AAD?$AAu?$AAm?$AAp?$AAF?$AAr?$AAa?$AAm?$AAe?$AAS?$AAt?$AAa?$AAt?$AAs?$AA?9?$AA?5?$AAD?$AAr?$AAo@ 000122d8     main.obj
+ 0001:00001358       ??_C@_1GM@MDBOEFNL@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAt?$AAr?$AAe?$AAa?$AAm?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAs?$AA?5?$AA?9?$AA?5?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?5?$AAo?$AAf?$AA?5?$AAc?$AAa?$AAp@ 00012358     main.obj
+ 0001:000013c8       ??_C@_1HE@KCIMECJF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAe?$AAt?$AAF?$AAo?$AAr?$AAm?$AAa?$AAt?$AA?5?$AAo?$AAn?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAs@ 000123c8     main.obj
+ 0001:00001440       ??_C@_1HE@NPPCHPLM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAF?$AAo?$AAr?$AAm?$AAa?$AAt?$AA?5?$AAo?$AAn?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAs@ 00012440     main.obj
+ 0001:000014b8       ??_C@_1GG@OGIIANKB@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAe?$AAt?$AAF?$AAo?$AAr?$AAm?$AAa?$AAt?$AA?5?$AAo?$AAn?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAe?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAf@ 000124b8     main.obj
+ 0001:00001520       ??_C@_1EE@MBLIOMHC@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAb?$AAi?$AAt?$AAr?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AAc?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AA?$DN?$AA?$CF?$AAd?$AA?0?$AA?5?$AAn?$AAe?$AAw?$AA?$DN?$AA?$CF?$AAd?$AA?$AN@ 00012520     main.obj
+ 0001:00001568       ??_C@_1GG@FIADOCGN@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAF?$AAo?$AAr?$AAm?$AAa?$AAt?$AA?5?$AAo?$AAn?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAe?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAf@ 00012568     main.obj
+ 0001:000015d0       ??_C@_1HO@ILDKNFKD@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAL?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAp?$AAr@ 000125d0     main.obj
+ 0001:00001650       ??_C@_1II@HDJDNBMH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAW?$AAr?$AAi?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAc?$AAa?$AAm?$AAe?$AAr?$AAa?$AA?5?$AAn?$AAa?$AAm?$AAe?$AA?5@ 00012650     main.obj
+ 0001:000016d8       ??_C@_1BC@BEDIIBGP@?$AAV?$AAC?$AAa?$AAp?$AAN?$AAa?$AAm?$AAe?$AA?$AA@ 000126d8     main.obj
+ 0001:000016f0       ??_C@_1GM@JIJKGDJE@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAs?$AAe?$AAt?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAv?$AAa?$AAr?$AAC?$AAa?$AAm?$AAe?$AAr?$AAa?$AAN?$AAa?$AAm@ 000126f0     main.obj
+ 0001:00001760       ??_C@_1EI@CFINNKF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAF?$AAi?$AAr?$AAs?$AAt?$AA?5?$AAC?$AAa?$AAm?$AAe?$AAr?$AAa?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAN?$AAa?$AAm?$AAe?$AA?5?$AA?$DN?$AA?5?$AA?$CF@ 00012760     main.obj
+ 0001:000017a8       ??_C@_1HK@GEAHBDGA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAo?$AAb?$AAt?$AAa?$AAi?$AAn?$AA?5?$AAc?$AAa?$AAm@ 000127a8     main.obj
+ 0001:00001828       ??_C@_1EI@HBDOMFIH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAd?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe@ 00012828     main.obj
+ 0001:00001870       ??_C@_1FI@GMBBBFHJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAe?$AAn?$AAc?$AAo?$AAd?$AAe@ 00012870     main.obj
+ 0001:000018c8       ??_C@_1JA@LOMCIKH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAV?$AAi?$AAd@ 000128c8     main.obj
+ 0001:00001958       ??_C@_1EK@NHFGBHHK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAE?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAi?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc?$AAe?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt@ 00012958     main.obj
+ 0001:000019a4       ??_C@_1DK@LCDBADJO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAe?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 000129a4     main.obj
+ 0001:000019e0       ??_C@_1GK@GMJHFMNM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAe?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAs?$AAt?$AAr?$AAe?$AAa?$AAm?$AA?5?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?5@ 000129e0     main.obj
+ 0001:00001a50       ??_C@_1IE@OJKFLHON@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAV?$AAi?$AAd@ 00012a50     main.obj
+ 0001:00001ad8       ??_C@_1EM@FIPPEDMF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?5?$AAi?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc?$AAe?$AA?5?$AAc?$AAr?$AAe?$AAa@ 00012ad8     main.obj
+ 0001:00001b24       ??_C@_1DM@BMJPPON@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00012b24     main.obj
+ 0001:00001b60       ??_C@_1JC@IMALDLJA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAS?$AAa?$AAm@ 00012b60     main.obj
+ 0001:00001bf8       ??_C@_1IM@EPLFOHEM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAS?$AAe?$AAt?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAs?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAg@ 00012bf8     main.obj
+ 0001:00001c88       ??_C@_1IA@PPCBBAAH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAg?$AAe?$AAt?$AA?5?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe@ 00012c88     main.obj
+ 0001:00001d08       ??_C@_1FC@GFBFCAMD@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AAd?$AA?5?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?5?$AAi?$AAn?$AAt@ 00012d08     main.obj
+ 0001:00001d60       ??_C@_1FK@MLCJDNJO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAi?$AAn?$AAs?$AAt?$AAa?$AAn@ 00012d60     main.obj
+ 0001:00001dbc       ??_C@_1DM@GEHFOOCI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAg?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00012dbc     main.obj
+ 0001:00001df8       ??_C@_1II@KGAACBFH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAN?$AAu?$AAl@ 00012df8     main.obj
+ 0001:00001e80       ??_C@_1FA@BLJBPFEH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAN?$AAu?$AAl?$AAl?$AA?5?$AAS?$AAi?$AAn?$AAk?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAi?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc?$AAe?$AA?5?$AAc?$AAr@ 00012e80     main.obj
+ 0001:00001ed0       ??_C@_1DC@MIFJNGHL@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAN?$AAu?$AAl?$AAl?$AA?5?$AAs?$AAi?$AAn?$AAk?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00012ed0     main.obj
+ 0001:00001f04       ??_C@_1DE@HECAABCA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAA?$AAS?$AAF?$AA?5?$AAw?$AAr?$AAi?$AAt?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00012f04     main.obj
+ 0001:00001f38       ??_C@_1FO@EOMFFPIP@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAr?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAm?$AAo?$AAv?$AAe?$AAd?$AA?5?$AAf?$AAr?$AAo?$AAm?$AA?5@ 00012f38     main.obj
+ 0001:00001f98       ??_C@_1HI@EMDFFCGF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAm?$AAo?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAr@ 00012f98     main.obj
+ 0001:00002010       ??_C@_1GO@LNMLKJII@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAA?$AAS?$AAF?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?5?$AAw?$AAr?$AAi?$AAt?$AAe?$AAr?$AA?5?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAm?$AAo?$AAv@ 00013010     main.obj
+ 0001:00002080       ??_C@_1II@PPGJEFHP@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAm?$AAo?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAA?$AAS?$AAF?$AA?5?$AAf?$AAi?$AAl@ 00013080     main.obj
+ 0001:00002108       ??_C@_1GC@EDOBAEHO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAN?$AAu?$AAl?$AAl?$AA?5?$AAs?$AAi?$AAn?$AAk?$AA?5?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAm?$AAo?$AAv?$AAe?$AAd?$AA?5?$AAf?$AAr?$AAo@ 00013108     main.obj
+ 0001:00002170       ??_C@_1HM@DMCGHIFO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAm?$AAo?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAn?$AAu?$AAl?$AAl?$AA?5?$AAs?$AAi@ 00013170     main.obj
+ 0001:000021f0       ??_C@_1GK@PPLAPLNG@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAE?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAm?$AAo?$AAv?$AAe?$AAd@ 000131f0     main.obj
+ 0001:00002260       ??_C@_1IE@NDGMJEHJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAm?$AAo?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAe@ 00013260     main.obj
+ 0001:000022e8       ??_C@_1GM@FLJMDGLE@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAm?$AAo?$AAv?$AAe@ 000132e8     main.obj
+ 0001:00002358       ??_C@_1IG@DMMFLADK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAm?$AAo?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAs?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5@ 00013358     main.obj
+ 0001:000023e0       ??_C@_1GK@EPMNDKHP@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAm?$AAo?$AAv?$AAe?$AAd@ 000133e0     main.obj
+ 0001:00002450       ??_C@_1IE@BPEMLPAB@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAm?$AAo?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAc@ 00013450     main.obj
+ 0001:000024d4       ??_C@_1DG@DKAGNIIF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAI?$AAB?$AAa?$AAs?$AAi?$AAc?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 000134d4     main.obj
+ 0001:0000250c       ??_C@_1DI@BPBMECAL@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAI?$AAV?$AAi?$AAd?$AAe?$AAo?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 0001350c     main.obj
+ 0001:00002544       ??_C@_1DK@HJJFAMAO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAI?$AAM?$AAe?$AAd?$AAi?$AAa?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00013544     main.obj
+ 0001:00002580       ??_C@_1DG@EAAEMHGJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAI?$AAM?$AAe?$AAd?$AAi?$AAa?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00013580     main.obj
+ 0001:000025b8       ??_C@_1DK@DDNKOPOH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAI?$AAM?$AAe?$AAd?$AAi?$AAa?$AAS?$AAe?$AAe?$AAk?$AAi?$AAn?$AAg?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 000135b8     main.obj
+ 0001:000025f4       ??_C@_1DI@HMMLMOM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAI?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 000135f4     main.obj
+ 0001:00002630       ??_C@_1EK@EEOCKALF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAB?$AAu?$AAi?$AAl?$AAd?$AAe?$AAr?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs@ 00013630     main.obj
+ 0001:0000267c       ??_C@_1CK@IMMEOMOH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAP?$AAr?$AAe?$AAv?$AAi?$AAe?$AAw?$AA?5?$AAa?$AAc?$AAt?$AAi?$AAv?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 0001367c     main.obj
+ 0001:000026a8       ??_C@_1HA@NOILDFEP@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAn?$AAd?$AAe?$AAr?$AA?5?$AAp?$AAr?$AAe@ 000136a8     main.obj
+ 0001:00002718       ??_C@_1KC@HJBGHEIB@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAe?$AAn?$AAc?$AAo?$AAd@ 00013718     main.obj
+ 0001:000027c0       ??_C@_1LC@KAFCDKEM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?3?$AA?5@ 000137c0     main.obj
+ 0001:00002878       ??_C@_1EA@OPJNKBEC@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAg?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAr?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAd?$AA?5?$AAO?$AAK?$AA?$AN?$AA?6?$AA?$AA@ 00013878     main.obj
+ 0001:000028b8       ??_C@_1HA@JEGBMLHJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAn?$AAd?$AAe?$AAr?$AA?5?$AAc?$AAa?$AAp@ 000138b8     main.obj
+ 0001:00002928       ??_C@_1FK@NMMGFFJF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAp?$AAM?$AAe?$AAd?$AAi?$AAa?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?9?$AA?$DO?$AAR?$AAu?$AAn?$AA?$CI?$AA?$CJ?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?0@ 00013928     main.obj
+ 0001:00002988       ??_C@_1FM@KJKLOEHO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAp?$AAM?$AAe?$AAd?$AAi?$AAa?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?9?$AA?$DO?$AAS?$AAt?$AAo?$AAp?$AA?$CI?$AA?$CJ?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd@ 00013988     main.obj
+ 0001:000029e4       ??_C@_1CO@FGDCNMEI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAA?$AAP?$AAT?$AAU?$AAR?$AAE?$AA?5?$AAS?$AAT?$AAA?$AAR?$AAT?$AAE?$AAD?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 000139e4     main.obj
+ 0001:00002a18       ??_C@_1KG@HPAAOACA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAS?$AAt?$AAa?$AAr?$AAt?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?3?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo@ 00013a18     main.obj
+ 0001:00002ac0       ??_C@_1CO@NBBDGELJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAA?$AAP?$AAT?$AAU?$AAR?$AAE?$AA?5?$AAS?$AAT?$AAO?$AAP?$AAP?$AAE?$AAD?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 00013ac0     main.obj
+ 0001:00002af0       ??_C@_1GA@LIEPHOCA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAC?$AA_?$AAS?$AAT?$AAR?$AAE?$AAA?$AAM?$AA_?$AAC?$AAO?$AAN?$AAT?$AAR?$AAO?$AAL?$AA_?$AAS?$AAT?$AAO?$AAP?$AAP?$AAE?$AAD?$AA?5?$AAe?$AAv@ 00013af0     main.obj
+ 0001:00002b50       ??_C@_1KC@OAIOKKKA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAS?$AAt?$AAo?$AAp?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?3?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl@ 00013b50     main.obj
+ 0001:00002bf8       ??_C@_1HC@LKHGHDGF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?9?$AA?5?$AAE@ 00013bf8     main.obj
+ 0001:00002c70       ??_C@_1HG@IMHHNGKA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?9?$AA?5?$AAE@ 00013c70     main.obj
+ 0001:00002ce8       ??_C@_1HG@EOJNNPNJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?9?$AA?5?$AAE@ 00013ce8     main.obj
+ 0001:00002d60       ??_C@_1GG@DFFKCKHD@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?9?$AA?5?$AAe@ 00013d60     main.obj
+ 0001:00002dc8       ??_C@_1HI@HOJDGJNJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?9?$AA?5?$AAE@ 00013dc8     main.obj
+ 0001:00002e40       ??_C@_1GA@IPOJOLAH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?9?$AA?5?$AAE@ 00013e40     main.obj
+ 0001:00002ea0       ??_C@_1GE@PEPMHNBD@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?9?$AA?5?$AAE@ 00013ea0     main.obj
+ 0001:00002f08       ??_C@_1GO@ICFCDKML@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?9?$AA?5?$AAE@ 00013f08     main.obj
+ 0001:00002f78       ??_C@_1IO@OGCBACMN@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo@ 00013f78     main.obj
+ 0001:00003008       ??_C@_1JA@EPMBIELE@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAc?$AAa?$AAm?$AAe?$AAr@ 00014008     main.obj
+ 0001:00003098       ??_C@_1JA@IEDPBDDG@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAd?$AAr?$AAo?$AAp?$AAp@ 00014098     main.obj
+ 0001:00003128       ??_C@_1JA@GHNCGKJO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo@ 00014128     main.obj
+ 0001:000031b8       ??_C@_1IM@NJBHGJFJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAp?$AAr?$AAo?$AAp?$AAe@ 000141b8     main.obj
+ 0001:00003248       ??_C@_1KI@HMJFKFGP@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo@ 00014248     main.obj
+ 0001:000032f0       ??_C@_1JA@MHAHCIOJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAv?$AAi?$AAd@ 000142f0     main.obj
+ 0001:00003380       ??_C@_1FE@IJGIGEKL@?$AA?$CF?$AAs?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?5?$AAi?$AAn?$AAp?$AAu?$AAt?$AA?5?$AAs?$AAe?$AAl?$AAe?$AAc?$AAt?$AAe?$AAd?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5@ 00014380     main.obj
+ 0001:000033d8       ??_C@_1IK@DNHDPGHC@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAl?$AAe?$AAc?$AAt?$AA?5?$AA?$CF?$AAs?$AA?5@ 000143d8     main.obj
+ 0001:00003468       ??_C@_1FI@EAGEPMJI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAi?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc@ 00014468     main.obj
+ 0001:000034c0       ??_C@_1HI@LEHAKDOJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5@ 000144c0     main.obj
+ 0001:00003538       ??_C@_1JK@KIPOIAKE@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAg?$AAe?$AAt?$AA?5?$AAo?$AAn?$AAe?$AA?5?$AAo?$AAr@ 00014538     main.obj
+ 0001:000035d8       ??_C@_1GM@MEONHOHH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?5@ 000145d8     main.obj
+ 0001:00003648       ??_C@_1IG@BMNLJOJI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAL?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAA?$AAS?$AAF?$AA?5?$AAf?$AAi?$AAl?$AAe@ 00014648     main.obj
+ 0001:000036d0       ??_C@_1CE@CDBMBAPC@?$AAA?$AAS?$AAF?$AA?5?$AAW?$AAr?$AAi?$AAt?$AAe?$AAr?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?$AA@ 000146d0     main.obj
+ 0001:000036f8       ??_C@_1FK@NOMHPHHI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAN?$AAu?$AAl?$AAl?$AA?5?$AAs?$AAi?$AAn?$AAk?$AA?5?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAa?$AAd?$AAd?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAF?$AAi@ 000146f8     main.obj
+ 0001:00003758       ??_C@_1HK@FKGJFKEF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAL?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAn?$AAu?$AAl?$AAl?$AA?5?$AAs?$AAi?$AAn@ 00014758     main.obj
+ 0001:000037d4       ??_C@_1BE@JCJMHJOM@?$AAN?$AAu?$AAl?$AAl?$AA?5?$AAS?$AAi?$AAn?$AAk?$AA?$AA@ 000147d4     main.obj
+ 0001:000037e8       ??_C@_1HG@JGNECLDO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAL?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAr?$AAe@ 000147e8     main.obj
+ 0001:00003860       ??_C@_1BO@GCAPMCAD@?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?$AA@ 00014860     main.obj
+ 0001:00003880       ??_C@_1GC@KGMHEEIF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAE?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAa?$AAd?$AAd?$AAe?$AAd?$AA?5?$AAt@ 00014880     main.obj
+ 0001:000038e8       ??_C@_1IC@ECODKLOF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAL?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAe?$AAn@ 000148e8     main.obj
+ 0001:0000396c       ??_C@_1CK@DFFJPCMB@?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAE?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?$AA@ 0001496c     main.obj
+ 0001:00003998       ??_C@_1GE@GEPIEMPO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAa?$AAd?$AAd?$AAe?$AAd?$AA?5@ 00014998     main.obj
+ 0001:00003a00       ??_C@_1IE@FHFHMJJO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAL?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAs?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAg@ 00014a00     main.obj
+ 0001:00003a84       ??_C@_1BO@LGJFMGDC@?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?$AA@ 00014a84     main.obj
+ 0001:00003aa8       ??_C@_1IA@HENOGOJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAf?$AAi?$AAn?$AAd?$AA?5?$AAs?$AAt?$AAr?$AAe?$AAa@ 00014aa8     main.obj
+ 0001:00003b28       ??_C@_1FE@HJPFJPJI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAa?$AAp?$AAa?$AAb?$AAi?$AAl?$AAi?$AAt?$AAi?$AAe?$AAs?$AA?5?$AAo?$AAf?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAd?$AAr?$AAi?$AAv@ 00014b28     main.obj
+ 0001:00003b80       ??_C@_1GC@DPIBKDCK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAa?$AAd?$AAd?$AAe?$AAd?$AA?5?$AAt@ 00014b80     main.obj
+ 0001:00003be8       ??_C@_1IC@IOMDIAJN@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAL?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAv?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAc?$AAa@ 00014be8     main.obj
+ 0001:00003c6c       ??_C@_1CK@GIBAIKCK@?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?$AA@ 00014c6c     main.obj
+ 0001:00003c98       ??_C@_1II@PBOBAFEA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AA?5?$AAm@ 00014c98     main.obj
+ 0001:00003d20       ??_C@_1HK@LBLEMNBP@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AA?5?$AAr?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe@ 00014d20     main.obj
+ 0001:00003da0       ??_C@_1FO@KLOIFIHN@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAS?$AAe?$AAt?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe@ 00014da0     main.obj
+ 0001:00003e00       ??_C@_1EM@JHLGDMBI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AAd?$AA?5?$AAM?$AAe?$AAd?$AAi?$AAa?$AA?5?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAi?$AAn?$AAt?$AAe?$AAr?$AAf@ 00014e00     main.obj
+ 0001:00003e50       ??_C@_1IE@IKHFAEFA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AA?5?$AAM@ 00014e50     main.obj
+ 0001:00003ed8       ??_C@_1EK@JNCGHNHF@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AAd?$AA?5?$AAI?$AAB?$AAa?$AAs?$AAi?$AAc?$AAV?$AAi?$AAd?$AAe?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa@ 00014ed8     main.obj
+ 0001:00003f28       ??_C@_1IE@HJLDMHN@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AA?5?$AAI@ 00014f28     main.obj
+ 0001:00003fb0       ??_C@_1EO@MOECNOID@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AAd?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AA?5?$AAi?$AAn?$AAt?$AAe?$AAr@ 00014fb0     main.obj
+ 0001:00004000       ??_C@_1IG@IPIMPJOB@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AA?5?$AAI@ 00015000     main.obj
+ 0001:00004088       ??_C@_1FA@LKFJBGKO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAR?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AAd?$AA?5?$AAM?$AAe?$AAd?$AAi?$AAa?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?5?$AAi?$AAn?$AAt?$AAe@ 00015088     main.obj
+ 0001:000040d8       ??_C@_1II@EEAJMPBK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAt?$AAr?$AAi?$AAe?$AAv?$AAe?$AA?5?$AAM@ 000150d8     main.obj
+ 0001:00004160       ??_C@_1FM@FOMLMAIC@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAS?$AAe?$AAt?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AAg?$AAa?$AAp?$AAh?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd@ 00015160     main.obj
+ 0001:000041c0       ??_C@_1GI@NKIGBNIL@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAB?$AAu?$AAi?$AAl?$AAd?$AAe?$AAr@ 000151c0     main.obj
+ 0001:00004228       ??_C@_1KA@LNBNKA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAC?$AAa?$AAp@ 00015228     main.obj
+ 0001:000042c8       ??_C@_1EI@FBDGKFGO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAF?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5?$AAG?$AAr?$AAa?$AAp?$AAh?$AA?5?$AAi?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc?$AAe?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe@ 000152c8     main.obj
+ 0001:00004310       ??_C@_1IA@JHLCKHDB@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAF?$AAi?$AAl@ 00015310     main.obj
+ 0001:00004390       ??_C@_1DA@HCADHONK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAW?$AAM?$AA_?$AAT?$AAI?$AAM?$AAE?$AAR?$AA?5?$AAr?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00015390     main.obj
+ 0001:000043c0       ??_C@_1CO@MDPNPDOG@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAW?$AAM?$AA_?$AAQ?$AAU?$AAI?$AAT?$AA?5?$AAr?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 000153c0     main.obj
+ 0001:000043f0       ??_C@_1EI@ODIJLJBJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAT?$AAi?$AAm?$AAe?$AAr?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AAd?$AA?0?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$DN?$AA?$CF?$AAl?$AAd?$AA?5?$AAm@ 000153f0     main.obj
+ 0001:00004438       ??_C@_1DG@PJCEHOGN@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 00015438     main.obj
+ 0001:00004470       ??_C@_1DK@GHFFBGHJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAr?$AAe?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe?$AAs?$AA?4?$AA?4?$AA?4?$AA?$AN?$AA?6?$AA?$AA@ 00015470     main.obj
+ 0001:000044ac       ??_C@_1CO@DEHJCAGO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAK?$AAi?$AAl?$AAl?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAr?$AA?4?$AA?4?$AA?4?$AA?$AN?$AA?6?$AA?$AA@ 000154ac     main.obj
+ 0001:000044dc       ??_C@_1DA@DMNJPGKL@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAW?$AAM?$AA_?$AAC?$AAL?$AAO?$AAS?$AAE?$AA?5?$AAr?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 000154dc     main.obj
+ 0001:0000450c       ??_C@_1CE@CIFDMAGP@?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAC?$AAl?$AAa?$AAs?$AAs?$AA?$AA@ 0001550c     main.obj
+ 0001:00004530       ??_C@_1BK@HBLMHIPK@?$AAC?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAT?$AAe?$AAs?$AAt?$AA?$AA@ 00015530     main.obj
+ 0001:00004550       ??_C@_1HC@BKENFEAI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAe?$AAn?$AAc?$AAo?$AAd?$AAe@ 00015550     main.obj
+ 0001:000045c8       ??_C@_1FM@CAIIKAPO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAe?$AAt?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAe?$AAn?$AAc?$AAo?$AAd?$AAe?$AAr?$AA?5?$AAb?$AAi?$AAt?$AAr?$AAa?$AAt?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AA?$CF@ 000155c8     main.obj
+ 0001:00004628       ??_C@_1GK@JKPAGIDL@?$AAC?$AAa?$AAm?$AAe?$AAr?$AAa?$AAD?$AAS?$AAh?$AAo?$AAw?$AAA?$AAp?$AAp?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe@ 00015628     main.obj
+ 0001:00004698       ??_C@_1HE@IDGCOMCA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr@ 00015698     main.obj
+ 0001:00004710       ??_C@_1GG@IMLPEEE@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAe?$AAt?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAp?$AAa?$AAr?$AAa?$AAm?$AAe?$AAt?$AAe?$AAr?$AAs?$AA?5?$AAt@ 00015710     main.obj
+ 0001:00004778       ??_C@_1GG@CAFEFGBI@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAg?$AAe?$AAt?$AA?5?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AA?5@ 00015778     main.obj
+ 0001:000047e0       ??_C@_1FI@HIIFPNPK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAd?$AAd?$AA?5?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AAs@ 000157e0     main.obj
+ 0001:00004838       ??_C@_1EM@JLGDJPIO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAf?$AAi?$AAl?$AAt@ 00015838     main.obj
+ 0001:00004884       ??_C@_1CK@BHIJNBMN@?$AA?$CF?$AAs?$AA?3?$AAf?$AAi?$AAl?$AAe?$AA?5?$AAn?$AAa?$AAm?$AAe?$AA?5?$AAi?$AAs?$AA?5?$AA?$CF?$AAs?$AA?$AN?$AA?6?$AA?$AA@ 00015884     main.obj
+ 0001:000048b0       ??_C@_1BI@LEOEOAPM@?$AA?2?$AAH?$AAa?$AAr?$AAd?$AA?5?$AAD?$AAi?$AAs?$AAk?$AA?2?$AA?$AA@ 000158b0     main.obj
+ 0001:000048c8       ??_C@_1CC@HBMGPLJP@?$AA?2?$AAM?$AAo?$AAu?$AAn?$AAt?$AAe?$AAd?$AA?5?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?2?$AA?$AA@ 000158c8     main.obj
+ 0001:000048ec       ??_C@_1BO@FIJEGPLD@?$AA?2?$AAS?$AAt?$AAo?$AAr?$AAa?$AAg?$AAe?$AA?5?$AAC?$AAa?$AAr?$AAd?$AA?2?$AA?$AA@ 000158ec     main.obj
+ 0001:00004910       ??_C@_1FG@KBLELHEK@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAf?$AAi?$AAl?$AAt@ 00015910     main.obj
+ 0001:00004968       ??_C@_1GE@FEFENNIG@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAi?$AAn?$AAg?$AA?5?$AAC?$AAO?$AAM?$AA?5?$AAi?$AAn?$AAt?$AAe?$AAr@ 00015968     main.obj
+ 0001:000049d0       ??_C@_1GI@DDAKOCCA@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAN?$AAe?$AAi?$AAt?$AAh?$AAe?$AAr?$AA?5?$AAc?$AAa?$AAp?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAn?$AAo?$AAr?$AA?5?$AAp@ 000159d0     main.obj
+ 0001:00004a38       IID_IPropertyBag           00015a38     uuid:ocidl_i_guid36.obj
+ 0001:00004a48       LIBID_QuartzTypeLib        00015a48     strmiids:strmguid.obj
+ 0001:00004a58       IID_IAMCollection          00015a58     strmiids:strmguid.obj
+ 0001:00004a68       IID_IMediaControl          00015a68     strmiids:strmguid.obj
+ 0001:00004a78       IID_IMediaEvent            00015a78     strmiids:strmguid.obj
+ 0001:00004a88       IID_IMediaEventEx          00015a88     strmiids:strmguid.obj
+ 0001:00004a98       IID_IMediaPosition         00015a98     strmiids:strmguid.obj
+ 0001:00004aa8       IID_IBasicAudio            00015aa8     strmiids:strmguid.obj
+ 0001:00004ab8       IID_IVideoWindow           00015ab8     strmiids:strmguid.obj
+ 0001:00004ac8       IID_IBasicVideo            00015ac8     strmiids:strmguid.obj
+ 0001:00004ad8       IID_IBasicVideo2           00015ad8     strmiids:strmguid.obj
+ 0001:00004ae8       IID_IDeferredCommand       00015ae8     strmiids:strmguid.obj
+ 0001:00004af8       IID_IQueueCommand          00015af8     strmiids:strmguid.obj
+ 0001:00004b08       CLSID_FilgraphManager      00015b08     strmiids:strmguid.obj
+ 0001:00004b18       IID_IFilterInfo            00015b18     strmiids:strmguid.obj
+ 0001:00004b28       IID_IRegFilterInfo         00015b28     strmiids:strmguid.obj
+ 0001:00004b38       IID_IMediaTypeInfo         00015b38     strmiids:strmguid.obj
+ 0001:00004b48       IID_IPinInfo               00015b48     strmiids:strmguid.obj
+ 0001:00004b58       MEDIASUBTYPE_None          00015b58     strmiids:strmguid.obj
+ 0001:00004b68       MEDIATYPE_Video            00015b68     strmiids:strmguid.obj
+ 0001:00004b78       MEDIATYPE_Audio            00015b78     strmiids:strmguid.obj
+ 0001:00004b88       MEDIATYPE_VideoBuffered    00015b88     strmiids:strmguid.obj
+ 0001:00004b98       MEDIATYPE_AudioBuffered    00015b98     strmiids:strmguid.obj
+ 0001:00004ba8       MEDIATYPE_Text             00015ba8     strmiids:strmguid.obj
+ 0001:00004bb8       MEDIATYPE_Midi             00015bb8     strmiids:strmguid.obj
+ 0001:00004bc8       MEDIATYPE_Stream           00015bc8     strmiids:strmguid.obj
+ 0001:00004bd8       MEDIATYPE_Interleaved      00015bd8     strmiids:strmguid.obj
+ 0001:00004be8       MEDIATYPE_File             00015be8     strmiids:strmguid.obj
+ 0001:00004bf8       MEDIATYPE_ScriptCommand    00015bf8     strmiids:strmguid.obj
+ 0001:00004c08       MEDIATYPE_AUXLine21Data    00015c08     strmiids:strmguid.obj
+ 0001:00004c18       MEDIATYPE_Timecode         00015c18     strmiids:strmguid.obj
+ 0001:00004c28       MEDIATYPE_LMRT             00015c28     strmiids:strmguid.obj
+ 0001:00004c38       MEDIATYPE_URL_STREAM       00015c38     strmiids:strmguid.obj
+ 0001:00004c48       MEDIASUBTYPE_YVU9          00015c48     strmiids:strmguid.obj
+ 0001:00004c58       MEDIASUBTYPE_Y411          00015c58     strmiids:strmguid.obj
+ 0001:00004c68       MEDIASUBTYPE_Y41P          00015c68     strmiids:strmguid.obj
+ 0001:00004c78       MEDIASUBTYPE_YUY2          00015c78     strmiids:strmguid.obj
+ 0001:00004c88       MEDIASUBTYPE_YVYU          00015c88     strmiids:strmguid.obj
+ 0001:00004c98       MEDIASUBTYPE_UYVY          00015c98     strmiids:strmguid.obj
+ 0001:00004ca8       MEDIASUBTYPE_Y211          00015ca8     strmiids:strmguid.obj
+ 0001:00004cb8       MEDIASUBTYPE_YV12          00015cb8     strmiids:strmguid.obj
+ 0001:00004cc8       MEDIASUBTYPE_YV16          00015cc8     strmiids:strmguid.obj
+ 0001:00004cd8       MEDIASUBTYPE_IUYV          00015cd8     strmiids:strmguid.obj
+ 0001:00004ce8       MEDIASUBTYPE_NV12          00015ce8     strmiids:strmguid.obj
+ 0001:00004cf8       MEDIASUBTYPE_I420          00015cf8     strmiids:strmguid.obj
+ 0001:00004d08       MEDIASUBTYPE_IYUV          00015d08     strmiids:strmguid.obj
+ 0001:00004d18       MEDIASUBTYPE_CLJR          00015d18     strmiids:strmguid.obj
+ 0001:00004d28       MEDIASUBTYPE_IF09          00015d28     strmiids:strmguid.obj
+ 0001:00004d38       MEDIASUBTYPE_CPLA          00015d38     strmiids:strmguid.obj
+ 0001:00004d48       MEDIASUBTYPE_MJPG          00015d48     strmiids:strmguid.obj
+ 0001:00004d58       MEDIASUBTYPE_TVMJ          00015d58     strmiids:strmguid.obj
+ 0001:00004d68       MEDIASUBTYPE_WAKE          00015d68     strmiids:strmguid.obj
+ 0001:00004d78       MEDIASUBTYPE_CFCC          00015d78     strmiids:strmguid.obj
+ 0001:00004d88       MEDIASUBTYPE_IJPG          00015d88     strmiids:strmguid.obj
+ 0001:00004d98       MEDIASUBTYPE_Plum          00015d98     strmiids:strmguid.obj
+ 0001:00004da8       MEDIASUBTYPE_DVCS          00015da8     strmiids:strmguid.obj
+ 0001:00004db8       MEDIASUBTYPE_DVSD          00015db8     strmiids:strmguid.obj
+ 0001:00004dc8       MEDIASUBTYPE_MDVF          00015dc8     strmiids:strmguid.obj
+ 0001:00004dd8       MEDIASUBTYPE_RGB1          00015dd8     strmiids:strmguid.obj
+ 0001:00004de8       MEDIASUBTYPE_RGB4          00015de8     strmiids:strmguid.obj
+ 0001:00004df8       MEDIASUBTYPE_RGB8          00015df8     strmiids:strmguid.obj
+ 0001:00004e08       MEDIASUBTYPE_RGB565        00015e08     strmiids:strmguid.obj
+ 0001:00004e18       MEDIASUBTYPE_RGB555        00015e18     strmiids:strmguid.obj
+ 0001:00004e28       MEDIASUBTYPE_RGB24         00015e28     strmiids:strmguid.obj
+ 0001:00004e38       MEDIASUBTYPE_RGB32         00015e38     strmiids:strmguid.obj
+ 0001:00004e48       MEDIASUBTYPE_Overlay       00015e48     strmiids:strmguid.obj
+ 0001:00004e58       MEDIASUBTYPE_MPEG1Packet   00015e58     strmiids:strmguid.obj
+ 0001:00004e68       MEDIASUBTYPE_MPEG1Payload  00015e68     strmiids:strmguid.obj
+ 0001:00004e78       MEDIASUBTYPE_MPEG1AudioPayload 00015e78     strmiids:strmguid.obj
+ 0001:00004e88       MEDIATYPE_MPEG1SystemStream 00015e88     strmiids:strmguid.obj
+ 0001:00004e98       MEDIASUBTYPE_MPEG1System   00015e98     strmiids:strmguid.obj
+ 0001:00004ea8       MEDIASUBTYPE_MPEG1VideoCD  00015ea8     strmiids:strmguid.obj
+ 0001:00004eb8       MEDIASUBTYPE_MPEG1Video    00015eb8     strmiids:strmguid.obj
+ 0001:00004ec8       MEDIASUBTYPE_MPEG1Audio    00015ec8     strmiids:strmguid.obj
+ 0001:00004ed8       MEDIASUBTYPE_Avi           00015ed8     strmiids:strmguid.obj
+ 0001:00004ee8       MEDIASUBTYPE_Asf           00015ee8     strmiids:strmguid.obj
+ 0001:00004ef8       MEDIASUBTYPE_QTMovie       00015ef8     strmiids:strmguid.obj
+ 0001:00004f08       MEDIASUBTYPE_QTRpza        00015f08     strmiids:strmguid.obj
+ 0001:00004f18       MEDIASUBTYPE_QTSmc         00015f18     strmiids:strmguid.obj
+ 0001:00004f28       MEDIASUBTYPE_QTRle         00015f28     strmiids:strmguid.obj
+ 0001:00004f38       MEDIASUBTYPE_QTJpeg        00015f38     strmiids:strmguid.obj
+ 0001:00004f48       MEDIASUBTYPE_PCMAudio_Obsolete 00015f48     strmiids:strmguid.obj
+ 0001:00004f58       MEDIASUBTYPE_PCM           00015f58     strmiids:strmguid.obj
+ 0001:00004f68       MEDIASUBTYPE_WAVE          00015f68     strmiids:strmguid.obj
+ 0001:00004f78       MEDIASUBTYPE_AU            00015f78     strmiids:strmguid.obj
+ 0001:00004f88       MEDIASUBTYPE_AIFF          00015f88     strmiids:strmguid.obj
+ 0001:00004f98       MEDIASUBTYPE_dvsd          00015f98     strmiids:strmguid.obj
+ 0001:00004fa8       MEDIASUBTYPE_dvhd          00015fa8     strmiids:strmguid.obj
+ 0001:00004fb8       MEDIASUBTYPE_dvsl          00015fb8     strmiids:strmguid.obj
+ 0001:00004fc8       MEDIASUBTYPE_Line21_BytePair 00015fc8     strmiids:strmguid.obj
+ 0001:00004fd8       MEDIASUBTYPE_Line21_GOPPacket 00015fd8     strmiids:strmguid.obj
+ 0001:00004fe8       MEDIASUBTYPE_Line21_VBIRawData 00015fe8     strmiids:strmguid.obj
+ 0001:00004ff8       MEDIASUBTYPE_DssVideo      00015ff8     strmiids:strmguid.obj
+ 0001:00005008       MEDIASUBTYPE_DssAudio      00016008     strmiids:strmguid.obj
+ 0001:00005018       MEDIASUBTYPE_VPVideo       00016018     strmiids:strmguid.obj
+ 0001:00005028       MEDIASUBTYPE_VPVBI         00016028     strmiids:strmguid.obj
+ 0001:00005038       IID_IAMCutListElement      00016038     strmiids:strmguid.obj
+ 0001:00005048       IID_IAMFileCutListElement  00016048     strmiids:strmguid.obj
+ 0001:00005058       IID_IAMVideoCutListElement 00016058     strmiids:strmguid.obj
+ 0001:00005068       IID_IAMAudioCutListElement 00016068     strmiids:strmguid.obj
+ 0001:00005078       CLSID_CutListSource        00016078     strmiids:strmguid.obj
+ 0001:00005088       IID_IStandardCutList       00016088     strmiids:strmguid.obj
+ 0001:00005098       IID_IFileClip              00016098     strmiids:strmguid.obj
+ 0001:000050a8       IID_ICutListGraphBuilder   000160a8     strmiids:strmguid.obj
+ 0001:000050b8       CLSID_CutListGraphBuilder  000160b8     strmiids:strmguid.obj
+ 0001:000050c8       CLSID_SimpleCutList        000160c8     strmiids:strmguid.obj
+ 0001:000050d8       CLSID_VideoFileClip        000160d8     strmiids:strmguid.obj
+ 0001:000050e8       CLSID_AudioFileClip        000160e8     strmiids:strmguid.obj
+ 0001:000050f8       CLSID_CutListCacheMemory   000160f8     strmiids:strmguid.obj
+ 0001:00005108       CLSID_VideoCapture         00016108     strmiids:strmguid.obj
+ 0001:00005118       CLSID_CaptureGraphBuilder  00016118     strmiids:strmguid.obj
+ 0001:00005128       CLSID_ProtoFilterGraph     00016128     strmiids:strmguid.obj
+ 0001:00005138       CLSID_SystemClock          00016138     strmiids:strmguid.obj
+ 0001:00005148       CLSID_FilterMapper         00016148     strmiids:strmguid.obj
+ 0001:00005158       CLSID_FilterGraph          00016158     strmiids:strmguid.obj
+ 0001:00005168       CLSID_FilterGraphNoThread  00016168     strmiids:strmguid.obj
+ 0001:00005178       CLSID_MPEG1Doc             00016178     strmiids:strmguid.obj
+ 0001:00005188       CLSID_VideoCDSource        00016188     strmiids:strmguid.obj
+ 0001:00005198       CLSID_VideoCDProxy         00016198     strmiids:strmguid.obj
+ 0001:000051a8       CLSID_VideoCDManager       000161a8     strmiids:strmguid.obj
+ 0001:000051b8       CLSID_GenericStreamer      000161b8     strmiids:strmguid.obj
+ 0001:000051c8       CLSID_FileSource           000161c8     strmiids:strmguid.obj
+ 0001:000051d8       CLSID_MPEG1PacketPlayer    000161d8     strmiids:strmguid.obj
+ 0001:000051e8       CLSID_MPEG1Splitter        000161e8     strmiids:strmguid.obj
+ 0001:000051f8       CLSID_MPEG2Splitter        000161f8     strmiids:strmguid.obj
+ 0001:00005208       CLSID_CMpegVideoCodec      00016208     strmiids:strmguid.obj
+ 0001:00005218       CLSID_CMpegAudioCodec      00016218     strmiids:strmguid.obj
+ 0001:00005228       CLSID_Mp3Dec               00016228     strmiids:strmguid.obj
+ 0001:00005238       CLSID_MjpegDec             00016238     strmiids:strmguid.obj
+ 0001:00005248       CLSID_TextRender           00016248     strmiids:strmguid.obj
+ 0001:00005258       CLSID_WAVEParser           00016258     strmiids:strmguid.obj
+ 0001:00005268       CLSID_MIDIParser           00016268     strmiids:strmguid.obj
+ 0001:00005278       CLSID_DMFilter             00016278     strmiids:strmguid.obj
+ 0001:00005288       CLSID_InfTee               00016288     strmiids:strmguid.obj
+ 0001:00005298       CLSID_AviSplitter          00016298     strmiids:strmguid.obj
+ 0001:000052a8       CLSID_AviReader            000162a8     strmiids:strmguid.obj
+ 0001:000052b8       CLSID_VfwCapture           000162b8     strmiids:strmguid.obj
+ 0001:000052c8       CLSID_CaptureProperties    000162c8     strmiids:strmguid.obj
+ 0001:000052d8       CLSID_FGControl            000162d8     strmiids:strmguid.obj
+ 0001:000052e8       CLSID_MOVReader            000162e8     strmiids:strmguid.obj
+ 0001:000052f8       CLSID_QuickTimeParser      000162f8     strmiids:strmguid.obj
+ 0001:00005308       CLSID_QTDec                00016308     strmiids:strmguid.obj
+ 0001:00005318       CLSID_AVIDoc               00016318     strmiids:strmguid.obj
+ 0001:00005328       CLSID_AVIDocWriter         00016328     strmiids:strmguid.obj
+ 0001:00005338       CLSID_VideoRenderer        00016338     strmiids:strmguid.obj
+ 0001:00005348       CLSID_Colour               00016348     strmiids:strmguid.obj
+ 0001:00005358       CLSID_Dither               00016358     strmiids:strmguid.obj
+ 0001:00005368       CLSID_ModexRenderer        00016368     strmiids:strmguid.obj
+ 0001:00005378       CLSID_AudioRender          00016378     strmiids:strmguid.obj
+ 0001:00005388       CLSID_AudioProperties      00016388     strmiids:strmguid.obj
+ 0001:00005398       CLSID_DSoundRender         00016398     strmiids:strmguid.obj
+ 0001:000053a8       CLSID_AudioCapture         000163a8     strmiids:strmguid.obj
+ 0001:000053b8       CLSID_AudioInputMixerProperties 000163b8     strmiids:strmguid.obj
+ 0001:000053c8       CLSID_AVIDec               000163c8     strmiids:strmguid.obj
+ 0001:000053d8       CLSID_AVIDraw              000163d8     strmiids:strmguid.obj
+ 0001:000053e8       CLSID_ACMWrapper           000163e8     strmiids:strmguid.obj
+ 0001:000053f8       CLSID_AsyncReader          000163f8     strmiids:strmguid.obj
+ 0001:00005408       CLSID_URLReader            00016408     strmiids:strmguid.obj
+ 0001:00005418       CLSID_PersistMonikerPID    00016418     strmiids:strmguid.obj
+ 0001:00005428       CLSID_AMovie               00016428     strmiids:strmguid.obj
+ 0001:00005438       CLSID_AVICo                00016438     strmiids:strmguid.obj
+ 0001:00005448       CLSID_FileWriter           00016448     strmiids:strmguid.obj
+ 0001:00005458       CLSID_AviDest              00016458     strmiids:strmguid.obj
+ 0001:00005468       CLSID_AsfMux               00016468     strmiids:strmguid.obj
+ 0001:00005478       CLSID_AviMuxProptyPage     00016478     strmiids:strmguid.obj
+ 0001:00005488       CLSID_AviMuxProptyPage1    00016488     strmiids:strmguid.obj
+ 0001:00005498       CLSID_AVIMIDIRender        00016498     strmiids:strmguid.obj
+ 0001:000054a8       CLSID_DVVideoCodec         000164a8     strmiids:strmguid.obj
+ 0001:000054b8       CLSID_DVVideoEnc           000164b8     strmiids:strmguid.obj
+ 0001:000054c8       CLSID_DVSplitter           000164c8     strmiids:strmguid.obj
+ 0001:000054d8       CLSID_DVMux                000164d8     strmiids:strmguid.obj
+ 0001:000054e8       CLSID_SeekingPassThru      000164e8     strmiids:strmguid.obj
+ 0001:000054f8       CLSID_Line21Decoder        000164f8     strmiids:strmguid.obj
+ 0001:00005508       CLSID_OverlayMixer         00016508     strmiids:strmguid.obj
+ 0001:00005518       CLSID_VBISurfaces          00016518     strmiids:strmguid.obj
+ 0001:00005528       CLSID_VBIDataRenderer      00016528     strmiids:strmguid.obj
+ 0001:00005538       CLSID_SystemDeviceEnum     00016538     strmiids:strmguid.obj
+ 0001:00005548       CLSID_CDeviceMoniker       00016548     strmiids:strmguid.obj
+ 0001:00005558       CLSID_VideoInputDeviceCategory 00016558     strmiids:strmguid.obj
+ 0001:00005568       CLSID_CVidCapClassManager  00016568     strmiids:strmguid.obj
+ 0001:00005578       CLSID_LegacyAmFilterCategory 00016578     strmiids:strmguid.obj
+ 0001:00005588       CLSID_CQzFilterClassManager 00016588     strmiids:strmguid.obj
+ 0001:00005598       CLSID_VideoCompressorCategory 00016598     strmiids:strmguid.obj
+ 0001:000055a8       CLSID_CIcmCoClassManager   000165a8     strmiids:strmguid.obj
+ 0001:000055b8       CLSID_AudioCompressorCategory 000165b8     strmiids:strmguid.obj
+ 0001:000055c8       CLSID_CAcmCoClassManager   000165c8     strmiids:strmguid.obj
+ 0001:000055d8       CLSID_AudioInputDeviceCategory 000165d8     strmiids:strmguid.obj
+ 0001:000055e8       CLSID_CWaveinClassManager  000165e8     strmiids:strmguid.obj
+ 0001:000055f8       CLSID_AudioRendererCategory 000165f8     strmiids:strmguid.obj
+ 0001:00005608       CLSID_CWaveOutClassManager 00016608     strmiids:strmguid.obj
+ 0001:00005618       CLSID_MidiRendererCategory 00016618     strmiids:strmguid.obj
+ 0001:00005628       CLSID_CMidiOutClassManager 00016628     strmiids:strmguid.obj
+ 0001:00005638       CLSID_TransmitCategory     00016638     strmiids:strmguid.obj
+ 0001:00005648       CLSID_DeviceControlCategory 00016648     strmiids:strmguid.obj
+ 0001:00005658       CLSID_ActiveMovieCategories 00016658     strmiids:strmguid.obj
+ 0001:00005668       CLSID_DVDHWDecodersCategory 00016668     strmiids:strmguid.obj
+ 0001:00005678       CLSID_FilterMapper2        00016678     strmiids:strmguid.obj
+ 0001:00005688       CLSID_MemoryAllocator      00016688     strmiids:strmguid.obj
+ 0001:00005698       CLSID_MediaPropertyBag     00016698     strmiids:strmguid.obj
+ 0001:000056a8       CLSID_DvdGraphBuilder      000166a8     strmiids:strmguid.obj
+ 0001:000056b8       CLSID_DVDNavigator         000166b8     strmiids:strmguid.obj
+ 0001:000056c8       CLSID_SmartTee             000166c8     strmiids:strmguid.obj
+ 0001:000056d8       CLSID_DMOWrapperFilter     000166d8     strmiids:strmguid.obj
+ 0001:000056e8       CLSID_WMVDec               000166e8     strmiids:strmguid.obj
+ 0001:000056f8       CLSID_BufferingFilter      000166f8     strmiids:strmguid.obj
+ 0001:00005708       FORMAT_None                00016708     strmiids:strmguid.obj
+ 0001:00005718       FORMAT_VideoInfo           00016718     strmiids:strmguid.obj
+ 0001:00005728       FORMAT_VideoInfo2          00016728     strmiids:strmguid.obj
+ 0001:00005738       FORMAT_WaveFormatEx        00016738     strmiids:strmguid.obj
+ 0001:00005748       FORMAT_MPEGVideo           00016748     strmiids:strmguid.obj
+ 0001:00005758       FORMAT_MPEGStreams         00016758     strmiids:strmguid.obj
+ 0001:00005768       FORMAT_DvInfo              00016768     strmiids:strmguid.obj
+ 0001:00005778       CLSID_DirectDrawProperties 00016778     strmiids:strmguid.obj
+ 0001:00005788       CLSID_PerformanceProperties 00016788     strmiids:strmguid.obj
+ 0001:00005798       CLSID_QualityProperties    00016798     strmiids:strmguid.obj
+ 0001:000057a8       IID_IBaseVideoMixer        000167a8     strmiids:strmguid.obj
+ 0001:000057b8       IID_IDirectDrawVideo       000167b8     strmiids:strmguid.obj
+ 0001:000057c8       IID_IQualProp              000167c8     strmiids:strmguid.obj
+ 0001:000057d8       CLSID_VPObject             000167d8     strmiids:strmguid.obj
+ 0001:000057e8       IID_IVPObject              000167e8     strmiids:strmguid.obj
+ 0001:000057f8       IID_IVPControl             000167f8     strmiids:strmguid.obj
+ 0001:00005808       CLSID_VPVBIObject          00016808     strmiids:strmguid.obj
+ 0001:00005818       IID_IVPVBIObject           00016818     strmiids:strmguid.obj
+ 0001:00005828       IID_IVPConfig              00016828     strmiids:strmguid.obj
+ 0001:00005838       IID_IVPNotify              00016838     strmiids:strmguid.obj
+ 0001:00005848       IID_IVPNotify2             00016848     strmiids:strmguid.obj
+ 0001:00005858       IID_IVPVBIConfig           00016858     strmiids:strmguid.obj
+ 0001:00005868       IID_IVPVBINotify           00016868     strmiids:strmguid.obj
+ 0001:00005878       IID_IMixerPinConfig        00016878     strmiids:strmguid.obj
+ 0001:00005888       IID_IMixerPinConfig2       00016888     strmiids:strmguid.obj
+ 0001:00005898       CLSID_ModexProperties      00016898     strmiids:strmguid.obj
+ 0001:000058a8       IID_IFullScreenVideo       000168a8     strmiids:strmguid.obj
+ 0001:000058b8       IID_IFullScreenVideoEx     000168b8     strmiids:strmguid.obj
+ 0001:000058c8       CLSID_DVDecPropertiesPage  000168c8     strmiids:strmguid.obj
+ 0001:000058d8       CLSID_DVEncPropertiesPage  000168d8     strmiids:strmguid.obj
+ 0001:000058e8       CLSID_DVMuxPropertyPage    000168e8     strmiids:strmguid.obj
+ 0001:000058f8       IID_IAMDirectSound         000168f8     strmiids:strmguid.obj
+ 0001:00005908       IID_IMpegAudioDecoder      00016908     strmiids:strmguid.obj
+ 0001:00005918       IID_IAMLine21Decoder       00016918     strmiids:strmguid.obj
+ 0001:00005928       FORMAT_AnalogVideo         00016928     strmiids:strmguid.obj
+ 0001:00005938       MEDIATYPE_AnalogVideo      00016938     strmiids:strmguid.obj
+ 0001:00005948       MEDIASUBTYPE_AnalogVideo_NTSC_M 00016948     strmiids:strmguid.obj
+ 0001:00005958       MEDIASUBTYPE_AnalogVideo_PAL_B 00016958     strmiids:strmguid.obj
+ 0001:00005968       MEDIASUBTYPE_AnalogVideo_PAL_D 00016968     strmiids:strmguid.obj
+ 0001:00005978       MEDIASUBTYPE_AnalogVideo_PAL_G 00016978     strmiids:strmguid.obj
+ 0001:00005988       MEDIASUBTYPE_AnalogVideo_PAL_H 00016988     strmiids:strmguid.obj
+ 0001:00005998       MEDIASUBTYPE_AnalogVideo_PAL_I 00016998     strmiids:strmguid.obj
+ 0001:000059a8       MEDIASUBTYPE_AnalogVideo_PAL_M 000169a8     strmiids:strmguid.obj
+ 0001:000059b8       MEDIASUBTYPE_AnalogVideo_PAL_N 000169b8     strmiids:strmguid.obj
+ 0001:000059c8       MEDIASUBTYPE_AnalogVideo_SECAM_B 000169c8     strmiids:strmguid.obj
+ 0001:000059d8       MEDIASUBTYPE_AnalogVideo_SECAM_D 000169d8     strmiids:strmguid.obj
+ 0001:000059e8       MEDIASUBTYPE_AnalogVideo_SECAM_G 000169e8     strmiids:strmguid.obj
+ 0001:000059f8       MEDIASUBTYPE_AnalogVideo_SECAM_H 000169f8     strmiids:strmguid.obj
+ 0001:00005a08       MEDIASUBTYPE_AnalogVideo_SECAM_K 00016a08     strmiids:strmguid.obj
+ 0001:00005a18       MEDIASUBTYPE_AnalogVideo_SECAM_K1 00016a18     strmiids:strmguid.obj
+ 0001:00005a28       MEDIASUBTYPE_AnalogVideo_SECAM_L 00016a28     strmiids:strmguid.obj
+ 0001:00005a38       MEDIATYPE_AnalogAudio      00016a38     strmiids:strmguid.obj
+ 0001:00005a48       MEDIATYPE_MPEG2_PACK       00016a48     strmiids:strmguid.obj
+ 0001:00005a58       MEDIATYPE_MPEG2_PES        00016a58     strmiids:strmguid.obj
+ 0001:00005a68       MEDIASUBTYPE_MPEG2_VIDEO   00016a68     strmiids:strmguid.obj
+ 0001:00005a78       FORMAT_MPEG2_VIDEO         00016a78     strmiids:strmguid.obj
+ 0001:00005a88       FORMAT_VIDEOINFO2          00016a88     strmiids:strmguid.obj
+ 0001:00005a98       MEDIASUBTYPE_MPEG2_PROGRAM 00016a98     strmiids:strmguid.obj
+ 0001:00005aa8       MEDIASUBTYPE_MPEG2_TRANSPORT 00016aa8     strmiids:strmguid.obj
+ 0001:00005ab8       MEDIASUBTYPE_MPEG2_AUDIO   00016ab8     strmiids:strmguid.obj
+ 0001:00005ac8       MEDIASUBTYPE_DOLBY_AC3     00016ac8     strmiids:strmguid.obj
+ 0001:00005ad8       MEDIASUBTYPE_DVD_SUBPICTURE 00016ad8     strmiids:strmguid.obj
+ 0001:00005ae8       MEDIASUBTYPE_DVD_LPCM_AUDIO 00016ae8     strmiids:strmguid.obj
+ 0001:00005af8       MEDIATYPE_DVD_ENCRYPTED_PACK 00016af8     strmiids:strmguid.obj
+ 0001:00005b08       MEDIATYPE_DVD_NAVIGATION   00016b08     strmiids:strmguid.obj
+ 0001:00005b18       MEDIASUBTYPE_DVD_NAVIGATION_PCI 00016b18     strmiids:strmguid.obj
+ 0001:00005b28       MEDIASUBTYPE_DVD_NAVIGATION_DSI 00016b28     strmiids:strmguid.obj
+ 0001:00005b38       MEDIASUBTYPE_DVD_NAVIGATION_PROVIDER 00016b38     strmiids:strmguid.obj
+ 0001:00005b48       FORMAT_MPEG2Video          00016b48     strmiids:strmguid.obj
+ 0001:00005b58       FORMAT_DolbyAC3            00016b58     strmiids:strmguid.obj
+ 0001:00005b68       FORMAT_MPEG2Audio          00016b68     strmiids:strmguid.obj
+ 0001:00005b78       FORMAT_DVD_LPCMAudio       00016b78     strmiids:strmguid.obj
+ 0001:00005b88       AM_KSPROPSETID_AC3         00016b88     strmiids:strmguid.obj
+ 0001:00005b98       AM_KSPROPSETID_DvdSubPic   00016b98     strmiids:strmguid.obj
+ 0001:00005ba8       AM_KSPROPSETID_CopyProt    00016ba8     strmiids:strmguid.obj
+ 0001:00005bb8       AM_KSPROPSETID_TSRateChange 00016bb8     strmiids:strmguid.obj
+ 0001:00005bc8       AM_KSPROPSETID_RendererPosition 00016bc8     strmiids:strmguid.obj
+ 0001:00005bd8       AM_KSCATEGORY_CAPTURE      00016bd8     strmiids:strmguid.obj
+ 0001:00005be8       AM_KSCATEGORY_RENDER       00016be8     strmiids:strmguid.obj
+ 0001:00005bf8       AM_KSCATEGORY_DATACOMPRESSOR 00016bf8     strmiids:strmguid.obj
+ 0001:00005c08       AM_KSCATEGORY_AUDIO        00016c08     strmiids:strmguid.obj
+ 0001:00005c18       AM_KSCATEGORY_VIDEO        00016c18     strmiids:strmguid.obj
+ 0001:00005c28       AM_KSCATEGORY_TVTUNER      00016c28     strmiids:strmguid.obj
+ 0001:00005c38       AM_KSCATEGORY_CROSSBAR     00016c38     strmiids:strmguid.obj
+ 0001:00005c48       AM_KSCATEGORY_TVAUDIO      00016c48     strmiids:strmguid.obj
+ 0001:00005c58       AM_KSCATEGORY_VBICODEC     00016c58     strmiids:strmguid.obj
+ 0001:00005c68       AM_KSCATEGORY_SPLITTER     00016c68     strmiids:strmguid.obj
+ 0001:00005c78       IID_IKsInterfaceHandler    00016c78     strmiids:strmguid.obj
+ 0001:00005c88       IID_IKsDataTypeHandler     00016c88     strmiids:strmguid.obj
+ 0001:00005c98       IID_IKsPin                 00016c98     strmiids:strmguid.obj
+ 0001:00005ca8       IID_IKsControl             00016ca8     strmiids:strmguid.obj
+ 0001:00005cb8       IID_IKsPinFactory          00016cb8     strmiids:strmguid.obj
+ 0001:00005cc8       AM_INTERFACESETID_Standard 00016cc8     strmiids:strmguid.obj
+ 0001:00005cd8       TIME_FORMAT_NONE           00016cd8     strmiids:strmguid.obj
+ 0001:00005ce8       TIME_FORMAT_FRAME          00016ce8     strmiids:strmguid.obj
+ 0001:00005cf8       TIME_FORMAT_BYTE           00016cf8     strmiids:strmguid.obj
+ 0001:00005d08       TIME_FORMAT_SAMPLE         00016d08     strmiids:strmguid.obj
+ 0001:00005d18       TIME_FORMAT_FIELD          00016d18     strmiids:strmguid.obj
+ 0001:00005d28       TIME_FORMAT_MEDIA_TIME     00016d28     strmiids:strmguid.obj
+ 0001:00005d38       AMPROPSETID_Pin            00016d38     strmiids:strmguid.obj
+ 0001:00005d48       PIN_CATEGORY_CAPTURE       00016d48     strmiids:strmguid.obj
+ 0001:00005d58       PIN_CATEGORY_PREVIEW       00016d58     strmiids:strmguid.obj
+ 0001:00005d68       PIN_CATEGORY_ANALOGVIDEOIN 00016d68     strmiids:strmguid.obj
+ 0001:00005d78       PIN_CATEGORY_VBI           00016d78     strmiids:strmguid.obj
+ 0001:00005d88       PIN_CATEGORY_VIDEOPORT     00016d88     strmiids:strmguid.obj
+ 0001:00005d98       PIN_CATEGORY_NABTS         00016d98     strmiids:strmguid.obj
+ 0001:00005da8       PIN_CATEGORY_EDS           00016da8     strmiids:strmguid.obj
+ 0001:00005db8       PIN_CATEGORY_TELETEXT      00016db8     strmiids:strmguid.obj
+ 0001:00005dc8       PIN_CATEGORY_CC            00016dc8     strmiids:strmguid.obj
+ 0001:00005dd8       PIN_CATEGORY_STILL         00016dd8     strmiids:strmguid.obj
+ 0001:00005de8       PIN_CATEGORY_TIMECODE      00016de8     strmiids:strmguid.obj
+ 0001:00005df8       PIN_CATEGORY_VIDEOPORT_VBI 00016df8     strmiids:strmguid.obj
+ 0001:00005e08       LOOK_UPSTREAM_ONLY         00016e08     strmiids:strmguid.obj
+ 0001:00005e18       LOOK_DOWNSTREAM_ONLY       00016e18     strmiids:strmguid.obj
+ 0001:00005e28       CLSID_TVTunerFilterPropertyPage 00016e28     strmiids:strmguid.obj
+ 0001:00005e38       CLSID_CrossbarFilterPropertyPage 00016e38     strmiids:strmguid.obj
+ 0001:00005e48       CLSID_TVAudioFilterPropertyPage 00016e48     strmiids:strmguid.obj
+ 0001:00005e58       CLSID_VideoProcAmpPropertyPage 00016e58     strmiids:strmguid.obj
+ 0001:00005e68       CLSID_CameraControlPropertyPage 00016e68     strmiids:strmguid.obj
+ 0001:00005e78       CLSID_AnalogVideoDecoderPropertyPage 00016e78     strmiids:strmguid.obj
+ 0001:00005e88       CLSID_VideoStreamConfigPropertyPage 00016e88     strmiids:strmguid.obj
+ 0001:00005e98       IID_IIPDVDec               00016e98     strmiids:strmguid.obj
+ 0001:00005ea8       CLSID_OverlayMixer2        00016ea8     strmiids:strmguid.obj
+ 0001:00005eb8       CLSID_ScriptCommandRenderer 00016eb8     strmiids:strmguid.obj
+ 0001:00005ec8       IID_IScriptCommandRenderer 00016ec8     strmiids:strmguid.obj
+ 0001:00005ed8       CLSID_FileRend             00016ed8     strmiids:strmguid.obj
+ 0001:00005ee8       CLSID_MultFile             00016ee8     strmiids:strmguid.obj
+ 0001:00005ef8       CLSID_ASFWriter            00016ef8     strmiids:strmguid.obj
+ 0001:00005f08       CLSID_IMGSinkFilter        00016f08     strmiids:strmguid.obj
+ 0001:00005f18       AM_KSPROPSETID_FrameStep   00016f18     strmiids:strmguid.obj
+ 0001:00005f28       IID_IAMOpenProgress        00016f28     strmiids:strmguid.obj
+ 0001:00005f38       LIBID_QuartzNetTypeLib     00016f38     strmiids:strmguid.obj
+ 0001:00005f48       IID_IAMNetShowConfig       00016f48     strmiids:strmguid.obj
+ 0001:00005f58       IID_IAMChannelInfo         00016f58     strmiids:strmguid.obj
+ 0001:00005f68       IID_IAMNetworkStatus       00016f68     strmiids:strmguid.obj
+ 0001:00005f78       IID_IAMExtendedSeeking     00016f78     strmiids:strmguid.obj
+ 0001:00005f88       IID_IAMNetShowExProps      00016f88     strmiids:strmguid.obj
+ 0001:00005f98       IID_IAMExtendedErrorInfo   00016f98     strmiids:strmguid.obj
+ 0001:00005fa8       IID_IAMMediaContent        00016fa8     strmiids:strmguid.obj
+ 0001:00005fb8       IID_IAMMediaContent2       00016fb8     strmiids:strmguid.obj
+ 0001:00005fc8       IID_IAMMediaContentEx      00016fc8     strmiids:strmguid.obj
+ 0001:00005fd8       IID_IAMNetShowPreroll      00016fd8     strmiids:strmguid.obj
+ 0001:00005fe8       IID_IDShowPlugin           00016fe8     strmiids:strmguid.obj
+ 0001:00005ff8       IID_IAMSecureMediaContent  00016ff8     strmiids:strmguid.obj
+ 0001:00006008       IID_IPin                   00017008     strmiids:strmif_i.obj
+ 0001:00006018       IID_IEnumPins              00017018     strmiids:strmif_i.obj
+ 0001:00006028       IID_IEnumMediaTypes        00017028     strmiids:strmif_i.obj
+ 0001:00006038       IID_IFilterGraph           00017038     strmiids:strmif_i.obj
+ 0001:00006048       IID_IEnumFilters           00017048     strmiids:strmif_i.obj
+ 0001:00006058       IID_IMediaFilter           00017058     strmiids:strmif_i.obj
+ 0001:00006068       IID_IBaseFilter            00017068     strmiids:strmif_i.obj
+ 0001:00006078       IID_IReferenceClock        00017078     strmiids:strmif_i.obj
+ 0001:00006088       IID_IReferenceClock2       00017088     strmiids:strmif_i.obj
+ 0001:00006098       IID_IMediaSample           00017098     strmiids:strmif_i.obj
+ 0001:000060a8       IID_IMediaSample2          000170a8     strmiids:strmif_i.obj
+ 0001:000060b8       IID_IMemAllocator          000170b8     strmiids:strmif_i.obj
+ 0001:000060c8       IID_IMemAllocator2         000170c8     strmiids:strmif_i.obj
+ 0001:000060d8       IID_IMemInputPin           000170d8     strmiids:strmif_i.obj
+ 0001:000060e8       IID_IAMovieSetup           000170e8     strmiids:strmif_i.obj
+ 0001:000060f8       IID_IMediaSeeking          000170f8     strmiids:strmif_i.obj
+ 0001:00006108       IID_IAudioRenderer         00017108     strmiids:strmif_i.obj
+ 0001:00006118       IID_IAudioRendererWaveOut  00017118     strmiids:strmif_i.obj
+ 0001:00006128       IID_IEnumRegFilters        00017128     strmiids:strmif_i.obj
+ 0001:00006138       IID_IFilterMapper          00017138     strmiids:strmif_i.obj
+ 0001:00006148       IID_IQualityControl        00017148     strmiids:strmif_i.obj
+ 0001:00006158       IID_IOverlayNotify         00017158     strmiids:strmif_i.obj
+ 0001:00006168       IID_IOverlay               00017168     strmiids:strmif_i.obj
+ 0001:00006178       IID_IMediaEventSink        00017178     strmiids:strmif_i.obj
+ 0001:00006188       IID_IFileSourceFilter      00017188     strmiids:strmif_i.obj
+ 0001:00006198       IID_IFileSinkFilter        00017198     strmiids:strmif_i.obj
+ 0001:000061a8       IID_IFileSinkFilter2       000171a8     strmiids:strmif_i.obj
+ 0001:000061b8       IID_IFileAsyncIO           000171b8     strmiids:strmif_i.obj
+ 0001:000061c8       IID_IGraphBuilder          000171c8     strmiids:strmif_i.obj
+ 0001:000061d8       IID_ICaptureGraphBuilder   000171d8     strmiids:strmif_i.obj
+ 0001:000061e8       IID_IAMCopyCaptureFileProgress 000171e8     strmiids:strmif_i.obj
+ 0001:000061f8       IID_ICaptureGraphBuilder2  000171f8     strmiids:strmif_i.obj
+ 0001:00006208       IID_IFilterGraph2          00017208     strmiids:strmif_i.obj
+ 0001:00006218       IID_IStreamBuilder         00017218     strmiids:strmif_i.obj
+ 0001:00006228       IID_IAsyncReader           00017228     strmiids:strmif_i.obj
+ 0001:00006238       IID_IGraphVersion          00017238     strmiids:strmif_i.obj
+ 0001:00006248       IID_IResourceConsumer      00017248     strmiids:strmif_i.obj
+ 0001:00006258       IID_IResourceManager       00017258     strmiids:strmif_i.obj
+ 0001:00006268       IID_IDistributorNotify     00017268     strmiids:strmif_i.obj
+ 0001:00006278       IID_IAMStreamControl       00017278     strmiids:strmif_i.obj
+ 0001:00006288       IID_ISeekingPassThru       00017288     strmiids:strmif_i.obj
+ 0001:00006298       IID_IAMStreamConfig        00017298     strmiids:strmif_i.obj
+ 0001:000062a8       IID_IConfigInterleaving    000172a8     strmiids:strmif_i.obj
+ 0001:000062b8       IID_IConfigAviMux          000172b8     strmiids:strmif_i.obj
+ 0001:000062c8       IID_IAMVideoCompression    000172c8     strmiids:strmif_i.obj
+ 0001:000062d8       IID_IAMDroppedFrames       000172d8     strmiids:strmif_i.obj
+ 0001:000062e8       IID_IAMBufferNegotiation   000172e8     strmiids:strmif_i.obj
+ 0001:000062f8       IID_IAMVideoProcAmp        000172f8     strmiids:strmif_i.obj
+ 0001:00006308       IID_IAMCameraControl       00017308     strmiids:strmif_i.obj
+ 0001:00006318       IID_IAMVideoControl        00017318     strmiids:strmif_i.obj
+ 0001:00006328       IID_IAMCrossbar            00017328     strmiids:strmif_i.obj
+ 0001:00006338       IID_IAMTuner               00017338     strmiids:strmif_i.obj
+ 0001:00006348       IID_IAMTunerNotification   00017348     strmiids:strmif_i.obj
+ 0001:00006358       IID_IAMTVTuner             00017358     strmiids:strmif_i.obj
+ 0001:00006368       IID_IKsPropertySet         00017368     strmiids:strmif_i.obj
+ 0001:00006378       IID_IMediaPropertyBag      00017378     strmiids:strmif_i.obj
+ 0001:00006388       IID_IPersistMediaPropertyBag 00017388     strmiids:strmif_i.obj
+ 0001:00006398       IID_IAMPhysicalPinInfo     00017398     strmiids:strmif_i.obj
+ 0001:000063a8       IID_IAMExtDevice           000173a8     strmiids:strmif_i.obj
+ 0001:000063b8       IID_IAMExtTransport        000173b8     strmiids:strmif_i.obj
+ 0001:000063c8       IID_IAMTimecodeReader      000173c8     strmiids:strmif_i.obj
+ 0001:000063d8       IID_IAMTimecodeGenerator   000173d8     strmiids:strmif_i.obj
+ 0001:000063e8       IID_IAMTimecodeDisplay     000173e8     strmiids:strmif_i.obj
+ 0001:000063f8       IID_IAMDevMemoryAllocator  000173f8     strmiids:strmif_i.obj
+ 0001:00006408       IID_IAMDevMemoryControl    00017408     strmiids:strmif_i.obj
+ 0001:00006418       IID_IAMStreamSelect        00017418     strmiids:strmif_i.obj
+ 0001:00006428       IID_IAMResourceControl     00017428     strmiids:strmif_i.obj
+ 0001:00006438       IID_IAMClockAdjust         00017438     strmiids:strmif_i.obj
+ 0001:00006448       IID_IAMFilterMiscFlags     00017448     strmiids:strmif_i.obj
+ 0001:00006458       IID_IAMAudioRendererStats  00017458     strmiids:strmif_i.obj
+ 0001:00006468       IID_IAMVideoRendererMode   00017468     strmiids:strmif_i.obj
+ 0001:00006478       IID_ILanguageSelection     00017478     strmiids:strmif_i.obj
+ 0001:00006488       IID_IImageSinkFilter       00017488     strmiids:strmif_i.obj
+ 0001:00006498       IID_ISmartTee              00017498     strmiids:strmif_i.obj
+ 0001:000064a8       IID_IBuffering             000174a8     strmiids:strmif_i.obj
+ 0001:000064b8       IID_IAMCertifiedOutputProtection 000174b8     strmiids:strmif_i.obj
+ 0001:000064c8       IID_IVideoFrameStep        000174c8     strmiids:strmif_i.obj
+ 0001:000064d8       IID_IDvdControl            000174d8     strmiids:strmif_i.obj
+ 0001:000064e8       IID_IDvdInfo               000174e8     strmiids:strmif_i.obj
+ 0001:000064f8       IID_IDvdCmd                000174f8     strmiids:strmif_i.obj
+ 0001:00006508       IID_IDvdState              00017508     strmiids:strmif_i.obj
+ 0001:00006518       IID_IDvdControl2           00017518     strmiids:strmif_i.obj
+ 0001:00006528       IID_IDvdInfo2              00017528     strmiids:strmif_i.obj
+ 0001:00006538       IID_IDvdGraphBuilder       00017538     strmiids:strmif_i.obj
+ 0001:00006548       IID_IDDrawExclModeVideo    00017548     strmiids:strmif_i.obj
+ 0001:00006558       IID_IDDrawExclModeVideoCallback 00017558     strmiids:strmif_i.obj
+ 0001:00006568       ??_C@_1BA@HABJOAEE@?$AAU?$AAN?$AAK?$AAN?$AAO?$AAW?$AAN?$AA?$AA@ 00017568     strmbase:amvideo.obj
+ 0001:00006578       ??_C@_1BA@LBOLBFDJ@?$AAO?$AAv?$AAe?$AAr?$AAl?$AAa?$AAy?$AA?$AA@ 00017578     strmbase:amvideo.obj
+ 0001:00006588       ??_C@_1O@BHCPCHJF@?$AAR?$AAG?$AAB?$AA?5?$AA3?$AA2?$AA?$AA@ 00017588     strmbase:amvideo.obj
+ 0001:00006598       ??_C@_1O@PJBIKLOM@?$AAR?$AAG?$AAB?$AA?5?$AA2?$AA4?$AA?$AA@ 00017598     strmbase:amvideo.obj
+ 0001:000065a8       ??_C@_1CC@CHFLHMKC@?$AAR?$AAG?$AAB?$AA?5?$AA5?$AA5?$AA5?$AA?5?$AA?$CI?$AA1?$AA6?$AA?5?$AAb?$AAi?$AAt?$AA?$CJ?$AA?$AA@ 000175a8     strmbase:amvideo.obj
+ 0001:000065cc       ??_C@_1CC@HPEFNFIK@?$AAR?$AAG?$AAB?$AA?5?$AA5?$AA6?$AA5?$AA?5?$AA?$CI?$AA1?$AA6?$AA?5?$AAb?$AAi?$AAt?$AA?$CJ?$AA?$AA@ 000175cc     strmbase:amvideo.obj
+ 0001:000065f0       ??_C@_1M@HBIHPBDC@?$AAR?$AAG?$AAB?$AA?5?$AA8?$AA?$AA@ 000175f0     strmbase:amvideo.obj
+ 0001:000065fc       ??_C@_1BA@EJHANBOO@?$AAR?$AAG?$AAB?$AA?5?$AAV?$AAG?$AAA?$AA?$AA@ 000175fc     strmbase:amvideo.obj
+ 0001:0000660c       ??_C@_1BO@BGHCKFGI@?$AAR?$AAG?$AAB?$AA?5?$AAM?$AAo?$AAn?$AAo?$AAc?$AAh?$AAr?$AAo?$AAm?$AAe?$AA?$AA@ 0001760c     strmbase:amvideo.obj
+ 0001:00006630       ?bits555@@3QBKB            00017630     strmbase:amvideo.obj
+ 0001:0000663c       ?bits565@@3QBKB            0001763c     strmbase:amvideo.obj
+ 0001:00006648       ?bits888@@3QBKB            00017648     strmbase:amvideo.obj
+ 0001:000066c4       GUID_NULL                  000176c4     uuid:cguid_i_guid0.obj
+ 0001:000066fc       ??1CPropertyBag@@QAA@XZ    000176fc f   propertybag.obj
+ 0001:00006744       ?Read@CPropertyBag@@UAAJPBGPAUtagVARIANT@@PAUIErrorLog@@@Z 00017744 f   propertybag.obj
+ 0001:0000679c       ?Write@CPropertyBag@@UAAJPBGPAUtagVARIANT@@@Z 0001779c f   propertybag.obj
+ 0001:00006838       ?AddRef@CPropertyBag@@UAAKXZ 00017838 f   propertybag.obj
+ 0001:0000684c       ?QueryInterface@CPropertyBag@@UAAJABU_GUID@@PAPAX@Z 0001784c f   propertybag.obj
+ 0001:000068c4       ?Release@CPropertyBag@@UAAKXZ 000178c4 f   propertybag.obj
+ 0001:00006900       ??0CPropertyBag@@QAA@XZ    00017900 f   propertybag.obj
+ 0001:00006920       ?AtlThrowImpl@ATL@@YAXJ@Z  00017920 f i main.obj
+ 0001:00006948       ?PrintCpuUsage@@YAXXZ      00017948 f   main.obj
+ 0001:000069e4       ?ComputeFrameStats@@YAXXZ  000179e4 f   main.obj
+ 0001:00006c6c       ?SampleCB@@YAXPAUIMediaSample@@@Z 00017c6c f   main.obj
+ 0001:00006c84       ?GetFirstCameraDriver@@YAJPAG@Z 00017c84 f   main.obj
+ 0001:00006df4       ?DumpMediaType@@YAXPAU_AMMediaType@@PAGI@Z 00017df4 f   main.obj
+ 0001:00007130       ?DumpStreamCaps@@YAXPAUIAMStreamConfig@@@Z 00018130 f   main.obj
+ 0001:000072b0       ?PrintUsage@@YAXXZ         000182b0 f   main.obj
+ 0001:000074d8       ?ParseCaptureParams@@YAHPAG@Z 000184d8 f   main.obj
+ 0001:00007578       ?ParseCommandLine@@YAXXZ   00018578 f   main.obj
+ 0001:00007a60       ??4CComVariant@ATL@@QAAAAV01@PBG@Z 00018a60 f i main.obj
+ 0001:00007abc       ?DumpStreamStats@@YAXXZ    00018abc f   main.obj
+ 0001:00007c24       ?SetCaptureParameters@@YAJXZ 00018c24 f   main.obj
+ 0001:00007d8c       ?SetEncoderParameters@@YAJXZ 00018d8c f   main.obj
+ 0001:00007eb0       ?SelectVideoCaptureDevice@@YAJXZ 00018eb0 f   main.obj
+ 0001:00008044       ?SelectVideoCaptureInput@@YAJXZ 00019044 f   main.obj
+ 0001:00008080       ?ReleaseVideoCaptureInterfaces@@YAXXZ 00019080 f   main.obj
+ 0001:000081c0       ?ReleaseVideoSource@@YAXXZ 000191c0 f   main.obj
+ 0001:0000822c       ?CreateVideoEncoder@@YAJXZ 0001922c f   main.obj
+ 0001:00008438       ?ReleaseVideoEncoder@@YAXXZ 00019438 f   main.obj
+ 0001:000084e0       ?CreateVideoRenderer@@YAJXZ 000194e0 f   main.obj
+ 0001:0000858c       ?ReleaseVideoRenderer@@YAXXZ 0001958c f   main.obj
+ 0001:000085f4       ?CreateGrabber@@YAJXZ      000195f4 f   main.obj
+ 0001:000087d4       ?ReleaseGrabber@@YAXXZ     000197d4 f   main.obj
+ 0001:00008868       ?CreateNullSink@@YAJXZ     00019868 f   main.obj
+ 0001:0000898c       ?ReleaseNullSink@@YAXXZ    0001998c f   main.obj
+ 0001:000089ec       ?ReleaseASFWriter@@YAXXZ   000199ec f   main.obj
+ 0001:00008a78       ?RemoveFiltersFromGraph@@YAJXZ 00019a78 f   main.obj
+ 0001:00008ce0       ?ReleaseInterfaces@@YAXXZ  00019ce0 f   main.obj
+ 0001:00008e60       ?ReleaseGraph@@YAXXZ       00019e60 f   main.obj
+ 0001:00008f08       ?RenderPreviewGraph@@YAJXZ 00019f08 f   main.obj
+ 0001:00008ff0       ?RenderCaptureGraph@@YAJXZ 00019ff0 f   main.obj
+ 0001:000091cc       ?RunGraph@@YAJXZ           0001a1cc f   main.obj
+ 0001:00009274       ?StopGraph@@YAJXZ          0001a274 f   main.obj
+ 0001:00009314       ?StartCapture@@YAJXZ       0001a314 f   main.obj
+ 0001:0000940c       ?StopCapture@@YAJXZ        0001a40c f   main.obj
+ 0001:000095f0       ?ProcessGraphMessage@@YAXXZ 0001a5f0 f   main.obj
+ 0001:000097ec       ?OnKeyDown@@YA_NPAUHWND__@@I@Z 0001a7ec f   main.obj
+ 0001:00009884       ?GetVideoCaptureInterfaces@@YAJXZ 0001a884 f   main.obj
+ 0001:00009b0c       ?CreateVideoSource@@YAJXZ  0001ab0c f   main.obj
+ 0001:00009c68       ?CreateASFWriter@@YAJPBG@Z 0001ac68 f   main.obj
+ 0001:00009cf8       ?CreateFilters@@YAJPBG@Z   0001acf8 f   main.obj
+ 0001:00009d9c       ?AddFiltersToGraph@@YAJXZ  0001ad9c f   main.obj
+ 0001:0000a0bc       ?FindInterfaces@@YAJXZ     0001b0bc f   main.obj
+ 0001:0000a338       ?CreateGraph@@YAJXZ        0001b338 f   main.obj
+ 0001:0000a698       ?MainWindowProc@@YAJPAUHWND__@@IIJ@Z 0001b698 f   main.obj
+ 0001:0000aad8       ?CreateMainWindow@@YA_NPBG@Z 0001bad8 f   main.obj
+ 0001:0000ac84       WinMain                    0001bc84 f   main.obj
+ 0001:0000b110       InterlockedIncrement       0001c110 f   coredll:COREDLL.dll
+ 0001:0000b120       InterlockedDecrement       0001c120 f   coredll:COREDLL.dll
+ 0001:0000b130       RaiseException             0001c130 f   coredll:COREDLL.dll
+ 0001:0000b140       NKDbgPrintfW               0001c140 f   coredll:COREDLL.dll
+ 0001:0000b150       GetIdleTime                0001c150 f   coredll:COREDLL.dll
+ 0001:0000b160       GetTickCount               0001c160 f   coredll:COREDLL.dll
+ 0001:0000b170       FindClose                  0001c170 f   coredll:COREDLL.dll
+ 0001:0000b180       GetLastError               0001c180 f   coredll:COREDLL.dll
+ 0001:0000b190       StringCchCopyW             0001c190 f   coredll:COREDLL.dll
+ 0001:0000b1a0       FindFirstDevice            0001c1a0 f   coredll:COREDLL.dll
+ 0001:0000b1b0       GetCommandLineW            0001c1b0 f   coredll:COREDLL.dll
+ 0001:0000b1c0       Sleep                      0001c1c0 f   coredll:COREDLL.dll
+ 0001:0000b1d0       PostMessageW               0001c1d0 f   coredll:COREDLL.dll
+ 0001:0000b1e0       GetKeyState                0001c1e0 f   coredll:COREDLL.dll
+ 0001:0000b1f0       DefWindowProcW             0001c1f0 f   coredll:COREDLL.dll
+ 0001:0000b200       SetTimer                   0001c200 f   coredll:COREDLL.dll
+ 0001:0000b210       GetClientRect              0001c210 f   coredll:COREDLL.dll
+ 0001:0000b220       PostQuitMessage            0001c220 f   coredll:COREDLL.dll
+ 0001:0000b230       DestroyWindow              0001c230 f   coredll:COREDLL.dll
+ 0001:0000b240       KillTimer                  0001c240 f   coredll:COREDLL.dll
+ 0001:0000b250       CreateWindowExW            0001c250 f   coredll:COREDLL.dll
+ 0001:0000b260       SystemParametersInfoW      0001c260 f   coredll:COREDLL.dll
+ 0001:0000b270       RegisterClassW             0001c270 f   coredll:COREDLL.dll
+ 0001:0000b280       CreateSolidBrush           0001c280 f   coredll:COREDLL.dll
+ 0001:0000b290       CloseHandle                0001c290 f   coredll:COREDLL.dll
+ 0001:0000b2a0       WaitForSingleObject        0001c2a0 f   coredll:COREDLL.dll
+ 0001:0000b2b0       GetMessageW                0001c2b0 f   coredll:COREDLL.dll
+ 0001:0000b2c0       DispatchMessageW           0001c2c0 f   coredll:COREDLL.dll
+ 0001:0000b2d0       TranslateMessage           0001c2d0 f   coredll:COREDLL.dll
+ 0001:0000b2e0       UpdateWindow               0001c2e0 f   coredll:COREDLL.dll
+ 0001:0000b2f0       ShowWindow                 0001c2f0 f   coredll:COREDLL.dll
+ 0001:0000b300       CreateThread               0001c300 f   coredll:COREDLL.dll
+ 0001:0000b310       RegisterDbgZones           0001c310 f   coredll:COREDLL.dll
+ 0001:0000b320       SysFreeString              0001c320 f   Oleaut32:OLEAUT32.dll
+ 0001:0000b330       VariantClear               0001c330 f   Oleaut32:OLEAUT32.dll
+ 0001:0000b340       VariantCopy                0001c340 f   Oleaut32:OLEAUT32.dll
+ 0001:0000b350       SysAllocString             0001c350 f   Oleaut32:OLEAUT32.dll
+ 0001:0000b360       VariantInit                0001c360 f   Oleaut32:OLEAUT32.dll
+ 0001:0000b370       CoUninitialize             0001c370 f   ole32:ole32.dll
+ 0001:0000b380       CoInitializeEx             0001c380 f   ole32:ole32.dll
+ 0001:0000b390       CoCreateInstance           0001c390 f   ole32:ole32.dll
+ 0001:0000b3a0       ?FreeMediaType@@YAXAAU_AMMediaType@@@Z 0001c3a0 f   strmbase:mtype.obj
+ 0001:0000b3f0       ?DeleteMediaType@@YAXPAU_AMMediaType@@@Z 0001c3f0 f   strmbase:mtype.obj
+ 0001:0000b494       WinMainCRTStartup          0001c494 f   corelib0:pegwmain.obj
+ 0001:0000b4c8       __GSHandlerCheckCommon     0001c4c8 f   corelib0:gshandler.obj
+ 0001:0000b504       __GSHandlerCheck           0001c504 f   corelib0:gshandler.obj
+ 0001:0000b528       __security_init_cookie     0001c528 f   corelib0:seccinit.obj
+ 0001:0000b584       __security_check_cookie    0001c584 f   corelib0:armsecgs.obj
+ 0001:0000b598       __gsfailure                0001c598 f   corelib0:armsecgs.obj
+ 0001:0000b6d8       exit                       0001c6d8 f   corelib0:cexit.obj
+ 0001:0000b6f0       _exit                      0001c6f0 f   corelib0:cexit.obj
+ 0001:0000b738       _onexit                    0001c738 f   corelib0:onexit.obj
+ 0001:0000b8c0       atexit                     0001c8c0 f   corelib0:onexit.obj
+ 0001:0000b8e0       _initterm                  0001c8e0 f   corelib0:crt0dat.obj
+ 0001:0000b914       _cinit                     0001c914 f   corelib0:crt0dat.obj
+ 0001:0000b948       memcmp                     0001c948 f   corelib1:COREDLL.dll
+ 0001:0000b958       ??3@YAXPAX@Z               0001c958 f   corelib1:COREDLL.dll
+ 0001:0000b968       wcscmp                     0001c968 f   corelib1:COREDLL.dll
+ 0001:0000b978       ??2@YAPAXI@Z               0001c978 f   corelib1:COREDLL.dll
+ 0001:0000b988       memset                     0001c988 f   corelib1:COREDLL.dll
+ 0001:0000b998       __rt_udiv                  0001c998 f   corelib1:COREDLL.dll
+ 0001:0000b9a8       __rt_sdiv64by64            0001c9a8 f   corelib1:COREDLL.dll
+ 0001:0000b9b8       __rt_srem64by64            0001c9b8 f   corelib1:COREDLL.dll
+ 0001:0000b9c8       _snwprintf                 0001c9c8 f   corelib1:COREDLL.dll
+ 0001:0000b9d8       __rt_sdiv                  0001c9d8 f   corelib1:COREDLL.dll
+ 0001:0000b9e8       wcscpy                     0001c9e8 f   corelib1:COREDLL.dll
+ 0001:0000b9f8       _wtol                      0001c9f8 f   corelib1:COREDLL.dll
+ 0001:0000ba08       wcstok                     0001ca08 f   corelib1:COREDLL.dll
+ 0001:0000ba18       wcsncpy                    0001ca18 f   corelib1:COREDLL.dll
+ 0001:0000ba28       wcscat                     0001ca28 f   corelib1:COREDLL.dll
+ 0001:0000ba38       _XcptFilter                0001ca38 f   corelib1:COREDLL.dll
+ 0001:0000ba48       __C_specific_handler       0001ca48 f   corelib1:COREDLL.dll
+ 0001:0000ba58       __security_gen_cookie2     0001ca58 f   corelib1:COREDLL.dll
+ 0001:0000ba68       __report_gsfailure         0001ca68 f   corelib1:COREDLL.dll
+ 0001:0000ba78       free                       0001ca78 f   corelib1:COREDLL.dll
+ 0001:0000ba88       malloc                     0001ca88 f   corelib1:COREDLL.dll
+ 0001:0000ba98       realloc                    0001ca98 f   corelib1:COREDLL.dll
+ 0001:0000baa8       _msize                     0001caa8 f   corelib1:COREDLL.dll
+ 0001:0000bab8       DeleteCriticalSection      0001cab8 f   coredll:COREDLL.dll
+ 0001:0000bac8       InterlockedExchange        0001cac8 f   coredll:COREDLL.dll
+ 0001:0000bad8       TerminateProcess           0001cad8 f   coredll:COREDLL.dll
+ 0001:0000bae8       EnterCriticalSection       0001cae8 f   coredll:COREDLL.dll
+ 0001:0000baf8       InterlockedCompareExchange 0001caf8 f   coredll:COREDLL.dll
+ 0001:0000bb08       InitializeCriticalSection  0001cb08 f   coredll:COREDLL.dll
+ 0001:0000bb18       LeaveCriticalSection       0001cb18 f   coredll:COREDLL.dll
+ 0001:0000bb28       CoTaskMemFree              0001cb28 f   ole32:ole32.dll
+ 0001:0000c260       __IMPORT_DESCRIPTOR_COREDLL 0001d260     coredll:COREDLL.dll
+ 0001:0000c274       __IMPORT_DESCRIPTOR_OLEAUT32 0001d274     Oleaut32:OLEAUT32.dll
+ 0001:0000c288       __IMPORT_DESCRIPTOR_ole32  0001d288     ole32:ole32.dll
+ 0001:0000c29c       __NULL_IMPORT_DESCRIPTOR   0001d29c     coredll:COREDLL.dll
+ 0002:00000000       __imp_InterlockedIncrement 0001e000     coredll:COREDLL.dll
+ 0002:00000004       __imp_InterlockedDecrement 0001e004     coredll:COREDLL.dll
+ 0002:00000008       __imp_RaiseException       0001e008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_NKDbgPrintfW         0001e00c     coredll:COREDLL.dll
+ 0002:00000010       __imp_GetIdleTime          0001e010     coredll:COREDLL.dll
+ 0002:00000014       __imp_GetTickCount         0001e014     coredll:COREDLL.dll
+ 0002:00000018       __imp_FindClose            0001e018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_GetLastError         0001e01c     coredll:COREDLL.dll
+ 0002:00000020       __imp_StringCchCopyW       0001e020     coredll:COREDLL.dll
+ 0002:00000024       __imp_FindFirstDevice      0001e024     coredll:COREDLL.dll
+ 0002:00000028       __imp_GetCommandLineW      0001e028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_Sleep                0001e02c     coredll:COREDLL.dll
+ 0002:00000030       __imp_PostMessageW         0001e030     coredll:COREDLL.dll
+ 0002:00000034       __imp_GetKeyState          0001e034     coredll:COREDLL.dll
+ 0002:00000038       __imp_DefWindowProcW       0001e038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_SetTimer             0001e03c     coredll:COREDLL.dll
+ 0002:00000040       __imp_GetClientRect        0001e040     coredll:COREDLL.dll
+ 0002:00000044       __imp_PostQuitMessage      0001e044     coredll:COREDLL.dll
+ 0002:00000048       __imp_DestroyWindow        0001e048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_KillTimer            0001e04c     coredll:COREDLL.dll
+ 0002:00000050       __imp_CreateWindowExW      0001e050     coredll:COREDLL.dll
+ 0002:00000054       __imp_SystemParametersInfoW 0001e054     coredll:COREDLL.dll
+ 0002:00000058       __imp_RegisterClassW       0001e058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_CreateSolidBrush     0001e05c     coredll:COREDLL.dll
+ 0002:00000060       __imp_CloseHandle          0001e060     coredll:COREDLL.dll
+ 0002:00000064       __imp_WaitForSingleObject  0001e064     coredll:COREDLL.dll
+ 0002:00000068       __imp_GetMessageW          0001e068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_DispatchMessageW     0001e06c     coredll:COREDLL.dll
+ 0002:00000070       __imp_TranslateMessage     0001e070     coredll:COREDLL.dll
+ 0002:00000074       __imp_UpdateWindow         0001e074     coredll:COREDLL.dll
+ 0002:00000078       __imp_ShowWindow           0001e078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_CreateThread         0001e07c     coredll:COREDLL.dll
+ 0002:00000080       __imp_RegisterDbgZones     0001e080     coredll:COREDLL.dll
+ 0002:00000084       __imp_InterlockedExchange  0001e084     coredll:COREDLL.dll
+ 0002:00000088       __imp_DeleteCriticalSection 0001e088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_TerminateProcess     0001e08c     coredll:COREDLL.dll
+ 0002:00000090       __imp__msize               0001e090     corelib1:COREDLL.dll
+ 0002:00000094       __imp_realloc              0001e094     corelib1:COREDLL.dll
+ 0002:00000098       __imp_malloc               0001e098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp_LeaveCriticalSection 0001e09c     coredll:COREDLL.dll
+ 0002:000000a0       __imp_InitializeCriticalSection 0001e0a0     coredll:COREDLL.dll
+ 0002:000000a4       __imp_InterlockedCompareExchange 0001e0a4     coredll:COREDLL.dll
+ 0002:000000a8       __imp_EnterCriticalSection 0001e0a8     coredll:COREDLL.dll
+ 0002:000000ac       __imp_memcmp               0001e0ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp_??3@YAXPAX@Z         0001e0b0     corelib1:COREDLL.dll
+ 0002:000000b4       __imp_wcscmp               0001e0b4     corelib1:COREDLL.dll
+ 0002:000000b8       __imp_??2@YAPAXI@Z         0001e0b8     corelib1:COREDLL.dll
+ 0002:000000bc       __imp_memset               0001e0bc     corelib1:COREDLL.dll
+ 0002:000000c0       __imp___rt_udiv            0001e0c0     corelib1:COREDLL.dll
+ 0002:000000c4       __imp___rt_sdiv64by64      0001e0c4     corelib1:COREDLL.dll
+ 0002:000000c8       __imp___rt_srem64by64      0001e0c8     corelib1:COREDLL.dll
+ 0002:000000cc       __imp__snwprintf           0001e0cc     corelib1:COREDLL.dll
+ 0002:000000d0       __imp___rt_sdiv            0001e0d0     corelib1:COREDLL.dll
+ 0002:000000d4       __imp_wcscpy               0001e0d4     corelib1:COREDLL.dll
+ 0002:000000d8       __imp__wtol                0001e0d8     corelib1:COREDLL.dll
+ 0002:000000dc       __imp_wcstok               0001e0dc     corelib1:COREDLL.dll
+ 0002:000000e0       __imp_wcsncpy              0001e0e0     corelib1:COREDLL.dll
+ 0002:000000e4       __imp_wcscat               0001e0e4     corelib1:COREDLL.dll
+ 0002:000000e8       __imp__XcptFilter          0001e0e8     corelib1:COREDLL.dll
+ 0002:000000ec       __imp___C_specific_handler 0001e0ec     corelib1:COREDLL.dll
+ 0002:000000f0       __imp___security_gen_cookie2 0001e0f0     corelib1:COREDLL.dll
+ 0002:000000f4       __imp___report_gsfailure   0001e0f4     corelib1:COREDLL.dll
+ 0002:000000f8       __imp_free                 0001e0f8     corelib1:COREDLL.dll
+ 0002:000000fc       \177COREDLL_NULL_THUNK_DATA 0001e0fc     coredll:COREDLL.dll
+ 0002:00000100       __imp_VariantInit          0001e100     Oleaut32:OLEAUT32.dll
+ 0002:00000104       __imp_SysAllocString       0001e104     Oleaut32:OLEAUT32.dll
+ 0002:00000108       __imp_VariantClear         0001e108     Oleaut32:OLEAUT32.dll
+ 0002:0000010c       __imp_SysFreeString        0001e10c     Oleaut32:OLEAUT32.dll
+ 0002:00000110       __imp_VariantCopy          0001e110     Oleaut32:OLEAUT32.dll
+ 0002:00000114       \177OLEAUT32_NULL_THUNK_DATA 0001e114     Oleaut32:OLEAUT32.dll
+ 0002:00000118       __imp_CoCreateInstance     0001e118     ole32:ole32.dll
+ 0002:0000011c       __imp_CoInitializeEx       0001e11c     ole32:ole32.dll
+ 0002:00000120       __imp_CoUninitialize       0001e120     ole32:ole32.dll
+ 0002:00000124       __imp_CoTaskMemFree        0001e124     ole32:ole32.dll
+ 0002:00000128       \177ole32_NULL_THUNK_DATA  0001e128     ole32:ole32.dll
+ 0002:00000130       ?videoInputName@@3PAPBGA   0001e130     main.obj
+ 0002:0000013c       ?f_appName@@3PAGA          0001e13c     main.obj
+ 0002:00000140       ?dpCurSettings@@3U_DBGPARAM@@A 0001e140     main.obj
+ 0002:000005c4       ?f_bitRate@@3KA            0001e5c4     main.obj
+ 0002:000005c8       ?f_frameRate@@3HA          0001e5c8     main.obj
+ 0002:000005cc       ?f_captureWidth@@3HA       0001e5cc     main.obj
+ 0002:000005d0       ?f_captureHeight@@3HA      0001e5d0     main.obj
+ 0002:000005d4       ?f_enableCapture@@3HA      0001e5d4     main.obj
+ 0002:000005d8       ?f_videoInput@@3W4CameraInputPort_t@@A 0001e5d8     main.obj
+ 0002:000005dc       ?f_renderWidth@@3JA        0001e5dc     main.obj
+ 0002:000005e0       ?f_renderHeight@@3JA       0001e5e0     main.obj
+ 0002:000005e4       ?f_graphTimerId@@3IA       0001e5e4     main.obj
+ 0002:000005fc       __security_cookie          0001e5fc     corelib0:seccinit.obj
+ 0002:00000600       __security_cookie_complement 0001e600     corelib0:seccinit.obj
+ 0002:00000608       ?f_AppInstance@@3PAUHINSTANCE__@@A 0001e608     main.obj
+ 0002:0000060c       ?f_MainWinHandle@@3PAUHWND__@@A 0001e60c     main.obj
+ 0002:00000610       ?f_extOutputFile@@3PAGA    0001e610     main.obj
+ 0002:00000818       ?f_outputFile@@3PAGA       0001e818     main.obj
+ 0002:00000a20       ?f_enablePreview@@3HA      0001ea20     main.obj
+ 0002:00000a24       ?f_videncType@@3W4videncType@@A 0001ea24     main.obj
+ 0002:00000a28       ?f_autoStart@@3HA          0001ea28     main.obj
+ 0002:00000a2c       ?f_graphRuntime@@3IA       0001ea2c     main.obj
+ 0002:00000a30       ?f_outputFileOnSDCard@@3HA 0001ea30     main.obj
+ 0002:00000a34       ?f_outputFileOnNAND@@3HA   0001ea34     main.obj
+ 0002:00000a38       ?f_outputFileOnUSB@@3HA    0001ea38     main.obj
+ 0002:00000a3c       ?f_useNullSink@@3HA        0001ea3c     main.obj
+ 0002:00000a40       ?f_numSamples@@3HA         0001ea40     main.obj
+ 0002:00000a44       ?f_captureState@@3W4captureState@@A 0001ea44     main.obj
+ 0002:00000a48       ?f_previewState@@3W4previewState@@A 0001ea48     main.obj
+ 0002:00000a4c       ?f_graphState@@3W4graphState@@A 0001ea4c     main.obj
+ 0002:00000a50       ?bStatExitThread@@3HA      0001ea50     main.obj
+ 0002:00000a54       ?hStatThread@@3PAXA        0001ea54     main.obj
+ 0002:00000a58       ?pEncoderStreamConfig@@3V?$CComPtr@UIAMStreamConfig@@@ATL@@A 0001ea58     main.obj
+ 0002:00000a5c       ?pGrabberFilter@@3V?$CComPtr@UIBaseFilter@@@ATL@@A 0001ea5c     main.obj
+ 0002:00000a60       ?pMediaControl@@3V?$CComPtr@UIMediaControl@@@ATL@@A 0001ea60     main.obj
+ 0002:00000a64       ?pFileSink@@3V?$CComPtr@UIFileSinkFilter@@@ATL@@A 0001ea64     main.obj
+ 0002:00000a68       ?pKsPropertySet@@3V?$CComPtr@UIKsPropertySet@@@ATL@@A 0001ea68     main.obj
+ 0002:00000a6c       ?pMediaEvent@@3V?$CComPtr@UIMediaEventEx@@@ATL@@A 0001ea6c     main.obj
+ 0002:00000a70       ?pCaptureGraphBuilder@@3V?$CComPtr@UICaptureGraphBuilder2@@@ATL@@A 0001ea70     main.obj
+ 0002:00000a74       ?pVideoWindow@@3V?$CComPtr@UIVideoWindow@@@ATL@@A 0001ea74     main.obj
+ 0002:00000a78       ?pNullSink@@3V?$CComPtr@UIBaseFilter@@@ATL@@A 0001ea78     main.obj
+ 0002:00000a7c       ?pFileInterface@@3V?$CComPtr@UIFileSourceFilter@@@ATL@@A 0001ea7c     main.obj
+ 0002:00000a80       ?pFileSource@@3V?$CComPtr@UIBaseFilter@@@ATL@@A 0001ea80     main.obj
+ 0002:00000a84       ?pCaptureStreamConfig@@3V?$CComPtr@UIAMStreamConfig@@@ATL@@A 0001ea84     main.obj
+ 0002:00000a88       ?pSampleGrabber@@3V?$CComPtr@UISampleGrabber@@@ATL@@A 0001ea88     main.obj
+ 0002:00000a8c       ?pVideoProcAmp@@3V?$CComPtr@UIAMVideoProcAmp@@@ATL@@A 0001ea8c     main.obj
+ 0002:00000a90       ?pVideoRenderer@@3V?$CComPtr@UIBaseFilter@@@ATL@@A 0001ea90     main.obj
+ 0002:00000a94       ?pAsfWriter@@3V?$CComPtr@UIBaseFilter@@@ATL@@A 0001ea94     main.obj
+ 0002:00000a98       ?pVideoCapture@@3V?$CComPtr@UIBaseFilter@@@ATL@@A 0001ea98     main.obj
+ 0002:00000a9c       ?pVideoEncoder@@3V?$CComPtr@UIBaseFilter@@@ATL@@A 0001ea9c     main.obj
+ 0002:00000aa0       ?pCameraControl@@3V?$CComPtr@UIAMCameraControl@@@ATL@@A 0001eaa0     main.obj
+ 0002:00000aa4       ?pDroppedFrames@@3V?$CComPtr@UIAMDroppedFrames@@@ATL@@A 0001eaa4     main.obj
+ 0002:00000aa8       ?pFilterGraph@@3V?$CComPtr@UIGraphBuilder@@@ATL@@A 0001eaa8     main.obj
+ 0002:00000aac       ?pColorConverter@@3V?$CComPtr@UIBaseFilter@@@ATL@@A 0001eaac     main.obj
+ 0002:00000ab0       ?pMediaSeeking@@3V?$CComPtr@UIMediaSeeking@@@ATL@@A 0001eab0     main.obj
+ 0002:00000ab4       ?pVideoControl@@3V?$CComPtr@UIAMVideoControl@@@ATL@@A 0001eab4     main.obj
+ 0002:00000ab8       ?pBasicVideo@@3V?$CComPtr@UIBasicVideo@@@ATL@@A 0001eab8     main.obj
+ 0002:00000abc       ?pVideoPropertyBag@@3V?$CComPtr@UIPersistPropertyBag@@@ATL@@A 0001eabc     main.obj
+ 0002:000030f0       __@@_PchSym_@00@UdrmxvGAAUkfyorxUwrivxgcUhwpUhznkovhUwhsldUyzhvxozhhvhUsvzwvwUlyqUzineErUivgzroUhgivznhOlyq@strmbase 000210f0     strmbase:streams.obj
+ 0002:000030f4       _exitflag                  000210f4     corelib0:cexit.obj
+ 0002:000030f8       __onexitend                000210f8     <common>
+ 0002:000030fc       __onexitbegin              000210fc     <common>
+ 0002:00003100       g_pcsExit                  00021100     <common>
+
+ entry point at        0001:0000b494
+
+ Static symbols
+
+ 0001:00007bf4       ?StatisticsOutputFunc@@YAKPAX@Z 00018bf4 f   main.obj
+ 0001:0000b41c       WinMainCRTStartupHelper    0001c41c f   corelib0:pegwmain.obj
+ 0001:0000b5dc       doexit                     0001c5dc f   corelib0:cexit.obj
+ 0001:0000bb38       ??__EpMediaControl@@YAXXZ  0001cb38 f   main.obj
+ 0001:0000bb50       ??__EpMediaEvent@@YAXXZ    0001cb50 f   main.obj
+ 0001:0000bb68       ??__EpMediaSeeking@@YAXXZ  0001cb68 f   main.obj
+ 0001:0000bb80       ??__EpVideoWindow@@YAXXZ   0001cb80 f   main.obj
+ 0001:0000bb98       ??__EpBasicVideo@@YAXXZ    0001cb98 f   main.obj
+ 0001:0000bbb0       ??__EpFilterGraph@@YAXXZ   0001cbb0 f   main.obj
+ 0001:0000bbc8       ??__EpCaptureGraphBuilder@@YAXXZ 0001cbc8 f   main.obj
+ 0001:0000bbe0       ??__EpFileSource@@YAXXZ    0001cbe0 f   main.obj
+ 0001:0000bbf8       ??__EpFileInterface@@YAXXZ 0001cbf8 f   main.obj
+ 0001:0000bc10       ??__EpVideoCapture@@YAXXZ  0001cc10 f   main.obj
+ 0001:0000bc28       ??__EpColorConverter@@YAXXZ 0001cc28 f   main.obj
+ 0001:0000bc40       ??__EpVideoRenderer@@YAXXZ 0001cc40 f   main.obj
+ 0001:0000bc58       ??__EpVideoControl@@YAXXZ  0001cc58 f   main.obj
+ 0001:0000bc70       ??__EpCameraControl@@YAXXZ 0001cc70 f   main.obj
+ 0001:0000bc88       ??__EpDroppedFrames@@YAXXZ 0001cc88 f   main.obj
+ 0001:0000bca0       ??__EpVideoProcAmp@@YAXXZ  0001cca0 f   main.obj
+ 0001:0000bcb8       ??__EpKsPropertySet@@YAXXZ 0001ccb8 f   main.obj
+ 0001:0000bcd0       ??__EpVideoPropertyBag@@YAXXZ 0001ccd0 f   main.obj
+ 0001:0000bce8       ??__EpCaptureStreamConfig@@YAXXZ 0001cce8 f   main.obj
+ 0001:0000bd00       ??__EpVideoEncoder@@YAXXZ  0001cd00 f   main.obj
+ 0001:0000bd18       ??__EpEncoderStreamConfig@@YAXXZ 0001cd18 f   main.obj
+ 0001:0000bd30       ??__EpAsfWriter@@YAXXZ     0001cd30 f   main.obj
+ 0001:0000bd48       ??__EpFileSink@@YAXXZ      0001cd48 f   main.obj
+ 0001:0000bd60       ??__EpGrabberFilter@@YAXXZ 0001cd60 f   main.obj
+ 0001:0000bd78       ??__EpSampleGrabber@@YAXXZ 0001cd78 f   main.obj
+ 0001:0000bd90       ??__EpNullSink@@YAXXZ      0001cd90 f   main.obj
+ 0001:0000bda8       ??__FpVideoCapture@@YAXXZ  0001cda8 f   main.obj
+ 0001:0000bdd4       ??__FpColorConverter@@YAXXZ 0001cdd4 f   main.obj
+ 0001:0000be00       ??__FpVideoRenderer@@YAXXZ 0001ce00 f   main.obj
+ 0001:0000be2c       ??__FpVideoEncoder@@YAXXZ  0001ce2c f   main.obj
+ 0001:0000be58       ??__FpEncoderStreamConfig@@YAXXZ 0001ce58 f   main.obj
+ 0001:0000be84       ??__FpAsfWriter@@YAXXZ     0001ce84 f   main.obj
+ 0001:0000beb0       ??__FpGrabberFilter@@YAXXZ 0001ceb0 f   main.obj
+ 0001:0000bedc       ??__FpNullSink@@YAXXZ      0001cedc f   main.obj
+ 0001:0000bf08       ??__FpMediaControl@@YAXXZ  0001cf08 f   main.obj
+ 0001:0000bf34       ??__FpMediaEvent@@YAXXZ    0001cf34 f   main.obj
+ 0001:0000bf60       ??__FpMediaSeeking@@YAXXZ  0001cf60 f   main.obj
+ 0001:0000bf8c       ??__FpVideoWindow@@YAXXZ   0001cf8c f   main.obj
+ 0001:0000bfb8       ??__FpBasicVideo@@YAXXZ    0001cfb8 f   main.obj
+ 0001:0000bfe4       ??__FpFilterGraph@@YAXXZ   0001cfe4 f   main.obj
+ 0001:0000c010       ??__FpCaptureGraphBuilder@@YAXXZ 0001d010 f   main.obj
+ 0001:0000c03c       ??__FpFileSource@@YAXXZ    0001d03c f   main.obj
+ 0001:0000c068       ??__FpFileInterface@@YAXXZ 0001d068 f   main.obj
+ 0001:0000c094       ??__FpVideoControl@@YAXXZ  0001d094 f   main.obj
+ 0001:0000c0c0       ??__FpCameraControl@@YAXXZ 0001d0c0 f   main.obj
+ 0001:0000c0ec       ??__FpDroppedFrames@@YAXXZ 0001d0ec f   main.obj
+ 0001:0000c118       ??__FpVideoProcAmp@@YAXXZ  0001d118 f   main.obj
+ 0001:0000c144       ??__FpKsPropertySet@@YAXXZ 0001d144 f   main.obj
+ 0001:0000c170       ??__FpVideoPropertyBag@@YAXXZ 0001d170 f   main.obj
+ 0001:0000c19c       ??__FpCaptureStreamConfig@@YAXXZ 0001d19c f   main.obj
+ 0001:0000c1c8       ??__FpFileSink@@YAXXZ      0001d1c8 f   main.obj
+ 0001:0000c1f4       ??__FpSampleGrabber@@YAXXZ 0001d1f4 f   main.obj

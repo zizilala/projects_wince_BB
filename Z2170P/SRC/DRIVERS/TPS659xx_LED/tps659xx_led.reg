@@ -1,0 +1,8 @@
+; All rights reserved ADENEO EMBEDDED 2010
+IF BSP_TPS659XX_LED
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\TPS659XX_LED]
+    "Prefix"="TLD"
+    "Dll"="TPS659XX_LED.dll"
+    "Index"=dword:1
+    "order"=dword:4
+ENDIF BSP_TPS659XX_LED

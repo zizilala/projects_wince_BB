@@ -1,0 +1,203 @@
+;
+;               Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+;
+;   Use of this software is controlled by the terms and conditions found
+;   in the license agreement under which this software has been supplied.
+;
+;===============================================================================
+
+#define PLAT_DRIVERS_DIR $(_TARGETPLATROOT)\src\drivers
+#define PLAT_APP_DIR $(_TARGETPLATROOT)\src\app
+#define PLAT_TEST_DIR $(_TARGETPLATROOT)\src\test
+
+;===============================================================================
+; OMAP own bus enumerator
+#include "$(PLAT_DRIVERS_DIR)\BUS\OmapBus.reg"
+
+;===============================================================================
+; OMAP GPIO driver
+#include "$(PLAT_DRIVERS_DIR)\gpio\gpio.reg"
+
+;===============================================================================
+; OMAP TOUCH driver
+#include "$(PLAT_DRIVERS_DIR)\touch\tsc2046_touch.reg"
+
+;===============================================================================
+; OMAP DMA driver
+#include "$(PLAT_DRIVERS_DIR)\DMA\dma.reg"
+
+;===============================================================================
+; OMAP Display driver (DSS)
+#include "$(PLAT_DRIVERS_DIR)\display\dss\dss.reg"
+#include "$(PLAT_DRIVERS_DIR)\isp_resizer\isp_resizer.reg"
+
+;===============================================================================
+; OMAP backlight driver
+#include "$(PLAT_DRIVERS_DIR)\backlight\backlight.reg"
+
+;===============================================================================
+; OMAP serial driver (UART)
+#include "$(PLAT_DRIVERS_DIR)\UART\uart.reg"
+
+;===============================================================================
+; OMAP SPI driver (MCSPI)
+#include "$(PLAT_DRIVERS_DIR)\MCSPI\mcspi.reg"
+
+;===============================================================================
+; ZEBEX System control
+#include "$(PLAT_DRIVERS_DIR)\sysctrl\sysctrl.reg"
+
+;===============================================================================
+; NAND driver
+#include "$(PLAT_DRIVERS_DIR)\BLOCK\NAND\nand.reg"
+#include "$(PLAT_TEST_DIR)\testNAND\Driver\nand_test_driver.reg"
+
+;===============================================================================
+; Notification LED driver
+#include "$(PLAT_DRIVERS_DIR)\NLED\omap_nled.reg"
+
+;===============================================================================
+; NDIS SMSC driver
+#include "$(PLAT_DRIVERS_DIR)\SMSC9118\smsc9118.reg"
+
+;===============================================================================
+; MCBSP driver
+#include "$(PLAT_DRIVERS_DIR)\MCBSP\mcbsp.reg"
+
+;===============================================================================
+; SDHC driver
+#include "$(PLAT_DRIVERS_DIR)\SDHC\IMPL\sdhc.reg"
+
+;===============================================================================
+; USB Host driver
+#include "$(PLAT_DRIVERS_DIR)\USBHS\omap_usbhs.reg"
+
+;===============================================================================
+; Camera driver
+#include "$(PLAT_DRIVERS_DIR)\CAMERA\DLL\omap_camera.reg"
+IF BSP_OMAP_CAMERA
+#include "$(PLAT_APP_DIR)\SampleGrabber\SampleGrabber.reg"
+#include "$(PLAT_APP_DIR)\NullSink\NullSink.reg"
+ENDIF
+
+
+;===============================================================================
+; VRFB driver
+#include "$(PLAT_DRIVERS_DIR)\VRFB\omap_vrfb.reg"
+
+;===============================================================================
+; HDQ bus driver
+#include "$(PLAT_DRIVERS_DIR)\HDQ\omap_hdq.reg"
+
+;===============================================================================
+; Triton (TPS659XX) driver
+#include "$(PLAT_DRIVERS_DIR)\TPS659XX\TPS659XX.reg"
+
+;===============================================================================
+; Triton (TPS659XX) GPIO driver
+#include "$(PLAT_DRIVERS_DIR)\TPS659XX_gpio\tps659xx_gpio.reg"
+
+;===============================================================================
+; Triton (TPS659XX) MADC driver
+#include "$(PLAT_DRIVERS_DIR)\TPS659XX_MADC\tps659xx_madc.reg"
+
+;===============================================================================
+; Triton (TPS659XX) LED driver
+#include "$(PLAT_DRIVERS_DIR)\TPS659XX_LED\tps659xx_led.reg"
+
+;===============================================================================
+; Triton (TPS659XX) Audio driver
+#include "$(PLAT_DRIVERS_DIR)\TPS659XX_WAVE\tps659xx_wave.reg"
+
+;===============================================================================
+; Triton (TPS659XX) Keypad driver
+#include "$(PLAT_DRIVERS_DIR)\TPS659XX_KEYPAD\tps659xx_keypad.reg"
+
+;===============================================================================
+; Triton (TPS659XX) Power KEY driver
+#include "$(PLAT_DRIVERS_DIR)\TPS659XX_PWRKEY\tps659xx_pwrkey.reg"
+
+;===============================================================================
+; Triton (TPS659XX) RTC driver
+#include "$(PLAT_DRIVERS_DIR)\TPS659XX_RTC\tps659xx_rtc.reg"
+
+;===============================================================================
+; Headset driver
+#include "$(PLAT_DRIVERS_DIR)\HEADSET\headset.reg"
+
+;===============================================================================
+; OMAP Shell Extensions
+#include "$(PLAT_APP_DIR)\SHELL\omap_shell.reg"
+
+;===============================================================================
+; OMAP PM Extensions
+#include "$(PLAT_DRIVERS_DIR)\PM\omap_pm.reg"
+
+;===============================================================================
+; Simple Benchmark Application
+#include "$(PLAT_APP_DIR)\SIMPLE\DLL\simple.reg"
+
+;===============================================================================
+; USB OTG Driver
+#include "$(PLAT_DRIVERS_DIR)\MUSB\MUSBFN\musbfn.reg"
+#include "$(PLAT_DRIVERS_DIR)\MUSB\MUSBHCD\musbhcd.reg"
+#include "$(PLAT_DRIVERS_DIR)\MUSB\MUSBOTG\musbotg.reg"
+
+;===============================================================================
+; SDMA Proxy Driver
+#include "$(PLAT_DRIVERS_DIR)\SDMAPROXY\omap_sdmaproxy.reg"
+
+;===============================================================================
+; Battery driver 
+#include "$(PLAT_DRIVERS_DIR)\BATTERY\omap_battery.reg"
+
+
+;===============================================================================
+; overwrite the default dll (defined in public code) used for the usb keyboard
+[HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\KEYBD]
+	"DriverName"=-
+    "DriverName"="KbdNopUs.dll"
+
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Layouts\00000409]
+	"Layout File"=-
+    "Layout File"="KbdNopUs.dll" 
+    "Layout Text"="US"
+    "PS2_AT"=-
+    "PS2_AT"="KbdNopUs.dll" 
+	
+;===============================================================================
+; enable telnet server
+[HKEY_LOCAL_MACHINE\Comm\TELNETD]
+	"IsEnabled"=dword:1
+	"UseAuthentication"=dword:0
+	
+;===============================================================================
+; enable ftp server
+[HKEY_LOCAL_MACHINE\COMM\FTPD]
+    "IsEnabled"=dword:1
+    "UseAuthentication"=dword:0
+    "AllowAnonymous"=dword:1
+    "AllowAnonymousUpload"=dword:1
+    "AllowAnonymousVroots"=dword:1
+    "DefaultDir"="\\"    
+    
+;-- CEDDK Configuration---------------------------------------------------------
+; @CESYSGEN IF CE_MODULES_CEDDK
+;
+; StallCounter is # of instructions for 1 microsec (0x85 @ 266MHz, 0xA5 @ 330MHz) 
+[HKEY_LOCAL_MACHINE\System\Ceddk]
+    "StallCounter"=dword:A5
+
+; @CESYSGEN ENDIF CE_MODULES_CEDDK    
+    
+; @CESYSGEN IF CPLMAIN_DISPLAY
+;[HKEY_CURRENT_USER\ControlPanel\Desktop]
+; @CESYSGEN IF IMAGING_IMG_JPEGDECODER
+;    "wallpaper"="\\Windows\\wallpaper.jpg"
+; @CESYSGEN ELSE
+; @CESYSGEN ENDIF IMAGING_IMG_JPEGDECODER
+; @CESYSGEN ENDIF CPLMAIN_DISPLAY
+;-------------------------------------------------------------------------------
+

@@ -1,0 +1,536 @@
+ omap_musbotg
+
+ Timestamp is 51ede8cc (Tue Jul 23 10:22:04 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCU                CODE
+ 0001:00000008 00000004H .CRT$XCZ                CODE
+ 0001:0000000c 00000004H .CRT$XIA                CODE
+ 0001:00000010 00000004H .CRT$XIZ                CODE
+ 0001:00000014 00000004H .CRT$XPA                CODE
+ 0001:00000018 00000004H .CRT$XPZ                CODE
+ 0001:0000001c 00000004H .CRT$XTA                CODE
+ 0001:00000020 00000004H .CRT$XTZ                CODE
+ 0001:00000030 00001144H .rdata                  CODE
+ 0001:00001174 00000029H .rdata$debug            CODE
+ 0001:000011a0 0000980cH .text                   CODE
+ 0001:0000a9ac 0000001cH .text$yc                CODE
+ 0001:0000a9c8 00000058H .xdata                  CODE
+ 0001:0000aa20 00000028H .idata$2                CODE
+ 0001:0000aa48 00000014H .idata$3                CODE
+ 0001:0000aa5c 0000017cH .idata$4                CODE
+ 0001:0000abd8 00000016H .idata$6                CODE
+ 0001:0000abf0 0000010bH .edata                  CODE
+ 0002:00000000 0000017cH .idata$5                DATA
+ 0002:00000180 000000d0H .data                   DATA
+ 0002:00000250 00000014H .bss                    DATA
+ 0003:00000000 00000610H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000008       __xc_z                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_a                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xi_z                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_a                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xp_z                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_a                     1000101c     corelib0:crt0init.obj
+ 0001:00000020       __xt_z                     10001020     corelib0:crt0init.obj
+ 0001:0000004c       ??_C@_1CC@CKFJFILD@?$AAU?$AAS?$AAB?$AAC?$AAh?$AAa?$AAr?$AAg?$AAe?$AAr?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AA?$AA@ 1000104c     OMAP3530_musbotg:otg.obj
+ 0001:00000070       ??_C@_1CC@EBHGALEG@?$AAD?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAH?$AAi?$AAg?$AAh?$AAS?$AAp?$AAe?$AAe?$AAd?$AA?$AA@ 10001070     OMAP3530_musbotg:otg.obj
+ 0001:00000094       ??_C@_1BO@DFKBGJHN@?$AAs?$AAt?$AAa?$AAr?$AAt?$AAu?$AAp?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$AA@ 10001094     OMAP3530_musbotg:otg.obj
+ 0001:000000b4       ??_C@_1CC@EGEMNJNG@?$AAv?$AAb?$AAu?$AAs?$AA?4?$AAp?$AAo?$AAw?$AAe?$AAr?$AA?4?$AAe?$AAv?$AAe?$AAn?$AAt?$AA?$AA@ 100010b4     OMAP3530_musbotg:otg.obj
+ 0001:000000d8       ??_7OMAPMHSUsbClientDeviceFolder@@6B@ 100010d8     OMAP3530_musbotg:otg.obj
+ 0001:000000f8       ??_C@_1EO@DBJAPFDC@?$AAO?$AAT?$AAG?$AA?5?$AAD?$AAM?$AAA?$AA?5?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAR?$AAu?$AAn?$AA?5?$AAM?$AAO?$AAD?$AAE?$AA_?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AA_?$AAR?$AAE@ 100010f8     OMAP3530_musbotg:otg.obj
+ 0001:00000148       ??_C@_1FA@FFEGOOFC@?$AAO?$AAT?$AAG?$AA?5?$AAD?$AAM?$AAA?$AA?5?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAR?$AAu?$AAn?$AA?5?$AAM?$AAO?$AAD?$AAE?$AA_?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AA_?$AAS?$AAU@ 10001148     OMAP3530_musbotg:otg.obj
+ 0001:00000198       ??_C@_1CK@OBPLBNBH@?$AAE?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAi?$AAo?$AAc?$AAt?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 10001198     OMAP3530_musbotg:otg.obj
+ 0001:000001c4       ??_C@_1CK@MHJHMPML@?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAi?$AAo?$AAc?$AAt?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 100011c4     OMAP3530_musbotg:otg.obj
+ 0001:000001f0       ??_C@_1M@CKAHONI@?$AAB?$AAT?$AAY?$AAP?$AAE?$AA?$AA@ 100011f0     OMAP3530_musbotg:otg.obj
+ 0001:000001fc       ??_C@_1DM@GBENJPGN@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAs?$AA?2?$AAB?$AAu?$AAi?$AAl?$AAt?$AAI?$AAn?$AA?2?$AAM?$AAU?$AAS?$AAB?$AAO?$AAT?$AAG?$AA?2?$AAU?$AAS?$AAB?$AAF?$AAN?$AA?$AA@ 100011fc     OMAP3530_musbotg:otg.obj
+ 0001:00000238       ??_C@_1GG@GMJJEDKI@?$AAH?$AAN?$AAP?$AA?5?$AAs?$AAw?$AAi?$AAt?$AAc?$AAh?$AAi?$AAn?$AAg?$AA?5?$AAa?$AAn?$AAd?$AA?5?$AAn?$AAe?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAd?$AAi?$AAs?$AAc?$AAo?$AAn@ 10001238     OMAP3530_musbotg:otg.obj
+ 0001:000002a0       ??_C@_1DO@OIHENEJP@?$AAU?$AAS?$AAB?$AA?5?$AAC?$AAo?$AAn?$AAn?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAH?$AAo?$AAs?$AAt?$AA?5?$AAS?$AAi?$AAd?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 100012a0     OMAP3530_musbotg:otg.obj
+ 0001:000002e0       ??_C@_1GK@MJDDMGMO@?$AAV?$AAB?$AAu?$AAs?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AA?9?$AA?5?$AAO?$AAT?$AAG?$AA_?$AAH?$AAa?$AAn?$AAd?$AAl?$AAe?$AAV?$AAB?$AAu?$AAs?$AAE?$AAr?$AAr?$AAo?$AAr@ 100012e0     OMAP3530_musbotg:otg.obj
+ 0001:00000350       ??_C@_1GA@KDAFPHFP@?$AA?$CD?$AA?$CD?$AA?$CD?$AA?$CD?$AA?$CD?$AA?$CD?$AA?$CD?$AA?5?$AAF?$AAA?$AAI?$AAL?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAU?$AAL?$AAP?$AAI?$AA?5?$AAR?$AAe?$AAg?$AA?0?$AA?5?$AAC@ 10001350     OMAP3530_musbotg:otg.obj
+ 0001:000003b0       ??_7CMiniThread@@6B@       100013b0     OMAP3530_musbotg:otg.obj
+ 0001:000003b4       ??_7OMAPMHSUSBIdGnd@@6B@   100013b4     OMAP3530_musbotg:otg.obj
+ 0001:000003c0       ??_7OMAPMHSUSBDMA@@6B@     100013c0     OMAP3530_musbotg:otg.obj
+ 0001:000003d0       ??_7OMAPMHSUSBOTG@@6BUSBOTG@@@ 100013d0     OMAP3530_musbotg:otg.obj
+ 0001:000004d8       ??_7OMAPMHSUSBOTG@@6BCMiniThread@@@ 100014d8     OMAP3530_musbotg:otg.obj
+ 0001:000004e0       ??_C@_1IM@GEPODNBC@?$AAB?$AA_?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA?3?$AAH?$AAN?$AAP?$AA?5?$AAs?$AAw?$AAi?$AAt?$AAc?$AAh?$AAi?$AAn?$AAg?$AA?5?$AAa?$AAn?$AAd?$AA?5?$AAn?$AAe?$AAe?$AAd?$AA?5@ 100014e0     OMAP3530_musbotg:otg.obj
+ 0001:00000570       ??_C@_1HI@JBKOMFKI@?$AAA?$AA_?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA?3?$AAH?$AAN?$AAP?$AA?5?$AAs?$AAw?$AAi?$AAt?$AAc?$AAh?$AAi?$AAn?$AAg?$AA?5?$AAa?$AAn?$AAd?$AA?5?$AAn?$AAe?$AAe?$AAd?$AA?5@ 10001570     OMAP3530_musbotg:otg.obj
+ 0001:000005e8       ??_C@_1CO@DLKKJIDB@?$AAR?$AAe?$AAs?$AAt?$AAo?$AAr?$AAe?$AA?5?$AAU?$AAL?$AAP?$AAI?$AA?5?$AAS?$AAi?$AAg?$AAn?$AAa?$AAl?$AAs?$AA?$AN?$AA?6?$AA?$AA@ 100015e8     OMAP3530_musbotg:otg.obj
+ 0001:00000618       ??_C@_1DM@PAEGICHA@?$AAA?$AAs?$AAs?$AAi?$AAg?$AAn?$AA?5?$AAU?$AAL?$AAP?$AAI?$AA?5?$AAs?$AAi?$AAg?$AAn?$AAa?$AAl?$AAs?$AA?5?$AAt?$AAo?$AA?5?$AAG?$AAP?$AAI?$AAO?$AA?$AN?$AA?6?$AA?$AA@ 10001618     OMAP3530_musbotg:otg.obj
+ 0001:00000658       ??_C@_1FK@DDAPPDML@?$AAR?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAP?$AAr?$AAo?$AAc?$AAe?$AAd?$AAu?$AAr?$AAe?$AA?5?$AA1?$AA?4?$AA?5?$AAU?$AAL?$AAP?$AAI?$AA?5?$AAL?$AAi?$AAn?$AAk?$AA?5@ 10001658     OMAP3530_musbotg:otg.obj
+ 0001:000006b8       ??_C@_1FK@IJFKPHNM@?$AAR?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAP?$AAr?$AAo?$AAc?$AAe?$AAd?$AAu?$AAr?$AAe?$AA?5?$AA2?$AA?4?$AA?5?$AAU?$AAL?$AAP?$AAI?$AA?5?$AAL?$AAi?$AAn?$AAk?$AA?5@ 100016b8     OMAP3530_musbotg:otg.obj
+ 0001:00000718       ??_C@_1FK@OAJGALNB@?$AAR?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAP?$AAr?$AAo?$AAc?$AAe?$AAd?$AAu?$AAr?$AAe?$AA?5?$AA3?$AA?4?$AA?5?$AAU?$AAL?$AAP?$AAI?$AA?5?$AAL?$AAi?$AAn?$AAk?$AA?5@ 10001718     OMAP3530_musbotg:otg.obj
+ 0001:00000778       ??_C@_1GM@IAJAHOFG@?$AAU?$AAL?$AAP?$AAI?$AA?5?$AAL?$AAi?$AAn?$AAk?$AA?5?$AAr?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAa?$AAt?$AAt?$AAe?$AAm?$AAp?$AAt?$AAe?$AAd?$AA?4?$AA?5?$AAE?$AAx@ 10001778     OMAP3530_musbotg:otg.obj
+ 0001:000007e8       ??_C@_1FE@GOEGMFKN@?$AAA?$AAt?$AAt?$AAe?$AAm?$AAp?$AAt?$AA?5?$AAR?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAP?$AAr?$AAo?$AAc?$AAe?$AAd?$AAu?$AAr?$AAe?$AA?5?$AA3?$AA?$CB?$AA?5?$AAR?$AAe@ 100017e8     OMAP3530_musbotg:otg.obj
+ 0001:0000083c       ??_C@_1DO@LLECKEKC@?$AAA?$AAt?$AAt?$AAe?$AAm?$AAp?$AAt?$AA?5?$AAR?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAP?$AAr?$AAo?$AAc?$AAe?$AAd?$AAu?$AAr?$AAe?$AA?5?$AA2?$AA?$AN?$AA?6?$AA?$AA@ 1000183c     OMAP3530_musbotg:otg.obj
+ 0001:0000087c       ??_C@_1DO@DFMNKDEB@?$AAA?$AAt?$AAt?$AAe?$AAm?$AAp?$AAt?$AA?5?$AAR?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?5?$AAP?$AAr?$AAo?$AAc?$AAe?$AAd?$AAu?$AAr?$AAe?$AA?5?$AA1?$AA?$AN?$AA?6?$AA?$AA@ 1000187c     OMAP3530_musbotg:otg.obj
+ 0001:000008bc       ??_C@_1DI@POPBHNLK@?$AAC?$AAa?$AAl?$AAl?$AAi?$AAn?$AAg?$AA?5?$AAS?$AAe?$AAs?$AAs?$AAi?$AAo?$AAn?$AA?5?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 100018bc     OMAP3530_musbotg:otg.obj
+ 0001:000008f4       ??_C@_0N@GCHGAKML@Serial_Class?$AA@ 100018f4     OMAP3530_musbotg:otg.obj
+ 0001:00000904       ??_C@_05BCBDGGDK@RNDIS?$AA@ 10001904     OMAP3530_musbotg:otg.obj
+ 0001:0000090c       ??_C@_1CI@MGKPCHDE@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAC?$AAl?$AAi?$AAe?$AAn?$AAt?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 1000190c     OMAP3530_musbotg:otg.obj
+ 0001:00000934       ??_C@_1DI@KIDPGBEF@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAs?$AA?2?$AAU?$AAS?$AAB?$AA?2?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAs?$AA?$AA@ 10001934     OMAP3530_musbotg:otg.obj
+ 0001:0000096c       ??_C@_1BO@CDMCIFON@?$AAd?$AAm?$AAa?$AAI?$AAs?$AAt?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?$AA@ 1000196c     OMAP3530_musbotg:otg.obj
+ 0001:0000098c       ??_C@_1BO@HHIOKHGA@?$AAo?$AAt?$AAg?$AAI?$AAs?$AAt?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?$AA@ 1000198c     OMAP3530_musbotg:otg.obj
+ 0001:000009ac       ??_C@_1CC@NBEJDCFF@?$AAi?$AAd?$AAg?$AAn?$AAd?$AAI?$AAs?$AAt?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?$AA@ 100019ac     OMAP3530_musbotg:otg.obj
+ 0001:000009d0       ??_C@_1CE@GPPIHNAH@?$AAV?$AAb?$AAu?$AAs?$AAD?$AAi?$AAs?$AAc?$AAh?$AAa?$AAr?$AAg?$AAe?$AAT?$AAi?$AAm?$AAe?$AA?$AA@ 100019d0     OMAP3530_musbotg:otg.obj
+ 0001:000009f4       ??_C@_1O@KFOJGKH@?$AAD?$AAM?$AAA?$AAI?$AAr?$AAq?$AA?$AA@ 100019f4     OMAP3530_musbotg:otg.obj
+ 0001:00000a04       ??_C@_1BA@KDCCGFJM@?$AAB?$AAu?$AAs?$AAN?$AAa?$AAm?$AAe?$AA?$AA@ 10001a04     usbotgcm:usbotg.obj
+ 0001:00000a14       ??_C@_13FPGAJAPJ@?$AA?2?$AA?$AA@ 10001a14     usbotgcm:usbotg.obj
+ 0001:00000a18       ??_7USBOTG@@6B@            10001a18     usbotgcm:usbotg.obj
+ 0001:00000ae4       ??_C@_17PLLMNKLC@?$AAO?$AAT?$AAG?$AA?$AA@ 10001ae4     usbotgcm:usbotg.obj
+ 0001:00000af0       ??_C@_1IG@NFMFLHA@?$AAS?$AAR?$AAP?$AA?5?$AAT?$AAB?$AA_?$AAS?$AAR?$AAT?$AA_?$AAF?$AAA?$AAI?$AAL?$AA?5?$AAh?$AAa?$AAs?$AA?5?$AAe?$AAx?$AAp?$AAi?$AAr?$AAe?$AAd?$AA?4?$AA?5?$AAM?$AAa?$AAk@ 10001af0     usbotgcm:usbotg.obj
+ 0001:00000b78       ??_C@_1GC@HGOMIODF@?$AAU?$AAS?$AAB?$AAO?$AAT?$AAG?$AA?3?$AA?3?$AAE?$AAv?$AAe?$AAn?$AAt?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAV?$AAB?$AAU?$AAS?$AA?5@ 10001b78     usbotgcm:usbotg.obj
+ 0001:00000bdc       ??_7USBOTGWatchDog@@6B@    10001bdc     usbotgcm:usbotg.obj
+ 0001:00000bec       ??_C@_1CE@EIIFOPAG@?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAR?$AAo?$AAl?$AAe?$AAM?$AAa?$AAs?$AAt?$AAe?$AAr?$AA?$AA@ 10001bec     usbotgcm:usbotg.obj
+ 0001:00000c10       ??_C@_1BK@IINLKNNB@?$AAT?$AAB?$AA_?$AAA?$AAS?$AAE?$AA0?$AA_?$AAB?$AAR?$AAS?$AAT?$AA?$AA@ 10001c10     usbotgcm:usbotg.obj
+ 0001:00000c2c       ??_C@_1BK@HFPAPHP@?$AAT?$AAA?$AA_?$AAA?$AAI?$AAD?$AAL?$AA_?$AAB?$AAD?$AAI?$AAS?$AA?$AA@ 10001c2c     usbotgcm:usbotg.obj
+ 0001:00000c48       ??_C@_1BK@FGKFJCMG@?$AAT?$AAA?$AA_?$AAW?$AAA?$AAI?$AAT?$AA_?$AAB?$AAC?$AAO?$AAN?$AA?$AA@ 10001c48     usbotgcm:usbotg.obj
+ 0001:00000c64       ??_C@_1BM@JBDOFIJN@?$AAT?$AAA?$AA_?$AAW?$AAA?$AAI?$AAT?$AA_?$AAV?$AAR?$AAI?$AAS?$AAE?$AA?$AA@ 10001c64     usbotgcm:usbotg.obj
+ 0001:00000c80       ??_C@_1BI@PGIDKEBF@?$AAT?$AAB?$AA_?$AAS?$AAR?$AAP?$AA_?$AAF?$AAA?$AAI?$AAL?$AA?$AA@ 10001c80     usbotgcm:usbotg.obj
+ 0001:00000c98       ??_C@_1BE@MNDDMKMB@?$AAB?$AAu?$AAs?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?$AA@ 10001c98     usbotgcm:usbotg.obj
+ 0001:00000cac       ??_C@_1BM@MHMIAMLB@?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AAT?$AAy?$AAp?$AAe?$AA?$AA@ 10001cac     usbotgcm:usbotg.obj
+ 0001:00000cc8       ??_C@_1M@KNLKOEJA@?$AAU?$AAs?$AAb?$AAF?$AAn?$AA?$AA@ 10001cc8     usbotgcm:usbotg.obj
+ 0001:00000cd4       ??_C@_17FKIBOEGO@?$AAH?$AAc?$AAd?$AA?$AA@ 10001cd4     usbotgcm:usbotg.obj
+ 0001:00000cdc       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001cdc     usbotgcm:usbotg.obj
+ 0001:00000cf4       ??_C@_1CG@JHANLAFA@?$AAH?$AAC?$AAD?$AAP?$AAo?$AAr?$AAt?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AAO?$AAn?$AAO?$AAT?$AAG?$AA?$AA@ 10001cf4     usbotgcm:usbotg.obj
+ 0001:00000d1c       ??_C@_1CE@ECIJKOLO@?$AAD?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAR?$AAo?$AAl?$AAe?$AAS?$AAw?$AAi?$AAt?$AAc?$AAh?$AA?$AA@ 10001d1c     usbotgcm:usbotg.obj
+ 0001:00000d40       ??_C@_1CE@HMLFJEGL@?$AAD?$AAy?$AAn?$AAa?$AAm?$AAi?$AAc?$AAC?$AAl?$AAi?$AAe?$AAn?$AAt?$AAL?$AAo?$AAa?$AAd?$AA?$AA@ 10001d40     usbotgcm:usbotg.obj
+ 0001:00000d64       ??_7CRefObject@@6B@        10001d64     defbuslib:defbus.obj
+ 0001:00000d68       ??_C@_1M@OAJFFPML@?$AAF?$AAl?$AAa?$AAg?$AAs?$AA?$AA@ 10001d68     defbuslib:defbus.obj
+ 0001:00000d74       ??_C@_1M@PJMPBMAL@?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 10001d74     defbuslib:defbus.obj
+ 0001:00000d80       ??_C@_1BI@CDNKGHCP@?$AA?$CF?$AAs?$AA_?$AA?$CF?$AAd?$AA_?$AA?$CF?$AAd?$AA_?$AA?$CF?$AAd?$AA?$AA@ 10001d80     defbuslib:defbus.obj
+ 0001:00000d98       ??_C@_1BE@PMMIAJMN@?$AAB?$AAu?$AAs?$AAP?$AAa?$AAr?$AAe?$AAn?$AAt?$AA?$AA@ 10001d98     defbuslib:defbus.obj
+ 0001:00000dac       ??_7DeviceFolder@@6B@      10001dac     defbuslib:defbus.obj
+ 0001:00000dcc       ??_C@_17DJMMGLBL@?$AAD?$AAl?$AAl?$AA?$AA@ 10001dcc     defbuslib:defbus.obj
+ 0001:00000dd4       ??_C@_1M@JLADBBAF@?$AAE?$AAn?$AAt?$AAr?$AAy?$AA?$AA@ 10001dd4     defbuslib:defbus.obj
+ 0001:00000de0       ??_7DefaultBusDriver@@6B@  10001de0     defbuslib:defbus.obj
+ 0001:00000e3c       ??_C@_1BA@HABJOAEE@?$AAU?$AAN?$AAK?$AAN?$AAO?$AAW?$AAN?$AA?$AA@ 10001e3c     defbuslib:defbus.obj
+ 0001:00000e4c       ??_C@_1M@KCNCFNNL@?$AA$?$AAb?$AAu?$AAs?$AA?2?$AA?$AA@ 10001e4c     defbuslib:defbus.obj
+ 0001:00000e58       DEVICE_IFC_TWL_GUID        10001e58     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000e68       ??_7HSUSBOTGTransceiverTps659xx@@6B@ 10001e68     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000ea0       ??_C@_1DC@KMCHCCLA@?$AAT?$AAP?$AAS?$AA6?$AA5?$AA9?$AAX?$AAX?$AA?5?$AAU?$AAL?$AAP?$AAI?$AA?5?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 10001ea0     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000ed4       ??_C@_1CI@ONDOGBPJ@?$AA?7?$AAU?$AAL?$AAP?$AAI?$AA_?$AAV?$AAI?$AAD?$AA?$DN?$AA?$CI?$AA?$CF?$AAx?$AA?0?$AA?$CF?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001ed4     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000efc       ??_C@_1CI@OIICGPLH@?$AA?7?$AAU?$AAL?$AAP?$AAI?$AA_?$AAP?$AAI?$AAD?$AA?$DN?$AA?$CI?$AA?$CF?$AAx?$AA?0?$AA?$CF?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001efc     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000f24       ??_C@_1CO@HKAGOOOO@?$AA?7?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001f24     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000f54       ??_C@_1DA@KPAMGFJP@?$AA?7?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001f54     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000f84       ??_C@_1CM@EKMKKMLB@?$AA?7?$AAO?$AAT?$AAG?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$CI?$AA?$CF?$AAx?$AA?$CJ?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001f84     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000fb0       ??_C@_1DM@KCOOKLKJ@?$AA?7?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AA?5?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAr?$AAi?$AAs?$AAi?$AAn?$AAg?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001fb0     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00000fec       ??_C@_1DO@KEKHNAPH@?$AA?7?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AA?5?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAF?$AAa?$AAl?$AAl?$AAi?$AAn?$AAg?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001fec     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000102c       ??_C@_1CO@MHHIEMCK@?$AA?7?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 1000202c     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000105c       ??_C@_1CM@EPLEKGBF@?$AA?7?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AA?5?$AAL?$AAa?$AAt?$AAc?$AAh?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 1000205c     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00001088       ??_C@_1BI@LMCDJCFH@?$AA?7?$AAD?$AAe?$AAb?$AAu?$AAg?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002088     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:000010a0       ??_C@_1BM@COCHFPM@?$AA?7?$AAS?$AAc?$AAr?$AAa?$AAt?$AAc?$AAh?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 100020a0     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:000010bc       ??_C@_1BI@NAAPLKEI@?$AA?7?$AAP?$AAo?$AAw?$AAe?$AAr?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 100020bc     TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00001168       ??_C@_1M@MOBNNOLN@?$AAT?$AAW?$AAL?$AA1?$AA?3?$AA?$AA@ 10002168     triton_device:twl_access.obj
+ 0001:000011a0       ??0CRegistryEdit@@QAA@PAUHKEY__@@PBG@Z 100021a0 f i OMAP3530_musbotg:otg.obj
+ 0001:000011f0       ?ThreadStart@CMiniThread@@QAAHXZ 100021f0 f i OMAP3530_musbotg:otg.obj
+ 0001:00001230       ?WaitThreadComplete@CMiniThread@@QAAHK@Z 10002230 f i OMAP3530_musbotg:otg.obj
+ 0001:00001290       ?ForceTerminated@CMiniThread@@QAAHXZ 10002290 f i OMAP3530_musbotg:otg.obj
+ 0001:000012e0       ?ThreadProc@CMiniThread@@CAKPAX@Z 100022e0 f i OMAP3530_musbotg:otg.obj
+ 0001:00001310       ??0OMAPMHSUsbClientDeviceFolder@@QAA@KPBG0KKKKPAXK0@Z 10002310 f i OMAP3530_musbotg:otg.obj
+ 0001:0000138c       ?Init@DeviceFolder@@UAAHXZ 1000238c f i OMAP3530_musbotg:otg.obj
+ 0001:000013a0       ?GetPowerState@DeviceFolder@@UAA?AW4_CEDEVICE_POWER_STATE@@XZ 100023a0 f i OMAP3530_musbotg:otg.obj
+ 0001:000013a8       ?LoadDevice@OMAPMHSUsbClientDeviceFolder@@UAAHXZ 100023a8 f i OMAP3530_musbotg:otg.obj
+ 0001:000013f4       ?UnloadDevice@OMAPMHSUsbClientDeviceFolder@@UAAHXZ 100023f4 f i OMAP3530_musbotg:otg.obj
+ 0001:00001428       ?SetPowerState@OMAPMHSUsbClientDeviceFolder@@UAAHW4_CEDEVICE_POWER_STATE@@@Z 10002428 f i OMAP3530_musbotg:otg.obj
+ 0001:00001454       ?DeleteUSBOTGObject@@YAXPAVUSBOTG@@@Z 10002454 f   OMAP3530_musbotg:otg.obj
+ 0001:00001478       ?Init@OMAPMHSUSBIdGnd@@UAAHXZ 10002478 f   OMAP3530_musbotg:otg.obj
+ 0001:00001494       ?ThreadRun@OMAPMHSUSBIdGnd@@EAAKXZ 10002494 f   OMAP3530_musbotg:otg.obj
+ 0001:00001524       ?Init@OMAPMHSUSBDMA@@UAAHXZ 10002524 f   OMAP3530_musbotg:otg.obj
+ 0001:00001540       ?ThreadRun@OMAPMHSUSBDMA@@EAAKXZ 10002540 f   OMAP3530_musbotg:otg.obj
+ 0001:00001668       ?PostInit@OMAPMHSUSBOTG@@UAAHXZ 10002668 f   OMAP3530_musbotg:otg.obj
+ 0001:000016ec       ?IOControl@OMAPMHSUSBOTG@@UAAHKPAEK0KPAK@Z 100026ec f   OMAP3530_musbotg:otg.obj
+ 0001:00002074       ?LoadUnloadUSBFN@OMAPMHSUSBOTG@@UAAHH@Z 10003074 f   OMAP3530_musbotg:otg.obj
+ 0001:00002084       ?LoadUnloadHCD@OMAPMHSUSBOTG@@UAAHH@Z 10003084 f   OMAP3530_musbotg:otg.obj
+ 0001:00002094       ?OTGUSBFNNotfyActive@OMAPMHSUSBOTG@@UAAHPBGH@Z 10003094 f   OMAP3530_musbotg:otg.obj
+ 0001:000020a4       ?OTGHCDNotfyAccept@OMAPMHSUSBOTG@@UAAHPBGH@Z 100030a4 f   OMAP3530_musbotg:otg.obj
+ 0001:000020b4       ?UsbOtgConfigure@OMAPMHSUSBOTG@@UAA?AW4USBOTG_MODE@@W42@@Z 100030b4 f   OMAP3530_musbotg:otg.obj
+ 0001:000020bc       ?UpdateInput@OMAPMHSUSBOTG@@UAAHXZ 100030bc f   OMAP3530_musbotg:otg.obj
+ 0001:0000219c       ?IsSE0@OMAPMHSUSBOTG@@UAAHXZ 1000319c f   OMAP3530_musbotg:otg.obj
+ 0001:000021fc       ?NewStateAction@OMAPMHSUSBOTG@@UAAHW4USBOTG_STATES@@T_USBOTG_OUTPUT@@@Z 100031fc f   OMAP3530_musbotg:otg.obj
+ 0001:00002214       ?EventNotification@OMAPMHSUSBOTG@@UAAHXZ 10003214 f   OMAP3530_musbotg:otg.obj
+ 0001:00002224       ?SessionRequest@OMAPMHSUSBOTG@@UAAHHH@Z 10003224 f   OMAP3530_musbotg:otg.obj
+ 0001:00002284       ?GetMode@OMAPMHSUSBOTG@@UAAKXZ 10003284 f   OMAP3530_musbotg:otg.obj
+ 0001:000022c0       ?PowerDownDisconnect@OMAPMHSUSBOTG@@UAAXXZ 100032c0 f   OMAP3530_musbotg:otg.obj
+ 0001:00002384       ?OTG_ProcessEPx@OMAPMHSUSBOTG@@UAAKEH@Z 10003384 f   OMAP3530_musbotg:otg.obj
+ 0001:00002438       ?OTG_ProcessEP0@OMAPMHSUSBOTG@@UAAKXZ 10003438 f   OMAP3530_musbotg:otg.obj
+ 0001:000024c4       ?OTG_ConfigISR_stage1@OMAPMHSUSBOTG@@UAAKXZ 100034c4 f   OMAP3530_musbotg:otg.obj
+ 0001:00002978       ?CreateFunctionDeviceFolder@OMAPMHSUSBOTG@@UAAPAVDeviceFolder@@PBG0KKKKPAXK0@Z 10003978 f   OMAP3530_musbotg:otg.obj
+ 0001:000029f8       ?CreateHostDeviceFolder@OMAPMHSUSBOTG@@UAAPAVDeviceFolder@@PBG0KKKKPAXK0@Z 100039f8 f   OMAP3530_musbotg:otg.obj
+ 0001:00002a78       ?EnableSuspend@OMAPMHSUSBOTG@@UAAHH@Z 10003a78 f   OMAP3530_musbotg:otg.obj
+ 0001:00002ab0       ?StopUSBClock@OMAPMHSUSBOTG@@UAAHXZ 10003ab0 f   OMAP3530_musbotg:otg.obj
+ 0001:00002b9c       ?StartUSBClock@OMAPMHSUSBOTG@@UAAHH@Z 10003b9c f   OMAP3530_musbotg:otg.obj
+ 0001:00002cd4       ?SetPowerState@OMAPMHSUSBOTG@@UAAHW4_CEDEVICE_POWER_STATE@@@Z 10003cd4 f   OMAP3530_musbotg:otg.obj
+ 0001:000030a4       ?PowerUp@OMAPMHSUSBOTG@@UAAHXZ 100040a4 f   OMAP3530_musbotg:otg.obj
+ 0001:000030fc       ?PowerDown@OMAPMHSUSBOTG@@UAAHXZ 100040fc f   OMAP3530_musbotg:otg.obj
+ 0001:00003158       ?ContextRestore@OMAPMHSUSBOTG@@UAAHXZ 10004158 f   OMAP3530_musbotg:otg.obj
+ 0001:00003160       ?ResetEndPoints@OMAPMHSUSBOTG@@UAAXXZ 10004160 f   OMAP3530_musbotg:otg.obj
+ 0001:000031f8       ?UpdateBatteryCharger@OMAPMHSUSBOTG@@UAAXK@Z 100041f8 f   OMAP3530_musbotg:otg.obj
+ 0001:0000323c       ?SoftResetMUSBController@OMAPMHSUSBOTG@@UAAHH@Z 1000423c f   OMAP3530_musbotg:otg.obj
+ 0001:00003400       ?ReadULPIReg@OMAPMHSUSBOTG@@QAAEPAUHSMUSB_T@@E@Z 10004400 f   OMAP3530_musbotg:otg.obj
+ 0001:0000347c       OTGAttach                  1000447c f   OMAP3530_musbotg:otg.obj
+ 0001:000034bc       OTGUSBClock                100044bc f   OMAP3530_musbotg:otg.obj
+ 0001:0000351c       ??0CMiniThread@@QAA@KH@Z   1000451c f i OMAP3530_musbotg:otg.obj
+ 0001:00003588       ??1OMAPMHSUsbClientDeviceFolder@@UAA@XZ 10004588 f i OMAP3530_musbotg:otg.obj
+ 0001:000035c8       ??_EOMAPMHSUsbClientDeviceFolder@@UAAPAXI@Z 100045c8 f i OMAP3530_musbotg:otg.obj
+ 0001:000035c8       ??_GOMAPMHSUsbClientDeviceFolder@@UAAPAXI@Z 100045c8 f i OMAP3530_musbotg:otg.obj
+ 0001:000035f0       ??0OMAPMHSUSBIdGnd@@QAA@PAVOMAPMHSUSBOTG@@@Z 100045f0 f   OMAP3530_musbotg:otg.obj
+ 0001:00003648       ??1OMAPMHSUSBIdGnd@@UAA@XZ 10004648 f   OMAP3530_musbotg:otg.obj
+ 0001:00003694       ??0OMAPMHSUSBDMA@@QAA@PAVOMAPMHSUSBOTG@@K@Z 10004694 f   OMAP3530_musbotg:otg.obj
+ 0001:00003750       ??1OMAPMHSUSBDMA@@UAA@XZ   10004750 f   OMAP3530_musbotg:otg.obj
+ 0001:00003798       ??0OMAPMHSUSBOTG@@QAA@PBG@Z 10004798 f   OMAP3530_musbotg:otg.obj
+ 0001:00003878       ?Close@DefaultBusDriver@@UAAHXZ 10004878 f i OMAP3530_musbotg:otg.obj
+ 0001:00003880       ?IsChildRemoved@DefaultBusDriver@@UAAHPBG@Z 10004880 f i OMAP3530_musbotg:otg.obj
+ 0001:00003888       ?Open@USBOTG@@UAAHKK@Z     10004888 f i OMAP3530_musbotg:otg.obj
+ 0001:00003890       ?GetOtgAConnectEvent@USBOTG@@UAAPAXXZ 10004890 f i OMAP3530_musbotg:otg.obj
+ 0001:00003898       ?SetChildDevicePowerState@USBOTG@@UAAHPAU_CE_BUS_POWER_STATE@@@Z 10004898 f i OMAP3530_musbotg:otg.obj
+ 0001:000038a0       ?GetChildDevicePowerState@USBOTG@@UAAHPAU_CE_BUS_POWER_STATE@@@Z 100048a0 f i OMAP3530_musbotg:otg.obj
+ 0001:000038a8       ?UpdatePowerState@USBOTG@@UAAHXZ 100048a8 f i OMAP3530_musbotg:otg.obj
+ 0001:000038b0       ?GetPowerCapabilities@USBOTG@@UAA?AU_POWER_CAPABILITIES@@XZ 100048b0 f i OMAP3530_musbotg:otg.obj
+ 0001:000038d4       ?DischargVBus@OMAPMHSUSBOTG@@UAAHXZ 100048d4 f i OMAP3530_musbotg:otg.obj
+ 0001:000038dc       ??1OMAPMHSUSBOTG@@UAA@XZ   100048dc f   OMAP3530_musbotg:otg.obj
+ 0001:000039ec       ?MapHardware@OMAPMHSUSBOTG@@AAAHXZ 100049ec f   OMAP3530_musbotg:otg.obj
+ 0001:00003c20       ?OTG_ConfigISR_stage2@OMAPMHSUSBOTG@@UAAKXZ 10004c20 f   OMAP3530_musbotg:otg.obj
+ 0001:00004048       ?LinkRecoveryProcedure1@OMAPMHSUSBOTG@@QAAHXZ 10005048 f   OMAP3530_musbotg:otg.obj
+ 0001:00004278       ?LinkRecoveryProcedure2@OMAPMHSUSBOTG@@QAAHXZ 10005278 f   OMAP3530_musbotg:otg.obj
+ 0001:000044c0       ?SoftResetULPILink@OMAPMHSUSBOTG@@UAAHXZ 100054c0 f   OMAP3530_musbotg:otg.obj
+ 0001:0000459c       ?ThreadRun@OMAPMHSUSBOTG@@EAAKXZ 1000559c f   OMAP3530_musbotg:otg.obj
+ 0001:00005a44       ?CreateUSBOTGObject@@YAPAVUSBOTG@@PAG@Z 10006a44 f   OMAP3530_musbotg:otg.obj
+ 0001:00005a80       ??_GOMAPMHSUSBIdGnd@@UAAPAXI@Z 10006a80 f i OMAP3530_musbotg:otg.obj
+ 0001:00005a80       ??_EOMAPMHSUSBIdGnd@@UAAPAXI@Z 10006a80 f i OMAP3530_musbotg:otg.obj
+ 0001:00005aa8       ??_EOMAPMHSUSBDMA@@UAAPAXI@Z 10006aa8 f i OMAP3530_musbotg:otg.obj
+ 0001:00005aa8       ??_GOMAPMHSUSBDMA@@UAAPAXI@Z 10006aa8 f i OMAP3530_musbotg:otg.obj
+ 0001:00005ad0       ??_GOMAPMHSUSBOTG@@UAAPAXI@Z 10006ad0 f i OMAP3530_musbotg:otg.obj
+ 0001:00005ad0       ??_EOMAPMHSUSBOTG@@UAAPAXI@Z 10006ad0 f i OMAP3530_musbotg:otg.obj
+ 0001:00005b00       ?Init@OMAPMHSUSBOTG@@UAAHXZ 10006b00 f   OMAP3530_musbotg:otg.obj
+ 0001:00005d18       ?DeRef@CRefObject@@QAAKXZ  10006d18 f i usbotgcm:usbotg.obj
+ 0001:00005d5c       ?GetRegValue@CRegistryEdit@@QAAHPBGPAEK@Z 10006d5c f i usbotgcm:usbotg.obj
+ 0001:00005dac       ?IOControl@DefaultBusDriver@@UAAHKPAEK0KPAK@Z 10006dac f i usbotgcm:usbotg.obj
+ 0001:00005df0       ?Init@USBOTGWatchDog@@UAAHXZ 10006df0 f   usbotgcm:usbotg.obj
+ 0001:00005e20       ?WatchForItem@USBOTGWatchDog@@UAAHW4USBOTG_WATCHITEM@@K@Z 10006e20 f   usbotgcm:usbotg.obj
+ 0001:00005e6c       ?ThreadRun@USBOTGWatchDog@@EAAKXZ 10006e6c f   usbotgcm:usbotg.obj
+ 0001:00005ef4       ??0USBOTG@@QAA@PBG@Z       10006ef4 f   usbotgcm:usbotg.obj
+ 0001:0000611c       ?CreateFunctionDeviceFolder@USBOTG@@UAAPAVDeviceFolder@@PBG0KKKKPAXK0@Z 1000711c f i usbotgcm:usbotg.obj
+ 0001:00006194       ?CreateHostDeviceFolder@USBOTG@@UAAPAVDeviceFolder@@PBG0KKKKPAXK0@Z 10007194 f i usbotgcm:usbotg.obj
+ 0001:0000620c       ?PowerUp@USBOTG@@UAAHXZ    1000720c f i usbotgcm:usbotg.obj
+ 0001:00006214       ?PowerDown@USBOTG@@UAAHXZ  10007214 f i usbotgcm:usbotg.obj
+ 0001:0000621c       ?GetBusNamePrefix@USBOTG@@UAAKPAGK@Z 1000721c f   usbotgcm:usbotg.obj
+ 0001:00006274       ?PostInit@USBOTG@@UAAHXZ   10007274 f   usbotgcm:usbotg.obj
+ 0001:00006338       ?ActivateAllChildDrivers@USBOTG@@UAAHXZ 10007338 f   usbotgcm:usbotg.obj
+ 0001:00006428       ?GetChildByDeviceNumber@USBOTG@@QAAPAVDeviceFolder@@K@Z 10007428 f   usbotgcm:usbotg.obj
+ 0001:000064b8       ?LoadUnloadClientDriver@USBOTG@@AAAHHPAVDeviceFolder@@@Z 100074b8 f   usbotgcm:usbotg.obj
+ 0001:00006528       ?LoadUnloadHCD@USBOTG@@UAAHH@Z 10007528 f   usbotgcm:usbotg.obj
+ 0001:00006588       ?LoadUnloadUSBFN@USBOTG@@UAAHH@Z 10007588 f   usbotgcm:usbotg.obj
+ 0001:000065e8       ?EnterState@USBOTG@@MAAHW4USBOTG_STATES@@@Z 100075e8 f   usbotgcm:usbotg.obj
+ 0001:000067a8       ?StateChange@USBOTG@@MAA?AW4USBOTG_STATES@@W42@@Z 100077a8 f   usbotgcm:usbotg.obj
+ 0001:00006c0c       ?EventNotification@USBOTG@@UAAHXZ 10007c0c f   usbotgcm:usbotg.obj
+ 0001:00006cb8       ?NewStateAction@USBOTG@@UAAHW4USBOTG_STATES@@T_USBOTG_OUTPUT@@@Z 10007cb8 f   usbotgcm:usbotg.obj
+ 0001:00006cec       ?TimeOut@USBOTG@@UAAHW4USBOTG_WATCHITEM@@@Z 10007cec f   usbotgcm:usbotg.obj
+ 0001:00006e34       ?IOControl@USBOTG@@UAAHKPAEK0KPAK@Z 10007e34 f   usbotgcm:usbotg.obj
+ 0001:00007434       ?GetOTGEnableBit@USBOTG@@UAAEPBG@Z 10008434 f   usbotgcm:usbotg.obj
+ 0001:000074c4       ?OTGUSBFNNotfyActive@USBOTG@@UAAHPBGH@Z 100084c4 f   usbotgcm:usbotg.obj
+ 0001:00007554       ?OTGHCDNotfyAccept@USBOTG@@UAAHPBGH@Z 10008554 f   usbotgcm:usbotg.obj
+ 0001:000075e4       ?OtgRequestBus@USBOTG@@UAAHH@Z 100085e4 f   usbotgcm:usbotg.obj
+ 0001:00007660       ?OtgDropBus@USBOTG@@UAAHH@Z 10008660 f   usbotgcm:usbotg.obj
+ 0001:00007668       ?OtgSuspendBus@USBOTG@@UAAHPBGH@Z 10008668 f   usbotgcm:usbotg.obj
+ 0001:00007758       ?OtgEnableHNP@USBOTG@@UAAHPBGH@Z 10008758 f   usbotgcm:usbotg.obj
+ 0001:00007844       ?OTGNotifyDetach@USBOTG@@UAAHPBG@Z 10008844 f   usbotgcm:usbotg.obj
+ 0001:000078fc       DllEntry                   100088fc f   usbotgcm:usbotg.obj
+ 0001:00007914       OTG_Init                   10008914 f   usbotgcm:usbotg.obj
+ 0001:00007968       OTG_Deinit                 10008968 f   usbotgcm:usbotg.obj
+ 0001:0000797c       OTG_PowerUp                1000897c f   usbotgcm:usbotg.obj
+ 0001:000079a0       OTG_PowerDown              100089a0 f   usbotgcm:usbotg.obj
+ 0001:000079c4       OTG_Open                   100089c4 f   usbotgcm:usbotg.obj
+ 0001:000079fc       OTG_Close                  100089fc f   usbotgcm:usbotg.obj
+ 0001:00007a2c       OTG_IOControl              10008a2c f   usbotgcm:usbotg.obj
+ 0001:00007a78       ??0USBOTGWatchDog@@QAA@PAVUSBOTG@@@Z 10008a78 f   usbotgcm:usbotg.obj
+ 0001:00007ae4       ??1USBOTGWatchDog@@UAA@XZ  10008ae4 f   usbotgcm:usbotg.obj
+ 0001:00007b54       ??1USBOTG@@UAA@XZ          10008b54 f   usbotgcm:usbotg.obj
+ 0001:00007c34       ?Init@USBOTG@@UAAHXZ       10008c34 f   usbotgcm:usbotg.obj
+ 0001:00008150       ??_GUSBOTGWatchDog@@UAAPAXI@Z 10009150 f i usbotgcm:usbotg.obj
+ 0001:00008150       ??_EUSBOTGWatchDog@@UAAPAXI@Z 10009150 f i usbotgcm:usbotg.obj
+ 0001:00008178       ??_EUSBOTG@@UAAPAXI@Z      10009178 f i usbotgcm:usbotg.obj
+ 0001:00008178       ??_GUSBOTG@@UAAPAXI@Z      10009178 f i usbotgcm:usbotg.obj
+ 0001:000081a0       ??_GCRefObject@@UAAPAXI@Z  100091a0 f i defbuslib:defbus.obj
+ 0001:000081a0       ??_ECRefObject@@UAAPAXI@Z  100091a0 f i defbuslib:defbus.obj
+ 0001:000081c8       ?TranslateBusAddr@DefaultBusDriver@@QAAHW4_INTERFACE_TYPE@@KT_LARGE_INTEGER@@PAKPAT3@@Z 100091c8 f i defbuslib:defbus.obj
+ 0001:00008240       ?TranslateSystemAddr@DefaultBusDriver@@QAAHW4_INTERFACE_TYPE@@KT_LARGE_INTEGER@@PAT3@@Z 10009240 f i defbuslib:defbus.obj
+ 0001:000082a8       ??0DeviceFolder@@QAA@PBG0KKKKPAXK0@Z 100092a8 f   defbuslib:defbus.obj
+ 0001:00008544       ?SetPowerState@DeviceFolder@@UAAHW4_CEDEVICE_POWER_STATE@@@Z 10009544 f i defbuslib:defbus.obj
+ 0001:00008558       ?LoadDevice@DeviceFolder@@UAAHXZ 10009558 f   defbuslib:defbus.obj
+ 0001:000086dc       ?UnloadDevice@DeviceFolder@@UAAHXZ 100096dc f   defbuslib:defbus.obj
+ 0001:00008714       ?SetConfigurationData@DeviceFolder@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@@Z 10009714 f   defbuslib:defbus.obj
+ 0001:00008780       ?GetConfigurationData@DeviceFolder@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@@Z 10009780 f   defbuslib:defbus.obj
+ 0001:000087ec       ??0DefaultBusDriver@@QAA@PBG@Z 100097ec f   defbuslib:defbus.obj
+ 0001:00008848       ?PostInit@DefaultBusDriver@@UAAHXZ 10009848 f i defbuslib:defbus.obj
+ 0001:00008850       ?PowerUp@DefaultBusDriver@@UAAHXZ 10009850 f i defbuslib:defbus.obj
+ 0001:00008858       ?PowerDown@DefaultBusDriver@@UAAHXZ 10009858 f i defbuslib:defbus.obj
+ 0001:00008860       ?Init@DefaultBusDriver@@UAAHXZ 10009860 f   defbuslib:defbus.obj
+ 0001:0000887c       ??1DefaultBusDriver@@UAA@XZ 1000987c f   defbuslib:defbus.obj
+ 0001:00008924       ?TranslateChildBusAddr@DefaultBusDriver@@UAAHPAU_CE_BUS_TRANSLATE_BUS_ADDR@@@Z 10009924 f   defbuslib:defbus.obj
+ 0001:00008970       ?TranslateChildSystemAddr@DefaultBusDriver@@UAAHPAU_CE_BUS_TRANSLATE_SYSTEM_ADDR@@@Z 10009970 f   defbuslib:defbus.obj
+ 0001:000089b4       ?SetChildDeviceConfigurationData@DefaultBusDriver@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@PAPAVDeviceFolder@@@Z 100099b4 f   defbuslib:defbus.obj
+ 0001:00008a10       ?GetChildDeviceConfigurationData@DefaultBusDriver@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@PAPAVDeviceFolder@@@Z 10009a10 f   defbuslib:defbus.obj
+ 0001:00008a6c       ?SetChildDevicePowerState@DefaultBusDriver@@UAAHPAU_CE_BUS_POWER_STATE@@PAPAVDeviceFolder@@@Z 10009a6c f   defbuslib:defbus.obj
+ 0001:00008ae0       ?GetChildDevicePowerState@DefaultBusDriver@@UAAHPAU_CE_BUS_POWER_STATE@@PAPAVDeviceFolder@@@Z 10009ae0 f   defbuslib:defbus.obj
+ 0001:00008b58       ?ActivateChild@DefaultBusDriver@@UAAHPBG@Z 10009b58 f   defbuslib:defbus.obj
+ 0001:00008ba8       ?DeactivateChild@DefaultBusDriver@@UAAHPBG@Z 10009ba8 f   defbuslib:defbus.obj
+ 0001:00008bf8       ?GetBusNamePrefix@DefaultBusDriver@@UAAKPAGK@Z 10009bf8 f   defbuslib:defbus.obj
+ 0001:00008c50       ?FastIOControl@DefaultBusDriver@@UAAHKPAEK0KPAKPAPAVDeviceFolder@@@Z 10009c50 f   defbuslib:defbus.obj
+ 0001:00009078       ?GetChildByName@DefaultBusDriver@@UAAPAVDeviceFolder@@PBGPAPAV2@@Z 1000a078 f   defbuslib:defbus.obj
+ 0001:00009188       ?InsertChild@DefaultBusDriver@@UAAHPAVDeviceFolder@@@Z 1000a188 f   defbuslib:defbus.obj
+ 0001:00009210       ?RemoveChildByName@DefaultBusDriver@@UAAHPBG@Z 1000a210 f   defbuslib:defbus.obj
+ 0001:00009270       ?RemoveChildByFolder@DefaultBusDriver@@UAAHPAVDeviceFolder@@@Z 1000a270 f   defbuslib:defbus.obj
+ 0001:0000930c       ?Open@DefaultBusDriver@@UAAHKK@Z 1000a30c f   defbuslib:defbus.obj
+ 0001:0000931c       ??1DeviceFolder@@UAA@XZ    1000a31c f   defbuslib:defbus.obj
+ 0001:000093d8       ??_GDefaultBusDriver@@UAAPAXI@Z 1000a3d8 f i defbuslib:defbus.obj
+ 0001:000093d8       ??_EDefaultBusDriver@@UAAPAXI@Z 1000a3d8 f i defbuslib:defbus.obj
+ 0001:00009400       ??_GDeviceFolder@@UAAPAXI@Z 1000a400 f i defbuslib:defbus.obj
+ 0001:00009400       ??_EDeviceFolder@@UAAPAXI@Z 1000a400 f i defbuslib:defbus.obj
+ 0001:00009428       SetDevicePowerState        1000a428 f   ceddk:CEDDK.dll
+ 0001:00009438       CreateBusAccessHandle      1000a438 f   ceddk:CEDDK.dll
+ 0001:00009448       GetDeviceRegistryParams    1000a448 f   ceddk:CEDDK.dll
+ 0001:00009458       ReleaseDevicePads          1000a458 f   ceddk:CEDDK.dll
+ 0001:00009468       CloseBusAccessHandle       1000a468 f   ceddk:CEDDK.dll
+ 0001:00009478       MmMapIoSpace               1000a478 f   ceddk:CEDDK.dll
+ 0001:00009488       GPIOClose                  1000a488 f   ceddk:CEDDK.dll
+ 0001:00009498       GPIOClrBit                 1000a498 f   ceddk:CEDDK.dll
+ 0001:000094a8       GPIOSetBit                 1000a4a8 f   ceddk:CEDDK.dll
+ 0001:000094b8       GPIOSetMode                1000a4b8 f   ceddk:CEDDK.dll
+ 0001:000094c8       GPIOOpen                   1000a4c8 f   ceddk:CEDDK.dll
+ 0001:000094d8       RequestDevicePads          1000a4d8 f   ceddk:CEDDK.dll
+ 0001:000094e8       HalTranslateBusAddress     1000a4e8 f   ceddk:CEDDK.dll
+ 0001:000094f8       TranslateBusAddr           1000a4f8 f   ceddk:CEDDK.dll
+ 0001:00009508       HalTranslateSystemAddress  1000a508 f   ceddk:CEDDK.dll
+ 0001:00009518       TranslateSystemAddr        1000a518 f   ceddk:CEDDK.dll
+ 0001:00009528       HalSetBusDataByOffset      1000a528 f   ceddk:CEDDK.dll
+ 0001:00009538       HalGetBusDataByOffset      1000a538 f   ceddk:CEDDK.dll
+ 0001:00009548       EventModify                1000a548 f   coredll:COREDLL.dll
+ 0001:00009558       InitializeCriticalSection  1000a558 f   coredll:COREDLL.dll
+ 0001:00009568       DeleteCriticalSection      1000a568 f   coredll:COREDLL.dll
+ 0001:00009578       RegOpenKeyExW              1000a578 f   coredll:COREDLL.dll
+ 0001:00009588       RegCloseKey                1000a588 f   coredll:COREDLL.dll
+ 0001:00009598       DDKReg_GetIsrInfo          1000a598 f   coredll:COREDLL.dll
+ 0001:000095a8       ResumeThread               1000a5a8 f   coredll:COREDLL.dll
+ 0001:000095b8       CloseHandle                1000a5b8 f   coredll:COREDLL.dll
+ 0001:000095c8       WaitForSingleObject        1000a5c8 f   coredll:COREDLL.dll
+ 0001:000095d8       TerminateThread            1000a5d8 f   coredll:COREDLL.dll
+ 0001:000095e8       ExitThread                 1000a5e8 f   coredll:COREDLL.dll
+ 0001:000095f8       EnterCriticalSection       1000a5f8 f   coredll:COREDLL.dll
+ 0001:00009608       LeaveCriticalSection       1000a608 f   coredll:COREDLL.dll
+ 0001:00009618       CeSetThreadPriority        1000a618 f   coredll:COREDLL.dll
+ 0001:00009628       InterruptDone              1000a628 f   coredll:COREDLL.dll
+ 0001:00009638       Sleep                      1000a638 f   coredll:COREDLL.dll
+ 0001:00009648       NKDbgPrintfW               1000a648 f   coredll:COREDLL.dll
+ 0001:00009658       SetInterruptEvent          1000a658 f   coredll:COREDLL.dll
+ 0001:00009668       RegSetValueExW             1000a668 f   coredll:COREDLL.dll
+ 0001:00009678       SetEventData               1000a678 f   coredll:COREDLL.dll
+ 0001:00009688       CeGetThreadPriority        1000a688 f   coredll:COREDLL.dll
+ 0001:00009698       CreateThread               1000a698 f   coredll:COREDLL.dll
+ 0001:000096a8       CreateEventW               1000a6a8 f   coredll:COREDLL.dll
+ 0001:000096b8       InterruptInitialize        1000a6b8 f   coredll:COREDLL.dll
+ 0001:000096c8       KernelIoControl            1000a6c8 f   coredll:COREDLL.dll
+ 0001:000096d8       StringCchCopyW             1000a6d8 f   coredll:COREDLL.dll
+ 0001:000096e8       GetLastError               1000a6e8 f   coredll:COREDLL.dll
+ 0001:000096f8       IsAPIReady                 1000a6f8 f   coredll:COREDLL.dll
+ 0001:00009708       GetTickCount               1000a708 f   coredll:COREDLL.dll
+ 0001:00009718       WaitForAPIReady            1000a718 f   coredll:COREDLL.dll
+ 0001:00009728       WaitForMultipleObjects     1000a728 f   coredll:COREDLL.dll
+ 0001:00009738       RegQueryValueExW           1000a738 f   coredll:COREDLL.dll
+ 0001:00009748       LocalAlloc                 1000a748 f   coredll:COREDLL.dll
+ 0001:00009758       InterlockedIncrement       1000a758 f   coredll:COREDLL.dll
+ 0001:00009768       InterlockedDecrement       1000a768 f   coredll:COREDLL.dll
+ 0001:00009778       OpenDeviceKey              1000a778 f   coredll:COREDLL.dll
+ 0001:00009788       StringCchCatW              1000a788 f   coredll:COREDLL.dll
+ 0001:00009798       GetDeviceInformationByDeviceHandle 1000a798 f   coredll:COREDLL.dll
+ 0001:000097a8       GetDeviceHandleFromContext 1000a7a8 f   coredll:COREDLL.dll
+ 0001:000097b8       SetLastError               1000a7b8 f   coredll:COREDLL.dll
+ 0001:000097c8       DisableThreadLibraryCalls  1000a7c8 f   coredll:COREDLL.dll
+ 0001:000097d8       StringCchPrintfW           1000a7d8 f   coredll:COREDLL.dll
+ 0001:000097e8       ActivateDeviceEx           1000a7e8 f   coredll:COREDLL.dll
+ 0001:000097f8       FreeLibrary                1000a7f8 f   coredll:COREDLL.dll
+ 0001:00009808       GetProcAddressW            1000a808 f   coredll:COREDLL.dll
+ 0001:00009818       LoadDriver                 1000a818 f   coredll:COREDLL.dll
+ 0001:00009828       LoadLibraryW               1000a828 f   coredll:COREDLL.dll
+ 0001:00009838       DeactivateDevice           1000a838 f   coredll:COREDLL.dll
+ 0001:00009848       _DllEntryCRTStartup        1000a848 f   corelib0:pegdentry.obj
+ 0001:00009890       __GSHandlerCheckCommon     1000a890 f   corelib0:gshandler.obj
+ 0001:000098cc       __GSHandlerCheck           1000a8cc f   corelib0:gshandler.obj
+ 0001:000098f0       __security_init_cookie     1000a8f0 f   corelib0:seccinit.obj
+ 0001:0000994c       __security_check_cookie    1000a94c f   corelib0:armsecgs.obj
+ 0001:00009960       __gsfailure                1000a960 f   corelib0:armsecgs.obj
+ 0001:00009aa0       _cexit                     1000aaa0 f   corelib0:cexit.obj
+ 0001:00009abc       _initterm                  1000aabc f   corelib0:crt0dat.obj
+ 0001:00009af0       _cinit                     1000aaf0 f   corelib0:crt0dat.obj
+ 0001:00009b24       __C_specific_handler       1000ab24 f   corelib1:COREDLL.dll
+ 0001:00009b34       memset                     1000ab34 f   corelib1:COREDLL.dll
+ 0001:00009b44       ??2@YAPAXI@Z               1000ab44 f   corelib1:COREDLL.dll
+ 0001:00009b54       _purecall                  1000ab54 f   corelib1:COREDLL.dll
+ 0001:00009b64       ??3@YAXPAX@Z               1000ab64 f   corelib1:COREDLL.dll
+ 0001:00009b74       wcslen                     1000ab74 f   corelib1:COREDLL.dll
+ 0001:00009b84       memcpy                     1000ab84 f   corelib1:COREDLL.dll
+ 0001:00009b94       strcmp                     1000ab94 f   corelib1:COREDLL.dll
+ 0001:00009ba4       malloc                     1000aba4 f   corelib1:COREDLL.dll
+ 0001:00009bb4       _wcsdup                    1000abb4 f   corelib1:COREDLL.dll
+ 0001:00009bc4       wcscpy                     1000abc4 f   corelib1:COREDLL.dll
+ 0001:00009bd4       wcsncpy                    1000abd4 f   corelib1:COREDLL.dll
+ 0001:00009be4       _wcsicmp                   1000abe4 f   corelib1:COREDLL.dll
+ 0001:00009bf4       _wcsnicmp                  1000abf4 f   corelib1:COREDLL.dll
+ 0001:00009c04       free                       1000ac04 f   corelib1:COREDLL.dll
+ 0001:00009c14       __security_gen_cookie2     1000ac14 f   corelib1:COREDLL.dll
+ 0001:00009c24       __report_gsfailure         1000ac24 f   corelib1:COREDLL.dll
+ 0001:00009c34       ?Configure@HSUSBOTGTransceiverTps659xx@@AAAXXZ 1000ac34 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00009f24       ?EnableVBusDischarge@HSUSBOTGTransceiverTps659xx@@UAAXH@Z 1000af24 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:00009f5c       ?ResetPHY@HSUSBOTGTransceiverTps659xx@@UAAHXZ 1000af5c f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a060       ?IsADeviceConnected@HSUSBOTGTransceiverTps659xx@@UAAHXZ 1000b060 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a0a8       ?IsBDeviceConnected@HSUSBOTGTransceiverTps659xx@@UAAHXZ 1000b0a8 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a0f0       ?SetVBusSource@HSUSBOTGTransceiverTps659xx@@UAAXH@Z 1000b0f0 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a12c       ?AconnNotifHandle@HSUSBOTGTransceiverTps659xx@@UAAXPAX@Z 1000b12c f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a134       ?EnableWakeupInterrupt@HSUSBOTGTransceiverTps659xx@@UAAXH@Z 1000b134 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a180       ?StateChangeThread@HSUSBOTGTransceiverTps659xx@@CAKPAX@Z 1000b180 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a1a4       ??0HSUSBOTGTransceiverTps659xx@@QAA@PAUHSMUSB_T@@@Z 1000b1a4 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a27c       ?SupportsTransceiverWakeWithoutClock@HSUSBOTGTransceiverTps659xx@@UAAHXZ 1000b27c f i TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a284       ?Reset@HSUSBOTGTransceiverTps659xx@@UAAXXZ 1000b284 f i TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a288       ?Resume@HSUSBOTGTransceiverTps659xx@@UAAXXZ 1000b288 f i TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a28c       ?UpdateUSBVBusSleepOffState@HSUSBOTGTransceiverTps659xx@@UAAHH@Z 1000b28c f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a370       ?SetLowPowerMode@HSUSBOTGTransceiverTps659xx@@UAAHXZ 1000b370 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a378       ?IsSE0@HSUSBOTGTransceiverTps659xx@@UAAHXZ 1000b378 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a3b0       ?DumpULPIRegs@HSUSBOTGTransceiverTps659xx@@UAAXXZ 1000b3b0 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a5b4       CreateHSUSBOTGTransceiver  1000b5b4 f   TPS659xx_usbotg:tps659xx_musb.obj
+ 0001:0000a5e8       TWLOpen                    1000b5e8 f   triton_device:twl_access.obj
+ 0001:0000a6a8       TWLReadRegs                1000b6a8 f   triton_device:twl_access.obj
+ 0001:0000a734       TWLWriteRegs               1000b734 f   triton_device:twl_access.obj
+ 0001:0000a7bc       TWLInterruptInitialize     1000b7bc f   triton_device:twl_access.obj
+ 0001:0000a834       TWLInterruptMask           1000b834 f   triton_device:twl_access.obj
+ 0001:0000a8a0       TWLWakeEnable              1000b8a0 f   triton_device:twl_access.obj
+ 0001:0000a90c       StallExecution             1000b90c f   ceddk:CEDDK.dll
+ 0001:0000a91c       InterlockedExchange        1000b91c f   coredll:COREDLL.dll
+ 0001:0000a92c       TerminateProcess           1000b92c f   coredll:COREDLL.dll
+ 0001:0000a93c       __GetUserKData             1000b93c f   coredll:COREDLL.dll
+ 0001:0000a94c       LocalFree                  1000b94c f   coredll:COREDLL.dll
+ 0001:0000a95c       DeviceIoControl            1000b95c f   coredll:COREDLL.dll
+ 0001:0000a96c       CreateFileW                1000b96c f   coredll:COREDLL.dll
+ 0001:0000a97c       ReadFile                   1000b97c f   coredll:COREDLL.dll
+ 0001:0000a98c       SetFilePointer             1000b98c f   coredll:COREDLL.dll
+ 0001:0000a99c       WriteFile                  1000b99c f   coredll:COREDLL.dll
+ 0001:0000aa20       __IMPORT_DESCRIPTOR_CEDDK  1000ba20     ceddk:CEDDK.dll
+ 0001:0000aa34       __IMPORT_DESCRIPTOR_COREDLL 1000ba34     coredll:COREDLL.dll
+ 0001:0000aa48       __NULL_IMPORT_DESCRIPTOR   1000ba48     ceddk:CEDDK.dll
+ 0002:00000000       __imp_SetDevicePowerState  1000c000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_CreateBusAccessHandle 1000c004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_GetDeviceRegistryParams 1000c008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_ReleaseDevicePads    1000c00c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_CloseBusAccessHandle 1000c010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_MmMapIoSpace         1000c014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_GPIOClose            1000c018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_GPIOClrBit           1000c01c     ceddk:CEDDK.dll
+ 0002:00000020       __imp_GPIOSetBit           1000c020     ceddk:CEDDK.dll
+ 0002:00000024       __imp_GPIOSetMode          1000c024     ceddk:CEDDK.dll
+ 0002:00000028       __imp_GPIOOpen             1000c028     ceddk:CEDDK.dll
+ 0002:0000002c       __imp_RequestDevicePads    1000c02c     ceddk:CEDDK.dll
+ 0002:00000030       __imp_HalTranslateBusAddress 1000c030     ceddk:CEDDK.dll
+ 0002:00000034       __imp_TranslateBusAddr     1000c034     ceddk:CEDDK.dll
+ 0002:00000038       __imp_HalTranslateSystemAddress 1000c038     ceddk:CEDDK.dll
+ 0002:0000003c       __imp_TranslateSystemAddr  1000c03c     ceddk:CEDDK.dll
+ 0002:00000040       __imp_HalSetBusDataByOffset 1000c040     ceddk:CEDDK.dll
+ 0002:00000044       __imp_HalGetBusDataByOffset 1000c044     ceddk:CEDDK.dll
+ 0002:00000048       __imp_StallExecution       1000c048     ceddk:CEDDK.dll
+ 0002:0000004c       \177CEDDK_NULL_THUNK_DATA  1000c04c     ceddk:CEDDK.dll
+ 0002:00000050       __imp_InitializeCriticalSection 1000c050     coredll:COREDLL.dll
+ 0002:00000054       __imp_DeleteCriticalSection 1000c054     coredll:COREDLL.dll
+ 0002:00000058       __imp_RegOpenKeyExW        1000c058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_RegCloseKey          1000c05c     coredll:COREDLL.dll
+ 0002:00000060       __imp_DDKReg_GetIsrInfo    1000c060     coredll:COREDLL.dll
+ 0002:00000064       __imp_ResumeThread         1000c064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CloseHandle          1000c068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_WaitForSingleObject  1000c06c     coredll:COREDLL.dll
+ 0002:00000070       __imp_TerminateThread      1000c070     coredll:COREDLL.dll
+ 0002:00000074       __imp_ExitThread           1000c074     coredll:COREDLL.dll
+ 0002:00000078       __imp_EnterCriticalSection 1000c078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_LeaveCriticalSection 1000c07c     coredll:COREDLL.dll
+ 0002:00000080       __imp_CeSetThreadPriority  1000c080     coredll:COREDLL.dll
+ 0002:00000084       __imp_InterruptDone        1000c084     coredll:COREDLL.dll
+ 0002:00000088       __imp_Sleep                1000c088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_NKDbgPrintfW         1000c08c     coredll:COREDLL.dll
+ 0002:00000090       __imp_SetInterruptEvent    1000c090     coredll:COREDLL.dll
+ 0002:00000094       __imp_RegSetValueExW       1000c094     coredll:COREDLL.dll
+ 0002:00000098       __imp_SetEventData         1000c098     coredll:COREDLL.dll
+ 0002:0000009c       __imp_CeGetThreadPriority  1000c09c     coredll:COREDLL.dll
+ 0002:000000a0       __imp_CreateThread         1000c0a0     coredll:COREDLL.dll
+ 0002:000000a4       __imp_CreateEventW         1000c0a4     coredll:COREDLL.dll
+ 0002:000000a8       __imp_InterruptInitialize  1000c0a8     coredll:COREDLL.dll
+ 0002:000000ac       __imp_KernelIoControl      1000c0ac     coredll:COREDLL.dll
+ 0002:000000b0       __imp_EventModify          1000c0b0     coredll:COREDLL.dll
+ 0002:000000b4       __imp_GetLastError         1000c0b4     coredll:COREDLL.dll
+ 0002:000000b8       __imp_IsAPIReady           1000c0b8     coredll:COREDLL.dll
+ 0002:000000bc       __imp_GetTickCount         1000c0bc     coredll:COREDLL.dll
+ 0002:000000c0       __imp_WaitForAPIReady      1000c0c0     coredll:COREDLL.dll
+ 0002:000000c4       __imp_WaitForMultipleObjects 1000c0c4     coredll:COREDLL.dll
+ 0002:000000c8       __imp_RegQueryValueExW     1000c0c8     coredll:COREDLL.dll
+ 0002:000000cc       __imp_LocalAlloc           1000c0cc     coredll:COREDLL.dll
+ 0002:000000d0       __imp_InterlockedIncrement 1000c0d0     coredll:COREDLL.dll
+ 0002:000000d4       __imp_InterlockedDecrement 1000c0d4     coredll:COREDLL.dll
+ 0002:000000d8       __imp_OpenDeviceKey        1000c0d8     coredll:COREDLL.dll
+ 0002:000000dc       __imp_StringCchCatW        1000c0dc     coredll:COREDLL.dll
+ 0002:000000e0       __imp_GetDeviceInformationByDeviceHandle 1000c0e0     coredll:COREDLL.dll
+ 0002:000000e4       __imp_GetDeviceHandleFromContext 1000c0e4     coredll:COREDLL.dll
+ 0002:000000e8       __imp_SetLastError         1000c0e8     coredll:COREDLL.dll
+ 0002:000000ec       __imp_DisableThreadLibraryCalls 1000c0ec     coredll:COREDLL.dll
+ 0002:000000f0       __imp_StringCchPrintfW     1000c0f0     coredll:COREDLL.dll
+ 0002:000000f4       __imp_ActivateDeviceEx     1000c0f4     coredll:COREDLL.dll
+ 0002:000000f8       __imp_FreeLibrary          1000c0f8     coredll:COREDLL.dll
+ 0002:000000fc       __imp_GetProcAddressW      1000c0fc     coredll:COREDLL.dll
+ 0002:00000100       __imp_LoadDriver           1000c100     coredll:COREDLL.dll
+ 0002:00000104       __imp_LoadLibraryW         1000c104     coredll:COREDLL.dll
+ 0002:00000108       __imp_DeactivateDevice     1000c108     coredll:COREDLL.dll
+ 0002:0000010c       __imp___C_specific_handler 1000c10c     corelib1:COREDLL.dll
+ 0002:00000110       __imp_memset               1000c110     corelib1:COREDLL.dll
+ 0002:00000114       __imp_??2@YAPAXI@Z         1000c114     corelib1:COREDLL.dll
+ 0002:00000118       __imp__purecall            1000c118     corelib1:COREDLL.dll
+ 0002:0000011c       __imp_??3@YAXPAX@Z         1000c11c     corelib1:COREDLL.dll
+ 0002:00000120       __imp_wcslen               1000c120     corelib1:COREDLL.dll
+ 0002:00000124       __imp_memcpy               1000c124     corelib1:COREDLL.dll
+ 0002:00000128       __imp_strcmp               1000c128     corelib1:COREDLL.dll
+ 0002:0000012c       __imp_malloc               1000c12c     corelib1:COREDLL.dll
+ 0002:00000130       __imp__wcsdup              1000c130     corelib1:COREDLL.dll
+ 0002:00000134       __imp_wcscpy               1000c134     corelib1:COREDLL.dll
+ 0002:00000138       __imp_wcsncpy              1000c138     corelib1:COREDLL.dll
+ 0002:0000013c       __imp__wcsicmp             1000c13c     corelib1:COREDLL.dll
+ 0002:00000140       __imp__wcsnicmp            1000c140     corelib1:COREDLL.dll
+ 0002:00000144       __imp_free                 1000c144     corelib1:COREDLL.dll
+ 0002:00000148       __imp___security_gen_cookie2 1000c148     corelib1:COREDLL.dll
+ 0002:0000014c       __imp___report_gsfailure   1000c14c     corelib1:COREDLL.dll
+ 0002:00000150       __imp_StringCchCopyW       1000c150     coredll:COREDLL.dll
+ 0002:00000154       __imp_InterlockedExchange  1000c154     coredll:COREDLL.dll
+ 0002:00000158       __imp_TerminateProcess     1000c158     coredll:COREDLL.dll
+ 0002:0000015c       __imp___GetUserKData       1000c15c     coredll:COREDLL.dll
+ 0002:00000160       __imp_LocalFree            1000c160     coredll:COREDLL.dll
+ 0002:00000164       __imp_DeviceIoControl      1000c164     coredll:COREDLL.dll
+ 0002:00000168       __imp_CreateFileW          1000c168     coredll:COREDLL.dll
+ 0002:0000016c       __imp_ReadFile             1000c16c     coredll:COREDLL.dll
+ 0002:00000170       __imp_SetFilePointer       1000c170     coredll:COREDLL.dll
+ 0002:00000174       __imp_WriteFile            1000c174     coredll:COREDLL.dll
+ 0002:00000178       \177COREDLL_NULL_THUNK_DATA 1000c178     coredll:COREDLL.dll
+ 0002:00000184       ?g_busDx@@3W4_CEDEVICE_POWER_STATE@@A 1000c184     OMAP3530_musbotg:otg.obj
+ 0002:00000248       __security_cookie          1000c248     corelib0:seccinit.obj
+ 0002:0000024c       __security_cookie_complement 1000c24c     corelib0:seccinit.obj
+ 0002:00000250       ?gpHsUsbOtg@@3PAVOMAPMHSUSBOTG@@A 1000c250     OMAP3530_musbotg:otg.obj
+ 0002:00000254       _exitflag                  1000c254     corelib0:cexit.obj
+ 0002:00000258       __onexitend                1000c258     <common>
+ 0002:0000025c       __onexitbegin              1000c25c     <common>
+ 0002:00000260       g_pcsExit                  1000c260     <common>
+
+ entry point at        0001:00009848
+
+ Static symbols
+
+ 0001:000099a4       doexit                     1000a9a4 f   corelib0:cexit.obj
+ 0001:0000a9ac       ??__Es_deviceRegParams@@YAXXZ 1000b9ac f   OMAP3530_musbotg:otg.obj

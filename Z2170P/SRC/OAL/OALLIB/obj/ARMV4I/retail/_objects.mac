@@ -1,0 +1,15 @@
+OBJECTS=\
+    obj\ARMV4I\retail\init.obj\
+    obj\ARMV4I\retail\intr.obj\
+    obj\ARMV4I\retail\fiq.obj\
+    obj\ARMV4I\retail\ioctl.obj\
+    obj\ARMV4I\retail\power.obj\
+    obj\ARMV4I\retail\oem_latency.obj\
+    obj\ARMV4I\retail\oem_padwakeup.obj\
+    obj\ARMV4I\retail\oem_prcm_device.obj\
+    obj\ARMV4I\retail\oem_pm.obj\
+    obj\ARMV4I\retail\oem_intrex.obj\
+    obj\ARMV4I\retail\oem_prof.obj\
+    obj\ARMV4I\retail\opp_map.obj\
+    obj\ARMV4I\retail\startup.obj
+

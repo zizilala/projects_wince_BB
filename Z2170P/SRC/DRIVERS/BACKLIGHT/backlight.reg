@@ -1,0 +1,31 @@
+; All rights reserved ADENEO EMBEDDED 2010
+IF BSP_BACKLIGHT
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Backlight]
+    "Prefix"="BKL"
+    "Dll"="backlight.dll"
+    "Index"=dword:1
+    "Order"=dword:25
+    "Gpio"=dword:3D                  ; GPIO 61
+    "TLedChannel"=dword:0
+    "PowerMask"=dword:1F             ;support d0, d1, d2, d3, d4
+IF BSP_EVM2
+    ; D0..D4, full brightness = 100, full off = 0
+    "DutyCycles"=multi_sz:"64", "32", "32", "0", "0"
+ELSE
+    ; The hardware design is completely backwards from a standard PWM implementation.  
+    ; Full brightness can only be achieved by disabling the PWM.  The backlight can 
+    ; only be full disabled by setting PWM duty cycle to 100%
+    "DutyCycles"=multi_sz:"0", "32", "32", "64", "64"
+ENDIF
+    ; CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID
+    "IClass"=multi_sz:"{A32942B7-920C-486b-B0E6-92A702A99B35}"
+
+; Backlight tab of Display control panel (timeouts in seconds)
+[HKEY_CURRENT_USER\ControlPanel\Backlight]
+    "BatteryTimeout"=dword:3c
+    "BacklightOnTap"=dword:1
+    "ACTimeout"=dword:258
+    "ACBacklightOnTap"=dword:1
+      
+ENDIF BSP_BACKLIGHT

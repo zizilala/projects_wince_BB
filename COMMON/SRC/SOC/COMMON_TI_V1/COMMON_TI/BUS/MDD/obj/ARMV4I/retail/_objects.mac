@@ -1,0 +1,6 @@
+OBJECTS=\
+    obj\ARMV4I\retail\defaultbus.obj\
+    obj\ARMV4I\retail\defaultbuscontext.obj\
+    obj\ARMV4I\retail\defaultbuschild.obj\
+    obj\ARMV4I\retail\defaultbuschildcontainer.obj
+

@@ -1,0 +1,52 @@
+# All rights reserved ADENEO EMBEDDED 2010
+!if 0
+;
+;================================================================================
+;             Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+; Use of this software is controlled by the terms and conditions found
+; in the license agreement under which this software has been supplied.
+;
+;================================================================================
+;
+!endif
+
+!IF "$(BSP_OMAP_MUSBOTG)" != "1"
+SKIPBUILD=1
+!ENDIF
+
+!IF "$(BSP_OMAP_MUSBOTG_TPS659XX)" != "1"
+!IF "$(BSP_OMAP_MUSBOTG_ISP1504)" != "1"
+SKIPBUILD=1
+!ENDIF
+!ENDIF
+
+TARGETNAME=omap_musbotg
+TARGETTYPE=DYNLINK
+DEFFILE=$(TARGETDEFNAME).def
+DLLENTRY=_DllEntryCRTStartup
+
+SOURCES= \
+
+SOURCELIBS= \
+!IF "$(BSP_OMAP_MUSBOTG_TPS659XX)" == "1"
+	$(_TILIBS)\$(_TPS659XX)_usbotg.lib \
+!ENDIF
+!IF "$(BSP_OMAP_MUSBOTG_ISP1504)" == "1"
+	$(_TILIBS)\isp1504_usbotg.lib \
+!ENDIF
+	$(_TILIBS)\$(_SOC)_musbotg.lib \
+    $(_TILIBS)\$(TRITON)_device.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\usbotgcm.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\usbotgxc.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\defbuslib.lib \
+
+TARGETLIBS= \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib
+    
+FILE_VIEW_RESOURCE_FOLDER= \
+	omap_musbotg.def \
+    musbotg.reg \
+

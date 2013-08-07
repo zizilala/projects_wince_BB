@@ -1,0 +1,65 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\
+BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000009:INFO  ] Done.
+BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_musbotg.lib is missing.
+BUILD: [00:0000000011:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\ directory.
+BUILD: [00:0000000012:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000013:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000014:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000015:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000016:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\sources
+BUILD: [01:0000000017:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000018:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG
+BUILD: [01:0000000019:INFO  ] TARGETNAME: omap_musbotg
+BUILD: [01:0000000020:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [00:0000000021:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\sources(47) : Build.exe does not evaluate IF conditional statements. Conditional statements that affect macro definitions might cause Build.exe to not rebuild modified source code. Refer to the Platform Builder documentation.
+BUILD: [00:0000000022:WARNN ] File: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_musbotg.lib does not exist (2).
+BUILD: [00:0000000023:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000000024:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_musbotg.dll is missing.
+BUILD: [00:0000000025:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000000026:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_musbotg.dll is missing.
+BUILD: [00:0000000027:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\ directory.
+BUILD: [00:0000000028:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000000029:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000030:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000031:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000032:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG\sources
+BUILD: [01:0000000033:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000034:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MUSB\MUSBOTG
+BUILD: [01:0000000035:INFO  ] TARGETNAME: omap_musbotg
+BUILD: [01:0000000036:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [00:0000000037:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000038:INFO  ] Done.
+BUILD: [00:0000000039:PROGC ] Done.
+BUILD: [00:0000000040:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000041:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000042:PROGC ] Message                    0         0       0
+BUILD: [00:0000000043:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000044:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000045:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000046:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000047:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000048:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000049:PROGC ] C++                        0         0       0
+BUILD: [00:0000000050:PROGC ] C                          0         0       0
+BUILD: [00:0000000051:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000052:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000053:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000000054:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000055:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000056:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000057:PROGC ] Other                      0         0       0
+BUILD: [00:0000000058:PROGC ] 
+BUILD: [00:0000000059:PROGC ] Total                      0         0       0
+BUILD: [00:0000000060:PROGC ] 
+BUILD: [00:0000000061:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000062:PROGC ] GetSystemTimes (seconds): Idle: 8     Kernel: 13    User: 3    
+BUILD: [00:0000000063:PROGC ] Elapsed  time  (seconds): 4    

@@ -1,0 +1,7 @@
+OBJECTS=\
+    obj\ARMV4I\retail\PDD_Intf.obj\
+    obj\ARMV4I\retail\CameraDrvPdd.obj\
+    obj\ARMV4I\retail\IspCtrl.obj\
+    obj\ARMV4I\retail\TvpCtrl.obj\
+    obj\ARMV4I\retail\util.obj
+

@@ -1,0 +1,201 @@
+ ti_policies
+
+ Timestamp is 51ede8c9 (Tue Jul 23 10:22:01 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCU                CODE
+ 0001:00000008 00000004H .CRT$XCZ                CODE
+ 0001:0000000c 00000004H .CRT$XIA                CODE
+ 0001:00000010 00000004H .CRT$XIZ                CODE
+ 0001:00000014 00000004H .CRT$XPA                CODE
+ 0001:00000018 00000004H .CRT$XPZ                CODE
+ 0001:0000001c 00000004H .CRT$XTA                CODE
+ 0001:00000020 00000004H .CRT$XTZ                CODE
+ 0001:00000030 00000a7eH .rdata                  CODE
+ 0001:00000ab0 00000028H .rdata$debug            CODE
+ 0001:00000ad8 000014bcH .text                   CODE
+ 0001:00001f94 00000038H .text$yc                CODE
+ 0001:00001fcc 00000030H .text$yd                CODE
+ 0001:00001ffc 00000028H .xdata                  CODE
+ 0001:00002024 00000028H .idata$2                CODE
+ 0001:0000204c 00000014H .idata$3                CODE
+ 0001:00002060 000000a0H .idata$4                CODE
+ 0001:00002100 00000016H .idata$6                CODE
+ 0001:00002120 000001c0H .edata                  CODE
+ 0002:00000000 000000a0H .idata$5                DATA
+ 0002:000000a0 0000095cH .data                   DATA
+ 0002:00000a00 0000017cH .bss                    DATA
+ 0003:00000000 00000110H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000008       __xc_z                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_a                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xi_z                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_a                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xp_z                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_a                     1000101c     corelib0:crt0init.obj
+ 0001:00000020       __xt_z                     10001020     corelib0:crt0init.obj
+ 0001:0000004c       ??_C@_1BK@CFNMIKKN@?$AAS?$AAu?$AAs?$AAp?$AAe?$AAn?$AAd?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$AA@ 1000104c     OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000068       ??_C@_19BINEIDCP@?$AAD?$AAV?$AAF?$AAS?$AA?$AA@ 10001068     OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000074       ??_C@_1O@MGOKFMBN@?$AAP?$AAW?$AAR?$AAD?$AAO?$AAM?$AA?$AA@ 10001074     OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000084       ??_C@_1BE@LJCCPHDL@?$AAL?$AAp?$AAr?$AAO?$AAf?$AAf?$AAO?$AAp?$AAm?$AA?$AA@ 10001084     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000098       ??_C@_1BK@KMIGPPHB@?$AAS?$AAe?$AAn?$AAs?$AAi?$AAn?$AAg?$AAD?$AAe?$AAl?$AAa?$AAy?$AA?$AA@ 10001098     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000000b4       ??_C@_1BM@OPHBJDPH@?$AAS?$AAe?$AAn?$AAs?$AAi?$AAn?$AAg?$AAP?$AAe?$AAr?$AAi?$AAo?$AAd?$AA?$AA@ 100010b4     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000118       ??_C@_1FC@LOBCMHCK@?$AAS?$AAm?$AAa?$AAr?$AAt?$AAR?$AAe?$AAf?$AAl?$AAe?$AAx?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AA?5?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AAS?$AAm?$AAa?$AAr?$AAt?$AAR?$AAe@ 10001118     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:0000016c       ??_C@_1DI@KFGABDLO@?$AA?9?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAI?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 1000116c     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000001a8       ??_C@_1KC@KJEOONBL@?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAI?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?1@ 100011a8     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000250       ??_C@_1EE@JFKJFJLC@?$AA?$CL?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAI?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN@ 10001250     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000294       ??_C@_1DM@FLJKFFNF@?$AA?9?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001294     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000002d0       ??_C@_1HM@EOFDEPCO@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3@ 100012d0     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000350       ??_C@_1EI@HMOLPFDH@?$AA?$CL?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 10001350     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000398       ??_C@_1DI@DEIOFKBG@?$AA?9?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAO?$AAp?$AAe?$AAn?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001398     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000003d0       ??_C@_1IM@DJEKKHLG@?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAO?$AAp?$AAe?$AAn?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3@ 100013d0     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000460       ??_C@_1HI@BOGPJPFG@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAO?$AAp?$AAe?$AAn?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AAI?$AAn@ 10001460     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000004d8       ??_C@_1EE@LCJDNHIB@?$AA?$CL?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAO?$AAp?$AAe?$AAn?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN@ 100014d8     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000520       ??_C@_1HK@GDIPKJIG@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AAI@ 10001520     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:0000059c       ??_C@_1DK@FIAGOGJH@?$AA?9?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 1000159c     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000005d8       ??_C@_1GM@DPKGEGNM@?$AA?$CL?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0@ 100015d8     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000644       ??_C@_1DM@JIGOCN@?$AA?9?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001644     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000680       ??_C@_1HM@BKMHFMGB@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3@ 10001680     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000700       ??_C@_1FC@FLMJLJFL@?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AA?5?$AAL?$AAP?$AAR?$AA?5?$AAm?$AAo@ 10001700     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000758       ??_C@_1FA@HBLKMNLH@?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AA?5?$AAL?$AAP?$AAR?$AA?5?$AAm?$AAo@ 10001758     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000007a8       ??_C@_1IG@ELLJNDN@?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAP?$AAo?$AAl?$AAi?$AAc@ 100017a8     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000830       ??_C@_1GM@EACNBHGG@?$AA?$CL?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 10001830     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000008a0       ??_C@_1EM@FMLOFHEC@?$AA?9?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAP?$AAr?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAt?$AAa?$AAt?$AAe?$AAC?$AAh?$AAa?$AAn?$AAg@ 100018a0     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000008f0       ??_C@_1FK@IAAFBHNF@?$AAS?$AAm?$AAa?$AAr?$AAt?$AAR?$AAe?$AAf?$AAl?$AAe?$AAx?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AA?5?$AAC?$AAO?$AAR?$AAE?$AA?5?$AAA?$AAc?$AAt?$AAi?$AAv?$AAe?$AA?5?$AAD@ 100018f0     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000950       ??_C@_1IE@GLOKMLDB@?$AA?$CL?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAP?$AAr?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAt?$AAa?$AAt?$AAe?$AAC?$AAh?$AAa?$AAn?$AAg@ 10001950     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000009d8       ??_C@_1EO@PNOIICGB@?$AA?9?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAP?$AAo?$AAs?$AAt?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAt?$AAa?$AAt?$AAe?$AAC?$AAh?$AAa?$AAn@ 100019d8     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000a28       ??_C@_1IG@OMOEKAOD@?$AA?$CL?$AAS?$AAM?$AAA?$AAR?$AAT?$AAR?$AAE?$AAF?$AAL?$AAE?$AAX?$AA_?$AAP?$AAo?$AAs?$AAt?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAt?$AAa?$AAt?$AAe?$AAC?$AAh?$AAa?$AAn@ 10001a28     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000ad8       ?InitializeSuspendState@@YAHPBG@Z 10001ad8 f   OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000b7c       ?UpdateConstraint@@YAXPAUDevicePerformanceMapTbl_t@@H@Z 10001b7c f   OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000cb0       ?DEVMON_InitPolicy@@YAPAXPBG@Z 10001cb0 f   OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000d68       ?DEVMON_DeinitPolicy@@YAHPAX@Z 10001d68 f   OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000da4       ?DEVMON_PreDeviceStateChange@@YAHPAXIII@Z 10001da4 f   OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000e6c       ?DEVMON_PostDeviceStateChange@@YAHPAXIII@Z 10001e6c f   OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00000e74       ?EnableSmartReflex@@YAXH@Z 10001e74 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000ed4       ?SendRetentionVoltages@@YAXXZ 10001ed4 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000f10       ?FlushCalibratedVoltages@@YAXXZ 10001f10 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000f44       ?UpdateSmartReflex@@YAXXZ  10001f44 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00000fac       ?SmartReflexSensingThread@@YAKPAX@Z 10001fac f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00001120       ?SignalSensingThread@@YAXXZ 10002120 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00001164       ?DvfsConstraintCallback@@YAHPAXK0I@Z 10002164 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00001190       ?SMARTREFLEX_InitPolicy@@YAPAXPBG@Z 10002190 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00001310       ?SMARTREFLEX_DeinitPolicy@@YAHPAX@Z 10002310 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000013fc       ?SMARTREFLEX_OpenPolicy@@YAPAXPAX@Z 100023fc f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000014a8       ?SMARTREFLEX_ClosePolicy@@YAHPAXIII@Z 100024a8 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:00001540       ?SMARTREFLEX_NotifyPolicy@@YAHPAXK0I@Z 10002540 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000016d8       ?SMARTREFLEX_PreDeviceStateChange@@YAHPAXIII@Z 100026d8 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:000017f8       ?SMARTREFLEX_PostDeviceStateChange@@YAHPAXIII@Z 100027f8 f   OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0001:0000185c       PmxUpdateConstraint        1000285c f   ceddk:CEDDK.dll
+ 0001:0000186c       PmxSetConstraintById       1000286c f   ceddk:CEDDK.dll
+ 0001:0000187c       PmxReleaseConstraint       1000287c f   ceddk:CEDDK.dll
+ 0001:0000188c       MmMapIoSpace               1000288c f   ceddk:CEDDK.dll
+ 0001:0000189c       PmxRegisterConstraintCallback 1000289c f   ceddk:CEDDK.dll
+ 0001:000018ac       GetDeviceRegistryParams    100028ac f   ceddk:CEDDK.dll
+ 0001:000018bc       PmxUnregisterConstraintCallback 100028bc f   ceddk:CEDDK.dll
+ 0001:000018cc       MmUnmapIoSpace             100028cc f   ceddk:CEDDK.dll
+ 0001:000018dc       EnterCriticalSection       100028dc f   coredll:COREDLL.dll
+ 0001:000018ec       LeaveCriticalSection       100028ec f   coredll:COREDLL.dll
+ 0001:000018fc       RegCloseKey                100028fc f   coredll:COREDLL.dll
+ 0001:0000190c       KernelIoControl            1000290c f   coredll:COREDLL.dll
+ 0001:0000191c       RegQueryValueExW           1000291c f   coredll:COREDLL.dll
+ 0001:0000192c       RegOpenKeyExW              1000292c f   coredll:COREDLL.dll
+ 0001:0000193c       InitializeCriticalSection  1000293c f   coredll:COREDLL.dll
+ 0001:0000194c       DeleteCriticalSection      1000294c f   coredll:COREDLL.dll
+ 0001:0000195c       EventModify                1000295c f   coredll:COREDLL.dll
+ 0001:0000196c       NKDbgPrintfW               1000296c f   coredll:COREDLL.dll
+ 0001:0000197c       WaitForSingleObject        1000297c f   coredll:COREDLL.dll
+ 0001:0000198c       CeSetThreadPriority        1000298c f   coredll:COREDLL.dll
+ 0001:0000199c       CreateThread               1000299c f   coredll:COREDLL.dll
+ 0001:000019ac       CreateEventW               100029ac f   coredll:COREDLL.dll
+ 0001:000019bc       CloseHandle                100029bc f   coredll:COREDLL.dll
+ 0001:000019cc       LocalAlloc                 100029cc f   coredll:COREDLL.dll
+ 0001:000019dc       LocalFree                  100029dc f   coredll:COREDLL.dll
+ 0001:000019ec       DllMain                    100029ec f   corelib0:dllmain.obj
+ 0001:00001b08       _DllMainCRTStartup         10002b08 f   corelib0:pegdmain.obj
+ 0001:00001b40       _onexit                    10002b40 f   corelib0:onexit.obj
+ 0001:00001cc8       atexit                     10002cc8 f   corelib0:onexit.obj
+ 0001:00001de4       _cexit                     10002de4 f   corelib0:cexit.obj
+ 0001:00001e00       _initterm                  10002e00 f   corelib0:crt0dat.obj
+ 0001:00001e34       _cinit                     10002e34 f   corelib0:crt0dat.obj
+ 0001:00001e68       __security_init_cookie     10002e68 f   corelib0:seccinit.obj
+ 0001:00001ec4       memset                     10002ec4 f   corelib1:COREDLL.dll
+ 0001:00001ed4       ??3@YAXPAX@Z               10002ed4 f   corelib1:COREDLL.dll
+ 0001:00001ee4       _XcptFilter                10002ee4 f   corelib1:COREDLL.dll
+ 0001:00001ef4       __C_specific_handler       10002ef4 f   corelib1:COREDLL.dll
+ 0001:00001f04       free                       10002f04 f   corelib1:COREDLL.dll
+ 0001:00001f14       malloc                     10002f14 f   corelib1:COREDLL.dll
+ 0001:00001f24       realloc                    10002f24 f   corelib1:COREDLL.dll
+ 0001:00001f34       _msize                     10002f34 f   corelib1:COREDLL.dll
+ 0001:00001f44       __security_gen_cookie2     10002f44 f   corelib1:COREDLL.dll
+ 0001:00001f54       DisableThreadLibraryCalls  10002f54 f   coredll:COREDLL.dll
+ 0001:00001f64       InterlockedCompareExchange 10002f64 f   coredll:COREDLL.dll
+ 0001:00001f74       InterlockedExchange        10002f74 f   coredll:COREDLL.dll
+ 0001:00001f84       TerminateProcess           10002f84 f   coredll:COREDLL.dll
+ 0001:00002024       __IMPORT_DESCRIPTOR_CEDDK  10003024     ceddk:CEDDK.dll
+ 0001:00002038       __IMPORT_DESCRIPTOR_COREDLL 10003038     coredll:COREDLL.dll
+ 0001:0000204c       __NULL_IMPORT_DESCRIPTOR   1000304c     ceddk:CEDDK.dll
+ 0002:00000000       __imp_PmxUpdateConstraint  10004000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_PmxSetConstraintById 10004004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_PmxReleaseConstraint 10004008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_MmMapIoSpace         1000400c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_PmxRegisterConstraintCallback 10004010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_GetDeviceRegistryParams 10004014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_PmxUnregisterConstraintCallback 10004018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_MmUnmapIoSpace       1000401c     ceddk:CEDDK.dll
+ 0002:00000020       \177CEDDK_NULL_THUNK_DATA  10004020     ceddk:CEDDK.dll
+ 0002:00000024       __imp_EnterCriticalSection 10004024     coredll:COREDLL.dll
+ 0002:00000028       __imp_LeaveCriticalSection 10004028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_RegCloseKey          1000402c     coredll:COREDLL.dll
+ 0002:00000030       __imp_KernelIoControl      10004030     coredll:COREDLL.dll
+ 0002:00000034       __imp_RegQueryValueExW     10004034     coredll:COREDLL.dll
+ 0002:00000038       __imp_RegOpenKeyExW        10004038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_InitializeCriticalSection 1000403c     coredll:COREDLL.dll
+ 0002:00000040       __imp_DeleteCriticalSection 10004040     coredll:COREDLL.dll
+ 0002:00000044       __imp_EventModify          10004044     coredll:COREDLL.dll
+ 0002:00000048       __imp_NKDbgPrintfW         10004048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_WaitForSingleObject  1000404c     coredll:COREDLL.dll
+ 0002:00000050       __imp_CeSetThreadPriority  10004050     coredll:COREDLL.dll
+ 0002:00000054       __imp_CreateThread         10004054     coredll:COREDLL.dll
+ 0002:00000058       __imp_CreateEventW         10004058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_CloseHandle          1000405c     coredll:COREDLL.dll
+ 0002:00000060       __imp_LocalAlloc           10004060     coredll:COREDLL.dll
+ 0002:00000064       __imp_LocalFree            10004064     coredll:COREDLL.dll
+ 0002:00000068       __imp_memset               10004068     corelib1:COREDLL.dll
+ 0002:0000006c       __imp_??3@YAXPAX@Z         1000406c     corelib1:COREDLL.dll
+ 0002:00000070       __imp__XcptFilter          10004070     corelib1:COREDLL.dll
+ 0002:00000074       __imp___C_specific_handler 10004074     corelib1:COREDLL.dll
+ 0002:00000078       __imp_free                 10004078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp_malloc               1000407c     corelib1:COREDLL.dll
+ 0002:00000080       __imp_realloc              10004080     corelib1:COREDLL.dll
+ 0002:00000084       __imp__msize               10004084     corelib1:COREDLL.dll
+ 0002:00000088       __imp___security_gen_cookie2 10004088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp_DisableThreadLibraryCalls 1000408c     coredll:COREDLL.dll
+ 0002:00000090       __imp_InterlockedCompareExchange 10004090     coredll:COREDLL.dll
+ 0002:00000094       __imp_InterlockedExchange  10004094     coredll:COREDLL.dll
+ 0002:00000098       __imp_TerminateProcess     10004098     coredll:COREDLL.dll
+ 0002:0000009c       \177COREDLL_NULL_THUNK_DATA 1000409c     coredll:COREDLL.dll
+ 0002:000005b0       dpCurSettings              100045b0     OMAP3530_smartreflex_policy_lib:smartreflexpolicy.obj
+ 0002:000009f4       __security_cookie          100049f4     corelib0:seccinit.obj
+ 0002:000009f8       __security_cookie_complement 100049f8     corelib0:seccinit.obj
+ 0002:00000b68       _exitflag                  10004b68     corelib0:cexit.obj
+ 0002:00000b6c       __onexitend                10004b6c     <common>
+ 0002:00000b70       __onexitbegin              10004b70     <common>
+ 0002:00000b74       g_pcsExit                  10004b74     <common>
+ 0002:00000b78       _pRawDllMain               10004b78     <common>
+
+ entry point at        0001:00001b08
+
+ Static symbols
+
+ 0001:00001a0c       _DllMainCRTStartupHelper   10002a0c f   corelib0:pegdmain.obj
+ 0001:00001ce8       doexit                     10002ce8 f   corelib0:cexit.obj
+ 0001:00001f94       ??__Es_IndexList@@YAXXZ    10002f94 f   OMAP3530_devmon_policy_lib:devmon.obj
+ 0001:00001fcc       ??__Fs_IndexList@@YAXXZ    10002fcc f   OMAP3530_devmon_policy_lib:devmon.obj

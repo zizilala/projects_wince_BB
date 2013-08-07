@@ -1,0 +1,409 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters:
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\COMMON\src\ARM
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Loading database "C:\WINCE600\PLATFORM\COMMON\Build.dat".
+BUILD: [00:0000000005:PROGC ] Done.
+BUILD: [00:0000000006:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000007:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000008:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\
+BUILD: [00:0000000009:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\
+BUILD: [00:0000000010:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\
+BUILD: [00:0000000011:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\
+BUILD: [00:0000000012:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\
+BUILD: [00:0000000013:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\
+BUILD: [00:0000000014:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\
+BUILD: [00:0000000015:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000016:INFO  ] Done.
+BUILD: [00:0000000017:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\init.s because target: obj\ARMV4I\debug\init.obj is missing.
+BUILD: [00:0000000018:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\flushdc.s because target: obj\ARMV4I\debug\flushdc.obj is missing.
+BUILD: [00:0000000019:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\flushdclines.s because target: obj\ARMV4I\debug\flushdclines.obj is missing.
+BUILD: [00:0000000020:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\cleandc.s because target: obj\ARMV4I\debug\cleandc.obj is missing.
+BUILD: [00:0000000021:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\cleandclines.s because target: obj\ARMV4I\debug\cleandclines.obj is missing.
+BUILD: [00:0000000022:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\flushic.s because target: obj\ARMV4I\debug\flushic.obj is missing.
+BUILD: [00:0000000023:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\flushiclines.s because target: obj\ARMV4I\debug\flushiclines.obj is missing.
+BUILD: [00:0000000024:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\flushuc.s because target: obj\ARMV4I\debug\flushuc.obj is missing.
+BUILD: [00:0000000025:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\flushuclines.s because target: obj\ARMV4I\debug\flushuclines.obj is missing.
+BUILD: [00:0000000026:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\cleanuc.s because target: obj\ARMV4I\debug\cleanuc.obj is missing.
+BUILD: [00:0000000027:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\cleanuclines.s because target: obj\ARMV4I\debug\cleanuclines.obj is missing.
+BUILD: [00:0000000028:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\cleardtlb.s because target: obj\ARMV4I\debug\cleardtlb.obj is missing.
+BUILD: [00:0000000029:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\cleardtlbentry.s because target: obj\ARMV4I\debug\cleardtlbentry.obj is missing.
+BUILD: [00:0000000030:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\clearitlb.s because target: obj\ARMV4I\debug\clearitlb.obj is missing.
+BUILD: [00:0000000031:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\clearitlbentry.s because target: obj\ARMV4I\debug\clearitlbentry.obj is missing.
+BUILD: [00:0000000032:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\clearutlb.s because target: obj\ARMV4I\debug\clearutlb.obj is missing.
+BUILD: [00:0000000033:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\clearutlbentry.s because target: obj\ARMV4I\debug\clearutlbentry.obj is missing.
+BUILD: [00:0000000034:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\ directory.
+BUILD: [00:0000000035:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000036:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\feature.cpp because target: obj\ARMV4I\debug\feature.obj is missing.
+BUILD: [00:0000000037:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\getidcode.s because target: obj\ARMV4I\debug\getidcode.obj is missing.
+BUILD: [00:0000000038:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\ directory.
+BUILD: [00:0000000039:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000040:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\memory.c because target: obj\ARMV4I\debug\memory.obj is missing.
+BUILD: [00:0000000041:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\ directory.
+BUILD: [00:0000000042:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000043:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\memory.c because target: obj\ARMV4I\debug\memory.obj is missing.
+BUILD: [00:0000000044:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\ directory.
+BUILD: [00:0000000045:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000046:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\oemabort.s because target: obj\ARMV4I\debug\oemabort.obj is missing.
+BUILD: [00:0000000047:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\ directory.
+BUILD: [00:0000000048:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [01:0000000049:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000050:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000051:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000052:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\sources
+BUILD: [01:0000000053:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000054:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE
+BUILD: [01:0000000055:INFO  ] TARGETNAME: oal_cache_arm
+BUILD: [01:0000000056:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [03:0000000057:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [03:0000000058:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [03:0000000059:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [03:0000000060:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\sources
+BUILD: [03:0000000061:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [03:0000000062:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY
+BUILD: [03:0000000063:INFO  ] TARGETNAME: oal_memory_arm
+BUILD: [03:0000000064:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [04:0000000065:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [04:0000000066:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [04:0000000067:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [04:0000000068:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\sources
+BUILD: [04:0000000069:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [04:0000000070:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY
+BUILD: [04:0000000071:INFO  ] TARGETNAME: oal_blmemory_arm
+BUILD: [04:0000000072:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [02:0000000073:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [02:0000000074:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [02:0000000075:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [02:0000000076:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\sources
+BUILD: [02:0000000077:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [02:0000000078:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC
+BUILD: [02:0000000079:INFO  ] TARGETNAME: oal_misc_arm
+BUILD: [02:0000000080:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000081:PROGC ] Assembling .\init.s
+BUILD: [01:0000000082:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\init.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\init.s obj\ARMV4I\debug\init.obj
+BUILD: [03:0000000083:PROGC ] Compiling .\memory.c
+BUILD: [04:0000000084:PROGC ] Compiling .\memory.c
+BUILD: [02:0000000085:PROGC ] Compiling .\feature.cpp
+BUILD: [03:0000000086:INFO  ] cl -nologo   -Foobj\ARMV4I\debug\memory.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Od -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\debug\oal_memory_arm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DDEBUG=1  -Dproject_cebase -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\debug\memory.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W3    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\.\memory.c
+BUILD: [04:0000000087:INFO  ] cl -nologo   -Foobj\ARMV4I\debug\memory.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Od -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\debug\oal_blmemory_arm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DDEBUG=1  -Dproject_cebase -DBUILDING_BOOTLOADER -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\debug\memory.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W3    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\.\memory.c
+BUILD: [01:0000000088:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000089:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000090:INFO  ] 
+BUILD: [02:0000000091:INFO  ] cl -nologo    -Foobj\ARMV4I\debug\feature.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Od -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\debug\oal_misc_arm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DDEBUG=1  -Dproject_cebase -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\debug\feature.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W3    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\.\feature.cpp
+BUILD: [01:0000000092:PROGC ] Assembling .\flushdc.s
+BUILD: [01:0000000093:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\flushdc.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\flushdc.s obj\ARMV4I\debug\flushdc.obj
+BUILD: [03:0000000094:INFO  ] memory.c
+BUILD: [02:0000000095:INFO  ] feature.cpp
+BUILD: [01:0000000096:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000097:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000098:INFO  ] 
+BUILD: [04:0000000099:INFO  ] memory.c
+BUILD: [01:0000000100:PROGC ] Assembling .\flushdclines.s
+BUILD: [01:0000000101:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\flushdclines.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\flushdclines.s obj\ARMV4I\debug\flushdclines.obj
+BUILD: [01:0000000102:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000103:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000104:INFO  ] 
+BUILD: [01:0000000105:PROGC ] Assembling .\cleandc.s
+BUILD: [01:0000000106:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cleandc.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\cleandc.s obj\ARMV4I\debug\cleandc.obj
+BUILD: [01:0000000107:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000108:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000109:INFO  ] 
+BUILD: [00:0000000110:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\flush.c because target: obj\ARMV4I\debug\flush.obj is missing.
+BUILD: [00:0000000111:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\cachemode.s because target: obj\ARMV4I\debug\cachemode.obj is missing.
+BUILD: [00:0000000112:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\ directory.
+BUILD: [00:0000000113:PROG  ] Waiting for 4 worker threads.
+BUILD: [01:0000000114:PROGC ] Assembling .\cleandclines.s
+BUILD: [01:0000000115:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cleandclines.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\cleandclines.s obj\ARMV4I\debug\cleandclines.obj
+BUILD: [03:0000000116:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [03:0000000117:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [03:0000000118:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [03:0000000119:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\sources
+BUILD: [03:0000000120:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [03:0000000121:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT
+BUILD: [03:0000000122:INFO  ] TARGETNAME: oal_abort_arm920t
+BUILD: [03:0000000123:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [03:0000000124:PROGC ] Assembling .\oemabort.s
+BUILD: [03:0000000125:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\oemabort.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\.\oemabort.s obj\ARMV4I\debug\oemabort.obj
+BUILD: [01:0000000126:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000127:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000128:INFO  ] 
+BUILD: [03:0000000129:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [03:0000000130:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [03:0000000131:INFO  ] 
+BUILD: [01:0000000132:PROGC ] Assembling .\flushic.s
+BUILD: [01:0000000133:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\flushic.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\flushic.s obj\ARMV4I\debug\flushic.obj
+BUILD: [02:0000000134:PROGC ] Assembling .\getidcode.s
+BUILD: [02:0000000135:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\getidcode.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\.\getidcode.s obj\ARMV4I\debug\getidcode.obj
+BUILD: [01:0000000136:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000137:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000138:INFO  ] 
+BUILD: [01:0000000139:PROGC ] Assembling .\flushiclines.s
+BUILD: [01:0000000140:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\flushiclines.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\flushiclines.s obj\ARMV4I\debug\flushiclines.obj
+BUILD: [02:0000000141:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [02:0000000142:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [02:0000000143:INFO  ] 
+BUILD: [01:0000000144:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000145:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000146:INFO  ] 
+BUILD: [01:0000000147:PROGC ] Assembling .\flushuc.s
+BUILD: [01:0000000148:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\flushuc.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\flushuc.s obj\ARMV4I\debug\flushuc.obj
+BUILD: [01:0000000149:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000150:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000151:INFO  ] 
+BUILD: [01:0000000152:PROGC ] Assembling .\flushuclines.s
+BUILD: [01:0000000153:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\flushuclines.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\flushuclines.s obj\ARMV4I\debug\flushuclines.obj
+BUILD: [01:0000000154:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000155:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000156:INFO  ] 
+BUILD: [01:0000000157:PROGC ] Assembling .\cleanuc.s
+BUILD: [01:0000000158:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cleanuc.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\cleanuc.s obj\ARMV4I\debug\cleanuc.obj
+BUILD: [01:0000000159:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000160:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000161:INFO  ] 
+BUILD: [01:0000000162:PROGC ] Assembling .\cleanuclines.s
+BUILD: [01:0000000163:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cleanuclines.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\cleanuclines.s obj\ARMV4I\debug\cleanuclines.obj
+BUILD: [01:0000000164:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000165:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000166:INFO  ] 
+BUILD: [01:0000000167:PROGC ] Assembling .\cleardtlb.s
+BUILD: [01:0000000168:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cleardtlb.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\cleardtlb.s obj\ARMV4I\debug\cleardtlb.obj
+BUILD: [01:0000000169:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000170:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000171:INFO  ] 
+BUILD: [01:0000000172:PROGC ] Assembling .\cleardtlbentry.s
+BUILD: [01:0000000173:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cleardtlbentry.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\cleardtlbentry.s obj\ARMV4I\debug\cleardtlbentry.obj
+BUILD: [01:0000000174:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000175:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000176:INFO  ] 
+BUILD: [01:0000000177:PROGC ] Assembling .\clearitlb.s
+BUILD: [01:0000000178:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\clearitlb.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\clearitlb.s obj\ARMV4I\debug\clearitlb.obj
+BUILD: [01:0000000179:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000180:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000181:INFO  ] 
+BUILD: [01:0000000182:PROGC ] Assembling .\clearitlbentry.s
+BUILD: [01:0000000183:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\clearitlbentry.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\clearitlbentry.s obj\ARMV4I\debug\clearitlbentry.obj
+BUILD: [01:0000000184:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000185:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000186:INFO  ] 
+BUILD: [01:0000000187:PROGC ] Assembling .\clearutlb.s
+BUILD: [01:0000000188:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\clearutlb.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\clearutlb.s obj\ARMV4I\debug\clearutlb.obj
+BUILD: [01:0000000189:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000190:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000191:INFO  ] 
+BUILD: [01:0000000192:PROGC ] Assembling .\clearutlbentry.s
+BUILD: [01:0000000193:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\clearutlbentry.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\.\clearutlbentry.s obj\ARMV4I\debug\clearutlbentry.obj
+BUILD: [01:0000000194:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000195:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000196:INFO  ] 
+BUILD: [00:0000000197:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000198:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\flush.c because target: obj\ARMV4I\debug\flush.obj is missing.
+BUILD: [00:0000000199:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\cachemode.s because target: obj\ARMV4I\debug\cachemode.obj is missing.
+BUILD: [00:0000000200:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\flushdc.s because target: obj\ARMV4I\debug\flushdc.obj is missing.
+BUILD: [00:0000000201:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\cleandc.s because target: obj\ARMV4I\debug\cleandc.obj is missing.
+BUILD: [00:0000000202:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\ directory.
+BUILD: [00:0000000203:PROG  ] Waiting for 1 worker threads.
+BUILD: [01:0000000204:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000205:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000206:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000207:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\sources
+BUILD: [01:0000000208:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000209:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE
+BUILD: [01:0000000210:INFO  ] TARGETNAME: oal_cache_arm920t
+BUILD: [01:0000000211:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000212:PROGC ] Compiling .\flush.c
+BUILD: [01:0000000213:INFO  ] cl -nologo   -Foobj\ARMV4I\debug\flush.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Od -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm920t.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DDEBUG=1  -Dproject_cebase -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\debug\flush.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W3    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\.\flush.c
+BUILD: [01:0000000214:INFO  ] flush.c
+BUILD: [01:0000000215:PROGC ] Assembling .\cachemode.s
+BUILD: [01:0000000216:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cachemode.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\.\cachemode.s obj\ARMV4I\debug\cachemode.obj
+BUILD: [01:0000000217:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000218:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000219:INFO  ] 
+BUILD: [00:0000000220:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000221:PROG  ] Waiting for 1 worker threads.
+BUILD: [01:0000000222:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000223:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000224:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000225:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\sources
+BUILD: [01:0000000226:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000227:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE
+BUILD: [01:0000000228:INFO  ] TARGETNAME: oal_cache_arm926
+BUILD: [01:0000000229:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000230:PROGC ] Compiling .\flush.c
+BUILD: [01:0000000231:INFO  ] cl -nologo   -Foobj\ARMV4I\debug\flush.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Od -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DDEBUG=1  -Dproject_cebase -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\debug\flush.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W3    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\.\flush.c
+BUILD: [01:0000000232:INFO  ] flush.c
+BUILD: [01:0000000233:PROGC ] Assembling .\cachemode.s
+BUILD: [01:0000000234:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cachemode.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\.\cachemode.s obj\ARMV4I\debug\cachemode.obj
+BUILD: [01:0000000235:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000236:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000237:INFO  ] 
+BUILD: [01:0000000238:PROGC ] Assembling .\flushdc.s
+BUILD: [01:0000000239:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\flushdc.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\.\flushdc.s obj\ARMV4I\debug\flushdc.obj
+BUILD: [01:0000000240:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000241:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000242:INFO  ] 
+BUILD: [01:0000000243:PROGC ] Assembling .\cleandc.s
+BUILD: [01:0000000244:INFO  ] 	armasm -coff  -pd "DEBUG SETA 1" -list obj\ARMV4I\debug\cleandc.lst -wi 150 -l 0 -cr  -i C:\WINCE600\platform\common\src\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\.\cleandc.s obj\ARMV4I\debug\cleandc.obj
+BUILD: [01:0000000245:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000246:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000247:INFO  ] 
+BUILD: [00:0000000248:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache.lib because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000249:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\init.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000250:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\flushdc.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000251:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\flushdclines.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000252:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\cleandc.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000253:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\cleandclines.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000254:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\flushic.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000255:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\flushiclines.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000256:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\flushuc.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000257:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\flushuclines.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000258:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\cleanuc.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000259:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\cleanuclines.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000260:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\cleardtlb.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000261:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\cleardtlbentry.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000262:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\clearitlb.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000263:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\clearitlbentry.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000264:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\clearutlb.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000265:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\obj\ARMV4I\debug\clearutlbentry.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000266:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\ because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib is missing.
+BUILD: [00:0000000267:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\ directory.
+BUILD: [00:0000000268:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON LINKONLY=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000269:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\obj\ARMV4I\debug\feature.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_misc_arm.lib is missing.
+BUILD: [00:0000000270:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\obj\ARMV4I\debug\getidcode.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_misc_arm.lib is missing.
+BUILD: [00:0000000271:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\ because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_misc_arm.lib is missing.
+BUILD: [00:0000000272:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\ directory.
+BUILD: [00:0000000273:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON LINKONLY=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000274:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\obj\ARMV4I\debug\memory.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_memory_arm.lib is missing.
+BUILD: [00:0000000275:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\ because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_memory_arm.lib is missing.
+BUILD: [00:0000000276:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\ directory.
+BUILD: [00:0000000277:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON LINKONLY=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000278:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\obj\ARMV4I\debug\memory.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_blmemory_arm.lib is missing.
+BUILD: [00:0000000279:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\ because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_blmemory_arm.lib is missing.
+BUILD: [00:0000000280:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\ directory.
+BUILD: [00:0000000281:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON LINKONLY=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000282:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\obj\ARMV4I\debug\oemabort.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_abort_arm920t.lib is missing.
+BUILD: [00:0000000283:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\ because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_abort_arm920t.lib is missing.
+BUILD: [00:0000000284:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\ directory.
+BUILD: [01:0000000285:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000286:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000287:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [00:0000000288:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON LINKONLY=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [01:0000000289:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE\sources
+BUILD: [01:0000000290:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000291:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\CACHE
+BUILD: [01:0000000292:INFO  ] TARGETNAME: oal_cache_arm
+BUILD: [01:0000000293:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [02:0000000294:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [02:0000000295:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [02:0000000296:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [02:0000000297:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC\sources
+BUILD: [02:0000000298:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [02:0000000299:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MISC
+BUILD: [02:0000000300:INFO  ] TARGETNAME: oal_misc_arm
+BUILD: [02:0000000301:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [03:0000000302:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [03:0000000303:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [03:0000000304:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [03:0000000305:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY\sources
+BUILD: [03:0000000306:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [03:0000000307:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\MEMORY
+BUILD: [03:0000000308:INFO  ] TARGETNAME: oal_memory_arm
+BUILD: [03:0000000309:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [04:0000000310:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [04:0000000311:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [04:0000000312:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [04:0000000313:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY\sources
+BUILD: [04:0000000314:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [04:0000000315:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\COMMON\BOOT\BLMEMORY
+BUILD: [04:0000000316:INFO  ] TARGETNAME: oal_blmemory_arm
+BUILD: [04:0000000317:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [02:0000000318:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_misc_arm.lib
+BUILD: [01:0000000319:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib
+BUILD: [02:0000000320:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_misc_arm.lib -machine:thumb @C:\DOCUME~1\sam.ma\LOCALS~1\Temp\bld_48404\thr_213\nm801.tmp
+BUILD: [01:0000000321:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib -machine:thumb @C:\DOCUME~1\sam.ma\LOCALS~1\Temp\bld_48404\thr_112\nm802.tmp
+BUILD: [03:0000000322:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_memory_arm.lib
+BUILD: [04:0000000323:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_blmemory_arm.lib
+BUILD: [03:0000000324:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_memory_arm.lib -machine:thumb @C:\DOCUME~1\sam.ma\LOCALS~1\Temp\bld_48404\thr_314\nm803.tmp
+BUILD: [04:0000000325:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_blmemory_arm.lib -machine:thumb @C:\DOCUME~1\sam.ma\LOCALS~1\Temp\bld_48404\thr_415\nm804.tmp
+BUILD: [01:0000000326:INFO  ] 檔案不可以複製到檔案本身。
+BUILD: [01:0000000327:INFO  ] 複製了         0 個檔案。
+BUILD: [00:0000000328:WARNN ] File: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_abort_arm920t.lib does not exist (2).
+BUILD: [00:0000000329:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm920t.lib is missing.
+BUILD: [00:0000000330:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\obj\ARMV4I\debug\flush.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm920t.lib is missing.
+BUILD: [00:0000000331:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\obj\ARMV4I\debug\cachemode.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm920t.lib is missing.
+BUILD: [00:0000000332:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\ because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm920t.lib is missing.
+BUILD: [00:0000000333:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\ directory.
+BUILD: [00:0000000334:PROG  ] Waiting for 4 worker threads.
+BUILD: [02:0000000335:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [02:0000000336:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [02:0000000337:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [02:0000000338:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT\sources
+BUILD: [02:0000000339:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [02:0000000340:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\ABORT
+BUILD: [02:0000000341:INFO  ] TARGETNAME: oal_abort_arm920t
+BUILD: [02:0000000342:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [02:0000000343:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_abort_arm920t.lib
+BUILD: [02:0000000344:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_abort_arm920t.lib -machine:thumb @C:\DOCUME~1\sam.ma\LOCALS~1\Temp\bld_48404\thr_216\nm805.tmp
+BUILD: [00:0000000345:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON LINKONLY=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000346:WARNN ] File: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm920t.lib does not exist (2).
+BUILD: [00:0000000347:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm.lib because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.lib is missing.
+BUILD: [00:0000000348:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\obj\ARMV4I\debug\flush.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.lib is missing.
+BUILD: [00:0000000349:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\obj\ARMV4I\debug\cachemode.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.lib is missing.
+BUILD: [00:0000000350:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\obj\ARMV4I\debug\flushdc.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.lib is missing.
+BUILD: [00:0000000351:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\obj\ARMV4I\debug\cleandc.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.lib is missing.
+BUILD: [00:0000000352:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\ because target: C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.lib is missing.
+BUILD: [00:0000000353:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\ directory.
+BUILD: [00:0000000354:PROG  ] Waiting for 1 worker threads.
+BUILD: [01:0000000355:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000356:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000357:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000358:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE\sources
+BUILD: [01:0000000359:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000360:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM920T\CACHE
+BUILD: [01:0000000361:INFO  ] TARGETNAME: oal_cache_arm920t
+BUILD: [01:0000000362:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000363:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm920t.lib
+BUILD: [01:0000000364:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm920t.lib -machine:thumb @C:\DOCUME~1\sam.ma\LOCALS~1\Temp\bld_48404\thr_117\nm806.tmp
+BUILD: [01:0000000365:INFO  ] 系統找不到指定的檔案。
+BUILD: [00:0000000366:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON LINKONLY=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000000367:PROG  ] Waiting for 1 worker threads.
+BUILD: [01:0000000368:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000369:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000370:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000371:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE\sources
+BUILD: [01:0000000372:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000373:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\ARM\ARM926\CACHE
+BUILD: [01:0000000374:INFO  ] TARGETNAME: oal_cache_arm926
+BUILD: [01:0000000375:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000376:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.lib
+BUILD: [01:0000000377:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\debug\oal_cache_arm926.lib -machine:thumb @C:\DOCUME~1\sam.ma\LOCALS~1\Temp\bld_48404\thr_118\nm807.tmp
+BUILD: [01:0000000378:INFO  ] Replacing obj\ARMV4I\debug\flushdc.obj
+BUILD: [01:0000000379:INFO  ] Replacing obj\ARMV4I\debug\cleandc.obj
+BUILD: [01:0000000380:INFO  ] 系統找不到指定的檔案。
+BUILD: [00:0000000381:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000382:INFO  ] Done.
+BUILD: [00:0000000383:PROGC ] Done.
+BUILD: [00:0000000384:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000385:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000386:PROGC ] Message                    0         0       0
+BUILD: [00:0000000387:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000388:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000389:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000390:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000391:PROGC ] ARMASM                    23         0       0
+BUILD: [00:0000000392:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000393:PROGC ] C++                        1         0       0
+BUILD: [00:0000000394:PROGC ] C                          4         0       0
+BUILD: [00:0000000395:PROGC ] Static Libraries           7         0       0
+BUILD: [00:0000000396:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000397:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000000398:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000399:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000400:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000401:PROGC ] Other                      0         0       0
+BUILD: [00:0000000402:PROGC ] 
+BUILD: [00:0000000403:PROGC ] Total                     35         0       0
+BUILD: [00:0000000404:PROGC ] 
+BUILD: [00:0000000405:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000406:PROGC ] GetSystemTimes (seconds): Idle: 10    Kernel: 13    User: 3    
+BUILD: [00:0000000407:PROGC ] Elapsed  time  (seconds): 4    

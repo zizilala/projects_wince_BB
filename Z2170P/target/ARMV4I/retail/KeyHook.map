@@ -1,0 +1,130 @@
+ KeyHook
+
+ Timestamp is 51ede8d3 (Tue Jul 23 10:22:11 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 000000c8H .rdata                  CODE
+ 0001:000000e8 00000024H .rdata$debug            CODE
+ 0001:0000010c 000007a8H .text                   CODE
+ 0001:000008b4 00000014H .xdata                  CODE
+ 0001:000008c8 00000014H .idata$2                CODE
+ 0001:000008dc 00000014H .idata$3                CODE
+ 0001:000008f0 00000068H .idata$4                CODE
+ 0001:00000958 0000000cH .idata$6                CODE
+ 0001:00000964 00000000H .edata                  CODE
+ 0002:00000000 00000068H .idata$5                DATA
+ 0002:00000068 00000008H .data                   DATA
+ 0002:00000070 0000001cH .bss                    DATA
+ 0003:00000000 00000088H .pdata                  DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 00000044H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     00011000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     00011004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     00011008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     0001100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     00011010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     00011014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     00011018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     0001101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BG@KBNMNJAO@?$AAF?$AAu?$AAn?$AAK?$AAe?$AAy?$AAH?$AAo?$AAo?$AAk?$AA?$AA@ 0001103c     KeyHookMain.obj
+ 0001:00000058       ??_C@_1FI@KHNHLMMH@?$AAO?$AAn?$AAK?$AAB?$AAH?$AAo?$AAo?$AAk?$AA?5?$AA?$CI?$AAv?$AAk?$AAC?$AAo?$AAd?$AAe?$AA?3?$AA?$CF?$AAx?$AA?5?$AAs?$AAc?$AAa?$AAn?$AAC?$AAo?$AAd?$AAe?$AA?3?$AA?$CF?$AAx?$AA?5@ 00011058     KeyHookMain.obj
+ 0001:000000b0       ??_C@_1DC@OLKPMOAM@?$AA?$CK?$AA?$CK?$AA?$CK?$AA?5?$AAS?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAK?$AAe?$AAy?$AA?5?$AAH?$AAo?$AAo?$AAk?$AA?5?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$AN?$AA?6?$AA?$AA@ 000110b0     KeyHookMain.obj
+ 0001:000000e4       ??_7KBHook@@6B@            000110e4     KBHook.obj
+ 0001:0000010c       ?KeyHookDlgProc@@YAHPAUHWND__@@IIJ@Z 0001110c f   KeyHookMain.obj
+ 0001:00000294       WinMain                    00011294 f   KeyHookMain.obj
+ 0001:0000033c       ??0KBHook@@QAA@XZ          0001133c f   KBHook.obj
+ 0001:00000350       ??1KBHook@@UAA@XZ          00011350 f   KBHook.obj
+ 0001:00000360       ?StopKBHook@KBHook@@QAAHXZ 00011360 f   KBHook.obj
+ 0001:00000384       ?KBHookProc@KBHook@@SAJHIJ@Z 00011384 f   KBHook.obj
+ 0001:000003d0       ??_GKBHook@@UAAPAXI@Z      000113d0 f i KBHook.obj
+ 0001:000003d0       ??_EKBHook@@UAAPAXI@Z      000113d0 f i KBHook.obj
+ 0001:000003f8       ?StartKBHook@KBHook@@QAAHPAUHWND__@@PAUHINSTANCE__@@@Z 000113f8 f   KBHook.obj
+ 0001:00000458       PostQuitMessage            00011458 f   coredll:COREDLL.dll
+ 0001:00000468       SetWindowTextW             00011468 f   coredll:COREDLL.dll
+ 0001:00000478       ShowWindow                 00011478 f   coredll:COREDLL.dll
+ 0001:00000488       PostMessageW               00011488 f   coredll:COREDLL.dll
+ 0001:00000498       GetForegroundWindow        00011498 f   coredll:COREDLL.dll
+ 0001:000004a8       NKDbgPrintfW               000114a8 f   coredll:COREDLL.dll
+ 0001:000004b8       GetMessageW                000114b8 f   coredll:COREDLL.dll
+ 0001:000004c8       DispatchMessageW           000114c8 f   coredll:COREDLL.dll
+ 0001:000004d8       TranslateMessage           000114d8 f   coredll:COREDLL.dll
+ 0001:000004e8       CreateDialogIndirectParamW 000114e8 f   coredll:COREDLL.dll
+ 0001:000004f8       LoadResource               000114f8 f   coredll:COREDLL.dll
+ 0001:00000508       FindResourceW              00011508 f   coredll:COREDLL.dll
+ 0001:00000518       FindWindowW                00011518 f   coredll:COREDLL.dll
+ 0001:00000528       UnhookWindowsHookEx        00011528 f   coredll:COREDLL.dll
+ 0001:00000538       CallNextHookEx             00011538 f   coredll:COREDLL.dll
+ 0001:00000548       SendMessageW               00011548 f   coredll:COREDLL.dll
+ 0001:00000558       SetWindowsHookExW          00011558 f   coredll:COREDLL.dll
+ 0001:000005e8       WinMainCRTStartup          000115e8 f   corelib0:pegwmain.obj
+ 0001:00000718       exit                       00011718 f   corelib0:cexit.obj
+ 0001:00000730       _exit                      00011730 f   corelib0:cexit.obj
+ 0001:00000770       _initterm                  00011770 f   corelib0:crt0dat.obj
+ 0001:000007a4       _cinit                     000117a4 f   corelib0:crt0dat.obj
+ 0001:000007d8       __security_init_cookie     000117d8 f   corelib0:seccinit.obj
+ 0001:00000834       ??3@YAXPAX@Z               00011834 f   corelib1:COREDLL.dll
+ 0001:00000844       _XcptFilter                00011844 f   corelib1:COREDLL.dll
+ 0001:00000854       __C_specific_handler       00011854 f   corelib1:COREDLL.dll
+ 0001:00000864       free                       00011864 f   corelib1:COREDLL.dll
+ 0001:00000874       __security_gen_cookie2     00011874 f   corelib1:COREDLL.dll
+ 0001:00000884       DeleteCriticalSection      00011884 f   coredll:COREDLL.dll
+ 0001:00000894       InterlockedExchange        00011894 f   coredll:COREDLL.dll
+ 0001:000008a4       TerminateProcess           000118a4 f   coredll:COREDLL.dll
+ 0001:000008c8       __IMPORT_DESCRIPTOR_COREDLL 000118c8     coredll:COREDLL.dll
+ 0001:000008dc       __NULL_IMPORT_DESCRIPTOR   000118dc     coredll:COREDLL.dll
+ 0002:00000000       __imp_PostQuitMessage      00012000     coredll:COREDLL.dll
+ 0002:00000004       __imp_SetWindowTextW       00012004     coredll:COREDLL.dll
+ 0002:00000008       __imp_ShowWindow           00012008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_PostMessageW         0001200c     coredll:COREDLL.dll
+ 0002:00000010       __imp_GetForegroundWindow  00012010     coredll:COREDLL.dll
+ 0002:00000014       __imp_NKDbgPrintfW         00012014     coredll:COREDLL.dll
+ 0002:00000018       __imp_GetMessageW          00012018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_DispatchMessageW     0001201c     coredll:COREDLL.dll
+ 0002:00000020       __imp_TranslateMessage     00012020     coredll:COREDLL.dll
+ 0002:00000024       __imp_CreateDialogIndirectParamW 00012024     coredll:COREDLL.dll
+ 0002:00000028       __imp_LoadResource         00012028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_FindResourceW        0001202c     coredll:COREDLL.dll
+ 0002:00000030       __imp_FindWindowW          00012030     coredll:COREDLL.dll
+ 0002:00000034       __imp_UnhookWindowsHookEx  00012034     coredll:COREDLL.dll
+ 0002:00000038       __imp_CallNextHookEx       00012038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_SendMessageW         0001203c     coredll:COREDLL.dll
+ 0002:00000040       __imp_SetWindowsHookExW    00012040     coredll:COREDLL.dll
+ 0002:00000044       __imp_??3@YAXPAX@Z         00012044     corelib1:COREDLL.dll
+ 0002:00000048       __imp__XcptFilter          00012048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp___C_specific_handler 0001204c     corelib1:COREDLL.dll
+ 0002:00000050       __imp_free                 00012050     corelib1:COREDLL.dll
+ 0002:00000054       __imp___security_gen_cookie2 00012054     corelib1:COREDLL.dll
+ 0002:00000058       __imp_DeleteCriticalSection 00012058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_InterlockedExchange  0001205c     coredll:COREDLL.dll
+ 0002:00000060       __imp_TerminateProcess     00012060     coredll:COREDLL.dll
+ 0002:00000064       \177COREDLL_NULL_THUNK_DATA 00012064     coredll:COREDLL.dll
+ 0002:00000068       __security_cookie          00012068     corelib0:seccinit.obj
+ 0002:0000006c       __security_cookie_complement 0001206c     corelib0:seccinit.obj
+ 0002:00000074       ?m_hTargetWnd@KBHook@@1PAUHWND__@@A 00012074     KBHook.obj
+ 0002:00000078       ?m_hHook@KBHook@@1PAUHHOOK__@@A 00012078     KBHook.obj
+ 0002:0000007c       _exitflag                  0001207c     corelib0:cexit.obj
+ 0002:00000080       __onexitend                00012080     <common>
+ 0002:00000084       __onexitbegin              00012084     <common>
+ 0002:00000088       g_pcsExit                  00012088     <common>
+
+ entry point at        0001:000005e8
+
+ Static symbols
+
+ 0001:00000570       WinMainCRTStartupHelper    00011570 f   corelib0:pegwmain.obj
+ 0001:0000061c       doexit                     0001161c f   corelib0:cexit.obj

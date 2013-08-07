@@ -1,0 +1,8 @@
+; All rights reserved ADENEO EMBEDDED 2010
+IF BSP_TPS659XX_MADC
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\TPS659XX_MADC]
+    "Prefix"="ADC"
+    "Dll"="TPS659XX_MADC.dll"
+    "Index"=dword:1
+    "order"=dword:3
+ENDIF BSP_TPS659XX_MADC

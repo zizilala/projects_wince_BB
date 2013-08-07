@@ -1,0 +1,28 @@
+; All rights reserved ADENEO EMBEDDED 2010
+
+IF BSP_OMAP_MUSBOTG
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MUSBOTG]
+    "Dll"="omap_musbotg.dll"
+    "Prefix"="OTG"
+    "Order"=dword:63
+    "Index"=dword:1
+    "MemBase"=dword:480AB000
+    "MemLen"=dword:00001000
+    "Irq"=dword:5C
+    "DMAIrq"=dword:5D
+    "InitialRoleMaster"=dword:1
+    "BusIoctl"=dword:2a0048
+    "InterfaceType"=dword:0
+    "USBChargerHighCurrent"=dword:1F4        ; 500mA
+    "USBChargerLowCurrent"=dword:64          ; 100mA
+    "USBChargerNotify"="vbus.power.event"
+    "PowerFlags"=dword:00000103              ; send pre/post device state changes
+    "startupTimeout"=dword:1388              ; at startup wait about 5 seconds before timeout
+    "vbusDischargeTime"=dword:50             ; after suspend interrupt, number of msec to wait before checking VBUS level
+    "DisableHighSpeed"=dword:0               ; some hubs will not enumerate with high speed support enabled
+    ; WM7 only USBBUS_GUID, PMCLASS_PMEXT_GUID, CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID
+    "IClass"=multi_sz:"{6F40791D-300E-44E4-BC38-E0E63CA8375C}=%b",
+                      "{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}",
+                      "{A32942B7-920C-486b-B0E6-92A702A99B35}"
+ENDIF    
+                  

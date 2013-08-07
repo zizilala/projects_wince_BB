@@ -1,0 +1,71 @@
+# All rights reserved ADENEO EMBEDDED 2010
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+
+!IF "$(BSP_OMAP_DSS)" == ""
+SKIPBUILD=1
+!ENDIF
+
+WINCEOEM=1
+TARGETNAME=omap_dss
+TARGETTYPE=DYNLINK
+SYNCHRONIZE_DRAIN=1
+
+DLLENTRY=_DllMainCRTStartup
+
+SOURCES=
+
+SOURCELIBS= \
+    $(_TILIBS)\omap_ddgpe_dss.lib \
+    $(_TILIBS)\omap_ddgpe_dssai.lib \
+    $(_TILIBS)\$(_SOC)_soccfg.lib                                               \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\bsp_display_init.lib\
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\bsp_stall.lib                              \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ddgpe.lib \
+    $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\gpe.lib
+
+!IF "$(ASSEMBLER_ARM_ARCH7_SUPPORT)" == ""
+SOURCELIBS=$(SOURCELIBS) \
+    $(TI_COMMON_DIR)\COMMON_TI\DSS\DDGPE_NEON\$(WINCEDEBUG)\omap35xx_ddgpe_neon.lib
+!ELSE
+SOURCELIBS=$(SOURCELIBS) \
+    $(_TARGETPLATLIB)\$(_CPUINDPATH)\omap35xx_ddgpe_neon.lib
+!ENDIF
+
+TARGETLIBS= \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib \
+    $(_SYSGENSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib
+    
+!IF "$(PVR_SERVICES4)" == ""
+!IF "$(PVR_OPENGLES1)" == ""
+!IF "$(PVR_OPENGLES2)" == ""
+!IF "$(PVR_OPENVG1)" == ""
+TARGETLIBS=$(TARGETLIBS) \
+    $(_TILIBS)\omap_dss_entry.lib
+!ELSE
+TARGETLIBS=$(TARGETLIBS) \
+    $(_PUBLICROOT)\PowerVR\oak\lib\$(_TGTCPU)\$(WINCEDEBUG)\ddi_powervr.lib
+!ENDIF
+!ELSE
+TARGETLIBS=$(TARGETLIBS) \
+    $(_PUBLICROOT)\PowerVR\oak\lib\$(_TGTCPU)\$(WINCEDEBUG)\ddi_powervr.lib
+!ENDIF
+!ELSE
+TARGETLIBS=$(TARGETLIBS) \
+    $(_PUBLICROOT)\PowerVR\oak\lib\$(_TGTCPU)\$(WINCEDEBUG)\ddi_powervr.lib
+!ENDIF
+!ELSE
+TARGETLIBS=$(TARGETLIBS) \
+    $(_PUBLICROOT)\PowerVR\oak\lib\$(_TGTCPU)\$(WINCEDEBUG)\ddi_powervr.lib
+!ENDIF
+
+FILE_VIEW_RESOURCE_FOLDER= \
+    dss.reg \

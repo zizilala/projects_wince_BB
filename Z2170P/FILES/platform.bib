@@ -1,0 +1,284 @@
+;
+;               Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+;
+;   Use of this software is controlled by the terms and conditions found
+;   in the license agreement under which this software has been supplied.
+;
+;===============================================================================
+
+MODULES
+
+;Name           Path                                            Memory Type
+;------------   ----------------------------------------------  -----------
+
+ceddk.dll			$(_FLATRELEASEDIR)\ceddk.dll				NK  SHQ
+omapbus.dll			$(_FLATRELEASEDIR)\omapbus.dll				NK  SHK
+
+IF BSP_OMAP_SDMA
+omap_sdma.dll		$(_FLATRELEASEDIR)\omap_sdma.dll			NK  SHK
+ENDIF
+
+IF BSP_SDHC
+omap_sdhc.dll		$(_FLATRELEASEDIR)\omap_sdhc.dll			NK	SHKM
+ENDIF
+
+IF BSP_SDMEMORY
+omap_sdmemory.dll	$(_FLATRELEASEDIR)\omap_sdmemory.dll		NK	SHKM
+ENDIF
+
+IF BSP_OMAP_GPIO
+omap_gpio.dll		$(_FLATRELEASEDIR)\omap_gpio.dll		NK  SHKM
+ENDIF
+
+IF BSP_TSC2046_TOUCH
+touch.dll	$(_FLATRELEASEDIR)\tsc2046_touch.dll		NK  SHQ
+ENDIF
+
+IF BSP_OMAP_DSS
+omap_dss.dll		$(_FLATRELEASEDIR)\omap_dss.dll				NK  SHK
+ENDIF
+
+IF BSP_OMAP_ISP_RESIZER
+omap_isp_resizer.dll     $(_FLATRELEASEDIR)\omap_isp_resizer.dll          NK  SHK
+ENDIF
+
+IF BSP_BACKLIGHT
+backlight.dll		$(_FLATRELEASEDIR)\backlight.dll			NK  SHK
+ENDIF
+
+#if (defined BSP_OMAP_MCSPI1 || defined BSP_OMAP_MCSPI2 || defined BSP_OMAP_MCSPI3 || defined BSP_OMAP_MCSPI4)
+omap_mcspi.dll		$(_FLATRELEASEDIR)\omap_mcspi.dll			NK  SHK
+#endif
+
+#if (defined BSP_OMAP_UART1 || defined BSP_OMAP_UART2 || defined BSP_OMAP_UART3 ||defined BSP_OMAP_UART4)
+omap_uart.dll       $(_FLATRELEASEDIR)\omap_uart.dll			NK  SHKM
+#endif
+
+; @CESYSGEN IF CE_MODULES_FSDMGR
+IF BSP_OMAP_NAND
+omap_nand.dll		$(_FLATRELEASEDIR)\omap_nand.dll			NK SHK
+ENDIF
+; @CESYSGEN ENDIF CE_MODULES_FSDMGR
+
+; @CESYSGEN IF CE_MODULES_NDIS
+IF BSP_NOETHERNET !
+IF BSP_SMSC911X
+smsc9118.dll    $(_FLATRELEASEDIR)\smsc9118.dll                 NK SHK
+ENDIF BSP_SMSC911X
+ENDIF BSP_NOETHERNET !
+; @CESYSGEN ENDIF CE_MODULES_NDIS
+
+#if (defined BSP_TCA6416_GPIO1 || defined BSP_TCA6416_GPIO2 || defined BSP_TCA6416_GPIO3)
+tca6416_gpio.dll       $(_FLATRELEASEDIR)\tca6416_gpio.dll		NK  SHK
+#endif
+
+IF BSP_OMAP_CAMERA
+omap_camera.dll		$(_FLATRELEASEDIR)\omap_camera.dll				NK  SHK
+#include "$(_TARGETPLATROOT)\src\app\CaptureTest\CaptureTest.bib"
+#include "$(_TARGETPLATROOT)\src\app\SampleGrabber\SampleGrabber.bib"
+#include "$(_TARGETPLATROOT)\src\app\NullSink\NullSink.bib"
+ENDIF
+
+IF BSP_OMAP_VRFB
+omap_vrfb.dll		$(_FLATRELEASEDIR)\omap_vrfb.dll				NK  SHK
+ENDIF
+
+IF BSP_OMAP_HDQ
+omap_hdq.dll		$(_FLATRELEASEDIR)\omap_hdq.dll				NK  SHK
+ENDIF
+
+#if (defined BSP_OMAP_MCBSP1 || defined BSP_OMAP_MCBSP2 || defined BSP_OMAP_MCBSP3 || defined BSP_OMAP_MCBSP4 || defined BSP_OMAP_MCBSP5)
+omap_mcbsp.dll		$(_FLATRELEASEDIR)\omap_mcbsp.dll			NK  SHK
+#endif
+
+IF BSP_OMAP_MUSBFN
+omap_musbfn.dll		$(_FLATRELEASEDIR)\omap_musbfn.dll			NK  SHKM
+ENDIF
+
+IF BSP_OMAP_MUSBHCD
+omap_musbhcd.dll		$(_FLATRELEASEDIR)\omap_musbhcd.dll			NK  SHKM
+ENDIF
+
+IF BSP_OMAP_MUSBOTG
+omap_musbotg.dll		$(_FLATRELEASEDIR)\omap_musbotg.dll			NK  SHKM
+ENDIF
+
+IF BSP_OMAP_NLED
+omap_nled.dll			$(_FLATRELEASEDIR)\omap_nled.dll   NK  SHKM
+ENDIF
+
+IF BSP_TPS659XX
+tps659xx.dll       $(_FLATRELEASEDIR)\tps659xx.dll				NK  SHKM
+ENDIF
+
+IF BSP_TPS659XX_GPIO
+tps659xx_gpio.dll		$(_FLATRELEASEDIR)\tps659xx_gpio.dll			NK  SHKM
+ENDIF
+
+IF BSP_TPS659XX_RTC
+tps659xx_rtc.dll		$(_FLATRELEASEDIR)\tps659xx_rtc.dll			NK  SHK
+ENDIF
+
+IF BSP_TPS659XX_MADC
+tps659xx_madc.dll		$(_FLATRELEASEDIR)\tps659xx_madc.dll			NK   SHK
+ENDIF
+
+IF BSP_TPS659XX_WAVE
+tps659xx_wave.dll		$(_FLATRELEASEDIR)\tps659xx_wave.dll			NK  SHK
+ENDIF
+
+IF BSP_TPS659XX_KEYPAD
+	tps659xx_keypad.dll		$(_FLATRELEASEDIR)\tps659xx_keypad.dll			NK  SHK
+	IF LOCALE=0411 !
+		IF LOCALE=0412 !
+			kbdmouse.dll	$(_FLATRELEASEDIR)\KbdNopUs.dll					NK  SHK
+		ENDIF LOCALE=0412 !
+	ENDIF LOCALE=0411 !
+       
+	IF LOCALE=0411
+		IF BSP_KEYBD_JPN1
+			kbdmouse.dll	$(_FLATRELEASEDIR)\KbdNopJpn1.dll				NK  SHK
+		ENDIF BSP_KEYBD_JPN1
+       
+		IF BSP_KEYBD_JPN1 !
+			kbdmouse.dll	$(_FLATRELEASEDIR)\KbdNopJpn2.dll				NK  SHK
+		ENDIF BSP_KEYBD_JPN1
+	ENDIF LOCALE=0411
+       
+	IF LOCALE=0412
+		kbdmouse.dll		$(_FLATRELEASEDIR)\KbdNopKor.dll				NK  SHK
+	ENDIF LOCALE=0412   
+ENDIF
+
+IF BSP_TPS659XX_PWRKEY
+tps659xx_pwrkey.dll		$(_FLATRELEASEDIR)\tps659xx_pwrkey.dll	NK  SHKM
+ENDIF
+
+IF BSP_TPS659XX_LED
+tps659xx_led.dll		$(_FLATRELEASEDIR)\tps659xx_led.dll	NK  SHK
+ENDIF
+
+IF BSP_HEADSET
+headset.dll     $(_FLATRELEASEDIR)\headset.dll         NK SHK
+ENDIF BSP_HEADSET
+
+#if (defined BSP_OMAP_USB_HOST2)
+omap_ehcihcd.dll	$(_FLATRELEASEDIR)\omap_ehcihcd.dll			NK  SHKM
+#endif
+
+IF BSP_KEYBD_NOP
+kbdnop.dll		$(_FLATRELEASEDIR)\kbdnop.dll				NK  SHK
+kbdnopus.dll	$(_FLATRELEASEDIR)\kbdnopus.dll				NK  SHK
+ENDIF
+
+;-------------------------------------------------------------------------------
+; OMAP specific shell extensions, needed in image only if using command line utility - do.exe
+; If not using do.exe, then shell extension dlls will be loaded as needed via KITL connection.
+; @CESYSGEN IF CE_MODULES_SHELL
+IF BSP_SHELL_EXTENSIONS_DO_CMD
+omap_shell.dll       $(_FLATRELEASEDIR)\omap_shell.dll          NK  SH
+proxydriver.dll      $(_FLATRELEASEDIR)\proxydriver.dll         NK  SHK
+i2cproxy.dll         $(_FLATRELEASEDIR)\i2cproxy.dll            NK  SHK
+do.exe               $(_FLATRELEASEDIR)\do.exe                  NK
+ENDIF
+
+; @CESYSGEN ENDIF CE_MODULES_SHELL
+
+
+;-- Power Management Extension -------------------------------------------------
+; @CESYSGEN IF CE_MODULES_PM
+; @XIPREGION IF PACKAGE_OEMXIPKERNEL
+IF BSP_PMEXT
+pmext.dll $(_FLATRELEASEDIR)\pmext.dll                          NK SHK
+ti_constraintadapters.dll $(_FLATRELEASEDIR)\ti_constraintadapters.dll NK SHK
+ti_policies.dll $(_FLATRELEASEDIR)\ti_policies.dll              NK SHK
+
+IF BSP_CPUPOLICY
+ti_cpuloadpolicy.dll $(_FLATRELEASEDIR)\ti_cpuloadpolicy.dll	NK SHK
+ENDIF BSP_CPUPOLICY
+
+IF BSP_SYSSTATEPOLICY
+ti_systemstatepolicy.dll $(_FLATRELEASEDIR)\ti_systemstatepolicy.dll   NK SHK
+ENDIF BSP_SYSSTATEPOLICY
+
+ENDIF BSP_PMEXT
+; @XIPREGION ENDIF PACKAGE_OEMXIPKERNEL
+; @CESYSGEN ENDIF CE_MODULES_PM
+
+;-- Battery driver -------------------------------------------------------------
+; @CESYSGEN IF CE_MODULES_BATTDRVR
+; @CESYSGEN IF PM_PMSTUBS !
+IF BSP_BATTERY_BQ27410
+battdrvr.dll        $(_FLATRELEASEDIR)\battdrvr_bq27410.dll	NK SHKM
+ELSE
+battdrvr.dll        $(_FLATRELEASEDIR)\null_battdrvr.dll    NK SHKM
+ENDIF
+; @CESYSGEN ENDIF PM_PMSTUBS !
+; @CESYSGEN ENDIF CE_MODULES_BATTDRVR
+
+
+IF BSP_SDMAPROXY
+sdmaproxy.dll		$(_FLATRELEASEDIR)\sdmaproxy.dll		NK SHKM
+ENDIF BSP_SDMAPROXY
+
+sysctrl.dll			$(_FLATRELEASEDIR)\sysctrl.dll			NK  SHK
+
+;-- This the section for Test drivers--- -----------------------------------------------
+IF BSP_TEST_APPS
+nand_test_driver.dll       $(_FLATRELEASEDIR)\nand_test_driver.dll      NK SHK
+ENDIF
+
+;-- SIMPLE BENCHMARK -----------------------------------------------------------
+IF BSP_SIMPLE_BENCHMARK
+simple.dll          $(_FLATRELEASEDIR)\simple.dll               NK SHKM
+simple.exe          $(_FLATRELEASEDIR)\simple.exe               NK
+ENDIF
+
+;-------------------------------------------------------------------------------
+
+FILES
+;Name           Path                                            Memory  Type
+;------------   ----------------------------------------------  ------------
+
+; BSP version panel
+; @CESYSGEN IF WCESHELLFE_MODULES_CPLMAIN
+IF BSP_NO_BSPINFO !
+bsppnl.exe	$(_FLATRELEASEDIR)\bsppnl.exe						NK		SH
+bsppnl.cpl	$(_FLATRELEASEDIR)\bsppnl.cpl						NK		SH
+ENDIF BSP_NO_BSPINFO !
+; @CESYSGEN ENDIF WCESHELLFE_MODULES_CPLMAIN
+
+; @CESYSGEN IF IMAGING_IMG_JPEGDECODER
+;wallpaper.jpg    $(_FLATRELEASEDIR)\wallpaper.jpg               NK		S
+; @CESYSGEN ENDIF IMAGING_IMG_JPEGDECODER
+
+
+
+;-- This must be last ----------------------------------------------------------
+IF BSP_OLIVIA_OMAP
+Olivia_OMAP.exe	$(_FLATRELEASEDIR)\Olivia_OMAP.exe	        NK
+Olivia_OMAP.lnk	$(_FLATRELEASEDIR)\Olivia_OMAP.lnk	        NK
+ENDIF
+
+;-- This the section for Test Apps -----------------------------------------------
+IF BSP_TEST_APPS
+nandtest.exe        $(_FLATRELEASEDIR)\nandtest.exe                       NK
+wakeme.exe          $(_FLATRELEASEDIR)\wakeme.exe                         NK
+testSerial.exe      $(_FLATRELEASEDIR)\testSerial.exe                     NK
+testSerialPerf.exe  $(_FLATRELEASEDIR)\testSerialPerf.exe                 NK
+GpioTest.exe        $(_FLATRELEASEDIR)\GpioTest.exe                       NK
+testKeypad.exe      $(_FLATRELEASEDIR)\testKeypad.exe                     NK
+testRTC.exe         $(_FLATRELEASEDIR)\testRTC.exe                        NK
+
+;-- PM Test APPS  -----------------------------------------------------------
+pmget.exe          $(_FLATRELEASEDIR)\pmget.exe               NK
+pmgetd.exe          $(_FLATRELEASEDIR)\pmgetd.exe               NK
+pmset.exe          $(_FLATRELEASEDIR)\pmset.exe               NK
+pmsetd.exe          $(_FLATRELEASEDIR)\pmsetd.exe               NK
+pmmon.exe          $(_FLATRELEASEDIR)\pmmon.exe               NK
+pmreq.exe          $(_FLATRELEASEDIR)\pmreq.exe               NK
+ENDIF
+
+KeyHook.exe      $(_FLATRELEASEDIR)\KeyHook.exe			NK H

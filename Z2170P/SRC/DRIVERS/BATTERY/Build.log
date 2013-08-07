@@ -1,0 +1,813 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\
+BUILD: [00:0000000008:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\
+BUILD: [00:0000000009:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000010:INFO  ] Done.
+BUILD: [00:0000000011:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\null_batt_pdd.c because target: obj\ARMV4I\retail\null_batt_pdd.obj is missing.
+BUILD: [00:0000000012:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\ directory.
+BUILD: [00:0000000013:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000014:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000015:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000016:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000017:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\sources
+BUILD: [01:0000000018:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000019:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL
+BUILD: [01:0000000020:INFO  ] TARGETNAME: null_battdrvr
+BUILD: [01:0000000021:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000022:PROGC ] Compiling .\null_batt_pdd.c
+BUILD: [01:0000000023:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\null_batt_pdd.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DCEDDK_USEDDKMACRO -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\null_batt_pdd.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\.\null_batt_pdd.c
+BUILD: [01:0000000024:INFO  ] null_batt_pdd.c
+BUILD: [00:0000000025:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\batt_pdd.c because target: obj\ARMV4I\retail\batt_pdd.obj is missing.
+BUILD: [00:0000000026:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\ directory.
+BUILD: [00:0000000027:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000028:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000029:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000030:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000031:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\sources
+BUILD: [01:0000000032:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000033:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410
+BUILD: [01:0000000034:INFO  ] TARGETNAME: battdrvr_bq27410
+BUILD: [01:0000000035:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000036:PROGC ] Compiling .\batt_pdd.c
+BUILD: [01:0000000037:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\batt_pdd.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DCEDDK_USEDDKMACRO -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\batt_pdd.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\.\batt_pdd.c
+BUILD: [01:0000000038:INFO  ] batt_pdd.c
+BUILD: [00:0000000039:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\battdrvr_mdd.lib because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\null_battdrvr.lib is missing.
+BUILD: [00:0000000040:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\obj\ARMV4I\retail\null_batt_pdd.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\null_battdrvr.lib is missing.
+BUILD: [00:0000000041:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\null_battdrvr.lib is missing.
+BUILD: [00:0000000042:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\ directory.
+BUILD: [00:0000000043:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000044:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000045:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000046:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000047:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\sources
+BUILD: [01:0000000048:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000049:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL
+BUILD: [01:0000000050:INFO  ] TARGETNAME: null_battdrvr
+BUILD: [01:0000000051:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000052:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\null_battdrvr.lib
+BUILD: [01:0000000053:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\null_battdrvr.lib -def:..\battdrvr.def -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm33C.tmp
+BUILD: [01:0000000054:INFO  ] Microsoft (R) Library Manager Version 8.00.50727.42
+BUILD: [01:0000000055:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000056:INFO  ] 
+BUILD: [01:0000000057:INFO  ] -nodefaultlib 
+BUILD: [01:0000000058:INFO  ] -ignore:4001 
+BUILD: [01:0000000059:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000060:INFO  ] obj\ARMV4I\retail\null_batt_pdd.obj 
+BUILD: [01:0000000061:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\battdrvr_mdd.lib 
+BUILD: [01:0000000062:INFO  ]    Creating library C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\null_battdrvr.lib and object C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\null_battdrvr.exp
+BUILD: [00:0000000063:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\battdrvr_mdd.lib because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.lib is missing.
+BUILD: [00:0000000064:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.lib is missing.
+BUILD: [00:0000000065:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\obj\ARMV4I\retail\batt_pdd.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.lib is missing.
+BUILD: [00:0000000066:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.lib is missing.
+BUILD: [00:0000000067:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\ directory.
+BUILD: [00:0000000068:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000069:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000070:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000071:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000072:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\sources
+BUILD: [01:0000000073:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000074:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410
+BUILD: [01:0000000075:INFO  ] TARGETNAME: battdrvr_bq27410
+BUILD: [01:0000000076:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000077:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.lib
+BUILD: [01:0000000078:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.lib -def:..\battdrvr.def -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm33D.tmp
+BUILD: [01:0000000079:INFO  ] Microsoft (R) Library Manager Version 8.00.50727.42
+BUILD: [01:0000000080:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000081:INFO  ] 
+BUILD: [01:0000000082:INFO  ] -nodefaultlib 
+BUILD: [01:0000000083:INFO  ] -ignore:4001 
+BUILD: [01:0000000084:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000085:INFO  ] obj\ARMV4I\retail\batt_pdd.obj 
+BUILD: [01:0000000086:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\battdrvr_mdd.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib 
+BUILD: [01:0000000087:INFO  ]    Creating library C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.lib and object C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.exp
+BUILD: [00:0000000088:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000000089:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\battdrvr_mdd.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll is missing.
+BUILD: [00:0000000090:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\battdrvr.def because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll is missing.
+BUILD: [00:0000000091:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll is missing.
+BUILD: [00:0000000092:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000000093:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\obj\ARMV4I\retail\null_batt_pdd.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll is missing.
+BUILD: [00:0000000094:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll is missing.
+BUILD: [00:0000000095:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\ directory.
+BUILD: [00:0000000096:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000000097:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000098:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000099:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000100:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL\sources
+BUILD: [01:0000000101:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000102:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\NULL
+BUILD: [01:0000000103:INFO  ] TARGETNAME: null_battdrvr
+BUILD: [01:0000000104:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000105:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000106:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll
+BUILD: [01:0000000107:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll -dll -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm33E.tmp
+BUILD: [01:0000000108:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000109:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000110:INFO  ] 
+BUILD: [01:0000000111:INFO  ] -nodefaultlib 
+BUILD: [01:0000000112:INFO  ] -include:DllMain -entry:_DllMainCRTStartup 
+BUILD: [01:0000000113:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.pdb 
+BUILD: [01:0000000114:INFO  ] -pdbaltpath:null_battdrvr.pdb 
+BUILD: [01:0000000115:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000116:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000117:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.map 
+BUILD: [01:0000000118:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.rel 
+BUILD: [01:0000000119:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000120:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000121:INFO  ] /base:0x10000000 
+BUILD: [01:0000000122:INFO  ] obj\ARMV4I\retail\null_batt_pdd.obj 
+BUILD: [01:0000000123:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\battdrvr_mdd.lib 
+BUILD: [01:0000000124:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000125:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\null_battdrvr.exp 
+BUILD: [01:0000000126:INFO  ] 
+BUILD: [01:0000000127:INFO  ] Starting pass 1
+BUILD: [01:0000000128:INFO  ] 
+BUILD: [01:0000000129:INFO  ] Searching libraries
+BUILD: [01:0000000130:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\battdrvr_mdd.lib:
+BUILD: [01:0000000131:INFO  ]       Found DllMain
+BUILD: [01:0000000132:INFO  ]         Loaded battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000133:INFO  ]       Found BatteryAPIStopwatch
+BUILD: [01:0000000134:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000135:INFO  ]         Loaded battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000136:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000137:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000138:INFO  ]       Found NKDbgPrintfW
+BUILD: [01:0000000139:INFO  ]         Referenced in null_batt_pdd.obj
+BUILD: [01:0000000140:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000141:INFO  ]       Found EventModify
+BUILD: [01:0000000142:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000143:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000144:INFO  ]       Found WaitForSingleObject
+BUILD: [01:0000000145:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000146:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000147:INFO  ]       Found PowerPolicyNotify
+BUILD: [01:0000000148:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000149:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000150:INFO  ]       Found CeSetThreadPriority
+BUILD: [01:0000000151:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000152:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000153:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000000154:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000155:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000156:INFO  ]       Found LocalFree
+BUILD: [01:0000000157:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000158:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000159:INFO  ]       Found CloseHandle
+BUILD: [01:0000000160:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000161:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000162:INFO  ]       Found CreateThread
+BUILD: [01:0000000163:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000164:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000165:INFO  ]       Found LocalAlloc
+BUILD: [01:0000000166:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000167:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000168:INFO  ]       Found RegCloseKey
+BUILD: [01:0000000169:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000170:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000171:INFO  ]       Found RegQueryValueExW
+BUILD: [01:0000000172:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000173:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000174:INFO  ]       Found OpenDeviceKey
+BUILD: [01:0000000175:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000176:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000177:INFO  ]       Found CreateEventW
+BUILD: [01:0000000178:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000179:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000180:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000000181:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000182:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000183:INFO  ]       Found OpenEventW
+BUILD: [01:0000000184:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000185:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000186:INFO  ]       Found GetLastError
+BUILD: [01:0000000187:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000188:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000189:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000000190:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000191:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000192:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000193:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000000194:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000195:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000196:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000197:INFO  ]       Found SetLastError
+BUILD: [01:0000000198:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000199:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000200:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000201:INFO  ]       Found CeSetPowerOnEvent
+BUILD: [01:0000000202:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000203:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000204:INFO  ]       Found DisableThreadLibraryCalls
+BUILD: [01:0000000205:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000206:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000207:INFO  ]       Found GetTickCount
+BUILD: [01:0000000208:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000209:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000210:INFO  ]       Found SystemTimeToFileTime
+BUILD: [01:0000000211:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000212:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000213:INFO  ]       Found GetLocalTime
+BUILD: [01:0000000214:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000215:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000216:INFO  ]       Found FileTimeToSystemTime
+BUILD: [01:0000000217:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000218:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000219:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000220:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000221:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000222:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000223:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000224:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000225:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000226:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000227:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000228:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000229:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000230:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000231:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000232:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000233:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000234:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000235:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000236:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000237:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000238:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000239:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000240:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000241:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000242:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000243:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000244:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000245:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000246:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000247:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000248:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000249:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000250:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000251:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000252:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000253:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000254:INFO  ]       Found _DllMainCRTStartup
+BUILD: [01:0000000255:INFO  ]         Loaded corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000256:INFO  ]       Found _cexit
+BUILD: [01:0000000257:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000258:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000000259:INFO  ]       Found _cinit
+BUILD: [01:0000000260:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000261:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000262:INFO  ]       Found __security_init_cookie
+BUILD: [01:0000000263:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000264:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000000265:INFO  ]       Found __onexitend
+BUILD: [01:0000000266:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000267:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000000268:INFO  ]       Found __xt_z
+BUILD: [01:0000000269:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000270:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000000271:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000272:INFO  ]       Found memcpy
+BUILD: [01:0000000273:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000274:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000275:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000276:INFO  ]       Found memcmp
+BUILD: [01:0000000277:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000278:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000279:INFO  ]       Found memset
+BUILD: [01:0000000280:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000281:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000282:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000000283:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000284:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000285:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000286:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000287:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000288:INFO  ]       Found _XcptFilter
+BUILD: [01:0000000289:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000290:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000291:INFO  ]       Found free
+BUILD: [01:0000000292:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000293:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000294:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000295:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000000296:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000000297:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000298:INFO  ]       Found malloc
+BUILD: [01:0000000299:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000300:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000301:INFO  ]       Found realloc
+BUILD: [01:0000000302:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000303:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000304:INFO  ]       Found _msize
+BUILD: [01:0000000305:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000306:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000307:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\battdrvr_mdd.lib:
+BUILD: [01:0000000308:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000309:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000310:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000000311:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000312:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000313:INFO  ]       Found TerminateProcess
+BUILD: [01:0000000314:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000315:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000316:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000000317:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000318:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000319:INFO  ] 
+BUILD: [01:0000000320:INFO  ] Finished searching libraries
+BUILD: [01:0000000321:INFO  ] 
+BUILD: [01:0000000322:INFO  ] Finished pass 1
+BUILD: [01:0000000323:INFO  ] 
+BUILD: [01:0000000324:INFO  ]     Discarded __imp_malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000325:INFO  ]     Discarded __imp_realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000326:INFO  ]     Discarded __imp__msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000327:INFO  ]     Discarded __imp_InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000328:INFO  ]     Discarded '.pdata' from null_batt_pdd.obj
+BUILD: [01:0000000329:INFO  ]     Discarded '.pdata' from battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000330:INFO  ]     Discarded '.pdata' from battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000331:INFO  ]     Discarded '.pdata' from battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000332:INFO  ]     Discarded '.pdata' from battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000333:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000334:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000335:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000336:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000337:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000338:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000339:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000340:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000341:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000342:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000343:INFO  ]     Discarded BatteryPddIOControl from null_batt_pdd.obj
+BUILD: [01:0000000344:INFO  ]     Discarded SetEvent from battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000345:INFO  ]     Discarded GetCurrentThread from battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000346:INFO  ]     Discarded add64_64_64 from battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000347:INFO  ]     Discarded sub64_64_64 from battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000348:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000000349:INFO  ]     Discarded exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000350:INFO  ]     Discarded _exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000351:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000352:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000353:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000354:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000000355:INFO  ]     Discarded _onexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000356:INFO  ]     Discarded atexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000357:INFO  ]     Discarded malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000358:INFO  ]     Discarded realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000359:INFO  ]     Discarded _msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000360:INFO  ]     Discarded InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000361:INFO  ]     Discarded '.xdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000362:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000363:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000364:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000365:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000366:INFO  ] Starting pass 2
+BUILD: [01:0000000367:INFO  ]      null_battdrvr.exp
+BUILD: [01:0000000368:INFO  ]      null_batt_pdd.obj
+BUILD: [01:0000000369:INFO  ]      battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000370:INFO  ]      battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000371:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000372:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000373:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000374:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000375:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000376:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000377:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000378:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000379:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000380:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000381:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000382:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000383:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000384:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000385:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000386:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000387:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000388:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000389:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000390:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000391:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000392:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000393:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000394:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000395:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000396:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000397:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000398:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000399:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000400:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000401:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000402:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000403:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000000404:INFO  ]      corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000405:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000000406:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000000407:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000408:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000000409:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000410:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000411:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000412:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000413:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000414:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000415:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000416:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000417:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000418:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000419:INFO  ] Finished pass 2
+BUILD: [01:0000000420:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll
+BUILD: [01:0000000421:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000422:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000423:INFO  ] 
+BUILD: [01:0000000424:INFO  ] 
+BUILD: [01:0000000425:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\null_battdrvr.map
+BUILD: [01:0000000426:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000427:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\null_battdrvr.rel
+BUILD: [01:0000000428:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\null_battdrvr.dll C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\null_battdrvr.dll
+BUILD: [00:0000000429:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\battdrvr_mdd.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll is missing.
+BUILD: [00:0000000430:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll is missing.
+BUILD: [00:0000000431:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\battdrvr.def because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll is missing.
+BUILD: [00:0000000432:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll is missing.
+BUILD: [00:0000000433:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000000434:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\obj\ARMV4I\retail\batt_pdd.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll is missing.
+BUILD: [00:0000000435:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll is missing.
+BUILD: [00:0000000436:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\ directory.
+BUILD: [00:0000000437:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000000438:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000439:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000440:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000441:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410\sources
+BUILD: [01:0000000442:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000443:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\BATTERY\BQ27410
+BUILD: [01:0000000444:INFO  ] TARGETNAME: battdrvr_bq27410
+BUILD: [01:0000000445:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000446:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000447:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll
+BUILD: [01:0000000448:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll -dll -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm340.tmp
+BUILD: [01:0000000449:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000450:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000451:INFO  ] 
+BUILD: [01:0000000452:INFO  ] -nodefaultlib 
+BUILD: [01:0000000453:INFO  ] -include:DllMain -entry:_DllMainCRTStartup 
+BUILD: [01:0000000454:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.pdb 
+BUILD: [01:0000000455:INFO  ] -pdbaltpath:battdrvr_bq27410.pdb 
+BUILD: [01:0000000456:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000457:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000458:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.map 
+BUILD: [01:0000000459:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.rel 
+BUILD: [01:0000000460:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000461:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000462:INFO  ] /base:0x10000000 
+BUILD: [01:0000000463:INFO  ] obj\ARMV4I\retail\batt_pdd.obj 
+BUILD: [01:0000000464:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\battdrvr_mdd.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib 
+BUILD: [01:0000000465:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000466:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\battdrvr_bq27410.exp 
+BUILD: [01:0000000467:INFO  ] 
+BUILD: [01:0000000468:INFO  ] Starting pass 1
+BUILD: [01:0000000469:INFO  ] 
+BUILD: [01:0000000470:INFO  ] Searching libraries
+BUILD: [01:0000000471:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\battdrvr_mdd.lib:
+BUILD: [01:0000000472:INFO  ]       Found DllMain
+BUILD: [01:0000000473:INFO  ]         Loaded battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000474:INFO  ]       Found BatteryAPIStopwatch
+BUILD: [01:0000000475:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000476:INFO  ]         Loaded battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000477:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib:
+BUILD: [01:0000000478:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000479:INFO  ]       Found GetDeviceRegistryParams
+BUILD: [01:0000000480:INFO  ]         Referenced in batt_pdd.obj
+BUILD: [01:0000000481:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000482:INFO  ]       Found __IMPORT_DESCRIPTOR_CEDDK
+BUILD: [01:0000000483:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000484:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000485:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000486:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000487:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000488:INFO  ]       Found CEDDK_NULL_THUNK_DATA
+BUILD: [01:0000000489:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000490:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000491:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000492:INFO  ]       Found NKDbgPrintfW
+BUILD: [01:0000000493:INFO  ]         Referenced in batt_pdd.obj
+BUILD: [01:0000000494:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000495:INFO  ]       Found EventModify
+BUILD: [01:0000000496:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000497:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000498:INFO  ]       Found WaitForSingleObject
+BUILD: [01:0000000499:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000500:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000501:INFO  ]       Found PowerPolicyNotify
+BUILD: [01:0000000502:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000503:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000504:INFO  ]       Found CeSetThreadPriority
+BUILD: [01:0000000505:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000506:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000507:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000000508:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000509:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000510:INFO  ]       Found LocalFree
+BUILD: [01:0000000511:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000512:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000513:INFO  ]       Found CloseHandle
+BUILD: [01:0000000514:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000515:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000516:INFO  ]       Found CreateThread
+BUILD: [01:0000000517:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000518:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000519:INFO  ]       Found LocalAlloc
+BUILD: [01:0000000520:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000521:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000522:INFO  ]       Found RegCloseKey
+BUILD: [01:0000000523:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000524:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000525:INFO  ]       Found RegQueryValueExW
+BUILD: [01:0000000526:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000527:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000528:INFO  ]       Found OpenDeviceKey
+BUILD: [01:0000000529:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000530:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000531:INFO  ]       Found CreateEventW
+BUILD: [01:0000000532:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000533:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000534:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000000535:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000536:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000537:INFO  ]       Found OpenEventW
+BUILD: [01:0000000538:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000539:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000540:INFO  ]       Found GetLastError
+BUILD: [01:0000000541:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000542:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000543:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000000544:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000545:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000546:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000547:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000000548:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000549:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000550:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000551:INFO  ]       Found SetLastError
+BUILD: [01:0000000552:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000553:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000554:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000555:INFO  ]       Found CeSetPowerOnEvent
+BUILD: [01:0000000556:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000557:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000558:INFO  ]       Found DisableThreadLibraryCalls
+BUILD: [01:0000000559:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000560:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000561:INFO  ]       Found GetTickCount
+BUILD: [01:0000000562:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000563:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000564:INFO  ]       Found SystemTimeToFileTime
+BUILD: [01:0000000565:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000566:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000567:INFO  ]       Found GetLocalTime
+BUILD: [01:0000000568:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000569:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000570:INFO  ]       Found FileTimeToSystemTime
+BUILD: [01:0000000571:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000572:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000573:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000574:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000575:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000576:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000577:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000578:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000579:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000580:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000581:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000582:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000583:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000584:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000585:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000586:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000587:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000588:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000589:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000590:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000591:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000592:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000593:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000594:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000595:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000596:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000597:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000598:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000599:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000600:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000601:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000602:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000603:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000604:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000605:INFO  ]       Found _DllMainCRTStartup
+BUILD: [01:0000000606:INFO  ]         Loaded corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000607:INFO  ]       Found _cexit
+BUILD: [01:0000000608:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000609:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000000610:INFO  ]       Found _cinit
+BUILD: [01:0000000611:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000612:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000613:INFO  ]       Found __security_init_cookie
+BUILD: [01:0000000614:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000615:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000000616:INFO  ]       Found __onexitend
+BUILD: [01:0000000617:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000618:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000000619:INFO  ]       Found __xt_z
+BUILD: [01:0000000620:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000621:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000000622:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000623:INFO  ]       Found memset
+BUILD: [01:0000000624:INFO  ]         Referenced in batt_pdd.obj
+BUILD: [01:0000000625:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000626:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000627:INFO  ]       Found memcpy
+BUILD: [01:0000000628:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000629:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000630:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000631:INFO  ]       Found memcmp
+BUILD: [01:0000000632:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000633:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000634:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000000635:INFO  ]         Referenced in battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000636:INFO  ]         Referenced in battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000637:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000638:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000639:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000640:INFO  ]       Found _XcptFilter
+BUILD: [01:0000000641:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000642:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000643:INFO  ]       Found free
+BUILD: [01:0000000644:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000645:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000646:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000647:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000000648:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000000649:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000650:INFO  ]       Found malloc
+BUILD: [01:0000000651:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000652:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000653:INFO  ]       Found realloc
+BUILD: [01:0000000654:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000655:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000656:INFO  ]       Found _msize
+BUILD: [01:0000000657:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000658:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000659:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\battdrvr_mdd.lib:
+BUILD: [01:0000000660:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib:
+BUILD: [01:0000000661:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000662:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000663:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000000664:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000665:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000666:INFO  ]       Found TerminateProcess
+BUILD: [01:0000000667:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000668:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000669:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000000670:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000671:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000672:INFO  ] 
+BUILD: [01:0000000673:INFO  ] Finished searching libraries
+BUILD: [01:0000000674:INFO  ] 
+BUILD: [01:0000000675:INFO  ] Finished pass 1
+BUILD: [01:0000000676:INFO  ] 
+BUILD: [01:0000000677:INFO  ]     Discarded __imp_malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000678:INFO  ]     Discarded __imp_realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000679:INFO  ]     Discarded __imp__msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000680:INFO  ]     Discarded __imp_InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000681:INFO  ]     Discarded '.pdata' from batt_pdd.obj
+BUILD: [01:0000000682:INFO  ]     Discarded '.pdata' from battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000683:INFO  ]     Discarded '.pdata' from battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000684:INFO  ]     Discarded '.pdata' from battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000685:INFO  ]     Discarded '.pdata' from battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000686:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000687:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000688:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000689:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000690:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000691:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000692:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000693:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000694:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000695:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000696:INFO  ]     Discarded BatteryPddIOControl from batt_pdd.obj
+BUILD: [01:0000000697:INFO  ]     Discarded SetEvent from battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000698:INFO  ]     Discarded GetCurrentThread from battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000699:INFO  ]     Discarded add64_64_64 from battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000700:INFO  ]     Discarded sub64_64_64 from battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000701:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000000702:INFO  ]     Discarded exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000703:INFO  ]     Discarded _exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000704:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000705:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000706:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000707:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000000708:INFO  ]     Discarded _onexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000709:INFO  ]     Discarded atexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000710:INFO  ]     Discarded malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000711:INFO  ]     Discarded realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000712:INFO  ]     Discarded _msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000713:INFO  ]     Discarded InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000714:INFO  ]     Discarded '.xdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000715:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000716:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000717:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000718:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000719:INFO  ] Starting pass 2
+BUILD: [01:0000000720:INFO  ]      battdrvr_bq27410.exp
+BUILD: [01:0000000721:INFO  ]      batt_pdd.obj
+BUILD: [01:0000000722:INFO  ]      battdrvr_mdd.lib(battdrvr.obj)
+BUILD: [01:0000000723:INFO  ]      battdrvr_mdd.lib(battapi.obj)
+BUILD: [01:0000000724:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000725:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000726:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000727:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000728:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000729:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000730:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000731:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000732:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000733:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000734:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000735:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000736:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000737:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000738:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000739:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000740:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000741:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000742:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000743:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000744:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000745:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000746:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000747:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000748:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000749:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000750:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000751:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000752:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000753:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000754:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000755:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000756:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000757:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000758:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000759:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000000760:INFO  ]      corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000761:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000000762:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000000763:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000764:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000000765:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000766:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000767:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000768:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000769:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000770:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000771:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000772:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000773:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000774:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000775:INFO  ] Finished pass 2
+BUILD: [01:0000000776:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll
+BUILD: [01:0000000777:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000778:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000779:INFO  ] 
+BUILD: [01:0000000780:INFO  ] 
+BUILD: [01:0000000781:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\battdrvr_bq27410.map
+BUILD: [01:0000000782:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000783:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\battdrvr_bq27410.rel
+BUILD: [01:0000000784:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\battdrvr_bq27410.dll C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\battdrvr_bq27410.dll
+BUILD: [00:0000000785:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000786:INFO  ] Done.
+BUILD: [00:0000000787:PROGC ] Done.
+BUILD: [00:0000000788:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000789:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000790:PROGC ] Message                    0         0       0
+BUILD: [00:0000000791:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000792:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000793:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000794:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000795:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000796:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000797:PROGC ] C++                        0         0       0
+BUILD: [00:0000000798:PROGC ] C                          2         0       0
+BUILD: [00:0000000799:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000800:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000801:PROGC ] Dll's                      4         0       0
+BUILD: [00:0000000802:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000803:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000804:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000805:PROGC ] Other                      0         0       0
+BUILD: [00:0000000806:PROGC ] 
+BUILD: [00:0000000807:PROGC ] Total                      6         0       0
+BUILD: [00:0000000808:PROGC ] 
+BUILD: [00:0000000809:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000810:PROGC ] GetSystemTimes (seconds): Idle: 18    Kernel: 26    User: 3    
+BUILD: [00:0000000811:PROGC ] Elapsed  time  (seconds): 7    

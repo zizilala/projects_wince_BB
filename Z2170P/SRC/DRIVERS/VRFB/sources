@@ -1,0 +1,25 @@
+# All rights reserved ADENEO EMBEDDED 2010
+TARGETNAME=omap_vrfb
+TARGETTYPE=DYNLINK
+
+DEFFILE=omap_vrfb.def
+DLLENTRY=_DllMainCRTStartup
+
+SOURCES= \
+
+SOURCELIBS= \
+    $(_TILIBS)\common_ti_vrfb.lib	\
+    $(_TILIBS)\$(_SOC)_soccfg.lib	\
+
+
+TARGETLIBS= \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib
+    
+FILE_VIEW_ROOT_FOLDER= \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+
+FILE_VIEW_RESOURCE_FOLDER= \
+    omap_vrfb.reg \
+

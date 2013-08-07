@@ -1,0 +1,130 @@
+ GpioTest
+
+ Timestamp is 51ecc713 (Mon Jul 22 13:45:55 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000038H .rdata                  CODE
+ 0001:00000058 00000025H .rdata$debug            CODE
+ 0001:00000080 00000a84H .text                   CODE
+ 0001:00000b04 0000002cH .xdata                  CODE
+ 0001:00000b30 00000028H .idata$2                CODE
+ 0001:00000b58 00000014H .idata$3                CODE
+ 0001:00000b6c 00000070H .idata$4                CODE
+ 0001:00000bdc 00000016H .idata$6                CODE
+ 0001:00000bf2 00000000H .edata                  CODE
+ 0002:00000000 00000070H .idata$5                DATA
+ 0002:00000070 00000008H .data                   DATA
+ 0002:00000078 0000001cH .bss                    DATA
+ 0003:00000000 00000098H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     00011000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     00011004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     00011008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     0001100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     00011010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     00011014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     00011018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     0001101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BM@EIJJDCKO@?$AAH?$AAe?$AAl?$AAl?$AAo?$AA?5?$AAW?$AAo?$AAr?$AAl?$AAd?$AA?$CB?$AA?6?$AA?$AA@ 0001103c     GpioTest.obj
+ 0001:00000080       wmain                      00011080 f   GpioTest.obj
+ 0001:000000e8       Sleep                      000110e8 f   coredll:COREDLL.dll
+ 0001:000000f8       GPIOClrBit                 000110f8 f   ceddk:CEDDK.dll
+ 0001:00000108       GPIOSetBit                 00011108 f   ceddk:CEDDK.dll
+ 0001:00000118       GPIOSetMode                00011118 f   ceddk:CEDDK.dll
+ 0001:00000128       GPIOOpen                   00011128 f   ceddk:CEDDK.dll
+ 0001:000004e4       mainWCRTStartup            000114e4 f   corelib0:mainwcrt.obj
+ 0001:00000604       exit                       00011604 f   corelib0:cexit.obj
+ 0001:0000061c       _exit                      0001161c f   corelib0:cexit.obj
+ 0001:0000065c       _initterm                  0001165c f   corelib0:crt0dat.obj
+ 0001:00000690       _cinit                     00011690 f   corelib0:crt0dat.obj
+ 0001:000006cc       _onexit                    000116cc f   corelib0:onexit.obj
+ 0001:00000854       atexit                     00011854 f   corelib0:onexit.obj
+ 0001:00000874       __GSHandlerCheck_SEH       00011874 f   corelib0:gshandlerseh.obj
+ 0001:000008c4       __security_init_cookie     000118c4 f   corelib0:seccinit.obj
+ 0001:00000920       __security_check_cookie    00011920 f   corelib0:armsecgs.obj
+ 0001:00000934       __gsfailure                00011934 f   corelib0:armsecgs.obj
+ 0001:00000978       __GSHandlerCheckCommon     00011978 f   corelib0:gshandler.obj
+ 0001:000009b4       wprintf                    000119b4 f   corelib1:COREDLL.dll
+ 0001:000009c4       _wtol                      000119c4 f   corelib1:COREDLL.dll
+ 0001:000009d4       free                       000119d4 f   corelib1:COREDLL.dll
+ 0001:000009e4       iswctype                   000119e4 f   corelib1:COREDLL.dll
+ 0001:000009f4       malloc                     000119f4 f   corelib1:COREDLL.dll
+ 0001:00000a04       memcpy                     00011a04 f   corelib1:COREDLL.dll
+ 0001:00000a14       wcslen                     00011a14 f   corelib1:COREDLL.dll
+ 0001:00000a24       _XcptFilter                00011a24 f   corelib1:COREDLL.dll
+ 0001:00000a34       realloc                    00011a34 f   corelib1:COREDLL.dll
+ 0001:00000a44       _msize                     00011a44 f   corelib1:COREDLL.dll
+ 0001:00000a54       __C_specific_handler       00011a54 f   corelib1:COREDLL.dll
+ 0001:00000a64       __security_gen_cookie2     00011a64 f   corelib1:COREDLL.dll
+ 0001:00000a74       __report_gsfailure         00011a74 f   corelib1:COREDLL.dll
+ 0001:00000a84       GetModuleFileNameW         00011a84 f   coredll:COREDLL.dll
+ 0001:00000a94       DeleteCriticalSection      00011a94 f   coredll:COREDLL.dll
+ 0001:00000aa4       InterlockedExchange        00011aa4 f   coredll:COREDLL.dll
+ 0001:00000ab4       TerminateProcess           00011ab4 f   coredll:COREDLL.dll
+ 0001:00000ac4       EnterCriticalSection       00011ac4 f   coredll:COREDLL.dll
+ 0001:00000ad4       InterlockedCompareExchange 00011ad4 f   coredll:COREDLL.dll
+ 0001:00000ae4       InitializeCriticalSection  00011ae4 f   coredll:COREDLL.dll
+ 0001:00000af4       LeaveCriticalSection       00011af4 f   coredll:COREDLL.dll
+ 0001:00000b30       __IMPORT_DESCRIPTOR_COREDLL 00011b30     coredll:COREDLL.dll
+ 0001:00000b44       __IMPORT_DESCRIPTOR_CEDDK  00011b44     ceddk:CEDDK.dll
+ 0001:00000b58       __NULL_IMPORT_DESCRIPTOR   00011b58     coredll:COREDLL.dll
+ 0002:00000000       __imp_GPIOOpen             00012000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_GPIOClrBit           00012004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_GPIOSetBit           00012008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_GPIOSetMode          0001200c     ceddk:CEDDK.dll
+ 0002:00000010       \177CEDDK_NULL_THUNK_DATA  00012010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_Sleep                00012014     coredll:COREDLL.dll
+ 0002:00000018       __imp_wprintf              00012018     corelib1:COREDLL.dll
+ 0002:0000001c       __imp__wtol                0001201c     corelib1:COREDLL.dll
+ 0002:00000020       __imp_free                 00012020     corelib1:COREDLL.dll
+ 0002:00000024       __imp_iswctype             00012024     corelib1:COREDLL.dll
+ 0002:00000028       __imp_malloc               00012028     corelib1:COREDLL.dll
+ 0002:0000002c       __imp_memcpy               0001202c     corelib1:COREDLL.dll
+ 0002:00000030       __imp_wcslen               00012030     corelib1:COREDLL.dll
+ 0002:00000034       __imp__XcptFilter          00012034     corelib1:COREDLL.dll
+ 0002:00000038       __imp_realloc              00012038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp__msize               0001203c     corelib1:COREDLL.dll
+ 0002:00000040       __imp___C_specific_handler 00012040     corelib1:COREDLL.dll
+ 0002:00000044       __imp___security_gen_cookie2 00012044     corelib1:COREDLL.dll
+ 0002:00000048       __imp___report_gsfailure   00012048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp_GetModuleFileNameW   0001204c     coredll:COREDLL.dll
+ 0002:00000050       __imp_DeleteCriticalSection 00012050     coredll:COREDLL.dll
+ 0002:00000054       __imp_InterlockedExchange  00012054     coredll:COREDLL.dll
+ 0002:00000058       __imp_TerminateProcess     00012058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_EnterCriticalSection 0001205c     coredll:COREDLL.dll
+ 0002:00000060       __imp_InterlockedCompareExchange 00012060     coredll:COREDLL.dll
+ 0002:00000064       __imp_InitializeCriticalSection 00012064     coredll:COREDLL.dll
+ 0002:00000068       __imp_LeaveCriticalSection 00012068     coredll:COREDLL.dll
+ 0002:0000006c       \177COREDLL_NULL_THUNK_DATA 0001206c     coredll:COREDLL.dll
+ 0002:00000070       __security_cookie          00012070     corelib0:seccinit.obj
+ 0002:00000074       __security_cookie_complement 00012074     corelib0:seccinit.obj
+ 0002:00000078       __wargv                    00012078     corelib0:mainwcrt.obj
+ 0002:0000007c       __argc                     0001207c     corelib0:mainwcrt.obj
+ 0002:00000084       _exitflag                  00012084     corelib0:cexit.obj
+ 0002:00000088       __onexitend                00012088     <common>
+ 0002:0000008c       __onexitbegin              0001208c     <common>
+ 0002:00000090       g_pcsExit                  00012090     <common>
+
+ entry point at        0001:000004e4
+
+ Static symbols
+
+ 0001:00000138       ?crtstart_FreeArguments@@YAXXZ 00011138 f   corelib0:mainwcrt.obj
+ 0001:00000158       ?crtstart_CountSpaceW@@YAXAAH0PBG@Z 00011158 f   corelib0:mainwcrt.obj
+ 0001:00000234       ?crtstart_ParseArgsWW@@YAHPBG0AAHAAPAPAG@Z 00011234 f   corelib0:mainwcrt.obj
+ 0001:000003f8       ?mainCRTStartupHelper@@YAXPAUHINSTANCE__@@PBG@Z 000113f8 f   corelib0:mainwcrt.obj
+ 0001:00000508       doexit                     00011508 f   corelib0:cexit.obj

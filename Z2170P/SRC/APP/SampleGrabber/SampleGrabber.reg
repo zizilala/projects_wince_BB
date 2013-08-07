@@ -1,0 +1,46 @@
+;
+;               Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+;
+;   Use of this software is controlled by the terms and conditions found
+;   in the license agreement under which this software has been supplied.
+;
+;===============================================================================
+
+[HKEY_CLASSES_ROOT\Filter\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}]
+@="Sample Grabber Filter"
+
+[HKEY_CLASSES_ROOT\CLSID\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}]
+@="Sample Grabber Filter"
+"Merit"=dword:00200000
+
+[HKEY_CLASSES_ROOT\CLSID\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}\InprocServer32]
+@="SampleGrabber.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}\Pins\Input]
+"Direction"=dword:00000000
+"IsRendered"=dword:00000000
+"AllowedZero"=dword:00000000
+"AllowedMany"=dword:00000000
+"ConnectsToPin"="Output"
+
+;YUY2
+[HKEY_CLASSES_ROOT\CLSID\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}\Pins\Input\Types\{73646976-0000-0010-8000-00AA00389B71}\{32595559-0000-0010-8000-00AA00389B71}]
+;UYVY
+[HKEY_CLASSES_ROOT\CLSID\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}\Pins\Input\Types\{73646976-0000-0010-8000-00AA00389B71}\{59565955-0000-0010-8000-00AA00389B71}]
+
+
+[HKEY_CLASSES_ROOT\CLSID\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}\Pins\Output]
+"Direction"=dword:00000001
+"IsRendered"=dword:00000000
+"AllowedZero"=dword:00000000
+"AllowedMany"=dword:00000000
+"ConnectsToPin"="Input"
+
+;YUY2
+[HKEY_CLASSES_ROOT\CLSID\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}\Pins\Output\Types\{73646976-0000-0010-8000-00AA00389B71}\{32595559-0000-0010-8000-00AA00389B71}]
+;UYVY
+[HKEY_CLASSES_ROOT\CLSID\{AD5DB5B4-D1AB-4f37-A60D-215154B4ECC1}\Pins\Output\Types\{73646976-0000-0010-8000-00AA00389B71}\{59565955-0000-0010-8000-00AA00389B71}]
+

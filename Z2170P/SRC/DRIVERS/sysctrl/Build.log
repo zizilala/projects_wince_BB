@@ -1,0 +1,218 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\
+BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000009:INFO  ] Done.
+BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\sysctrl.rc because target: obj\ARMV4I\retail\sysctrl.res is missing.
+BUILD: [00:0000000011:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\sysctrl.cpp because target: obj\ARMV4I\retail\sysctrl.obj is missing.
+BUILD: [00:0000000012:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\startup.cpp because target: obj\ARMV4I\retail\startup.obj is missing.
+BUILD: [00:0000000013:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\ directory.
+BUILD: [00:0000000014:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000015:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000016:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000017:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000018:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\sources
+BUILD: [01:0000000019:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000020:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl
+BUILD: [01:0000000021:INFO  ] TARGETNAME: sysctrl
+BUILD: [01:0000000022:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000023:PROGC ] Resource Compiling .\sysctrl.rc
+BUILD: [01:0000000024:INFO  ] 	rc -r -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -DWINCEINTERNAL  -DUNDER_CE=600  -DINTERNATIONAL -l 409 -c 1252  -foobj\ARMV4I\retail\sysctrl.res C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\.\sysctrl.rc
+BUILD: [01:0000000025:INFO  ] Microsoft (R) Windows (R) Resource Compiler Version 6.0.5478.0
+BUILD: [01:0000000026:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000027:INFO  ] 
+BUILD: [01:0000000028:PROGC ] Compiling .\sysctrl.cpp
+BUILD: [01:0000000029:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\sysctrl.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\sysctrl.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\.\sysctrl.cpp
+BUILD: [01:0000000030:INFO  ] sysctrl.cpp
+BUILD: [01:0000000031:PROGC ] Compiling .\startup.cpp
+BUILD: [01:0000000032:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\startup.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\startup.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\.\startup.cpp
+BUILD: [01:0000000033:INFO  ] startup.cpp
+BUILD: [00:0000000034:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\obj\ARMV4I\retail\sysctrl.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\sysctrl.lib is missing.
+BUILD: [00:0000000035:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\obj\ARMV4I\retail\startup.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\sysctrl.lib is missing.
+BUILD: [00:0000000036:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\sysctrl.lib is missing.
+BUILD: [00:0000000037:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\ directory.
+BUILD: [00:0000000038:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000039:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000040:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000041:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000042:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\sources
+BUILD: [01:0000000043:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000044:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl
+BUILD: [01:0000000045:INFO  ] TARGETNAME: sysctrl
+BUILD: [01:0000000046:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000047:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\sysctrl.lib
+BUILD: [01:0000000048:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\sysctrl.lib -def:sysctrl.def -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nmFDF.tmp
+BUILD: [01:0000000049:INFO  ] Microsoft (R) Library Manager Version 8.00.50727.42
+BUILD: [01:0000000050:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000051:INFO  ] 
+BUILD: [01:0000000052:INFO  ] -nodefaultlib 
+BUILD: [01:0000000053:INFO  ] -ignore:4001 
+BUILD: [01:0000000054:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000055:INFO  ] obj\ARMV4I\retail\sysctrl.res obj\ARMV4I\retail\sysctrl.obj obj\ARMV4I\retail\startup.obj 
+BUILD: [01:0000000056:INFO  ]    Creating library C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\sysctrl.lib and object C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\sysctrl.exp
+BUILD: [00:0000000057:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000000058:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\: Missing source file: C:\WINCE600\public\common\oak\lib\ARMV4I\retail\ceddk.lib.
+BUILD: [00:0000000059:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\toolhelp.lib.
+BUILD: [00:0000000060:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\sysctrl.def because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.dll is missing.
+BUILD: [00:0000000061:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000000062:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\ceddk.lib because filename is missing from build database
+BUILD: [00:0000000063:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\toolhelp.lib because filename is missing from build database
+BUILD: [00:0000000064:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\obj\ARMV4I\retail\sysctrl.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.dll is missing.
+BUILD: [00:0000000065:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\obj\ARMV4I\retail\startup.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.dll is missing.
+BUILD: [00:0000000066:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.dll is missing.
+BUILD: [00:0000000067:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\ directory.
+BUILD: [00:0000000068:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000000069:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000070:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000071:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000072:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\sources
+BUILD: [01:0000000073:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000074:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl
+BUILD: [01:0000000075:INFO  ] TARGETNAME: sysctrl
+BUILD: [01:0000000076:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000077:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000078:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.dll
+BUILD: [01:0000000079:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.dll -dll -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nmFE1.tmp
+BUILD: [01:0000000080:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000081:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000082:INFO  ] 
+BUILD: [01:0000000083:INFO  ] -nodefaultlib 
+BUILD: [01:0000000084:INFO  ] -entry:DllMain 
+BUILD: [01:0000000085:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.pdb 
+BUILD: [01:0000000086:INFO  ] -pdbaltpath:sysctrl.pdb 
+BUILD: [01:0000000087:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000088:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000089:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.map 
+BUILD: [01:0000000090:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.rel 
+BUILD: [01:0000000091:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000092:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000093:INFO  ] /base:0x10000000 
+BUILD: [01:0000000094:INFO  ] obj\ARMV4I\retail\sysctrl.res obj\ARMV4I\retail\sysctrl.obj obj\ARMV4I\retail\startup.obj 
+BUILD: [01:0000000095:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\ceddk.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\toolhelp.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000096:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\sysctrl.exp 
+BUILD: [01:0000000097:INFO  ] 
+BUILD: [01:0000000098:INFO  ] Starting pass 1
+BUILD: [01:0000000099:INFO  ] 
+BUILD: [01:0000000100:INFO  ] Searching libraries
+BUILD: [01:0000000101:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000102:INFO  ]       Found CloseHandle
+BUILD: [01:0000000103:INFO  ]         Referenced in sysctrl.obj
+BUILD: [01:0000000104:INFO  ]         Referenced in startup.obj
+BUILD: [01:0000000105:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000106:INFO  ]       Found CreateThread
+BUILD: [01:0000000107:INFO  ]         Referenced in sysctrl.obj
+BUILD: [01:0000000108:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000109:INFO  ]       Found ShellExecuteEx
+BUILD: [01:0000000110:INFO  ]         Referenced in startup.obj
+BUILD: [01:0000000111:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000112:INFO  ]       Found WaitForSingleObject
+BUILD: [01:0000000113:INFO  ]         Referenced in startup.obj
+BUILD: [01:0000000114:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000115:INFO  ]       Found CreateEventW
+BUILD: [01:0000000116:INFO  ]         Referenced in startup.obj
+BUILD: [01:0000000117:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000118:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000119:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000120:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000121:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000122:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000123:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000124:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000125:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000126:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000127:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000128:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000129:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000130:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000131:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000132:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\toolhelp.lib:
+BUILD: [01:0000000133:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000134:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000135:INFO  ]       Found memset
+BUILD: [01:0000000136:INFO  ]         Referenced in startup.obj
+BUILD: [01:0000000137:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000138:INFO  ] 
+BUILD: [01:0000000139:INFO  ] Finished searching libraries
+BUILD: [01:0000000140:INFO  ] 
+BUILD: [01:0000000141:INFO  ] Finished pass 1
+BUILD: [01:0000000142:INFO  ] 
+BUILD: [01:0000000143:INFO  ] 
+BUILD: [01:0000000144:INFO  ] Invoking CVTRES.EXE:
+BUILD: [01:0000000145:INFO  ]  /machine:thumb
+BUILD: [01:0000000146:INFO  ]  /verbose
+BUILD: [01:0000000147:INFO  ]  /out:"C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\lnkFE3.tmp"
+BUILD: [01:0000000148:INFO  ]  /readonly
+BUILD: [01:0000000149:INFO  ]  /windowsce
+BUILD: [01:0000000150:INFO  ]  "obj\ARMV4I\retail\sysctrl.res"
+BUILD: [01:0000000151:INFO  ] Microsoft (R) Windows Resource To Object Converter Version 8.00.50727.42
+BUILD: [01:0000000152:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000153:INFO  ] 
+BUILD: [01:0000000154:INFO  ] adding resource. type:ICON, name:1, language:0x0404, flags:0x1030, size:2216
+BUILD: [01:0000000155:INFO  ] adding resource. type:ICON, name:2, language:0x0404, flags:0x1030, size:1384
+BUILD: [01:0000000156:INFO  ] adding resource. type:ICON, name:3, language:0x0404, flags:0x1030, size:4264
+BUILD: [01:0000000157:INFO  ] adding resource. type:ICON, name:4, language:0x0404, flags:0x1030, size:1128
+BUILD: [01:0000000158:INFO  ] adding resource. type:GROUP_ICON, name:108, language:0x0404, flags:0x1030, size:62
+BUILD: [01:0000000159:INFO  ] adding resource. type:ICON, name:5, language:0x0404, flags:0x1030, size:744
+BUILD: [01:0000000160:INFO  ] adding resource. type:ICON, name:6, language:0x0404, flags:0x1030, size:296
+BUILD: [01:0000000161:INFO  ] adding resource. type:ICON, name:7, language:0x0404, flags:0x1030, size:2216
+BUILD: [01:0000000162:INFO  ] adding resource. type:ICON, name:8, language:0x0404, flags:0x1030, size:1384
+BUILD: [01:0000000163:INFO  ] adding resource. type:ICON, name:9, language:0x0404, flags:0x1030, size:4264
+BUILD: [01:0000000164:INFO  ] adding resource. type:ICON, name:10, language:0x0404, flags:0x1030, size:1128
+BUILD: [01:0000000165:INFO  ] adding resource. type:GROUP_ICON, name:109, language:0x0404, flags:0x1030, size:90
+BUILD: [01:0000000166:INFO  ] Starting pass 2
+BUILD: [01:0000000167:INFO  ]      sysctrl.res
+BUILD: [01:0000000168:INFO  ]      sysctrl.exp
+BUILD: [01:0000000169:INFO  ]      startup.obj
+BUILD: [01:0000000170:INFO  ]      sysctrl.obj
+BUILD: [01:0000000171:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000172:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000173:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000174:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000175:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000176:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000177:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000178:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000179:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000180:INFO  ] Finished pass 2
+BUILD: [01:0000000181:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.dll
+BUILD: [01:0000000182:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000183:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000184:INFO  ] 
+BUILD: [01:0000000185:INFO  ] 
+BUILD: [01:0000000186:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\sysctrl.map
+BUILD: [01:0000000187:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000188:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\sysctrl.rel
+BUILD: [01:0000000189:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\sysctrl.dll C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\sysctrl.dll
+BUILD: [00:0000000190:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000191:INFO  ] Done.
+BUILD: [00:0000000192:PROGC ] Done.
+BUILD: [00:0000000193:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000194:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000195:PROGC ] Message                    0         0       0
+BUILD: [00:0000000196:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000197:PROGC ] Resource                   1         0       0
+BUILD: [00:0000000198:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000199:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000200:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000201:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000202:PROGC ] C++                        2         0       0
+BUILD: [00:0000000203:PROGC ] C                          0         0       0
+BUILD: [00:0000000204:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000205:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000206:PROGC ] Dll's                      2         0       0
+BUILD: [00:0000000207:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000208:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000209:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000210:PROGC ] Other                      0         0       0
+BUILD: [00:0000000211:PROGC ] 
+BUILD: [00:0000000212:PROGC ] Total                      5         0       0
+BUILD: [00:0000000213:PROGC ] 
+BUILD: [00:0000000214:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000215:PROGC ] GetSystemTimes (seconds): Idle: 14    Kernel: 16    User: 3    
+BUILD: [00:0000000216:PROGC ] Elapsed  time  (seconds): 5    

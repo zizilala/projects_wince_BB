@@ -1,0 +1,48 @@
+ WL1271Manager
+
+ Timestamp is 51dcc7a2 (Wed Jul 10 10:32:02 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000062H .rdata                  CODE
+ 0001:00000064 0000002aH .rdata$debug            CODE
+ 0001:00000090 00000228H .text                   CODE
+ 0001:000002b8 00000014H .idata$2                CODE
+ 0001:000002cc 00000014H .idata$3                CODE
+ 0001:000002e0 00000018H .idata$4                CODE
+ 0001:000002f8 0000000cH .idata$6                CODE
+ 0001:00000310 00000049H .edata                  CODE
+ 0002:00000000 00000018H .idata$5                DATA
+ 0002:00000018 00000004H .bss                    DATA
+ 0003:00000000 00000010H .pdata                  DATA
+ 0004:00000000 00000118H .rsrc$01                DATA
+ 0004:00000120 0000159cH .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000020       ??_C@_1EA@LEEPCMHE@?$AA?2?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AAs?$AA?2?$AAW?$AAL?$AA1?$AA2?$AA7?$AA1?$AA_?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAr?$AA_?$AAA?$AAp?$AAp?$AA?4?$AAe?$AAx?$AAe?$AA?$AA@ 10001020     WLApplet.obj
+ 0001:00000060       ??_C@_11LOCGONAA@?$AA?$AA@ 10001060     WLApplet.obj
+ 0001:00000090       ?DllEntry@@YAHPAXK0@Z      10001090 f   WLApplet.obj
+ 0001:000000c8       ?CPlApplet@@YAJPAUHWND__@@IJJ@Z 100010c8 f   WLApplet.obj
+ 0001:00000268       CloseHandle                10001268 f   coredll:COREDLL.dll
+ 0001:00000278       CreateProcessW             10001278 f   coredll:COREDLL.dll
+ 0001:00000288       LoadIconW                  10001288 f   coredll:COREDLL.dll
+ 0001:00000298       LoadStringW                10001298 f   coredll:COREDLL.dll
+ 0001:000002a8       wcscpy                     100012a8 f   corelib1:COREDLL.dll
+ 0001:000002b8       __IMPORT_DESCRIPTOR_COREDLL 100012b8     coredll:COREDLL.dll
+ 0001:000002cc       __NULL_IMPORT_DESCRIPTOR   100012cc     coredll:COREDLL.dll
+ 0002:00000000       __imp_CreateProcessW       10002000     coredll:COREDLL.dll
+ 0002:00000004       __imp_LoadIconW            10002004     coredll:COREDLL.dll
+ 0002:00000008       __imp_LoadStringW          10002008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_wcscpy               1000200c     corelib1:COREDLL.dll
+ 0002:00000010       __imp_CloseHandle          10002010     coredll:COREDLL.dll
+ 0002:00000014       \177COREDLL_NULL_THUNK_DATA 10002014     coredll:COREDLL.dll
+ 0002:00000018       ?g_hInstance@@3PAUHINSTANCE__@@A 10002018     WLApplet.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+

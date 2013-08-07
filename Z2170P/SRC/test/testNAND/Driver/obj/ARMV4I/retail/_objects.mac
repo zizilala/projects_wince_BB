@@ -1,0 +1,3 @@
+OBJECTS=\
+    obj\ARMV4I\retail\nand_test_driver.obj
+

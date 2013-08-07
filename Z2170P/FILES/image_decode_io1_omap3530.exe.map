@@ -1,0 +1,1510 @@
+ image_decode_io1_omap3530
+
+ Timestamp is 4d34a237 (Mon Jan 17 15:10:31 2011)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000138H .idata$5                CODE
+ 0001:00000138 00000004H .CRT$XCA                CODE
+ 0001:0000013c 00000004H .CRT$XCZ                CODE
+ 0001:00000140 00000004H .CRT$XIA                CODE
+ 0001:00000144 00000004H .CRT$XIZ                CODE
+ 0001:00000148 00000004H .CRT$XPA                CODE
+ 0001:0000014c 00000004H .CRT$XPZ                CODE
+ 0001:00000150 00000004H .CRT$XTA                CODE
+ 0001:00000154 00000004H .CRT$XTZ                CODE
+ 0001:00000160 000095ecH .rdata                  CODE
+ 0001:0000974c 000000acH .rdata$debug            CODE
+ 0001:00009800 0001dc8cH .text                   CODE
+ 0001:0002748c 00000044H .xdata                  CODE
+ 0001:000274d0 00000014H .idata$2                CODE
+ 0001:000274e4 00000014H .idata$3                CODE
+ 0001:000274f8 00000138H .idata$4                CODE
+ 0001:00027630 0000000cH .idata$6                CODE
+ 0001:00027640 00000899H .edata                  CODE
+ 0002:00000000 000011ecH .data                   DATA
+ 0002:00001200 00005f28H .bss                    DATA
+ 0003:00000000 00000e28H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __imp_QueryPerformanceFrequency 00011000     coredll:COREDLL.dll
+ 0001:00000004       __imp_QueryPerformanceCounter 00011004     coredll:COREDLL.dll
+ 0001:00000008       __imp_GetIdleTime          00011008     coredll:COREDLL.dll
+ 0001:0000000c       __imp_GetTickCount         0001100c     coredll:COREDLL.dll
+ 0001:00000010       __imp___GetUserKData       00011010     coredll:COREDLL.dll
+ 0001:00000014       __imp_WaitForSingleObject  00011014     coredll:COREDLL.dll
+ 0001:00000018       __imp_ReleaseMutex         00011018     coredll:COREDLL.dll
+ 0001:0000001c       __imp_CloseHandle          0001101c     coredll:COREDLL.dll
+ 0001:00000020       __imp_NKDbgPrintfW         00011020     coredll:COREDLL.dll
+ 0001:00000024       __imp_CreateMutexW         00011024     coredll:COREDLL.dll
+ 0001:00000028       __imp_RegCloseKey          00011028     coredll:COREDLL.dll
+ 0001:0000002c       __imp_RegQueryValueExW     0001102c     coredll:COREDLL.dll
+ 0001:00000030       __imp_MultiByteToWideChar  00011030     coredll:COREDLL.dll
+ 0001:00000034       __imp_RegCreateKeyExW      00011034     coredll:COREDLL.dll
+ 0001:00000038       __imp_LeaveCriticalSection 00011038     coredll:COREDLL.dll
+ 0001:0000003c       __imp_EnterCriticalSection 0001103c     coredll:COREDLL.dll
+ 0001:00000040       __imp_InterlockedDecrement 00011040     coredll:COREDLL.dll
+ 0001:00000044       __imp_InterlockedExchange  00011044     coredll:COREDLL.dll
+ 0001:00000048       __imp_InitializeCriticalSection 00011048     coredll:COREDLL.dll
+ 0001:0000004c       __imp_InterlockedIncrement 0001104c     coredll:COREDLL.dll
+ 0001:00000050       __imp_SetThreadPriority    00011050     coredll:COREDLL.dll
+ 0001:00000054       __imp_Sleep                00011054     coredll:COREDLL.dll
+ 0001:00000058       __imp_ResumeThread         00011058     coredll:COREDLL.dll
+ 0001:0000005c       __imp_CreateThread         0001105c     coredll:COREDLL.dll
+ 0001:00000060       __imp_TerminateThread      00011060     coredll:COREDLL.dll
+ 0001:00000064       __imp_DeleteCriticalSection 00011064     coredll:COREDLL.dll
+ 0001:00000068       __imp_CreateSemaphoreW     00011068     coredll:COREDLL.dll
+ 0001:0000006c       __imp_ReleaseSemaphore     0001106c     coredll:COREDLL.dll
+ 0001:00000070       __imp_GetFileAttributesW   00011070     coredll:COREDLL.dll
+ 0001:00000074       __imp_DeviceIoControl      00011074     coredll:COREDLL.dll
+ 0001:00000078       __imp_CreateFileW          00011078     coredll:COREDLL.dll
+ 0001:0000007c       __imp_GetSystemInfo        0001107c     coredll:COREDLL.dll
+ 0001:00000080       __imp_GetLastError         00011080     coredll:COREDLL.dll
+ 0001:00000084       __imp_LocalFree            00011084     coredll:COREDLL.dll
+ 0001:00000088       __imp_LocalAlloc           00011088     coredll:COREDLL.dll
+ 0001:0000008c       __imp_ReadFile             0001108c     coredll:COREDLL.dll
+ 0001:00000090       __imp_ExitThread           00011090     coredll:COREDLL.dll
+ 0001:00000094       __imp_CeSetThreadPriority  00011094     coredll:COREDLL.dll
+ 0001:00000098       __imp_fwrite               00011098     corelibc:COREDLL.dll
+ 0001:0000009c       __imp_printf               0001109c     corelibc:COREDLL.dll
+ 0001:000000a0       __imp___rt_udiv            000110a0     corelibc:COREDLL.dll
+ 0001:000000a4       __imp___rt_sdiv            000110a4     corelibc:COREDLL.dll
+ 0001:000000a8       __imp_fclose               000110a8     corelibc:COREDLL.dll
+ 0001:000000ac       __imp_fread                000110ac     corelibc:COREDLL.dll
+ 0001:000000b0       __imp_setvbuf              000110b0     corelibc:COREDLL.dll
+ 0001:000000b4       __imp_fopen                000110b4     corelibc:COREDLL.dll
+ 0001:000000b8       __imp_memcpy               000110b8     corelibc:COREDLL.dll
+ 0001:000000bc       __imp_memset               000110bc     corelibc:COREDLL.dll
+ 0001:000000c0       __imp_atoi                 000110c0     corelibc:COREDLL.dll
+ 0001:000000c4       __imp_strncpy              000110c4     corelibc:COREDLL.dll
+ 0001:000000c8       __imp_fprintf              000110c8     corelibc:COREDLL.dll
+ 0001:000000cc       __imp__getstdfilex         000110cc     corelibc:COREDLL.dll
+ 0001:000000d0       __imp_memcmp               000110d0     corelibc:COREDLL.dll
+ 0001:000000d4       __imp_free                 000110d4     corelibc:COREDLL.dll
+ 0001:000000d8       __imp_calloc               000110d8     corelibc:COREDLL.dll
+ 0001:000000dc       __imp___rt_sdiv64by64      000110dc     corelibc:COREDLL.dll
+ 0001:000000e0       __imp_strncmp              000110e0     corelibc:COREDLL.dll
+ 0001:000000e4       __imp_strlen               000110e4     corelibc:COREDLL.dll
+ 0001:000000e8       __imp_strchr               000110e8     corelibc:COREDLL.dll
+ 0001:000000ec       __imp_strcmp               000110ec     corelibc:COREDLL.dll
+ 0001:000000f0       __imp_strcpy               000110f0     corelibc:COREDLL.dll
+ 0001:000000f4       __imp_sprintf              000110f4     corelibc:COREDLL.dll
+ 0001:000000f8       __imp_malloc               000110f8     corelibc:COREDLL.dll
+ 0001:000000fc       __imp_getchar              000110fc     corelibc:COREDLL.dll
+ 0001:00000100       __imp_wcstombs             00011100     corelibc:COREDLL.dll
+ 0001:00000104       __imp_swprintf             00011104     corelibc:COREDLL.dll
+ 0001:00000108       __imp_mbstowcs             00011108     corelibc:COREDLL.dll
+ 0001:0000010c       __imp___security_gen_cookie2 0001110c     corelibc:COREDLL.dll
+ 0001:00000110       __imp___report_gsfailure   00011110     corelibc:COREDLL.dll
+ 0001:00000114       __imp__isctype             00011114     corelibc:COREDLL.dll
+ 0001:00000118       __imp_wcslen               00011118     corelibc:COREDLL.dll
+ 0001:0000011c       __imp__XcptFilter          0001111c     corelibc:COREDLL.dll
+ 0001:00000120       __imp_realloc              00011120     corelibc:COREDLL.dll
+ 0001:00000124       __imp__msize               00011124     corelibc:COREDLL.dll
+ 0001:00000128       __imp___C_specific_handler 00011128     corelibc:COREDLL.dll
+ 0001:0000012c       __imp_TerminateProcess     0001112c     coredll:COREDLL.dll
+ 0001:00000130       __imp_GetModuleFileNameW   00011130     coredll:COREDLL.dll
+ 0001:00000134       \177COREDLL_NULL_THUNK_DATA 00011134     coredll:COREDLL.dll
+ 0001:00000138       __xc_a                     00011138     corelibc:crt0init.obj
+ 0001:0000013c       __xc_z                     0001113c     corelibc:crt0init.obj
+ 0001:00000140       __xi_a                     00011140     corelibc:crt0init.obj
+ 0001:00000144       __xi_z                     00011144     corelibc:crt0init.obj
+ 0001:00000148       __xp_a                     00011148     corelibc:crt0init.obj
+ 0001:0000014c       __xp_z                     0001114c     corelibc:crt0init.obj
+ 0001:00000150       __xt_a                     00011150     corelibc:crt0init.obj
+ 0001:00000154       __xt_z                     00011154     corelibc:crt0init.obj
+ 0001:0000017c       ??_C@_0CI@IOHHDOPD@Wrote?5?$CFs?5image?5size?5?$CFd?5?$CI?$CFdx?$CFd?$CJ?5t@ 0001117c     appMain.o3530.ov4TCE
+ 0001:000001a4       ??_C@_0CA@PCALCKDJ@Failed?5to?5write?5y?5data?5to?5disk?6?$AA@ 000111a4     appMain.o3530.ov4TCE
+ 0001:000001c4       ??_C@_0CB@GPPLNLKP@Unsupported?5output?5color?5space?4?6@ 000111c4     appMain.o3530.ov4TCE
+ 0001:000001e8       ??_C@_04KICLEKHI@GRAY?$AA@ 000111e8     appMain.o3530.ov4TCE
+ 0001:000001f0       ??_C@_04KJIOJOEK@420P?$AA@ 000111f0     appMain.o3530.ov4TCE
+ 0001:000001f8       ??_C@_04KKAKEKCE@422P?$AA@ 000111f8     appMain.o3530.ov4TCE
+ 0001:00000200       ??_C@_04ILOMGJEK@444P?$AA@ 00011200     appMain.o3530.ov4TCE
+ 0001:00000208       ??_C@_0BF@MHJBDGFK@End?5of?5application?4?6?$AA@ 00011208     appMain.o3530.ov4TCE
+ 0001:00000220       ??_C@_0N@OEKNMIFC@Total?3?5?$CFuus?6?$AA@ 00011220     appMain.o3530.ov4TCE
+ 0001:00000230       ??_C@_0BL@JHHCCDOP@Failed?5to?5get?5timer?5total?6?$AA@ 00011230     appMain.o3530.ov4TCE
+ 0001:0000024c       ??_C@_0BM@HFDNMLMP@Invalid?5output?5colorspace?4?6?$AA@ 0001124c     appMain.o3530.ov4TCE
+ 0001:00000268       ??_C@_0BP@BJOCIHIP@Failed?5to?5write?5image?5to?5file?6?$AA@ 00011268     appMain.o3530.ov4TCE
+ 0001:00000288       ??_C@_0DK@GNGHGDMN@Failed?5to?5determine?5target?5board@ 00011288     appMain.o3530.ov4TCE
+ 0001:000002c4       ??_C@_0CF@NPHBGBDK@Post?9process?5cache?5write?5back?3?5?$CF@ 000112c4     appMain.o3530.ov4TCE
+ 0001:000002ec       ??_C@_0BH@JODBCGNJ@Frame?5?9?5Decode?3?5?$CFuus?5?6?$AA@ 000112ec     appMain.o3530.ov4TCE
+ 0001:00000304       ??_C@_0BP@IGEAOKLJ@Failed?5to?5decode?5image?5buffer?6?$AA@ 00011304     appMain.o3530.ov4TCE
+ 0001:00000324       ??_C@_0BD@KNGPNLGL@Decoding?5image?4?4?4?6?$AA@ 00011324     appMain.o3530.ov4TCE
+ 0001:00000338       ??_C@_0CG@LJKLHLBN@Pre?9process?5cache?5maintenance?3?5?$CF@ 00011338     appMain.o3530.ov4TCE
+ 0001:00000360       ??_C@_0BL@GOLIHEPK@Failed?5to?5get?5timer?5delta?6?$AA@ 00011360     appMain.o3530.ov4TCE
+ 0001:0000037c       ??_C@_0BH@MLKEOCFN@Failed?5to?5reset?5timer?6?$AA@ 0001137c     appMain.o3530.ov4TCE
+ 0001:00000394       ??_C@_0CF@GMEJBAKM@Failed?5to?5create?5contiguous?5buff@ 00011394     appMain.o3530.ov4TCE
+ 0001:000003bc       ??_C@_0CE@MDMCJNEN@Failed?5to?5create?5image?5decoder?3?5@ 000113bc     appMain.o3530.ov4TCE
+ 0001:000003e0       ??_C@_0CA@MJPOHPOA@Failed?5to?5open?5codec?5engine?5?$CFs?6?$AA@ 000113e0     appMain.o3530.ov4TCE
+ 0001:00000400       ??_C@_0CG@EHJDDJFC@Failed?5to?5setvbuf?5on?5file?5descri@ 00011400     appMain.o3530.ov4TCE
+ 0001:00000428       ??_C@_0CB@GACAHDKN@Failed?5to?5create?5output?5file?5?$CFs?6@ 00011428     appMain.o3530.ov4TCE
+ 0001:0000044c       ??_C@_02GMLFBBN@wb?$AA@    0001144c     appMain.o3530.ov4TCE
+ 0001:00000450       ??_C@_0BI@IONBJBPF@Failed?5to?5open?5file?5?$CFs?6?$AA@ 00011450     appMain.o3530.ov4TCE
+ 0001:00000468       ??_C@_02JDPG@rb?$AA@       00011468     appMain.o3530.ov4TCE
+ 0001:0000046c       ??_C@_0BO@DDFCIKFJ@Failed?5to?5create?5Time?5object?6?$AA@ 0001146c     appMain.o3530.ov4TCE
+ 0001:0000048c       ??_C@_0BJ@BLOBKCIA@Starting?5application?4?4?4?6?$AA@ 0001148c     appMain.o3530.ov4TCE
+ 0001:000004a8       ??_C@_0CK@CIEHKPGF@Wrote?5UYVY?5frame?5size?5?$CFd?5?$CI?$CFdx?$CFd?$CJ@ 000114a8     appMain.o3530.ov4TCE
+ 0001:000004d4       ??_C@_0BO@DFICHDEJ@Failed?5to?5write?5data?5to?5disk?6?$AA@ 000114d4     appMain.o3530.ov4TCE
+ 0001:000004f4       ??_C@_06KPNAMAEI@decode?$AA@ 000114f4     main.o3530.ov4TCE
+ 0001:000004fc       ??_C@_0M@NLIIALDE@oColorSpace?$AA@ 000114fc     main.o3530.ov4TCE
+ 0001:00000508       ??_C@_0M@FGMMJEED@output_file?$AA@ 00011508     main.o3530.ov4TCE
+ 0001:00000514       ??_C@_05BDNCCAMC@cache?$AA@ 00011514     main.o3530.ov4TCE
+ 0001:0000051c       ??_C@_0L@IIDIFHJE@input_file?$AA@ 0001151c     main.o3530.ov4TCE
+ 0001:00000528       ??_C@_04PCJFHION@help?$AA@ 00011528     main.o3530.ov4TCE
+ 0001:00000530       ??_C@_06LOBMEHPF@engine?$AA@ 00011530     main.o3530.ov4TCE
+ 0001:00000538       ??_C@_05GPLHJCMP@codec?$AA@ 00011538     main.o3530.ov4TCE
+ 0001:00000540       ??_C@_09HHEPMDCB@benchmark?$AA@ 00011540     main.o3530.ov4TCE
+ 0001:0000054c       ??_C@_09IAJDOENP@c?3e?3hi?3o?3?$AA@ 0001154c     main.o3530.ov4TCE
+ 0001:00000558       ??_C@_0DAH@OLJODCFN@Usage?3?5image_decode_io_?$DMplatform@ 00011558     main.o3530.ov4TCE
+ 0001:00000860       ??_C@_04HMHGNEPI@CMEM?$AA@ 00011860     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000868       ??_C@_06EAMBFBFL@L4CORE?$AA@ 00011868     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000870       ??_C@_0L@ECHHAMNK@DDRALGHEAP?$AA@ 00011870     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000087c       ??_C@_07FEAKLFCF@L1DSRAM?$AA@ 0001187c     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000884       ??_C@_04DJLFCDEM@IRAM?$AA@ 00011884     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000088c       ??_C@_05FHNHPFFC@L4PER?$AA@ 0001188c     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000894       ??_C@_0N@LMANHFGD@RESET_VECTOR?$AA@ 00011894     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000008a4       ??_C@_0L@DNLAEDIM@DSPLINKMEM?$AA@ 000118a4     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000008b0       ??_C@_04CJAJHKO@DDR2?$AA@  000118b0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000008b8       ??_C@_05IDKHKMLA@local?$AA@ 000118b8     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000008c0       ??_C@_0BA@LDCFOKBI@windows?2cs?4x64P?$AA@ 000118c0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000008d0       ??_C@_0N@IFNGKIFJ@deinterlacer?$AA@ 000118d0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000008e0       ??_C@_08IADFIHKL@mpeg4enc?$AA@ 000118e0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000008ec       ??_C@_08DENMAPCP@mpeg4dec?$AA@ 000118ec     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000008f8       ??_C@_08LLJMPKIP@mpeg2dec?$AA@ 000118f8     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000904       ??_C@_07EENEKAAF@jpegenc?$AA@ 00011904     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000090c       ??_C@_07PADNCIIB@jpegdec?$AA@ 0001190c     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000914       ??_C@_07CAMMAMGK@h264enc?$AA@ 00011914     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000091c       ??_C@_07JECFIEOO@h264dec?$AA@ 0001191c     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000924       ??_C@_07HODBIOKJ@g711enc?$AA@ 00011924     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000092c       ??_C@_07MKNIAGCN@g711dec?$AA@ 0001192c     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000934       ??_C@_08PFAMKMBK@aachedec?$AA@ 00011934     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000940       ??_C@_0BL@PLDIEAHK@ti?4sdo?4ce?4speech1?4ISPHENC1?$AA@ 00011940     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000095c       ??_C@_0BP@CKJCKMBG@ti?4sdo?4ce?4universal?4IUNIVERSAL?$AA@ 0001195c     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000097c       ??_C@_0BK@BMFGMDGD@ti?4sdo?4ce?4video2?4IVIDDEC2?$AA@ 0001197c     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000998       ??_C@_0BK@PIGKHBJC@ti?4sdo?4ce?4audio1?4IAUDDEC1?$AA@ 00011998     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000009b4       ??_C@_0BK@JFKAIMBL@ti?4sdo?4ce?4image1?4IIMGDEC1?$AA@ 000119b4     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000009d0       ??_C@_0BK@HPMBCCKK@ti?4sdo?4ce?4image1?4IIMGENC1?$AA@ 000119d0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000009ec       ??_C@_0BK@EEPIFIBA@ti?4sdo?4ce?4video1?4IVIDENC1?$AA@ 000119ec     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000a08       ??_C@_0BL@BBFJOOML@ti?4sdo?4ce?4speech1?4ISPHDEC1?$AA@ 00011a08     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000a28       ??_C@_0MG@FJOEHBCO@?5?5?5?5package?5image_decode_io1_oma@ 00011a28     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000af0       ??_C@_0KD@OPAOIJPB@?5?5?5?5package?5ti?4sdo?4codecs?4deinte@ 00011af0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000b98       ??_C@_0JD@EGPKHDIC@?5?5?5?5package?5ti?4sdo?4ce?4universal?5@ 00011b98     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000c30       ??_C@_0JL@PPCFBDDI@?5?5?5?5package?5ti?4sdo?4codecs?4mpeg4e@ 00011c30     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000cd0       ??_C@_0JL@BKAIGDIA@?5?5?5?5package?5ti?4sdo?4codecs?4mpeg4d@ 00011cd0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000d70       ??_C@_0JL@CIKOLEHB@?5?5?5?5package?5ti?4sdo?4codecs?4mpeg2d@ 00011d70     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000e10       ??_C@_0JJ@DLGHDDIB@?5?5?5?5package?5ti?4sdo?4codecs?4jpegen@ 00011e10     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000eb0       ??_C@_0JJ@LDEENHIB@?5?5?5?5package?5ti?4sdo?4codecs?4jpegde@ 00011eb0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000f50       ??_C@_0JJ@BBNBKBI@?5?5?5?5package?5ti?4sdo?4codecs?4h264en@ 00011f50     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00000ff0       ??_C@_0JJ@IJDOPOBI@?5?5?5?5package?5ti?4sdo?4codecs?4h264de@ 00011ff0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001090       ??_C@_0JJ@OJNNIMFI@?5?5?5?5package?5ti?4sdo?4codecs?4g711en@ 00012090     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001130       ??_C@_0JJ@GBPOGIFI@?5?5?5?5package?5ti?4sdo?4codecs?4g711de@ 00012130     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000011d0       ??_C@_0JL@IIFNIBM@?5?5?5?5package?5ti?4sdo?4codecs?4aached@ 000121d0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001270       ??_C@_0HL@JKDEJLKB@?5?5?5?5package?5ti?4sdo?4dmai?5?$CIC?3?1WINC@ 00012270     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000012f0       ??_C@_0IN@PNNLPIMB@?5?5?5?5package?5ti?4sdo?4ce?4image1?5?$CIC?3@ 000122f0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001380       ??_C@_0IL@PMBKLIDP@?5?5?5?5package?5ti?4sdo?4ce?4image?5?$CIC?3?1@ 00012380     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001410       ??_C@_0IN@DNPGBJLO@?5?5?5?5package?5ti?4sdo?4ce?4video2?5?$CIC?3@ 00012410     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000014a0       ??_C@_0IN@MDJOEBNN@?5?5?5?5package?5ti?4sdo?4ce?4video1?5?$CIC?3@ 000124a0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001530       ??_C@_0IL@FJOGAPLD@?5?5?5?5package?5ti?4sdo?4ce?4video?5?$CIC?3?1@ 00012530     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000015c0       ??_C@_0IN@MHIHBAOO@?5?5?5?5package?5ti?4sdo?4ce?4audio1?5?$CIC?3@ 000125c0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001650       ??_C@_0IL@DFPGICHL@?5?5?5?5package?5ti?4sdo?4ce?4audio?5?$CIC?3?1@ 00012650     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000016e0       ??_C@_0IP@JDINONK@?5?5?5?5package?5ti?4sdo?4ce?4speech1?5?$CIC@ 000126e0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001770       ??_C@_0IN@HCIKBCMK@?5?5?5?5package?5ti?4sdo?4ce?4speech?5?$CIC?3@ 00012770     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001800       ??_C@_0HP@HBEELEPD@?5?5?5?5package?5ti?4sdo?4ce?5?$CIC?3?1WINCE6@ 00012800     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001880       ??_C@_0IH@HMAHHBOM@?5?5?5?5package?5ti?4sdo?4ce?4alg?5?$CIC?3?1WI@ 00012880     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001908       ??_C@_0JH@LBACENEC@?5?5?5?5package?5ti?4sdo?4ce?4ipc?4dsplin@ 00012908     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000019a0       ??_C@_0IH@JBBCNADF@?5?5?5?5package?5ti?4sdo?4ce?4ipc?5?$CIC?3?1WI@ 000129a0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001a28       ??_C@_0JF@JOGFPDGH@?5?5?5?5package?5ti?4sdo?4ce?4osal?4wince@ 00012a28     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001ac0       ??_C@_0IJ@JOAPGEHK@?5?5?5?5package?5ti?4sdo?4ce?4osal?5?$CIC?3?1W@ 00012ac0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001b50       ??_C@_0GL@HPMFJBFE@?5?5?5?5package?5ti?4platforms?4evm3530@ 00012b50     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001bc0       ??_C@_0GG@MNBFFCJO@?5?5?5?5package?5ti?4catalog?4c6000?5?$CIC?3@ 00012bc0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001c28       ??_C@_0FH@KMNKILMC@?5?5?5?5package?5ti?4catalog?5?$CIC?3?1TITOO@ 00012c28     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001c80       ??_C@_0GC@KDPFGPHO@?5?5?5?5package?5ti?4catalog?4arm?5?$CIC?3?1T@ 00012c80     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001ce8       ??_C@_0JD@LOBOMGAH@?5?5?5?5package?5ti?4sdo?4fc?4acpy3?5?$CIC?3?1@ 00012ce8     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001d80       ??_C@_0JJ@BNGKDEIA@?5?5?5?5package?5ti?4sdo?4fc?4memutils?5?$CI@ 00012d80     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001e20       ??_C@_0JD@DFMBBBGH@?5?5?5?5package?5ti?4sdo?4fc?4dman3?5?$CIC?3?1@ 00012e20     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001eb8       ??_C@_0JF@CCFGILMB@?5?5?5?5package?5ti?4sdo?4fc?4global?5?$CIC?3@ 00012eb8     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001f50       ??_C@_0IJ@DDLAGKJF@?5?5?5?5package?5ti?4sdo?4ce?4node?5?$CIC?3?1W@ 00012f50     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00001fe0       ??_C@_0HI@CHDJFPEG@?5?5?5?5package?5ti?4xdais?5?$CIC?3?1WINCE60@ 00012fe0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002058       ??_C@_0JD@KNOEMAAE@?5?5?5?5package?5ti?4sdo?4ce?4utils?4xdm?5@ 00013058     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000020f0       ??_C@_0HM@CGBOAEAF@?5?5?5?5package?5ti?4xdais?4dm?5?$CIC?3?1WINC@ 000130f0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002170       ??_C@_0JJ@IMOPLEF@?5?5?5?5package?5ti?4sdo?4utils?4trace?5?$CI@ 00013170     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002210       ??_C@_0IO@FLNGHCCH@?5?5?5?5package?5ti?4bios?4power?5?$CIC?3?1WI@ 00013210     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000022a0       ??_C@_0JH@PNBBEMI@?5?5?5?5package?5ti?4sdo?4winceutils?4cm@ 000132a0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002338       ??_C@_0HF@IILEBFOE@?5?5?5?5package?5dsplink?4gpp?5?$CIC?3?1WINC@ 00013338     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000023b0       ??_C@_0IN@OJHFBEHO@?5?5?5?5package?5ti?4sdo?4ce?4global?5?$CIC?3@ 000133b0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002440       ??_C@_0JN@LLMKCOL@?5?5?5?5package?5ti?4sdo?4codecs?4deinte@ 00013440     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000024e0       ??_C@_0JF@IEKGNCGG@?5?5?5?5package?5ti?4sdo?4codecs?4mpeg4e@ 000134e0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002578       ??_C@_0JF@JIJMMLIK@?5?5?5?5package?5ti?4sdo?4codecs?4mpeg4d@ 00013578     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002610       ??_C@_0JF@JLNEIPGH@?5?5?5?5package?5ti?4sdo?4codecs?4mpeg2d@ 00013610     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000026a8       ??_C@_0JD@OAJJMJCG@?5?5?5?5package?5ti?4sdo?4codecs?4jpegen@ 000136a8     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002740       ??_C@_0JD@DALOJABN@?5?5?5?5package?5ti?4sdo?4codecs?4jpegde@ 00013740     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000027d8       ??_C@_0JD@EPNPGLAM@?5?5?5?5package?5ti?4sdo?4codecs?4h264en@ 000137d8     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002870       ??_C@_0JD@JPPIDCDH@?5?5?5?5package?5ti?4sdo?4codecs?4h264de@ 00013870     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002908       ??_C@_0JD@HEKCMFHI@?5?5?5?5package?5ti?4sdo?4codecs?4g711en@ 00013908     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:000029a0       ??_C@_0JD@KEIFJMED@?5?5?5?5package?5ti?4sdo?4codecs?4g711de@ 000139a0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002a38       ??_C@_0JF@OJFBKFFA@?5?5?5?5package?5ti?4sdo?4codecs?4aached@ 00013a38     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002ad0       ??_C@_0HI@CBOLFKGC@?5?5?5?5package?5microsoft?4targets?4ar@ 00013ad0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002b48       __ASM__                    00013b48     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002c14       __ISA__                    00013c14     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002c28       __PLAT__                   00013c28     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002c4c       __TARG__                   00013c4c     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002c78       ??_C@_08EDLPOAIP@CE_TRACE?$AA@ 00013c78     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002c84       ??_C@_03LFCLGGIM@?$CK?$CL7?$AA@ 00013c84     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002c88       ??_C@_08GGNNOHFG@CE_CHECK?$AA@ 00013c88     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002c94       ??_C@_0CK@LEGFDBOF@?$CK?$CL01234567?0CE?93?0GT_time?$DN0?0GT_pre@ 00013c94     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002cc0       ??_C@_0CF@MLKDEFPI@?$CK?$CL01234567?0GT_prefix?$DN12345?0GT_ti@ 00013cc0     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002ce8       ??_C@_0FG@OMGCGKKB@?$CK?$CL01234567?0CE?93?0ti?4sdo?4ce?4osal?4S@ 00013ce8     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002d40       ??_C@_0EO@KFBBILMI@?$CK?$CL01234567?0CR?$DN67?0ti?4sdo?4fc?4dman3@ 00013d40     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002d90       ??_C@_0CD@MDCEONOA@?$CK?$CL67?0CE?93?0GT_time?$DN0?0GT_prefix?$DN12@ 00013d90     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002db4       ??_C@_0BO@DELMIHJO@?$CK?$CL67?0GT_prefix?$DN1235?0GT_time?$DN3?$AA@ 00013db4     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002dd4       ??_C@_08KKIBLLCI@CE_DEBUG?$AA@ 00013dd4     image_decode_io1_omap3530_exe.ov4TCE
+ 0001:00002de0       ??_C@_0BC@LGCPDJEE@universal_stubs?4c?$AA@ 00013de0     universal:universal_stubs.ov4TCE
+ 0001:00002df4       ??_C@_0CC@PGFGHOKK@assertion?5violation?3?5?$CFs?0?5line?5?$CFd@ 00013df4     universal:universal_stubs.ov4TCE
+ 0001:00002e18       ??_C@_0EM@NKCBAILD@process?$DO?5invalid?5arguments?5?9?5too@ 00013e18     universal:universal_stubs.ov4TCE
+ 0001:00002e64       ??_C@_06KDGMKJOD@inArgs?$AA@ 00013e64     universal:universal_stubs.ov4TCE
+ 0001:00002e6c       ??_C@_07FANKMMKE@outArgs?$AA@ 00013e6c     universal:universal_stubs.ov4TCE
+ 0001:00002e74       ??_C@_06HINJIBLN@inBufs?$AA@ 00013e74     universal:universal_stubs.ov4TCE
+ 0001:00002e7c       ??_C@_07ILGPOEPK@outBufs?$AA@ 00013e7c     universal:universal_stubs.ov4TCE
+ 0001:00002e84       ??_C@_0DH@GMOMDFMG@ERROR?$DO?5codec?5?$CI0x?$CFx?$CJ?5modified?5rea@ 00013e84     universal:universal_stubs.ov4TCE
+ 0001:00002ebc       ??_C@_02DKCKIIND@?$CFs?$AA@ 00013ebc     universal:universal.ov4TCE
+ 0001:00002ec0       ??_C@_0DM@EPLBNJIH@ERROR?$DO?5codec?5?$CI0x?$CFx?$CJ?5modified?5rea@ 00013ec0     universal:universal.ov4TCE
+ 0001:00002efc       ??_C@_0DK@PCBOMHHO@ERROR?$DO?5codec?5?$CI0x?$CFx?$CJ?5modified?5rea@ 00013efc     universal:universal.ov4TCE
+ 0001:00002f38       ??_C@_06DJIHEMFI@status?$AA@ 00013f38     universal:universal.ov4TCE
+ 0001:00002f40       ??_C@_09PJPAJAED@dynParams?$AA@ 00013f40     universal:universal.ov4TCE
+ 0001:00002f4c       Buffer_Memory_Params_DEFAULT 00013f4c     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00002f5c       Buffer_Attrs_DEFAULT       00013f5c     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00002f74       ??_C@_0DG@GKEDICIC@?$FLBuffer?$FN?5Alloc?5Buffer?5of?5size?5?$CFu@ 00013f74     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00002fac       ??_C@_0BM@MFONBCKH@Failed?5to?5allocate?5memory?4?6?$AA@ 00013fac     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00002fc8       ??_C@_0DF@JIJLNEFJ@?$FLBuffer?$FN?5Failed?5to?5allocate?5spac@ 00013fc8     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00003000       ??_C@_0CD@HNKEDEPJ@?$FLBuffer?$FN?5Unknown?5Buffer?5type?5?$CI?$CFd@ 00014000     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00003024       ??_C@_0BN@COMBEICF@?$FLBuffer?$FN?5Must?5provide?5attrs?6?$AA@ 00014024     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00003044       ??_C@_0DE@NMBPOEGM@?$FLBuffer?$FN?5Failed?5to?5create?5new?5Bu@ 00014044     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00003078       ??_C@_0DM@EDDKKOJD@?7Width?5?$CFd?5?$CI?$CFd?$CJ?5Height?5?$CFd?5?$CI?$CFd?$CJ?5Po@ 00014078     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:000030b4       ??_C@_0CF@JMAGMGAD@?7Width?5?$CFd?0?5Height?5?$CFd?0?5LineLength@ 000140b4     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:000030e0       ??_C@_0EB@HHOCHFIL@?$FL?$CFd?$FN?5?$EA?50x?$CFx?5?$CI0x?$CFx?5phys?$CJ?5numBytes@ 000140e0     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00003124       ??_C@_02KAJCLHKP@no?$AA@   00014124     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00003128       ??_C@_03ICICOMAL@yes?$AA@  00014128     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000312c       ??_C@_0DA@KPPANOB@?$FLBuffer?$FN?5Set?5user?5pointer?50x?$CFx?5?$CI@ 0001412c     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000315c       ??_C@_0DF@IFGFNLAH@?$FLBuffer?$FN?5Free?5Buffer?5of?5size?5?$CFu?5@ 0001415c     dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:00003194       BufferGfx_Attrs_DEFAULT    00014194     dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:000031c4       Time_Attrs_DEFAULT         000141c4     dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:000031c8       ??_C@_0DB@MAHOHLKJ@?$FLTime?$FN?5Failed?5to?5allocate?5space?5@ 000141c8     dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:000031fc       ??_C@_0CM@LHEHPCPO@?$FLTime?$FN?5Performance?5Frequency?5not@ 000141fc     dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:00003228       ??_C@_0CB@DLALAJDG@?$FLTime?$FN?5NULL?5attrs?5not?5supported?6@ 00014228     dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:0000324c       ??_C@_0CK@FFPMJDIH@?$FLTime?$FN?5Performance?5Counter?5not?5s@ 0001424c     dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:00003278       Idec1_Params_DEFAULT       00014278     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:00003290       Idec1_DynamicParams_DEFAULT 00014290     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:000032a0       ??_C@_0DA@GLONGBGK@?$FLIdec1?$FN?5Frame?5does?5not?5fit?5in?5al@ 000142a0     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:000032d0       ??_C@_0CJ@CDAFBJJM@?$FLIdec1?$FN?5XDM_GETSTATUS?5failed?0?5st@ 000142d0     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:000032fc       ??_C@_0DA@KAEMGJHL@?$FLIdec1?$FN?5IMGDEC1_process?$CI?$CJ?5non?9fa@ 000142fc     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:0000332c       ??_C@_0DM@LHJLEMDB@?$FLIdec1?$FN?5IMGDEC1_process?$CI?$CJ?5failed@ 0001432c     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:00003368       ??_C@_0EC@DEPKAHHF@?$FLIdec1?$FN?5Buffer?5size?5?$CFu?5obtained?5@ 00014368     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:000033ac       ??_C@_0CH@LDMMOHIA@?$FLIdec1?$FN?5XDM_GETBUFINFO?5control?5f@ 000143ac     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:000033d4       ??_C@_0CG@EKBKCPPL@?$FLIdec1?$FN?5XDM_SETPARAMS?5control?5fa@ 000143d4     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:000033fc       ??_C@_0CI@EPABAFDB@?$FLIdec1?$FN?5Image?5decoder?5instance?5c@ 000143fc     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:00003424       ??_C@_0CP@BOJMFAH@?$FLIdec1?$FN?5Failed?5to?5open?5image?5dec@ 00014424     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:00003454       ??_C@_0DD@EOLBENMH@?$FLIdec1?$FN?5Failed?5to?5allocate?5space@ 00014454     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:00003488       ??_C@_0EL@MNHEJHII@?$FLIdec1?$FN?5Cannot?5pass?5null?5for?5eng@ 00014488     dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:000034d4       ??_C@_0CO@EKKFKKEA@?$FLColorSpace?$FN?5Unknown?5color?5space@ 000144d4     dmai_wince_omap3530:ColorSpace.o3530.ov4TCE
+ 0001:00003504       ??_C@_08JMKICBHO@OMAP3530?$AA@ 00014504     dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:00003510       ??_C@_06IGBDLBHE@DM6437?$AA@ 00014510     dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:00003518       ??_C@_06IANIHDJP@DM6467?$AA@ 00014518     dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:00003520       ??_C@_06JKEHJGLA@DM6446?$AA@ 00014520     dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:00003528       ??_C@_05BIJIDIFM@DM355?$AA@ 00014528     dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:00003530       Cpu_Attrs_DEFAULT          00014530     dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:00003534       ??_C@_0CB@NHDJPBNG@?$FLCpu?$FN?5Failed?5to?5get?5device?5type?6@ 00014534     dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:00003558       ??_C@_0CP@NHDOGHPA@?$FLCpu?$FN?5Failed?5to?5allocate?5space?5f@ 00014558     dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:00003588       ??_C@_0CL@JMDJIKFL@?$FLDmai?$FN?5Using?5log?5level?5set?5by?5DM@ 00014588     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:000035b4       ??_C@_0BN@KMGGCCEG@?$FLDmai?$FN?5Log?5level?5set?5to?5?$CFd?4?6?$AA@ 000145b4     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:000035d4       ??_C@_0BF@DAKMIKBG@ti?4sdo?4dmai?$DN01234567?$AA@ 000145d4     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:000035ec       ??_C@_0P@ENPDJHEE@ti?4sdo?4dmai?$DN67?$AA@ 000145ec     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:000035fc       ??_C@_0N@DNNMJFAF@ti?4sdo?4dmai?$DN?$AA@ 000145fc     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:0000360c       ??_C@_0CC@PFCAMFLO@?$FLDmai?$FN?5Dmai?5log?5level?5set?5to?5?$CFd?4@ 0001460c     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:00003630       ??_C@_0M@FMGIJOHE@ti?4sdo?4dmai?$AA@ 00014630     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:0000363c       ??_C@_00CNPNBAHC@?$AA@     0001463c     dmai_wince_omap3530:getopt_long.o3530.ov4TCE
+ 0001:000036fc       ??_C@_0CI@KKHMLDBE@?$FLVideoStd?$FN?5Unknown?5video?5standar@ 000146fc     dmai_wince_omap3530:VideoStd.o3530.ov4TCE
+ 0001:00003724       ??_C@_0BA@LKGFJPFF@imgdec1_stubs?4c?$AA@ 00014724     imgdec1:imgdec1_stubs.ov4TCE
+ 0001:00003734       ??_C@_0BP@OHIMCOPH@IMGDEC1_create?$DO?5return?5?$CI0x?$CFx?$CJ?6?$AA@ 00014734     imgdec1:imgdec1.ov4TCE
+ 0001:00003754       ??_C@_0DN@HJDKMEPB@IMGDEC1_create?$DO?5Enter?5?$CIengine?$DN0x@ 00014754     imgdec1:imgdec1.ov4TCE
+ 0001:00003794       ??_C@_0BJ@PNFEOEPE@ti?4sdo?4ce?4image1?4IMGDEC1?$AA@ 00014794     imgdec1:imgdec1.ov4TCE
+ 0001:000037b0       ??_C@_0BI@CKMEBKPK@IMGDEC1_delete?$DO?5return?6?$AA@ 000147b0     imgdec1:imgdec1.ov4TCE
+ 0001:000037c8       ??_C@_0CE@LNBAOJPN@IMGDEC_delete?$DO?5Enter?5?$CIhandle?$DN0x?$CF@ 000147c8     imgdec1:imgdec1.ov4TCE
+ 0001:000037ec       ??_C@_0DC@IIBMDOMJ@IMGDEC1_process?$DO?5Exit?5?$CIhandle?$DN0x@ 000147ec     imgdec1:imgdec1.ov4TCE
+ 0001:00003820       ??_C@_0BA@PKHKOEDK@IMGDEC1?3process?$AA@ 00014820     imgdec1:imgdec1.ov4TCE
+ 0001:00003830       ??_C@_0FM@NCADOCLJ@IMGDEC1_process?$DO?5Enter?5?$CIhandle?$DN0@ 00014830     imgdec1:imgdec1.ov4TCE
+ 0001:0000388c       ??_C@_0DC@DKHNPGAO@IMGDEC1_control?$DO?5Exit?5?$CIhandle?$DN0x@ 0001488c     imgdec1:imgdec1.ov4TCE
+ 0001:000038c0       ??_C@_0EE@JICPFPIG@ERROR?$DO?5codec?5?$CI0x?$CFx?$CJ?5modified?5rea@ 000148c0     imgdec1:imgdec1.ov4TCE
+ 0001:00003904       ??_C@_0BA@CHDIMGH@IMGDEC1?3control?$AA@ 00014904     imgdec1:imgdec1.ov4TCE
+ 0001:00003918       ??_C@_0GB@DFINPFEE@IMGDEC1_control?$DO?5Enter?5?$CIhandle?$DN0@ 00014918     imgdec1:imgdec1.ov4TCE
+ 0001:0000397c       ??_C@_0BA@BGGBOCNO@imgenc1_stubs?4c?$AA@ 0001497c     imgenc1:imgenc1_stubs.ov4TCE
+ 0001:0000398c       ??_C@_0BA@MPICDNEK@viddec2_stubs?4c?$AA@ 0001498c     viddec2:viddec2_stubs.ov4TCE
+ 0001:0000399c       ??_C@_0BA@IILBPLMC@videnc1_stubs?4c?$AA@ 0001499c     videnc1:videnc1_stubs.ov4TCE
+ 0001:000039ac       ??_C@_0BA@DOPMHGAJ@auddec1_stubs?4c?$AA@ 000149ac     auddec1:auddec1_stubs.ov4TCE
+ 0001:000039bc       ??_C@_0BA@EGAJECFC@sphdec1_stubs?4c?$AA@ 000149bc     sphdec1:sphdec1_stubs.ov4TCE
+ 0001:000039cc       ??_C@_0BA@OKANDPNJ@sphenc1_stubs?4c?$AA@ 000149cc     sphenc1:sphenc1_stubs.ov4TCE
+ 0001:000039dc       ??_C@_0CB@GOEMOEMH@Engine_ctrlNode?$DO?5Returning?50x?$CFx?6@ 000149dc     ce:Engine.ov4TCE
+ 0001:00003a00       ??_C@_0CE@OMDNIMFA@Engine_ctrlNode?$CI0x?$CFlx?0?50x?$CFx?0?50x?$CF@ 00014a00     ce:Engine.ov4TCE
+ 0001:00003a24       ??_C@_08HPIBKOPK@Engine?4c?$AA@ 00014a24     ce:Engine.ov4TCE
+ 0001:00003a30       ??_C@_0BN@EBNFOHFN@Engine?5freeServerTab?$CI?$CJ?5exit?6?$AA@ 00014a30     ce:Engine.ov4TCE
+ 0001:00003a50       ??_C@_0DD@BJEAMLFJ@Engine?5freeServerTab?$CI?$CJ?5engine?9?$DOn@ 00014a50     ce:Engine.ov4TCE
+ 0001:00003a84       ??_C@_0CE@CBPGMIAI@Engine?5freeServerTab?$CI?$CJ?5enter?$CI0x?$CF@ 00014a84     ce:Engine.ov4TCE
+ 0001:00003aa8       ??_C@_0DI@LGEEKCIG@?5?5?5engine?3?5major?5?$DN?5?$CFd?0?5source?5ke@ 00014aa8     ce:Engine.ov4TCE
+ 0001:00003ae0       ??_C@_0DI@CAMKLEDE@?5?5?5server?3?5major?5?$DN?5?$CFd?0?5source?5ke@ 00014ae0     ce:Engine.ov4TCE
+ 0001:00003b18       ??_C@_0CJ@FMALIMGN@getServerKey?$CI0x?$CFlx?$CJ?5protocol?5mis@ 00014b18     ce:Engine.ov4TCE
+ 0001:00003b44       ??_C@_0BL@JKIALMLF@rserverClose?$CI0x?$CFlx?$CJ?5done?4?6?$AA@ 00014b44     ce:Engine.ov4TCE
+ 0001:00003b60       ??_C@_0CB@MFALMDED@rserverClose?$CI0x?$CFlx?$CJ?0?5count?5?$DN?5?$CFd?6@ 00014b60     ce:Engine.ov4TCE
+ 0001:00003b84       ??_C@_0CA@PJLDBPPN@rserverOpen?$CI?8?$CFs?8?$CJ?3?50x?$CFlx?5done?4?6?$AA@ 00014b84     ce:Engine.ov4TCE
+ 0001:00003ba4       ??_C@_0DF@MBBNMIMB@rserverOpen?3?5can?8t?5start?5?8?$CFs?8?$DL?5?8@ 00014ba4     ce:Engine.ov4TCE
+ 0001:00003bdc       ??_C@_0DI@DAGHACEB@rserverOpen?3?5can?8t?5start?5?8?$CFs?8?$DL?5P@ 00014bdc     ce:Engine.ov4TCE
+ 0001:00003c14       ??_C@_0BP@DFBNCMGH@rserverOpen?$CI?8?$CFs?8?$CJ?0?5count?5?$DN?5?$CFd?6?$AA@ 00014c14     ce:Engine.ov4TCE
+ 0001:00003c34       ??_C@_0CB@NAGMIKEH@Engine_getNumServerAlgs?5exit?5?$CFd?6@ 00014c34     ce:Engine.ov4TCE
+ 0001:00003c58       ??_C@_0DE@JNGEBAIL@Engine_getNumServerAlgs?5number?5o@ 00014c58     ce:Engine.ov4TCE
+ 0001:00003c8c       ??_C@_0DL@LMNHIBLI@Engine_getNumServerAlgs?$DO?5interna@ 00014c8c     ce:Engine.ov4TCE
+ 0001:00003cc8       ??_C@_0DI@NLJJCDGB@Engine_getNumServerAlgs?$DO?5Engine?5@ 00014cc8     ce:Engine.ov4TCE
+ 0001:00003d00       ??_C@_0CG@MHCLDPEH@Engine_getNumServerAlgs?$CI0x?$CFlx?50x@ 00014d00     ce:Engine.ov4TCE
+ 0001:00003d28       ??_C@_0GB@MDBFFHPB@Engine_deleteNode?$CI0x?$CFx?$CJ?3?5algName@ 00014d28     ce:Engine.ov4TCE
+ 0001:00003d8c       ??_C@_0BK@MPJEFPPO@Engine_deleteNode?$CI0x?$CFlx?$CJ?6?$AA@ 00014d8c     ce:Engine.ov4TCE
+ 0001:00003da8       ??_C@_0CN@NIMLILBB@Engine_initFromServer?5engine?9?$DOse@ 00014da8     ce:Engine.ov4TCE
+ 0001:00003dd8       ??_C@_0EB@KEKEJJMC@Engine_initFromServer?$DO?5Memory?5al@ 00014dd8     ce:Engine.ov4TCE
+ 0001:00003e1c       ??_C@_0DC@DBENNEAN@Engine_initFromServer?$DO?5Memory?5al@ 00014e1c     ce:Engine.ov4TCE
+ 0001:00003e50       ??_C@_0EL@EJCKAJHH@Engine_initFromServer?$DO?5WARNING?5C@ 00014e50     ce:Engine.ov4TCE
+ 0001:00003ea0       ??_C@_0FK@PJAMLNNO@Engine_initFromServer?$DO?5failed?5to@ 00014ea0     ce:Engine.ov4TCE
+ 0001:00003f00       ??_C@_0MA@FKCEAGHG@Engine_initFromServer?$DO?5WARNING?3?5@ 00014f00     ce:Engine.ov4TCE
+ 0001:00003fc0       ??_C@_0IP@EKGKDKLC@Engine_initFromServer?$DO?5Warning?3?5@ 00014fc0     ce:Engine.ov4TCE
+ 0001:00004050       ??_C@_0EA@JGLEBDAL@Engine_initFromServer?$DO?5Sending?5R@ 00015050     ce:Engine.ov4TCE
+ 0001:00004090       ??_C@_0DJ@DPEILMLN@Engine_initFromServer?$DO?5internal?5@ 00015090     ce:Engine.ov4TCE
+ 0001:000040d0       ??_C@_0EM@EBLGDOJE@Engine_initFromServer?$DO?5Initializ@ 000150d0     ce:Engine.ov4TCE
+ 0001:00004120       ??_C@_0ED@KHNHNAJD@Engine_initFromServer?$DO?5Failed?5to@ 00015120     ce:Engine.ov4TCE
+ 0001:00004168       ??_C@_0EK@OFGAJCNB@Engine_initFromServer?$DO?5Allocatin@ 00015168     ce:Engine.ov4TCE
+ 0001:000041b8       ??_C@_0GA@FDOJDIEI@Engine_initFromServer?$DO?5Number?5of@ 000151b8     ce:Engine.ov4TCE
+ 0001:00004218       ??_C@_0FC@PHMCCFFH@Engine_initFromServer?$DO?5Number?5of@ 00015218     ce:Engine.ov4TCE
+ 0001:00004270       ??_C@_0EA@FFLJGNGN@Engine_initFromServer?$DO?5Server?5ha@ 00015270     ce:Engine.ov4TCE
+ 0001:000042b0       ??_C@_0EK@MKLMFNOC@Engine_initFromServer?$DO?5Failed?5to@ 000152b0     ce:Engine.ov4TCE
+ 0001:000042fc       ??_C@_0CF@FFHLHKOB@Engine_initFromServer?$DO?5Returning@ 000152fc     ce:Engine.ov4TCE
+ 0001:00004324       ??_C@_0BO@BMDJGNBA@Engine_initFromServer?$CI0x?$CFlx?$CJ?6?$AA@ 00015324     ce:Engine.ov4TCE
+ 0001:00004344       ??_C@_0CK@PABEOIDI@Engine_fwriteTrace?$DO?5returning?5co@ 00015344     ce:Engine.ov4TCE
+ 0001:00004370       ??_C@_0NL@JDFLOEMI@?5?$FLARM?$FN?5WARNING?3?5lost?5?$CFd?5characte@ 00015370     ce:Engine.ov4TCE
+ 0001:00004450       ??_C@_0EM@DFKAGGPB@Engine_fwriteTrace?$DO?5got?5?$CFd?5chars@ 00015450     ce:Engine.ov4TCE
+ 0001:0000449c       ??_C@_0DG@JCOOLCPA@Engine_fwriteTrace?$CI?$CJ?3?5requesting@ 0001549c     ce:Engine.ov4TCE
+ 0001:000044d4       ??_C@_0CD@NMGMAFFC@Engine_fwriteTrace?$DO?5Engine?5in?5us@ 000154d4     ce:Engine.ov4TCE
+ 0001:000044f8       ??_C@_0CK@CEOEOCNE@Engine_fwriteTrace?$DO?5Engine?5has?5n@ 000154f8     ce:Engine.ov4TCE
+ 0001:00004524       ??_C@_0CI@OGHLOPJE@Engine_fwriteTrace?$CI0x?$CFlx?0?5?8?$CFs?8?0?5@ 00015524     ce:Engine.ov4TCE
+ 0001:00004550       ??_C@_0GG@OBOMDHPK@Engine_init?$DO?5Descriptor?5for?5engi@ 00015550     ce:Engine.ov4TCE
+ 0001:000045b8       ??_C@_0FL@HFCNFMEL@Engine_init?$DO?5CE?5debugging?5on?5?$CICE@ 000155b8     ce:Engine.ov4TCE
+ 0001:00004614       ??_C@_02PPGMKODE@CE?$AA@   00015614     ce:Engine.ov4TCE
+ 0001:00004618       ??_C@_0BN@FMJCBGBK@Engine_setTrace?$DO?5return?$CI?$CFd?$CJ?6?$AA@ 00015618     ce:Engine.ov4TCE
+ 0001:00004638       ??_C@_0CP@KFOJFAHC@Engine_setTrace?$DO?5Requesting?5DSP?5@ 00015638     ce:Engine.ov4TCE
+ 0001:00004668       ??_C@_0EO@JEONFKHM@Engine_setTrace?$DO?5Warning?3?5server@ 00015668     ce:Engine.ov4TCE
+ 0001:000046b8       ??_C@_0DA@EDLJELOM@Engine_setTrace?$DO?5Enter?$CIengine?$DN0x@ 000156b8     ce:Engine.ov4TCE
+ 0001:000046e8       ??_C@_0DM@KMFEMDID@Engine?$DO?5allocNode?$CI?$CJ?4?5Calling?5Com@ 000156e8     ce:Engine.ov4TCE
+ 0001:00004724       ??_C@_0DL@PCGFNNEM@Engine?$DO?5allocNode?$CI?$CJ?4?5Calling?5?$CICo@ 00015724     ce:Engine.ov4TCE
+ 0001:00004760       ??_C@_0BD@JCJFIPPH@gppfromnode_?$CFlu_?$CFu?$AA@ 00015760     ce:Engine.ov4TCE
+ 0001:00004774       ??_C@_0DC@BKMNDAAK@Engine?$DO?5allocNode?5Enter?$CIengine?$DN0@ 00015774     ce:Engine.ov4TCE
+ 0001:000047a8       ??_C@_0DJ@HNNPFGIK@checkServer?$CI0x?$CFlx?$CJ?5failed?3?5serve@ 000157a8     ce:Engine.ov4TCE
+ 0001:000047e4       ??_C@_0BE@MDMEOMF@checkServer?$CI0x?$CFlx?$CJ?6?$AA@ 000157e4     ce:Engine.ov4TCE
+ 0001:000047f8       ??_C@_06JCNGPGEO@?$FLDSP?$FN?5?$AA@ 000157f8     ce:Engine.ov4TCE
+ 0001:00004800       ??_C@_0BD@FDMDFDJA@Engine_close?5exit?6?$AA@ 00015800     ce:Engine.ov4TCE
+ 0001:00004814       ??_C@_0BF@BHCGNIL@Engine_close?$CI0x?$CFlx?$CJ?6?$AA@ 00015814     ce:Engine.ov4TCE
+ 0001:0000482c       ??_C@_0CD@BPAJIFFD@Engine_createNode?$DO?5Returning?50x?$CF@ 0001582c     ce:Engine.ov4TCE
+ 0001:00004850       ??_C@_0DI@HAKMPKOM@Engine_createNode?$DO?5FAILED?5to?5sen@ 00015850     ce:Engine.ov4TCE
+ 0001:00004888       ??_C@_0HB@ILCICFDN@Engine_createNode?$DO?5created?5node?$CI@ 00015888     ce:Engine.ov4TCE
+ 0001:000048fc       ??_C@_0DA@IBLAMEL@Engine_createNode?$DO?5Remote?5start?5@ 000158fc     ce:Engine.ov4TCE
+ 0001:0000492c       ??_C@_0DI@PJHFKNBJ@Engine_createNode?$DO?5Remote?5node?5c@ 0001592c     ce:Engine.ov4TCE
+ 0001:00004964       ??_C@_0CM@HEFCOFEL@Engine_createNode?$DO?5Node?5allocati@ 00015964     ce:Engine.ov4TCE
+ 0001:00004990       ??_C@_0DF@PEOMEHGL@Engine_createNode?$DO?5internal?5erro@ 00015990     ce:Engine.ov4TCE
+ 0001:000049c8       ??_C@_0EO@FGMECAPO@Engine_createNode?$DO?5rms?5message?5s@ 000159c8     ce:Engine.ov4TCE
+ 0001:00004a18       ??_C@_0DJ@DCONEBAA@Engine_createNode?$CI0x?$CFlx?0?5?8?$CFs?8?0?5?$CF@ 00015a18     ce:Engine.ov4TCE
+ 0001:00004a54       ??_C@_0CO@NKEADEP@rmsInit?$CI0x?$CFlx?$CJ?0?5setting?5DSP?5trac@ 00015a54     ce:Engine.ov4TCE
+ 0001:00004a88       ??_C@_0EM@BFBBBJHI@rmsInit?$DO?5RMS?5initialized?$CI0x?$CFlx?$CJ?$DL@ 00015a88     ce:Engine.ov4TCE
+ 0001:00004ad4       ??_C@_0N@JLDHEACM@CE_DSP0TRACE?$AA@ 00015ad4     ce:Engine.ov4TCE
+ 0001:00004ae4       ??_C@_04BDBAAKCN@rmsq?$AA@ 00015ae4     ce:Engine.ov4TCE
+ 0001:00004aec       ??_C@_09NMAIOBIO@?$CFs_?$CFlu_?$CFu?$AA@ 00015aec     ce:Engine.ov4TCE
+ 0001:00004af8       ??_C@_0BJ@DFJHKBMH@Engine_open?$DO?5return?$CI?$CFd?$CJ?6?$AA@ 00015af8     ce:Engine.ov4TCE
+ 0001:00004b18       ??_C@_0FN@COMIHKJD@Engine_open?$DO?5WARNING?3?5Unable?5to?5@ 00015b18     ce:Engine.ov4TCE
+ 0001:00004b78       ??_C@_0CE@PKAINFMI@Engine_open?$DO?5engine?9?$DOserver?5?$DN?50x@ 00015b78     ce:Engine.ov4TCE
+ 0001:00004b9c       ??_C@_0CH@DNDFACBO@Engine_open?$DO?5Enter?$CI?8?$CFs?8?0?50x?$CFlx?0?5@ 00015b9c     ce:Engine.ov4TCE
+ 0001:00004bc4       ??_C@_0DN@HELOJKNI@Engine_getConstName?$DO?5Unable?5to?5l@ 00015bc4     ce:Engine.ov4TCE
+ 0001:00004c04       ??_C@_0CM@BMIICGHG@Engine_getFxns?$DO?5Unable?5to?5locate@ 00015c04     ce:Engine.ov4TCE
+ 0001:00004c30       ??_C@_0CE@FFLBDGCP@Server_disconnectTrace?$DO?5return?$CI?$CF@ 00015c30     ce:Server.ov4TCE
+ 0001:00004c54       ??_C@_08IAEJNEEH@Server?4c?$AA@ 00015c54     ce:Server.ov4TCE
+ 0001:00004c60       ??_C@_0CG@DIFMBCPL@Server_disconnectTrace?$CI?80x?$CFx?8?0?50@ 00015c60     ce:Server.ov4TCE
+ 0001:00004c88       ??_C@_0CM@DNAGGABE@Server_connectTrace?$DO?5token?$CI?$CFd?$CJ?0?5@ 00015c88     ce:Server.ov4TCE
+ 0001:00004cb4       ??_C@_0CD@HEMDJIHD@Server_connectTrace?$CI?80x?$CFx?8?0?50x?$CFx@ 00015cb4     ce:Server.ov4TCE
+ 0001:00004cd8       ??_C@_0CJ@BDBABDJM@Server_init?$DO?5Global_useLinkArbit@ 00015cd8     ce:Server.ov4TCE
+ 0001:00004d04       ??_C@_0P@EPMMBJDF@Server_init?$CI?$CJ?6?$AA@ 00015d04     ce:Server.ov4TCE
+ 0001:00004d14       ??_C@_02ODPEBLOD@CS?$AA@   00015d14     ce:Server.ov4TCE
+ 0001:00004d18       ??_C@_0FB@PJLGAMJE@VISA_allocMsg?$DO?5FAILED?5to?5allocat@ 00015d18     ce:visa.ov4TCE
+ 0001:00004d6c       ??_C@_0DI@OLNBBGKP@VISA_allocMsg?$DO?5Allocating?5messag@ 00015d6c     ce:visa.ov4TCE
+ 0001:00004da8       ??_C@_0EI@ELILEMOO@VISA_call?5Completed?3?5messageId?$DN0@ 00015da8     ce:visa.ov4TCE
+ 0001:00004df0       ??_C@_0EA@BFJDNMAC@VISA_call?$CIvisa?$DN0x?$CFx?0?5msg?$DN0x?$CFx?$CJ?3?5@ 00015df0     ce:visa.ov4TCE
+ 0001:00004e30       ??_C@_0EA@PJPMEIHH@VISA_delete?$DO?5Engine_ctrlNode?5fai@ 00015e30     ce:visa.ov4TCE
+ 0001:00004e70       ??_C@_0CC@LEIPDLGD@VISA_delete?$DO?5deleting?5codec?50x?$CFx@ 00015e70     ce:visa.ov4TCE
+ 0001:00004e98       ??_C@_0EB@EOKHDEPG@VISA_delete?$DO?5deleting?5codec?5?$CIloc@ 00015e98     ce:visa.ov4TCE
+ 0001:00004edc       ??_C@_0BD@ILBNBIJP@VISA_delete?$CI0x?$CFx?$CJ?6?$AA@ 00015edc     ce:visa.ov4TCE
+ 0001:00004ef0       ??_C@_0CP@CKFMIEGH@ThreadID?3?50x?$CFx?5codec?5handle?3?50x?$CF@ 00015ef0     ce:visa.ov4TCE
+ 0001:00004f20       ??_C@_0CJ@POBGKDHB@VISA_enter?$CIvisa?$DN0x?$CFx?$CJ?3?5algHandle@ 00015f20     ce:visa.ov4TCE
+ 0001:00004f4c       ??_C@_0CC@CFABHIIN@Codec?5handle?3?50x?$CFx?5pre?9deactivat@ 00015f4c     ce:visa.ov4TCE
+ 0001:00004f70       ??_C@_0CD@ECOIEMFA@Codec?5handle?3?50x?$CFx?5post?9deactiva@ 00015f70     ce:visa.ov4TCE
+ 0001:00004f94       ??_C@_0CI@JJJDIJNL@VISA_exit?$CIvisa?$DN0x?$CFx?$CJ?3?5algHandle?5@ 00015f94     ce:visa.ov4TCE
+ 0001:00004fbc       ??_C@_0CG@HOLEEMMM@VISA_freeMsg?$DO?5FAILED?5?$CINULL?5messa@ 00015fbc     ce:visa.ov4TCE
+ 0001:00004fe8       ??_C@_0EB@KLKCNLIG@VISA_freeMsg?$CI0x?$CFx?0?50x?$CFx?$CJ?3?5Freein@ 00015fe8     ce:visa.ov4TCE
+ 0001:0000502c       ??_C@_0CK@CPOLBDOO@VISA_getMaxMsgSize?$CI0x?$CFx?$CJ?3?5return@ 0001602c     ce:visa.ov4TCE
+ 0001:00005058       ??_C@_0FI@NKIFJHBB@VISA_create?$DO?5remote?5codec?5create@ 00016058     ce:visa.ov4TCE
+ 0001:000050b0       ??_C@_0DF@PIKLCDMI@VISA_create2?$DO?5FAILED?5to?5create?5r@ 000160b0     ce:visa.ov4TCE
+ 0001:000050e8       ??_C@_0CP@CMDAOIFN@VISA_create2?$DO?5FAILED?5to?5allocate@ 000160e8     ce:visa.ov4TCE
+ 0001:00005118       ??_C@_0CN@JMHOFAH@VISA_create2?$DO?5FAILED?5to?5allocate@ 00016118     ce:visa.ov4TCE
+ 0001:00005148       ??_C@_0DL@FDHCOFAE@VISA_create?$DO?5local?5codec?5created@ 00016148     ce:visa.ov4TCE
+ 0001:00005184       ??_C@_0CN@ECKFMAKP@VISA_create2?$DO?5FAILED?5to?5create?5l@ 00016184     ce:visa.ov4TCE
+ 0001:000051b8       ??_C@_0HD@NNNCAIGG@VISA_create2?$DO?5FAILED?5to?5get?5IALG@ 000161b8     ce:visa.ov4TCE
+ 0001:0000522c       ??_C@_0CK@DKOCJGKC@VISA_create2?$DO?5Unable?5to?5locate?5a@ 0001622c     ce:visa.ov4TCE
+ 0001:00005258       ??_C@_0EG@KIJKJBIO@VISA_create2?$DO?5name?3?5?$CFs?5?5priority@ 00016258     ce:visa.ov4TCE
+ 0001:000052a0       ??_C@_0GB@PJCJKOKO@VISA_create2?$DO?5Name?5of?5codec?5?$FL?$CFs?$FN@ 000162a0     ce:visa.ov4TCE
+ 0001:00005304       ??_C@_0DC@KHAPIMEO@VISA_create2?$CI0x?$CFx?0?5?8?$CFs?8?0?50x?$CFx?0?50@ 00016304     ce:visa.ov4TCE
+ 0001:00005338       ??_C@_02JOIDOPKG@CV?$AA@   00016338     ce:visa.ov4TCE
+ 0001:0000533c       ??_C@_0CL@FMEELHCJ@VISA_create?$CI0x?$CFx?0?5?8?$CFs?8?0?50x?$CFx?0?50x@ 0001633c     ce:visa.ov4TCE
+ 0001:00005368       ??_C@_0FP@DFKICLCI@?$EA?$CI?$CD?$CJ?5ti?4sdo?4ce?$DL?5version?51?0?50?0?56?$DL@ 00016368     ce:package_ti.sdo.ce.ov4TCE
+ 0001:000053c8       ??_C@_07CGJPFKDO@1?0?50?0?56?$AA@ 000163c8     ce:package_ti.sdo.ce.ov4TCE
+ 0001:000053d0       ??_C@_0BB@OOGEEEML@Algorithm_noOS?4c?$AA@ 000163d0     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:000053e4       ??_C@_0BK@HLJMNFLP@Algorithm_activate?$DO?5Exit?6?$AA@ 000163e4     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005400       ??_C@_0CF@PJPNAHLD@Algorithm_activate?$DO?5Enter?$CIalg?$DN0x@ 00016400     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005428       ??_C@_0CI@IKGJFLP@Algorithm_addGroup?$DO?5Exit?5?$CIstatus@ 00016428     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005450       ??_C@_0CH@IFFHPAND@Algorithm_addGroup?$DO?5Enter?$CIgroupI@ 00016450     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005478       ??_C@_0BM@DFDPOIM@Algorithm_deactivate?$DO?5Exit?6?$AA@ 00016478     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005494       ??_C@_0CH@OHADJEDF@Algorithm_deactivate?$DO?5Enter?$CIalg?$DN@ 00016494     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:000054bc       ??_C@_0BI@LMABOHOB@Algorithm_delete?$DO?5Exit?6?$AA@ 000164bc     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:000054d8       ??_C@_0EH@PIDJDIMG@Algorithm_delete?$DO?5Freeing?5of?5alg@ 000164d8     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005520       ??_C@_0CD@PEIKEIND@Algorithm_delete?$DO?5Enter?$CIalg?$DN0x?$CFx@ 00016520     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005544       ??_C@_0BI@NEEEBLNB@ti?4sdo?4ce?4alg?4Algorithm?$AA@ 00016544     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:0000555c       ??_C@_0BN@JELCOOBF@Algorithm_removeGroup?$DO?5Exit?6?$AA@ 0001655c     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:0000557c       ??_C@_0CK@IEHLPDMK@Algorithm_removeGroup?$DO?5Enter?$CIgro@ 0001657c     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:000055a8       ??_C@_0CB@MJHDGPGK@Algorithm_create?$DO?5return?5?$CI0x?$CFx?$CJ?6@ 000165a8     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:000055d0       ??_C@_0EK@IKJOLEJG@Algorithm_create?$DO?5Assignment?5of?5@ 000165d0     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005620       ??_C@_0FC@NBNFHCLO@Algorithm_create?$DO?5Granting?5DMA?5c@ 00016620     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005678       ??_C@_0KG@FGGJEMNH@Algorithm_create?$DO?5Algorithm?5crea@ 00016678     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005720       ??_C@_0EE@BEDGEEKF@Algorithm_create?$DO?5Alloc?5for?5a?5sm@ 00016720     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005764       ??_C@_0CF@MBANPNCL@Algorithm_create?$DO?5useCachedMem?5?$DN@ 00016764     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00005790       ??_C@_0FN@DKNBMEHP@Algorithm_create?$DO?5Enter?5?$CIfxns?$DN0x@ 00016790     Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:000057f0       ??_C@_0N@PDPJABMI@alg_malloc?4c?$AA@ 000167f0     alg:alg_malloc.ov4TCE
+ 0001:00005800       ??_C@_0CF@GEPLAEH@ALG_addGroup?$DO?5group?5?$CFd?5out?5of?5ra@ 00016800     alg:alg_malloc.ov4TCE
+ 0001:00005828       ??_C@_0CB@HPKOMGDH@ALG_addGroup?$DO?5Exit?4?5status?5?$DN?5?$CFd?6@ 00016828     alg:alg_malloc.ov4TCE
+ 0001:0000584c       ??_C@_0DJ@JMPGNLBD@ALG_addGroup?$DO?5Failed?5to?5create?5s@ 0001684c     alg:alg_malloc.ov4TCE
+ 0001:00005888       ??_C@_0CD@DDIIJHDK@ALG_addGroup?$DO?5Enter?4?5groupId?5?$DN?5?$CF@ 00016888     alg:alg_malloc.ov4TCE
+ 0001:000058ac       ??_C@_0BA@HMCDAGE@ALG_init?$DO?5Exit?6?$AA@ 000168ac     alg:alg_malloc.ov4TCE
+ 0001:000058bc       ??_C@_0BB@EPIPDEFM@ALG_init?$DO?5Enter?6?$AA@ 000168bc     alg:alg_malloc.ov4TCE
+ 0001:000058d0       ??_C@_0O@BHGMKGJ@ti?4sdo?4ce?4alg?$AA@ 000168d0     alg:alg_malloc.ov4TCE
+ 0001:000058e0       ??_C@_0CM@GNPCNNCK@ALG_removeGroup?$DO?5groupId?3?5?$CFd?5out@ 000168e0     alg:alg_malloc.ov4TCE
+ 0001:0000590c       ??_C@_0BI@CFIOPFOG@ALG_removeGroup?$DO?5Exit?4?6?$AA@ 0001690c     alg:alg_malloc.ov4TCE
+ 0001:00005924       ??_C@_0CF@CNHLMHPN@ALG_removeGroup?$DO?5Enter?4?5groupId?5@ 00016924     alg:alg_malloc.ov4TCE
+ 0001:0000594c       ??_C@_0DE@OLBMEBDM@_ALG_allocMemory?$DO?5Invalid?5useCac@ 0001694c     alg:alg_malloc.ov4TCE
+ 0001:00005980       ??_C@_0DG@BFPBNBEO@_ALG_freeMemory2?$DO?5memTab?$DN0x?$CFx?0?5n@ 00016980     alg:alg_malloc.ov4TCE
+ 0001:000059b8       ??_C@_0CE@KOHCIMJC@_ALG_allocMemory2?$DO?5Returning?5?$CITR@ 000169b8     alg:alg_malloc.ov4TCE
+ 0001:000059dc       ??_C@_0DF@CPCMIPBB@_ALG_allocMemory2?$DO?5Invalid?5useCa@ 000169dc     alg:alg_malloc.ov4TCE
+ 0001:00005a14       ??_C@_0DH@GIFFCPKI@_ALG_allocMemory2?$DO?5memTab?$DN0x?$CFx?0?5@ 00016a14     alg:alg_malloc.ov4TCE
+ 0001:00005a4c       ??_C@_0CD@FHPFOOGB@ALG_create?$DO?5Exit?5?$CIalgHandle?$DNNULL@ 00016a4c     alg:alg_create.ov4TCE
+ 0001:00005a70       ??_C@_0CE@PLHMDJHN@ALG_create?$DO?5algInit?5call?5failed?5@ 00016a70     alg:alg_create.ov4TCE
+ 0001:00005a94       ??_C@_0CD@LLPLCJDF@ALG_create?$DO?5Exit?5?$CIalgHandle?$DN0x?$CFx@ 00016a94     alg:alg_create.ov4TCE
+ 0001:00005ab8       ??_C@_0CH@GOCKFMNL@ALG_create?$DO?5algInit?5returned?5IAL@ 00016ab8     alg:alg_create.ov4TCE
+ 0001:00005ae0       ??_C@_0FJ@IHIKMACP@ALG_create?$DO?5?5Memory?5requested?5me@ 00016ae0     alg:alg_create.ov4TCE
+ 0001:00005b3c       ??_C@_0CK@JHHBEKID@ALG_create?$DO?5algAlloc?5returned?5nu@ 00016b3c     alg:alg_create.ov4TCE
+ 0001:00005b68       ??_C@_0EG@DIOHBAAE@ALG_create?$DO?5alg?8s?5algAlloc?$CI?$CJ?5ret@ 00016b68     alg:alg_create.ov4TCE
+ 0001:00005bb0       ??_C@_0CI@JDONFDPN@ALG_create?$DO?5algNumAlloc?5?$CFd?5memor@ 00016bb0     alg:alg_create.ov4TCE
+ 0001:00005bd8       ??_C@_0FK@MIEHCAOD@ALG_create?$DO?5Enter?5?$CIscratchId?$DN?$CFd?0@ 00016bd8     alg:alg_create.ov4TCE
+ 0001:00005c34       ??_C@_04KHFCIILO@dsp0?$AA@ 00016c34     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005c3c       ??_C@_0M@LHFNEBAN@CE_DSPDEBUG?$AA@ 00016c3c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005c48       ??_C@_0LE@HPNFDGKC@Processor_create_d?$DO?5ERROR?3?5Canno@ 00016c48     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005cfc       ??_C@_0CO@OONHDBKM@Processor_create_d?$DO?5DODSPCTRL?5wa@ 00016cfc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005d30       ??_C@_0IH@LDGDCKMB@Processor_create_d?$DO?5Adding?5DSP?5s@ 00016d30     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005db8       ??_C@_0DP@FEICGEPH@Processor_create_d?$DO?5Setting?5CMEM@ 00016db8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005df8       ??_C@_0PC@IHIKAJMA@Processor_create_d?$DO?5WARNING?3?5CME@ 00016df8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005eec       ??_C@_0DD@LFCLONAE@Processor_create_d?$DO?5ERROR?3?5CMEM_@ 00016eec     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005f20       ??_C@_0FO@JKCJKADD@Processor_create_d?$DO?5Found?5?8CMEM?8@ 00016f20     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005f80       ??_C@_0DA@OFCOMECI@Processor_create_d?$DO?5ERROR?3?5Memor@ 00016f80     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005fb0       ??_C@_0EL@BLIBMENJ@Processor_create_d?$DO?5Using?5DspLin@ 00016fb0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00005ffc       ??_C@_0BN@FOBIIGIE@dspConfigs?$FL0?$FN?9?$DOmpcsObjects?9?$DO?$AA@ 00016ffc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000601c       ??_C@_0BP@OJJAOMEG@dspConfigs?$FL0?$FN?9?$DOmplistObjects?9?$DO?$AA@ 0001701c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000603c       ??_C@_0L@NPBDAHJB@maxEntries?$AA@ 0001703c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006048       ??_C@_0BP@NLAMGIDF@dspConfigs?$FL0?$FN?9?$DOringIoObjects?9?$DO?$AA@ 00017048     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006068       ??_C@_0L@HIPOMGDB@maxMsgSize?$AA@ 00017068     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006074       ??_C@_0BM@KBCJLEPE@dspConfigs?$FL0?$FN?9?$DOmqtObjects?9?$DO?$AA@ 00017074     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006090       ??_C@_0N@KMJFFJGP@queuePerChnl?$AA@ 00017090     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000060a0       ??_C@_06GDBBPNOO@poolId?$AA@ 000170a0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000060a8       ??_C@_0L@JFCDCAC@maxBufSize?$AA@ 000170a8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000060b4       ??_C@_0M@HKCOIMCM@numChannels?$AA@ 000170b4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000060c0       ??_C@_0L@ELKMCEMD@baseChnlId?$AA@ 000170c0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000060cc       ??_C@_0CB@FCIPDFCN@dspConfigs?$FL0?$FN?9?$DOdataTables?$FL0?$FN?$FLi?$FN?4@ 000170cc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000060f0       ??_C@_0N@HBLLMMJD@poolMemEntry?$AA@ 000170f0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006100       ??_C@_0L@GMEEACBC@ipsEventNo?$AA@ 00017100     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000610c       ??_C@_05JPEEPHJP@ipsId?$AA@ 0001710c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006114       ??_C@_08JKCHBGEI@poolSize?$AA@ 00017114     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006120       ??_C@_0CB@HGFCCBIK@dspConfigs?$FL0?$FN?9?$DOpoolTables?$FL0?$FN?$FLi?$FN?4@ 00017120     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006144       ??_C@_0P@ILHODMNE@dspIntVectorId?$AA@ 00017144     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006154       ??_C@_08ECBMMAAO@dspIntId?$AA@ 00017154     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006160       ??_C@_08PFBOPLCI@gppIntId?$AA@ 00017160     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000616c       ??_C@_0N@IFGNBNDC@numIpsEvents?$AA@ 0001716c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000617c       ??_C@_0CA@CMKPFHNC@dspConfigs?$FL0?$FN?9?$DOipsTables?$FL0?$FN?$FLi?$FN?4?$AA@ 0001717c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000619c       ??_C@_05KHLAPIGH@syncd?$AA@ 0001719c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000061a4       ??_C@_06HBFNPGIC@shared?$AA@ 000171a4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000061ac       ??_C@_04IAGNFIBA@size?$AA@ 000171ac     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000061b4       ??_C@_0M@HGCDAPOA@gppVirtAddr?$AA@ 000171b4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000061c0       ??_C@_0M@JIFPLLBB@dspVirtAddr?$AA@ 000171c0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000061cc       ??_C@_08JNBNBADI@physAddr?$AA@ 000171cc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000061d8       ??_C@_05HNNDEAND@entry?$AA@ 000171d8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000061e0       ??_C@_0M@IEGCNNFE@entry?5?$CD?$CFd?3?6?$AA@ 000171e0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000061ec       ??_C@_0CA@GKMIBEKP@dspConfigs?$FL0?$FN?9?$DOmemTables?$FL0?$FN?$FLi?$FN?4?$AA@ 000171ec     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000620c       ??_C@_0M@KIHKNHEL@mpcsTableId?$AA@ 0001720c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006218       ??_C@_0O@IOBGLBBF@mplistTableId?$AA@ 00017218     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006228       ??_C@_0O@GCKLOOHJ@ringIoTableId?$AA@ 00017228     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006238       ??_C@_05KEGCKEIA@mqtId?$AA@ 00017238     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006240       ??_C@_0P@GGCBGECG@numDataDrivers?$AA@ 00017240     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006250       ??_C@_0M@BNOPAGLH@dataTableId?$AA@ 00017250     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000625c       ??_C@_0O@EPDDDPDM@numIpsEntries?$AA@ 0001725c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000626c       ??_C@_0L@BHPHANIL@ipsTableId?$AA@ 0001726c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006278       ??_C@_08PCPCBFOB@memEntry?$AA@ 00017278     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006284       ??_C@_0O@PNJMMFJH@hshkPollCount?$AA@ 00017284     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006294       ??_C@_0CA@MPFLFMGA@dspConfigs?$FL0?$FN?9?$DOlinkDrvObjects?9?$DO?$AA@ 00017294     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000062b4       ??_C@_04LDBACBBL@arg5?$AA@ 000172b4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000062bc       ??_C@_04KKALBAFK@arg4?$AA@ 000172bc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000062c4       ??_C@_04OFEKIGJN@arg3?$AA@ 000172c4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000062cc       ??_C@_04PMFBLHNM@arg2?$AA@ 000172cc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000062d4       ??_C@_04NHHMOEBP@arg1?$AA@ 000172d4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000062dc       ??_C@_09EMOLPCGH@linkDrvId?$AA@ 000172dc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000062e8       ??_C@_0L@DAKPKANF@memEntries?$AA@ 000172e8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000062f4       ??_C@_0L@CKLKNEG@memTableId?$AA@ 000172f4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006300       ??_C@_08IDBMIOML@wordSwap?$AA@ 00017300     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000630c       ??_C@_06BBBEKDND@endian?$AA@ 0001730c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006314       ??_C@_07BNIDEPBF@cpuFreq?$AA@ 00017314     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000631c       ??_C@_08PEPMKGPF@maduSize?$AA@ 0001731c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006328       ??_C@_0O@KAJNADN@resetCodeSize?$AA@ 00017328     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006338       ??_C@_0M@DCDJJGMA@resetVector?$AA@ 00017338     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006344       ??_C@_0L@BJDONABI@resumeAddr?$AA@ 00017344     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006350       ??_C@_0BC@PJDHDJN@?5?5doDspCtrl?5?$DN?5?$CFs?6?$AA@ 00017350     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006364       ??_C@_08BLIFAKPG@execName?$AA@ 00017364     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006370       ??_C@_09NEHEHBMH@autoStart?$AA@ 00017370     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000637c       ??_C@_0L@DKCMPAOP@?5?5?$CFs?5?$DN?5?$CFs?6?$AA@ 0001737c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006388       ??_C@_05MAJJAKPI@FALSE?$AA@ 00017388     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006390       ??_C@_04HCDDPBNL@TRUE?$AA@ 00017390     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006398       ??_C@_0L@FCFLFAOA@loaderName?$AA@ 00017398     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000063a4       ??_C@_07FLMOMEJI@dspArch?$AA@ 000173a4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000063ac       ??_C@_0BL@PCKFPGAI@dspConfigs?$FL0?$FN?9?$DOdspObject?9?$DO?$AA@ 000173ac     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000063c8       ??_C@_01EEMJAFIK@?6?$AA@   000173c8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000063cc       ??_C@_08LCPABEPJ@numPools?$AA@ 000173cc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000063d8       ??_C@_0M@GOIGGGHK@poolTableId?$AA@ 000173d8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000063e4       ??_C@_0N@OFKLBNAO@maxChnlQueue?$AA@ 000173e4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000063f4       ??_C@_08INHINHIO@maxMsgqs?$AA@ 000173f4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006400       ??_C@_0N@BIMMOLCA@?5?5?$CFs?5?$DN?50x?$CFx?6?$AA@ 00017400     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006410       ??_C@_04MEMAJGDJ@name?$AA@ 00017410     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006418       ??_C@_0N@BJBMLINC@?5?5?$CFs?5?$DN?5?$CC?$CFs?$CC?6?$AA@ 00017418     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006428       ??_C@_0M@HPAOHJLG@gppObject?9?$DO?$AA@ 00017428     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006434       ??_C@_0N@NLIBFLON@linkCfg?9?$DO?$CFs?6?$AA@ 00017434     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006444       ??_C@_0DB@BGHMFLAK@LINKCFG_Object?5generated?5for?5PRO@ 00017444     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006478       ??_C@_0BC@GGAPAFFC@?$DMINVALID?5SETTING?$DO?$AA@ 00017478     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000648c       ??_C@_0BE@PKNCNPOL@DSP_BootMode_NoBoot?$AA@ 0001748c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000064a0       ??_C@_0BI@MPBPJIOG@DSP_BootMode_NoLoad_Pwr?$AA@ 000174a0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000064b8       ??_C@_0BK@NJDADNLP@DSP_BootMode_NoLoad_NoPwr?$AA@ 000174b8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000064d4       ??_C@_0BG@EIGPKDOO@DSP_BootMode_Boot_Pwr?$AA@ 000174d4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000064ec       ??_C@_0BI@KAOCNJOD@DSP_BootMode_Boot_NoPwr?$AA@ 000174ec     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006504       ??_C@_0BM@BIIGODNL@Processor_delete_d?$DO?5return?6?$AA@ 00017504     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006520       ??_C@_0DI@LFAJGOML@Processor_delete_d?$DO?5LAD_disconne@ 00017520     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006558       ??_C@_0CP@GCBGCJJD@Processor_delete_d?$DO?5Disconnectin@ 00017558     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006588       ??_C@_0DI@JHKCICDG@Processor_delete_d?$DO?5LAD_releaseD@ 00017588     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000065c0       ??_C@_0DJ@EBBLCGMK@Processor_delete_d?$DO?5Releasing?5DS@ 000175c0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000065fc       ??_C@_0DI@NDJCFJPC@Processor_delete_d?$DO?5Destroying?5D@ 000175fc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006634       ??_C@_0DJ@GEJOOEOB@Processor_delete_d?$DO?5Destroying?5D@ 00017634     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006670       ??_C@_0DM@LLBEONIC@Processor_delete_d?$DO?5Detaching?5fr@ 00017670     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000066ac       ??_C@_0CL@IGBEOEJK@Processor_delete_d?$DO?5Detaching?5fr@ 000176ac     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000066d8       ??_C@_0DG@HJAGABHK@Processor_delete_d?$DO?5Closing?5pool@ 000176d8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006710       ??_C@_0CF@BEGGDHDE@Processor_delete_d?$DO?5Closing?5pool@ 00017710     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006738       ??_C@_0DG@POMCIPLF@Processor_delete_d?$DO?5Stopping?5DSP@ 00017738     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006770       ??_C@_0CF@GAHGHKCE@Processor_delete_d?$DO?5Stopping?5DSP@ 00017770     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006798       ??_C@_0ED@JDONPOCN@Processor_delete_d?$DO?5Closing?5remo@ 00017798     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000067dc       ??_C@_0DB@EENOBBEL@Processor_delete_d?$DO?5Closing?5remo@ 000177dc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006810       ??_C@_0CH@ILLHAEFG@Processor_delete_d?$DO?5Enter?5?$CIproc?$DN@ 00017810     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006838       ??_C@_0BJ@CDMKFKHI@doCmd?$DO?5Exit?5?$CIresult?$DN?$CFd?$CJ?6?$AA@ 00017838     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006854       ??_C@_0CE@JAMHKGGE@doCmd?$DO?5Enter?5?$CIcmdId?$DN?$CFd?0?5proc?$DN0x?$CF@ 00017854     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006878       ??_C@_0BM@BDNDFIGN@getCmd_d?$DO?5Exit?5?$CIresult?$DN?$CFd?$CJ?6?$AA@ 00017878     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006894       ??_C@_0BN@PDCPJAHM@getCmd_d?$DO?5Enter?5?$CIproc?$DN0x?$CFx?$CJ?6?$AA@ 00017894     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000068b4       ??_C@_0BL@ICMIPMJJ@Processor_delete?$DO?5return?4?6?$AA@ 000178b4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000068d0       ??_C@_0CL@MFKFCMMK@Processor_delete?$CI0x?$CFx?$CJ?5freeing?5o@ 000178d0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000068fc       ??_C@_0CE@PDJJLDLI@Processor_delete?$DO?5Enter?$CIproc?$DN0x?$CF@ 000178fc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006920       ??_C@_0DJ@EIJIDLHK@?4?4?1?4?4?1?4?4?1?4?4?1?4?4?1ti?1sdo?1ce?1ipc?1dsp@ 00017920     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0000695c       ??_C@_0CB@ODDKGGKH@Processor_create_d?$DO?5return?5?$CI?$CFd?$CJ?6@ 0001795c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006980       ??_C@_0KP@BKHBIKHI@Processor_create_d?$DO?5Loading?5and?5@ 00017980     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006a30       ??_C@_0BJO@OAJPIFEC@This?5error?5code?5typically?5indica@ 00017a30     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006bd0       ??_C@_0GK@IEODOFA@Codec?5Engine?5system?5message?5?$CIb?1c@ 00017bd0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006c3c       ??_C@_0DB@HFABAFFI@Processor_create_d?$DO?5Opening?5remo@ 00017c3c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006c70       ??_C@_0CK@PKAKPCLM@Processor_create_d?$DO?5Starting?5DSP@ 00017c70     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006c9c       ??_C@_0DE@MABFPHNP@Processor_create_d?$DO?5Loading?5?$CFs?5o@ 00017c9c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006cd0       ??_C@_0CK@PBCGEALA@Processor_create_d?$DO?5Opening?5MSGQ@ 00017cd0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006cfc       ??_C@_0CO@IEBNOMFP@Processor_create_d?$DO?5Attaching?5to@ 00017cfc     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006d2c       ??_C@_0CO@JKDMCCEE@Processor_create_d?$DO?5Initializing@ 00017d2c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006d5c       ??_C@_0DM@PDIOHPKJ@Processor_create_d?$DO?5LAD_startupD@ 00017d5c     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006d98       ??_C@_0DA@FKPLFIDK@Processor_create_d?$DO?5LAD_startupD@ 00017d98     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006dc8       ??_C@_0DP@EABJDKDL@Processor_create_d?$DO?5Loading?5?$CFs?5o@ 00017dc8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006e08       ??_C@_0DJ@BDHKAHJK@Processor_create_d?$DO?5LAD_connect?5@ 00017e08     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006e44       ??_C@_0DK@EFGCDGAC@Processor_create_d?$DO?5LAD_connect?5@ 00017e44     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006e80       ??_C@_0CG@PLHBHLCK@Processor_create_d?$DO?5Power_on?5fai@ 00017e80     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006ea8       ??_C@_0CG@MMHHNCNA@Processor_create_d?$DO?5Enter?$CIproc?$DN0@ 00017ea8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006ed0       ??_C@_0BJ@BPDGMNKO@daemon?$DO?5thread?5created?4?6?$AA@ 00017ed0     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006eec       ??_C@_0CB@POONFHGL@Processor_create?$DO?5return?5?$CI0x?$CFx?$CJ?6@ 00017eec     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006f10       ??_C@_0CO@LEFPGADB@Processor_create?$DO?5ERROR?3?5Memory_@ 00017f10     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006f40       ??_C@_0DA@IIONHOHE@Processor_create?$DO?5ERROR?3?5cannot?5@ 00017f40     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006f70       ??_C@_0ED@EHEKAKCD@Processor_create?$DO?5Enter?$CIimageNam@ 00017f70     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006fb4       ??_C@_0DB@DIGGGOAP@Processor_init?$DO?5ERROR?3?5cannot?5cr@ 00017fb4     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00006fe8       ??_C@_0DJ@CHCJMAHJ@Processor_init?$DO?5ERROR?3?5cannot?5cr@ 00017fe8     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00007024       ??_C@_02MBMDLBEE@OP?$AA@   00018024     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00007028       ??_C@_0CG@OFMDBFFI@Comm_alloc?$DO?5msg?$DN0x?$CFx?0?5returning?5@ 00018028     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007050       ??_C@_0DD@KLFJPNDO@Comm_alloc?$DO?5Enter?$CIpoolId?$DN0x?$CFx?0?5m@ 00018050     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007084       ??_C@_0DE@BOAEKIFD@?4?4?1?4?4?1?4?4?1?4?4?1?4?4?1ti?1sdo?1ce?1ipc?1dsp@ 00018084     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000070b8       ??_C@_0BM@GHGCLDKJ@Comm_create?$DO?5return?5?$CI0x?$CFx?$CJ?6?$AA@ 000180b8     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000070d4       ??_C@_0CM@FNAANLJP@Comm_create?$CI?8?$CFs?8?0?5?4?4?4?$CJ?5failed?3?5s@ 000180d4     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007100       ??_C@_0CM@PIKFJLKJ@Comm_create?$DO?5Unsupported?5Comm_At@ 00018100     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:0000712c       ??_C@_0DM@JBOMDBIC@Comm_create?$DO?5Enter?$CIqueueName?$DN?8?$CFs@ 0001812c     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007168       ??_C@_0BH@BJHEMIDI@Comm_delete?$DO?5return?$CFs?6?$AA@ 00018168     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007180       ??_C@_0BN@MPCHBMNB@?5?$CInote?5MSGQ_close?$CI?$CJ?5failure?$CJ?$AA@ 00018180     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000071a0       ??_C@_0DN@EJLPFCFK@Comm_delete?$CI0x?$CFx?$CJ?5failed?3?5MSGQ_c@ 000181a0     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000071e0       ??_C@_0CA@DGPPDPIM@Comm_delete?$DO?5Enter?5?$CIcomm?$DN0x?$CFx?$CJ?6?$AA@ 000181e0     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007200       ??_C@_0BI@OIDMBOOH@Comm_free?$DO?5return?5?$CI?$CFd?$CJ?6?$AA@ 00018200     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007218       ??_C@_0BN@OAHCFIGL@Comm_free?$DO?5Enter?5?$CImsg?$DN0x?$CFx?$CJ?6?$AA@ 00018218     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007238       ??_C@_0CP@CDHFLNJH@Comm_get?$DO?5MSGQ_get?$CI?$CJ?5status?$DN0x?$CFx@ 00018238     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007268       ??_C@_0DH@OOEIEGGO@Comm_get?$CI?$CJ?$DO?5Error?3?5timeout?5occur@ 00018268     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000072a0       ??_C@_0FB@DBKLINHL@Comm_get?$DO?5overriding?5timeout?5pro@ 000182a0     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000072f4       ??_C@_0DD@BFDCEKLB@Comm_get?$DO?5Enter?$CIqueue?$DN0x?$CFx?0?5msg?$DN@ 000182f4     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007328       ??_C@_0BK@EKDECOCF@Comm_locate?$DO?5return?5?$CI?$CFd?$CJ?6?$AA@ 00018328     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007348       ??_C@_0NE@PPLHMANN@Comm_locate?$DO?5Error?3?5could?5not?5lo@ 00018348     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007420       ??_C@_0EN@ODGEDHOA@Comm_locate?$DO?5Attempt?5?$CFd?5of?5?$CFd?5to@ 00018420     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007470       ??_C@_0DA@KMJOKLKF@Comm_locate?$DO?5Enter?$CIqueueName?$DN?8?$CFs@ 00018470     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000074a0       ??_C@_0BH@OKHEIECD@Comm_put?$DO?5return?5?$CI?$CFd?$CJ?6?$AA@ 000184a0     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000074b8       ??_C@_0CH@PEOCCIA@Comm_put?$DO?5Enter?$CIqueue?$DN0x?$CFx?0?5msg?$DN@ 000184b8     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000074e0       ??_C@_0BL@LCAAMDLI@Comm_release?$DO?5return?5?$CI?$CFd?$CJ?6?$AA@ 000184e0     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000074fc       ??_C@_0CB@LJAMGFML@Comm_release?$DO?5Enter?$CIqueue?$DN0x?$CFx?$CJ?6@ 000184fc     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007520       ??_C@_0DD@HDPHBMIK@Comm_init?$DO?5ERROR?3?5could?5not?5crea@ 00018520     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007554       ??_C@_02KACMPANG@OC?$AA@   00018554     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00007558       ??_C@_0BH@HJFMPOC@Power_on?$DO?5return?5?$CI?$CFd?$CJ?6?$AA@ 00018558     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007570       ??_C@_0CH@FFDPIEOB@Power_on?$DO?5Turning?5on?5DSP?5power?5F@ 00018570     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007598       ??_C@_0CD@GDIHLIJA@Power_on?$DO?5Turning?5on?5DSP?5power?4?4@ 00018598     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:000075c0       ??_C@_0EH@MPOIBNEK@Power_on?$DO?5Opening?5Local?5Power?5Ma@ 000185c0     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007608       ??_C@_09OKFBLHAB@?1dev?1lpm0?$AA@ 00018608     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007618       ??_C@_0ED@EBHPLJCE@Power_on?$DO?5Opening?5Local?5Power?5Ma@ 00018618     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0000765c       ??_C@_0CF@IPLKGEHM@Power_on?$DO?5Error?3?5handle?5ptr?5is?5N@ 0001865c     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007684       ??_C@_0BO@HHCKEJLO@Power_on?$DO?5Enter?$CIhandle?$DN0x?$CFx?$CJ?6?$AA@ 00018684     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:000076a4       ??_C@_0BI@DECNJOKF@Power_off?$DO?5return?5?$CI?$CFd?$CJ?6?$AA@ 000186a4     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:000076bc       ??_C@_0CM@DOGCHBAM@Power_off?$DO?5Closing?5LPM?5FAILED?0?5s@ 000186bc     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:000076e8       ??_C@_0DC@IJOLHGCP@Power_off?$DO?5Closing?5Local?5Power?5M@ 000186e8     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0000771c       ??_C@_0DG@MMAOANOC@Power_off?$DO?5Turning?5off?5DSP?5power@ 0001871c     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007754       ??_C@_0CF@KDIBAFAD@Power_off?$DO?5Turning?5off?5DSP?5power@ 00018754     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0000777c       ??_C@_0CA@OAMOIHNE@Power_off?$DO?5Enter?5?$CIhandle?$DN0x?$CFx?$CJ?6?$AA@ 0001877c     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0000779c       ??_C@_0BM@EFGICAMO@Power_connect?$DO?5return?5?$CI?$CFd?$CJ?6?$AA@ 0001879c     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:000077b8       ??_C@_0DA@NNONNCJL@Power_connect?$DO?5LPM_connect?5FAILE@ 000187b8     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:000077e8       ??_C@_0EL@IGLAPNAK@Power_connect?$DO?5Calling?5LPM_conne@ 000187e8     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007834       ??_C@_0CE@IGCCFNGE@Power_connect?$DO?5Enter?5?$CIhandle?$DN0x?$CF@ 00018834     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007858       ??_C@_0BP@NMHDKOFC@Power_disconnect?$DO?5return?5?$CI?$CFd?$CJ?6?$AA@ 00018858     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007878       ??_C@_0DG@KKABJDFM@Power_disconnect?$DO?5LPM_disconnect@ 00018878     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:000078b0       ??_C@_0FG@OPONOBOD@Power_disconnect?$DO?5Calling?5LPM_di@ 000188b0     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007908       ??_C@_0CH@JDCDNKEM@Power_disconnect?$DO?5Enter?5?$CIhandle?$DN@ 00018908     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007930       ??_C@_0BE@DDDCOEME@ti?4sdo?4ce?4ipc?4Power?$AA@ 00018930     ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:00007944       ??_C@_0DF@KBIODEBK@Memory__getPhysicalAddress?$DO?5retu@ 00018944     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007980       ??_C@_0FH@ICBJDBIL@Memory__getPhysicalAddress?$DO?5foun@ 00018980     osal_wince:Memory_cmem.ov4TCE
+ 0001:000079d8       ??_C@_0DL@HMDGJGCN@Memory__getPhysicalAddress?$DO?5Ente@ 000189d8     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007a14       ??_C@_0DE@INDNECCC@Memory__getVirtualAddress?$DO?5retur@ 00018a14     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007a48       ??_C@_0EM@LKEEHLIF@Memory__getVirtualAddress?$DO?5found@ 00018a48     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007a94       ??_C@_0DK@PNOFLKGA@Memory__getVirtualAddress?$DO?5Enter@ 00018a94     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007ad0       ??_C@_0DJ@GIFPEFHA@Memory_alloc?$DO?5ERROR?3?5malloc?$CI?$CJ?5fa@ 00018ad0     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007b0c       ??_C@_0CD@JNKIIFNK@Memory_contigAlloc?$DO?5return?5?$CI0x?$CFx@ 00018b0c     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007b30       ??_C@_0CO@PIJINFED@Memory_contigAlloc?$DO?5ERROR?3?5CMEM?5@ 00018b30     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007b60       ??_C@_0FL@GGBOGIJF@Memory_contigAlloc?$DO?5ERROR?3?5CMEM_@ 00018b60     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007bbc       ??_C@_0DA@PDKHIJBF@Memory_contigAlloc?$DO?5CMEM_getPhys@ 00018bbc     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007bec       ??_C@_0CM@DIAGFDID@Memory_contigAlloc?$DO?5CMEM_alloc?$CI?$CF@ 00018bec     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007c18       ??_C@_0HB@JPLGBKJF@Memory_contigAlloc?$DO?5Warning?3?5non@ 00018c18     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007c90       ??_C@_0FJ@KGNDGGNK@Memory_contigAlloc?$DO?5ERROR?3?5reque@ 00018c90     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007cf0       ??_C@_0EC@DMHLFKND@Memory_contigAlloc?$DO?5Enter?$CIsize?$DN?$CF@ 00018cf0     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007d34       ??_C@_0CC@MDHFMHMM@Memory_contigFree?$DO?5return?5?$CI0x?$CFx?$CJ@ 00018d34     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007d58       ??_C@_0DE@JNHBIFOD@Memory_contigFree?$DO?5Warning?3?5CMEM@ 00018d58     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007d8c       ??_C@_0CM@LDHNKHOO@Memory_contigFree?$DO?5Enter?$CIaddr?$DN?$CFd@ 00018d8c     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007db8       ??_C@_0CP@MANBOOEE@Memory_getBufferVirtualAddress?$DO?5@ 00018db8     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007de8       ??_C@_0EC@IAFIILEH@Memory_getBufferVirtualAddress?$DO?5@ 00018de8     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007e2c       ??_C@_0DP@LPHPKBDA@Memory_getBufferVirtualAddress?$DO?5@ 00018e2c     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007e6c       ??_C@_0BN@CHPJGKDI@Memory_alloc?$DO?5return?5?$CI0x?$CFx?$CJ?6?$AA@ 00018e6c     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007e8c       ??_C@_0BM@ECPHAKJB@Memory_alloc?$DO?5Enter?$CI0x?$CFlx?$CJ?6?$AA@ 00018e8c     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007ea8       ??_C@_0BM@ECKMCADI@Memory_free?$DO?5return?5?$CI0x?$CFx?$CJ?6?$AA@ 00018ea8     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007ec4       ??_C@_0CC@EAEGOJLB@Memory_free?$DO?5Enter?$CI0x?$CFlx?0?50x?$CFlx?$CJ@ 00018ec4     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007ee8       ??_C@_0CP@EPPOJIPD@Memory_init?$DO?5ERROR?3?5Failed?5to?5in@ 00018ee8     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007f18       ??_C@_0DF@HNCPNDCF@Memory_init?$DO?5ERROR?3?5could?5not?5cr@ 00018f18     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007f50       ??_C@_02DOKPNNFI@OM?$AA@   00018f50     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007f54       ??_C@_0CF@HIADPPBI@Memory__addContigBuf?$DO?5out?5of?5Mem@ 00018f54     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007f80       ??_C@_0EM@GEINGJAO@Memory__addContigBuf?$DO?5returning?3@ 00018f80     osal_wince:Memory_cmem.ov4TCE
+ 0001:00007fcc       ??_C@_0DF@NHCNHAJ@Memory__addContigBuf?$DO?5creating?5n@ 00018fcc     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008008       ??_C@_0ED@LLGEAEOJ@Memory__addContigBuf?$DO?5case?53b?5?$CIS@ 00019008     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008050       ??_C@_0ED@GIPPBIBC@Memory__addContigBuf?$DO?5case?53a?5?$CIS@ 00019050     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008098       ??_C@_0EC@NKEFFNHG@Memory__addContigBuf?$DO?5case?52?5?$CISc@ 00019098     osal_wince:Memory_cmem.ov4TCE
+ 0001:000080e0       ??_C@_0EC@JNOEBIN@Memory__addContigBuf?$DO?5case?51?5?$CISc@ 000190e0     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008128       ??_C@_0EE@PILKIHLD@Memory__addContigBuf?$DO?5Enter?$CIvirt@ 00019128     osal_wince:Memory_cmem.ov4TCE
+ 0001:0000816c       ??_C@_0DN@PNOALAGF@Memory__removeContigBuf?$DO?5ERROR?3?5@ 0001916c     osal_wince:Memory_cmem.ov4TCE
+ 0001:000081b0       ??_C@_0EP@FHIGJLIC@Memory__removeContigBuf?$DO?5removin@ 000191b0     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008200       ??_C@_0DI@LLKFNKO@Memory__removeContigBuf?$DO?5Enter?$CIv@ 00019200     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008238       ??_C@_0DA@PNLADLAN@Memory_getBufferPhysicalAddress?$DO@ 00019238     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008268       ??_C@_0FN@PMNGIAAO@Memory_getBufferPhysicalAddress?$DO@ 00019268     osal_wince:Memory_cmem.ov4TCE
+ 0001:000082c8       ??_C@_0DN@HPDJDGCP@Memory_getBufferPhysicalAddress?$DO@ 000192c8     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008308       ??_C@_0ED@MBLNMKFL@Memory_getBufferPhysicalAddress?$DO@ 00019308     osal_wince:Memory_cmem.ov4TCE
+ 0001:00008350       ??_C@_0EA@BHBPFNMC@Memory_getBufferPhysicalAddress?$DO@ 00019350     osal_wince:Memory_cmem.ov4TCE
+ 0001:000083a8       ??_C@_0ED@LNLJMPDL@Warning?3?5could?5not?5open?5file?5?8?$CFs@ 000193a8     osal_wince:GT_config_wince.ov4TCE
+ 0001:000083ec       ??_C@_0BC@GPLABEAA@CE_TRACEFILEFLAGS?$AA@ 000193ec     osal_wince:GT_config_wince.ov4TCE
+ 0001:00008400       ??_C@_0N@FFHBKBCK@CE_TRACEFILE?$AA@ 00019400     osal_wince:GT_config_wince.ov4TCE
+ 0001:00008410       ??_C@_01MCMALHOG@a?$AA@    00019410     osal_wince:GT_config_wince.ov4TCE
+ 0001:00008414       ??_C@_06OJHGLDPL@?$CInull?$CJ?$AA@ 00019414     osal_wince:GT_config_wince.ov4TCE
+ 0001:0000841c       ??_C@_07JHDPBCI@ERROR?3?5?$AA@ 0001941c     osal_wince:GT_config_wince.ov4TCE
+ 0001:00008424       ??_C@_0CK@IDAILJKC@Global_exit?$DO?5calling?5function?5?$CK0@ 00019424     osal_wince:Global_wince.ov4TCE
+ 0001:00008450       ??_C@_0BE@EEKHLOML@Global_exit?$DO?5enter?6?$AA@ 00019450     osal_wince:Global_wince.ov4TCE
+ 0001:00008464       ??_C@_0CF@KPGPABIC@Global_getenv?$DO?5exit?0?5returning?50@ 00019464     osal_wince:Global_wince.ov4TCE
+ 0001:0000848c       ??_C@_0CF@MCFKHDED@Global_getenv?$DO?5exit?0?5returning?5N@ 0001948c     osal_wince:Global_wince.ov4TCE
+ 0001:000084b8       ??_C@_1FE@GBMAPPDP@?$AAS?$AAO?$AAF?$AAT?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAT?$AAe?$AAx?$AAa?$AAs?$AA?5?$AAI?$AAn?$AAs?$AAt?$AAr?$AAu?$AAm?$AAe?$AAn?$AAt?$AAs?$AA?2?$AAt?$AAi?$AA?4?$AAs?$AAd@ 000194b8     osal_wince:Global_wince.ov4TCE
+ 0001:0000850c       ??_C@_0CE@KDNNNHCK@Global_getenv?$DO?5enter?0?5name?5?$FL0x?$CF0@ 0001950c     osal_wince:Global_wince.ov4TCE
+ 0001:00008530       ??_C@_03OFAPEBGM@?$CFs?6?$AA@ 00019530     osal_wince:Global_wince.ov4TCE
+ 0001:00008538       ??_C@_0EC@IBBCFPOJ@Global_init?$DO?5This?5program?5was?5bu@ 00019538     osal_wince:Global_wince.ov4TCE
+ 0001:0000857c       ??_C@_02MEEADFNC@OG?$AA@   0001957c     osal_wince:Global_wince.ov4TCE
+ 0001:00008580       ??_C@_0CB@JOMMHCFE@Global_atexit?$DO?5enter?5?$CIfxn?$DN0x?$CFx?$CJ?6@ 00019580     osal_wince:Global_wince.ov4TCE
+ 0001:000085a4       ??_C@_0P@LKJNJBHI@LockMP_wince?4c?$AA@ 000195a4     osal_wince:LockMP_wince.ov4TCE
+ 0001:000085b4       ??_C@_0BG@ECBNLBGD@ti?4sdo?4ce?4osal?4LockMP?$AA@ 000195b4     osal_wince:LockMP_wince.ov4TCE
+ 0001:000085cc       ??_C@_0P@DJIFPLGD@Thread_wince?4c?$AA@ 000195cc     osal_wince:Thread_wince.ov4TCE
+ 0001:000085dc       ??_C@_0CB@NDIINHEO@Thread_create?$DO?5Exit?5?$CItask?$DN0x?$CFx?$CJ?6@ 000195dc     osal_wince:Thread_wince.ov4TCE
+ 0001:00008600       ??_C@_1HC@CEKECOLO@?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA_?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?$CI?$AA?$CJ?$AA?3?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd@ 00019600     osal_wince:Thread_wince.ov4TCE
+ 0001:00008674       ??_C@_0CN@EJOONIML@Thread_create?$DO?5Enter?5?$CIfxn?$DN0x?$CFx?0?5@ 00019674     osal_wince:Thread_wince.ov4TCE
+ 0001:000086a4       ??_C@_0CB@MOHIIPKE@Thread_delete?$DO?5Exit?5?$CItask?$DN0x?$CFx?$CJ?6@ 000196a4     osal_wince:Thread_wince.ov4TCE
+ 0001:000086c8       ??_C@_0DC@ONPEAPGN@Thread_delete?$DO?5WaitForSingleObje@ 000196c8     osal_wince:Thread_wince.ov4TCE
+ 0001:000086fc       ??_C@_0CJ@CLCEKDHO@Thread_delete?$DO?5TerminateThread?$CI?$CJ@ 000196fc     osal_wince:Thread_wince.ov4TCE
+ 0001:00008728       ??_C@_0CC@ECELPHPC@Thread_delete?$DO?5Enter?5?$CItask?$DN0x?$CFx?$CJ@ 00019728     osal_wince:Thread_wince.ov4TCE
+ 0001:0000874c       ??_C@_02KFKPHEEA@OT?$AA@   0001974c     osal_wince:Thread_wince.ov4TCE
+ 0001:00008750       ??_C@_0CB@PFPMEEKD@Leaving?5SemMP_create?$DO?5sem?$FL0x?$CFx?$FN?6@ 00019750     osal_wince:SemMP_wince.ov4TCE
+ 0001:00008774       ??_C@_0BL@GEIBIGOJ@SemMP_create?$DO?5semId?3?50x?$CFx?6?$AA@ 00019774     osal_wince:SemMP_wince.ov4TCE
+ 0001:00008790       ??_C@_15KNBIKKIN@?$AA?$CF?$AAd?$AA?$AA@ 00019790     osal_wince:SemMP_wince.ov4TCE
+ 0001:00008798       ??_C@_0CD@MNNCAMGM@SemMP_create?$DO?5Memory_alloc?5faile@ 00019798     osal_wince:SemMP_wince.ov4TCE
+ 0001:000087bc       ??_C@_0CD@DBMPFLM@SemMP_create?$DO?5key?3?50x?$CFx?5count?3?5?$CF@ 000197bc     osal_wince:SemMP_wince.ov4TCE
+ 0001:000087e0       ??_C@_0BH@CAGIACFB@Leaving?5SemMP_delete?$DO?6?$AA@ 000197e0     osal_wince:SemMP_wince.ov4TCE
+ 0001:000087f8       ??_C@_0BJ@NLDMDDFI@SemMP_delete?$DO?5sem?3?50x?$CFx?6?$AA@ 000197f8     osal_wince:SemMP_wince.ov4TCE
+ 0001:00008814       ??_C@_0CB@GLGGECFH@Entered?5SemMP_delete?$DO?5sem?$FL0x?$CFx?$FN?6@ 00019814     osal_wince:SemMP_wince.ov4TCE
+ 0001:00008838       ??_C@_0BP@LLNEEMJM@Leaving?5SemMP_pend?$DO?5sem?$FL0x?$CFx?$FN?6?$AA@ 00019838     osal_wince:SemMP_wince.ov4TCE
+ 0001:00008858       ??_C@_0CN@CCPDENMI@Entered?5SemMP_pend?$DO?5sem?$FL0x?$CFx?$FN?5ti@ 00019858     osal_wince:SemMP_wince.ov4TCE
+ 0001:00008888       ??_C@_0BP@JBLJCHJP@Leaving?5SemMP_post?$DO?5sem?$FL0x?$CFx?$FN?6?$AA@ 00019888     osal_wince:SemMP_wince.ov4TCE
+ 0001:000088a8       ??_C@_0BP@ICGHHEND@Entered?5SemMP_post?$DO?5sem?$FL0x?$CFx?$FN?6?$AA@ 000198a8     osal_wince:SemMP_wince.ov4TCE
+ 0001:000088c8       ??_C@_0O@PNAAJGGF@SemMP_wince?4c?$AA@ 000198c8     osal_wince:SemMP_wince.ov4TCE
+ 0001:000088d8       ??_C@_0BF@FPABNHEP@ti?4sdo?4ce?4osal?4SemMP?$AA@ 000198d8     osal_wince:SemMP_wince.ov4TCE
+ 0001:000088f0       ??_C@_0BP@CAANBHAA@Leaving?5Sem_create?$DO?5sem?$FL0x?$CFx?$FN?6?$AA@ 000198f0     osal_wince:Sem_wince.ov4TCE
+ 0001:00008910       ??_C@_0CG@BIBHMMNI@Sem_create?$DO?5CreateSemaphore?$CI?$CJ?5fa@ 00019910     osal_wince:Sem_wince.ov4TCE
+ 0001:00008938       ??_C@_0CB@OMCNNIED@Sem_create?$DO?5Memory_alloc?5failed?6@ 00019938     osal_wince:Sem_wince.ov4TCE
+ 0001:0000895c       ??_C@_0BH@CJKCDGCK@Sem_create?$DO?5count?3?5?$CFd?6?$AA@ 0001995c     osal_wince:Sem_wince.ov4TCE
+ 0001:00008974       ??_C@_0BF@JDNLBDEB@Leaving?5Sem_delete?$DO?6?$AA@ 00019974     osal_wince:Sem_wince.ov4TCE
+ 0001:0000898c       ??_C@_0BP@DOHFBCB@Entered?5Sem_delete?$DO?5sem?$FL0x?$CFx?$FN?6?$AA@ 0001998c     osal_wince:Sem_wince.ov4TCE
+ 0001:000089ac       ??_C@_0CI@GIHFDCIK@Leaving?5Sem_pend?$DO?5sem?$FL0x?$CFx?$FN?5stat@ 000199ac     osal_wince:Sem_wince.ov4TCE
+ 0001:000089d4       ??_C@_0M@EDJCCMMG@Sem_wince?4c?$AA@ 000199d4     osal_wince:Sem_wince.ov4TCE
+ 0001:000089e0       ??_C@_0CL@DAOMIKJF@Entered?5Sem_pend?$DO?5sem?$FL0x?$CFx?$FN?5time@ 000199e0     osal_wince:Sem_wince.ov4TCE
+ 0001:00008a0c       ??_C@_0BN@OHJCJCNB@Leaving?5Sem_post?$DO?5sem?$FL0x?$CFx?$FN?6?$AA@ 00019a0c     osal_wince:Sem_wince.ov4TCE
+ 0001:00008a2c       ??_C@_0BN@JBIDKCGI@Entered?5Sem_post?$DO?5sem?$FL0x?$CFx?$FN?6?$AA@ 00019a2c     osal_wince:Sem_wince.ov4TCE
+ 0001:00008a4c       ??_C@_0BD@IMAMBBPL@ti?4sdo?4ce?4osal?4Sem?$AA@ 00019a4c     osal_wince:Sem_wince.ov4TCE
+ 0001:00008a60       ??_C@_02KFNNPAPE@XU?$AA@   00019a60     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008a64       ??_C@_0DA@LCIKNFAI@XdmUtils_validateExtendedStruct?$DO@ 00019a64     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008a98       ??_C@_0FM@OODILFNO@ERROR?$DO?5invalid?5extended?5struct?5?$CI@ 00019a98     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008af4       ??_C@_0CF@DNGMLDPE@ERROR?$DO?5extended?5struct?5?$CI?$CFs?$CJ?5is?5N@ 00019af4     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008b20       ??_C@_0EN@BLIALAMJ@XdmUtils_validateExtendedStruct?$DO@ 00019b20     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008b70       ??_C@_0EL@LHAHCPLE@ERROR?$DO?5invalid?5bufDesc?5?$CI?$CFs?$CJ?5dete@ 00019b70     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008bbc       ??_C@_0CF@FIANNDDF@ERROR?$DO?5bufDesc?5?$CI?$CFs?$CJ?5pointer?5is?5N@ 00019bbc     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008be4       ??_C@_0DA@FKLECCFJ@XdmUtils_validateSparseBufDesc1?$DO@ 00019be4     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008c14       ??_C@_0DP@MLAILIKF@XdmUtils_validateSparseBufDesc1?$DO@ 00019c14     XdmUtils:XdmUtils.ov4TCE
+ 0001:00008c54       ??_C@_04CINKAFHM@?5?0?$DL?1?$AA@ 00019c54     gt:gt.ov4TCE
+ 0001:00008c5c       ??_C@_05KCANAOOJ@?$CFs?5?9?5?$AA@ 00019c5c     gt:gt.ov4TCE
+ 0001:00008c64       ??_C@_02PBFOLPKM@?$FN?5?$AA@ 00019c64     gt:gt.ov4TCE
+ 0001:00008c68       ??_C@_09HHHMJDKC@?5S?30x?$CF08x?$AA@ 00019c68     gt:gt.ov4TCE
+ 0001:00008c74       ??_C@_09BDBNPOGL@?5T?30x?$CF08x?$AA@ 00019c74     gt:gt.ov4TCE
+ 0001:00008c80       ??_C@_03JGJPCCHE@?$CL?$CFd?$AA@ 00019c80     gt:gt.ov4TCE
+ 0001:00008c84       ??_C@_01OHGJGJJP@?$FL?$AA@ 00019c84     gt:gt.ov4TCE
+ 0001:00008c88       ??_C@_08CBLKDOLL@?$EA0x?$CF08x?3?$AA@ 00019c88     gt:gt.ov4TCE
+ 0001:00008c94       ??_C@_0BC@FLAJMFKP@?$EA?$CFd?0?$CF03d?0?$CF03dtk?3?5?$AA@ 00019c94     gt:gt.ov4TCE
+ 0001:00008ca8       ??_C@_0M@ODOGHGLG@?$EA?$CFd?4?$CF03ds?3?5?$AA@ 00019ca8     gt:gt.ov4TCE
+ 0001:00008cb4       ??_C@_0BC@PDMEJDGP@?$EA?$CFd?0?$CF03d?0?$CF03dus?3?5?$AA@ 00019cb4     gt:gt.ov4TCE
+ 0001:00008cc8       ??_C@_0BA@EAOLIBIB@?$EA?$CL?$CF03d?0?$CF03dus?3?5?$AA@ 00019cc8     gt:gt.ov4TCE
+ 0001:00008cd8       ??_C@_03DDFHDBAB@?$FL?$FN?5?$AA@ 00019cd8     gt:gt.ov4TCE
+ 0001:00008cdc       ??_C@_08EFPLLME@?$FL?$FN?5?$CFs?5?9?5?$AA@ 00019cdc     gt:gt.ov4TCE
+ 0001:00008ce8       ??_C@_0M@CJCLFIAD@?$FL?$CL?$CFd?$FN?5?$CFs?5?9?5?$AA@ 00019ce8     gt:gt.ov4TCE
+ 0001:00008cf4       ??_C@_0BC@MFLBPNI@?$FL?$CL?$CFd?5T?30x?$CF08x?$FN?5?9?5?$AA@ 00019cf4     gt:gt.ov4TCE
+ 0001:00008d08       ??_C@_0BF@CELKILDP@?$FL?$CL?$CFd?5T?30x?$CF08x?$FN?5?$CFs?5?9?5?$AA@ 00019d08     gt:gt.ov4TCE
+ 0001:00008d20       ??_C@_0BO@CBLJDCCI@?$EA0x?$CF08x?3?5?$FL?$CL?$CFd?5T?30x?$CF08x?$FN?5?$CFs?5?9?5?$AA@ 00019d20     gt:gt.ov4TCE
+ 0001:00008d40       ??_C@_0CG@HJNOJIPB@?$EA?$CFd?0?$CF03d?0?$CF03dtk?3?5?$FL?$CL?$CFd?5T?30x?$CF08x?$FN?5@ 00019d40     gt:gt.ov4TCE
+ 0001:00008d68       ??_C@_0CA@LHJEGIIP@?$EA?$CFd?4?$CF03ds?3?5?$FL?$CL?$CFd?5T?30x?$CF08x?$FN?5?$CFs?5?9?5?$AA@ 00019d68     gt:gt.ov4TCE
+ 0001:00008d88       ??_C@_0CG@HBDDELHM@?$EA?$CFd?0?$CF03d?0?$CF03dus?3?5?$FL?$CL?$CFd?5T?30x?$CF08x?$FN?5@ 00019d88     gt:gt.ov4TCE
+ 0001:00008db0       ??_C@_0CE@DABFKKGC@?$EA?$CL?$CF03d?0?$CF03dus?3?5?$FL?$CL?$CFd?5T?30x?$CF08x?$FN?5?$CFs@ 00019db0     gt:gt.ov4TCE
+ 0001:00008dd4       ??_C@_0BJ@DEOFEJJC@?$EA0x?$CF08x?3?$FLT?30x?$CF08x?$FN?5?$CFs?5?9?5?$AA@ 00019dd4     gt:gt.ov4TCE
+ 0001:00008df0       ??_C@_06FBHIALA@GT?3?5?$CFs?$AA@ 00019df0     gt:gt.ov4TCE
+ 0001:00008df8       ??_C@_0CN@JLGDPOKP@Memory?5alloc?5for?5ModNameListElem@ 00019df8     gt:gt.ov4TCE
+ 0001:00008e28       ??_C@_0CI@BOKIKMMK@Memory?5alloc?5for?5ModNameListElem@ 00019e28     gt:gt.ov4TCE
+ 0001:00008e50       ??_C@_0BD@MPOFBEPO@illegal?5trace?5mask?$AA@ 00019e50     gt:gt.ov4TCE
+ 0001:00008e64       ??_C@_07IBDOKFPD@GT_time?$AA@ 00019e64     gt:gt.ov4TCE
+ 0001:00008e6c       ??_C@_09IGFGFFBC@GT_prefix?$AA@ 00019e6c     gt:gt.ov4TCE
+ 0001:00008e78       ??_C@_1M@OKHPFOFI@?$AAL?$AAP?$AAM?$AA1?$AA?3?$AA?$AA@ 00019e78     lpm:lpm_api.ov4TCE
+ 0001:00008e88       ??_C@_1II@BDPOLLKM@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAE?$AAi?$AAt?$AAh?$AAe?$AAr?$AA?5?$AAC?$AAM?$AAE?$AAM?$AA_?$AAi?$AAn?$AAi?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AAw@ 00019e88     cmem:cmem.obj
+ 0001:00008f10       ??_C@_1HO@NKGOPDHM@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?5?$AAC?$AAM?$AAE?$AAM?$AA?5@ 00019f10     cmem:cmem.obj
+ 0001:00008f90       ??_C@_1IG@JBDDMLC@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAI?$AAf?$AA?5?$AAC?$AAM?$AAE?$AAM?$AA_?$AAi?$AAn?$AAi?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AAw@ 00019f90     cmem:cmem.obj
+ 0001:00009018       ??_C@_1EG@GEKPGGFC@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?5?$AAm?$AAe?$AAs?$AAs?$AAa?$AAg?$AAe?$AAs@ 0001a018     cmem:cmem.obj
+ 0001:00009060       ??_C@_1HC@IJMDCIDN@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAP?$AAo?$AAo?$AAl?$AA?3?$AA?5?$AAi?$AAo?$AAc?$AAt?$AAl?$AA?5?$AA?$CF?$AAs?$AA?5@ 0001a060     cmem:cmem.obj
+ 0001:000090d4       ??_C@_0BE@KLPMOAPL@CMEM_IOCALLOCCACHED?$AA@ 0001a0d4     cmem:cmem.obj
+ 0001:000090e8       ??_C@_0O@MLAGLLMM@CMEM_IOCALLOC?$AA@ 0001a0e8     cmem:cmem.obj
+ 0001:000090f8       ??_C@_1FI@PDJNAMOK@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAH?$AAe?$AAa?$AAp?$AA?3?$AA?5?$AAi?$AAo?$AAc?$AAt?$AAl?$AA?5?$AA?$CF?$AAs?$AA?5@ 0001a0f8     cmem:cmem.obj
+ 0001:00009150       ??_C@_0BI@DKEAIDBJ@CMEM_IOCALLOCHEAPCACHED?$AA@ 0001a150     cmem:cmem.obj
+ 0001:00009168       ??_C@_0BC@KANGPNNF@CMEM_IOCALLOCHEAP?$AA@ 0001a168     cmem:cmem.obj
+ 0001:00009180       ??_C@_1EM@BJEPMKEE@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAf?$AAr?$AAe?$AAe?$AA?3?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAf?$AAr?$AAe?$AAe@ 0001a180     cmem:cmem.obj
+ 0001:000091d0       ??_C@_1HK@PAIBBAAG@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAg?$AAe?$AAt?$AAP?$AAo?$AAo?$AAl?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAg@ 0001a1d0     cmem:cmem.obj
+ 0001:00009250       ??_C@_1HI@OPGJOMO@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAg?$AAe?$AAt?$AAP?$AAh?$AAy?$AAs?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAg@ 0001a250     cmem:cmem.obj
+ 0001:000092c8       ??_C@_1FM@CCMAPMKD@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAc?$AAa?$AAc?$AAh?$AAe?$AAW?$AAb?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAw@ 0001a2c8     cmem:cmem.obj
+ 0001:00009328       ??_C@_1HM@PFJPPOEN@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAc?$AAa?$AAc?$AAh?$AAe?$AAW?$AAb?$AAI?$AAn?$AAv?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt@ 0001a328     cmem:cmem.obj
+ 0001:000093a8       ??_C@_1GA@FIBMONO@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAc?$AAa?$AAc?$AAh?$AAe?$AAI?$AAn?$AAv?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5@ 0001a3a8     cmem:cmem.obj
+ 0001:00009408       ??_C@_1IA@CHBIPLAM@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAg?$AAe?$AAt?$AAV?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt@ 0001a408     cmem:cmem.obj
+ 0001:00009488       ??_C@_1IE@PAKGNLMK@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAg?$AAe?$AAt?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5@ 0001a488     cmem:cmem.obj
+ 0001:00009510       ??_C@_1EI@EKMONBBA@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AA?5?$AA?5?$AAb?$AAl?$AAo?$AAc?$AAk?$AA?5?$AA?$CF?$AAd?$AA?5?$AAf?$AAr?$AAo?$AAm?$AA?5?$AAd?$AAr?$AAi?$AAv@ 0001a510     cmem:cmem.obj
+ 0001:00009558       ??_C@_1JA@JEHKIDEP@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAi?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAm?$AAa?$AAj?$AAo?$AAr?$AA?5?$AAv?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?5@ 0001a558     cmem:cmem.obj
+ 0001:000095e8       ??_C@_1GG@INBHPGOM@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAn?$AAe?$AAe?$AAd?$AAs?$AA?5?$AAd?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?5?$AAv?$AAe?$AAr@ 0001a5e8     cmem:cmem.obj
+ 0001:00009650       ??_C@_1FK@JLEDBNPH@?$AAC?$AAM?$AAE?$AAM?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAi?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAo?$AAp?$AAe?$AAn@ 0001a650     cmem:cmem.obj
+ 0001:000096ac       ??_C@_1M@IMNEMCPG@?$AAC?$AAM?$AAK?$AA1?$AA?3?$AA?$AA@ 0001a6ac     cmem:cmem.obj
+ 0001:000096b8       ??_C@_0M@EOGPLDIK@ID_API_PROC?$AA@ 0001a6b8     dsplinkapi:proc.o
+ 0001:000096c4       ??_C@_1M@DICHJON@?$AAD?$AAB?$AAL?$AA1?$AA?3?$AA?$AA@ 0001a6c4     dsplinkapi:drv_api.o
+ 0001:000096d0       ??_C@_1CG@NLHIHBOJ@?$AAD?$AAB?$AAL?$AA_?$AAD?$AAR?$AAV?$AAP?$AAr?$AAo?$AAt?$AAe?$AAc?$AAt?$AA_?$AAS?$AAe?$AAm?$AA?$AA@ 0001a6d0     dsplinkapi:drv_api.o
+ 0001:000096f8       ??_C@_0BC@EIMLJKGN@DSPLINK_MPCS_RESV?$AA@ 0001a6f8     dsplinkapi:_mpcs.o
+ 0001:0000970c       ??_C@_0BJ@PIJPOGHK@DSPLINK_MPCS_RESV_MPLIST?$AA@ 0001a70c     dsplinkapi:_mplist.o
+ 0001:00009728       ??_C@_0BJ@GPEIJAGB@DSPLINK_MPCS_RESV_RINGIO?$AA@ 0001a728     dsplinkapi:_ringio.o
+ 0001:00009744       ??_C@_07KLMGMKF@DMAPOOL?$AA@ 0001a744     dsplinkapi:pool_arch.o
+ 0001:00009800       writeFramePlanar           0001a800 f   appMain.o3530.ov4TCE
+ 0001:00009ad0       appMain                    0001aad0 f   appMain.o3530.ov4TCE
+ 0001:0000a40c       main                       0001b40c f   main.o3530.ov4TCE
+ 0001:0000a9c0       LAD_connect                0001b9c0 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000a9e0       LAD_disconnect             0001b9e0 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000aa00       LAD_releaseDsp             0001ba00 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000aa20       LAD_startupDsp             0001ba20 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000aa40       DMAN3_CE_init              0001ba40 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000aa60       DMAN3_CE_exit              0001ba60 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000aa80       DMAN3_grantDmaChannels     0001ba80 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000aaa0       DMAN3_releaseDmaChannels   0001baa0 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000aac0       RMAN_activateAllResources  0001bac0 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000aae0       RMAN_assignResources       0001bae0 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000ab00       RMAN_deactivateAllResources 0001bb00 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000ab20       RMAN_freeResources         0001bb20 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000ab40       RMAN_init                  0001bb40 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000ab60       RMAN_exit                  0001bb60 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000ab68       CERuntime_init             0001bb68 f   image_decode_io1_omap3530_exe.ov4TCE
+ 0001:0000b4a4       Buffer_create              0001c4a4 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000b7ec       Buffer_getAttrs            0001c7ec f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000b85c       Buffer_clone               0001c85c f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000b938       Buffer_print               0001c938 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bb04       Buffer_freeUseMask         0001cb04 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bb44       Buffer_setUseMask          0001cb44 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bb68       Buffer_resetUseMask        0001cb68 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bb94       Buffer_getUseMask          0001cb94 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bbc4       Buffer_getId               0001cbc4 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bbf4       Buffer_getUserPtr          0001cbf4 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bc24       Buffer_getPhysicalPtr      0001cc24 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bc54       Buffer_getSize             0001cc54 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bc84       Buffer_getType             0001cc84 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bcb0       Buffer_getNumBytesUsed     0001ccb0 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bce0       Buffer_setNumBytesUsed     0001cce0 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bd04       _Buffer_setId              0001cd04 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bd28       _Buffer_setBufTab          0001cd28 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bd4c       Buffer_setUserPtr          0001cd4c f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000be50       Buffer_setSize             0001ce50 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bea8       Buffer_getBufTab           0001cea8 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bed8       Buffer_isReference         0001ced8 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000bf08       Buffer_delete              0001cf08 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000c028       _BufferGfx_getObjectPtr    0001d028 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c06c       BufferGfx_getBufferAttrs   0001d06c f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c0b4       BufferGfx_calcSize         0001d0b4 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c1ac       BufferGfx_calcDimensions   0001d1ac f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c274       BufferGfx_resetDimensions  0001d274 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c2ac       BufferGfx_calcLineLength   0001d2ac f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c310       BufferGfx_getFrameType     0001d310 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c354       BufferGfx_setFrameType     0001d354 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c394       BufferGfx_getColorSpace    0001d394 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c3d8       BufferGfx_setColorSpace    0001d3d8 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c418       BufferGfx_getDimensions    0001d418 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c4b0       BufferGfx_setDimensions    0001d4b0 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c500       BufferGfx_setMaxDimensions 0001d500 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c570       _BufferGfx_setFrameDone    0001d570 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c5b0       _BufferGfx_toggleFrameDone 0001d5b0 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c604       _BufferGfx_getFrameDone    0001d604 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c648       _BufferGfx_init            0001d648 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c6e0       _BufferGfx_getAttrs        0001d6e0 f   dmai_wince_omap3530:BufferGfx.o3530.ov4TCE
+ 0001:0000c748       Time_create                0001d748 f   dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:0000c8a4       Time_delete                0001d8a4 f   dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:0000c8e0       Time_reset                 0001d8e0 f   dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:0000c994       Time_delta                 0001d994 f   dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:0000cad0       Time_total                 0001dad0 f   dmai_wince_omap3530:Time.o3530.ov4TCE
+ 0001:0000cbec       Idec1_process              0001dbec f   dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:0000d068       Idec1_create               0001e068 f   dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:0000d3f4       Idec1_delete               0001e3f4 f   dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:0000d44c       Idec1_getInBufSize         0001e44c f   dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:0000d4d8       Idec1_getOutBufSize        0001e4d8 f   dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:0000d564       Idec1_getVisaHandle        0001e564 f   dmai_wince_omap3530:Idec1.o3530.ov4TCE
+ 0001:0000d590       ColorSpace_getBpp          0001e590 f   dmai_wince_omap3530:ColorSpace.o3530.ov4TCE
+ 0001:0000d68c       Cpu_getDevice              0001e68c f   dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:0000d770       Cpu_getDeviceName          0001e770 f   dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:0000d7b0       Cpu_getLoad                0001e7b0 f   dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:0000d878       Cpu_create                 0001e878 f   dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:0000d980       Cpu_delete                 0001e980 f   dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:0000d9bc       Dmai_setLogLevel           0001e9bc f   dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:0000daf0       Dmai_init                  0001eaf0 f   dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0001:0000dbf4       getopt_long                0001ebf4 f   dmai_wince_omap3530:getopt_long.o3530.ov4TCE
+ 0001:0000eb9c       VideoStd_getResolution     0001fb9c f   dmai_wince_omap3530:VideoStd.o3530.ov4TCE
+ 0001:0000f2d8       IMGDEC1_create             000202d8 f   imgdec1:imgdec1.ov4TCE
+ 0001:0000f3a4       IMGDEC1_delete             000203a4 f   imgdec1:imgdec1.ov4TCE
+ 0001:0000f410       IMGDEC1_process            00020410 f   imgdec1:imgdec1.ov4TCE
+ 0001:0000f668       IMGDEC1_control            00020668 f   imgdec1:imgdec1.ov4TCE
+ 0001:00011b94       Engine_ctrlNode            00022b94 f   ce:Engine.ov4TCE
+ 0001:00011c80       Engine_getLastError        00022c80 f   ce:Engine.ov4TCE
+ 0001:00011c88       Engine_getRemoteVisa       00022c88 f   ce:Engine.ov4TCE
+ 0001:00011cd0       Engine_getNodeQueues       00022cd0 f   ce:Engine.ov4TCE
+ 0001:00012698       Engine_getNumServerAlgs    00023698 f   ce:Engine.ov4TCE
+ 0001:00012834       Engine_deleteNode          00023834 f   ce:Engine.ov4TCE
+ 0001:00012994       Engine_initFromServer      00023994 f   ce:Engine.ov4TCE
+ 0001:00013074       Engine_releaseTraceToken   00024074 f   ce:Engine.ov4TCE
+ 0001:00013114       Engine_requestTraceToken   00024114 f   ce:Engine.ov4TCE
+ 0001:000131cc       Engine_fwriteTrace         000241cc f   ce:Engine.ov4TCE
+ 0001:0001346c       Engine_init                0002446c f   ce:Engine.ov4TCE
+ 0001:000135e8       Engine_setTrace            000245e8 f   ce:Engine.ov4TCE
+ 0001:000139f8       Engine_call                000249f8 f   ce:Engine.ov4TCE
+ 0001:00013a94       Engine_close               00024a94 f   ce:Engine.ov4TCE
+ 0001:00013bb0       Engine_createNode2         00024bb0 f   ce:Engine.ov4TCE
+ 0001:0001436c       Engine_open                0002536c f   ce:Engine.ov4TCE
+ 0001:000145a4       Engine_getMemId            000255a4 f   ce:Engine.ov4TCE
+ 0001:000145ec       Engine_getCodecClassConfig 000255ec f   ce:Engine.ov4TCE
+ 0001:00014698       Engine_getConstName        00025698 f   ce:Engine.ov4TCE
+ 0001:000147cc       Engine_getFxns             000257cc f   ce:Engine.ov4TCE
+ 0001:0001492c       Server_disconnectTrace     0002592c f   ce:Server.ov4TCE
+ 0001:00014a34       Server_connectTrace        00025a34 f   ce:Server.ov4TCE
+ 0001:00014b8c       Server_init                00025b8c f   ce:Server.ov4TCE
+ 0001:00014c34       VISA_allocMsg              00025c34 f   ce:visa.ov4TCE
+ 0001:00014cf4       VISA_call                  00025cf4 f   ce:visa.ov4TCE
+ 0001:00014db0       VISA_delete                00025db0 f   ce:visa.ov4TCE
+ 0001:00014f48       VISA_enter                 00025f48 f   ce:visa.ov4TCE
+ 0001:00014ffc       VISA_exit                  00025ffc f   ce:visa.ov4TCE
+ 0001:000150ac       VISA_freeMsg               000260ac f   ce:visa.ov4TCE
+ 0001:00015180       VISA_getAlgFxns            00026180 f   ce:visa.ov4TCE
+ 0001:00015188       VISA_getAlgHandle          00026188 f   ce:visa.ov4TCE
+ 0001:000151a4       VISA_getMaxMsgSize         000261a4 f   ce:visa.ov4TCE
+ 0001:000151fc       VISA_create2               000261fc f   ce:visa.ov4TCE
+ 0001:00015864       VISA_create                00026864 f   ce:visa.ov4TCE
+ 0001:00015934       Algorithm_activate         00026934 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:000159d4       Algorithm_addGroup         000269d4 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00015a50       Algorithm_deactivate       00026a50 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00015b00       Algorithm_delete           00026b00 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00015c00       Algorithm_exit             00026c00 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00015c80       Algorithm_getAlgHandle     00026c80 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00015c88       Algorithm_init             00026c88 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00015cd8       Algorithm_removeGroup      00026cd8 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00015d44       Algorithm_create           00026d44 f   Algorithm_noOS:Algorithm_noOS.ov4TCE
+ 0001:00015fa0       ALG_activate               00026fa0 f   alg:alg_malloc.ov4TCE
+ 0001:00016034       ALG_addGroup               00027034 f   alg:alg_malloc.ov4TCE
+ 0001:00016174       ALG_deactivate             00027174 f   alg:alg_malloc.ov4TCE
+ 0001:00016204       ALG_exit                   00027204 f   alg:alg_malloc.ov4TCE
+ 0001:00016278       ALG_init                   00027278 f   alg:alg_malloc.ov4TCE
+ 0001:000163ac       ALG_removeGroup            000273ac f   alg:alg_malloc.ov4TCE
+ 0001:00016494       _ALG_freeMemory2           00027494 f   alg:alg_malloc.ov4TCE
+ 0001:000165d0       _ALG_allocMemory2          000275d0 f   alg:alg_malloc.ov4TCE
+ 0001:00016770       ALG_create                 00027770 f   alg:alg_create.ov4TCE
+ 0001:00016a40       ALG_delete                 00027a40 f   alg:alg_create.ov4TCE
+ 0001:00016ef0       dumpLinkCfgObj             00027ef0 f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00018e1c       Processor_delete           00029e1c f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000195ac       Processor_create           0002a5ac f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00019780       Processor_init             0002a780 f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00019888       Comm_alloc                 0002a888 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:000199a4       Comm_create                0002a9a4 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00019b2c       Comm_delete                0002ab2c f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00019c60       Comm_free                  0002ac60 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00019d18       Comm_get                   0002ad18 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00019eac       Comm_getMsgSize            0002aeac f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:00019f04       Comm_locate                0002af04 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:0001a098       Comm_put                   0002b098 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:0001a168       Comm_release               0002b168 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:0001a220       Comm_setSrcQueue           0002b220 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:0001a284       Comm_exit                  0002b284 f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:0001a2ec       Comm_init                  0002b2ec f   ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0001:0001a394       Power_on                   0002b394 f   ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0001a4f8       Power_off                  0002b4f8 f   ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0001a634       Power_connect              0002b634 f   ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0001a704       Power_disconnect           0002b704 f   ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0001a800       Power_init                 0002b800 f   ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0001adf4       Memory_getBufferVirtualAddress 0002bdf4 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001aee0       Memory_cacheInv            0002bee0 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001af00       Memory_cacheWb             0002bf00 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001af20       Memory_cacheWbInv          0002bf20 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001afa8       Memory_alloc               0002bfa8 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001b08c       Memory_free                0002c08c f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001b160       Memory_init                0002c160 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001b77c       Memory_getBufferPhysicalAddress 0002c77c f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001b960       GTConfig_free              0002c960 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001b970       GTConfig_gettimeofday      0002c970 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001b9c0       GTConfig_malloc            0002c9c0 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001b9d0       GTConfig_threadId          0002c9d0 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001b9e4       GTConfig_threadLock        0002c9e4 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001ba08       GTConfig_threadUnlock      0002ca08 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001bb3c       GTConfig_init              0002cb3c f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001c040       GTConfig_printf            0002d040 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001c068       GTConfig_error             0002d068 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001c0c0       Global_exit                0002d0c0 f   osal_wince:Global_wince.ov4TCE
+ 0001:0001c17c       Global_getenv              0002d17c f   osal_wince:Global_wince.ov4TCE
+ 0001:0001c300       Global_getProcessId        0002d300 f   osal_wince:Global_wince.ov4TCE
+ 0001:0001c314       Global_init                0002d314 f   osal_wince:Global_wince.ov4TCE
+ 0001:0001c3c8       Global_atexit              0002d3c8 f   osal_wince:Global_wince.ov4TCE
+ 0001:0001c46c       Lock_acquire               0002d46c f   osal_wince:Lock_wince.ov4TCE
+ 0001:0001c484       Lock_create                0002d484 f   osal_wince:Lock_wince.ov4TCE
+ 0001:0001c4bc       Lock_delete                0002d4bc f   osal_wince:Lock_wince.ov4TCE
+ 0001:0001c508       Lock_release               0002d508 f   osal_wince:Lock_wince.ov4TCE
+ 0001:0001c588       Lock_init                  0002d588 f   osal_wince:Lock_wince.ov4TCE
+ 0001:0001c65c       LockMP_init                0002d65c f   osal_wince:LockMP_wince.ov4TCE
+ 0001:0001c6a0       Thread_self                0002d6a0 f   osal_wince:Thread_wince.ov4TCE
+ 0001:0001c814       Thread_create              0002d814 f   osal_wince:Thread_wince.ov4TCE
+ 0001:0001ca90       Thread_delete              0002da90 f   osal_wince:Thread_wince.ov4TCE
+ 0001:0001cc94       Thread_init                0002dc94 f   osal_wince:Thread_wince.ov4TCE
+ 0001:0001ccec       Queue_get                  0002dcec f   osal_wince:Queue_wince.ov4TCE
+ 0001:0001cd24       Queue_put                  0002dd24 f   osal_wince:Queue_wince.ov4TCE
+ 0001:0001cd60       Queue_extract              0002dd60 f   osal_wince:Queue_wince.ov4TCE
+ 0001:0001cdc0       Queue_init                 0002ddc0 f   osal_wince:Queue_wince.ov4TCE
+ 0001:0001ce04       SemMP_create               0002de04 f   osal_wince:SemMP_wince.ov4TCE
+ 0001:0001cf54       SemMP_delete               0002df54 f   osal_wince:SemMP_wince.ov4TCE
+ 0001:0001d000       SemMP_pend                 0002e000 f   osal_wince:SemMP_wince.ov4TCE
+ 0001:0001d088       SemMP_post                 0002e088 f   osal_wince:SemMP_wince.ov4TCE
+ 0001:0001d158       SemMP_init                 0002e158 f   osal_wince:SemMP_wince.ov4TCE
+ 0001:0001d19c       Sem_create                 0002e19c f   osal_wince:Sem_wince.ov4TCE
+ 0001:0001d2b0       Sem_delete                 0002e2b0 f   osal_wince:Sem_wince.ov4TCE
+ 0001:0001d334       Sem_pend                   0002e334 f   osal_wince:Sem_wince.ov4TCE
+ 0001:0001d404       Sem_post                   0002e404 f   osal_wince:Sem_wince.ov4TCE
+ 0001:0001d4e0       Sem_init                   0002e4e0 f   osal_wince:Sem_wince.ov4TCE
+ 0001:0001d524       Log_printf                 0002e524 f   osal_wince:Log_noOS.ov4TCE
+ 0001:0001d540       File_stat                  0002e540 f   osal_wince:File_wince.ov4TCE
+ 0001:0001d594       XdmUtils_init              0002e594 f   XdmUtils:XdmUtils.ov4TCE
+ 0001:0001d5cc       XdmUtils_validateExtendedStruct 0002e5cc f   XdmUtils:XdmUtils.ov4TCE
+ 0001:0001d6d0       XdmUtils_validateSparseBufDesc1 0002e6d0 f   XdmUtils:XdmUtils.ov4TCE
+ 0001:0001d818       GT_curTime                 0002e818 f   gt:gt.ov4TCE
+ 0001:0001d850       GT_init                    0002e850 f   gt:gt.ov4TCE
+ 0001:0001d894       _GT_trace                  0002e894 f   gt:gt.ov4TCE
+ 0001:0001e0c4       GT_getModNameFlags         0002f0c4 f   gt:gt.ov4TCE
+ 0001:0001e3b0       _GT_create                 0002f3b0 f   gt:gt.ov4TCE
+ 0001:0001e5e8       _GT_set                    0002f5e8 f   gt:gt.ov4TCE
+ 0001:0001e810       LPM_close                  0002f810 f   lpm:lpm_api.ov4TCE
+ 0001:0001e840       LPM_connect                0002f840 f   lpm:lpm_api.ov4TCE
+ 0001:0001e860       LPM_disconnect             0002f860 f   lpm:lpm_api.ov4TCE
+ 0001:0001e880       LPM_exit                   0002f880 f   lpm:lpm_api.ov4TCE
+ 0001:0001e8a0       LPM_init                   0002f8a0 f   lpm:lpm_api.ov4TCE
+ 0001:0001e8a4       LPM_off                    0002f8a4 f   lpm:lpm_api.ov4TCE
+ 0001:0001e904       LPM_on                     0002f904 f   lpm:lpm_api.ov4TCE
+ 0001:0001e964       LPM_open                   0002f964 f   lpm:lpm_api.ov4TCE
+ 0001:0001ebb0       CMEM_free                  0002fbb0 f   cmem:cmem.obj
+ 0001:0001ecd0       CMEM_getPhys               0002fcd0 f   cmem:cmem.obj
+ 0001:0001ed54       CMEM_cacheWb               0002fd54 f   cmem:cmem.obj
+ 0001:0001ede4       CMEM_cacheWbInv            0002fde4 f   cmem:cmem.obj
+ 0001:0001ee74       CMEM_cacheInv              0002fe74 f   cmem:cmem.obj
+ 0001:0001ef04       CMEM_getVersion            0002ff04 f   cmem:cmem.obj
+ 0001:0001f024       CMEM_getBlock              00030024 f   cmem:cmem.obj
+ 0001:0001f040       CMEM_exit                  00030040 f   cmem:cmem.obj
+ 0001:0001f078       CMEM_init                  00030078 f   cmem:cmem.obj
+ 0001:0001f174       alloc                      00030174 f   cmem:cmem.obj
+ 0001:0001f1fc       CMEM_alloc                 000301fc f   cmem:cmem.obj
+ 0001:0001f218       PROC_destroy               00030218 f   dsplinkapi:proc.o
+ 0001:0001f40c       PROC_detach                0003040c f   dsplinkapi:proc.o
+ 0001:0001f654       PROC_getState              00030654 f   dsplinkapi:proc.o
+ 0001:0001f780       PROC_load                  00030780 f   dsplinkapi:proc.o
+ 0001:0001f89c       PROC_loadSection           0003089c f   dsplinkapi:proc.o
+ 0001:0001f8a8       PROC_read                  000308a8 f   dsplinkapi:proc.o
+ 0001:0001f928       PROC_write                 00030928 f   dsplinkapi:proc.o
+ 0001:0001f9a8       PROC_start                 000309a8 f   dsplinkapi:proc.o
+ 0001:0001fac4       PROC_stop                  00030ac4 f   dsplinkapi:proc.o
+ 0001:0001fbd0       PROC_GetSymbolAddress      00030bd0 f   dsplinkapi:proc.o
+ 0001:0001fc48       PROC_control               00030c48 f   dsplinkapi:proc.o
+ 0001:0001fcb0       PROC_resetCurStatus        00030cb0 f   dsplinkapi:proc.o
+ 0001:0001fcec       PROC_setup                 00030cec f   dsplinkapi:proc.o
+ 0001:0001ff04       PROC_attach                00030f04 f   dsplinkapi:proc.o
+ 0001:000201c8       PROC_Setup                 000311c8 f   dsplinkapi:proc.o
+ 0001:000201dc       POOL_open                  000311dc f   dsplinkapi:pool.o
+ 0001:000202fc       POOL_close                 000312fc f   dsplinkapi:pool.o
+ 0001:000203fc       POOL_alloc                 000313fc f   dsplinkapi:pool.o
+ 0001:00020478       POOL_free                  00031478 f   dsplinkapi:pool.o
+ 0001:000204f4       POOL_translateAddr         000314f4 f   dsplinkapi:pool.o
+ 0001:000205c0       POOL_getPoolId             000315c0 f   dsplinkapi:pool.o
+ 0001:000206a0       MSGQ_transportOpen         000316a0 f   dsplinkapi:msgq.o
+ 0001:000207cc       MSGQ_transportClose        000317cc f   dsplinkapi:msgq.o
+ 0001:000208dc       MSGQ_open                  000318dc f   dsplinkapi:msgq.o
+ 0001:00020958       MSGQ_close                 00031958 f   dsplinkapi:msgq.o
+ 0001:000209b8       MSGQ_locate                000319b8 f   dsplinkapi:msgq.o
+ 0001:00020a34       MSGQ_locateAsync           00031a34 f   dsplinkapi:msgq.o
+ 0001:00020ac0       MSGQ_release               00031ac0 f   dsplinkapi:msgq.o
+ 0001:00020b20       MSGQ_alloc                 00031b20 f   dsplinkapi:msgq.o
+ 0001:00020ba4       MSGQ_free                  00031ba4 f   dsplinkapi:msgq.o
+ 0001:00020bf8       MSGQ_put                   00031bf8 f   dsplinkapi:msgq.o
+ 0001:00020c68       MSGQ_get                   00031c68 f   dsplinkapi:msgq.o
+ 0001:00020d0c       MSGQ_getSrcQueue           00031d0c f   dsplinkapi:msgq.o
+ 0001:00020d5c       MSGQ_count                 00031d5c f   dsplinkapi:msgq.o
+ 0001:00020de0       MSGQ_setErrorHandler       00031de0 f   dsplinkapi:msgq.o
+ 0001:00020e24       DSPLINK_getUniqueHandle    00031e24 f   dsplinkapi:drv_api.o
+ 0001:00020e30       DSPLINK_InKernelSpace      00031e30 f   dsplinkapi:drv_api.o
+ 0001:00020e48       DRV_Initialize             00031e48 f   dsplinkapi:drv_api.o
+ 0001:00021008       DRV_Finalize               00032008 f   dsplinkapi:drv_api.o
+ 0001:000210ac       DRV_ProtectInit            000320ac f   dsplinkapi:drv_api.o
+ 0001:0002112c       DRV_ProtectExit            0003212c f   dsplinkapi:drv_api.o
+ 0001:00021178       DRV_ProtectEnter           00032178 f   dsplinkapi:drv_api.o
+ 0001:000211e8       DRV_ProtectLeave           000321e8 f   dsplinkapi:drv_api.o
+ 0001:00021270       DRV_Invoke                 00032270 f   dsplinkapi:drv_api.o
+ 0001:000224e4       _MEM_USR_init              000334e4 f   dsplinkapi:_mem_usr.o
+ 0001:000224ec       _MEM_USR_exit              000334ec f   dsplinkapi:_mem_usr.o
+ 0001:000224f4       _MEM_USR_alloc             000334f4 f   dsplinkapi:_mem_usr.o
+ 0001:00022548       _MEM_USR_calloc            00033548 f   dsplinkapi:_mem_usr.o
+ 0001:000225a4       _MEM_USR_free              000335a4 f   dsplinkapi:_mem_usr.o
+ 0001:000225dc       _IDM_USR_init              000335dc f   dsplinkapi:_idm_usr.o
+ 0001:00022610       _IDM_USR_exit              00033610 f   dsplinkapi:_idm_usr.o
+ 0001:00022644       _IDM_USR_create            00033644 f   dsplinkapi:_idm_usr.o
+ 0001:000226a0       _IDM_USR_delete            000336a0 f   dsplinkapi:_idm_usr.o
+ 0001:000226dc       _IDM_USR_acquireId         000336dc f   dsplinkapi:_idm_usr.o
+ 0001:00022748       _IDM_USR_releaseId         00033748 f   dsplinkapi:_idm_usr.o
+ 0001:0002278c       _SYNC_USR_init             0003378c f   dsplinkapi:_sync_usr.o
+ 0001:000227f0       _SYNC_USR_exit             000337f0 f   dsplinkapi:_sync_usr.o
+ 0001:00022838       _SYNC_USR_createCS         00033838 f   dsplinkapi:_sync_usr.o
+ 0001:00022994       _SYNC_USR_deleteCS         00033994 f   dsplinkapi:_sync_usr.o
+ 0001:00022a28       _SYNC_USR_enterCS          00033a28 f   dsplinkapi:_sync_usr.o
+ 0001:00022a74       _SYNC_USR_leaveCS          00033a74 f   dsplinkapi:_sync_usr.o
+ 0001:00022ac4       _SYNC_USR_sleep            00033ac4 f   dsplinkapi:_sync_usr.o
+ 0001:00022ad8       _SYNC_USR_stateObjInit     00033ad8 f   dsplinkapi:_sync_usr.o
+ 0001:00022b08       _NOTIFY_exit               00033b08 f   dsplinkapi:_notify.o
+ 0001:00022c98       _NOTIFY_init               00033c98 f   dsplinkapi:_notify.o
+ 0001:00022de0       _MPCS_exit                 00033de0 f   dsplinkapi:_mpcs.o
+ 0001:00022eb0       _MPCS_open                 00033eb0 f   dsplinkapi:_mpcs.o
+ 0001:000230f8       _MPCS_init                 000340f8 f   dsplinkapi:_mpcs.o
+ 0001:000231d4       _MPLIST_moduleExit         000341d4 f   dsplinkapi:_mplist.o
+ 0001:000232bc       _MPLIST_exit               000342bc f   dsplinkapi:_mplist.o
+ 0001:00023394       _MPLIST_moduleInit         00034394 f   dsplinkapi:_mplist.o
+ 0001:000234e4       _MPLIST_init               000344e4 f   dsplinkapi:_mplist.o
+ 0001:000235cc       _RingIO_moduleExit         000345cc f   dsplinkapi:_ringio.o
+ 0001:000236c4       _RingIO_exit               000346c4 f   dsplinkapi:_ringio.o
+ 0001:00023794       _RingIO_writerAcquire      00034794 f   dsplinkapi:_ringio.o
+ 0001:00023988       _RingIO_writerSetvAttribute 00034988 f   dsplinkapi:_ringio.o
+ 0001:00023bbc       _RingIO_checkNotifier      00034bbc f   dsplinkapi:_ringio.o
+ 0001:00023c6c       _RingIO_initInstance       00034c6c f   dsplinkapi:_ringio.o
+ 0001:00023d24       _RingIO_getFirstAcquiredAttr 00034d24 f   dsplinkapi:_ringio.o
+ 0001:00023dc0       _RingIO_getFirstAttr       00034dc0 f   dsplinkapi:_ringio.o
+ 0001:00023e88       _RingIO_releaseAttribute   00034e88 f   dsplinkapi:_ringio.o
+ 0001:00023f84       _RingIO_getContiguousDataSize 00034f84 f   dsplinkapi:_ringio.o
+ 0001:00024068       _RingIO_isOffsetInBetween  00035068 f   dsplinkapi:_ringio.o
+ 0001:000240d4       RingIO_notifyCallback      000350d4 f   dsplinkapi:_ringio.o
+ 0001:00024120       _RingIO_updateAttributes   00035120 f   dsplinkapi:_ringio.o
+ 0001:00024274       _RingIO_acquireLock        00035274 f   dsplinkapi:_ringio.o
+ 0001:00024288       _RingIO_releaseLock        00035288 f   dsplinkapi:_ringio.o
+ 0001:0002429c       _RingIO_moduleInit         0003529c f   dsplinkapi:_ringio.o
+ 0001:00024400       _RingIO_init               00035400 f   dsplinkapi:_ringio.o
+ 0001:000244f0       _RingIO_readerAcquire      000354f0 f   dsplinkapi:_ringio.o
+ 0001:00024850       _RingIO_writerRelease      00035850 f   dsplinkapi:_ringio.o
+ 0001:000249d4       _RingIO_readerRelease      000359d4 f   dsplinkapi:_ringio.o
+ 0001:00024c04       _RingIO_readerGetvAttribute 00035c04 f   dsplinkapi:_ringio.o
+ 0001:00024eb8       _RingIO_writerFlush        00035eb8 f   dsplinkapi:_ringio.o
+ 0001:00025214       _RingIO_readerFlush        00036214 f   dsplinkapi:_ringio.o
+ 0001:000255b0       _RingIO_writerCancel       000365b0 f   dsplinkapi:_ringio.o
+ 0001:00025778       _RingIO_readerCancel       00036778 f   dsplinkapi:_ringio.o
+ 0001:00025800       _RingIO_callNotifier       00036800 f   dsplinkapi:_ringio.o
+ 0001:00025934       _POOL_init                 00036934 f   dsplinkapi:_pool.o
+ 0001:0002595c       _POOL_exit                 0003695c f   dsplinkapi:_pool.o
+ 0001:00025984       _POOL_xltBuf               00036984 f   dsplinkapi:_pool.o
+ 0001:00025a3c       NOTIFY_register            00036a3c f   dsplinkapi:notify.o
+ 0001:00025b84       NOTIFY_unregister          00036b84 f   dsplinkapi:notify.o
+ 0001:00025c58       NOTIFY_notify              00036c58 f   dsplinkapi:notify.o
+ 0001:00025d1c       MPCS_open                  00036d1c f   dsplinkapi:mpcs.o
+ 0001:00025da4       MPCS_enter                 00036da4 f   dsplinkapi:mpcs.o
+ 0001:00025efc       MPCS_leave                 00036efc f   dsplinkapi:mpcs.o
+ 0001:00025fb4       MPCS_create                00036fb4 f   dsplinkapi:mpcs.o
+ 0001:00026288       MPCS_delete                00037288 f   dsplinkapi:mpcs.o
+ 0001:0002647c       MPCS_close                 0003747c f   dsplinkapi:mpcs.o
+ 0001:00026534       _MPCS_OS_open              00037534 f   dsplinkapi:_mpcs_os.o
+ 0001:0002659c       _MPCS_OS_close             0003759c f   dsplinkapi:_mpcs_os.o
+ 0001:000265e8       _MPCS_OS_enter             000375e8 f   dsplinkapi:_mpcs_os.o
+ 0001:000265fc       _MPCS_OS_leave             000375fc f   dsplinkapi:_mpcs_os.o
+ 0001:00026610       POOL_writeback             00037610 f   dsplinkapi:pool_arch.o
+ 0001:000266f4       POOL_invalidate            000376f4 f   dsplinkapi:pool_arch.o
+ 0001:000267d8       QueryPerformanceFrequency  000377d8 f   coredll:COREDLL.dll
+ 0001:000267e8       QueryPerformanceCounter    000377e8 f   coredll:COREDLL.dll
+ 0001:000267f8       GetIdleTime                000377f8 f   coredll:COREDLL.dll
+ 0001:00026808       GetTickCount               00037808 f   coredll:COREDLL.dll
+ 0001:00026818       __GetUserKData             00037818 f   coredll:COREDLL.dll
+ 0001:00026828       WaitForSingleObject        00037828 f   coredll:COREDLL.dll
+ 0001:00026838       ReleaseMutex               00037838 f   coredll:COREDLL.dll
+ 0001:00026848       CloseHandle                00037848 f   coredll:COREDLL.dll
+ 0001:00026858       NKDbgPrintfW               00037858 f   coredll:COREDLL.dll
+ 0001:00026868       CreateMutexW               00037868 f   coredll:COREDLL.dll
+ 0001:00026878       RegCloseKey                00037878 f   coredll:COREDLL.dll
+ 0001:00026888       RegQueryValueExW           00037888 f   coredll:COREDLL.dll
+ 0001:00026898       MultiByteToWideChar        00037898 f   coredll:COREDLL.dll
+ 0001:000268a8       RegCreateKeyExW            000378a8 f   coredll:COREDLL.dll
+ 0001:000268b8       LeaveCriticalSection       000378b8 f   coredll:COREDLL.dll
+ 0001:000268c8       EnterCriticalSection       000378c8 f   coredll:COREDLL.dll
+ 0001:000268d8       InterlockedDecrement       000378d8 f   coredll:COREDLL.dll
+ 0001:000268e8       InterlockedExchange        000378e8 f   coredll:COREDLL.dll
+ 0001:000268f8       InitializeCriticalSection  000378f8 f   coredll:COREDLL.dll
+ 0001:00026908       InterlockedIncrement       00037908 f   coredll:COREDLL.dll
+ 0001:00026918       SetThreadPriority          00037918 f   coredll:COREDLL.dll
+ 0001:00026928       Sleep                      00037928 f   coredll:COREDLL.dll
+ 0001:00026938       ResumeThread               00037938 f   coredll:COREDLL.dll
+ 0001:00026948       CreateThread               00037948 f   coredll:COREDLL.dll
+ 0001:00026958       TerminateThread            00037958 f   coredll:COREDLL.dll
+ 0001:00026968       DeleteCriticalSection      00037968 f   coredll:COREDLL.dll
+ 0001:00026978       CreateSemaphoreW           00037978 f   coredll:COREDLL.dll
+ 0001:00026988       ReleaseSemaphore           00037988 f   coredll:COREDLL.dll
+ 0001:00026998       GetFileAttributesW         00037998 f   coredll:COREDLL.dll
+ 0001:000269a8       DeviceIoControl            000379a8 f   coredll:COREDLL.dll
+ 0001:000269b8       CreateFileW                000379b8 f   coredll:COREDLL.dll
+ 0001:000269c8       GetSystemInfo              000379c8 f   coredll:COREDLL.dll
+ 0001:000269d8       GetLastError               000379d8 f   coredll:COREDLL.dll
+ 0001:000269e8       LocalFree                  000379e8 f   coredll:COREDLL.dll
+ 0001:000269f8       LocalAlloc                 000379f8 f   coredll:COREDLL.dll
+ 0001:00026a08       ReadFile                   00037a08 f   coredll:COREDLL.dll
+ 0001:00026a18       ExitThread                 00037a18 f   coredll:COREDLL.dll
+ 0001:00026a28       CeSetThreadPriority        00037a28 f   coredll:COREDLL.dll
+ 0001:00026a38       fwrite                     00037a38 f   corelibc:COREDLL.dll
+ 0001:00026a48       printf                     00037a48 f   corelibc:COREDLL.dll
+ 0001:00026a58       __rt_udiv                  00037a58 f   corelibc:COREDLL.dll
+ 0001:00026a68       __rt_sdiv                  00037a68 f   corelibc:COREDLL.dll
+ 0001:00026a78       fclose                     00037a78 f   corelibc:COREDLL.dll
+ 0001:00026a88       fread                      00037a88 f   corelibc:COREDLL.dll
+ 0001:00026a98       setvbuf                    00037a98 f   corelibc:COREDLL.dll
+ 0001:00026aa8       fopen                      00037aa8 f   corelibc:COREDLL.dll
+ 0001:00026ab8       memcpy                     00037ab8 f   corelibc:COREDLL.dll
+ 0001:00026ac8       __security_init_cookie     00037ac8 f   corelibc:seccinit.obj
+ 0001:00026b24       __GSHandlerCheckCommon     00037b24 f   corelibc:gshandler.obj
+ 0001:00026b60       __GSHandlerCheck           00037b60 f   corelibc:gshandler.obj
+ 0001:00026b84       memset                     00037b84 f   corelibc:COREDLL.dll
+ 0001:00026b94       __security_check_cookie    00037b94 f   corelibc:armsecgs.obj
+ 0001:00026ba8       __gsfailure                00037ba8 f   corelibc:armsecgs.obj
+ 0001:00026bec       atoi                       00037bec f   corelibc:COREDLL.dll
+ 0001:00026cc4       exit                       00037cc4 f   corelibc:cexit.obj
+ 0001:00026cdc       _exit                      00037cdc f   corelibc:cexit.obj
+ 0001:00026d1c       strncpy                    00037d1c f   corelibc:COREDLL.dll
+ 0001:00026d2c       fprintf                    00037d2c f   corelibc:COREDLL.dll
+ 0001:00026d3c       _getstdfilex               00037d3c f   corelibc:COREDLL.dll
+ 0001:00027130       mainCRTStartup             00038130 f   corelibc:crtstrta.obj
+ 0001:00027154       memcmp                     00038154 f   corelibc:COREDLL.dll
+ 0001:00027164       free                       00038164 f   corelibc:COREDLL.dll
+ 0001:00027174       calloc                     00038174 f   corelibc:COREDLL.dll
+ 0001:00027184       __rt_sdiv64by64            00038184 f   corelibc:COREDLL.dll
+ 0001:00027194       strncmp                    00038194 f   corelibc:COREDLL.dll
+ 0001:000271a4       strlen                     000381a4 f   corelibc:COREDLL.dll
+ 0001:000271b4       strchr                     000381b4 f   corelibc:COREDLL.dll
+ 0001:000271c4       strcmp                     000381c4 f   corelibc:COREDLL.dll
+ 0001:000271d4       strcpy                     000381d4 f   corelibc:COREDLL.dll
+ 0001:000271e4       sprintf                    000381e4 f   corelibc:COREDLL.dll
+ 0001:000271f4       malloc                     000381f4 f   corelibc:COREDLL.dll
+ 0001:00027204       getchar                    00038204 f   corelibc:COREDLL.dll
+ 0001:00027214       wcstombs                   00038214 f   corelibc:COREDLL.dll
+ 0001:00027224       _onexit                    00038224 f   corelibc:onexit.obj
+ 0001:000272f4       atexit                     000382f4 f   corelibc:onexit.obj
+ 0001:00027314       swprintf                   00038314 f   corelibc:COREDLL.dll
+ 0001:00027324       mbstowcs                   00038324 f   corelibc:COREDLL.dll
+ 0001:00027334       __security_gen_cookie2     00038334 f   corelibc:COREDLL.dll
+ 0001:00027344       __report_gsfailure         00038344 f   corelibc:COREDLL.dll
+ 0001:00027354       _initterm                  00038354 f   corelibc:crt0dat.obj
+ 0001:00027388       _cinit                     00038388 f   corelibc:crt0dat.obj
+ 0001:000273bc       _isctype                   000383bc f   corelibc:COREDLL.dll
+ 0001:000273cc       wcslen                     000383cc f   corelibc:COREDLL.dll
+ 0001:000273dc       _XcptFilter                000383dc f   corelibc:COREDLL.dll
+ 0001:000273ec       __GSHandlerCheck_SEH       000383ec f   corelibc:gshandlerseh.obj
+ 0001:0002743c       realloc                    0003843c f   corelibc:COREDLL.dll
+ 0001:0002744c       _msize                     0003844c f   corelibc:COREDLL.dll
+ 0001:0002745c       __C_specific_handler       0003845c f   corelibc:COREDLL.dll
+ 0001:0002746c       TerminateProcess           0003846c f   coredll:COREDLL.dll
+ 0001:0002747c       GetModuleFileNameW         0003847c f   coredll:COREDLL.dll
+ 0001:000274d0       __IMPORT_DESCRIPTOR_COREDLL 000384d0     coredll:COREDLL.dll
+ 0001:000274e4       __NULL_IMPORT_DESCRIPTOR   000384e4     coredll:COREDLL.dll
+ 0002:00000000       Global_buildInfo           00039000     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000180       ti_sdo_codecs_h264dec_ce_H264DEC_codecClassConfig 00039180     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000001c0       ti_sdo_codecs_h264enc_ce_H264ENC_codecClassConfig 000391c0     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000200       ti_sdo_codecs_jpegdec_ce_JPEGDEC_codecClassConfig 00039200     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000240       ti_sdo_codecs_jpegenc_ce_JPEGENC_codecClassConfig 00039240     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000280       ti_sdo_codecs_mpeg2dec_ce_MPEG2DEC_codecClassConfig 00039280     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000002c0       ti_sdo_codecs_mpeg4dec_ce_MPEG4DEC_codecClassConfig 000392c0     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000300       ti_sdo_codecs_mpeg4enc_ce_MPEG4ENC_codecClassConfig 00039300     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000580       Engine_config              00039580     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000588       ti_sdo_ce_ipc_dsplink_Ipc_maxTimeout 00039588     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:0000058c       Comm_MSGSIZE               0003958c     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000590       Comm_NUMMSGS               00039590     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000594       Comm_LOCATERETRIES         00039594     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000668       ti_sdo_ce_ipc_armDspLinkConfigServerNames 00039668     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000670       ti_sdo_ce_ipc_armDspLinkConfigs 00039670     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00000678       Memory_maxCbListSize       00039678     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:0000067c       _ti_sdo_utils_trace_GT_params 0003967c     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000006a4       GT                         000396a4     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000006a8       ti_sdo_ce_alg_ALG_maxGroups 000396a8     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000006ac       ti_sdo_ce_alg_ipcKey       000396ac     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000006b0       ti_sdo_fc_multiProcess     000396b0     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000006b4       UNIVERSAL_STUBS            000396b4     universal:universal_stubs.ov4TCE
+ 0002:000006fc       Dmai_debugLogLevel         000396fc     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0002:00000700       opterr                     00039700     dmai_wince_omap3530:getopt_long.o3530.ov4TCE
+ 0002:00000704       optind                     00039704     dmai_wince_omap3530:getopt_long.o3530.ov4TCE
+ 0002:00000708       optopt                     00039708     dmai_wince_omap3530:getopt_long.o3530.ov4TCE
+ 0002:00000718       IMGDEC1_STUBS              00039718     imgdec1:imgdec1_stubs.ov4TCE
+ 0002:00000744       IMGENC1_STUBS              00039744     imgenc1:imgenc1_stubs.ov4TCE
+ 0002:00000770       VIDDEC2_STUBS              00039770     viddec2:viddec2_stubs.ov4TCE
+ 0002:0000079c       VIDENC1_STUBS              0003979c     videnc1:videnc1_stubs.ov4TCE
+ 0002:000007c8       AUDDEC1_STUBS              000397c8     auddec1:auddec1_stubs.ov4TCE
+ 0002:000007f4       SPHDEC1_STUBS              000397f4     sphdec1:sphdec1_stubs.ov4TCE
+ 0002:00000820       SPHENC1_STUBS              00039820     sphenc1:sphenc1_stubs.ov4TCE
+ 0002:0000084c       Engine_ALGCREATEATTRS      0003984c     ce:Engine.ov4TCE
+ 0002:00000854       Engine_ceDebugDspTraceMask 00039854     ce:Engine.ov4TCE
+ 0002:0000085c       ti_sdo_ce__versionString   0003985c     ce:package_ti.sdo.ce.ov4TCE
+ 0002:00000860       ti_sdo_ce__versionNumArray 00039860     ce:package_ti.sdo.ce.ov4TCE
+ 0002:0000086c       ti_sdo_ce__whatString      0003986c     ce:package_ti.sdo.ce.ov4TCE
+ 0002:00000870       Processor_ATTRS            00039870     ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0002:0000088c       Global_cePoolAttrs         0003988c     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0002:00000b98       LINKCFG_dspConfig          00039b98     ipc_dsplink_3530:Processor_dsplink_linkcfg_OMAP3530.ov4TCE
+ 0002:00000be8       ti_sdo_ce_ipc_Processor_linkcfg 00039be8     ipc_dsplink_3530:Processor_dsplink_linkcfg_OMAP3530.ov4TCE
+ 0002:00000c10       ti_sdo_ce_ipc_Processor_linkcfg_OS 00039c10     ipc_dsplink_3530:Processor_dsplink_linkcfg_OS.ov4TCE
+ 0002:00000c1c       Memory_DEFAULTPARAMS       00039c1c     osal_wince:Memory_cmem.ov4TCE
+ 0002:00000c34       Thread_ATTRS               00039c34     osal_wince:Thread_wince.ov4TCE
+ 0002:00000c54       CMEM_DEFAULTPARAMS         00039c54     cmem:cmem.obj
+ 0002:00000c60       LINKCFG_config             00039c60     dsplinkapi:CFG_system.o
+ 0002:00001160       OMAP3530_SHMEM_Config      0003a160     dsplinkapi:CFG_OMAP3530_SHMEM.o
+ 0002:000011b0       LINKCFG_gppObject          0003a1b0     dsplinkapi:CFG_ARM.o
+ 0002:000011e4       __security_cookie          0003a1e4     corelibc:seccinit.obj
+ 0002:000011e8       __security_cookie_complement 0003a1e8     corelibc:seccinit.obj
+ 0002:00006200       ti_sdo_ce_dvtLog           0003f200     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00006204       Memory_skipVirtualAddressTranslation 0003f204     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00006238       ti_sdo_ce_Engine_noCommName 0003f238     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:0000623c       VISA_checked               0003f23c     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00006240       Global_useLinkArbiter      0003f240     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00006244       PWRM_doImcopConfig         0003f244     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00006248       ti_sdo_ce_alg_ALG_useHeap  0003f248     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:0000624c       ti_sdo_ce_alg_ALG_useCache 0003f24c     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00006250       _ALG_groupUsed             0003f250     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000062a0       _ALG_groupRefCount         0003f2a0     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:000062f0       _Algorithm_lockOwner       0003f2f0     image_decode_io1_omap3530_exe.ov4TCE
+ 0002:00006340       ti_sdo_ce_universal_UNIVERSAL_curTrace 0003f340     universal:universal.ov4TCE
+ 0002:0000635c       ti_sdo_dmai_GTMask         0003f35c     dmai_wince_omap3530:Dmai.o3530.ov4TCE
+ 0002:00006364       ti_sdo_ce_image1_IMGDEC1_curTrace 0003f364     imgdec1:imgdec1.ov4TCE
+ 0002:00006370       ti_sdo_ce_image1_IMGENC1_curTrace 0003f370     imgenc1:imgenc1.ov4TCE
+ 0002:0000637c       ti_sdo_ce_video2_VIDDEC2_curTrace 0003f37c     viddec2:viddec2.ov4TCE
+ 0002:00006388       ti_sdo_ce_video1_VIDENC1_curTrace 0003f388     videnc1:videnc1.ov4TCE
+ 0002:00006394       ti_sdo_ce_audio1_AUDDEC1_curTrace 0003f394     auddec1:auddec1.ov4TCE
+ 0002:000063a0       ti_sdo_ce_speech1_SPHDEC1_curTrace 0003f3a0     sphdec1:sphdec1.ov4TCE
+ 0002:000063ac       ti_sdo_ce_speech1_SPHENC1_curTrace 0003f3ac     sphenc1:sphenc1.ov4TCE
+ 0002:000064b8       Engine_alwaysCollectDspTrace 0003f4b8     ce:Engine.ov4TCE
+ 0002:000064e0       Server_holdingTraceToken   0003f4e0     ce:Server.ov4TCE
+ 0002:00006558       Comm_ATTRS                 0003f558     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0002:0000656c       Global_cePoolId            0003f56c     ipc_dsplink_3530:Comm_dsplink.ov4TCE
+ 0002:00006744       GT_config_traceOutStream   0003f744     osal_wince:GT_config_wince.ov4TCE
+ 0002:00006864       Lock_system                0003f864     osal_wince:Lock_wince.ov4TCE
+ 0002:00006874       gListCSInitialized         0003f874     osal_wince:Thread_wince.ov4TCE
+ 0002:00006878       pListCS                    0003f878     osal_wince:Thread_wince.ov4TCE
+ 0002:000068e0       DRV_handle                 0003f8e0     dsplinkapi:proc.o
+ 0002:000068e4       PROC_linkCfgPtr            0003f8e4     dsplinkapi:proc.o
+ 0002:000068e8       PROC_stateObj              0003f8e8     dsplinkapi:proc.o
+ 0002:00006cb4       LINKCFG_gppOsObject        0003fcb4     dsplinkapi:CFG_WinCE.o
+ 0002:00006cc0       _exitflag                  0003fcc0     corelibc:cexit.obj
+ 0002:00006cc4       __argv                     0003fcc4     corelibc:crtstrta.obj
+ 0002:00006cc8       __argc                     0003fcc8     corelibc:crtstrta.obj
+ 0002:00006ce0       _ALG_sems                  0003fce0     <common>
+ 0002:00006d30       optreset                   0003fd30     <common>
+ 0002:00006d34       optarg                     0003fd34     <common>
+ 0002:00006d38       PerformanceFrequency       0003fd38     <common>
+ 0002:00006d40       ti_sdo_ce_alg_GTMask       0003fd40     <common>
+ 0002:00006d50       gThreadPrivateDataList     0003fd50     <common>
+ 0002:00006d60       NOTIFY_state               0003fd60     <common>
+ 0002:00006dc0       POOL_addrConfig            0003fdc0     <common>
+ 0002:000070c0       RingIO_State               000400c0     <common>
+ 0002:000070e0       MPLIST_State               000400e0     <common>
+ 0002:00007100       MPCS_State                 00040100     <common>
+ 0002:00007120       __onexitend                00040120     <common>
+ 0002:00007124       __onexitbegin              00040124     <common>
+
+ entry point at        0001:00027130
+
+ Static symbols
+
+ 0001:0000a334       writeFrameUYVY             0001b334 f   appMain.o3530.ov4TCE
+ 0001:0000a494       parseArgs                  0001b494 f   main.o3530.ov4TCE
+ 0001:0000a974       usage                      0001b974 f   main.o3530.ov4TCE
+ 0001:0000acc4       marshallMsg                0001bcc4 f   universal:universal_stubs.ov4TCE
+ 0001:0000b0b4       process                    0001c0b4 f   universal:universal_stubs.ov4TCE
+ 0001:0000b180       control                    0001c180 f   universal:universal_stubs.ov4TCE
+ 0001:0000b768       _Buffer_init               0001c768 f   dmai_wince_omap3530:Buffer.o3530.ov4TCE
+ 0001:0000d73c       getDevice                  0001e73c f   dmai_wince_omap3530:Cpu.o3530.ov4TCE
+ 0001:0000e2bc       permute_args               0001f2bc f   dmai_wince_omap3530:getopt_long.o3530.ov4TCE
+ 0001:0000e434       gcd                        0001f434 f   dmai_wince_omap3530:getopt_long.o3530.ov4TCE
+ 0001:0000e49c       getopt_internal            0001f49c f   dmai_wince_omap3530:getopt_long.o3530.ov4TCE
+ 0001:0000ed90       marshallMsg                0001fd90 f   imgdec1:imgdec1_stubs.ov4TCE
+ 0001:0000efd4       process                    0001ffd4 f   imgdec1:imgdec1_stubs.ov4TCE
+ 0001:0000f09c       control                    0002009c f   imgdec1:imgdec1_stubs.ov4TCE
+ 0001:0000f8ec       marshallMsg                000208ec f   imgenc1:imgenc1_stubs.ov4TCE
+ 0001:0000fb30       process                    00020b30 f   imgenc1:imgenc1_stubs.ov4TCE
+ 0001:0000fbf8       control                    00020bf8 f   imgenc1:imgenc1_stubs.ov4TCE
+ 0001:0000fe34       marshallMsg                00020e34 f   viddec2:viddec2_stubs.ov4TCE
+ 0001:00010114       unmarshallMsg              00021114 f   viddec2:viddec2_stubs.ov4TCE
+ 0001:00010380       process                    00021380 f   viddec2:viddec2_stubs.ov4TCE
+ 0001:000103f4       control                    000213f4 f   viddec2:viddec2_stubs.ov4TCE
+ 0001:00010630       marshallMsg                00021630 f   videnc1:videnc1_stubs.ov4TCE
+ 0001:00010890       unmarshallMsg              00021890 f   videnc1:videnc1_stubs.ov4TCE
+ 0001:00010984       process                    00021984 f   videnc1:videnc1_stubs.ov4TCE
+ 0001:000109f8       control                    000219f8 f   videnc1:videnc1_stubs.ov4TCE
+ 0001:00010c2c       marshallMsg                00021c2c f   auddec1:auddec1_stubs.ov4TCE
+ 0001:00010e70       process                    00021e70 f   auddec1:auddec1_stubs.ov4TCE
+ 0001:00010f38       control                    00021f38 f   auddec1:auddec1_stubs.ov4TCE
+ 0001:00011174       marshallMsg                00022174 f   sphdec1:sphdec1_stubs.ov4TCE
+ 0001:0001132c       unmarshallMsg              0002232c f   sphdec1:sphdec1_stubs.ov4TCE
+ 0001:000113c4       process                    000223c4 f   sphdec1:sphdec1_stubs.ov4TCE
+ 0001:00011438       control                    00022438 f   sphdec1:sphdec1_stubs.ov4TCE
+ 0001:00011684       marshallMsg                00022684 f   sphenc1:sphenc1_stubs.ov4TCE
+ 0001:0001183c       unmarshallMsg              0002283c f   sphenc1:sphenc1_stubs.ov4TCE
+ 0001:000118d4       process                    000228d4 f   sphenc1:sphenc1_stubs.ov4TCE
+ 0001:00011948       control                    00022948 f   sphenc1:sphenc1_stubs.ov4TCE
+ 0001:00011d00       cleanup                    00022d00 f   ce:Engine.ov4TCE
+ 0001:00011e00       outputDspTrace             00022e00 f   ce:Engine.ov4TCE
+ 0001:00011f30       freeServerTab              00022f30 f   ce:Engine.ov4TCE
+ 0001:00012074       getServerKey               00023074 f   ce:Engine.ov4TCE
+ 0001:000121dc       getRpcProtocolVersion      000231dc f   ce:Engine.ov4TCE
+ 0001:000122ac       isa                        000232ac f   ce:Engine.ov4TCE
+ 0001:0001239c       name2Uuid                  0002339c f   ce:Engine.ov4TCE
+ 0001:00012458       rserverClose               00023458 f   ce:Engine.ov4TCE
+ 0001:000124f8       rserverOpen                000234f8 f   ce:Engine.ov4TCE
+ 0001:00013778       allocNode                  00024778 f   ce:Engine.ov4TCE
+ 0001:0001391c       checkServer                0002491c f   ce:Engine.ov4TCE
+ 0001:00014004       rmsInit                    00025004 f   ce:Engine.ov4TCE
+ 0001:00014a0c       cleanup                    00025a0c f   ce:Server.ov4TCE
+ 0001:00016ac4       modifyDefaultLinkCfgObjectBasedOnUserCfgData 00027ac4 f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:000189a8       procDelete                 000299a8 f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00018d68       doCmd                      00029d68 f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00018f1c       cleanup                    00029f1c f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00018fe0       procCreate                 00029fe0 f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:00019480       daemon                     0002a480 f   ipc_dsplink_3530:Processor_dsplink.ov4TCE
+ 0001:0001a7d4       cleanup                    0002b7d4 f   ipc_dsplink_3530:Power_dsplink.ov4TCE
+ 0001:0001a848       getPhysicalAddress         0002b848 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001a94c       getVirtualAddress          0002b94c f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001aa48       myMalloc                   0002ba48 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001aaac       contigAlloc                0002baac f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001acf0       contigFree                 0002bcf0 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001af30       cleanup                    0002bf30 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001b22c       addContigBuf               0002c22c f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001b650       removeContigBuf            0002c650 f   osal_wince:Memory_cmem.ov4TCE
+ 0001:0001ba28       cleanup                    0002ca28 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001bab4       formatNum                  0002cab4 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001bc30       doPrint                    0002cc30 f   osal_wince:GT_config_wince.ov4TCE
+ 0001:0001c51c       cleanup                    0002d51c f   osal_wince:Lock_wince.ov4TCE
+ 0001:0001c600       cleanup                    0002d600 f   osal_wince:LockMP_wince.ov4TCE
+ 0001:0001c7a4       runStub                    0002d7a4 f   osal_wince:Thread_wince.ov4TCE
+ 0001:0001c7fc       cleanup                    0002d7fc f   osal_wince:Thread_wince.ov4TCE
+ 0001:0001cd9c       cleanup                    0002dd9c f   osal_wince:Queue_wince.ov4TCE
+ 0001:0001d100       cleanup                    0002e100 f   osal_wince:SemMP_wince.ov4TCE
+ 0001:0001d488       cleanup                    0002e488 f   osal_wince:Sem_wince.ov4TCE
+ 0001:0001e058       getModNameFlagsAddr        0002f058 f   gt:gt.ov4TCE
+ 0001:0001e130       addModName                 0002f130 f   gt:gt.ov4TCE
+ 0001:0001e218       applyOp                    0002f218 f   gt:gt.ov4TCE
+ 0001:0001e298       wildcardUpdate             0002f298 f   gt:gt.ov4TCE
+ 0001:0001e40c       setMask                    0002f40c f   gt:gt.ov4TCE
+ 0001:0001e9e8       validate_init              0002f9e8 f   cmem:cmem.obj
+ 0001:0001ea48       allocFromPool              0002fa48 f   cmem:cmem.obj
+ 0001:0001eaf8       allocFromHeap              0002faf8 f   cmem:cmem.obj
+ 0001:0001ec44       getPoolFromBlock           0002fc44 f   cmem:cmem.obj
+ 0001:0001ef7c       getBlock                   0002ff7c f   cmem:cmem.obj
+ 0001:0002125c       DRV_installCleanupRoutines 0003225c f   dsplinkapi:drv_api.o
+ 0001:00022b84       NOTIFY_eventWorker         00033b84 f   dsplinkapi:_notify.o
+ 0001:00026bfc       doexit                     00037bfc f   corelibc:cexit.obj
+ 0001:00026d4c       ?crtstart_FreeArguments@@YAXXZ 00037d4c f   corelibc:crtstrta.obj
+ 0001:00026d6c       ?crtstart_CountSpaceA@@YAXAAH0PBD@Z 00037d6c f   corelibc:crtstrta.obj
+ 0001:00026e38       ?crtstart_ParseArgsWA@@YAHPBG0AAHAAPAPAD@Z 00037e38 f   corelibc:crtstrta.obj
+ 0001:00027044       ?mainCRTStartupHelper@@YAXPAUHINSTANCE__@@PBG@Z 00038044 f   corelibc:crtstrta.obj

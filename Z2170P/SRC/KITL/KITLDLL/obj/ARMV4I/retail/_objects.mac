@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\kitl.obj\
+    obj\ARMV4I\retail\oemkitl.obj
+

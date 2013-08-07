@@ -1,0 +1,14 @@
+; All rights reserved ADENEO EMBEDDED 2010
+LIBRARY     OMAP_SIMPLE
+
+EXPORTS
+    SID_Init
+    SID_Deinit
+    SID_Open
+    SID_Close
+    SID_Read
+    SID_Write
+    SID_Seek
+    SID_PowerDown
+    SID_PowerUp
+    SID_IOControl

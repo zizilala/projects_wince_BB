@@ -1,0 +1,11 @@
+OBJECTS=\
+    obj\ARMV4I\retail\sdbusreq.obj\
+    obj\ARMV4I\retail\sddevice.obj\
+    obj\ARMV4I\retail\sdbus.obj\
+    obj\ARMV4I\retail\sdslot.obj\
+    obj\ARMV4I\retail\sdclient.obj\
+    obj\ARMV4I\retail\sddevinf.obj\
+    obj\ARMV4I\retail\sdiofeat.obj\
+    obj\ARMV4I\retail\sdworki.obj\
+    obj\ARMV4I\retail\sddebug.obj
+

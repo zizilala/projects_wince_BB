@@ -1,0 +1,705 @@
+// All rights reserved ADENEO EMBEDDED 2010
+/*
+================================================================================
+*             Texas Instruments OMAP(TM) Platform Software
+* (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+*
+* Use of this software is controlled by the terms and conditions found
+* in the license agreement under which this software has been supplied.
+*
+================================================================================
+*/
+//
+//  File: batt_pdd.c
+//
+//  Battery drivers PDD for the BQ2xxxxx chip.
+//
+#include "bsp.h"
+#undef ZONE_ERROR
+#undef ZONE_INIT
+#include <battimpl.h>
+#include <pm.h>
+#include "ceddkex.h"
+
+#include <initguid.h>
+#include "omap_hdq.h"
+#include "bci.h"
+#include "bq27000.h"
+
+
+//------------------------------------------------------------------------------
+//
+//  Type:  static string
+//
+static WCHAR _szChargeDefault[3] = L"\0\0";
+
+//------------------------------------------------------------------------------
+//
+//  Type:  BATTERY_PDD
+//
+typedef struct {
+    DWORD  hdqRetry;
+    DWORD  high;
+    DWORD  low;
+    DWORD  critical;
+    DWORD  ar;
+    WCHAR  szvbusCharge[256];
+    HANDLE hvbusCharge;
+    HANDLE hHDQ;
+    HANDLE hBCI;
+    DWORD  PreScale;
+    DWORD  nEOCTimeout;
+    DWORD  nOverVoltageTimeout;
+    DWORD  nOOBTemperatureTimeout;
+    DWORD  nOverChargeTimeout;
+    DWORD  acChargeCurrent;
+    DWORD  usbChargeCurrent;
+} Device_t;
+
+static Device_t s_Device;
+
+//------------------------------------------------------------------------------
+//  Device registry parameters
+
+static const DEVICE_REGISTRY_PARAM g_deviceRegParams[] = {
+    {
+        L"HdqRetry", PARAM_DWORD, FALSE, offset(Device_t, hdqRetry),
+        fieldsize(Device_t, hdqRetry), (VOID*)5
+    }, {
+        L"High", PARAM_DWORD, FALSE, offset(Device_t, high),
+        fieldsize(Device_t, high), (VOID*)20
+    }, {
+        L"Low", PARAM_DWORD, FALSE, offset(Device_t, low),
+        fieldsize(Device_t, low), (VOID*)15
+    }, {
+        L"Critical", PARAM_DWORD, FALSE, offset(Device_t, critical),
+        fieldsize(Device_t, critical), (VOID*)10
+    }, {
+        L"AR", PARAM_DWORD, FALSE, offset(Device_t, ar),
+        fieldsize(Device_t, ar), (VOID*)0
+    }, {
+        L"USBChargerNotify", PARAM_STRING, FALSE, offset(Device_t, szvbusCharge),
+        fieldsize(Device_t, szvbusCharge), (VOID*)_szChargeDefault
+    }, {
+        L"OverChargeTimeout", PARAM_DWORD, FALSE, offset(Device_t, nOverChargeTimeout),
+        fieldsize(Device_t, nOverChargeTimeout), (VOID*)-1
+    }, {
+        L"OverVoltageTimeout", PARAM_DWORD, FALSE, offset(Device_t, nOverVoltageTimeout),
+        fieldsize(Device_t, nOverVoltageTimeout), (VOID*)-1
+    }, {
+        L"OOBTemperatureTimeout", PARAM_DWORD, FALSE, offset(Device_t, nOOBTemperatureTimeout),
+        fieldsize(Device_t, nOOBTemperatureTimeout), (VOID*)-1
+    }, {
+        L"EndOfChargeTimeout", PARAM_DWORD, FALSE, offset(Device_t, nEOCTimeout),
+        fieldsize(Device_t, nEOCTimeout), (VOID*)1000
+    }, {
+        L"USBChargeCurrent", PARAM_DWORD, FALSE, offset(Device_t, usbChargeCurrent),
+        fieldsize(Device_t, usbChargeCurrent), (VOID*)500
+    }, {
+        L"ACChargeCurrent", PARAM_DWORD, FALSE, offset(Device_t, acChargeCurrent),
+        fieldsize(Device_t, acChargeCurrent), (VOID*)600
+    }, {
+        L"PreScale", PARAM_DWORD, FALSE, offset(Device_t, PreScale),
+        fieldsize(Device_t, PreScale), (VOID*)1
+    }
+};
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  GetData16
+//
+//  It reads one 16 bit value from the BQ and validates consistency.
+//
+static BOOL 
+GetData16(
+    UCHAR address, 
+    USHORT *pData
+    )
+{
+    BOOL rc = FALSE;
+    UCHAR low1=0, high1=0, high2;
+    DWORD start, ix;
+
+    for (ix = 0; ix < s_Device.hdqRetry; ix++) 
+        {
+        // Get beginning of measure cycle
+        start = GetTickCount();
+
+        // Read values first time        
+        if (!HdqRead(s_Device.hHDQ, address + 1, &high1)) break;
+        if (!HdqRead(s_Device.hHDQ, address, &low1)) break;
+
+        // Read high byte again
+        if (!HdqRead(s_Device.hHDQ, address + 1, &high2)) break;
+
+        // If we read same value again, we have correct number
+        if (high1 == high2) 
+            {
+            rc = TRUE;
+            break;
+            }
+
+        // Read low byte again
+        if (!HdqRead(s_Device.hHDQ, address, &low1)) break;
+
+        // If we made it in limit, use second high value
+        if ((GetTickCount() - start) < 800) 
+            {
+            high1 = high2;
+            rc = TRUE;
+            break;
+            }
+        } 
+
+    // Get final value
+    if (rc) 
+        {
+        *pData = (high1 << 8) | low1;
+        } 
+    else 
+        {
+        DEBUGMSG(ZONE_ERROR, (L"ERROR: BatteryPDDGetStatus: "
+            L"16-bit value inconsistency\r\n"
+            ));
+        }
+    return rc;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  GetData8
+//
+//  It reads one 8 bit value from the BQ
+//
+static BOOL 
+GetData8(
+    UCHAR address, 
+    UCHAR *pData
+    )
+{
+   return HdqRead(s_Device.hHDQ, address, pData);
+}    
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  NotifyThread
+//
+//  handles notifications from external modules about current power state
+//
+DWORD NotifyThread(
+    void* pData
+    )
+{
+    Device_t *pDevice = (Device_t*)pData;
+    
+    DEBUGMSG(ZONE_FUNCTION, (L"+NotifyThread()\r\n"));
+
+    // wait for a signal
+    for(;;)
+        {
+        if (WaitForSingleObject(pDevice->hvbusCharge, INFINITE) == WAIT_ABANDONED)
+            {
+                goto cleanUp;
+            }
+
+        // clear notification so we will get next notify
+        ResetEvent(pDevice->hvbusCharge);
+
+        // get current power state
+        switch (GetEventData(pDevice->hvbusCharge))
+            {
+            case 0:
+                // unknown power state check vbus line
+                BCI_SetChargeMode(pDevice->hBCI, kBCI_USBHost, FALSE);                
+                break;
+
+            case 1:
+                // low power vbus charge
+                BCI_SetChargeMode(pDevice->hBCI, kBCI_USBHost, TRUE);
+                break;
+            }
+        }
+
+cleanUp:    
+    DEBUGMSG(ZONE_FUNCTION, (L"-NotifyThread()\r\n"));
+
+    return 1;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  InitializeUsbNotifyThread
+//
+//  instantiates a notify thread if applicable
+//
+static BOOL
+InitializeUsbNotifyThread(
+    Device_t *pDevice
+    )
+{
+    HANDLE hThread;
+    
+    DEBUGMSG(ZONE_FUNCTION, (L"+InitializeUsbNotifyThread()\r\n"));
+
+    // first try creating event then try opening event
+    pDevice->hvbusCharge = CreateEvent(NULL, TRUE, FALSE, pDevice->szvbusCharge);
+    if (pDevice->hvbusCharge == INVALID_HANDLE_VALUE && 
+        GetLastError() == ERROR_ALREADY_EXISTS)
+        {
+        pDevice->hvbusCharge = OpenEvent(EVENT_ALL_ACCESS, FALSE,
+                                    pDevice->szvbusCharge);
+        }
+
+    if (pDevice->hvbusCharge == INVALID_HANDLE_VALUE)
+        {
+        pDevice->hvbusCharge = NULL;
+        }
+    else
+        {
+        // create notify thread
+        hThread = CreateThread(NULL, 0, NotifyThread, pDevice, 0, NULL);
+        if (hThread != NULL)
+            {
+            CloseHandle(hThread);
+            }
+        
+        DEBUGMSG(ZONE_ERROR && hThread == NULL, (L"ERROR: BatteryPDDGetStatus: "
+            L"Failed to spawn notify thread\r\n"
+            ));
+        }
+    
+    DEBUGMSG(ZONE_FUNCTION, (L"-InitializeUsbNotifyThread()\r\n"));
+    return TRUE;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  BatteryPDDInitialize
+//
+BOOL WINAPI 
+BatteryPDDInitialize(
+    LPCTSTR szContext
+    )
+{
+    BOOL rc = FALSE;
+
+    DEBUGMSG(ZONE_FUNCTION, (L"+BatteryPDDInitialize()\r\n"));
+
+    // Clear structure
+    memset(&s_Device, 0, sizeof(Device_t));
+
+    // Read device parameters
+    if (GetDeviceRegistryParams(szContext, &s_Device, 
+        dimof(g_deviceRegParams), g_deviceRegParams) != ERROR_SUCCESS) 
+	{
+        DEBUGMSG(ZONE_ERROR,(L"ERROR: BatteryPDDInitialize: "
+            L"Failed read driver registry parameters\r\n"
+            ));
+        goto cleanUp;
+	}
+    
+    // Open HDQ bus
+    if ((s_Device.hHDQ = HdqOpen()) == NULL) 
+	{
+        DEBUGMSG(ZONE_ERROR,(L"ERROR: BatteryPDDInitialize: "
+            L"Failed open HDQ device driver\r\n"
+            ));
+        goto cleanUp;
+	}
+
+    // Set AR register
+    if (s_Device.ar != 0) 
+        {
+        if (!HdqWrite(s_Device.hHDQ, BQ_ARL, (UCHAR)(s_Device.ar & 0xFF)) ||
+            !HdqWrite(s_Device.hHDQ, BQ_ARH, (UCHAR)((s_Device.ar >> 8) & 0xFF))) 
+            {
+            DEBUGMSG(ZONE_WARN, (L"WARN: BatteryPDDInitialize: "
+                L"AR register write error\r\n"
+                ));
+            }            
+        }
+
+    // initialize BCI 
+    s_Device.hBCI = BCI_Initialize(s_Device.nEOCTimeout, 
+                        s_Device.nOverChargeTimeout, 
+                        s_Device.nOverVoltageTimeout, 
+                        s_Device.nOOBTemperatureTimeout
+                        );
+    if (s_Device.hBCI == NULL)
+        {
+        DEBUGMSG(ZONE_WARN, (L"WARN: BatteryPDDInitialize: "
+                L"Failed to get handle to BCI\r\n"
+                ));
+        goto cleanUp;
+        }
+
+    // set the charge current/voltage scaling mode
+    BCI_SetPrescale(s_Device.hBCI, s_Device.PreScale);
+
+    BCI_SetVoltageMonitors(s_Device.hBCI, 
+        BCI_OV_VBAT | BCI_OV_VBUS | BCI_OV_VAC,
+        BCI_OV_VBAT | BCI_OV_VBUS | BCI_OV_VAC);
+
+    // initialize charge currents
+    BCI_SetChargeCurrent(s_Device.hBCI, kBCI_AC, s_Device.acChargeCurrent);
+    BCI_SetChargeCurrent(s_Device.hBCI, kBCI_USBHost, s_Device.usbChargeCurrent);
+
+    // check if there is event to notify of bus power
+    if (s_Device.szvbusCharge[0] != '\0')
+        {
+        InitializeUsbNotifyThread(&s_Device);
+        }
+
+    rc = TRUE;
+
+cleanUp:
+    DEBUGMSG(ZONE_FUNCTION, (L"-BatteryPDDInitialize\r\n"));
+    return rc;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  BatteryPDDDeinitialize
+//
+void WINAPI 
+BatteryPDDDeinitialize()
+{
+    DEBUGMSG(ZONE_FUNCTION, (L"+BatteryPDDDeinitialize\r\n"));
+
+    if (s_Device.hHDQ != NULL) HdqClose(s_Device.hHDQ);
+    if (s_Device.hBCI != NULL) BCI_Uninitialize(s_Device.hBCI);
+
+    DEBUGMSG(ZONE_FUNCTION, (L"-BatteryPDDDeinitialize\r\n"));
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  BatteryPDDResume
+//
+void WINAPI 
+BatteryPDDResume()
+{
+    DEBUGMSG(ZONE_FUNCTION, (L"+BatteryPDDResume\r\n"));
+    DEBUGMSG(ZONE_FUNCTION, (L"-BatteryPDDResume\r\n"));
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  BatteryPDDPowerHandler
+//
+void WINAPI 
+BatteryPDDPowerHandler(
+    BOOL off
+    )
+{
+    UNREFERENCED_PARAMETER(off);
+    DEBUGMSG(ZONE_FUNCTION, (L"+BatteryPDDPowerHandler(%d)\r\n",  off));
+    DEBUGMSG(ZONE_FUNCTION, (L"-BatteryPDDPowerHandler\r\n"));
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function: BatteryPDDGetLevels
+//
+//  Indicates how many battery levels will be reported by BatteryPDDGetStatus()
+//  in the BatteryFlag and BackupBatteryFlag fields of PSYSTEM_POWER_STATUS_EX2.
+//
+//  Returns the main battery level in the low word, and the backup battery
+//  level in the high word.
+//
+LONG 
+BatteryPDDGetLevels()
+{
+    LONG lLevels = MAKELONG(
+        3,      // Main battery levels
+        0       // Backup battery levels
+    );
+    return lLevels;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function: BatteryPDDSupportsChangeNotification
+//
+//  Returns FALSE since this platform does not support battery change
+//  notification.
+//
+BOOL 
+BatteryPDDSupportsChangeNotification()
+{
+    return FALSE;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function: BatteryPddIOControl
+//
+//  Battery driver needs to handle D0-D4 power notifications
+//
+//  Returns ERROR code.
+//
+DWORD
+BatteryPddIOControl(
+    DWORD  dwContext,
+    DWORD  Ioctl,
+    PUCHAR pInBuf,
+    DWORD  InBufLen, 
+    PUCHAR pOutBuf,
+    DWORD  OutBufLen,
+    PDWORD pdwBytesTransferred
+    )
+{
+    DWORD dwRet;
+
+    UNREFERENCED_PARAMETER(dwContext);
+    UNREFERENCED_PARAMETER(Ioctl);
+    UNREFERENCED_PARAMETER(pInBuf);
+    UNREFERENCED_PARAMETER(InBufLen);
+    UNREFERENCED_PARAMETER(pOutBuf);
+    UNREFERENCED_PARAMETER(OutBufLen);
+    UNREFERENCED_PARAMETER(pdwBytesTransferred);
+
+    switch (Ioctl)
+        {
+        default:
+            dwRet = ERROR_NOT_SUPPORTED;
+        }
+    return dwRet;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  BatteryPDDGetStatus()
+//
+//  Obtains the battery and power status.
+//
+BOOL WINAPI 
+BatteryPDDGetStatus(
+    SYSTEM_POWER_STATUS_EX2 *pStatus, 
+    BOOL *pBatteriesChangedSinceLastCall
+    ) 
+{    
+    BOOL rc = FALSE;
+    BOOL nAttempts = 0;
+    BOOL bBatteryAttached = TRUE;
+    UCHAR flags = 0, rsoc = 0;
+    USHORT nac = 0, cacd = 0, cact = 0, lmd = 0;
+    USHORT temp = 0, volt = 0, ai = 0;
+    BatteryChargeMode_e chargeMode;
+#ifdef DEBUG
+    UCHAR ilmd, sedvf, sedv1, islc, dmfsd, taper;
+    UCHAR pkcfg, id3, dcomp, tcomp;
+#endif
+
+    DEBUGMSG(ZONE_FUNCTION, (L"+BatteryPDDGetStatus\r\n"));
+
+
+    //  Check pointer
+    if( pStatus == NULL )
+        goto cleanUp;
+
+    //  Clear out struct members
+    memset( pStatus, 0, sizeof(SYSTEM_POWER_STATUS_EX2) );
+
+
+    //  Try several attempts to communicate with battery gauge        
+    while (nAttempts < 2 && rc == FALSE)
+        {
+        nAttempts++;
+        
+        // The default settings
+        pStatus->ACLineStatus               = AC_LINE_ONLINE;
+        pStatus->BatteryFlag                = 0;
+        pStatus->BatteryLifePercent         = BATTERY_PERCENTAGE_UNKNOWN;
+        pStatus->BatteryLifeTime            = BATTERY_LIFE_UNKNOWN;
+        pStatus->BatteryFullLifeTime        = BATTERY_LIFE_UNKNOWN;
+
+        // NOTE:
+        //  If backup battery exists these fields should be filled
+        // with correct information.  For now just indicate full charge
+        //    
+        pStatus->Reserved1                  = 0;
+        pStatus->Reserved2                  = 0;
+        pStatus->Reserved3                  = 0;    
+
+        pStatus->BackupBatteryFlag          = BATTERY_FLAG_HIGH;
+        pStatus->BackupBatteryLifePercent   = 100; 
+        pStatus->BackupBatteryLifeTime      = BATTERY_LIFE_UNKNOWN;
+        pStatus->BackupBatteryFullLifeTime  = BATTERY_LIFE_UNKNOWN;
+        
+
+        pStatus->BatteryChemistry           = BATTERY_CHEMISTRY_UNKNOWN;
+        pStatus->BatteryVoltage             = 0;
+        pStatus->BatteryCurrent             = 0;
+        pStatus->BatteryAverageCurrent      = 0;
+        pStatus->BatteryAverageInterval     = 0;
+        pStatus->BatterymAHourConsumed      = 0;
+        pStatus->BatteryTemperature         = 0;
+        pStatus->BackupBatteryVoltage       = 0;
+
+        // BQ2xxxx Flags
+        if (!GetData8(BQ_FLAGS, &flags)) continue;
+        // Relative State Of Charge
+        if (!GetData8(BQ_RSOC, &rsoc)) continue;
+
+        // Reported Temperature.
+        if (!GetData16(BQ_TEMPL, &temp)) continue;
+        // Reported Voltage
+        if (!GetData16(BQ_VOLTL, &volt)) continue;
+        // Average Current
+        if (!GetData16(BQ_AIL, &ai)) continue;
+
+        // Nominal Available Capacity
+        if (!GetData16(BQ_NACL, &nac)) continue;
+        // Discharge Compensated Available Capacity
+        if (!GetData16(BQ_CACDL, &cacd))  continue;
+        // Last Measured Discharge
+        if (!GetData16(BQ_LMDL, &lmd)) continue;
+        // Temperature Compensated Available Capacity
+        if (!GetData16(BQ_CACTL, &cact)) continue;
+                
+#ifdef DEBUG
+        // BQ26500 EEPROM register values
+        if (!GetData8(BQ_EE_ILMD, &ilmd)) continue;
+        if (!GetData8(BQ_EE_SEDVF, &sedvf)) continue;
+        if (!GetData8(BQ_EE_SEDV1, &sedv1)) continue;
+        if (!GetData8(BQ_EE_ISLC, &islc)) continue;
+        if (!GetData8(BQ_EE_DMFSD, &dmfsd)) continue;
+        if (!GetData8(BQ_EE_TAPER, &taper)) continue;
+        if (!GetData8(BQ_EE_PKCFG, &pkcfg)) continue;
+        if (!GetData8(BQ_EE_ID3, &id3)) continue;
+        if (!GetData8(BQ_EE_DCOMP, &dcomp)) continue;
+        if (!GetData8(BQ_EE_TCOMP, &tcomp)) continue;
+
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: ILMD  = %d\r\n", ilmd));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: SEDVF = %d\r\n", sedvf));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: SEDV1 = %d\r\n", sedv1));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: ISLC  = %d\r\n", islc));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: DMFSD = %d\r\n", dmfsd));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: TAPER = %d\r\n", taper));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: PKCFG = %d\r\n", pkcfg));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: ID3   = %d\r\n", id3));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: DCOMP = %d\r\n", dcomp));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: TCOMP = %d\r\n", tcomp));
+#endif
+
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: FLAGS = 0x%x\r\n", flags));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: TEMP  = %d K\r\n", temp/4));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: VOLT  = %d mV\r\n", volt));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: AI    = %d uV\r\n", ai));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: RSOC  = %d %%\r\n", rsoc));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: NAC   = %d\r\n", nac));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: CACD  = %d\r\n", cacd));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: LMD   = %d\r\n", lmd));
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: CACT  = %d\r\n", cact));
+
+        // if get here then call was successful so don't loop again
+        rc = TRUE;
+        }
+
+    //  Could not communicate with battery
+    if (rc == FALSE) 
+    {
+        pStatus->BatteryFlag                = BATTERY_FLAG_NO_BATTERY;
+        pStatus->BatteryLifePercent         = 0;
+        goto cleanUp;
+    }
+    
+    
+    // Update status with data
+    pStatus->BatteryLifePercent = rsoc;
+    if( ai ) pStatus->BatteryLifeTime = 60*60*cact/ai;
+    if( ai ) pStatus->BatteryFullLifeTime = 60*60*lmd/ai;
+    pStatus->BatteryChemistry = BATTERY_CHEMISTRY_LION;
+    pStatus->BatteryVoltage = volt;
+    pStatus->BatteryCurrent = (ai*357)/(20*100);         // Convert to mA
+    pStatus->BatteryAverageCurrent = (ai*357)/(20*100);  // Convert to mA
+    pStatus->BatteryAverageInterval = 5120;              // Averaged over 5.12 seconds
+    pStatus->BatteryTemperature = temp*25/10 - 2730;     // unit is 0.1 deg C
+    *pBatteriesChangedSinceLastCall = FALSE;
+
+    // Check if a battery is attached
+    if  ((flags & (BQ_FLAGS_NOACT | BQ_FLAGS_CI)) == (BQ_FLAGS_NOACT | BQ_FLAGS_CI)) bBatteryAttached = FALSE;    
+
+    // if there is a bci handle use bci to determine charge state
+    if (s_Device.hBCI != NULL)
+        {
+        chargeMode = BCI_GetChargeMode(s_Device.hBCI);
+        if (chargeMode == kBCI_AC || chargeMode == kBCI_USBHost )
+            {
+            flags |= 0x80;
+            }
+        else
+            {
+            flags &= ~0x80;
+            }
+        }
+
+    pStatus->ACLineStatus = AC_LINE_OFFLINE;
+    if (flags & 0x80 || bBatteryAttached == FALSE)
+        {
+        pStatus->ACLineStatus = AC_LINE_ONLINE;
+
+        // indicate battery is charging if there is a battery attached
+        if (bBatteryAttached == TRUE) pStatus->BatteryFlag = BATTERY_FLAG_CHARGING;
+        
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: "
+            L"AC online/battery charging\r\n"
+            ));
+        }
+
+    //  Positive if charging battery; negative otherwise
+    if( pStatus->ACLineStatus != AC_LINE_ONLINE )
+        pStatus->BatteryCurrent = 0 - pStatus->BatteryCurrent;
+
+    if (rsoc > s_Device.high)
+        {        
+        pStatus->BatteryFlag |= BATTERY_FLAG_HIGH;
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: "
+            L"Capacity > %d%% (high)\r\n", 
+            s_Device.high
+            ));
+        }
+    else if (rsoc > s_Device.low)
+        {
+        pStatus->BatteryFlag |= BATTERY_FLAG_LOW;
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: "
+            L"%d%% < capacity < %d%% (low)\r\n", 
+            s_Device.low, s_Device.high
+            ));
+        }
+    else if (rsoc > s_Device.critical)
+        {
+        pStatus->BatteryFlag |= BATTERY_FLAG_CRITICAL;
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: "
+            L"%d%% <= capacity < %d%% (critical)\r\n", 
+            s_Device.critical, s_Device.low
+            ));
+        }
+    else 
+        {
+        pStatus->BatteryFlag |= (bBatteryAttached) ? BATTERY_FLAG_CRITICAL : BATTERY_FLAG_NO_BATTERY;
+        DEBUGMSG(ZONE_PDD, (L"BatteryPDDGetStatus: "
+            L"capacity < %d%% (system suspend)\r\n", s_Device.critical
+            ));
+        }
+    
+cleanUp:
+    DEBUGMSG(ZONE_PDD, (L"-BatteryPDDGetStatus(rc = %d)\r\n", rc));
+    return rc;
+}
+
+
+//------------------------------------------------------------------------------

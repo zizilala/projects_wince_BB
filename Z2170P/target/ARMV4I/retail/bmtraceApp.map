@@ -1,0 +1,131 @@
+ bmtraceApp
+
+ Timestamp is 51dcc7a2 (Wed Jul 10 10:32:02 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 000000afH .rdata                  CODE
+ 0001:000000d0 00000027H .rdata$debug            CODE
+ 0001:000000f8 00000bccH .text                   CODE
+ 0001:00000cc4 00000030H .xdata                  CODE
+ 0001:00000cf4 00000028H .idata$2                CODE
+ 0001:00000d1c 00000014H .idata$3                CODE
+ 0001:00000d30 00000064H .idata$4                CODE
+ 0001:00000d94 00000026H .idata$6                CODE
+ 0001:00000dba 00000000H .edata                  CODE
+ 0002:00000000 00000064H .idata$5                DATA
+ 0002:00000064 00000008H .data                   DATA
+ 0002:0000006c 0000001cH .bss                    DATA
+ 0003:00000000 000000a8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __xc_a                     00011000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     00011004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     00011008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     0001100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     00011010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     00011014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     00011018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     0001101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_07GNMKOPNN@Usage?3?6?$AA@ 0001103c     bmtraceApp.obj
+ 0001:00000044       ??_C@_0DE@CHJDAOAA@?7bmtraceApp?5?$FL?9h?$FN?5?$FL?9Print?$FN?5?$FL?9Star@ 00011044     bmtraceApp.obj
+ 0001:00000078       ??_C@_08GONFMNGP@09?334?305?$AA@ 00011078     bmtraceApp.obj
+ 0001:00000084       ??_C@_0M@BINAPKP@Jun?5?53?52013?$AA@ 00011084     bmtraceApp.obj
+ 0001:00000090       ??_C@_0BJ@IPIEDBBG@?7compiled?5on?5?$CFs?5at?5?$CFs?5?2n?$AA@ 00011090     bmtraceApp.obj
+ 0001:000000ac       ??_C@_0CD@DHOCLHGP@bmtraceApp?3?5invalid?5option?5?$CFs?5?$CB?$CB@ 000110ac     bmtraceApp.obj
+ 0001:000000f8       argproc                    000110f8 f   bmtraceApp.obj
+ 0001:00000230       main                       00011230 f   bmtraceApp.obj
+ 0001:0000027c       bm_test_all                0001127c f   bmtrace:bmtrace.DLL
+ 0001:00000670       mainACRTStartup            00011670 f   corelib0:mainacrt.obj
+ 0001:00000694       __GSHandlerCheckCommon     00011694 f   corelib0:gshandler.obj
+ 0001:000006d0       __GSHandlerCheck           000116d0 f   corelib0:gshandler.obj
+ 0001:000006f4       __security_init_cookie     000116f4 f   corelib0:seccinit.obj
+ 0001:00000750       __security_check_cookie    00011750 f   corelib0:armsecgs.obj
+ 0001:00000764       __gsfailure                00011764 f   corelib0:armsecgs.obj
+ 0001:000008a4       exit                       000118a4 f   corelib0:cexit.obj
+ 0001:000008bc       _exit                      000118bc f   corelib0:cexit.obj
+ 0001:000008fc       _initterm                  000118fc f   corelib0:crt0dat.obj
+ 0001:00000930       _cinit                     00011930 f   corelib0:crt0dat.obj
+ 0001:0000096c       _onexit                    0001196c f   corelib0:onexit.obj
+ 0001:00000af4       atexit                     00011af4 f   corelib0:onexit.obj
+ 0001:00000b14       __GSHandlerCheck_SEH       00011b14 f   corelib0:gshandlerseh.obj
+ 0001:00000b64       printf                     00011b64 f   corelib1:COREDLL.dll
+ 0001:00000b74       toupper                    00011b74 f   corelib1:COREDLL.dll
+ 0001:00000b84       free                       00011b84 f   corelib1:COREDLL.dll
+ 0001:00000b94       _isctype                   00011b94 f   corelib1:COREDLL.dll
+ 0001:00000ba4       malloc                     00011ba4 f   corelib1:COREDLL.dll
+ 0001:00000bb4       wcstombs                   00011bb4 f   corelib1:COREDLL.dll
+ 0001:00000bc4       memcpy                     00011bc4 f   corelib1:COREDLL.dll
+ 0001:00000bd4       wcslen                     00011bd4 f   corelib1:COREDLL.dll
+ 0001:00000be4       _XcptFilter                00011be4 f   corelib1:COREDLL.dll
+ 0001:00000bf4       __security_gen_cookie2     00011bf4 f   corelib1:COREDLL.dll
+ 0001:00000c04       __report_gsfailure         00011c04 f   corelib1:COREDLL.dll
+ 0001:00000c14       realloc                    00011c14 f   corelib1:COREDLL.dll
+ 0001:00000c24       _msize                     00011c24 f   corelib1:COREDLL.dll
+ 0001:00000c34       __C_specific_handler       00011c34 f   corelib1:COREDLL.dll
+ 0001:00000c44       GetModuleFileNameW         00011c44 f   coredll:COREDLL.dll
+ 0001:00000c54       DeleteCriticalSection      00011c54 f   coredll:COREDLL.dll
+ 0001:00000c64       InterlockedExchange        00011c64 f   coredll:COREDLL.dll
+ 0001:00000c74       TerminateProcess           00011c74 f   coredll:COREDLL.dll
+ 0001:00000c84       EnterCriticalSection       00011c84 f   coredll:COREDLL.dll
+ 0001:00000c94       InterlockedCompareExchange 00011c94 f   coredll:COREDLL.dll
+ 0001:00000ca4       InitializeCriticalSection  00011ca4 f   coredll:COREDLL.dll
+ 0001:00000cb4       LeaveCriticalSection       00011cb4 f   coredll:COREDLL.dll
+ 0001:00000cf4       __IMPORT_DESCRIPTOR_bmtrace 00011cf4     bmtrace:bmtrace.DLL
+ 0001:00000d08       __IMPORT_DESCRIPTOR_COREDLL 00011d08     corelib1:COREDLL.dll
+ 0001:00000d1c       __NULL_IMPORT_DESCRIPTOR   00011d1c     bmtrace:bmtrace.DLL
+ 0002:00000000       __imp___report_gsfailure   00012000     corelib1:COREDLL.dll
+ 0002:00000004       __imp_InitializeCriticalSection 00012004     coredll:COREDLL.dll
+ 0002:00000008       __imp_printf               00012008     corelib1:COREDLL.dll
+ 0002:0000000c       __imp_toupper              0001200c     corelib1:COREDLL.dll
+ 0002:00000010       __imp_free                 00012010     corelib1:COREDLL.dll
+ 0002:00000014       __imp__isctype             00012014     corelib1:COREDLL.dll
+ 0002:00000018       __imp_malloc               00012018     corelib1:COREDLL.dll
+ 0002:0000001c       __imp_wcstombs             0001201c     corelib1:COREDLL.dll
+ 0002:00000020       __imp_memcpy               00012020     corelib1:COREDLL.dll
+ 0002:00000024       __imp_wcslen               00012024     corelib1:COREDLL.dll
+ 0002:00000028       __imp__XcptFilter          00012028     corelib1:COREDLL.dll
+ 0002:0000002c       __imp___security_gen_cookie2 0001202c     corelib1:COREDLL.dll
+ 0002:00000030       __imp_LeaveCriticalSection 00012030     coredll:COREDLL.dll
+ 0002:00000034       __imp_realloc              00012034     corelib1:COREDLL.dll
+ 0002:00000038       __imp__msize               00012038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp___C_specific_handler 0001203c     corelib1:COREDLL.dll
+ 0002:00000040       __imp_GetModuleFileNameW   00012040     coredll:COREDLL.dll
+ 0002:00000044       __imp_DeleteCriticalSection 00012044     coredll:COREDLL.dll
+ 0002:00000048       __imp_InterlockedExchange  00012048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_TerminateProcess     0001204c     coredll:COREDLL.dll
+ 0002:00000050       __imp_EnterCriticalSection 00012050     coredll:COREDLL.dll
+ 0002:00000054       __imp_InterlockedCompareExchange 00012054     coredll:COREDLL.dll
+ 0002:00000058       \177COREDLL_NULL_THUNK_DATA 00012058     corelib1:COREDLL.dll
+ 0002:0000005c       __imp_bm_test_all          0001205c     bmtrace:bmtrace.DLL
+ 0002:00000060       \177bmtrace_NULL_THUNK_DATA 00012060     bmtrace:bmtrace.DLL
+ 0002:00000064       __security_cookie          00012064     corelib0:seccinit.obj
+ 0002:00000068       __security_cookie_complement 00012068     corelib0:seccinit.obj
+ 0002:0000006c       __argv                     0001206c     corelib0:mainacrt.obj
+ 0002:00000070       __argc                     00012070     corelib0:mainacrt.obj
+ 0002:00000078       _exitflag                  00012078     corelib0:cexit.obj
+ 0002:0000007c       __onexitend                0001207c     <common>
+ 0002:00000080       __onexitbegin              00012080     <common>
+ 0002:00000084       g_pcsExit                  00012084     <common>
+
+ entry point at        0001:00000670
+
+ Static symbols
+
+ 0001:0000028c       ?crtstart_FreeArguments@@YAXXZ 0001128c f   corelib0:mainacrt.obj
+ 0001:000002ac       ?crtstart_CountSpaceA@@YAXAAH0PBD@Z 000112ac f   corelib0:mainacrt.obj
+ 0001:00000378       ?crtstart_ParseArgsWA@@YAHPBG0AAHAAPAPAD@Z 00011378 f   corelib0:mainacrt.obj
+ 0001:00000584       ?mainCRTStartupHelper@@YAXPAUHINSTANCE__@@PBG@Z 00011584 f   corelib0:mainacrt.obj
+ 0001:000007a8       doexit                     000117a8 f   corelib0:cexit.obj

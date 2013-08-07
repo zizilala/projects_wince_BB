@@ -1,0 +1,14 @@
+; All rights reserved ADENEO EMBEDDED 2010
+
+;===============================================================================
+
+IF BSP_OMAP_SDMA
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\DMA]
+    "Prefix"="DMA"
+    "Dll"="omap_sdma.dll"
+    "Index"=dword:1
+    "Order"=dword:0
+    "PowerFlags"=dword:00000103              ; no notifications
+    "priority256"=dword:61
+    
+ENDIF

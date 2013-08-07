@@ -1,0 +1,49 @@
+!if 0
+;================================================================================
+;             Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+; Use of this software is controlled by the terms and conditions found
+; in the license agreement under which this software has been supplied.
+;
+;================================================================================
+!endif
+
+TARGETNAME=SampleGrabber
+TARGETTYPE=DYNLINK
+
+FILE_VIEW_ROOT_FOLDER= \
+    ReadMe.txt \
+
+FILE_VIEW_RESOURCE_FOLDER= \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    stdafx.h \
+    Resources.h \
+    SampleGrabber.h \
+
+SOURCES= \
+    SampleGrabber.cpp \
+
+CDEFINES=$(CDEFINES) -DSampleGrabber_EXPORTS
+TARGETLIBS= \
+    $(_WINCEROOT)\PUBLIC\DIRECTX\SDK\LIB\$(_CPUINDPATH)\strmiids.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\Ole32.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\oleaut32.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\commctrl.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\commdlg.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+
+SOURCELIBS= \
+  $(_WINCEROOT)\PUBLIC\DIRECTX\SDK\LIB\$(_CPUINDPATH)\strmbase.lib \
+
+FILE_VIEW_PARAMETER_FOLDER= \
+    SampleGrabber.bib \
+    SampleGrabber.reg \
+    SampleGrabber.def \
+
+INCLUDES=$(INCLUDES); \
+    $(_WINCEROOT)\PUBLIC\DIRECTX\SDK\SAMPLES\DSHOW\BASECLASSES; \
+    $(_WINCEROOT)\PUBLIC\DIRECTX\SDK\INC; \
+

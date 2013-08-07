@@ -1,0 +1,37 @@
+# All rights reserved ADENEO EMBEDDED 2010
+!if 0
+;
+;================================================================================
+;             Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+; Use of this software is controlled by the terms and conditions found
+; in the license agreement under which this software has been supplied.
+;
+;================================================================================
+;
+!endif
+
+!IF "$(BSP_OMAP_MUSBHCD)" != "1"
+SKIPBUILD=1
+!ENDIF
+
+TARGETNAME=omap_musbhcd
+TARGETTYPE=DYNLINK
+DEFFILE=$(TARGETDEFNAME).def
+
+SOURCES= \
+
+SOURCELIBS= \
+	$(_TILIBS)\$(_SOC)_musbhcd_mdd.lib \
+	$(_TILIBS)\$(_SOC)_musbhcd.lib \
+	$(_TILIBS)\$(_SOC)_musbhcd2lib.lib
+
+TARGETLIBS= \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib
+    
+FILE_VIEW_RESOURCE_FOLDER= \
+	omap_musbhcd.def \
+    musbhcd.reg \
+

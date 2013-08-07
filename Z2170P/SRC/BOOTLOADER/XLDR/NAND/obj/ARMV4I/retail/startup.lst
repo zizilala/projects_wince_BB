@@ -1,0 +1,528 @@
+ARM macroassembler      Page:1 
+    1 00000000          ; 
+    2 00000000          ;   File:  startup.s 
+    3 00000000          ; 
+    4 00000000            
+    5 00000000                  INCLUDE kxarm.h 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000          ;++ 
+   14 00000000          ; 
+   15 00000000          ; 
+   16 00000000          ; Module Name: 
+   17 00000000          ; 
+   18 00000000          ;    kxarm.h 
+   19 00000000          ; 
+   20 00000000          ; Abstract: 
+   21 00000000          ; 
+   22 00000000          ;    This is an implementation of the WINCE/ARM Calling Sequence 
+   23 00000000          ;    Specification. 
+   24 00000000          ; 
+   25 00000000          ; Environment: 
+   26 00000000          ;    String Library 
+   27 00000000          ; 
+   28 00000000          ; Revision History: 
+   29 00000000          ;-- 
+   30 00000000            
+   31 00000000                          GBLS    VBar 
+   32 00000000          VBar    SETS    "|" 
+   33 00000000                          GBLL    HaveExceptHandler 
+   34 00000000                          GBLS    AreaName 
+   35 00000000                          GBLS    FuncName 
+   36 00000000                          GBLS    PrologName 
+   37 00000000                          GBLS    FuncEndName 
+   38 00000000                          GBLS    ExceptHandler 
+   39 00000000                          GBLS    ExceptData 
+   40 00000000          AreaName SETS   "|.text|" 
+   41 00000000          HaveExceptHandler SETL {FALSE} 
+   42 00000000            
+   43 00000000                  MACRO 
+   44 00000000                  TEXTAREA 
+   45 00000000                  AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   47 00000000                  MEND 
+   48 00000000            
+   49 00000000              MACRO 
+   50 00000000              THUMBAREA 
+   51 00000000              AREA |.text|,ALIGN=2,CODE,READONLY,THUMB 
+   52 00000000          AreaName SETS "|.text|" 
+   53 00000000              MEND 
+   54 00000000            
+   55 00000000                  MACRO 
+   56 00000000                  STARTUPTEXT 
+   57 00000000                  AREA |.astart|,ALIGN=2,CODE 
+   58 00000000          AreaName SETS "|.astart|" 
+   59 00000000                  MEND 
+   60 00000000            
+   61 00000000                  MACRO 
+   62 00000000                  START_REGION    $NameBegin 
+   63 00000000                  LCLS    TempName 
+   64 00000000          TempName SETS    VBar:CC:"$NameBegin":CC:VBar 
+   65 00000000                  EXPORT  $TempName[DATA] 
+   66 00000000          $TempName 
+   67 00000000                  MEND 
+   68 00000000            
+   69 00000000                  MACRO 
+   70 00000000                  END_REGION              $NameEnd 
+   71 00000000                  LCLS    TempName 
+   72 00000000          TempName SETS    VBar:CC:"$NameEnd":CC:VBar 
+   73 00000000                  EXPORT  $TempName[DATA] 
+   74 00000000          $TempName 
+   75 00000000                  MEND 
+   76 00000000            
+   77 00000000          ; 
+   78 00000000          ;   This macro should be used if the assembly function is in ARM 
+   79 00000000          ; 
+   80 00000000            
+   81 00000000                  MACRO 
+   82 00000000                  NESTED_ARMENTRY $Name 
+   83 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+   84 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+   85 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+   86 00000000                  LCLS    ExceptBit 
+   87 00000000                  IF HaveExceptHandler 
+   88 00000000          ExceptBit   SETS        "0x80000000" 
+   89 00000000                  ELSE 
+   90 00000000          ExceptBit   SETS        "0" 
+   91 00000000                  ENDIF 
+   92 00000000            
+   93 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+   94 00000000                  DCD         $FuncName 
+   95 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+   96 00000000                  AREA $AreaName,CODE,READONLY 
+   97 00000000                  ALIGN   2 
+   98 00000000                  EXPORT  $FuncName [FUNC] 
+   99 00000000                  IF HaveExceptHandler 
+  100 00000000              DCD $ExceptHandler 
+  101 00000000              DCD $ExceptData 
+  102 00000000          HaveExceptHandler SETL {FALSE} 
+  103 00000000                  ENDIF 
+  104 00000000          $FuncName 
+  105 00000000                  ROUT 
+  106 00000000                  MEND 
+  107 00000000            
+  108 00000000          ; 
+  109 00000000          ;   This macro should be used if the assembly function is in THUMB 
+  110 00000000          ; 
+  111 00000000                  MACRO 
+  112 00000000                  NESTED_THUMBENTRY       $Name 
+  113 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  114 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  115 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  116 00000000                  LCLS    ExceptBit 
+  117 00000000                  IF HaveExceptHandler 
+  118 00000000          ExceptBit   SETS        "0x80000000" 
+  119 00000000                  ELSE 
+  120 00000000          ExceptBit   SETS        "0" 
+  121 00000000                  ENDIF 
+  122 00000000            
+  123 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  124 00000000                  DCD         $FuncName 
+  125 00000000              DCD     (($PrologName-$FuncName)/2) :OR: ((($FuncEndName-$FuncName)/2):SHL:8) :OR: $ExceptBit 
+  126 00000000                  AREA $AreaName,CODE,READONLY 
+  127 00000000                  ALIGN   2 
+  128 00000000                  EXPORT  $FuncName [FUNC] 
+  129 00000000                  IF HaveExceptHandler 
+  130 00000000              DCD $ExceptHandler 
+  131 00000000              DCD $ExceptData 
+  132 00000000          HaveExceptHandler SETL {FALSE} 
+  133 00000000                  ENDIF 
+  134 00000000          $FuncName 
+  135 00000000                  ROUT 
+  136 00000000                  MEND 
+  137 00000000            
+  138 00000000          ; 
+  139 00000000          ;   This macro should be used if the assembly function is in ARM 
+  140 00000000          ; 
+  141 00000000                  MACRO 
+  142 00000000                  NESTED_ENTRY    $Name 
+  143 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  144 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  145 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  146 00000000                  LCLS    ExceptBit 
+  147 00000000                  IF HaveExceptHandler 
+  148 00000000          ExceptBit   SETS        "0x80000000" 
+  149 00000000                  ELSE 
+  150 00000000          ExceptBit   SETS        "0" 
+  151 00000000                  ENDIF 
+  152 00000000            
+  153 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  154 00000000                  DCD         $FuncName 
+  155 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+  156 00000000                  AREA $AreaName,CODE,READONLY 
+  157 00000000                  ALIGN   2 
+  158 00000000                  EXPORT  $FuncName [FUNC] 
+  159 00000000                  IF HaveExceptHandler 
+  160 00000000              DCD $ExceptHandler 
+  161 00000000              DCD $ExceptData 
+  162 00000000          HaveExceptHandler SETL {FALSE} 
+  163 00000000                  ENDIF 
+  164 00000000          $FuncName 
+  165 00000000                  ROUT 
+  166 00000000                  MEND 
+  167 00000000            
+  168 00000000                  MACRO 
+  169 00000000                  PROLOG_END 
+  170 00000000          $PrologName 
+  171 00000000                  MEND 
+  172 00000000            
+  173 00000000                  MACRO 
+  174 00000000                  LEAF_ENTRY      $Name 
+  175 00000000          FuncName SETS    VBar:CC:"$Name":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  $FuncName [FUNC] 
+  180 00000000          $FuncName 
+  181 00000000                  ROUT 
+  182 00000000                  MEND 
+  183 00000000            
+  184 00000000                  MACRO 
+  185 00000000                  ALTERNATE_ENTRY $Name 
+  186 00000000                  LCLS    TempName 
+  187 00000000          TempName SETS    VBar:CC:"$Name":CC:VBar 
+  188 00000000                  EXPORT  $TempName [FUNC] 
+  189 00000000          $TempName 
+  190 00000000                  MEND 
+  191 00000000            
+  192 00000000                  MACRO 
+  193 00000000                  ENTRY_END       $Name 
+  194 00000000          $FuncEndName 
+  195 00000000                  MEND 
+  196 00000000            
+  197 00000000                  MACRO 
+  198 00000000                  EXCEPTION_HANDLER       $Handler 
+  199 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  200 00000000          ExceptData SETS "0" 
+  201 00000000          HaveExceptHandler SETL {TRUE} 
+  202 00000000                  MEND 
+  203 00000000            
+  204 00000000                  MACRO 
+  205 00000000                  EXCEPTION_HANDLER_DATA  $Handler, $HandlerData 
+  206 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  207 00000000          ExceptData SETS    VBar:CC:"$HandlerData":CC:VBar 
+  208 00000000          HaveExceptHandler SETL {TRUE} 
+  209 00000000                  MEND 
+  210 00000000            
+  211 00000000                  MACRO 
+  212 00000000                  EXCEPTION_HANDLER_MILLICODE     $Handler, $HandlerData 
+  213 00000000          ExceptHandler SETS    "$Handler" 
+  214 00000000          ExceptData SETS    "$HandlerData" 
+  215 00000000          HaveExceptHandler SETL {TRUE} 
+  216 00000000                  MEND 
+  217 00000000            
+  218 00000000            
+  219 00000000                  END 
+    6 00000000                  INCLUDE image_cfg.inc 
+    1 00000000          ; All rights reserved ADENEO EMBEDDED 2010 
+    2 00000000          ;------------------------------------------------------------------------------ 
+    3 00000000          ; 
+    4 00000000          ;  File:  image_cfg.inc 
+    5 00000000          ; 
+    6 00000000            
+    7 00000000          IMAGE_XLDR_STACK_PA     EQU     (0x4020F000) 
+    8 00000000          IMAGE_XLDR_STACK_SIZE   EQU     (0x00000FFC) 
+    9 00000000               
+   10 00000000              END 
+    7 00000000                   
+    8 00000000                  IMPORT  XLDRMain 
+    9 00000000            
+   10 00000000          ;------------------------------------------------------------------------------- 
+   11 00000000          ; 
+   12 00000000          ;  Function:  StartUp 
+   13 00000000          ; 
+   14 00000000          ;  This function is entry point to X-Loader for Windows CE 
+   15 00000000          ; 
+   16 00000000          ; 
+   17 00000000                  STARTUPTEXT 
+   57                           AREA |.astart|,ALIGN=2,CODE 
+   58 00000000          AreaName SETS "|.astart|" 
+   18 00000000            
+   19 00000000                  LEAF_ENTRY StartUp 
+  175 00000000          FuncName SETS    VBar:CC:"StartUp":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"StartUp":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  |StartUp| [FUNC] 
+  180 00000000          |StartUp| 
+  181 00000000                  ROUT 
+   20 00000000            
+   21 00000000 e3a09002         mov     r9, #OEM_HIGH_SECURITY_GP       ; Set flag indicating GP device 
+   22 00000004            
+   23 00000004           IF 0   ;; assume no support for HS devices on EVM 
+   60 00000004           ENDIF  ;; assume no support for HS devices on EVM 
+   61 00000004            
+   62 00000004                                   
+   63 00000004                  ;--------------------------------------------------------------- 
+   64 00000004                  ; Set SVC mode & disable IRQ/FIQ 
+   65 00000004                  ;--------------------------------------------------------------- 
+   66 00000004                   
+   67 00000004 e10f0000 Done    mrs     r0, cpsr                        ; Get current mode bits. 
+   68 00000008 e3c0001f         bic     r0, r0, #0x1F                   ; Clear mode bits. 
+   69 0000000c e38000d3         orr     r0, r0, #0xD3                   ; Disable IRQs/FIQs, SVC mode 
+   70 00000010 e121f000         msr     cpsr_c, r0                      ; Enter supervisor mode 
+   71 00000014            
+   72 00000014                  ;--------------------------------------------------------------- 
+   73 00000014                  ; Flush all caches 
+   74 00000014                  ;--------------------------------------------------------------- 
+   75 00000014            
+   76 00000014                  ; Invalidate TLB and I cache 
+   77 00000014 e3a00000         mov     r0, #0                          ; setup up for MCR 
+   78 00000018 ee080f17         mcr     p15, 0, r0, c8, c7, 0           ; invalidate TLB's 
+   79 0000001c ee070f15         mcr     p15, 0, r0, c7, c5, 0           ; invalidate icache 
+   80 00000020            
+   81 00000020                  ;--------------------------------------------------------------- 
+   82 00000020                  ; Initialize CP15 control register 
+   83 00000020                  ;--------------------------------------------------------------- 
+   84 00000020            
+   85 00000020                  ; Set CP15 control bits register 
+   86 00000020 ee110f10         mrc     p15, 0, r0, c1, c0, 0 
+   87 00000024 e3c00a02         bic     r0, r0, #(1 :SHL: 13)           ; Exception vector location (V bit) (0=normal) 
+   88 00000028 e3c00a01         bic     r0, r0, #(1 :SHL: 12)           ; I-cache (disabled) 
+   89 0000002c e3800b02         orr     r0, r0, #(1 :SHL: 11)           ; Branch prediction (enabled) 
+   90 00000030 e3c00004         bic     r0, r0, #(1 :SHL: 2)            ; D-cache (disabled - enabled within WinCE kernel startup) 
+   91 00000034 e3800002         orr     r0, r0, #(1 :SHL: 1)            ; alignment fault (enabled) 
+   92 00000038 e3c00001         bic     r0, r0, #(1 :SHL: 0)            ; MMU (disabled - enabled within WinCE kernel startup) 
+   93 0000003c ee010f10         mcr     p15, 0, r0, c1, c0, 0 
+   94 00000040            
+   95 00000040                  ;--------------------------------------------------------------- 
+   96 00000040                  ; Check r9 for HS flag 
+   97 00000040                  ;--------------------------------------------------------------- 
+   98 00000040                   
+   99 00000040 e3590001         cmp     r9, #OEM_HIGH_SECURITY_HS 
+  100 00000044 03a00001         moveq   r0, #OEM_HIGH_SECURITY_HS 
+  101 00000048 13a00002         movne   r0, #OEM_HIGH_SECURITY_GP 
+  102 0000004c                   
+  103 0000004c                  ;--------------------------------------------------------------- 
+  104 0000004c                  ; Jump to XLDRMain 
+  105 0000004c                  ;--------------------------------------------------------------- 
+  106 0000004c            
+  107 0000004c e59fd138         ldr     sp, =(IMAGE_XLDR_STACK_PA + IMAGE_XLDR_STACK_SIZE) 
+  108 00000050 ea000000         b       XLDRMain 
+  109 00000054            
+  110 00000054                  ENTRY_END StartUp 
+  194 00000054          |StartUp_end| 
+  111 00000054            
+  112 00000054            
+  113 00000054          ;------------------------------------------------------------------------------- 
+  114 00000054          ; 
+  115 00000054          ;  Function:  EnableCache_GP 
+  116 00000054          ; 
+  117 00000054                  LEAF_ENTRY EnableCache_GP 
+  175 00000054          FuncName SETS    VBar:CC:"EnableCache_GP":CC:VBar 
+  176 00000054          PrologName SETS "Invalid Prolog" 
+  177 00000054          FuncEndName SETS    VBar:CC:"EnableCache_GP":CC:"_end":CC:VBar 
+  178 00000054                  ALIGN   2 
+  179 00000054                  EXPORT  |EnableCache_GP| [FUNC] 
+  180 00000054          |EnableCache_GP| 
+  181 00000054                  ROUT 
+  118 00000054            
+  119 00000054                  ; Enable ICache 
+  120 00000054 ee110f10         mrc     p15, 0, r0, c1, c0, 0 
+  121 00000058 e3800a01         orr     r0, r0, #(1 :SHL: 12)           ; I-cache (enabled) 
+  122 0000005c ee010f10         mcr     p15, 0, r0, c1, c0, 0 
+  123 00000060            
+  124 00000060            
+  125 00000060                  ; Invalidate L2 cache for GP devices 
+  126 00000060 e3a0c001         mov     r12, #0x1                       ; invalidate L2 cache 
+  127 00000064 e1600070         dcd     0xE1600070                      ; GP-only need to use ROM svc. 
+  128 00000068            
+  129 00000068                   
+  130 00000068                  ; Set L2 Cache Auxiliary register 
+  131 00000068 ee390f50         mrc     p15, 1, r0, c9, c0, 2 
+  132 0000006c e3800501         orr     r0, r0, #(1 :SHL: 22)           ; Write-allocate in L2 disabled 
+  133 00000070            
+  134 00000070 e3a0c002         mov     r12, #0x2                       ; Set L2 Cache Auxiliary Control register 
+  135 00000074 e1600070         dcd     0xE1600070                      ; GP-only need to use ROM svc. 
+  136 00000078            
+  137 00000078            
+  138 00000078                  ; Set Auxiliary Control register bits 
+  139 00000078 ee110f30         mrc     p15, 0, r0, c1, c0, 1 
+  140 0000007c e3800801         orr     r0, r0, #(1 :SHL: 16)           ; CP14/CP15 pipeline flush (on) 
+  141 00000080 e3c00c02         bic     r0, r0, #(1 :SHL: 9)            ; PLDNOP Executes PLD instrs as NOPs (off) 
+  142 00000084 e3800080         orr     r0, r0, #(1 :SHL: 7)            ; Prevent BTB branch size mispredicts (on) 
+  143 00000088 e3800040         orr     r0, r0, #(1 :SHL: 6)            ; IBE Invalidate BTB enable (on) 
+  144 0000008c e3800020         orr     r0, r0, #(1 :SHL: 5)            ; L1NEON enable caching of NEON data within L1 (on) 
+  145 00000090 e3c00010         bic     r0, r0, #(1 :SHL: 4)            ; Speculative access on AXI (off) 
+  146 00000094 e3c00008         bic     r0, r0, #(1 :SHL: 3)            ; L1 cache parity detection (off) 
+  147 00000098 e3800002         orr     r0, r0, #(1 :SHL: 1)            ; L2 cache (on) 
+  148 0000009c e3800001         orr     r0, r0, #(1 :SHL: 0)            ; L1 dcache alias support (off) 
+  149 000000a0            
+  150 000000a0 ee010f30         mcr     p15, 0, r0, c1, c0, 1           ; Set Auxiliary Control register (unsecure bank) 
+  151 000000a4            
+  152 000000a4 e3a0c003         mov     r12, #0x3                       ; Set Auxiliary Control register (secure bank) 
+  153 000000a8 e1600070         dcd     0xE1600070                      ; GP-only need to use ROM svc. 
+  154 000000ac            
+  155 000000ac e12fff1e         bx      lr 
+  156 000000b0            
+  157 000000b0                  ENTRY_END EnableCache_GP 
+  194 000000b0          |EnableCache_GP_end| 
+  158 000000b0            
+  159 000000b0          ;------------------------------------------------------------------------------- 
+  160 000000b0          ; 
+  161 000000b0          ;  Function:  EnableCache_HS 
+  162 000000b0          ; 
+  163 000000b0                  LEAF_ENTRY EnableCache_HS 
+  175 000000b0          FuncName SETS    VBar:CC:"EnableCache_HS":CC:VBar 
+  176 000000b0          PrologName SETS "Invalid Prolog" 
+  177 000000b0          FuncEndName SETS    VBar:CC:"EnableCache_HS":CC:"_end":CC:VBar 
+  178 000000b0                  ALIGN   2 
+  179 000000b0                  EXPORT  |EnableCache_HS| [FUNC] 
+  180 000000b0          |EnableCache_HS| 
+  181 000000b0                  ROUT 
+  164 000000b0            
+  165 000000b0 e92d5ff0         stmfd   sp!, {r4-r12, lr}               ; store off registers to stack 
+  166 000000b4            
+  167 000000b4                  ; Enable ICache 
+  168 000000b4 ee110f10         mrc     p15, 0, r0, c1, c0, 0 
+  169 000000b8 e3800a01         orr     r0, r0, #(1 :SHL: 12)           ; I-cache (enabled) 
+  170 000000bc ee010f10         mcr     p15, 0, r0, c1, c0, 0 
+  171 000000c0            
+  172 000000c0            
+  173 000000c0                  ; Invalidate L2 cache for EMU/HS devices 
+  174 000000c0 e3a01000         mov     r1, #0x00                       ; Process ID 
+  175 000000c4 e3a02007         mov     r2, #0x07                       ; PPA call flags 
+  176 000000c8 e59f30c0         ldr     r3, =g_L2InvalidateParams       ; Call arguments 
+  177 000000cc e3a060ff         mov     r6, #0xFF                       ; New PPA task 
+  178 000000d0 e3a00028         mov     r0, #0x28                       ; PPA L2 Cache Invalidate service ID 
+  179 000000d4 e1a0c000         mov     r12, r0                       
+  180 000000d8            
+  181 000000d8 ee070f9a         mcr     p15, 0, r0, c7, c10, 4          ; data sync barrier 
+  182 000000dc ee070fba         mcr     p15, 0, r0, c7, c10, 5          ; data memory barrier 
+  183 000000e0 e1600071         dcd     0xE1600071                      ; Invoke PPA service 
+  184 000000e4                   
+  185 000000e4            
+  186 000000e4                  ; Set L2 Cache Auxiliary register 
+  187 000000e4 e3a01000         mov     r1, #0x00                       ; Process ID 
+  188 000000e8 e3a02007         mov     r2, #0x07                       ; PPA call flags 
+  189 000000ec e59f30a0         ldr     r3, =g_WriteL2CacheAuxControlParams 
+  190 000000f0 e3a060ff         mov     r6, #0xFF                       ; New PPA task 
+  191 000000f4 e3a0c029         mov     r12, #0x29                      ; PPA L2 Cache Aux Control Reg Write service ID 
+  192 000000f8            
+  193 000000f8 ee070f9a         mcr     p15, 0, r0, c7, c10, 4          ; data sync barrier 
+  194 000000fc ee070fba         mcr     p15, 0, r0, c7, c10, 5          ; data memory barrier 
+  195 00000100 e1600071         dcd     0xE1600071                      ; Invoke PPA service 
+  196 00000104            
+  197 00000104            
+  198 00000104                  ; Set CP15 aux control bits register 
+  199 00000104 e3a01000         mov     r1, #0x00                       ; Process ID 
+  200 00000108 e3a02007         mov     r2, #0x07                       ; PPA call flags 
+  201 0000010c e59f3084         ldr     r3, =g_WriteAuxControlParams    ; Call arguments 
+  202 00000110 e3a060ff         mov     r6, #0xFF                       ; New PPA task 
+  203 00000114 e3a0c02a         mov     r12, #0x2A                      ; PPA Aux Control Reg Write service ID 
+  204 00000118            
+  205 00000118 ee070f9a         mcr     p15, 0, r0, c7, c10, 4          ; data sync barrier 
+  206 0000011c ee070fba         mcr     p15, 0, r0, c7, c10, 5          ; data memory barrier 
+  207 00000120 e1600071         dcd     0xE1600071                      ; Invoke PPA service 
+  208 00000124            
+  209 00000124            
+  210 00000124                  ; Set Auxiliary Control register bits 
+  211 00000124 ee110f30         mrc     p15, 0, r0, c1, c0, 1 
+  212 00000128 e3800002         orr     r0, r0, #(1 :SHL: 1)            ; L2 cache (on) 
+  213 0000012c ee010f30         mcr     p15, 0, r0, c1, c0, 1           ; Set Auxiliary Control register (unsecure bank) 
+  214 00000130            
+  215 00000130            
+  216 00000130 e8bd5ff0         ldmfd   sp!, {r4-r12, lr}               ; restore registers 
+  217 00000134 e12fff1e         bx      lr 
+  218 00000138            
+  219 00000138                  ENTRY_END EnableCache_HS 
+  194 00000138          |EnableCache_HS_end| 
+  220 00000138            
+  221 00000138          ;;------------------------------------------------------------------------------- 
+  222 00000138          ;; 
+  223 00000138          ;;  Function:  OALStall 
+  224 00000138          ;; 
+  225 00000138          ;;  This function implements busy stall loop. On entry r0 contains number 
+  226 00000138          ;;  of microseconds to stall. We assume that system is already on final CPU 
+  227 00000138          ;;  frequency. 
+  228 00000138          ;; 
+  229 00000138          ;        LEAF_ENTRY OALStall 
+  230 00000138          ; 
+  231 00000138          ;10      ldr     r2, =BSP_STALL_DELAY 
+  232 00000138          ;20      subs    r2, r2, #1 
+  233 00000138          ;        bne     %B20 
+  234 00000138          ;        subs    r0, r0, #1 
+  235 00000138          ;        bne     %B10 
+  236 00000138          ;        bx      lr 
+  237 00000138          ; 
+  238 00000138          ; 
+  239 00000138          ;       ENTRY_END OALStall 
+  240 00000138          ;       
+  241 00000138            
+  242 00000138          ;------------------------------------------------------------------------------- 
+  243 00000138          ; 
+  244 00000138          ;  Function:  CopyCode 
+  245 00000138          ; 
+  246 00000138          ;   r0 -    Dest 
+  247 00000138          ;   r1 -    Src 
+  248 00000138          ;   r2 -    Len 
+  249 00000138          ;   r3 -    Jump address 
+  250 00000138          ; 
+  251 00000138                  LEAF_ENTRY CopyCode 
+  175 00000138          FuncName SETS    VBar:CC:"CopyCode":CC:VBar 
+  176 00000138          PrologName SETS "Invalid Prolog" 
+  177 00000138          FuncEndName SETS    VBar:CC:"CopyCode":CC:"_end":CC:VBar 
+  178 00000138                  ALIGN   2 
+  179 00000138                  EXPORT  |CopyCode| [FUNC] 
+  180 00000138          |CopyCode| 
+  181 00000138                  ROUT 
+  252 00000138            
+  253 00000138 e5915000 10      ldr     r5, [r1] 
+  254 0000013c e5805000         str     r5, [r0]     
+  255 00000140 e2800004         add     r0, r0, #4 
+  256 00000144 e2811004         add     r1, r1, #4 
+  257 00000148 e2422004         sub     r2, r2, #4 
+  258 0000014c e3520000         cmp     r2, #0 
+  259 00000150 1afffff8         bne     %B10 
+  260 00000154                   
+  261 00000154 e1a0f003         mov     pc, r3 
+  262 00000158 e1a00000         nop 
+  263 0000015c                   
+  264 0000015c                  ENTRY_END CopyCode 
+  194 0000015c          |CopyCode_end| 
+  265 0000015c            
+  266 0000015c          ;------------------------------------------------------------------------------- 
+  267 0000015c          ; 
+  268 0000015c          ;  Global data 
+  269 0000015c          ; 
+  270 0000015c            
+  271 0000015c          OEM_HIGH_SECURITY_HS    EQU     1 
+  272 0000015c          OEM_HIGH_SECURITY_GP    EQU     2 
+  273 0000015c            
+  274 0000015c          g_L2InvalidateParams 
+  275 0000015c            
+  276 0000015c 00000000         dcd     0x00, 0x00, 0x00, 0x00 
+               00000000   
+               00000000   
+               00000000   
+  277 0000016c            
+  278 0000016c          g_WriteAuxControlParams 
+  279 0000016c            
+  280 0000016c 000000e3         dcd     0xE3, 0x10, 0x00, 0x00   
+               00000010   
+               00000000   
+               00000000   
+  281 0000017c            
+  282 0000017c          g_WriteL2CacheAuxControlParams 
+  283 0000017c            
+  284 0000017c 00000000         dcd     0x00, 0x00, 0x40, 0x00 
+               00000000   
+               00000040   
+               00000000   
+  285 0000018c            
+  286 0000018c                  END 
+  287 0000018c 4020fffc *literal pool: constant 
+  287 00000190 0000015c *literal pool: symbol:  g_L2InvalidateParams + 0x0 
+  287 00000194 0000017c *literal pool: symbol:  g_WriteL2CacheAuxControlParams + 0x0 
+  287 00000198 0000016c *literal pool: symbol:  g_WriteAuxControlParams + 0x0 
+Assembly terminated, errors: 0, warnings: 0 

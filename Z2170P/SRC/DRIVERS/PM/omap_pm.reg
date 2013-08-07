@@ -1,0 +1,181 @@
+; All rights reserved ADENEO EMBEDDED 2010
+
+;-- Power Management Extension -------------------------------------------------
+; @CESYSGEN IF CE_MODULES_PM
+; @CESYSGEN IF GWES_MGBASE
+; @XIPREGION IF PACKAGE_OEMXIPKERNEL
+; HIVE BOOT SECTION
+
+IF BSP_PMEXT 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\Extension\Omap]
+    "Dll"="pmext.dll"
+    "ConstraintRoot"="\\OMAPPMX\\Constraints"
+    "PowerPolicyRoot"="\\OMAPPMX\\Policies"
+
+IF BSP_DVFS
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\DVFS]
+    "Order"=dword:100
+    "Name"="DVFS"
+    "Dll"="ti_constraintadapters.dll"
+    "ConstraintClass"="00000001"                ;DVFS Constraint class
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\DVFS\35xx]
+    "OpmInit"=dword:5                           ;kOpm5
+    "OpmFloor"=dword:0                          ;kOpm0
+    "OpmCeiling"=dword:5                        ;kOpm5
+    ;MPU1Map lists the MPU/IVA OPP associated with each OPM (0..6)
+    ;MPU (VDD1) kOpp values for each kOpm value (kOpm0, kOpm1, ..., kOpm6) see inc\bsp_opp_map.h
+	;Each MPU kOpp value represents a VDD1 voltage, MPU DPLL1 frequency and IVA2 (DSP) DPLL2 frequency triple used fo each kOpm
+    "MPU1Map"=multi_sz:"0","0","1","2","3","4","5"
+	;CORE1Map lists the CORE OPP associated with each OPM (0..6) 
+    ;CORE (VDD2) kOpp values for each kOpm value (kOpm0, kOpm1, ..., kOpm6) see inc\bsp_opp_map.h
+	;Each CORE kOpp value represents a VDD2 voltage and CORE DPLL3 frequency pair used for each kOpm
+    "CORE1Map"=multi_sz:"0","1","1","1","1","1","1"
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\DVFS\37xx]
+    "OpmInit"=dword:4                           ;kOpm4
+    "OpmFloor"=dword:0                          ;kOpm0
+    "OpmCeiling"=dword:4                        ;kOpm4
+    ;MPU1Map lists the MPU/IVA OPP associated with each OPM (0..4)
+    ;MPU (VDD1) kOpp values for each kOpm value (kOpm0, kOpm1, ..., kOpm4) see inc\bsp_opp_map.h
+	;Each MPU kOpp value represents a VDD1 voltage, MPU DPLL1 frequency and IVA2 (DSP) DPLL2 frequency triple used fo each kOpm
+    "MPU1Map"=multi_sz:"0","0","1","2","3"
+	;CORE1Map lists the CORE OPP associated with each OPM (0..4) 
+    ;CORE (VDD2) kOpp values for each kOpm value (kOpm0, kOpm1, ..., kOpm6) see inc\bsp_opp_map.h
+	;Each CORE kOpp value represents a VDD2 voltage and CORE DPLL3 frequency pair used for each kOpm
+    "CORE1Map"=multi_sz:"0","1","1","1","1"
+ENDIF BSP_DVFS 
+
+IF BSP_INTRLAT
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\INTRLAT]
+    "Order"=dword:100
+    "Name"="INTRLAT"
+    "min"=dword:0                               ;min interrupt latency in ticks
+    "max"=dword:7FFFFFFF                        ;max interrupt latency in ticks
+    "Dll"="ti_constraintadapters.dll"
+ENDIF BSP_INTRLAT
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN]
+    "Order"=dword:99
+    "Name"="PWRDOM"
+    "Dll"="ti_constraintadapters.dll"
+
+    ; set the Floor and Ceiling D states (D0 thru D4) for each OMAP35xx power domain.
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\MPU]
+    "Floor"=dword:2                             ;0=D0, 4=D4
+    "Ceiling"=dword:0
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\IVA]
+    "Floor"=dword:4                             ;0=D0, 4=D4
+    "Ceiling"=dword:0
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\CORE]
+    "Floor"=dword:3                             ;0=D0, 4=D4
+    "Ceiling"=dword:0
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\PERIPHERAL]
+    "Floor"=dword:4                             ;0=D0, 4=D4
+    "Ceiling"=dword:0    
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\SGX]
+    "Floor"=dword:4                             ;0=D0, 4=D4
+    "Ceiling"=dword:0
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\DSS]
+    "Floor"=dword:4                             ;0=D0, 4=D4
+    "Ceiling"=dword:0
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\CAMERA]
+    "Floor"=dword:4                             ;0=D0, 4=D4
+    "Ceiling"=dword:0
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\USBHOST]
+    "Floor"=dword:4                             ;0=D0, 4=D4
+    "Ceiling"=dword:0  
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Constraints\POWERDOMAIN\NEON]
+    "Floor"=dword:4                             ;0=D0, 4=D4
+    "Ceiling"=dword:0  
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Policies\DEVMON]
+    "Order"=dword:100
+    "Name"="DEVMON"
+    "Dll"="ti_policies.dll"
+    ;LATENCY_STATE_CHIP_OFF      0, CORE+MPU+OTHER = OFF",
+    ;LATENCY_STATE_CHIP_OSWR     1, CORE+OTHER = OSWR, MPU = CSWR",
+    ;LATENCY_STATE_CHIP_CSWR     2, CORE+OTHER = CSWR, MPU = CSWR",
+    ;LATENCY_STATE_CORE_CSWR     3, OTHER=OFF/OSWR/CSWR/INACTIVE, CORE = CSWR, MPU=CSWR",
+    ;LATENCY_STATE_CORE_INACTIVE 4, OTHER=OFF/OSWR/CSWR/INACTIVE, CORE = INACTIVE, MPU=CSWR",
+    ;LATENCY_STATE_MPU_INACTIVE  5, OTHER=OFF/OSWR/CSWR/INACTIVE, CORE+MPU = INACTIVE"
+	; CSWR = Clock Stopped With Retention
+	; OSWR = Off State With Retention
+    "SuspendState"=dword:0
+
+IF BSP_CPUPOLICY
+[HKEY_LOCAL_MACHINE\OMAPPMX\Policies\CPULOAD]
+    "Order"=dword:999
+    "Name"="CPULD"
+    "Dll"="ti_cpuloadpolicy.dll"
+    "MonitorPeriod"=dword:1f4
+    "MonitorWindow"=dword:7d0                   ;2 second monitor window
+    "InterruptThreshold"=dword:41               ;cpu-load for sw interrupt- 65%
+    "BootEventName"="Shell_Ready"
+    "BootTimeout"=dword:ea60                    ;60 sec max wait for bootup
+    "priority256"=dword:63
+    "irq"=dword:65                              ;cpu load interrupt
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Policies\CPULOAD\37xx] 
+    "CeilingOpm"=dword:4
+    "FloorOpm"=dword:0
+    ;"NominalOpm"=dword:3
+    "BootOpm"=dword:4                           
+    ; OpmFrequency has one entry per operating mode (kOpm0..kOpm9), uppercase hex values
+    "OpmFrequency"=multi_sz:"12C","12C","258","320","3E8","0","0","0","0","0"
+    ;"OpmFrequency"=multi_sz:"300","300","600","800","1000","0","0","0","0","0" ;in decimal for reference
+
+    ; OpmThreshold has one entry per operating mode (kOpm0..kOpm9), uppercase hex values
+    "OpmThreshold"=multi_sz:"64","FA","1F4","2BC","3E8","0","0","0","0","0"
+    ;"OpmThreshold"=multi_sz:"100","250","500","700","1000","0","0","0","0","0"  ;in decimal for reference
+
+[HKEY_LOCAL_MACHINE\OMAPPMX\Policies\CPULOAD\35xx] 
+    "CeilingOpm"=dword:5
+    "FloorOpm"=dword:0
+    ;"NominalOpm"=dword:3
+    "BootOpm"=dword:5                           
+    ; OpmFrequency has one entry per operating mode (kOpm0..kOpm9), uppercase hex values
+    "OpmFrequency"=multi_sz:"7D","7D","FA","1F4","226","258","2D0","0","0","0"
+    ;"OpmFrequency"=multi_sz:"125","125","250","500","550","600","720","0","0","0" ;in decimal for reference
+
+    ; OpmThreshold has one entry per operating mode (kOpm0..kOpm9), uppercase hex values
+    "OpmThreshold"=multi_sz:"46","64","D2","1A9","20D","23F","2A3","0","0","0"
+    ;"OpmThreshold"=multi_sz:"70","100","210","425","525","575","675","0","0","0"  ;in decimal for reference
+
+    
+ENDIF BSP_CPUPOLICY
+
+IF BSP_SMARTREFLEXPOLICY
+[HKEY_LOCAL_MACHINE\OMAPPMX\Policies\SMARTREFLEX]
+    "Order"=dword:999
+    "Name"="SMARTREFLEX"
+    "Dll"="ti_policies.dll"
+    "SensingPeriod"=dword:3e8
+    "SensingDelay"=dword:3e8
+    "LprOffOpm"=dword:2                           ;opm2
+ENDIF BSP_SMARTREFLEXPOLICY
+
+IF BSP_SYSSTATEPOLICY
+[HKEY_LOCAL_MACHINE\OMAPPMX\Policies\SYSTEMSTATE]
+    "Order"=dword:999
+    "Name"="SYSTEMSTATE"
+    "Dll"="ti_systemstatepolicy.dll"
+    "UserOpm"=dword:2                        ; opm = 2 for user active state
+    "priority256"=dword:61
+ENDIF BSP_SYSSTATEPOLICY
+
+ENDIF BSP_PMEXT
+
+; END HIVE BOOT SECTION
+; @XIPREGION ENDIF PACKAGE_OEMXIPKERNEL
+; @CESYSGEN ENDIF GWES_MGBASE
+; @CESYSGEN ENDIF CE_MODULES_PM

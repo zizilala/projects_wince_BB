@@ -1,0 +1,4 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000057:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000000058:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\: Missing source file: C:\WINCE600\public\common\oak\lib\ARMV4I\retail\ceddk.lib.
+BUILD: [00:0000000059:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\sysctrl\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\toolhelp.lib.

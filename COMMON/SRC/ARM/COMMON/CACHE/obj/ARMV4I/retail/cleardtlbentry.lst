@@ -1,0 +1,325 @@
+ARM macroassembler      Page:1 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000          ;------------------------------------------------------------------------------- 
+   14 00000000          ; 
+   15 00000000          ;  File:  cleardtlbentry.s 
+   16 00000000          ; 
+   17 00000000          ; 
+   18 00000000                  INCLUDE kxarm.h 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000          ;++ 
+   14 00000000          ; 
+   15 00000000          ; 
+   16 00000000          ; Module Name: 
+   17 00000000          ; 
+   18 00000000          ;    kxarm.h 
+   19 00000000          ; 
+   20 00000000          ; Abstract: 
+   21 00000000          ; 
+   22 00000000          ;    This is an implementation of the WINCE/ARM Calling Sequence 
+   23 00000000          ;    Specification. 
+   24 00000000          ; 
+   25 00000000          ; Environment: 
+   26 00000000          ;    String Library 
+   27 00000000          ; 
+   28 00000000          ; Revision History: 
+   29 00000000          ;-- 
+   30 00000000            
+   31 00000000                          GBLS    VBar 
+   32 00000000          VBar    SETS    "|" 
+   33 00000000                          GBLL    HaveExceptHandler 
+   34 00000000                          GBLS    AreaName 
+   35 00000000                          GBLS    FuncName 
+   36 00000000                          GBLS    PrologName 
+   37 00000000                          GBLS    FuncEndName 
+   38 00000000                          GBLS    ExceptHandler 
+   39 00000000                          GBLS    ExceptData 
+   40 00000000          AreaName SETS   "|.text|" 
+   41 00000000          HaveExceptHandler SETL {FALSE} 
+   42 00000000            
+   43 00000000                  MACRO 
+   44 00000000                  TEXTAREA 
+   45 00000000                  AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   47 00000000                  MEND 
+   48 00000000            
+   49 00000000              MACRO 
+   50 00000000              THUMBAREA 
+   51 00000000              AREA |.text|,ALIGN=2,CODE,READONLY,THUMB 
+   52 00000000          AreaName SETS "|.text|" 
+   53 00000000              MEND 
+   54 00000000            
+   55 00000000                  MACRO 
+   56 00000000                  STARTUPTEXT 
+   57 00000000                  AREA |.astart|,ALIGN=2,CODE 
+   58 00000000          AreaName SETS "|.astart|" 
+   59 00000000                  MEND 
+   60 00000000            
+   61 00000000                  MACRO 
+   62 00000000                  START_REGION    $NameBegin 
+   63 00000000                  LCLS    TempName 
+   64 00000000          TempName SETS    VBar:CC:"$NameBegin":CC:VBar 
+   65 00000000                  EXPORT  $TempName[DATA] 
+   66 00000000          $TempName 
+   67 00000000                  MEND 
+   68 00000000            
+   69 00000000                  MACRO 
+   70 00000000                  END_REGION              $NameEnd 
+   71 00000000                  LCLS    TempName 
+   72 00000000          TempName SETS    VBar:CC:"$NameEnd":CC:VBar 
+   73 00000000                  EXPORT  $TempName[DATA] 
+   74 00000000          $TempName 
+   75 00000000                  MEND 
+   76 00000000            
+   77 00000000          ; 
+   78 00000000          ;   This macro should be used if the assembly function is in ARM 
+   79 00000000          ; 
+   80 00000000            
+   81 00000000                  MACRO 
+   82 00000000                  NESTED_ARMENTRY $Name 
+   83 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+   84 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+   85 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+   86 00000000                  LCLS    ExceptBit 
+   87 00000000                  IF HaveExceptHandler 
+   88 00000000          ExceptBit   SETS        "0x80000000" 
+   89 00000000                  ELSE 
+   90 00000000          ExceptBit   SETS        "0" 
+   91 00000000                  ENDIF 
+   92 00000000            
+   93 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+   94 00000000                  DCD         $FuncName 
+   95 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+   96 00000000                  AREA $AreaName,CODE,READONLY 
+   97 00000000                  ALIGN   2 
+   98 00000000                  EXPORT  $FuncName [FUNC] 
+   99 00000000                  IF HaveExceptHandler 
+  100 00000000              DCD $ExceptHandler 
+  101 00000000              DCD $ExceptData 
+  102 00000000          HaveExceptHandler SETL {FALSE} 
+  103 00000000                  ENDIF 
+  104 00000000          $FuncName 
+  105 00000000                  ROUT 
+  106 00000000                  MEND 
+  107 00000000            
+  108 00000000          ; 
+  109 00000000          ;   This macro should be used if the assembly function is in THUMB 
+  110 00000000          ; 
+  111 00000000                  MACRO 
+  112 00000000                  NESTED_THUMBENTRY       $Name 
+  113 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  114 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  115 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  116 00000000                  LCLS    ExceptBit 
+  117 00000000                  IF HaveExceptHandler 
+  118 00000000          ExceptBit   SETS        "0x80000000" 
+  119 00000000                  ELSE 
+  120 00000000          ExceptBit   SETS        "0" 
+  121 00000000                  ENDIF 
+  122 00000000            
+  123 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  124 00000000                  DCD         $FuncName 
+  125 00000000              DCD     (($PrologName-$FuncName)/2) :OR: ((($FuncEndName-$FuncName)/2):SHL:8) :OR: $ExceptBit 
+  126 00000000                  AREA $AreaName,CODE,READONLY 
+  127 00000000                  ALIGN   2 
+  128 00000000                  EXPORT  $FuncName [FUNC] 
+  129 00000000                  IF HaveExceptHandler 
+  130 00000000              DCD $ExceptHandler 
+  131 00000000              DCD $ExceptData 
+  132 00000000          HaveExceptHandler SETL {FALSE} 
+  133 00000000                  ENDIF 
+  134 00000000          $FuncName 
+  135 00000000                  ROUT 
+  136 00000000                  MEND 
+  137 00000000            
+  138 00000000          ; 
+  139 00000000          ;   This macro should be used if the assembly function is in ARM 
+  140 00000000          ; 
+  141 00000000                  MACRO 
+  142 00000000                  NESTED_ENTRY    $Name 
+  143 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  144 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  145 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  146 00000000                  LCLS    ExceptBit 
+  147 00000000                  IF HaveExceptHandler 
+  148 00000000          ExceptBit   SETS        "0x80000000" 
+  149 00000000                  ELSE 
+  150 00000000          ExceptBit   SETS        "0" 
+  151 00000000                  ENDIF 
+  152 00000000            
+  153 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  154 00000000                  DCD         $FuncName 
+  155 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+  156 00000000                  AREA $AreaName,CODE,READONLY 
+  157 00000000                  ALIGN   2 
+  158 00000000                  EXPORT  $FuncName [FUNC] 
+  159 00000000                  IF HaveExceptHandler 
+  160 00000000              DCD $ExceptHandler 
+  161 00000000              DCD $ExceptData 
+  162 00000000          HaveExceptHandler SETL {FALSE} 
+  163 00000000                  ENDIF 
+  164 00000000          $FuncName 
+  165 00000000                  ROUT 
+  166 00000000                  MEND 
+  167 00000000            
+  168 00000000                  MACRO 
+  169 00000000                  PROLOG_END 
+  170 00000000          $PrologName 
+  171 00000000                  MEND 
+  172 00000000            
+  173 00000000                  MACRO 
+  174 00000000                  LEAF_ENTRY      $Name 
+  175 00000000          FuncName SETS    VBar:CC:"$Name":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  $FuncName [FUNC] 
+  180 00000000          $FuncName 
+  181 00000000                  ROUT 
+  182 00000000                  MEND 
+  183 00000000            
+  184 00000000                  MACRO 
+  185 00000000                  ALTERNATE_ENTRY $Name 
+  186 00000000                  LCLS    TempName 
+  187 00000000          TempName SETS    VBar:CC:"$Name":CC:VBar 
+  188 00000000                  EXPORT  $TempName [FUNC] 
+  189 00000000          $TempName 
+  190 00000000                  MEND 
+  191 00000000            
+  192 00000000                  MACRO 
+  193 00000000                  ENTRY_END       $Name 
+  194 00000000          $FuncEndName 
+  195 00000000                  MEND 
+  196 00000000            
+  197 00000000                  MACRO 
+  198 00000000                  EXCEPTION_HANDLER       $Handler 
+  199 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  200 00000000          ExceptData SETS "0" 
+  201 00000000          HaveExceptHandler SETL {TRUE} 
+  202 00000000                  MEND 
+  203 00000000            
+  204 00000000                  MACRO 
+  205 00000000                  EXCEPTION_HANDLER_DATA  $Handler, $HandlerData 
+  206 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  207 00000000          ExceptData SETS    VBar:CC:"$HandlerData":CC:VBar 
+  208 00000000          HaveExceptHandler SETL {TRUE} 
+  209 00000000                  MEND 
+  210 00000000            
+  211 00000000                  MACRO 
+  212 00000000                  EXCEPTION_HANDLER_MILLICODE     $Handler, $HandlerData 
+  213 00000000          ExceptHandler SETS    "$Handler" 
+  214 00000000          ExceptData SETS    "$HandlerData" 
+  215 00000000          HaveExceptHandler SETL {TRUE} 
+  216 00000000                  MEND 
+  217 00000000            
+  218 00000000            
+  219 00000000                  END 
+   19 00000000                  INCLUDE armmacros.s 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000            
+   14 00000000          ;/*********************************************************************** 
+   15 00000000          ;  Copyright (c) ARM Limited 1998.  All rights reserved. 
+   16 00000000          ; 
+   17 00000000          ; NOTE: The CALL and CALLEQ macros shouldn't be used in OS startup code 
+   18 00000000          ;       before the MMU is enabled since in the Thumbing case it relies 
+   19 00000000          ;       on an absolute address which will be virtual in the case of the 
+   20 00000000          ;       OS code and if the MMU isn't enabled, all branches should be 
+   21 00000000          ;       relative (or a computed physical address). 
+   22 00000000          ; 
+   23 00000000          ;***********************************************************************/ 
+   24 00000000            
+   25 00000000            IF Interworking :LOR: Thumbing 
+   26 00000000            
+   27 00000000              MACRO 
+   28 00000000              CALL $Fn 
+   29 00000000              ldr     r12, =$Fn 
+   30 00000000              mov     lr, pc 
+   31 00000000              bx      r12 
+   32 00000000              MEND 
+   33 00000000            
+   34 00000000              MACRO 
+   35 00000000              CALLEQ $Fn 
+   36 00000000              ldreq   r12, =$Fn 
+   37 00000000              moveq   lr, pc 
+   38 00000000              bxeq    r12 
+   39 00000000              MEND 
+   40 00000000            
+   41 00000000              MACRO 
+   42 00000000              RETURN 
+   43 00000000              bx      lr 
+   44 00000000              MEND 
+   45 00000000            
+   46 00000000              MACRO 
+   47 00000000              RETURN_EQ 
+   48 00000000              bxeq    lr 
+   49 00000000              MEND 
+   50 00000000            
+   51 00000000              MACRO 
+   52 00000000              RETURN_NE 
+   53 00000000              bxne    lr 
+   54 00000000              MEND 
+   55 00000000            
+   56 00000000            ELSE 
+   83 00000000            ENDIF 
+   84 00000000            
+   85 00000000              END  
+   20 00000000            
+   21 00000000                  TEXTAREA 
+   45                           AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   22 00000000            
+   23 00000000          ;------------------------------------------------------------------------------- 
+   24 00000000          ; 
+   25 00000000          ;  Function:  OALClearDTLBEntry 
+   26 00000000          ; 
+   27 00000000          ;  Flush and invalidate an entry in the data TLB 
+   28 00000000          ; 
+   29 00000000                  LEAF_ENTRY OALClearDTLBEntry 
+  175 00000000          FuncName SETS    VBar:CC:"OALClearDTLBEntry":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"OALClearDTLBEntry":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  |OALClearDTLBEntry| [FUNC] 
+  180 00000000          |OALClearDTLBEntry| 
+  181 00000000                  ROUT 
+   30 00000000            
+   31 00000000 ee080f36         mcr     p15, 0, r0, c8, c6, 1           ; clear data TLB entry 
+   32 00000004            
+   33 00000004                  RETURN 
+   43 00000004 e12fff1e     bx      lr 
+   34 00000008            
+   35 00000008                  END 
+Assembly terminated, errors: 0, warnings: 0 

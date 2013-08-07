@@ -1,0 +1,10 @@
+OBJECTS=\
+    obj\ARMV4I\retail\init.obj\
+    obj\ARMV4I\retail\attrib.obj\
+    obj\ARMV4I\retail\flush.obj\
+    obj\ARMV4I\retail\cacheid.obj\
+    obj\ARMV4I\retail\cachemode.obj\
+    obj\ARMV4I\retail\icache.obj\
+    obj\ARMV4I\retail\dcache.obj\
+    obj\ARMV4I\retail\tlb.obj
+

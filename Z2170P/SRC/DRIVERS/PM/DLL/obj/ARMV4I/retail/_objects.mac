@@ -1,0 +1,15 @@
+OBJECTS=\
+    obj\ARMV4I\retail\pminit.obj\
+    obj\ARMV4I\retail\pmpnp.obj\
+    obj\ARMV4I\retail\pmdevice.obj\
+    obj\ARMV4I\retail\pmrequire.obj\
+    obj\ARMV4I\retail\pmrelation.obj\
+    obj\ARMV4I\retail\pmnotify.obj\
+    obj\ARMV4I\retail\pmresume.obj\
+    obj\ARMV4I\retail\pmutils.obj\
+    obj\ARMV4I\retail\pmsysstate.obj\
+    obj\ARMV4I\retail\pmtimer.obj\
+    obj\ARMV4I\retail\pmsystem.obj\
+    obj\ARMV4I\retail\pmstream.obj\
+    obj\ARMV4I\retail\pmdisplay.obj
+

@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatalogFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" RequiredVersion="6.00" xsi:schemaLocation="urn:Microsoft.PlatformBuilder/Catalog PbcXml600.xsd" xmlns="urn:Microsoft.PlatformBuilder/Catalog">
+  <FileInformation Id="FileInformation:Brian:Z2170P">
+    <Title>Z2170P</Title>
+    <Description>Z2170P BSP Catalog Items</Description>
+    <Comment>BSP for EVM_OMAP35xx reference board</Comment>
+    <Vendor>Brian</Vendor>
+    <OSVersion>6.00</OSVersion>
+    <FileVersion>1.0</FileVersion>
+  </FileInformation>
+  <Bsp Id="Bsp:Brian:Z2170P:ARMV4I">
+    <Title>Z2170P: ARMV4I</Title>
+    <Description>Zebex Z-2170Plus</Description>
+    <PlatformDirectory>Z2170P</PlatformDirectory>
+    <CpuId>Cpu:ARMV4I</CpuId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapgpio_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tps659xx_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tps659xxaudio_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tps659xxgpio_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tps659xxmadc_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tps659xxled_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tps659xxpwrkey_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tps659xxkeypad_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapsdma_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapsdmaproxy_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcspi1_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcspi2_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcspi3_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcspi4_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omaphdq_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapdss_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapvrfb_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapdssrsz_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:TVOUT_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:TVOUTcomposite_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:TVOUTpal_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapisprsz_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tsc2046touch_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapuart1_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapuart2_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapuart3_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapuart4_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapnand_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Hamming1bit_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:BCH4bit_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:BCH8bit_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:smsc_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:backlight_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcbsp1_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcbsp2_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcbsp3_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcbsp4_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmcbsp5_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapSDHC_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapWatchdog_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapRtcWakesCPU_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapusbh2_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapcamera_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmusbotgisp1507_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmusbotgtps659xx_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmusbfn_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapmusbhcd_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:tps659xxrtc_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Brianshell_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:PMEXT_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:DVFS_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:CPULOADPOLICY_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:INTRLAT_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:SYSSTATEPOLICY_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:SMARTREFLEXPOLICY_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:omapnled_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:H264_DECODE_FILTER_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:MPEG4_DECODE_FILTER_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:MPEG2_DECODE_FILTER_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:H264_ENCODE_FILTER_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:MPEG4_ENCODE_FILTER_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:MP3_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:AAC_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:DMAISampApps_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:CodecsGPPDemux_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:Codecs:AACParser_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:SimpleBenchmark_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:batterybq27000_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:batterystub_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:OliviaOMAP_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:imgreghive_Z2170P</BspItemId>
+    <BspItemId>EVM_OMAP35xx:Brian:TestApps_Z2170P</BspItemId>
+  </Bsp>
+  <Item Id="EVM_OMAP35xx:Brian:omapgpio_Z2170P">
+    <Title>OMAP GPIO</Title>
+    <Description>Omap Gpio driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Module>omap_gpio.dll</Module>
+    <Location>Drivers\GPIO</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tps659xxgpio_Z2170P">
+    <Title>tps659xx GPIO</Title>
+    <Description>TPS659xx GPIO driver</Description>
+    <Comment>TPS659xx GPIO</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TPS659XX_GPIO</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Module>TPS659xx_gpio.dll</Module>
+    <Location>Drivers\TPS659XX\</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tps659xxmadc_Z2170P">
+    <Title>Monitoring ADC (MADC)</Title>
+    <Description>TPS659xx MADC driver</Description>
+    <Comment>TPS659xx MADC</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TPS659XX_MADC</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Module>TPS659xx_MADC.dll</Module>
+    <Location>Drivers\TPS659XX\</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tps659xxled_Z2170P">
+    <Title>tps659xx LED</Title>
+    <Description>TPS659xx LED driver</Description>
+    <Comment>TPS659xx LED</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TPS659XX_LED</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Module>TPS659xx_LED.dll</Module>
+    <Location>Drivers\TPS659XX\</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tps659xxpwrkey_Z2170P">
+    <Title>Power Key driver</Title>
+    <Description>Power Key driver</Description>
+    <Comment>Power Key driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TPS659XX_PWRKEY</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Module>tps659xx_pwrkey.dll</Module>
+    <Location>Drivers\TPS659XX</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tps659xxaudio_Z2170P">
+    <Title>Audio</Title>
+    <Description>Audio driver for TPS659XX</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TPS659XX_WAVE</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Variable>BSP_OMAP_MCBSP2</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Variable>BSP_HEADSET</Variable>
+    <Variable>SYSGEN_AUDIO</Variable>
+    <Module>tps659xx_wave.dll</Module>
+    <Location>Drivers\TPS659xx</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tps659xxkeypad_Z2170P">
+    <Title>Keypad</Title>
+    <Description>Keypad driver for the TPS659XX</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TPS659XX_KEYPAD</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Module>tps659xx_keypad.dll</Module>
+    <Location>Drivers\TPS659xx</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapsdma_Z2170P">
+    <Title>SDMA driver</Title>
+    <Description>Omap SDMA driver</Description>
+    <Comment>Omap SDMA driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_sdma.dll</Module>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapsdmaproxy_Z2170P">
+    <Title>SDMA Proxy driver</Title>
+    <Description>Omap SDMA Proxy driver</Description>
+    <Comment>Omap SDMA driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_SDMAPROXY</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>SdmaProxy.dll</Module>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcspi1_Z2170P">
+    <Title>SPI driver (MCSPI1)</Title>
+    <Description>Omap MCSPI driver 1</Description>
+    <Comment>Omap MCSPI driver 1</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCSPI1</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcspi.dll</Module>
+    <Location>Drivers\MCSPI</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcspi2_Z2170P">
+    <Title>SPI driver (MCSPI2)</Title>
+    <Description>Omap MCSPI driver 2</Description>
+    <Comment>Omap MCSPI driver 2</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCSPI2</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcspi.dll</Module>
+    <Location>Drivers\MCSPI</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcspi3_Z2170P">
+    <Title>SPI driver (MCSPI3)</Title>
+    <Description>Omap MCSPI driver 3</Description>
+    <Comment>Omap MCSPI driver 3</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCSPI3</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcspi.dll</Module>
+    <Location>Drivers\MCSPI</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcspi4_Z2170P">
+    <Title>SPI driver (MCSPI4)</Title>
+    <Description>Omap MCSPI driver 4</Description>
+    <Comment>Omap MCSPI driver 4</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCSPI4</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcspi.dll</Module>
+    <Location>Drivers\MCSPI</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omaphdq_Z2170P">
+    <Title>HDQ (1-wire) driver</Title>
+    <Description>HDQ (1-Wire) driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_HDQ</Variable>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapdss_Z2170P">
+    <Title>Display driver</Title>
+    <Description>Display driver</Description>
+    <Comment>Display driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_DSS</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Location>Drivers\DISPLAY</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapvrfb_Z2170P">
+    <Title>VRFB driver</Title>
+    <Description>Virtual Rotate Frame Buffer driver: To be used for efficient rotation, but this will introduce stride in every surface and ARM based codecs do not work well with stride present</Description>
+    <Comment>Virtual Rotate Frame Buffer driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_VRFB</Variable>
+    <Location>Drivers\DISPLAY</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapdssrsz_Z2170P">
+    <Title>Use ISP Resizer</Title>
+    <Description>Use ISP Resizer within Display driver to provide extra downscaling</Description>
+    <Comment>Functionality within display driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_DSS_USE_RESIZER</Variable>
+    <Variable>BSP_OMAP_DSS</Variable>
+    <Variable>BSP_OMAP_ISP_RESIZER</Variable>
+    <Location>Drivers\DISPLAY</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:TVOUT_Z2170P">
+    <Title>TVOUT</Title>
+    <Description>Check this to enable TVout by default on boot-up. If not checked, then use the shell command to enable TV out after boot-up</Description>
+    <Comment>Check this to enable TVout by default on boot-up. If not checked, then use the shell command to enable TV out after boot-up</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_DSS</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Variable>BSP_TVOUT_ENABLE</Variable>
+    <Location>Drivers\DISPLAY</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:TVOUTcomposite_Z2170P">
+    <Title>TVOUT composite</Title>
+    <Description>Check this for TVOUT driver for composite. Uncheck this for TVOUT driver for S-video</Description>
+    <Comment>Check this for TVOUT driver for composite. Uncheck this for TVOUT driver for S-video</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_DSS</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Variable>BSP_TVOUT_ENABLE</Variable>
+    <Variable>BSP_TVOUT_COMPOSITE</Variable>
+    <Location>Drivers\DISPLAY\TVOUT</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:TVOUTpal_Z2170P">
+    <Title>TVOUT PAL</Title>
+    <Description>Check this for TVOUT driver for PAL. Uncheck this for TVOUT driver for NTSC</Description>
+    <Comment>Check this for TVOUT driver for PAL. Uncheck this for TVOUT driver for NTSC</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_DSS</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Variable>BSP_TVOUT_ENABLE</Variable>
+    <Variable>BSP_TVOUT_PAL</Variable>
+    <Location>Drivers\DISPLAY\TVOUT</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapisprsz_Z2170P">
+    <Title>ISP Resizer</Title>
+    <Description>ISP Resizer driver</Description>
+    <Comment>ISP Resizer driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_ISP_RESIZER</Variable>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tsc2046touch_Z2170P">
+    <Title>Touch panel driver</Title>
+    <Description>TSC2046 Touch panel driver</Description>
+    <Comment>TSC2046 Touch panel driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TSC2046_TOUCH</Variable>
+    <Variable>BSP_OMAP_MCSPI1</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>tsc2046_touch.dll</Module>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapuart1_Z2170P">
+    <Title>UART1 driver</Title>
+    <Description>Omap UART driver</Description>
+    <Comment>Omap UART driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_UART1</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_uart.dll</Module>
+    <Location>Drivers\UART</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapuart2_Z2170P">
+    <Title>UART2 driver</Title>
+    <Description>Omap UART driver</Description>
+    <Comment>Omap UART driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_UART2</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_uart.dll</Module>
+    <Location>Drivers\UART</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapuart3_Z2170P">
+    <Title>UART3 driver</Title>
+    <Description>Omap UART driver</Description>
+    <Comment>Omap UART driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_UART3</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_uart.dll</Module>
+    <Location>Drivers\UART</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapuart4_Z2170P">
+    <Title>UART4 driver (37xx only)</Title>
+    <Description>Omap UART driver for 37xx</Description>
+    <Comment>Omap UART driver for 37xx only</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_UART4</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_uart.dll</Module>
+    <Location>Drivers\UART</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapnand_Z2170P">
+    <Title>Nand driver</Title>
+    <Description>Omap Nand driver</Description>
+    <Comment>Omap Nand driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_NAND</Variable>
+    <Module>omap_nand.dll</Module>
+    <Location>Drivers\NAND</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:Hamming1bit_Z2170P">
+    <Title>Hamming 1 bit ECC</Title>
+    <Description>Hamming 1 bit ECC for NAND driver</Description>
+    <Comment>Hamming 1 bit ECC for NAND driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_NAND_ECC_HAMMING1BIT</Variable>
+    <Variable>BSP_OMAP_NAND</Variable>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Drivers\NAND</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:BCH4bit_Z2170P">
+    <Title>BCH 4 bit ECC(AM/DM37x PG1.1 onwards only)</Title>
+    <Description>BCH 4 bit ECC for NAND driver(AM/DM37x PG1.1 onwards only)</Description>
+    <Comment>BCH 4 bit ECC for NAND driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_NAND_ECC_BCH4BIT</Variable>
+    <Variable>BSP_OMAP_NAND</Variable>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Drivers\NAND</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:BCH8bit_Z2170P">
+    <Title>BCH 8 bit ECC</Title>
+    <Description>BCH 8 bit ECC for NAND driver</Description>
+    <Comment>BCH 8 bit ECC for NAND driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_NAND_ECC_BCH8BIT</Variable>
+    <Variable>BSP_OMAP_NAND</Variable>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Drivers\NAND</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:smsc_Z2170P">
+    <Title>NDIS SMSC driver</Title>
+    <Description>NDIS SMSC driver</Description>
+    <Comment>NDIS SMSC driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_SMSC911X</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Variable>BSP_TPS659XX_GPIO</Variable>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Variable>SYSGEN_NDIS</Variable>
+    <Variable>SYSGEN_ETHERNET</Variable>
+    <Module>smsc9118.dll</Module>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:backlight_Z2170P">
+    <Title>Backlight driver</Title>
+    <Description>Backlight driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_BACKLIGHT</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Variable>BSP_TPS659XX_LED</Variable>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Module>backlight.dll</Module>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tps659xx_Z2170P">
+    <Title>base driver</Title>
+    <Description>TPS659xx driver</Description>
+    <Comment>TPS659xx driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TPS659XX</Variable>
+    <Module>tps659xx.dll</Module>
+    <Location>Drivers\TPS659XX</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcbsp1_Z2170P">
+    <Title>MCBSP driver (MCBSP1)</Title>
+    <Description>MCBSP1 driver</Description>
+    <Comment>MCBSP1 driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCBSP1</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcbsp.dll</Module>
+    <Location>Drivers\MCBSP</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcbsp2_Z2170P">
+    <Title>MCBSP driver (MCBSP2)</Title>
+    <Description>MCBSP2 driver</Description>
+    <Comment>MCBSP2 driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCBSP2</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcbsp.dll</Module>
+    <Location>Drivers\MCBSP</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcbsp3_Z2170P">
+    <Title>MCBSP driver (MCBSP3)</Title>
+    <Description>MCBSP3 driver</Description>
+    <Comment>MCBSP3 driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCBSP3</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcbsp.dll</Module>
+    <Location>Drivers\MCBSP</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcbsp4_Z2170P">
+    <Title>MCBSP driver (MCBSP4)</Title>
+    <Description>MCBSP4 driver</Description>
+    <Comment>MCBSP4 driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCBSP4</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcbsp.dll</Module>
+    <Location>Drivers\MCBSP</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmcbsp5_Z2170P">
+    <Title>MCBSP driver (MCBSP5)</Title>
+    <Description>MCBSP5 driver</Description>
+    <Comment>MCBSP5 driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MCBSP5</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Module>omap_mcbsp.dll</Module>
+    <Location>Drivers\MCBSP</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapSDHC_Z2170P">
+    <Title>SD/MMC</Title>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_SDHC</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Variable>BSP_TPS659XX_GPIO</Variable>
+    <Variable>SYSGEN_SDBUS</Variable>
+    <Variable>SYSGEN_SD_MEMORY</Variable>
+    <Variable>IMGSDBUS2</Variable>
+    <Module>omap_sdhc.dll</Module>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapWatchdog_Z2170P">
+    <Title>Internal Watchdog</Title>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_WATCHDOG</Variable>
+    <Location>\Kernel features</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapRtcWakesCPU_Z2170P">
+    <Title>External RTC wake up</Title>
+    <Description>A RTC alarm can wake up the system when its suspended.</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_RTC_WAKES_CPU</Variable>
+    <Variable>BSP_TPS659XX_RTC</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Location>\Kernel features</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapusbh2_Z2170P">
+    <Title>Host Port</Title>
+    <Description>Host Port 2 (High speed only)</Description>
+    <Comment>Host Port 2 (High speed only)</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_USB_HOST2</Variable>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Variable>BSP_TPS659XX_GPIO</Variable>
+    <Variable>SYSGEN_USB</Variable>
+    <Module>omap_ehcihcd.dll</Module>
+    <Location>Drivers\USB Host</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapcamera_Z2170P">
+    <Title>Camera</Title>
+    <Description>Camera driver</Description>
+    <Comment>Camera driver for TVP5146</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_CAMERA</Variable>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Module>omap_camera.dll</Module>
+    <Location>Drivers</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmusbotgisp1507_Z2170P">
+    <Title>OTG Driver (ISP5107)</Title>
+    <Description>USB OTG port</Description>
+    <Comment>USB OTG port through ISP1507</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MUSBOTG</Variable>
+    <Variable>BSP_OMAP_MUSBFN</Variable>
+    <Variable>BSP_OMAP_MUSBHCD</Variable>
+    <Variable>BSP_OMAP_MUSBOTG_ISP1504</Variable>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Variable>SYSGEN_USB</Variable>
+    <Variable>SYSGEN_USBFN</Variable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>omap_musbotg.dll</Module>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Drivers\USB OTG</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmusbotgtps659xx_Z2170P">
+    <Title>OTG Driver (TPS659xx)</Title>
+    <Description>USB OTG port</Description>
+    <Comment>USB OTG port through TPS659xx</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MUSBOTG</Variable>
+    <Variable>BSP_OMAP_MUSBFN</Variable>
+    <Variable>BSP_OMAP_MUSBHCD</Variable>
+    <Variable>BSP_OMAP_MUSBOTG_TPS659xx</Variable>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Variable>SYSGEN_USB</Variable>
+    <Variable>SYSGEN_USBFN</Variable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>omap_musbotg.dll</Module>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Drivers\USB OTG</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmusbfn_Z2170P">
+    <Title>OTG Function Driver</Title>
+    <Description>USB OTG Function Driver</Description>
+    <Comment>USB OTG Function Driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MUSBFN</Variable>
+    <Variable>BSP_OMAP_MUSBOTG</Variable>
+    <Variable>BSP_OMAP_SDMA</Variable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>omap_musbfn.dll</Module>
+    <Location>Drivers\USB OTG</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapmusbhcd_Z2170P">
+    <Title>OTG Host Driver</Title>
+    <Description>USB OTG Host Driver</Description>
+    <Comment>USB OTG Host Driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_MUSBHCD</Variable>
+    <Variable>BSP_OMAP_MUSBOTG</Variable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>omap_musbhcd.dll</Module>
+    <Location>Drivers\USB OTG</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:tps659xxrtc_Z2170P">
+    <Title>Real-Time Clock</Title>
+    <Description>Real-Time Clock Driver</Description>
+    <Comment>Real-Time Clock Driver</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TPS659XX_RTC</Variable>
+    <Variable>BSP_TPS659XX</Variable>
+    <Module>tps659xx_rtc.dll</Module>
+    <Location>Drivers\TPS659XX</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:Brianshell_Z2170P">
+    <Title>TI shell extensions</Title>
+    <Description>provides various command useful for debugging</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_SHELL_EXTENSIONS_DO_CMD</Variable>
+    <Module>omap_shell.dll</Module>
+    <Module>proxydriver.dll</Module>
+    <Module>i2cproxy.dll</Module>
+    <Module>do.exe</Module>
+    <Location>\Kernel features</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:PMEXT_Z2170P">
+    <Title>PMExt</Title>
+    <Comment>Power Management Extention</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_PMEXT</Variable>
+    <Location>Drivers\PM</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:DVFS_Z2170P">
+    <Title>DVFS</Title>
+    <Comment>Power Management DVFS</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_DVFS</Variable>
+    <Variable>BSP_PMEXT</Variable>
+    <Location>Drivers\PM\Constraint Adapter</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:INTRLAT_Z2170P">
+    <Title>INTR LATENCY</Title>
+    <Comment>Power Management Interrupt Latency</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_INTRLAT</Variable>
+    <Variable>BSP_PMEXT</Variable>
+    <Location>Drivers\PM\Constraint Adapter</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:CPULOADPOLICY_Z2170P">
+    <Title>CPU Load policy</Title>
+    <Comment>Power Management CPU policy</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_CPUPOLICY</Variable>
+    <Variable>BSP_DVFS</Variable>
+    <Variable>BSP_PMEXT</Variable>
+    <Location>Drivers\PM\Policy Adapter</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:SYSSTATEPOLICY_Z2170P">
+    <Title>System state policy</Title>
+    <Comment>Power Management system state</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_SYSSTATEPOLICY</Variable>
+    <Variable>BSP_PMEXT</Variable>
+    <Location>Drivers\PM\Policy Adapter</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:SMARTREFLEXPOLICY_Z2170P">
+    <Title>SMART REFLEX</Title>
+    <Comment>Power Management Smart Reflex</Comment>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_SMARTREFLEXPOLICY</Variable>
+    <Variable>BSP_DVFS</Variable>
+    <Variable>BSP_PMEXT</Variable>
+    <Location>Drivers\PM\Policy Adapter</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:omapnled_Z2170P">
+    <Title>Notification LED Driver</Title>
+    <Description>Notification LED Driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OMAP_NLED</Variable>
+    <Variable>BSP_OMAP_GPIO</Variable>
+    <Variable>SYSGEN_NLED</Variable>
+    <Module>omap_nled.dll</Module>
+    <Location>Drivers\NLED</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:OliviaOMAP_Z2170P">
+    <Title>Adeneo Silverlight Sample Application</Title>
+    <Description>Adeneo Silverlight Sample Application</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_OLIVIA_OMAP</Variable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>Olivia_OMAP.exe</Module>
+    <Location>\Demo Applications</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:SimpleBenchmark_Z2170P">
+    <Title>Simple Benchmark</Title>
+    <Description>Includes a tool for performing a simple benchmark of the platform</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_SIMPLE_BENCHMARK</Variable>
+    <Module>simple.dll</Module>
+    <Location>Kernel features</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:batterybq27000_Z2170P">
+    <Title>BQ27000 battery driver</Title>
+    <Description>BQ27000 battery driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>SYSGEN_BATTERY</Variable>
+    <Variable>BSP_OMAP_HDQ</Variable>
+    <Variable>BSP_BATTERY_BQ27000</Variable>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Drivers\Battery</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:batterystub_Z2170P">
+    <Title>NULL battery driver (stub)</Title>
+    <Description>NULL battery driver (stub)</Description>
+    <Type>BspSpecific</Type>
+    <Variable>SYSGEN_BATTERY</Variable>
+    <Variable>BSP_BATTERY_STUB</Variable>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Drivers\Battery</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:imgreghive_Z2170P">
+    <Title>Persistent Hive Registry Storage</Title>
+    <Description>Enable this to persist registry and other data across a warm reset</Description>
+    <Type>BspSpecific</Type>
+    <Variable>IMGREGHIVE</Variable>
+    <Variable>SYSGEN_FSREGHIVE</Variable>
+    <Variable>SYSGEN_FATFS</Variable>
+    <Variable>SYSGEN_MSPART</Variable>
+    <Location>Kernel features</Location>
+  </Item>
+  <Item Id="EVM_OMAP35xx:Brian:TestApps_Z2170P">
+    <Title>BSP Test Applications</Title>
+    <Description>Includes BSP test applications</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_TEST_APPS</Variable>
+    <Location>BSP test</Location>
+  </Item>
+</CatalogFile>

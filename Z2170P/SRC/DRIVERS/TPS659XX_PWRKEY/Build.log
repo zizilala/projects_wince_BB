@@ -1,0 +1,399 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\
+BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000009:INFO  ] Done.
+BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\pwrkey.c because target: obj\ARMV4I\retail\pwrkey.obj is missing.
+BUILD: [00:0000000011:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\ directory.
+BUILD: [00:0000000012:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000013:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000014:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000015:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000016:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\sources
+BUILD: [01:0000000017:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000018:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY
+BUILD: [01:0000000019:INFO  ] TARGETNAME: tps659xx_pwrkey
+BUILD: [01:0000000020:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000021:PROGC ] Compiling .\pwrkey.c
+BUILD: [01:0000000022:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\pwrkey.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\pwrkey.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\.\pwrkey.c
+BUILD: [01:0000000023:INFO  ] pwrkey.c
+BUILD: [00:0000000024:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_pwrkey.lib is missing.
+BUILD: [00:0000000025:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\obj\ARMV4I\retail\pwrkey.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_pwrkey.lib is missing.
+BUILD: [00:0000000026:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_pwrkey.lib is missing.
+BUILD: [00:0000000027:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\ directory.
+BUILD: [00:0000000028:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000029:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000030:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000031:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000032:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\sources
+BUILD: [01:0000000033:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000034:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY
+BUILD: [01:0000000035:INFO  ] TARGETNAME: tps659xx_pwrkey
+BUILD: [01:0000000036:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000037:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_pwrkey.lib
+BUILD: [01:0000000038:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_pwrkey.lib -def:tps659xx_pwrkey.def -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm199.tmp
+BUILD: [01:0000000039:INFO  ] Microsoft (R) Library Manager Version 8.00.50727.42
+BUILD: [01:0000000040:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000041:INFO  ] 
+BUILD: [01:0000000042:INFO  ] -nodefaultlib 
+BUILD: [01:0000000043:INFO  ] -ignore:4001 
+BUILD: [01:0000000044:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000045:INFO  ] obj\ARMV4I\retail\pwrkey.obj 
+BUILD: [01:0000000046:INFO  ] C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib 
+BUILD: [01:0000000047:INFO  ]    Creating library C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_pwrkey.lib and object C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_pwrkey.exp
+BUILD: [00:0000000048:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000000049:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.dll is missing.
+BUILD: [00:0000000050:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.dll is missing.
+BUILD: [00:0000000051:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000000052:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\obj\ARMV4I\retail\pwrkey.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.dll is missing.
+BUILD: [00:0000000053:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.dll is missing.
+BUILD: [00:0000000054:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\ directory.
+BUILD: [00:0000000055:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000000056:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000057:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000058:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000059:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY\sources
+BUILD: [01:0000000060:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000061:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_PWRKEY
+BUILD: [01:0000000062:INFO  ] TARGETNAME: tps659xx_pwrkey
+BUILD: [01:0000000063:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000064:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000065:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.dll
+BUILD: [01:0000000066:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.dll -dll -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm19A.tmp
+BUILD: [01:0000000067:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000068:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000069:INFO  ] 
+BUILD: [01:0000000070:INFO  ] -nodefaultlib 
+BUILD: [01:0000000071:INFO  ] -include:DllMain -entry:_DllMainCRTStartup 
+BUILD: [01:0000000072:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.pdb 
+BUILD: [01:0000000073:INFO  ] -pdbaltpath:tps659xx_pwrkey.pdb 
+BUILD: [01:0000000074:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000075:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000076:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.map 
+BUILD: [01:0000000077:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.rel 
+BUILD: [01:0000000078:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000079:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000080:INFO  ] /base:0x10000000 
+BUILD: [01:0000000081:INFO  ] obj\ARMV4I\retail\pwrkey.obj 
+BUILD: [01:0000000082:INFO  ] C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib 
+BUILD: [01:0000000083:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000084:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_pwrkey.exp 
+BUILD: [01:0000000085:INFO  ] 
+BUILD: [01:0000000086:INFO  ] Starting pass 1
+BUILD: [01:0000000087:INFO  ] 
+BUILD: [01:0000000088:INFO  ] Searching libraries
+BUILD: [01:0000000089:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib:
+BUILD: [01:0000000090:INFO  ]       Found TWLClose
+BUILD: [01:0000000091:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000092:INFO  ]         Loaded triton_device.lib(twl_access.obj)
+BUILD: [01:0000000093:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000094:INFO  ]       Found GetDeviceRegistryParams
+BUILD: [01:0000000095:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000096:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000097:INFO  ]       Found __IMPORT_DESCRIPTOR_CEDDK
+BUILD: [01:0000000098:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000099:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000100:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000101:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000102:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000103:INFO  ]       Found CEDDK_NULL_THUNK_DATA
+BUILD: [01:0000000104:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000105:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000106:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000107:INFO  ]       Found EventModify
+BUILD: [01:0000000108:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000109:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000110:INFO  ]       Found LocalFree
+BUILD: [01:0000000111:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000112:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000113:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000114:INFO  ]       Found CloseHandle
+BUILD: [01:0000000115:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000116:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000117:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000118:INFO  ]       Found WaitForSingleObject
+BUILD: [01:0000000119:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000120:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000121:INFO  ]       Found NKDbgPrintfW
+BUILD: [01:0000000122:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000123:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000124:INFO  ]       Found SetSystemPowerState
+BUILD: [01:0000000125:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000126:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000127:INFO  ]       Found Sleep
+BUILD: [01:0000000128:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000129:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000130:INFO  ]       Found DisableThreadLibraryCalls
+BUILD: [01:0000000131:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000132:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000133:INFO  ]       Found RegisterDbgZones
+BUILD: [01:0000000134:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000135:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000136:INFO  ]       Found CeSetThreadPriority
+BUILD: [01:0000000137:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000138:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000139:INFO  ]       Found CreateThread
+BUILD: [01:0000000140:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000141:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000142:INFO  ]       Found CreateEventW
+BUILD: [01:0000000143:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000144:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000145:INFO  ]       Found LocalAlloc
+BUILD: [01:0000000146:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000147:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000148:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000149:INFO  ]       Found __GetUserKData
+BUILD: [01:0000000150:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000151:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000152:INFO  ]       Found DeviceIoControl
+BUILD: [01:0000000153:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000154:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000155:INFO  ]       Found CreateFileW
+BUILD: [01:0000000156:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000157:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000158:INFO  ]       Found ReadFile
+BUILD: [01:0000000159:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000160:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000161:INFO  ]       Found SetFilePointer
+BUILD: [01:0000000162:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000163:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000164:INFO  ]       Found WriteFile
+BUILD: [01:0000000165:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000166:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000167:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000168:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000169:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000170:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000171:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000172:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000173:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000174:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000175:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000176:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000177:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000178:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000179:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000180:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000181:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000182:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000183:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000184:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000185:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000186:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000187:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000188:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000189:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000190:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000191:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000192:INFO  ]       Found _DllMainCRTStartup
+BUILD: [01:0000000193:INFO  ]         Loaded corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000194:INFO  ]       Found _cexit
+BUILD: [01:0000000195:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000196:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000000197:INFO  ]       Found _cinit
+BUILD: [01:0000000198:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000199:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000200:INFO  ]       Found __security_init_cookie
+BUILD: [01:0000000201:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000202:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000000203:INFO  ]       Found __onexitend
+BUILD: [01:0000000204:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000205:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000000206:INFO  ]       Found __xt_z
+BUILD: [01:0000000207:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000208:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000000209:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000210:INFO  ]       Found memset
+BUILD: [01:0000000211:INFO  ]         Referenced in pwrkey.obj
+BUILD: [01:0000000212:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000213:INFO  ]       Found _XcptFilter
+BUILD: [01:0000000214:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000215:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000216:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000000217:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000218:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000219:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000220:INFO  ]       Found free
+BUILD: [01:0000000221:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000222:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000223:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000224:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000000225:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000000226:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000227:INFO  ]       Found malloc
+BUILD: [01:0000000228:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000229:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000230:INFO  ]       Found realloc
+BUILD: [01:0000000231:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000232:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000233:INFO  ]       Found _msize
+BUILD: [01:0000000234:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000235:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000236:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib:
+BUILD: [01:0000000237:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000238:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000239:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000000240:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000241:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000242:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000243:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000000244:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000245:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000246:INFO  ]       Found TerminateProcess
+BUILD: [01:0000000247:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000248:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000249:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000000250:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000251:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000252:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000000253:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000254:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000255:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000000256:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000257:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000258:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000000259:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000260:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000261:INFO  ] 
+BUILD: [01:0000000262:INFO  ] Finished searching libraries
+BUILD: [01:0000000263:INFO  ] 
+BUILD: [01:0000000264:INFO  ] Finished pass 1
+BUILD: [01:0000000265:INFO  ] 
+BUILD: [01:0000000266:INFO  ]     Discarded __imp_malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000267:INFO  ]     Discarded __imp_realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000268:INFO  ]     Discarded __imp__msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000269:INFO  ]     Discarded __imp_EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000270:INFO  ]     Discarded __imp_InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000271:INFO  ]     Discarded __imp_InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000272:INFO  ]     Discarded __imp_LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000273:INFO  ]     Discarded '.pdata' from pwrkey.obj
+BUILD: [01:0000000274:INFO  ]     Discarded '.pdata' from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000275:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000276:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000277:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000278:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000279:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000280:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000281:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000282:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000283:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000284:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000285:INFO  ]     Discarded SetEvent from pwrkey.obj
+BUILD: [01:0000000286:INFO  ]     Discarded GetCurrentProcessId from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000287:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000000288:INFO  ]     Discarded exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000289:INFO  ]     Discarded _exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000290:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000291:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000292:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000293:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000000294:INFO  ]     Discarded _onexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000295:INFO  ]     Discarded atexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000296:INFO  ]     Discarded malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000297:INFO  ]     Discarded realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000298:INFO  ]     Discarded _msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000299:INFO  ]     Discarded EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000300:INFO  ]     Discarded InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000301:INFO  ]     Discarded InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000302:INFO  ]     Discarded LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000303:INFO  ]     Discarded '.xdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000304:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000305:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000306:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000307:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000308:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000309:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000310:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000311:INFO  ] Starting pass 2
+BUILD: [01:0000000312:INFO  ]      tps659xx_pwrkey.exp
+BUILD: [01:0000000313:INFO  ]      pwrkey.obj
+BUILD: [01:0000000314:INFO  ]      triton_device.lib(twl_access.obj)
+BUILD: [01:0000000315:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000316:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000317:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000318:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000319:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000320:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000321:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000322:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000323:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000324:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000325:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000326:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000327:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000328:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000329:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000330:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000331:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000332:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000333:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000334:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000335:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000336:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000337:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000338:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000339:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000340:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000341:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000342:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000343:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000344:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000345:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000346:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000347:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000000348:INFO  ]      corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000349:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000000350:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000000351:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000352:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000000353:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000354:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000355:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000356:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000357:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000358:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000359:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000360:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000361:INFO  ] Finished pass 2
+BUILD: [01:0000000362:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.dll
+BUILD: [01:0000000363:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000364:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000365:INFO  ] 
+BUILD: [01:0000000366:INFO  ] 
+BUILD: [01:0000000367:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\tps659xx_pwrkey.map
+BUILD: [01:0000000368:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000369:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\tps659xx_pwrkey.rel
+BUILD: [01:0000000370:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_pwrkey.dll C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\tps659xx_pwrkey.dll
+BUILD: [00:0000000371:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000372:INFO  ] Done.
+BUILD: [00:0000000373:PROGC ] Done.
+BUILD: [00:0000000374:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000375:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000376:PROGC ] Message                    0         0       0
+BUILD: [00:0000000377:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000378:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000379:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000380:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000381:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000382:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000383:PROGC ] C++                        0         0       0
+BUILD: [00:0000000384:PROGC ] C                          1         0       0
+BUILD: [00:0000000385:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000386:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000387:PROGC ] Dll's                      2         0       0
+BUILD: [00:0000000388:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000389:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000390:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000391:PROGC ] Other                      0         0       0
+BUILD: [00:0000000392:PROGC ] 
+BUILD: [00:0000000393:PROGC ] Total                      3         0       0
+BUILD: [00:0000000394:PROGC ] 
+BUILD: [00:0000000395:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000396:PROGC ] GetSystemTimes (seconds): Idle: 7     Kernel: 9     User: 1    
+BUILD: [00:0000000397:PROGC ] Elapsed  time  (seconds): 2    

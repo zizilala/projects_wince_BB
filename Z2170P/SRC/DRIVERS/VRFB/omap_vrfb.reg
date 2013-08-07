@@ -1,0 +1,10 @@
+; All rights reserved ADENEO EMBEDDED 2010
+IF BSP_OMAP_VRFB
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\VRFB]
+    "Prefix"="VRF"
+    "Dll"="omap_vrfb.dll"
+    "Index"=dword:1
+    "Order"=dword:3
+    ; PMCLASS_PMEXT_GUID
+    "IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+ENDIF BSP_OMAP_VRFB

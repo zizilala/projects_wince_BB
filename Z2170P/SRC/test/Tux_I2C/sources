@@ -1,0 +1,37 @@
+_COMMONPUBROOT=$(_PROJECTROOT)\cesysgen
+__PROJROOT=$(_PROJECTROOT)
+RELEASETYPE=LOCAL
+_ISVINCPATH=$(_WINCEROOT)\public\common\sdk\inc;
+_OEMINCPATH=$(_WINCEROOT)\public\common\oak\inc;$(_WINCEROOT)\public\common\sdk\inc;
+
+
+TARGETNAME=Tux_I2C
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    ft.h \
+    globals.h \
+    main.h \
+    platform_OMAP3530.h \
+
+
+SOURCES= \
+    Tux_I2C.cpp \
+    globals.cpp \
+    test.cpp \
+    tux_i2c_OMAP3530_BSP.cpp
+
+TARGETLIBS= \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_PB_INSTALL_ROOT)\CEPB\WCETK\TUX\LIB\$(_TGTCPU)\RETAIL\kato.lib \
+
+
+CDEFINES=$(CDEFINES) -DTux_I2C_EXPORTS    
+
+INCLUDES= \
+    $(_PB_INSTALL_ROOT)\CEPB\WCETK\TUX\INC; $(INCLUDES)
+
+INCLUDES=$(INCLUDES); $(_TARGETPLATROOT)\src\app\common          
+
+TARGETTYPE=DYNLINK
+
+WARNLEVEL = 3

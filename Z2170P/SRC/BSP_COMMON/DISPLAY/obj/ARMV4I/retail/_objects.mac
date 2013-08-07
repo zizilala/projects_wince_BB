@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\lcd_qvga.obj\
+    obj\ARMV4I\retail\lcd_support.obj
+

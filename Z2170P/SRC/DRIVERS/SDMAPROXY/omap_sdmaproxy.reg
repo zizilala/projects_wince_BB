@@ -1,0 +1,6 @@
+IF BSP_SDMAPROXY
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\SdmaProxy]
+    "Dll"="SdmaProxy.dll"
+    "Order"=dword:4
+    "Prefix"="DMP"
+ENDIF BSP_SDMAPROXY

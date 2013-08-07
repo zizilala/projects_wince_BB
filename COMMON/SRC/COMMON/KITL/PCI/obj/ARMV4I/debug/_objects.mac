@@ -1,0 +1,10 @@
+OBJECTS=\
+    obj\ARMV4I\debug\kitl.obj\
+    obj\ARMV4I\debug\kitleth.obj\
+    obj\ARMV4I\debug\kitlioctl.obj\
+    obj\ARMV4I\debug\kitlserial.obj\
+    obj\ARMV4I\debug\device.obj\
+    obj\ARMV4I\debug\name.obj\
+    obj\ARMV4I\debug\registry.obj\
+    obj\ARMV4I\debug\format.obj
+

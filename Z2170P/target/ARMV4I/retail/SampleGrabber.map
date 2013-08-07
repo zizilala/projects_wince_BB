@@ -1,0 +1,956 @@
+ SampleGrabber
+
+ Timestamp is 51ecf49f (Mon Jul 22 17:00:15 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00002b5cH .rdata                  CODE
+ 0001:00002b7c 0000002aH .rdata$debug            CODE
+ 0001:00002ba8 000071b8H .text                   CODE
+ 0001:00009d60 00000038H .xdata                  CODE
+ 0001:00009d98 00000028H .idata$2                CODE
+ 0001:00009dc0 00000014H .idata$3                CODE
+ 0001:00009dd4 000000b4H .idata$4                CODE
+ 0001:00009e88 0000009aH .idata$6                CODE
+ 0001:00009f30 000000bcH .edata                  CODE
+ 0002:00000000 000000b4H .idata$5                DATA
+ 0002:000000b8 00000474H .data                   DATA
+ 0002:00000530 00000154H .bss                    DATA
+ 0003:00000000 00000830H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BM@OEMAOINM@?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?$AA@ 1000103c     SampleGrabber.obj
+ 0001:00000058       ??_C@_1BI@MLPJODKF@?$AAV?$AAi?$AAd?$AAe?$AAo?$AAO?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?$AA@ 10001058     SampleGrabber.obj
+ 0001:00000070       ??_C@_1BG@JFBCJHGD@?$AAV?$AAi?$AAd?$AAe?$AAo?$AAI?$AAn?$AAp?$AAu?$AAt?$AA?$AA@ 10001070     SampleGrabber.obj
+ 0001:00000088       CLSID_SampleGrabber        10001088     SampleGrabber.obj
+ 0001:00000098       IID_ISampleGrabber         10001098     SampleGrabber.obj
+ 0001:00000118       ??_C@_1EI@MPLJLCGA@?$AAI?$AAn?$AA?5?$AAD?$AAl?$AAl?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AAS?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?5?$AA?5?$AAh?$AAr?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8@ 10001118     SampleGrabber.obj
+ 0001:00000160       ??_C@_1DC@IOHHMDAM@?$AAI?$AAn?$AA?5?$AAD?$AAl?$AAl?$AAU?$AAn?$AAr?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AAS?$AAe?$AAr?$AAv?$AAe?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 10001160     SampleGrabber.obj
+ 0001:00000194       ??_C@_1BO@LGJFMGDC@?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?$AA@ 10001194     SampleGrabber.obj
+ 0001:000001b8       ??_C@_1GC@CBBHGAHJ@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAI?$AAn?$AA?5?$AAD?$AAl?$AAl?$AAM?$AAa?$AAi?$AAn?$AA?5?$AA?9?$AA?5?$AAD?$AAl?$AAl?$AAE?$AAn?$AAt?$AAr?$AAy?$AAP?$AAo?$AAi?$AAn?$AAt?$AA?5?$AAr@ 100011b8     SampleGrabber.obj
+ 0001:0000021c       ??_7ISampleGrabber@@6B@    1000121c     SampleGrabber.obj
+ 0001:00000230       ??_C@_1EC@DOJDFKKO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?5?$AAd?$AAe?$AAs?$AAt?$AAr?$AAu?$AAc?$AAt?$AAo?$AAr?$AA?5?$AA?$AN?$AA?6@ 10001230     SampleGrabber.obj
+ 0001:00000278       ??_7CSampleGrabber@@6BCUnknown@@@ 10001278     SampleGrabber.obj
+ 0001:000002e4       ??_7CSampleGrabber@@6BIBaseFilter@@@ 100012e4     SampleGrabber.obj
+ 0001:00000320       ??_7CSampleGrabber@@6BIAMovieSetup@@@ 10001320     SampleGrabber.obj
+ 0001:00000334       ??_7CSampleGrabber@@6B@    10001334     SampleGrabber.obj
+ 0001:00000344       ??_C@_1DG@MINCNGOB@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAS?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi?$AAa?$AAT?$AAy?$AAp?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 10001344     SampleGrabber.obj
+ 0001:00000380       ??_C@_1EE@PHLPOLPH@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAD?$AAe?$AAc?$AAi?$AAd?$AAe?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAS?$AAi?$AAz?$AAe?$AA?5?$AAs?$AAu?$AAc?$AAc?$AAe?$AAs?$AAs?$AAf?$AAu?$AAl?$AA?$AN@ 10001380     SampleGrabber.obj
+ 0001:000003c8       ??_C@_1GI@DPBDANGC@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAD?$AAe?$AAc?$AAi?$AAd?$AAe?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAS?$AAi?$AAz?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?9?$AA?5?$AAS?$AAe?$AAt@ 100013c8     SampleGrabber.obj
+ 0001:00000430       ??_C@_1GG@MGFLIKMO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAD?$AAe?$AAc?$AAi?$AAd?$AAe?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAS?$AAi?$AAz?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?9?$AA?5?$AAi?$AAn?$AAp@ 10001430     SampleGrabber.obj
+ 0001:00000498       ??_C@_1DA@EHAILAEM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAD?$AAe?$AAc?$AAi?$AAd?$AAe?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAS?$AAi?$AAz?$AAe?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 10001498     SampleGrabber.obj
+ 0001:000004c8       ??_C@_1DM@EOBPLANG@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi?$AAa?$AAT?$AAy?$AAp?$AAe?$AA?5?$AAs?$AAu?$AAc?$AAc?$AAe?$AAs?$AAs?$AAf?$AAu?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 100014c8     SampleGrabber.obj
+ 0001:00000508       ??_C@_1FE@BFMOPDB@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi?$AAa?$AAT?$AAy?$AAp?$AAe?$AA?9?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAi?$AAP?$AAo?$AAs?$AAi?$AAt@ 10001508     SampleGrabber.obj
+ 0001:00000560       ??_C@_1FE@ONGHHBKO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi?$AAa?$AAT?$AAy?$AAp?$AAe?$AA?9?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAi?$AAP?$AAo?$AAs?$AAi?$AAt@ 10001560     SampleGrabber.obj
+ 0001:000005b8       ??_C@_1GI@IHPDDOMM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi?$AAa?$AAT?$AAy?$AAp?$AAe?$AA?9?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAi?$AAn?$AAp?$AAu?$AAt?$AA?5@ 100015b8     SampleGrabber.obj
+ 0001:00000620       ??_C@_1CG@LKNDFBP@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi?$AAa?$AAT?$AAy?$AAp?$AAe?$AA?5?$AA?6?$AA?$AA@ 10001620     SampleGrabber.obj
+ 0001:00000648       ??_C@_1KE@PCALAGNG@?$AAC?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AAI?$AAn?$AAp?$AAu?$AAt?$AAP?$AAi?$AAn?$AA?3?$AA?3?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi?$AAa@ 10001648     SampleGrabber.obj
+ 0001:000006f0       ??_C@_1GO@FGDCJPAI@?$AAC?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AAI?$AAn?$AAp?$AAu?$AAt?$AAP?$AAi?$AAn?$AA?3?$AA?3?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi?$AAa@ 100016f0     SampleGrabber.obj
+ 0001:00000760       ??_C@_1KG@DPLCBGPB@?$AAC?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AAO?$AAu?$AAt?$AAp?$AAu?$AAt?$AAP?$AAi?$AAn?$AA?3?$AA?3?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi@ 10001760     SampleGrabber.obj
+ 0001:00000808       ??_C@_1HA@PHGDKDO@?$AAC?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AAO?$AAu?$AAt?$AAp?$AAu?$AAt?$AAP?$AAi?$AAn?$AA?3?$AA?3?$AAG?$AAe?$AAt?$AAM?$AAe?$AAd?$AAi@ 10001808     SampleGrabber.obj
+ 0001:00000878       ??_C@_1EE@LNJFBNNG@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?5?$AAc?$AAo?$AAn?$AAs?$AAt?$AAr?$AAu?$AAc?$AAt?$AAo?$AAr?$AA?5?$AA?$AN@ 10001878     SampleGrabber.obj
+ 0001:000008c0       ??_7CSampleGrabberOutputPin@@6BCUnknown@@@ 100018c0     SampleGrabber.obj
+ 0001:00000920       ??_7CSampleGrabberOutputPin@@6BIPin@@@ 10001920     SampleGrabber.obj
+ 0001:00000968       ??_7CSampleGrabberOutputPin@@6BIQualityControl@@@ 10001968     SampleGrabber.obj
+ 0001:0000097c       ??_C@_17NFNCFLGO@?$AAO?$AAu?$AAt?$AA?$AA@ 1000197c     SampleGrabber.obj
+ 0001:00000988       ??_C@_1HG@FPOAIOHM@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAC?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAG?$AAr?$AAa?$AAb?$AAb?$AAe?$AAr?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAI?$AAn?$AAs?$AAt?$AAa?$AAn@ 10001988     SampleGrabber.obj
+ 0001:00000a00       ??_7CSampleGrabberInputPin@@6BCUnknown@@@ 10001a00     SampleGrabber.obj
+ 0001:00000a40       ??_7CSampleGrabberInputPin@@6BIPin@@@ 10001a40     SampleGrabber.obj
+ 0001:00000a88       ??_7CSampleGrabberInputPin@@6BIQualityControl@@@ 10001a88     SampleGrabber.obj
+ 0001:00000a9c       ??_7CSampleGrabberInputPin@@6B@ 10001a9c     SampleGrabber.obj
+ 0001:00000ac0       ??_C@_15LNJDIFMI@?$AAI?$AAn?$AA?$AA@ 10001ac0     SampleGrabber.obj
+ 0001:00000ac8       ??_C@_1O@GJMACMBA@?$AAO?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?$AA@ 10001ac8     SampleGrabber.obj
+ 0001:00000ad8       ??_C@_1M@PFCMLKBL@?$AAI?$AAn?$AAp?$AAu?$AAt?$AA?$AA@ 10001ad8     SampleGrabber.obj
+ 0001:00000ae4       ??_C@_1BO@NMEHGCBD@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAi?$AAn?$AAg?$AAM?$AAo?$AAd?$AAe?$AAl?$AA?$AA@ 10001ae4     strmbase:dllsetup.obj
+ 0001:00000b04       ??_C@_17CNPHIMPH@?$AA?$CF?$AAl?$AAs?$AA?$AA@ 10001b04     strmbase:dllsetup.obj
+ 0001:00000b0c       ??_C@_1BE@OFBGLCML@?$AAC?$AAL?$AAS?$AAI?$AAD?$AA?2?$AA?$CF?$AAl?$AAs?$AA?$AA@ 10001b0c     strmbase:dllsetup.obj
+ 0001:00000b20       ??_C@_11LOCGONAA@?$AA?$AA@ 10001b20     strmbase:dllsetup.obj
+ 0001:00000b24       ??_C@_1BO@MNKPAJEP@?$AAI?$AAn?$AAp?$AAr?$AAo?$AAc?$AAS?$AAe?$AAr?$AAv?$AAe?$AAr?$AA3?$AA2?$AA?$AA@ 10001b24     strmbase:dllsetup.obj
+ 0001:00000b44       ??_C@_19OBNAGCDI@?$AAB?$AAo?$AAt?$AAh?$AA?$AA@ 10001b44     strmbase:dllsetup.obj
+ 0001:00000b50       ??_7CClassFactory@@6B@     10001b50     strmbase:dllentry.obj
+ 0001:00000b64       ??_7CTransformInputPin@@6BCUnknown@@@ 10001b64     strmbase:transfrm.obj
+ 0001:00000ba0       ??_7CTransformInputPin@@6BIPin@@@ 10001ba0     strmbase:transfrm.obj
+ 0001:00000be8       ??_7CTransformInputPin@@6BIQualityControl@@@ 10001be8     strmbase:transfrm.obj
+ 0001:00000bfc       ??_7CTransformInputPin@@6B@ 10001bfc     strmbase:transfrm.obj
+ 0001:00000c20       ??_7CTransformOutputPin@@6BCUnknown@@@ 10001c20     strmbase:transfrm.obj
+ 0001:00000c80       ??_7CTransformOutputPin@@6BIPin@@@ 10001c80     strmbase:transfrm.obj
+ 0001:00000cc8       ??_7CTransformOutputPin@@6BIQualityControl@@@ 10001cc8     strmbase:transfrm.obj
+ 0001:00000cdc       ??_7CEnumPins@@6B@         10001cdc     strmbase:amfilter.obj
+ 0001:00000cfc       ??_7CEnumMediaTypes@@6B@   10001cfc     strmbase:amfilter.obj
+ 0001:00000d38       ??_7INonDelegatingUnknown@@6B@ 10001d38     strmbase:combase.obj
+ 0001:00000d48       ??_7CTransInPlaceOutputPin@@6BCUnknown@@@ 10001d48     strmbase:transip.obj
+ 0001:00000da8       ??_7CTransInPlaceOutputPin@@6BIPin@@@ 10001da8     strmbase:transip.obj
+ 0001:00000df0       ??_7CTransInPlaceOutputPin@@6BIQualityControl@@@ 10001df0     strmbase:transip.obj
+ 0001:00000e04       ??_7CTransInPlaceInputPin@@6BCUnknown@@@ 10001e04     strmbase:transip.obj
+ 0001:00000e40       ??_7CTransInPlaceInputPin@@6BIPin@@@ 10001e40     strmbase:transip.obj
+ 0001:00000e88       ??_7CTransInPlaceInputPin@@6BIQualityControl@@@ 10001e88     strmbase:transip.obj
+ 0001:00000e9c       ??_7CTransInPlaceInputPin@@6B@ 10001e9c     strmbase:transip.obj
+ 0001:00000ec0       ??_C@_1BA@HABJOAEE@?$AAU?$AAN?$AAK?$AAN?$AAO?$AAW?$AAN?$AA?$AA@ 10001ec0     strmbase:amvideo.obj
+ 0001:00000ed0       ??_C@_1BA@LBOLBFDJ@?$AAO?$AAv?$AAe?$AAr?$AAl?$AAa?$AAy?$AA?$AA@ 10001ed0     strmbase:amvideo.obj
+ 0001:00000ee0       ??_C@_1O@BHCPCHJF@?$AAR?$AAG?$AAB?$AA?5?$AA3?$AA2?$AA?$AA@ 10001ee0     strmbase:amvideo.obj
+ 0001:00000ef0       ??_C@_1O@PJBIKLOM@?$AAR?$AAG?$AAB?$AA?5?$AA2?$AA4?$AA?$AA@ 10001ef0     strmbase:amvideo.obj
+ 0001:00000f00       ??_C@_1CC@CHFLHMKC@?$AAR?$AAG?$AAB?$AA?5?$AA5?$AA5?$AA5?$AA?5?$AA?$CI?$AA1?$AA6?$AA?5?$AAb?$AAi?$AAt?$AA?$CJ?$AA?$AA@ 10001f00     strmbase:amvideo.obj
+ 0001:00000f24       ??_C@_1CC@HPEFNFIK@?$AAR?$AAG?$AAB?$AA?5?$AA5?$AA6?$AA5?$AA?5?$AA?$CI?$AA1?$AA6?$AA?5?$AAb?$AAi?$AAt?$AA?$CJ?$AA?$AA@ 10001f24     strmbase:amvideo.obj
+ 0001:00000f48       ??_C@_1M@HBIHPBDC@?$AAR?$AAG?$AAB?$AA?5?$AA8?$AA?$AA@ 10001f48     strmbase:amvideo.obj
+ 0001:00000f54       ??_C@_1BA@EJHANBOO@?$AAR?$AAG?$AAB?$AA?5?$AAV?$AAG?$AAA?$AA?$AA@ 10001f54     strmbase:amvideo.obj
+ 0001:00000f64       ??_C@_1BO@BGHCKFGI@?$AAR?$AAG?$AAB?$AA?5?$AAM?$AAo?$AAn?$AAo?$AAc?$AAh?$AAr?$AAo?$AAm?$AAe?$AA?$AA@ 10001f64     strmbase:amvideo.obj
+ 0001:00000f88       ?bits555@@3QBKB            10001f88     strmbase:amvideo.obj
+ 0001:00000f94       ?bits565@@3QBKB            10001f94     strmbase:amvideo.obj
+ 0001:00000fa0       ?bits888@@3QBKB            10001fa0     strmbase:amvideo.obj
+ 0001:0000101c       LIBID_QuartzTypeLib        1000201c     strmiids:strmguid.obj
+ 0001:0000102c       IID_IAMCollection          1000202c     strmiids:strmguid.obj
+ 0001:0000103c       IID_IMediaControl          1000203c     strmiids:strmguid.obj
+ 0001:0000104c       IID_IMediaEvent            1000204c     strmiids:strmguid.obj
+ 0001:0000105c       IID_IMediaEventEx          1000205c     strmiids:strmguid.obj
+ 0001:0000106c       IID_IMediaPosition         1000206c     strmiids:strmguid.obj
+ 0001:0000107c       IID_IBasicAudio            1000207c     strmiids:strmguid.obj
+ 0001:0000108c       IID_IVideoWindow           1000208c     strmiids:strmguid.obj
+ 0001:0000109c       IID_IBasicVideo            1000209c     strmiids:strmguid.obj
+ 0001:000010ac       IID_IBasicVideo2           100020ac     strmiids:strmguid.obj
+ 0001:000010bc       IID_IDeferredCommand       100020bc     strmiids:strmguid.obj
+ 0001:000010cc       IID_IQueueCommand          100020cc     strmiids:strmguid.obj
+ 0001:000010dc       CLSID_FilgraphManager      100020dc     strmiids:strmguid.obj
+ 0001:000010ec       IID_IFilterInfo            100020ec     strmiids:strmguid.obj
+ 0001:000010fc       IID_IRegFilterInfo         100020fc     strmiids:strmguid.obj
+ 0001:0000110c       IID_IMediaTypeInfo         1000210c     strmiids:strmguid.obj
+ 0001:0000111c       IID_IPinInfo               1000211c     strmiids:strmguid.obj
+ 0001:0000112c       MEDIASUBTYPE_None          1000212c     strmiids:strmguid.obj
+ 0001:0000113c       MEDIATYPE_Video            1000213c     strmiids:strmguid.obj
+ 0001:0000114c       MEDIATYPE_Audio            1000214c     strmiids:strmguid.obj
+ 0001:0000115c       MEDIATYPE_VideoBuffered    1000215c     strmiids:strmguid.obj
+ 0001:0000116c       MEDIATYPE_AudioBuffered    1000216c     strmiids:strmguid.obj
+ 0001:0000117c       MEDIATYPE_Text             1000217c     strmiids:strmguid.obj
+ 0001:0000118c       MEDIATYPE_Midi             1000218c     strmiids:strmguid.obj
+ 0001:0000119c       MEDIATYPE_Stream           1000219c     strmiids:strmguid.obj
+ 0001:000011ac       MEDIATYPE_Interleaved      100021ac     strmiids:strmguid.obj
+ 0001:000011bc       MEDIATYPE_File             100021bc     strmiids:strmguid.obj
+ 0001:000011cc       MEDIATYPE_ScriptCommand    100021cc     strmiids:strmguid.obj
+ 0001:000011dc       MEDIATYPE_AUXLine21Data    100021dc     strmiids:strmguid.obj
+ 0001:000011ec       MEDIATYPE_Timecode         100021ec     strmiids:strmguid.obj
+ 0001:000011fc       MEDIATYPE_LMRT             100021fc     strmiids:strmguid.obj
+ 0001:0000120c       MEDIATYPE_URL_STREAM       1000220c     strmiids:strmguid.obj
+ 0001:0000121c       MEDIASUBTYPE_YVU9          1000221c     strmiids:strmguid.obj
+ 0001:0000122c       MEDIASUBTYPE_Y411          1000222c     strmiids:strmguid.obj
+ 0001:0000123c       MEDIASUBTYPE_Y41P          1000223c     strmiids:strmguid.obj
+ 0001:0000124c       MEDIASUBTYPE_YUY2          1000224c     strmiids:strmguid.obj
+ 0001:0000125c       MEDIASUBTYPE_YVYU          1000225c     strmiids:strmguid.obj
+ 0001:0000126c       MEDIASUBTYPE_UYVY          1000226c     strmiids:strmguid.obj
+ 0001:0000127c       MEDIASUBTYPE_Y211          1000227c     strmiids:strmguid.obj
+ 0001:0000128c       MEDIASUBTYPE_YV12          1000228c     strmiids:strmguid.obj
+ 0001:0000129c       MEDIASUBTYPE_YV16          1000229c     strmiids:strmguid.obj
+ 0001:000012ac       MEDIASUBTYPE_IUYV          100022ac     strmiids:strmguid.obj
+ 0001:000012bc       MEDIASUBTYPE_NV12          100022bc     strmiids:strmguid.obj
+ 0001:000012cc       MEDIASUBTYPE_I420          100022cc     strmiids:strmguid.obj
+ 0001:000012dc       MEDIASUBTYPE_IYUV          100022dc     strmiids:strmguid.obj
+ 0001:000012ec       MEDIASUBTYPE_CLJR          100022ec     strmiids:strmguid.obj
+ 0001:000012fc       MEDIASUBTYPE_IF09          100022fc     strmiids:strmguid.obj
+ 0001:0000130c       MEDIASUBTYPE_CPLA          1000230c     strmiids:strmguid.obj
+ 0001:0000131c       MEDIASUBTYPE_MJPG          1000231c     strmiids:strmguid.obj
+ 0001:0000132c       MEDIASUBTYPE_TVMJ          1000232c     strmiids:strmguid.obj
+ 0001:0000133c       MEDIASUBTYPE_WAKE          1000233c     strmiids:strmguid.obj
+ 0001:0000134c       MEDIASUBTYPE_CFCC          1000234c     strmiids:strmguid.obj
+ 0001:0000135c       MEDIASUBTYPE_IJPG          1000235c     strmiids:strmguid.obj
+ 0001:0000136c       MEDIASUBTYPE_Plum          1000236c     strmiids:strmguid.obj
+ 0001:0000137c       MEDIASUBTYPE_DVCS          1000237c     strmiids:strmguid.obj
+ 0001:0000138c       MEDIASUBTYPE_DVSD          1000238c     strmiids:strmguid.obj
+ 0001:0000139c       MEDIASUBTYPE_MDVF          1000239c     strmiids:strmguid.obj
+ 0001:000013ac       MEDIASUBTYPE_RGB1          100023ac     strmiids:strmguid.obj
+ 0001:000013bc       MEDIASUBTYPE_RGB4          100023bc     strmiids:strmguid.obj
+ 0001:000013cc       MEDIASUBTYPE_RGB8          100023cc     strmiids:strmguid.obj
+ 0001:000013dc       MEDIASUBTYPE_RGB565        100023dc     strmiids:strmguid.obj
+ 0001:000013ec       MEDIASUBTYPE_RGB555        100023ec     strmiids:strmguid.obj
+ 0001:000013fc       MEDIASUBTYPE_RGB24         100023fc     strmiids:strmguid.obj
+ 0001:0000140c       MEDIASUBTYPE_RGB32         1000240c     strmiids:strmguid.obj
+ 0001:0000141c       MEDIASUBTYPE_Overlay       1000241c     strmiids:strmguid.obj
+ 0001:0000142c       MEDIASUBTYPE_MPEG1Packet   1000242c     strmiids:strmguid.obj
+ 0001:0000143c       MEDIASUBTYPE_MPEG1Payload  1000243c     strmiids:strmguid.obj
+ 0001:0000144c       MEDIASUBTYPE_MPEG1AudioPayload 1000244c     strmiids:strmguid.obj
+ 0001:0000145c       MEDIATYPE_MPEG1SystemStream 1000245c     strmiids:strmguid.obj
+ 0001:0000146c       MEDIASUBTYPE_MPEG1System   1000246c     strmiids:strmguid.obj
+ 0001:0000147c       MEDIASUBTYPE_MPEG1VideoCD  1000247c     strmiids:strmguid.obj
+ 0001:0000148c       MEDIASUBTYPE_MPEG1Video    1000248c     strmiids:strmguid.obj
+ 0001:0000149c       MEDIASUBTYPE_MPEG1Audio    1000249c     strmiids:strmguid.obj
+ 0001:000014ac       MEDIASUBTYPE_Avi           100024ac     strmiids:strmguid.obj
+ 0001:000014bc       MEDIASUBTYPE_Asf           100024bc     strmiids:strmguid.obj
+ 0001:000014cc       MEDIASUBTYPE_QTMovie       100024cc     strmiids:strmguid.obj
+ 0001:000014dc       MEDIASUBTYPE_QTRpza        100024dc     strmiids:strmguid.obj
+ 0001:000014ec       MEDIASUBTYPE_QTSmc         100024ec     strmiids:strmguid.obj
+ 0001:000014fc       MEDIASUBTYPE_QTRle         100024fc     strmiids:strmguid.obj
+ 0001:0000150c       MEDIASUBTYPE_QTJpeg        1000250c     strmiids:strmguid.obj
+ 0001:0000151c       MEDIASUBTYPE_PCMAudio_Obsolete 1000251c     strmiids:strmguid.obj
+ 0001:0000152c       MEDIASUBTYPE_PCM           1000252c     strmiids:strmguid.obj
+ 0001:0000153c       MEDIASUBTYPE_WAVE          1000253c     strmiids:strmguid.obj
+ 0001:0000154c       MEDIASUBTYPE_AU            1000254c     strmiids:strmguid.obj
+ 0001:0000155c       MEDIASUBTYPE_AIFF          1000255c     strmiids:strmguid.obj
+ 0001:0000156c       MEDIASUBTYPE_dvsd          1000256c     strmiids:strmguid.obj
+ 0001:0000157c       MEDIASUBTYPE_dvhd          1000257c     strmiids:strmguid.obj
+ 0001:0000158c       MEDIASUBTYPE_dvsl          1000258c     strmiids:strmguid.obj
+ 0001:0000159c       MEDIASUBTYPE_Line21_BytePair 1000259c     strmiids:strmguid.obj
+ 0001:000015ac       MEDIASUBTYPE_Line21_GOPPacket 100025ac     strmiids:strmguid.obj
+ 0001:000015bc       MEDIASUBTYPE_Line21_VBIRawData 100025bc     strmiids:strmguid.obj
+ 0001:000015cc       MEDIASUBTYPE_DssVideo      100025cc     strmiids:strmguid.obj
+ 0001:000015dc       MEDIASUBTYPE_DssAudio      100025dc     strmiids:strmguid.obj
+ 0001:000015ec       MEDIASUBTYPE_VPVideo       100025ec     strmiids:strmguid.obj
+ 0001:000015fc       MEDIASUBTYPE_VPVBI         100025fc     strmiids:strmguid.obj
+ 0001:0000160c       IID_IAMCutListElement      1000260c     strmiids:strmguid.obj
+ 0001:0000161c       IID_IAMFileCutListElement  1000261c     strmiids:strmguid.obj
+ 0001:0000162c       IID_IAMVideoCutListElement 1000262c     strmiids:strmguid.obj
+ 0001:0000163c       IID_IAMAudioCutListElement 1000263c     strmiids:strmguid.obj
+ 0001:0000164c       CLSID_CutListSource        1000264c     strmiids:strmguid.obj
+ 0001:0000165c       IID_IStandardCutList       1000265c     strmiids:strmguid.obj
+ 0001:0000166c       IID_IFileClip              1000266c     strmiids:strmguid.obj
+ 0001:0000167c       IID_ICutListGraphBuilder   1000267c     strmiids:strmguid.obj
+ 0001:0000168c       CLSID_CutListGraphBuilder  1000268c     strmiids:strmguid.obj
+ 0001:0000169c       CLSID_SimpleCutList        1000269c     strmiids:strmguid.obj
+ 0001:000016ac       CLSID_VideoFileClip        100026ac     strmiids:strmguid.obj
+ 0001:000016bc       CLSID_AudioFileClip        100026bc     strmiids:strmguid.obj
+ 0001:000016cc       CLSID_CutListCacheMemory   100026cc     strmiids:strmguid.obj
+ 0001:000016dc       CLSID_VideoCapture         100026dc     strmiids:strmguid.obj
+ 0001:000016ec       CLSID_CaptureGraphBuilder  100026ec     strmiids:strmguid.obj
+ 0001:000016fc       CLSID_ProtoFilterGraph     100026fc     strmiids:strmguid.obj
+ 0001:0000170c       CLSID_SystemClock          1000270c     strmiids:strmguid.obj
+ 0001:0000171c       CLSID_FilterMapper         1000271c     strmiids:strmguid.obj
+ 0001:0000172c       CLSID_FilterGraph          1000272c     strmiids:strmguid.obj
+ 0001:0000173c       CLSID_FilterGraphNoThread  1000273c     strmiids:strmguid.obj
+ 0001:0000174c       CLSID_MPEG1Doc             1000274c     strmiids:strmguid.obj
+ 0001:0000175c       CLSID_VideoCDSource        1000275c     strmiids:strmguid.obj
+ 0001:0000176c       CLSID_VideoCDProxy         1000276c     strmiids:strmguid.obj
+ 0001:0000177c       CLSID_VideoCDManager       1000277c     strmiids:strmguid.obj
+ 0001:0000178c       CLSID_GenericStreamer      1000278c     strmiids:strmguid.obj
+ 0001:0000179c       CLSID_FileSource           1000279c     strmiids:strmguid.obj
+ 0001:000017ac       CLSID_MPEG1PacketPlayer    100027ac     strmiids:strmguid.obj
+ 0001:000017bc       CLSID_MPEG1Splitter        100027bc     strmiids:strmguid.obj
+ 0001:000017cc       CLSID_MPEG2Splitter        100027cc     strmiids:strmguid.obj
+ 0001:000017dc       CLSID_CMpegVideoCodec      100027dc     strmiids:strmguid.obj
+ 0001:000017ec       CLSID_CMpegAudioCodec      100027ec     strmiids:strmguid.obj
+ 0001:000017fc       CLSID_Mp3Dec               100027fc     strmiids:strmguid.obj
+ 0001:0000180c       CLSID_MjpegDec             1000280c     strmiids:strmguid.obj
+ 0001:0000181c       CLSID_TextRender           1000281c     strmiids:strmguid.obj
+ 0001:0000182c       CLSID_WAVEParser           1000282c     strmiids:strmguid.obj
+ 0001:0000183c       CLSID_MIDIParser           1000283c     strmiids:strmguid.obj
+ 0001:0000184c       CLSID_DMFilter             1000284c     strmiids:strmguid.obj
+ 0001:0000185c       CLSID_InfTee               1000285c     strmiids:strmguid.obj
+ 0001:0000186c       CLSID_AviSplitter          1000286c     strmiids:strmguid.obj
+ 0001:0000187c       CLSID_AviReader            1000287c     strmiids:strmguid.obj
+ 0001:0000188c       CLSID_VfwCapture           1000288c     strmiids:strmguid.obj
+ 0001:0000189c       CLSID_CaptureProperties    1000289c     strmiids:strmguid.obj
+ 0001:000018ac       CLSID_FGControl            100028ac     strmiids:strmguid.obj
+ 0001:000018bc       CLSID_MOVReader            100028bc     strmiids:strmguid.obj
+ 0001:000018cc       CLSID_QuickTimeParser      100028cc     strmiids:strmguid.obj
+ 0001:000018dc       CLSID_QTDec                100028dc     strmiids:strmguid.obj
+ 0001:000018ec       CLSID_AVIDoc               100028ec     strmiids:strmguid.obj
+ 0001:000018fc       CLSID_AVIDocWriter         100028fc     strmiids:strmguid.obj
+ 0001:0000190c       CLSID_VideoRenderer        1000290c     strmiids:strmguid.obj
+ 0001:0000191c       CLSID_Colour               1000291c     strmiids:strmguid.obj
+ 0001:0000192c       CLSID_Dither               1000292c     strmiids:strmguid.obj
+ 0001:0000193c       CLSID_ModexRenderer        1000293c     strmiids:strmguid.obj
+ 0001:0000194c       CLSID_AudioRender          1000294c     strmiids:strmguid.obj
+ 0001:0000195c       CLSID_AudioProperties      1000295c     strmiids:strmguid.obj
+ 0001:0000196c       CLSID_DSoundRender         1000296c     strmiids:strmguid.obj
+ 0001:0000197c       CLSID_AudioCapture         1000297c     strmiids:strmguid.obj
+ 0001:0000198c       CLSID_AudioInputMixerProperties 1000298c     strmiids:strmguid.obj
+ 0001:0000199c       CLSID_AVIDec               1000299c     strmiids:strmguid.obj
+ 0001:000019ac       CLSID_AVIDraw              100029ac     strmiids:strmguid.obj
+ 0001:000019bc       CLSID_ACMWrapper           100029bc     strmiids:strmguid.obj
+ 0001:000019cc       CLSID_AsyncReader          100029cc     strmiids:strmguid.obj
+ 0001:000019dc       CLSID_URLReader            100029dc     strmiids:strmguid.obj
+ 0001:000019ec       CLSID_PersistMonikerPID    100029ec     strmiids:strmguid.obj
+ 0001:000019fc       CLSID_AMovie               100029fc     strmiids:strmguid.obj
+ 0001:00001a0c       CLSID_AVICo                10002a0c     strmiids:strmguid.obj
+ 0001:00001a1c       CLSID_FileWriter           10002a1c     strmiids:strmguid.obj
+ 0001:00001a2c       CLSID_AviDest              10002a2c     strmiids:strmguid.obj
+ 0001:00001a3c       CLSID_AsfMux               10002a3c     strmiids:strmguid.obj
+ 0001:00001a4c       CLSID_AviMuxProptyPage     10002a4c     strmiids:strmguid.obj
+ 0001:00001a5c       CLSID_AviMuxProptyPage1    10002a5c     strmiids:strmguid.obj
+ 0001:00001a6c       CLSID_AVIMIDIRender        10002a6c     strmiids:strmguid.obj
+ 0001:00001a7c       CLSID_DVVideoCodec         10002a7c     strmiids:strmguid.obj
+ 0001:00001a8c       CLSID_DVVideoEnc           10002a8c     strmiids:strmguid.obj
+ 0001:00001a9c       CLSID_DVSplitter           10002a9c     strmiids:strmguid.obj
+ 0001:00001aac       CLSID_DVMux                10002aac     strmiids:strmguid.obj
+ 0001:00001abc       CLSID_SeekingPassThru      10002abc     strmiids:strmguid.obj
+ 0001:00001acc       CLSID_Line21Decoder        10002acc     strmiids:strmguid.obj
+ 0001:00001adc       CLSID_OverlayMixer         10002adc     strmiids:strmguid.obj
+ 0001:00001aec       CLSID_VBISurfaces          10002aec     strmiids:strmguid.obj
+ 0001:00001afc       CLSID_VBIDataRenderer      10002afc     strmiids:strmguid.obj
+ 0001:00001b0c       CLSID_SystemDeviceEnum     10002b0c     strmiids:strmguid.obj
+ 0001:00001b1c       CLSID_CDeviceMoniker       10002b1c     strmiids:strmguid.obj
+ 0001:00001b2c       CLSID_VideoInputDeviceCategory 10002b2c     strmiids:strmguid.obj
+ 0001:00001b3c       CLSID_CVidCapClassManager  10002b3c     strmiids:strmguid.obj
+ 0001:00001b4c       CLSID_LegacyAmFilterCategory 10002b4c     strmiids:strmguid.obj
+ 0001:00001b5c       CLSID_CQzFilterClassManager 10002b5c     strmiids:strmguid.obj
+ 0001:00001b6c       CLSID_VideoCompressorCategory 10002b6c     strmiids:strmguid.obj
+ 0001:00001b7c       CLSID_CIcmCoClassManager   10002b7c     strmiids:strmguid.obj
+ 0001:00001b8c       CLSID_AudioCompressorCategory 10002b8c     strmiids:strmguid.obj
+ 0001:00001b9c       CLSID_CAcmCoClassManager   10002b9c     strmiids:strmguid.obj
+ 0001:00001bac       CLSID_AudioInputDeviceCategory 10002bac     strmiids:strmguid.obj
+ 0001:00001bbc       CLSID_CWaveinClassManager  10002bbc     strmiids:strmguid.obj
+ 0001:00001bcc       CLSID_AudioRendererCategory 10002bcc     strmiids:strmguid.obj
+ 0001:00001bdc       CLSID_CWaveOutClassManager 10002bdc     strmiids:strmguid.obj
+ 0001:00001bec       CLSID_MidiRendererCategory 10002bec     strmiids:strmguid.obj
+ 0001:00001bfc       CLSID_CMidiOutClassManager 10002bfc     strmiids:strmguid.obj
+ 0001:00001c0c       CLSID_TransmitCategory     10002c0c     strmiids:strmguid.obj
+ 0001:00001c1c       CLSID_DeviceControlCategory 10002c1c     strmiids:strmguid.obj
+ 0001:00001c2c       CLSID_ActiveMovieCategories 10002c2c     strmiids:strmguid.obj
+ 0001:00001c3c       CLSID_DVDHWDecodersCategory 10002c3c     strmiids:strmguid.obj
+ 0001:00001c4c       CLSID_FilterMapper2        10002c4c     strmiids:strmguid.obj
+ 0001:00001c5c       CLSID_MemoryAllocator      10002c5c     strmiids:strmguid.obj
+ 0001:00001c6c       CLSID_MediaPropertyBag     10002c6c     strmiids:strmguid.obj
+ 0001:00001c7c       CLSID_DvdGraphBuilder      10002c7c     strmiids:strmguid.obj
+ 0001:00001c8c       CLSID_DVDNavigator         10002c8c     strmiids:strmguid.obj
+ 0001:00001c9c       CLSID_SmartTee             10002c9c     strmiids:strmguid.obj
+ 0001:00001cac       CLSID_DMOWrapperFilter     10002cac     strmiids:strmguid.obj
+ 0001:00001cbc       CLSID_WMVDec               10002cbc     strmiids:strmguid.obj
+ 0001:00001ccc       CLSID_BufferingFilter      10002ccc     strmiids:strmguid.obj
+ 0001:00001cdc       FORMAT_None                10002cdc     strmiids:strmguid.obj
+ 0001:00001cec       FORMAT_VideoInfo           10002cec     strmiids:strmguid.obj
+ 0001:00001cfc       FORMAT_VideoInfo2          10002cfc     strmiids:strmguid.obj
+ 0001:00001d0c       FORMAT_WaveFormatEx        10002d0c     strmiids:strmguid.obj
+ 0001:00001d1c       FORMAT_MPEGVideo           10002d1c     strmiids:strmguid.obj
+ 0001:00001d2c       FORMAT_MPEGStreams         10002d2c     strmiids:strmguid.obj
+ 0001:00001d3c       FORMAT_DvInfo              10002d3c     strmiids:strmguid.obj
+ 0001:00001d4c       CLSID_DirectDrawProperties 10002d4c     strmiids:strmguid.obj
+ 0001:00001d5c       CLSID_PerformanceProperties 10002d5c     strmiids:strmguid.obj
+ 0001:00001d6c       CLSID_QualityProperties    10002d6c     strmiids:strmguid.obj
+ 0001:00001d7c       IID_IBaseVideoMixer        10002d7c     strmiids:strmguid.obj
+ 0001:00001d8c       IID_IDirectDrawVideo       10002d8c     strmiids:strmguid.obj
+ 0001:00001d9c       IID_IQualProp              10002d9c     strmiids:strmguid.obj
+ 0001:00001dac       CLSID_VPObject             10002dac     strmiids:strmguid.obj
+ 0001:00001dbc       IID_IVPObject              10002dbc     strmiids:strmguid.obj
+ 0001:00001dcc       IID_IVPControl             10002dcc     strmiids:strmguid.obj
+ 0001:00001ddc       CLSID_VPVBIObject          10002ddc     strmiids:strmguid.obj
+ 0001:00001dec       IID_IVPVBIObject           10002dec     strmiids:strmguid.obj
+ 0001:00001dfc       IID_IVPConfig              10002dfc     strmiids:strmguid.obj
+ 0001:00001e0c       IID_IVPNotify              10002e0c     strmiids:strmguid.obj
+ 0001:00001e1c       IID_IVPNotify2             10002e1c     strmiids:strmguid.obj
+ 0001:00001e2c       IID_IVPVBIConfig           10002e2c     strmiids:strmguid.obj
+ 0001:00001e3c       IID_IVPVBINotify           10002e3c     strmiids:strmguid.obj
+ 0001:00001e4c       IID_IMixerPinConfig        10002e4c     strmiids:strmguid.obj
+ 0001:00001e5c       IID_IMixerPinConfig2       10002e5c     strmiids:strmguid.obj
+ 0001:00001e6c       CLSID_ModexProperties      10002e6c     strmiids:strmguid.obj
+ 0001:00001e7c       IID_IFullScreenVideo       10002e7c     strmiids:strmguid.obj
+ 0001:00001e8c       IID_IFullScreenVideoEx     10002e8c     strmiids:strmguid.obj
+ 0001:00001e9c       CLSID_DVDecPropertiesPage  10002e9c     strmiids:strmguid.obj
+ 0001:00001eac       CLSID_DVEncPropertiesPage  10002eac     strmiids:strmguid.obj
+ 0001:00001ebc       CLSID_DVMuxPropertyPage    10002ebc     strmiids:strmguid.obj
+ 0001:00001ecc       IID_IAMDirectSound         10002ecc     strmiids:strmguid.obj
+ 0001:00001edc       IID_IMpegAudioDecoder      10002edc     strmiids:strmguid.obj
+ 0001:00001eec       IID_IAMLine21Decoder       10002eec     strmiids:strmguid.obj
+ 0001:00001efc       FORMAT_AnalogVideo         10002efc     strmiids:strmguid.obj
+ 0001:00001f0c       MEDIATYPE_AnalogVideo      10002f0c     strmiids:strmguid.obj
+ 0001:00001f1c       MEDIASUBTYPE_AnalogVideo_NTSC_M 10002f1c     strmiids:strmguid.obj
+ 0001:00001f2c       MEDIASUBTYPE_AnalogVideo_PAL_B 10002f2c     strmiids:strmguid.obj
+ 0001:00001f3c       MEDIASUBTYPE_AnalogVideo_PAL_D 10002f3c     strmiids:strmguid.obj
+ 0001:00001f4c       MEDIASUBTYPE_AnalogVideo_PAL_G 10002f4c     strmiids:strmguid.obj
+ 0001:00001f5c       MEDIASUBTYPE_AnalogVideo_PAL_H 10002f5c     strmiids:strmguid.obj
+ 0001:00001f6c       MEDIASUBTYPE_AnalogVideo_PAL_I 10002f6c     strmiids:strmguid.obj
+ 0001:00001f7c       MEDIASUBTYPE_AnalogVideo_PAL_M 10002f7c     strmiids:strmguid.obj
+ 0001:00001f8c       MEDIASUBTYPE_AnalogVideo_PAL_N 10002f8c     strmiids:strmguid.obj
+ 0001:00001f9c       MEDIASUBTYPE_AnalogVideo_SECAM_B 10002f9c     strmiids:strmguid.obj
+ 0001:00001fac       MEDIASUBTYPE_AnalogVideo_SECAM_D 10002fac     strmiids:strmguid.obj
+ 0001:00001fbc       MEDIASUBTYPE_AnalogVideo_SECAM_G 10002fbc     strmiids:strmguid.obj
+ 0001:00001fcc       MEDIASUBTYPE_AnalogVideo_SECAM_H 10002fcc     strmiids:strmguid.obj
+ 0001:00001fdc       MEDIASUBTYPE_AnalogVideo_SECAM_K 10002fdc     strmiids:strmguid.obj
+ 0001:00001fec       MEDIASUBTYPE_AnalogVideo_SECAM_K1 10002fec     strmiids:strmguid.obj
+ 0001:00001ffc       MEDIASUBTYPE_AnalogVideo_SECAM_L 10002ffc     strmiids:strmguid.obj
+ 0001:0000200c       MEDIATYPE_AnalogAudio      1000300c     strmiids:strmguid.obj
+ 0001:0000201c       MEDIATYPE_MPEG2_PACK       1000301c     strmiids:strmguid.obj
+ 0001:0000202c       MEDIATYPE_MPEG2_PES        1000302c     strmiids:strmguid.obj
+ 0001:0000203c       MEDIASUBTYPE_MPEG2_VIDEO   1000303c     strmiids:strmguid.obj
+ 0001:0000204c       FORMAT_MPEG2_VIDEO         1000304c     strmiids:strmguid.obj
+ 0001:0000205c       FORMAT_VIDEOINFO2          1000305c     strmiids:strmguid.obj
+ 0001:0000206c       MEDIASUBTYPE_MPEG2_PROGRAM 1000306c     strmiids:strmguid.obj
+ 0001:0000207c       MEDIASUBTYPE_MPEG2_TRANSPORT 1000307c     strmiids:strmguid.obj
+ 0001:0000208c       MEDIASUBTYPE_MPEG2_AUDIO   1000308c     strmiids:strmguid.obj
+ 0001:0000209c       MEDIASUBTYPE_DOLBY_AC3     1000309c     strmiids:strmguid.obj
+ 0001:000020ac       MEDIASUBTYPE_DVD_SUBPICTURE 100030ac     strmiids:strmguid.obj
+ 0001:000020bc       MEDIASUBTYPE_DVD_LPCM_AUDIO 100030bc     strmiids:strmguid.obj
+ 0001:000020cc       MEDIATYPE_DVD_ENCRYPTED_PACK 100030cc     strmiids:strmguid.obj
+ 0001:000020dc       MEDIATYPE_DVD_NAVIGATION   100030dc     strmiids:strmguid.obj
+ 0001:000020ec       MEDIASUBTYPE_DVD_NAVIGATION_PCI 100030ec     strmiids:strmguid.obj
+ 0001:000020fc       MEDIASUBTYPE_DVD_NAVIGATION_DSI 100030fc     strmiids:strmguid.obj
+ 0001:0000210c       MEDIASUBTYPE_DVD_NAVIGATION_PROVIDER 1000310c     strmiids:strmguid.obj
+ 0001:0000211c       FORMAT_MPEG2Video          1000311c     strmiids:strmguid.obj
+ 0001:0000212c       FORMAT_DolbyAC3            1000312c     strmiids:strmguid.obj
+ 0001:0000213c       FORMAT_MPEG2Audio          1000313c     strmiids:strmguid.obj
+ 0001:0000214c       FORMAT_DVD_LPCMAudio       1000314c     strmiids:strmguid.obj
+ 0001:0000215c       AM_KSPROPSETID_AC3         1000315c     strmiids:strmguid.obj
+ 0001:0000216c       AM_KSPROPSETID_DvdSubPic   1000316c     strmiids:strmguid.obj
+ 0001:0000217c       AM_KSPROPSETID_CopyProt    1000317c     strmiids:strmguid.obj
+ 0001:0000218c       AM_KSPROPSETID_TSRateChange 1000318c     strmiids:strmguid.obj
+ 0001:0000219c       AM_KSPROPSETID_RendererPosition 1000319c     strmiids:strmguid.obj
+ 0001:000021ac       AM_KSCATEGORY_CAPTURE      100031ac     strmiids:strmguid.obj
+ 0001:000021bc       AM_KSCATEGORY_RENDER       100031bc     strmiids:strmguid.obj
+ 0001:000021cc       AM_KSCATEGORY_DATACOMPRESSOR 100031cc     strmiids:strmguid.obj
+ 0001:000021dc       AM_KSCATEGORY_AUDIO        100031dc     strmiids:strmguid.obj
+ 0001:000021ec       AM_KSCATEGORY_VIDEO        100031ec     strmiids:strmguid.obj
+ 0001:000021fc       AM_KSCATEGORY_TVTUNER      100031fc     strmiids:strmguid.obj
+ 0001:0000220c       AM_KSCATEGORY_CROSSBAR     1000320c     strmiids:strmguid.obj
+ 0001:0000221c       AM_KSCATEGORY_TVAUDIO      1000321c     strmiids:strmguid.obj
+ 0001:0000222c       AM_KSCATEGORY_VBICODEC     1000322c     strmiids:strmguid.obj
+ 0001:0000223c       AM_KSCATEGORY_SPLITTER     1000323c     strmiids:strmguid.obj
+ 0001:0000224c       IID_IKsInterfaceHandler    1000324c     strmiids:strmguid.obj
+ 0001:0000225c       IID_IKsDataTypeHandler     1000325c     strmiids:strmguid.obj
+ 0001:0000226c       IID_IKsPin                 1000326c     strmiids:strmguid.obj
+ 0001:0000227c       IID_IKsControl             1000327c     strmiids:strmguid.obj
+ 0001:0000228c       IID_IKsPinFactory          1000328c     strmiids:strmguid.obj
+ 0001:0000229c       AM_INTERFACESETID_Standard 1000329c     strmiids:strmguid.obj
+ 0001:000022ac       TIME_FORMAT_NONE           100032ac     strmiids:strmguid.obj
+ 0001:000022bc       TIME_FORMAT_FRAME          100032bc     strmiids:strmguid.obj
+ 0001:000022cc       TIME_FORMAT_BYTE           100032cc     strmiids:strmguid.obj
+ 0001:000022dc       TIME_FORMAT_SAMPLE         100032dc     strmiids:strmguid.obj
+ 0001:000022ec       TIME_FORMAT_FIELD          100032ec     strmiids:strmguid.obj
+ 0001:000022fc       TIME_FORMAT_MEDIA_TIME     100032fc     strmiids:strmguid.obj
+ 0001:0000230c       AMPROPSETID_Pin            1000330c     strmiids:strmguid.obj
+ 0001:0000231c       PIN_CATEGORY_CAPTURE       1000331c     strmiids:strmguid.obj
+ 0001:0000232c       PIN_CATEGORY_PREVIEW       1000332c     strmiids:strmguid.obj
+ 0001:0000233c       PIN_CATEGORY_ANALOGVIDEOIN 1000333c     strmiids:strmguid.obj
+ 0001:0000234c       PIN_CATEGORY_VBI           1000334c     strmiids:strmguid.obj
+ 0001:0000235c       PIN_CATEGORY_VIDEOPORT     1000335c     strmiids:strmguid.obj
+ 0001:0000236c       PIN_CATEGORY_NABTS         1000336c     strmiids:strmguid.obj
+ 0001:0000237c       PIN_CATEGORY_EDS           1000337c     strmiids:strmguid.obj
+ 0001:0000238c       PIN_CATEGORY_TELETEXT      1000338c     strmiids:strmguid.obj
+ 0001:0000239c       PIN_CATEGORY_CC            1000339c     strmiids:strmguid.obj
+ 0001:000023ac       PIN_CATEGORY_STILL         100033ac     strmiids:strmguid.obj
+ 0001:000023bc       PIN_CATEGORY_TIMECODE      100033bc     strmiids:strmguid.obj
+ 0001:000023cc       PIN_CATEGORY_VIDEOPORT_VBI 100033cc     strmiids:strmguid.obj
+ 0001:000023dc       LOOK_UPSTREAM_ONLY         100033dc     strmiids:strmguid.obj
+ 0001:000023ec       LOOK_DOWNSTREAM_ONLY       100033ec     strmiids:strmguid.obj
+ 0001:000023fc       CLSID_TVTunerFilterPropertyPage 100033fc     strmiids:strmguid.obj
+ 0001:0000240c       CLSID_CrossbarFilterPropertyPage 1000340c     strmiids:strmguid.obj
+ 0001:0000241c       CLSID_TVAudioFilterPropertyPage 1000341c     strmiids:strmguid.obj
+ 0001:0000242c       CLSID_VideoProcAmpPropertyPage 1000342c     strmiids:strmguid.obj
+ 0001:0000243c       CLSID_CameraControlPropertyPage 1000343c     strmiids:strmguid.obj
+ 0001:0000244c       CLSID_AnalogVideoDecoderPropertyPage 1000344c     strmiids:strmguid.obj
+ 0001:0000245c       CLSID_VideoStreamConfigPropertyPage 1000345c     strmiids:strmguid.obj
+ 0001:0000246c       IID_IIPDVDec               1000346c     strmiids:strmguid.obj
+ 0001:0000247c       CLSID_OverlayMixer2        1000347c     strmiids:strmguid.obj
+ 0001:0000248c       CLSID_ScriptCommandRenderer 1000348c     strmiids:strmguid.obj
+ 0001:0000249c       IID_IScriptCommandRenderer 1000349c     strmiids:strmguid.obj
+ 0001:000024ac       CLSID_FileRend             100034ac     strmiids:strmguid.obj
+ 0001:000024bc       CLSID_MultFile             100034bc     strmiids:strmguid.obj
+ 0001:000024cc       CLSID_ASFWriter            100034cc     strmiids:strmguid.obj
+ 0001:000024dc       CLSID_IMGSinkFilter        100034dc     strmiids:strmguid.obj
+ 0001:000024ec       AM_KSPROPSETID_FrameStep   100034ec     strmiids:strmguid.obj
+ 0001:000024fc       IID_IAMOpenProgress        100034fc     strmiids:strmguid.obj
+ 0001:0000250c       LIBID_QuartzNetTypeLib     1000350c     strmiids:strmguid.obj
+ 0001:0000251c       IID_IAMNetShowConfig       1000351c     strmiids:strmguid.obj
+ 0001:0000252c       IID_IAMChannelInfo         1000352c     strmiids:strmguid.obj
+ 0001:0000253c       IID_IAMNetworkStatus       1000353c     strmiids:strmguid.obj
+ 0001:0000254c       IID_IAMExtendedSeeking     1000354c     strmiids:strmguid.obj
+ 0001:0000255c       IID_IAMNetShowExProps      1000355c     strmiids:strmguid.obj
+ 0001:0000256c       IID_IAMExtendedErrorInfo   1000356c     strmiids:strmguid.obj
+ 0001:0000257c       IID_IAMMediaContent        1000357c     strmiids:strmguid.obj
+ 0001:0000258c       IID_IAMMediaContent2       1000358c     strmiids:strmguid.obj
+ 0001:0000259c       IID_IAMMediaContentEx      1000359c     strmiids:strmguid.obj
+ 0001:000025ac       IID_IAMNetShowPreroll      100035ac     strmiids:strmguid.obj
+ 0001:000025bc       IID_IDShowPlugin           100035bc     strmiids:strmguid.obj
+ 0001:000025cc       IID_IAMSecureMediaContent  100035cc     strmiids:strmguid.obj
+ 0001:000025dc       IID_IPin                   100035dc     strmiids:strmif_i.obj
+ 0001:000025ec       IID_IEnumPins              100035ec     strmiids:strmif_i.obj
+ 0001:000025fc       IID_IEnumMediaTypes        100035fc     strmiids:strmif_i.obj
+ 0001:0000260c       IID_IFilterGraph           1000360c     strmiids:strmif_i.obj
+ 0001:0000261c       IID_IEnumFilters           1000361c     strmiids:strmif_i.obj
+ 0001:0000262c       IID_IMediaFilter           1000362c     strmiids:strmif_i.obj
+ 0001:0000263c       IID_IBaseFilter            1000363c     strmiids:strmif_i.obj
+ 0001:0000264c       IID_IReferenceClock        1000364c     strmiids:strmif_i.obj
+ 0001:0000265c       IID_IReferenceClock2       1000365c     strmiids:strmif_i.obj
+ 0001:0000266c       IID_IMediaSample           1000366c     strmiids:strmif_i.obj
+ 0001:0000267c       IID_IMediaSample2          1000367c     strmiids:strmif_i.obj
+ 0001:0000268c       IID_IMemAllocator          1000368c     strmiids:strmif_i.obj
+ 0001:0000269c       IID_IMemAllocator2         1000369c     strmiids:strmif_i.obj
+ 0001:000026ac       IID_IMemInputPin           100036ac     strmiids:strmif_i.obj
+ 0001:000026bc       IID_IAMovieSetup           100036bc     strmiids:strmif_i.obj
+ 0001:000026cc       IID_IMediaSeeking          100036cc     strmiids:strmif_i.obj
+ 0001:000026dc       IID_IAudioRenderer         100036dc     strmiids:strmif_i.obj
+ 0001:000026ec       IID_IAudioRendererWaveOut  100036ec     strmiids:strmif_i.obj
+ 0001:000026fc       IID_IEnumRegFilters        100036fc     strmiids:strmif_i.obj
+ 0001:0000270c       IID_IFilterMapper          1000370c     strmiids:strmif_i.obj
+ 0001:0000271c       IID_IQualityControl        1000371c     strmiids:strmif_i.obj
+ 0001:0000272c       IID_IOverlayNotify         1000372c     strmiids:strmif_i.obj
+ 0001:0000273c       IID_IOverlay               1000373c     strmiids:strmif_i.obj
+ 0001:0000274c       IID_IMediaEventSink        1000374c     strmiids:strmif_i.obj
+ 0001:0000275c       IID_IFileSourceFilter      1000375c     strmiids:strmif_i.obj
+ 0001:0000276c       IID_IFileSinkFilter        1000376c     strmiids:strmif_i.obj
+ 0001:0000277c       IID_IFileSinkFilter2       1000377c     strmiids:strmif_i.obj
+ 0001:0000278c       IID_IFileAsyncIO           1000378c     strmiids:strmif_i.obj
+ 0001:0000279c       IID_IGraphBuilder          1000379c     strmiids:strmif_i.obj
+ 0001:000027ac       IID_ICaptureGraphBuilder   100037ac     strmiids:strmif_i.obj
+ 0001:000027bc       IID_IAMCopyCaptureFileProgress 100037bc     strmiids:strmif_i.obj
+ 0001:000027cc       IID_ICaptureGraphBuilder2  100037cc     strmiids:strmif_i.obj
+ 0001:000027dc       IID_IFilterGraph2          100037dc     strmiids:strmif_i.obj
+ 0001:000027ec       IID_IStreamBuilder         100037ec     strmiids:strmif_i.obj
+ 0001:000027fc       IID_IAsyncReader           100037fc     strmiids:strmif_i.obj
+ 0001:0000280c       IID_IGraphVersion          1000380c     strmiids:strmif_i.obj
+ 0001:0000281c       IID_IResourceConsumer      1000381c     strmiids:strmif_i.obj
+ 0001:0000282c       IID_IResourceManager       1000382c     strmiids:strmif_i.obj
+ 0001:0000283c       IID_IDistributorNotify     1000383c     strmiids:strmif_i.obj
+ 0001:0000284c       IID_IAMStreamControl       1000384c     strmiids:strmif_i.obj
+ 0001:0000285c       IID_ISeekingPassThru       1000385c     strmiids:strmif_i.obj
+ 0001:0000286c       IID_IAMStreamConfig        1000386c     strmiids:strmif_i.obj
+ 0001:0000287c       IID_IConfigInterleaving    1000387c     strmiids:strmif_i.obj
+ 0001:0000288c       IID_IConfigAviMux          1000388c     strmiids:strmif_i.obj
+ 0001:0000289c       IID_IAMVideoCompression    1000389c     strmiids:strmif_i.obj
+ 0001:000028ac       IID_IAMDroppedFrames       100038ac     strmiids:strmif_i.obj
+ 0001:000028bc       IID_IAMBufferNegotiation   100038bc     strmiids:strmif_i.obj
+ 0001:000028cc       IID_IAMVideoProcAmp        100038cc     strmiids:strmif_i.obj
+ 0001:000028dc       IID_IAMCameraControl       100038dc     strmiids:strmif_i.obj
+ 0001:000028ec       IID_IAMVideoControl        100038ec     strmiids:strmif_i.obj
+ 0001:000028fc       IID_IAMCrossbar            100038fc     strmiids:strmif_i.obj
+ 0001:0000290c       IID_IAMTuner               1000390c     strmiids:strmif_i.obj
+ 0001:0000291c       IID_IAMTunerNotification   1000391c     strmiids:strmif_i.obj
+ 0001:0000292c       IID_IAMTVTuner             1000392c     strmiids:strmif_i.obj
+ 0001:0000293c       IID_IKsPropertySet         1000393c     strmiids:strmif_i.obj
+ 0001:0000294c       IID_IMediaPropertyBag      1000394c     strmiids:strmif_i.obj
+ 0001:0000295c       IID_IPersistMediaPropertyBag 1000395c     strmiids:strmif_i.obj
+ 0001:0000296c       IID_IAMPhysicalPinInfo     1000396c     strmiids:strmif_i.obj
+ 0001:0000297c       IID_IAMExtDevice           1000397c     strmiids:strmif_i.obj
+ 0001:0000298c       IID_IAMExtTransport        1000398c     strmiids:strmif_i.obj
+ 0001:0000299c       IID_IAMTimecodeReader      1000399c     strmiids:strmif_i.obj
+ 0001:000029ac       IID_IAMTimecodeGenerator   100039ac     strmiids:strmif_i.obj
+ 0001:000029bc       IID_IAMTimecodeDisplay     100039bc     strmiids:strmif_i.obj
+ 0001:000029cc       IID_IAMDevMemoryAllocator  100039cc     strmiids:strmif_i.obj
+ 0001:000029dc       IID_IAMDevMemoryControl    100039dc     strmiids:strmif_i.obj
+ 0001:000029ec       IID_IAMStreamSelect        100039ec     strmiids:strmif_i.obj
+ 0001:000029fc       IID_IAMResourceControl     100039fc     strmiids:strmif_i.obj
+ 0001:00002a0c       IID_IAMClockAdjust         10003a0c     strmiids:strmif_i.obj
+ 0001:00002a1c       IID_IAMFilterMiscFlags     10003a1c     strmiids:strmif_i.obj
+ 0001:00002a2c       IID_IAMAudioRendererStats  10003a2c     strmiids:strmif_i.obj
+ 0001:00002a3c       IID_IAMVideoRendererMode   10003a3c     strmiids:strmif_i.obj
+ 0001:00002a4c       IID_ILanguageSelection     10003a4c     strmiids:strmif_i.obj
+ 0001:00002a5c       IID_IImageSinkFilter       10003a5c     strmiids:strmif_i.obj
+ 0001:00002a6c       IID_ISmartTee              10003a6c     strmiids:strmif_i.obj
+ 0001:00002a7c       IID_IBuffering             10003a7c     strmiids:strmif_i.obj
+ 0001:00002a8c       IID_IAMCertifiedOutputProtection 10003a8c     strmiids:strmif_i.obj
+ 0001:00002a9c       IID_IVideoFrameStep        10003a9c     strmiids:strmif_i.obj
+ 0001:00002aac       IID_IDvdControl            10003aac     strmiids:strmif_i.obj
+ 0001:00002abc       IID_IDvdInfo               10003abc     strmiids:strmif_i.obj
+ 0001:00002acc       IID_IDvdCmd                10003acc     strmiids:strmif_i.obj
+ 0001:00002adc       IID_IDvdState              10003adc     strmiids:strmif_i.obj
+ 0001:00002aec       IID_IDvdControl2           10003aec     strmiids:strmif_i.obj
+ 0001:00002afc       IID_IDvdInfo2              10003afc     strmiids:strmif_i.obj
+ 0001:00002b0c       IID_IDvdGraphBuilder       10003b0c     strmiids:strmif_i.obj
+ 0001:00002b1c       IID_IDDrawExclModeVideo    10003b1c     strmiids:strmif_i.obj
+ 0001:00002b2c       IID_IDDrawExclModeVideoCallback 10003b2c     strmiids:strmif_i.obj
+ 0001:00002b3c       GUID_NULL                  10003b3c     uuid:cguid_i_guid0.obj
+ 0001:00002b4c       IID_IClassFactory          10003b4c     uuid:unknwn_i_guid1.obj
+ 0001:00002b5c       IID_IUnknown               10003b5c     uuid:unknwn_i_guid0.obj
+ 0001:00002b6c       IID_IPersist               10003b6c     uuid:objidl_i_guid11.obj
+ 0001:00002ba8       DllRegisterServer          10003ba8 f   SampleGrabber.obj
+ 0001:00002be4       DllUnregisterServer        10003be4 f   SampleGrabber.obj
+ 0001:00002c14       DllMain                    10003c14 f   SampleGrabber.obj
+ 0001:00002c78       ??1CSampleGrabber@@UAA@XZ  10003c78 f   SampleGrabber.obj
+ 0001:00002cec       ?QueryInterface@CSampleGrabber@@UAAJABU_GUID@@PAPAX@Z 10003cec f i SampleGrabber.obj
+ 0001:00002d0c       ?AddRef@CSampleGrabber@@UAAKXZ 10003d0c f i SampleGrabber.obj
+ 0001:00002d2c       ?Release@CSampleGrabber@@UAAKXZ 10003d2c f i SampleGrabber.obj
+ 0001:00002d4c       ?CheckTransform@CSampleGrabber@@UAAJPBVCMediaType@@0@Z 10003d4c f i SampleGrabber.obj
+ 0001:00002d54       ?NonDelegatingQueryInterface@CSampleGrabber@@UAAJABU_GUID@@PAPAX@Z 10003d54 f   SampleGrabber.obj
+ 0001:00002db4       ?GetSetupData@CSampleGrabber@@UAAPAU_AMOVIESETUP_FILTER@@XZ 10003db4 f   SampleGrabber.obj
+ 0001:00002dc0       ?CheckInputType@CSampleGrabber@@UAAJPBVCMediaType@@@Z 10003dc0 f   SampleGrabber.obj
+ 0001:00002df4       ?SetMediaType@CSampleGrabber@@UAAJW4_PinDirection@@PBVCMediaType@@@Z 10003df4 f   SampleGrabber.obj
+ 0001:00002e50       ?Transform@CSampleGrabber@@UAAJPAUIMediaSample@@@Z 10003e50 f   SampleGrabber.obj
+ 0001:00002e88       ?DecideBufferSize@CSampleGrabber@@UAAJPAUIMemAllocator@@PAU_AllocatorProperties@@@Z 10003e88 f   SampleGrabber.obj
+ 0001:00002fc0       ?GetMediaType@CSampleGrabber@@UAAJHPAVCMediaType@@@Z 10003fc0 f   SampleGrabber.obj
+ 0001:000030b4       ?RegisterCallback@CSampleGrabber@@UAAJP6AXPAUIMediaSample@@@Z@Z 100040b4 f   SampleGrabber.obj
+ 0001:000030c0       ?EnumMediaTypes@CSampleGrabberInputPin@@UAAJPAPAUIEnumMediaTypes@@@Z 100040c0 f   SampleGrabber.obj
+ 0001:000030f8       ?GetMediaType@CSampleGrabberInputPin@@UAAJHPAVCMediaType@@@Z 100040f8 f   SampleGrabber.obj
+ 0001:000032e4       ?EnumMediaTypes@CSampleGrabberOutputPin@@UAAJPAPAUIEnumMediaTypes@@@Z 100042e4 f   SampleGrabber.obj
+ 0001:0000331c       ?GetMediaType@CSampleGrabberOutputPin@@UAAJHPAVCMediaType@@@Z 1000431c f   SampleGrabber.obj
+ 0001:00003508       ?Release@CSampleGrabber@@WIM@AAKXZ 10004508 f i SampleGrabber.obj
+ 0001:00003510       ?AddRef@CSampleGrabber@@W3AAKXZ 10004510 f i SampleGrabber.obj
+ 0001:00003518       ?AddRef@CSampleGrabber@@WIM@AAKXZ 10004518 f i SampleGrabber.obj
+ 0001:00003520       ?QueryInterface@CSampleGrabber@@W3AAJABU_GUID@@PAPAX@Z 10004520 f i SampleGrabber.obj
+ 0001:00003528       ?Release@CSampleGrabber@@W3AAKXZ 10004528 f i SampleGrabber.obj
+ 0001:00003530       ?QueryInterface@CSampleGrabber@@WIM@AAJABU_GUID@@PAPAX@Z 10004530 f i SampleGrabber.obj
+ 0001:00003538       ??0CSampleGrabber@@QAA@PAUIUnknown@@PAJH@Z 10004538 f   SampleGrabber.obj
+ 0001:000035dc       ??_GCSampleGrabber@@UAAPAXI@Z 100045dc f i SampleGrabber.obj
+ 0001:000035dc       ??_ECSampleGrabber@@UAAPAXI@Z 100045dc f i SampleGrabber.obj
+ 0001:00003604       ??0CSampleGrabberOutputPin@@QAA@PAGPAVCSampleGrabber@@PAJPBG@Z 10004604 f   SampleGrabber.obj
+ 0001:00003658       ?QueryInterface@CBasePin@@UAAJABU_GUID@@PAPAX@Z 10004658 f i SampleGrabber.obj
+ 0001:00003678       ?AddRef@CBasePin@@UAAKXZ   10004678 f i SampleGrabber.obj
+ 0001:00003698       ?Release@CBasePin@@UAAKXZ  10004698 f i SampleGrabber.obj
+ 0001:000036b8       ?QueryInternalConnections@CBasePin@@UAAJPAPAUIPin@@PAK@Z 100046b8 f i SampleGrabber.obj
+ 0001:000036c4       ?QueryId@CTransformOutputPin@@UAAJPAPAG@Z 100046c4 f i SampleGrabber.obj
+ 0001:000036dc       ?Release@CBasePin@@W3AAKXZ 100046dc f i SampleGrabber.obj
+ 0001:000036e4       ?AddRef@CBasePin@@W3AAKXZ  100046e4 f i SampleGrabber.obj
+ 0001:000036ec       ?QueryInterface@CBasePin@@W3AAJABU_GUID@@PAPAX@Z 100046ec f i SampleGrabber.obj
+ 0001:000036f4       ??_ECSampleGrabberOutputPin@@UAAPAXI@Z 100046f4 f i SampleGrabber.obj
+ 0001:000036f4       ??_GCSampleGrabberOutputPin@@UAAPAXI@Z 100046f4 f i SampleGrabber.obj
+ 0001:0000371c       ?CreateInstance@CSampleGrabber@@SAPAVCUnknown@@PAUIUnknown@@PAJ@Z 1000471c f   SampleGrabber.obj
+ 0001:000037a4       ??0CSampleGrabberInputPin@@QAA@PAGPAVCSampleGrabber@@PAJPBG@Z 100047a4 f   SampleGrabber.obj
+ 0001:00003804       ?QueryInterface@CBaseInputPin@@UAAJABU_GUID@@PAPAX@Z 10004804 f i SampleGrabber.obj
+ 0001:00003824       ?AddRef@CBaseInputPin@@UAAKXZ 10004824 f i SampleGrabber.obj
+ 0001:00003844       ?Release@CBaseInputPin@@UAAKXZ 10004844 f i SampleGrabber.obj
+ 0001:00003864       ?QueryId@CTransformInputPin@@UAAJPAPAG@Z 10004864 f i SampleGrabber.obj
+ 0001:0000387c       ?Release@CBaseInputPin@@WIM@AAKXZ 1000487c f i SampleGrabber.obj
+ 0001:00003884       ?AddRef@CBaseInputPin@@W3AAKXZ 10004884 f i SampleGrabber.obj
+ 0001:0000388c       ?AddRef@CBaseInputPin@@WIM@AAKXZ 1000488c f i SampleGrabber.obj
+ 0001:00003894       ?QueryInterface@CBaseInputPin@@W3AAJABU_GUID@@PAPAX@Z 10004894 f i SampleGrabber.obj
+ 0001:0000389c       ?Release@CBaseInputPin@@W3AAKXZ 1000489c f i SampleGrabber.obj
+ 0001:000038a4       ?QueryInterface@CBaseInputPin@@WIM@AAJABU_GUID@@PAPAX@Z 100048a4 f i SampleGrabber.obj
+ 0001:000038ac       ??_ECSampleGrabberInputPin@@UAAPAXI@Z 100048ac f i SampleGrabber.obj
+ 0001:000038ac       ??_GCSampleGrabberInputPin@@UAAPAXI@Z 100048ac f i SampleGrabber.obj
+ 0001:000038d4       ?GetPin@CSampleGrabber@@UAAPAVCBasePin@@H@Z 100048d4 f   SampleGrabber.obj
+ 0001:000039d4       EliminateSubKey            100049d4 f   strmbase:dllsetup.obj
+ 0001:00003af0       AMovieSetupRegisterServer  10004af0 f   strmbase:dllsetup.obj
+ 0001:00003d18       AMovieSetupUnregisterServer 10004d18 f   strmbase:dllsetup.obj
+ 0001:00003da4       AMovieDllRegisterServer    10004da4 f   strmbase:dllsetup.obj
+ 0001:00003f60       AMovieDllUnregisterServer  10004f60 f   strmbase:dllsetup.obj
+ 0001:00004078       AMovieDllRegisterServer2   10005078 f   strmbase:dllsetup.obj
+ 0001:0000409c       ?AddRef@CClassFactory@@UAAKXZ 1000509c f   strmbase:dllentry.obj
+ 0001:000040b0       ?LockServer@CClassFactory@@UAAJH@Z 100050b0 f   strmbase:dllentry.obj
+ 0001:000040d4       ?DllInitClasses@@YAXH@Z    100050d4 f   strmbase:dllentry.obj
+ 0001:00004134       DllEntryPoint              10005134 f   strmbase:dllentry.obj
+ 0001:000041ac       ?InCOMBaseIsEqualGUID@@YAHABU_GUID@@0@Z 100051ac f i strmbase:dllentry.obj
+ 0001:000041f4       ?QueryInterface@CClassFactory@@UAAJABU_GUID@@PAPAX@Z 100051f4 f   strmbase:dllentry.obj
+ 0001:00004298       ?CreateInstance@CClassFactory@@UAAJPAUIUnknown@@ABU_GUID@@PAPAX@Z 10005298 f   strmbase:dllentry.obj
+ 0001:000043a0       DllCanUnloadNow            100053a0 f   strmbase:dllentry.obj
+ 0001:000043d4       ??0CClassFactory@@QAA@PBVCFactoryTemplate@@@Z 100053d4 f   strmbase:dllentry.obj
+ 0001:0000440c       ?Release@CClassFactory@@UAAKXZ 1000540c f   strmbase:dllentry.obj
+ 0001:0000444c       DllGetClassObject          1000544c f   strmbase:dllentry.obj
+ 0001:00004568       ?Transform@CTransformFilter@@UAAJPAUIMediaSample@@0@Z 10005568 f   strmbase:transfrm.obj
+ 0001:00004574       ?GetPinCount@CTransformFilter@@UAAHXZ 10005574 f   strmbase:transfrm.obj
+ 0001:0000457c       ?FindPin@CTransformFilter@@UAAJPBGPAPAUIPin@@@Z 1000557c f   strmbase:transfrm.obj
+ 0001:00004654       ?StartStreaming@CTransformFilter@@UAAJXZ 10005654 f   strmbase:transfrm.obj
+ 0001:0000465c       ?StopStreaming@CTransformFilter@@UAAJXZ 1000565c f   strmbase:transfrm.obj
+ 0001:00004664       ?CheckConnect@CTransformFilter@@UAAJW4_PinDirection@@PAUIPin@@@Z 10005664 f   strmbase:transfrm.obj
+ 0001:0000466c       ?BreakConnect@CTransformFilter@@UAAJW4_PinDirection@@@Z 1000566c f   strmbase:transfrm.obj
+ 0001:00004674       ?AlterQuality@CTransformFilter@@UAAJUtagQuality@@@Z 10005674 f   strmbase:transfrm.obj
+ 0001:0000467c       ?EndOfStream@CTransformFilter@@UAAJXZ 1000567c f   strmbase:transfrm.obj
+ 0001:000046ac       ?BeginFlush@CTransformFilter@@UAAJXZ 100056ac f   strmbase:transfrm.obj
+ 0001:000046dc       ?EndFlush@CTransformFilter@@UAAJXZ 100056dc f   strmbase:transfrm.obj
+ 0001:000046fc       ?NewSegment@CTransformFilter@@UAAJ_J0N@Z 100056fc f   strmbase:transfrm.obj
+ 0001:00004758       ??0CTransformInputPin@@QAA@PAGPAVCTransformFilter@@PAJPBG@Z 10005758 f   strmbase:transfrm.obj
+ 0001:000047c4       ?CheckConnect@CTransformInputPin@@UAAJPAUIPin@@@Z 100057c4 f   strmbase:transfrm.obj
+ 0001:00004804       ?BreakConnect@CTransformInputPin@@UAAJXZ 10005804 f   strmbase:transfrm.obj
+ 0001:00004834       ?CompleteConnect@CTransformInputPin@@UAAJPAUIPin@@@Z 10005834 f   strmbase:transfrm.obj
+ 0001:00004874       ?SetMediaType@CTransformInputPin@@UAAJPBVCMediaType@@@Z 10005874 f   strmbase:transfrm.obj
+ 0001:000048ac       ?NewSegment@CTransformInputPin@@UAAJ_J0N@Z 100058ac f   strmbase:transfrm.obj
+ 0001:00004920       ??1CTransformOutputPin@@UAA@XZ 10005920 f   strmbase:transfrm.obj
+ 0001:00004978       ?BreakConnect@CTransformOutputPin@@UAAJXZ 10005978 f   strmbase:transfrm.obj
+ 0001:000049a8       ?CompleteConnect@CTransformOutputPin@@UAAJPAUIPin@@@Z 100059a8 f   strmbase:transfrm.obj
+ 0001:000049e8       ?SetMediaType@CTransformOutputPin@@UAAJPBVCMediaType@@@Z 100059e8 f   strmbase:transfrm.obj
+ 0001:00004a20       ?DecideBufferSize@CTransformOutputPin@@UAAJPAUIMemAllocator@@PAU_AllocatorProperties@@@Z 10005a20 f   strmbase:transfrm.obj
+ 0001:00004a40       ?Notify@CTransformOutputPin@@UAAJPAUIBaseFilter@@UtagQuality@@@Z 10005a40 f   strmbase:transfrm.obj
+ 0001:00004ab8       ??0CTransformFilter@@QAA@PAGPAUIUnknown@@ABU_GUID@@@Z 10005ab8 f   strmbase:transfrm.obj
+ 0001:00004b0c       ??1CTransformFilter@@UAA@XZ 10005b0c f   strmbase:transfrm.obj
+ 0001:00004b6c       ?Stop@CTransformFilter@@UAAJXZ 10005b6c f   strmbase:transfrm.obj
+ 0001:00004c38       ?Pause@CTransformFilter@@UAAJXZ 10005c38 f   strmbase:transfrm.obj
+ 0001:00004d24       ?CheckStreaming@CTransformInputPin@@UAAJXZ 10005d24 f   strmbase:transfrm.obj
+ 0001:00004d70       ??_GCTransformInputPin@@UAAPAXI@Z 10005d70 f i strmbase:transfrm.obj
+ 0001:00004d70       ??_ECTransformInputPin@@UAAPAXI@Z 10005d70 f i strmbase:transfrm.obj
+ 0001:00004d98       ?CheckMediaType@CTransformInputPin@@UAAJPBVCMediaType@@@Z 10005d98 f   strmbase:transfrm.obj
+ 0001:00004e10       ?EndOfStream@CTransformInputPin@@UAAJXZ 10005e10 f   strmbase:transfrm.obj
+ 0001:00004e6c       ?BeginFlush@CTransformInputPin@@UAAJXZ 10005e6c f   strmbase:transfrm.obj
+ 0001:00004ef4       ?EndFlush@CTransformInputPin@@UAAJXZ 10005ef4 f   strmbase:transfrm.obj
+ 0001:00004f7c       ?Receive@CTransformInputPin@@UAAJPAUIMediaSample@@@Z 10005f7c f   strmbase:transfrm.obj
+ 0001:00004fd8       ??0CTransformOutputPin@@QAA@PAGPAVCTransformFilter@@PAJPBG@Z 10005fd8 f   strmbase:transfrm.obj
+ 0001:00005040       ??_ECTransformOutputPin@@UAAPAXI@Z 10006040 f i strmbase:transfrm.obj
+ 0001:00005040       ??_GCTransformOutputPin@@UAAPAXI@Z 10006040 f i strmbase:transfrm.obj
+ 0001:00005068       ?NonDelegatingQueryInterface@CTransformOutputPin@@UAAJABU_GUID@@PAPAX@Z 10006068 f   strmbase:transfrm.obj
+ 0001:0000513c       ?CheckConnect@CTransformOutputPin@@UAAJPAUIPin@@@Z 1000613c f   strmbase:transfrm.obj
+ 0001:0000519c       ?CheckMediaType@CTransformOutputPin@@UAAJPBVCMediaType@@@Z 1000619c f   strmbase:transfrm.obj
+ 0001:000051e8       ?GetMediaType@CTransformOutputPin@@UAAJHPAVCMediaType@@@Z 100061e8 f   strmbase:transfrm.obj
+ 0001:00005258       CreateMemoryAllocator      10006258 f   strmbase:amfilter.obj
+ 0001:00005290       CreatePosPassThru          10006290 f   strmbase:amfilter.obj
+ 0001:0000538c       ?GetClassID@CBaseFilter@@UAAJPAU_GUID@@@Z 1000638c f   strmbase:amfilter.obj
+ 0001:000053c8       ?GetState@CBaseFilter@@UAAJKPAW4_FilterState@@@Z 100063c8 f   strmbase:amfilter.obj
+ 0001:000053e4       ?QueryFilterInfo@CBaseFilter@@UAAJPAU_FilterInfo@@@Z 100063e4 f   strmbase:amfilter.obj
+ 0001:00005458       ?QueryVendorInfo@CBaseFilter@@UAAJPAPAG@Z 10006458 f   strmbase:amfilter.obj
+ 0001:00005464       ?NotifyEvent@CBaseFilter@@QAAJJJJ@Z 10006464 f   strmbase:amfilter.obj
+ 0001:0000549c       ?ReconnectPin@CBaseFilter@@QAAJPAUIPin@@PBU_AMMediaType@@@Z 1000649c f   strmbase:amfilter.obj
+ 0001:00005554       ?GetPinVersion@CBaseFilter@@UAAJXZ 10006554 f   strmbase:amfilter.obj
+ 0001:0000555c       ??1CEnumPins@@UAA@XZ       1000655c f   strmbase:amfilter.obj
+ 0001:00005598       ?QueryInterface@CEnumPins@@UAAJABU_GUID@@PAPAX@Z 10006598 f   strmbase:amfilter.obj
+ 0001:0000560c       ?AddRef@CEnumPins@@UAAKXZ  1000660c f   strmbase:amfilter.obj
+ 0001:00005620       ?Release@CEnumPins@@UAAKXZ 10006620 f   strmbase:amfilter.obj
+ 0001:00005660       ?Reset@CEnumPins@@UAAJXZ   10006660 f   strmbase:amfilter.obj
+ 0001:000056bc       ?Refresh@CEnumPins@@AAAJXZ 100066bc f   strmbase:amfilter.obj
+ 0001:0000570c       ??1CEnumMediaTypes@@UAA@XZ 1000670c f   strmbase:amfilter.obj
+ 0001:0000573c       ?QueryInterface@CEnumMediaTypes@@UAAJABU_GUID@@PAPAX@Z 1000673c f   strmbase:amfilter.obj
+ 0001:000057b0       ?AddRef@CEnumMediaTypes@@UAAKXZ 100067b0 f   strmbase:amfilter.obj
+ 0001:000057c4       ?Release@CEnumMediaTypes@@UAAKXZ 100067c4 f   strmbase:amfilter.obj
+ 0001:00005804       ?Reset@CEnumMediaTypes@@UAAJXZ 10006804 f   strmbase:amfilter.obj
+ 0001:00005838       ??1CBasePin@@UAA@XZ        10006838 f   strmbase:amfilter.obj
+ 0001:00005868       ?NonDelegatingQueryInterface@CBasePin@@UAAJABU_GUID@@PAPAX@Z 10006868 f   strmbase:amfilter.obj
+ 0001:000058f8       ?NonDelegatingAddRef@CBasePin@@UAAKXZ 100068f8 f   strmbase:amfilter.obj
+ 0001:0000591c       ?NonDelegatingRelease@CBasePin@@UAAKXZ 1000691c f   strmbase:amfilter.obj
+ 0001:00005940       ?CompleteConnect@CBasePin@@UAAJPAUIPin@@@Z 10006940 f   strmbase:amfilter.obj
+ 0001:00005948       ?SetMediaType@CBasePin@@UAAJPBVCMediaType@@@Z 10006948 f   strmbase:amfilter.obj
+ 0001:00005960       ?CheckConnect@CBasePin@@UAAJPAUIPin@@@Z 10006960 f   strmbase:amfilter.obj
+ 0001:000059ac       ?BreakConnect@CBasePin@@UAAJXZ 100069ac f   strmbase:amfilter.obj
+ 0001:000059b4       ?ConnectedTo@CBasePin@@UAAJPAPAUIPin@@@Z 100069b4 f   strmbase:amfilter.obj
+ 0001:00005a08       ?QueryPinInfo@CBasePin@@UAAJPAU_PinInfo@@@Z 10006a08 f   strmbase:amfilter.obj
+ 0001:00005a94       ?QueryDirection@CBasePin@@UAAJPAW4_PinDirection@@@Z 10006a94 f   strmbase:amfilter.obj
+ 0001:00005ab0       ?QueryAccept@CBasePin@@UAAJPBU_AMMediaType@@@Z 10006ab0 f   strmbase:amfilter.obj
+ 0001:00005aec       ?GetMediaType@CBasePin@@UAAJHPAVCMediaType@@@Z 10006aec f   strmbase:amfilter.obj
+ 0001:00005af8       ?GetMediaTypeVersion@CBasePin@@UAAJXZ 10006af8 f   strmbase:amfilter.obj
+ 0001:00005b00       ?Active@CBasePin@@UAAJXZ   10006b00 f   strmbase:amfilter.obj
+ 0001:00005b08       ?Run@CBasePin@@UAAJ_J@Z    10006b08 f   strmbase:amfilter.obj
+ 0001:00005b10       ?SetSink@CBasePin@@UAAJPAUIQualityControl@@@Z 10006b10 f   strmbase:amfilter.obj
+ 0001:00005b40       ?NewSegment@CBasePin@@UAAJ_J0N@Z 10006b40 f   strmbase:amfilter.obj
+ 0001:00005b7c       ?CompleteConnect@CBaseOutputPin@@UAAJPAUIPin@@@Z 10006b7c f   strmbase:amfilter.obj
+ 0001:00005ba0       ?CheckConnect@CBaseOutputPin@@UAAJPAUIPin@@@Z 10006ba0 f   strmbase:amfilter.obj
+ 0001:00005be8       ?BreakConnect@CBaseOutputPin@@UAAJXZ 10006be8 f   strmbase:amfilter.obj
+ 0001:00005c40       ?InitAllocator@CBaseOutputPin@@UAAJPAPAUIMemAllocator@@@Z 10006c40 f   strmbase:amfilter.obj
+ 0001:00005c54       ?DecideAllocator@CBaseOutputPin@@UAAJPAUIMemInputPin@@PAPAUIMemAllocator@@@Z 10006c54 f   strmbase:amfilter.obj
+ 0001:00005dd4       ?GetDeliveryBuffer@CBaseOutputPin@@UAAJPAPAUIMediaSample@@PA_J1K@Z 10006dd4 f   strmbase:amfilter.obj
+ 0001:00005e1c       ?Deliver@CBaseOutputPin@@UAAJPAUIMediaSample@@@Z 10006e1c f   strmbase:amfilter.obj
+ 0001:00005e54       ?DeliverEndOfStream@CBaseOutputPin@@UAAJXZ 10006e54 f   strmbase:amfilter.obj
+ 0001:00005e8c       ?Active@CBaseOutputPin@@UAAJXZ 10006e8c f   strmbase:amfilter.obj
+ 0001:00005ec4       ?Inactive@CBaseOutputPin@@UAAJXZ 10006ec4 f   strmbase:amfilter.obj
+ 0001:00005f00       ?EndOfStream@CBaseOutputPin@@UAAJXZ 10006f00 f   strmbase:amfilter.obj
+ 0001:00005f0c       ?BeginFlush@CBaseOutputPin@@UAAJXZ 10006f0c f   strmbase:amfilter.obj
+ 0001:00005f18       ?EndFlush@CBaseOutputPin@@UAAJXZ 10006f18 f   strmbase:amfilter.obj
+ 0001:00005f24       ?DeliverBeginFlush@CBaseOutputPin@@UAAJXZ 10006f24 f   strmbase:amfilter.obj
+ 0001:00005f5c       ?DeliverEndFlush@CBaseOutputPin@@UAAJXZ 10006f5c f   strmbase:amfilter.obj
+ 0001:00005f94       ?DeliverNewSegment@CBaseOutputPin@@UAAJ_J0N@Z 10006f94 f   strmbase:amfilter.obj
+ 0001:00005ff8       ??1CBaseInputPin@@UAA@XZ   10006ff8 f   strmbase:amfilter.obj
+ 0001:00006034       ?NonDelegatingQueryInterface@CBaseInputPin@@UAAJABU_GUID@@PAPAX@Z 10007034 f   strmbase:amfilter.obj
+ 0001:00006094       ?GetAllocator@CBaseInputPin@@UAAJPAPAUIMemAllocator@@@Z 10007094 f   strmbase:amfilter.obj
+ 0001:00006108       ?NotifyAllocator@CBaseInputPin@@UAAJPAUIMemAllocator@@H@Z 10007108 f   strmbase:amfilter.obj
+ 0001:00006180       ?Receive@CBaseInputPin@@UAAJPAUIMediaSample@@@Z 10007180 f   strmbase:amfilter.obj
+ 0001:000063e8       ?ReceiveMultiple@CBaseInputPin@@UAAJPAPAUIMediaSample@@JPAJ@Z 100073e8 f   strmbase:amfilter.obj
+ 0001:0000645c       ?ReceiveCanBlock@CBaseInputPin@@UAAJXZ 1000745c f   strmbase:amfilter.obj
+ 0001:000065a0       ?BeginFlush@CBaseInputPin@@UAAJXZ 100075a0 f   strmbase:amfilter.obj
+ 0001:000065d0       ?EndFlush@CBaseInputPin@@UAAJXZ 100075d0 f   strmbase:amfilter.obj
+ 0001:00006600       ?Notify@CBaseInputPin@@UAAJPAUIBaseFilter@@UtagQuality@@@Z 10007600 f   strmbase:amfilter.obj
+ 0001:00006614       ?Inactive@CBaseInputPin@@UAAJXZ 10007614 f   strmbase:amfilter.obj
+ 0001:00006658       ?GetAllocatorRequirements@CBaseInputPin@@UAAJPAU_AllocatorProperties@@@Z 10007658 f   strmbase:amfilter.obj
+ 0001:00006664       ?PassNotify@CBaseInputPin@@QAAJAAUtagQuality@@@Z 10007664 f   strmbase:amfilter.obj
+ 0001:00006788       AMovieSetupRegisterFilter  10007788 f   strmbase:amfilter.obj
+ 0001:00006a2c       ?NonDelegatingQueryInterface@CBaseFilter@@UAAJABU_GUID@@PAPAX@Z 10007a2c f   strmbase:amfilter.obj
+ 0001:00006af4       ??1CBaseFilter@@UAA@XZ     10007af4 f   strmbase:amfilter.obj
+ 0001:00006b40       ?SetSyncSource@CBaseFilter@@UAAJPAUIReferenceClock@@@Z 10007b40 f   strmbase:amfilter.obj
+ 0001:00006ba0       ?GetSyncSource@CBaseFilter@@UAAJPAPAUIReferenceClock@@@Z 10007ba0 f   strmbase:amfilter.obj
+ 0001:00006c00       ?Pause@CBaseFilter@@UAAJXZ 10007c00 f   strmbase:amfilter.obj
+ 0001:00006cac       ?Run@CBaseFilter@@UAAJ_J@Z 10007cac f   strmbase:amfilter.obj
+ 0001:00006da0       ?StreamTime@CBaseFilter@@UAAJAAVCRefTime@@@Z 10007da0 f   strmbase:amfilter.obj
+ 0001:00006e10       ?JoinFilterGraph@CBaseFilter@@UAAJPAUIFilterGraph@@PBG@Z 10007e10 f   strmbase:amfilter.obj
+ 0001:00006ee4       ?Register@CBaseFilter@@UAAJXZ 10007ee4 f   strmbase:amfilter.obj
+ 0001:00006f80       ?Unregister@CBaseFilter@@UAAJXZ 10007f80 f   strmbase:amfilter.obj
+ 0001:00007034       ??_GCEnumPins@@UAAPAXI@Z   10008034 f i strmbase:amfilter.obj
+ 0001:00007034       ??_ECEnumPins@@UAAPAXI@Z   10008034 f i strmbase:amfilter.obj
+ 0001:0000705c       ?Next@CEnumPins@@UAAJKPAPAUIPin@@PAK@Z 1000805c f   strmbase:amfilter.obj
+ 0001:000071a0       ?Skip@CEnumPins@@UAAJK@Z   100081a0 f   strmbase:amfilter.obj
+ 0001:00007208       ??_GCEnumMediaTypes@@UAAPAXI@Z 10008208 f i strmbase:amfilter.obj
+ 0001:00007208       ??_ECEnumMediaTypes@@UAAPAXI@Z 10008208 f i strmbase:amfilter.obj
+ 0001:00007238       ?Next@CEnumMediaTypes@@UAAJKPAPAU_AMMediaType@@PAK@Z 10008238 f   strmbase:amfilter.obj
+ 0001:000073ac       ?Skip@CEnumMediaTypes@@UAAJK@Z 100083ac f   strmbase:amfilter.obj
+ 0001:00007460       ?AttemptConnection@CBasePin@@IAAJPAUIPin@@PBVCMediaType@@@Z 10008460 f   strmbase:amfilter.obj
+ 0001:000075bc       ?TryMediaTypes@CBasePin@@IAAJPAUIPin@@PBVCMediaType@@PAUIEnumMediaTypes@@@Z 100085bc f   strmbase:amfilter.obj
+ 0001:000076f8       ?AgreeMediaType@CBasePin@@IAAJPAUIPin@@PBVCMediaType@@@Z 100086f8 f   strmbase:amfilter.obj
+ 0001:00007850       ?ReceiveConnection@CBasePin@@UAAJPAUIPin@@PBU_AMMediaType@@@Z 10008850 f   strmbase:amfilter.obj
+ 0001:00007a20       ?Disconnect@CBasePin@@UAAJXZ 10008a20 f   strmbase:amfilter.obj
+ 0001:00007aa4       ?ConnectionMediaType@CBasePin@@UAAJPAU_AMMediaType@@@Z 10008aa4 f   strmbase:amfilter.obj
+ 0001:00007b08       ?Disconnect@CBaseInputPin@@UAAJXZ 10008b08 f   strmbase:amfilter.obj
+ 0001:00007b64       ??0CEnumPins@@QAA@PAVCBaseFilter@@PAV0@@Z 10008b64 f   strmbase:amfilter.obj
+ 0001:00007c2c       ?Clone@CEnumPins@@UAAJPAPAUIEnumPins@@@Z 10008c2c f   strmbase:amfilter.obj
+ 0001:00007cb8       ??0CEnumMediaTypes@@QAA@PAVCBasePin@@PAV0@@Z 10008cb8 f   strmbase:amfilter.obj
+ 0001:00007d38       ?Clone@CEnumMediaTypes@@UAAJPAPAUIEnumMediaTypes@@@Z 10008d38 f   strmbase:amfilter.obj
+ 0001:00007dc4       ??0CBasePin@@QAA@PAGPAVCBaseFilter@@PAVCCritSec@@PAJPBGW4_PinDirection@@@Z 10008dc4 f   strmbase:amfilter.obj
+ 0001:00007e80       ?Connect@CBasePin@@UAAJPAUIPin@@PBU_AMMediaType@@@Z 10008e80 f   strmbase:amfilter.obj
+ 0001:00007f1c       ?EnumMediaTypes@CBasePin@@UAAJPAPAUIEnumMediaTypes@@@Z 10008f1c f   strmbase:amfilter.obj
+ 0001:00007f7c       ??0CBaseOutputPin@@QAA@PAGPAVCBaseFilter@@PAVCCritSec@@PAJPBG@Z 10008f7c f   strmbase:amfilter.obj
+ 0001:00007fc0       ??0CBaseInputPin@@QAA@PAGPAVCBaseFilter@@PAVCCritSec@@PAJPBG@Z 10008fc0 f   strmbase:amfilter.obj
+ 0001:00008014       ??0CBaseFilter@@QAA@PBGPAUIUnknown@@PAVCCritSec@@ABU_GUID@@@Z 10009014 f   strmbase:amfilter.obj
+ 0001:0000807c       ?EnumPins@CBaseFilter@@UAAJPAPAUIEnumPins@@@Z 1000907c f   strmbase:amfilter.obj
+ 0001:000080dc       ??0CBaseObject@@QAA@PBG@Z  100090dc f   strmbase:combase.obj
+ 0001:000080fc       ??1CBaseObject@@QAA@XZ     100090fc f   strmbase:combase.obj
+ 0001:00008138       GetInterface               10009138 f   strmbase:combase.obj
+ 0001:00008170       ??0CUnknown@@QAA@PBGPAUIUnknown@@@Z 10009170 f   strmbase:combase.obj
+ 0001:000081b4       ?NonDelegatingQueryInterface@CUnknown@@UAAJABU_GUID@@PAPAX@Z 100091b4 f   strmbase:combase.obj
+ 0001:00008220       ?NonDelegatingAddRef@CUnknown@@UAAKXZ 10009220 f   strmbase:combase.obj
+ 0001:00008244       ?NonDelegatingRelease@CUnknown@@UAAKXZ 10009244 f   strmbase:combase.obj
+ 0001:000082a0       ??0CTransInPlaceFilter@@QAA@PAGPAUIUnknown@@ABU_GUID@@PAJ@Z 100092a0 f   strmbase:transip.obj
+ 0001:000082b8       ??0CTransInPlaceOutputPin@@QAA@PAGPAVCTransInPlaceFilter@@PAJPBG@Z 100092b8 f   strmbase:transip.obj
+ 0001:0000830c       ?ReceiveAllocator@CTransInPlaceOutputPin@@QAAJPAUIMemAllocator@@H@Z 1000930c f   strmbase:transip.obj
+ 0001:000083f4       ?CompleteConnect@CTransInPlaceFilter@@UAAJW4_PinDirection@@PAUIPin@@@Z 100093f4 f   strmbase:transip.obj
+ 0001:000084a8       ?Copy@CTransInPlaceFilter@@IAAPAUIMediaSample@@PAU2@@Z 100094a8 f   strmbase:transip.obj
+ 0001:000087ac       ?Receive@CTransInPlaceFilter@@UAAJPAUIMediaSample@@@Z 100097ac f   strmbase:transip.obj
+ 0001:000088f8       ??0CTransInPlaceInputPin@@QAA@PAGPAVCTransInPlaceFilter@@PAJPBG@Z 100098f8 f   strmbase:transip.obj
+ 0001:00008960       ??_ECTransInPlaceInputPin@@UAAPAXI@Z 10009960 f i strmbase:transip.obj
+ 0001:00008960       ??_GCTransInPlaceInputPin@@UAAPAXI@Z 10009960 f i strmbase:transip.obj
+ 0001:00008988       ?GetAllocator@CTransInPlaceInputPin@@UAAJPAPAUIMemAllocator@@@Z 10009988 f   strmbase:transip.obj
+ 0001:00008a28       ?NotifyAllocator@CTransInPlaceInputPin@@UAAJPAUIMemAllocator@@H@Z 10009a28 f   strmbase:transip.obj
+ 0001:00008ac4       ?EnumMediaTypes@CTransInPlaceInputPin@@UAAJPAPAUIEnumMediaTypes@@@Z 10009ac4 f   strmbase:transip.obj
+ 0001:00008b04       ?CheckMediaType@CTransInPlaceInputPin@@UAAJPBVCMediaType@@@Z 10009b04 f   strmbase:transip.obj
+ 0001:00008b6c       ?GetAllocatorRequirements@CTransInPlaceInputPin@@UAAJPAU_AllocatorProperties@@@Z 10009b6c f   strmbase:transip.obj
+ 0001:00008bb4       ??_ECTransInPlaceOutputPin@@UAAPAXI@Z 10009bb4 f i strmbase:transip.obj
+ 0001:00008bb4       ??_GCTransInPlaceOutputPin@@UAAPAXI@Z 10009bb4 f i strmbase:transip.obj
+ 0001:00008bdc       ?EnumMediaTypes@CTransInPlaceOutputPin@@UAAJPAPAUIEnumMediaTypes@@@Z 10009bdc f   strmbase:transip.obj
+ 0001:00008c1c       ?CheckMediaType@CTransInPlaceOutputPin@@UAAJPBVCMediaType@@@Z 10009c1c f   strmbase:transip.obj
+ 0001:00008c84       ?DecideAllocator@CTransInPlaceOutputPin@@UAAJPAUIMemInputPin@@PAPAUIMemAllocator@@@Z 10009c84 f   strmbase:transip.obj
+ 0001:00008e00       ?SetType@CMediaType@@QAAXPBU_GUID@@@Z 10009e00 f   strmbase:mtype.obj
+ 0001:00008e24       ?SetSubtype@CMediaType@@QAAXPBU_GUID@@@Z 10009e24 f   strmbase:mtype.obj
+ 0001:00008e48       ?SetVariableSize@CMediaType@@QAAXXZ 10009e48 f   strmbase:mtype.obj
+ 0001:00008e54       ?SetTemporalCompression@CMediaType@@QAAXH@Z 10009e54 f   strmbase:mtype.obj
+ 0001:00008e5c       ?SetFormatType@CMediaType@@QAAXPBU_GUID@@@Z 10009e5c f   strmbase:mtype.obj
+ 0001:00008e80       ?AllocFormatBuffer@CMediaType@@QAAPAEK@Z 10009e80 f   strmbase:mtype.obj
+ 0001:00008ee0       ?InitMediaType@CMediaType@@QAAXXZ 10009ee0 f   strmbase:mtype.obj
+ 0001:00008f08       ?CopyMediaType@@YAXPAU_AMMediaType@@PBU1@@Z 10009f08 f   strmbase:mtype.obj
+ 0001:00008f6c       ?FreeMediaType@@YAXAAU_AMMediaType@@@Z 10009f6c f   strmbase:mtype.obj
+ 0001:00008fbc       ??1CMediaType@@QAA@XZ      10009fbc f   strmbase:mtype.obj
+ 0001:00008fcc       ??0CMediaType@@QAA@XZ      10009fcc f   strmbase:mtype.obj
+ 0001:00008ff8       ??4CMediaType@@QAAAAV0@ABV0@@Z 10009ff8 f   strmbase:mtype.obj
+ 0001:00009028       ??8CMediaType@@QBAHABV0@@Z 1000a028 f   strmbase:mtype.obj
+ 0001:000090b8       ??9CMediaType@@QBAHABV0@@Z 1000a0b8 f   strmbase:mtype.obj
+ 0001:000090d8       ?GetSampleSize@CMediaType@@QBAKXZ 1000a0d8 f   strmbase:mtype.obj
+ 0001:000090ec       ?SetSampleSize@CMediaType@@QAAXK@Z 1000a0ec f   strmbase:mtype.obj
+ 0001:00009108       ?IsPartiallySpecified@CMediaType@@QBAHXZ 1000a108 f   strmbase:mtype.obj
+ 0001:00009154       ?MatchesPartial@CMediaType@@QBAHPBV1@@Z 1000a154 f   strmbase:mtype.obj
+ 0001:00009238       ?DeleteMediaType@@YAXPAU_AMMediaType@@@Z 1000a238 f   strmbase:mtype.obj
+ 0001:0000925c       GetBitmapSize              1000a25c f   strmbase:amvideo.obj
+ 0001:0000928c       GetTrueColorType           1000a28c f   strmbase:amvideo.obj
+ 0001:00009344       GetBitmapSubtype           1000a344 f   strmbase:amvideo.obj
+ 0001:00009490       ?lstrcpynWInternal@@YAPAGPAGPBGH@Z 1000a490 f   strmbase:wxutil.obj
+ 0001:000094d0       AMGetWideString            1000a4d0 f   strmbase:wxutil.obj
+ 0001:00009530       ??0CBaseList@@QAA@PAG@Z    1000a530 f   strmbase:wxlist.obj
+ 0001:00009558       ?RemoveAll@CBaseList@@QAAXXZ 1000a558 f   strmbase:wxlist.obj
+ 0001:00009598       ?FindI@CBaseList@@IBAPAU__POSITION@@PAX@Z 1000a598 f   strmbase:wxlist.obj
+ 0001:000095d8       ?AddTailI@CBaseList@@IAAPAU__POSITION@@PAX@Z 1000a5d8 f   strmbase:wxlist.obj
+ 0001:0000965c       ?AddTail@CBaseList@@QAAHPAV1@@Z 1000a65c f   strmbase:wxlist.obj
+ 0001:000096b4       ??1CBaseList@@QAA@XZ       1000a6b4 f   strmbase:wxlist.obj
+ 0001:000096e8       StringFromGUID2            1000a6e8 f   Ole32:ole32.dll
+ 0001:000096f8       CoUninitialize             1000a6f8 f   Ole32:ole32.dll
+ 0001:00009708       CoFreeUnusedLibraries      1000a708 f   Ole32:ole32.dll
+ 0001:00009718       CoCreateInstance           1000a718 f   Ole32:ole32.dll
+ 0001:00009728       CoInitializeEx             1000a728 f   Ole32:ole32.dll
+ 0001:00009738       CoTaskMemAlloc             1000a738 f   Ole32:ole32.dll
+ 0001:00009748       CoTaskMemFree              1000a748 f   Ole32:ole32.dll
+ 0001:00009758       NKDbgPrintfW               1000a758 f   coredll:COREDLL.dll
+ 0001:00009768       RegisterDbgZones           1000a768 f   coredll:COREDLL.dll
+ 0001:00009778       SetRectEmpty               1000a778 f   coredll:COREDLL.dll
+ 0001:00009788       RegDeleteKeyW              1000a788 f   coredll:COREDLL.dll
+ 0001:00009798       RegCloseKey                1000a798 f   coredll:COREDLL.dll
+ 0001:000097a8       RegEnumKeyExW              1000a7a8 f   coredll:COREDLL.dll
+ 0001:000097b8       RegOpenKeyExW              1000a7b8 f   coredll:COREDLL.dll
+ 0001:000097c8       RegSetValueExW             1000a7c8 f   coredll:COREDLL.dll
+ 0001:000097d8       RegCreateKeyExW            1000a7d8 f   coredll:COREDLL.dll
+ 0001:000097e8       wsprintfW                  1000a7e8 f   coredll:COREDLL.dll
+ 0001:000097f8       GetLastError               1000a7f8 f   coredll:COREDLL.dll
+ 0001:00009808       GetModuleFileNameW         1000a808 f   coredll:COREDLL.dll
+ 0001:00009818       GetVersionExW              1000a818 f   coredll:COREDLL.dll
+ 0001:00009828       DisableThreadLibraryCalls  1000a828 f   coredll:COREDLL.dll
+ 0001:00009838       lstrcmpW                   1000a838 f   coredll:COREDLL.dll
+ 0001:00009848       InitializeCriticalSection  1000a848 f   coredll:COREDLL.dll
+ 0001:00009858       DeleteCriticalSection      1000a858 f   coredll:COREDLL.dll
+ 0001:00009868       EnterCriticalSection       1000a868 f   coredll:COREDLL.dll
+ 0001:00009878       LeaveCriticalSection       1000a878 f   coredll:COREDLL.dll
+ 0001:00009888       InterlockedIncrement       1000a888 f   coredll:COREDLL.dll
+ 0001:00009898       InterlockedDecrement       1000a898 f   coredll:COREDLL.dll
+ 0001:000098a8       FreeLibrary                1000a8a8 f   coredll:COREDLL.dll
+ 0001:000098b8       InterlockedExchange        1000a8b8 f   coredll:COREDLL.dll
+ 0001:000099cc       _DllMainCRTStartup         1000a9cc f   corelib0:pegdmain.obj
+ 0001:000099fc       __GSHandlerCheckCommon     1000a9fc f   corelib0:gshandler.obj
+ 0001:00009a38       __GSHandlerCheck           1000aa38 f   corelib0:gshandler.obj
+ 0001:00009a5c       __security_init_cookie     1000aa5c f   corelib0:seccinit.obj
+ 0001:00009ab8       __security_check_cookie    1000aab8 f   corelib0:armsecgs.obj
+ 0001:00009acc       __gsfailure                1000aacc f   corelib0:armsecgs.obj
+ 0001:00009c0c       _cexit                     1000ac0c f   corelib0:cexit.obj
+ 0001:00009c28       _initterm                  1000ac28 f   corelib0:crt0dat.obj
+ 0001:00009c5c       _cinit                     1000ac5c f   corelib0:crt0dat.obj
+ 0001:00009c90       memcmp                     1000ac90 f   corelib1:COREDLL.dll
+ 0001:00009ca0       _purecall                  1000aca0 f   corelib1:COREDLL.dll
+ 0001:00009cb0       ??3@YAXPAX@Z               1000acb0 f   corelib1:COREDLL.dll
+ 0001:00009cc0       ??2@YAPAXI@Z               1000acc0 f   corelib1:COREDLL.dll
+ 0001:00009cd0       wcslen                     1000acd0 f   corelib1:COREDLL.dll
+ 0001:00009ce0       memcpy                     1000ace0 f   corelib1:COREDLL.dll
+ 0001:00009cf0       memset                     1000acf0 f   corelib1:COREDLL.dll
+ 0001:00009d00       _XcptFilter                1000ad00 f   corelib1:COREDLL.dll
+ 0001:00009d10       __C_specific_handler       1000ad10 f   corelib1:COREDLL.dll
+ 0001:00009d20       __security_gen_cookie2     1000ad20 f   corelib1:COREDLL.dll
+ 0001:00009d30       __report_gsfailure         1000ad30 f   corelib1:COREDLL.dll
+ 0001:00009d40       free                       1000ad40 f   corelib1:COREDLL.dll
+ 0001:00009d50       TerminateProcess           1000ad50 f   coredll:COREDLL.dll
+ 0001:00009d98       __IMPORT_DESCRIPTOR_ole32  1000ad98     Ole32:ole32.dll
+ 0001:00009dac       __IMPORT_DESCRIPTOR_COREDLL 1000adac     coredll:COREDLL.dll
+ 0001:00009dc0       __NULL_IMPORT_DESCRIPTOR   1000adc0     Ole32:ole32.dll
+ 0002:00000000       __imp_FreeLibrary          1000b000     coredll:COREDLL.dll
+ 0002:00000004       __imp_TerminateProcess     1000b004     coredll:COREDLL.dll
+ 0002:00000008       __imp_free                 1000b008     corelib1:COREDLL.dll
+ 0002:0000000c       __imp___report_gsfailure   1000b00c     corelib1:COREDLL.dll
+ 0002:00000010       __imp___security_gen_cookie2 1000b010     corelib1:COREDLL.dll
+ 0002:00000014       __imp_NKDbgPrintfW         1000b014     coredll:COREDLL.dll
+ 0002:00000018       __imp_RegisterDbgZones     1000b018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_SetRectEmpty         1000b01c     coredll:COREDLL.dll
+ 0002:00000020       __imp_RegDeleteKeyW        1000b020     coredll:COREDLL.dll
+ 0002:00000024       __imp_RegCloseKey          1000b024     coredll:COREDLL.dll
+ 0002:00000028       __imp_RegEnumKeyExW        1000b028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_RegOpenKeyExW        1000b02c     coredll:COREDLL.dll
+ 0002:00000030       __imp_RegSetValueExW       1000b030     coredll:COREDLL.dll
+ 0002:00000034       __imp_RegCreateKeyExW      1000b034     coredll:COREDLL.dll
+ 0002:00000038       __imp_wsprintfW            1000b038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_GetLastError         1000b03c     coredll:COREDLL.dll
+ 0002:00000040       __imp_GetModuleFileNameW   1000b040     coredll:COREDLL.dll
+ 0002:00000044       __imp_GetVersionExW        1000b044     coredll:COREDLL.dll
+ 0002:00000048       __imp_DisableThreadLibraryCalls 1000b048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_lstrcmpW             1000b04c     coredll:COREDLL.dll
+ 0002:00000050       __imp_InitializeCriticalSection 1000b050     coredll:COREDLL.dll
+ 0002:00000054       __imp_DeleteCriticalSection 1000b054     coredll:COREDLL.dll
+ 0002:00000058       __imp_EnterCriticalSection 1000b058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_LeaveCriticalSection 1000b05c     coredll:COREDLL.dll
+ 0002:00000060       __imp_InterlockedIncrement 1000b060     coredll:COREDLL.dll
+ 0002:00000064       __imp_InterlockedDecrement 1000b064     coredll:COREDLL.dll
+ 0002:00000068       __imp_InterlockedExchange  1000b068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_memcmp               1000b06c     corelib1:COREDLL.dll
+ 0002:00000070       __imp__purecall            1000b070     corelib1:COREDLL.dll
+ 0002:00000074       __imp_??3@YAXPAX@Z         1000b074     corelib1:COREDLL.dll
+ 0002:00000078       __imp_??2@YAPAXI@Z         1000b078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp_wcslen               1000b07c     corelib1:COREDLL.dll
+ 0002:00000080       __imp_memcpy               1000b080     corelib1:COREDLL.dll
+ 0002:00000084       __imp_memset               1000b084     corelib1:COREDLL.dll
+ 0002:00000088       __imp__XcptFilter          1000b088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp___C_specific_handler 1000b08c     corelib1:COREDLL.dll
+ 0002:00000090       \177COREDLL_NULL_THUNK_DATA 1000b090     coredll:COREDLL.dll
+ 0002:00000094       __imp_CoTaskMemFree        1000b094     Ole32:ole32.dll
+ 0002:00000098       __imp_CoTaskMemAlloc       1000b098     Ole32:ole32.dll
+ 0002:0000009c       __imp_CoInitializeEx       1000b09c     Ole32:ole32.dll
+ 0002:000000a0       __imp_CoCreateInstance     1000b0a0     Ole32:ole32.dll
+ 0002:000000a4       __imp_CoFreeUnusedLibraries 1000b0a4     Ole32:ole32.dll
+ 0002:000000a8       __imp_CoUninitialize       1000b0a8     Ole32:ole32.dll
+ 0002:000000ac       __imp_StringFromGUID2      1000b0ac     Ole32:ole32.dll
+ 0002:000000b0       \177ole32_NULL_THUNK_DATA  1000b0b0     Ole32:ole32.dll
+ 0002:000000b8       ?g_Templates@@3PAVCFactoryTemplate@@A 1000b0b8     SampleGrabber.obj
+ 0002:000000cc       ?g_cTemplates@@3HA         1000b0cc     SampleGrabber.obj
+ 0002:000000d0       ?dpCurSettings@@3U_DBGPARAM@@A 1000b0d0     SampleGrabber.obj
+ 0002:00000524       __security_cookie          1000b524     corelib0:seccinit.obj
+ 0002:00000528       __security_cookie_complement 1000b528     corelib0:seccinit.obj
+ 0002:00000538       ?g_osInfo@@3U_OSVERSIONINFOW@@A 1000b538     strmbase:dllentry.obj
+ 0002:0000064c       ?g_amPlatform@@3KA         1000b64c     strmbase:dllentry.obj
+ 0002:00000650       ?g_hInst@@3PAUHINSTANCE__@@A 1000b650     strmbase:dllentry.obj
+ 0002:00000654       ?m_cLocked@CClassFactory@@0HA 1000b654     strmbase:dllentry.obj
+ 0002:00000658       ?hlibOLEAut32@@3PAUHINSTANCE__@@A 1000b658     strmbase:combase.obj
+ 0002:0000065c       ?m_cObjects@CBaseObject@@0JA 1000b65c     strmbase:combase.obj
+ 0002:0000066c       __@@_PchSym_@00@UdrmxvGAAUkfyorxUwrivxgcUhwpUhznkovhUwhsldUyzhvxozhhvhUsvzwvwUlyqUzineErUivgzroUhgivznhOlyq@strmbase 1000b66c     strmbase:streams.obj
+ 0002:00000670       _exitflag                  1000b670     corelib0:cexit.obj
+ 0002:00000674       __onexitend                1000b674     <common>
+ 0002:00000678       __onexitbegin              1000b678     <common>
+ 0002:0000067c       g_pcsExit                  1000b67c     <common>
+ 0002:00000680       _pRawDllMain               1000b680     <common>
+
+ entry point at        0001:000099cc
+
+ Static symbols
+
+ 0001:000098d0       _DllMainCRTStartupHelper   1000a8d0 f   corelib0:pegdmain.obj
+ 0001:00009b10       doexit                     1000ab10 f   corelib0:cexit.obj

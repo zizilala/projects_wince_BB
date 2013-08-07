@@ -1,0 +1,3 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000067:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\EBOOT\SDMEMORY\: Missing source file: C:\WINCE600\public\common\oak\lib\ARMV4I\retail\ceddk_spi_lib.lib.
+BUILD: [00:0000000068:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\EBOOT\SDMEMORY\BootImage does not exist (2).

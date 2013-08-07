@@ -1,0 +1,1467 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\OAL
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\
+BUILD: [00:0000000008:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALEXE\
+BUILD: [00:0000000009:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\
+BUILD: [00:0000000010:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000011:INFO  ] Done.
+BUILD: [00:0000000012:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\init.c because target: obj\ARMV4I\retail\init.obj is missing.
+BUILD: [00:0000000013:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\intr.c because target: obj\ARMV4I\retail\intr.obj is missing.
+BUILD: [00:0000000014:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\fiq.c because target: obj\ARMV4I\retail\fiq.obj is missing.
+BUILD: [00:0000000015:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\ioctl.c because target: obj\ARMV4I\retail\ioctl.obj is missing.
+BUILD: [00:0000000016:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\power.c because target: obj\ARMV4I\retail\power.obj is missing.
+BUILD: [00:0000000017:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\oem_latency.c because target: obj\ARMV4I\retail\oem_latency.obj is missing.
+BUILD: [00:0000000018:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\oem_padwakeup.c because target: obj\ARMV4I\retail\oem_padwakeup.obj is missing.
+BUILD: [00:0000000019:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\oem_prcm_device.c because target: obj\ARMV4I\retail\oem_prcm_device.obj is missing.
+BUILD: [00:0000000020:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\oem_pm.c because target: obj\ARMV4I\retail\oem_pm.obj is missing.
+BUILD: [00:0000000021:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\oem_intrex.c because target: obj\ARMV4I\retail\oem_intrex.obj is missing.
+BUILD: [00:0000000022:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\oem_prof.c because target: obj\ARMV4I\retail\oem_prof.obj is missing.
+BUILD: [00:0000000023:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\opp_map.c because target: obj\ARMV4I\retail\opp_map.obj is missing.
+BUILD: [00:0000000024:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\startup.s because target: obj\ARMV4I\retail\startup.obj is missing.
+BUILD: [00:0000000025:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\ directory.
+BUILD: [00:0000000026:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000027:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000028:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000029:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000030:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\sources
+BUILD: [01:0000000031:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000032:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB
+BUILD: [01:0000000033:INFO  ] TARGETNAME: oal
+BUILD: [01:0000000034:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000035:PROGC ] Compiling .\init.c
+BUILD: [01:0000000036:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\init.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\init.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\init.c
+BUILD: [01:0000000037:INFO  ] init.c
+BUILD: [01:0000000038:PROGC ] Compiling .\intr.c
+BUILD: [01:0000000039:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\intr.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\intr.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\intr.c
+BUILD: [01:0000000040:INFO  ] intr.c
+BUILD: [01:0000000041:PROGC ] Compiling .\fiq.c
+BUILD: [01:0000000042:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\fiq.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\fiq.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\fiq.c
+BUILD: [01:0000000043:INFO  ] fiq.c
+BUILD: [01:0000000044:PROGC ] Compiling .\ioctl.c
+BUILD: [01:0000000045:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\ioctl.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\ioctl.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\ioctl.c
+BUILD: [01:0000000046:INFO  ] ioctl.c
+BUILD: [01:0000000047:PROGC ] Compiling .\power.c
+BUILD: [01:0000000048:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\power.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\power.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\power.c
+BUILD: [01:0000000049:INFO  ] power.c
+BUILD: [01:0000000050:PROGC ] Compiling .\oem_latency.c
+BUILD: [01:0000000051:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oem_latency.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oem_latency.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\oem_latency.c
+BUILD: [01:0000000052:INFO  ] oem_latency.c
+BUILD: [01:0000000053:PROGC ] Compiling .\oem_padwakeup.c
+BUILD: [01:0000000054:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oem_padwakeup.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oem_padwakeup.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\oem_padwakeup.c
+BUILD: [01:0000000055:INFO  ] oem_padwakeup.c
+BUILD: [01:0000000056:PROGC ] Compiling .\oem_prcm_device.c
+BUILD: [01:0000000057:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oem_prcm_device.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oem_prcm_device.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\oem_prcm_device.c
+BUILD: [01:0000000058:INFO  ] oem_prcm_device.c
+BUILD: [01:0000000059:PROGC ] Compiling .\oem_pm.c
+BUILD: [01:0000000060:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oem_pm.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oem_pm.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\oem_pm.c
+BUILD: [01:0000000061:INFO  ] oem_pm.c
+BUILD: [01:0000000062:PROGC ] Compiling .\oem_intrex.c
+BUILD: [01:0000000063:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oem_intrex.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oem_intrex.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\oem_intrex.c
+BUILD: [01:0000000064:INFO  ] oem_intrex.c
+BUILD: [01:0000000065:PROGC ] Compiling .\oem_prof.c
+BUILD: [01:0000000066:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\oem_prof.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oem_prof.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\oem_prof.c
+BUILD: [01:0000000067:INFO  ] oem_prof.c
+BUILD: [01:0000000068:PROGC ] Compiling .\opp_map.c
+BUILD: [01:0000000069:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\opp_map.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DOAL -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\opp_map.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\opp_map.c
+BUILD: [01:0000000070:INFO  ] opp_map.c
+BUILD: [01:0000000071:PROGC ] Assembling .\startup.s
+BUILD: [01:0000000072:INFO  ] 	armasm -coff  -list obj\ARMV4I\retail\startup.lst -wi 150 -l 0 -cr -pd "BSP_SDRAM_BANK1_ENABLE SETL {TRUE}"  -i C:\WINCE600\platform\COMMON\src\inc,C:\WINCE600\platform\Z2170P\src\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc,C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc,C:\WINCE600\public\common\sdk\inc,C:\WINCE600\public\common\oak\inc,C:\WINCE600\public\common\ddk\inc,C:\WINCE600\sdk\CE\inc -i arm -arch 4t -pd "Thumbing SETL {FALSE}" -pd "Interworking SETL {TRUE}"  C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\.\startup.s obj\ARMV4I\retail\startup.obj
+BUILD: [01:0000000073:INFO  ] Microsoft (R) ARM Macro Assembler Version 14.01.60511
+BUILD: [01:0000000074:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000075:INFO  ] 
+BUILD: [01:0000000076:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\startup.s(62) warning : A0241: Instruction clz not supported for -cpu "-arch 4t"
+BUILD: [01:0000000077:INFO  ]         clz     r5, r4                          ; r5 find bit position of way size increment
+BUILD: [01:0000000078:INFO  ] Assembly terminated, errors: 0, warnings: 1 
+BUILD: [00:0000000079:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\oalioctl.cpp because target: obj\ARMV4I\retail\oalioctl.obj is missing.
+BUILD: [00:0000000080:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\ directory.
+BUILD: [00:0000000081:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000082:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000083:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000084:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000085:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\sources
+BUILD: [01:0000000086:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000087:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL
+BUILD: [01:0000000088:INFO  ] TARGETNAME: oalioctl
+BUILD: [01:0000000089:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000090:PROGC ] Compiling .\oalioctl.cpp
+BUILD: [01:0000000091:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\oalioctl.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\oalioctl.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\.\oalioctl.cpp
+BUILD: [01:0000000092:INFO  ] oalioctl.cpp
+BUILD: [00:0000000093:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\init.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000094:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\intr.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000095:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\fiq.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000096:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\ioctl.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000097:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\power.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000098:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\oem_latency.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000099:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\oem_padwakeup.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000100:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\oem_prcm_device.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000101:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\oem_pm.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000102:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\oem_intrex.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000103:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\oem_prof.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000104:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\opp_map.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000105:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\obj\ARMV4I\retail\startup.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000106:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib is missing.
+BUILD: [00:0000000107:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\ directory.
+BUILD: [00:0000000108:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000109:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000110:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000111:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000112:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\sources
+BUILD: [01:0000000113:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000114:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB
+BUILD: [01:0000000115:INFO  ] TARGETNAME: oal
+BUILD: [01:0000000116:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000117:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib
+BUILD: [01:0000000118:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm322.tmp
+BUILD: [00:0000000119:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\obj\ARMV4I\retail\oalioctl.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oalioctl.lib is missing.
+BUILD: [00:0000000120:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oalioctl.lib is missing.
+BUILD: [00:0000000121:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\ directory.
+BUILD: [00:0000000122:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000123:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000124:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000125:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000126:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\sources
+BUILD: [01:0000000127:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000128:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL
+BUILD: [01:0000000129:INFO  ] TARGETNAME: oalioctl
+BUILD: [01:0000000130:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000131:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oalioctl.lib
+BUILD: [01:0000000132:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oalioctl.lib -def:oalioctl.def -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm323.tmp
+BUILD: [01:0000000133:INFO  ] Microsoft (R) Library Manager Version 8.00.50727.42
+BUILD: [01:0000000134:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000135:INFO  ] 
+BUILD: [01:0000000136:INFO  ] -nodefaultlib 
+BUILD: [01:0000000137:INFO  ] -ignore:4001 
+BUILD: [01:0000000138:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000139:INFO  ] obj\ARMV4I\retail\oalioctl.obj 
+BUILD: [01:0000000140:INFO  ]    Creating library C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oalioctl.lib and object C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oalioctl.exp
+BUILD: [00:0000000141:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000142:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000143:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000144:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000145:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000146:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000147:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_devicesmap.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000148:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000149:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000150:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oalcpuver.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000151:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000152:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000153:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000154:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_power.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000155:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_soccfg.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000156:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_padcfg.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000157:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_misc.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000158:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_sr.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000159:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000160:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_cpuidle.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000161:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\tps659xx_oal_rtc.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000162:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\tps659xx_oal_gpio.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000163:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_oal.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000164:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_omap_gpio.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000165:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_gpiodispatch.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000166:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_args.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000167:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\BSPCFG.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000168:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\BSP_PADCFG.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000169:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000170:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_stall.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000171:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_tps659xx.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000172:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_io.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000173:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ilt.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000174:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_timer.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000175:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_other.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000176:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_log.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000177:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_intr_common.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000178:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_power.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000179:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ioctl.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000180:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_memory_arm.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000181:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\oemmain.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000182:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\nkldr.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000183:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\fulllibc.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000184:INFO  ] Will Build C:\WINCE600\public\common\oak\lib\ARMV4I\retail\nkstub.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000185:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALEXE\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe is missing.
+BUILD: [00:0000000186:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALEXE\ directory.
+BUILD: [00:0000000187:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000188:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000189:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000190:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000191:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALEXE\sources
+BUILD: [01:0000000192:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000193:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALEXE
+BUILD: [01:0000000194:INFO  ] TARGETNAME: oal
+BUILD: [01:0000000195:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000196:INFO  ] FULLLIBC.LIB found in TARGETLIBS; forcing NOCRTDLL=1
+BUILD: [01:0000000197:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000198:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe
+BUILD: [01:0000000199:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm324.tmp
+BUILD: [01:0000000200:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000201:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000202:INFO  ] 
+BUILD: [01:0000000203:INFO  ] -nodefaultlib 
+BUILD: [01:0000000204:INFO  ] -entry:StartUp 
+BUILD: [01:0000000205:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.pdb 
+BUILD: [01:0000000206:INFO  ] -pdbaltpath:oal.pdb 
+BUILD: [01:0000000207:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000208:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000209:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.map 
+BUILD: [01:0000000210:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.rel 
+BUILD: [01:0000000211:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text /DEBUG /DEBUGTYPE:CV /FIXED:NO -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000212:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000213:INFO  ] -base:0x00010000 
+BUILD: [01:0000000214:INFO  ] C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_devicesmap.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oalcpuver.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_power.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_soccfg.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_padcfg.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_misc.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_sr.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_prcm.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_cpuidle.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_oal_rtc.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_oal_gpio.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_oal.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_omap_gpio.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_gpiodispatch.lib C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_args.lib C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bspcfg.lib C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_padcfg.lib C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_stall.lib C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_tps659xx.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_io.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ilt.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_timer.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_other.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_log.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_intr_common.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_power.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ioctl.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_memory_arm.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\oemmain.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\nkldr.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\fulllibc.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\nkstub.lib 
+BUILD: [01:0000000215:INFO  ] 
+BUILD: [01:0000000216:INFO  ] Starting pass 1
+BUILD: [01:0000000217:INFO  ] 
+BUILD: [01:0000000218:INFO  ] Searching libraries
+BUILD: [01:0000000219:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib:
+BUILD: [01:0000000220:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib:
+BUILD: [01:0000000221:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib:
+BUILD: [01:0000000222:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib:
+BUILD: [01:0000000223:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib:
+BUILD: [01:0000000224:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib:
+BUILD: [01:0000000225:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_devicesmap.lib:
+BUILD: [01:0000000226:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib:
+BUILD: [01:0000000227:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib:
+BUILD: [01:0000000228:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oalcpuver.lib:
+BUILD: [01:0000000229:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib:
+BUILD: [01:0000000230:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib:
+BUILD: [01:0000000231:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib:
+BUILD: [01:0000000232:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_power.lib:
+BUILD: [01:0000000233:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_soccfg.lib:
+BUILD: [01:0000000234:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_padcfg.lib:
+BUILD: [01:0000000235:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_misc.lib:
+BUILD: [01:0000000236:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_sr.lib:
+BUILD: [01:0000000237:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_prcm.lib:
+BUILD: [01:0000000238:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_cpuidle.lib:
+BUILD: [01:0000000239:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_oal_rtc.lib:
+BUILD: [01:0000000240:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_oal_gpio.lib:
+BUILD: [01:0000000241:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_oal.lib:
+BUILD: [01:0000000242:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_omap_gpio.lib:
+BUILD: [01:0000000243:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_gpiodispatch.lib:
+BUILD: [01:0000000244:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_args.lib:
+BUILD: [01:0000000245:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bspcfg.lib:
+BUILD: [01:0000000246:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_padcfg.lib:
+BUILD: [01:0000000247:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib:
+BUILD: [01:0000000248:INFO  ]       Found StartUp
+BUILD: [01:0000000249:INFO  ]         Loaded oal.lib(startup.obj)
+BUILD: [01:0000000250:INFO  ]       Found EnableDebugSerialClock
+BUILD: [01:0000000251:INFO  ]         Referenced in oal.lib(startup.obj)
+BUILD: [01:0000000252:INFO  ]         Loaded oal.lib(init.obj)
+BUILD: [01:0000000253:INFO  ]       Found g_pTimerRegs
+BUILD: [01:0000000254:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000255:INFO  ]         Loaded oal.lib(oem_pm.obj)
+BUILD: [01:0000000256:INFO  ]       Found g_oalIoCtlClockSpeed
+BUILD: [01:0000000257:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000258:INFO  ]         Loaded oal.lib(ioctl.obj)
+BUILD: [01:0000000259:INFO  ]       Found OALWakeupLatency_UpdateDomainState
+BUILD: [01:0000000260:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000261:INFO  ]         Loaded oal.lib(oem_latency.obj)
+BUILD: [01:0000000262:INFO  ]       Found SetOpp
+BUILD: [01:0000000263:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000264:INFO  ]         Loaded oal.lib(opp_map.obj)
+BUILD: [01:0000000265:INFO  ]       Found OALIoCtlHALProfiler
+BUILD: [01:0000000266:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000267:INFO  ]         Loaded oal.lib(oem_prof.obj)
+BUILD: [01:0000000268:INFO  ]       Found OALEnableIOWakeupDaisyChain
+BUILD: [01:0000000269:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000270:INFO  ]         Loaded oal.lib(oem_padwakeup.obj)
+BUILD: [01:0000000271:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_stall.lib:
+BUILD: [01:0000000272:INFO  ]       Found OALStall
+BUILD: [01:0000000273:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000274:INFO  ]         Referenced in oal.lib(opp_map.obj)
+BUILD: [01:0000000275:INFO  ]         Loaded bsp_stall.lib(stall.obj)
+BUILD: [01:0000000276:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_tps659xx.lib:
+BUILD: [01:0000000277:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_io.lib:
+BUILD: [01:0000000278:INFO  ]       Found OALIoCtlHalDdkCall
+BUILD: [01:0000000279:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000280:INFO  ]         Loaded oal_io.lib(ioctl.obj)
+BUILD: [01:0000000281:INFO  ]       Found OALIoBusPowerOn
+BUILD: [01:0000000282:INFO  ]         Referenced in oal_io.lib(ioctl.obj)
+BUILD: [01:0000000283:INFO  ]         Loaded oal_io.lib(power.obj)
+BUILD: [01:0000000284:INFO  ]       Found OALIoTransSystemAddress
+BUILD: [01:0000000285:INFO  ]         Referenced in oal_io.lib(ioctl.obj)
+BUILD: [01:0000000286:INFO  ]         Loaded oal_io.lib(trans.obj)
+BUILD: [01:0000000287:INFO  ]       Found OALIoReadBusData
+BUILD: [01:0000000288:INFO  ]         Referenced in oal_io.lib(ioctl.obj)
+BUILD: [01:0000000289:INFO  ]         Loaded oal_io.lib(data.obj)
+BUILD: [01:0000000290:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ilt.lib:
+BUILD: [01:0000000291:INFO  ]       Found OALIoCtlHalILTiming
+BUILD: [01:0000000292:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000293:INFO  ]         Loaded oal_ilt.lib(ilt.obj)
+BUILD: [01:0000000294:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_timer.lib:
+BUILD: [01:0000000295:INFO  ]       Found g_oalTimer
+BUILD: [01:0000000296:INFO  ]         Referenced in oal_ilt.lib(ilt.obj)
+BUILD: [01:0000000297:INFO  ]         Loaded oal_timer.lib(globals.obj)
+BUILD: [01:0000000298:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_other.lib:
+BUILD: [01:0000000299:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_log.lib:
+BUILD: [01:0000000300:INFO  ]       Found dpCurSettings
+BUILD: [01:0000000301:INFO  ]         Referenced in oal_io.lib(trans.obj)
+BUILD: [01:0000000302:INFO  ]         Referenced in oal_ilt.lib(ilt.obj)
+BUILD: [01:0000000303:INFO  ]         Referenced in oal.lib(opp_map.obj)
+BUILD: [01:0000000304:INFO  ]         Referenced in oal.lib(oem_prof.obj)
+BUILD: [01:0000000305:INFO  ]         Referenced in oal_io.lib(ioctl.obj)
+BUILD: [01:0000000306:INFO  ]         Referenced in oal_io.lib(power.obj)
+BUILD: [01:0000000307:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000308:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000309:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000310:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000311:INFO  ]         Loaded oal_log.lib(debug.obj)
+BUILD: [01:0000000312:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_intr_common.lib:
+BUILD: [01:0000000313:INFO  ]       Found OALIoCtlHalRequestIrq
+BUILD: [01:0000000314:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000315:INFO  ]         Loaded oal_intr_common.lib(ioctl.obj)
+BUILD: [01:0000000316:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_power.lib:
+BUILD: [01:0000000317:INFO  ]       Found OALIoCtlHalGetWakeSource
+BUILD: [01:0000000318:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000319:INFO  ]         Loaded oal_power.lib(ioctl.obj)
+BUILD: [01:0000000320:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ioctl.lib:
+BUILD: [01:0000000321:INFO  ]       Found OALIoCtlHalGetRegSecureKeys
+BUILD: [01:0000000322:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000323:INFO  ]         Loaded oal_ioctl.lib(securekeys.obj)
+BUILD: [01:0000000324:INFO  ]       Found OALIoCtlHalUpdateMode
+BUILD: [01:0000000325:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000326:INFO  ]         Loaded oal_ioctl.lib(imgupd.obj)
+BUILD: [01:0000000327:INFO  ]       Found OALIoCtlProcessorInfo
+BUILD: [01:0000000328:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000329:INFO  ]         Loaded oal_ioctl.lib(procinfo.obj)
+BUILD: [01:0000000330:INFO  ]       Found OALIoCtlHalGetUUID
+BUILD: [01:0000000331:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000332:INFO  ]         Loaded oal_ioctl.lib(uuid.obj)
+BUILD: [01:0000000333:INFO  ]       Found OALIoCtlHalGetDeviceId
+BUILD: [01:0000000334:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000335:INFO  ]         Loaded oal_ioctl.lib(deviceid.obj)
+BUILD: [01:0000000336:INFO  ]       Found OALIoCtlHalGetDeviceInfo
+BUILD: [01:0000000337:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000338:INFO  ]         Loaded oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000339:INFO  ]       Found OEMIoControl
+BUILD: [01:0000000340:INFO  ]         Referenced in oal_ioctl.lib(deviceid.obj)
+BUILD: [01:0000000341:INFO  ]         Referenced in oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000342:INFO  ]         Loaded oal_ioctl.lib(ioctl.obj)
+BUILD: [01:0000000343:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_memory_arm.lib:
+BUILD: [01:0000000344:INFO  ]       Found OALPAtoVA
+BUILD: [01:0000000345:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000346:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000347:INFO  ]         Referenced in oal.lib(opp_map.obj)
+BUILD: [01:0000000348:INFO  ]         Referenced in oal.lib(oem_prof.obj)
+BUILD: [01:0000000349:INFO  ]         Loaded oal_memory_arm.lib(memory.obj)
+BUILD: [01:0000000350:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\oemmain.lib:
+BUILD: [01:0000000351:INFO  ]       Found g_pOemGlobal
+BUILD: [01:0000000352:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000353:INFO  ]         Loaded oemmain.lib(oemglobal.obj)
+BUILD: [01:0000000354:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\nkldr.lib:
+BUILD: [01:0000000355:INFO  ]       Found KernelStart
+BUILD: [01:0000000356:INFO  ]         Referenced in oal.lib(startup.obj)
+BUILD: [01:0000000357:INFO  ]         Loaded nkldr.lib(armstart.obj)
+BUILD: [01:0000000358:INFO  ]       Found ARMInit
+BUILD: [01:0000000359:INFO  ]         Referenced in nkldr.lib(armstart.obj)
+BUILD: [01:0000000360:INFO  ]         Loaded nkldr.lib(arminit.obj)
+BUILD: [01:0000000361:INFO  ]       Found FindKernelEntry
+BUILD: [01:0000000362:INFO  ]         Referenced in nkldr.lib(arminit.obj)
+BUILD: [01:0000000363:INFO  ]         Loaded nkldr.lib(ldrcmn.obj)
+BUILD: [01:0000000364:INFO  ]       Found SetOsAxsDataBlockPointer
+BUILD: [01:0000000365:INFO  ]         Referenced in nkldr.lib(arminit.obj)
+BUILD: [01:0000000366:INFO  ]         Loaded nkldr.lib(kdinfo.obj)
+BUILD: [01:0000000367:INFO  ]       Found _stricmp
+BUILD: [01:0000000368:INFO  ]         Referenced in nkldr.lib(ldrcmn.obj)
+BUILD: [01:0000000369:INFO  ]         Loaded nkldr.lib(strings.obj)
+BUILD: [01:0000000370:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\fulllibc.lib:
+BUILD: [01:0000000371:INFO  ]       Found __rt_sdiv64by64
+BUILD: [01:0000000372:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000373:INFO  ]         Loaded fulllibc.lib(mdsdiv64.obj)
+BUILD: [01:0000000374:INFO  ]       Found __utos
+BUILD: [01:0000000375:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000376:INFO  ]         Loaded fulllibc.lib(r_itos.obj)
+BUILD: [01:0000000377:INFO  ]       Found __divs
+BUILD: [01:0000000378:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000379:INFO  ]         Loaded fulllibc.lib(r_divs.obj)
+BUILD: [01:0000000380:INFO  ]       Found __gts
+BUILD: [01:0000000381:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000382:INFO  ]         Loaded fulllibc.lib(r_gts.obj)
+BUILD: [01:0000000383:INFO  ]       Found __adds
+BUILD: [01:0000000384:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000385:INFO  ]         Loaded fulllibc.lib(r_adds.obj)
+BUILD: [01:0000000386:INFO  ]       Found __muls
+BUILD: [01:0000000387:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000388:INFO  ]         Loaded fulllibc.lib(r_muls.obj)
+BUILD: [01:0000000389:INFO  ]       Found __stou
+BUILD: [01:0000000390:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000391:INFO  ]         Loaded fulllibc.lib(r_stou.obj)
+BUILD: [01:0000000392:INFO  ]       Found __lts
+BUILD: [01:0000000393:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000394:INFO  ]         Loaded fulllibc.lib(r_lts.obj)
+BUILD: [01:0000000395:INFO  ]       Found __rt_udiv
+BUILD: [01:0000000396:INFO  ]         Referenced in oal.lib(opp_map.obj)
+BUILD: [01:0000000397:INFO  ]         Loaded fulllibc.lib(__udiv.obj)
+BUILD: [01:0000000398:INFO  ]       Found memset
+BUILD: [01:0000000399:INFO  ]         Referenced in oal.lib(opp_map.obj)
+BUILD: [01:0000000400:INFO  ]         Referenced in oal.lib(oem_prof.obj)
+BUILD: [01:0000000401:INFO  ]         Referenced in oal_ioctl.lib(procinfo.obj)
+BUILD: [01:0000000402:INFO  ]         Referenced in nkldr.lib(ldrcmn.obj)
+BUILD: [01:0000000403:INFO  ]         Loaded fulllibc.lib(memset.obj)
+BUILD: [01:0000000404:INFO  ]       Found memcpy
+BUILD: [01:0000000405:INFO  ]         Referenced in oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000406:INFO  ]         Referenced in nkldr.lib(ldrcmn.obj)
+BUILD: [01:0000000407:INFO  ]         Referenced in oal_intr_common.lib(ioctl.obj)
+BUILD: [01:0000000408:INFO  ]         Referenced in oal_ioctl.lib(procinfo.obj)
+BUILD: [01:0000000409:INFO  ]         Referenced in oal_ioctl.lib(uuid.obj)
+BUILD: [01:0000000410:INFO  ]         Referenced in oal_ioctl.lib(deviceid.obj)
+BUILD: [01:0000000411:INFO  ]         Loaded fulllibc.lib(memcpy.obj)
+BUILD: [01:0000000412:INFO  ]       Found strlen
+BUILD: [01:0000000413:INFO  ]         Referenced in oal_ioctl.lib(uuid.obj)
+BUILD: [01:0000000414:INFO  ]         Referenced in oal_ioctl.lib(deviceid.obj)
+BUILD: [01:0000000415:INFO  ]         Loaded fulllibc.lib(mdsstrlen.obj)
+BUILD: [01:0000000416:INFO  ]       Found __GSHandlerCheck
+BUILD: [01:0000000417:INFO  ]         Referenced in oal_ioctl.lib(deviceid.obj)
+BUILD: [01:0000000418:INFO  ]         Referenced in oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000419:INFO  ]         Loaded fulllibc.lib(gshandler.obj)
+BUILD: [01:0000000420:INFO  ]       Found __security_check_cookie
+BUILD: [01:0000000421:INFO  ]         Referenced in oal_ioctl.lib(deviceid.obj)
+BUILD: [01:0000000422:INFO  ]         Referenced in oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000423:INFO  ]         Referenced in fulllibc.lib(gshandler.obj)
+BUILD: [01:0000000424:INFO  ]         Loaded fulllibc.lib(armsecgs.obj)
+BUILD: [01:0000000425:INFO  ]       Found tolower
+BUILD: [01:0000000426:INFO  ]         Referenced in nkldr.lib(strings.obj)
+BUILD: [01:0000000427:INFO  ]         Loaded fulllibc.lib(tolower.obj)
+BUILD: [01:0000000428:INFO  ]       Found __raise_int_divide_by_zero
+BUILD: [01:0000000429:INFO  ]         Referenced in fulllibc.lib(mdsdiv64.obj)
+BUILD: [01:0000000430:INFO  ]         Referenced in fulllibc.lib(__udiv.obj)
+BUILD: [01:0000000431:INFO  ]         Loaded fulllibc.lib(diverr.obj)
+BUILD: [01:0000000432:INFO  ]       Found __fp_nonveneer_error
+BUILD: [01:0000000433:INFO  ]         Referenced in fulllibc.lib(r_itos.obj)
+BUILD: [01:0000000434:INFO  ]         Loaded fulllibc.lib(error.obj)
+BUILD: [01:0000000435:INFO  ]       Found __fp_norm_op1
+BUILD: [01:0000000436:INFO  ]         Referenced in fulllibc.lib(r_itos.obj)
+BUILD: [01:0000000437:INFO  ]         Loaded fulllibc.lib(normop1.obj)
+BUILD: [01:0000000438:INFO  ]       Found FPE_Raise
+BUILD: [01:0000000439:INFO  ]         Referenced in fulllibc.lib(r_lts.obj)
+BUILD: [01:0000000440:INFO  ]         Referenced in fulllibc.lib(error.obj)
+BUILD: [01:0000000441:INFO  ]         Referenced in fulllibc.lib(r_itos.obj)
+BUILD: [01:0000000442:INFO  ]         Referenced in fulllibc.lib(r_gts.obj)
+BUILD: [01:0000000443:INFO  ]         Referenced in fulllibc.lib(r_adds.obj)
+BUILD: [01:0000000444:INFO  ]         Referenced in fulllibc.lib(r_stou.obj)
+BUILD: [01:0000000445:INFO  ]         Loaded fulllibc.lib(fpraise.obj)
+BUILD: [01:0000000446:INFO  ]       Found __flt_normalise2
+BUILD: [01:0000000447:INFO  ]         Referenced in fulllibc.lib(r_divs.obj)
+BUILD: [01:0000000448:INFO  ]         Referenced in fulllibc.lib(r_muls.obj)
+BUILD: [01:0000000449:INFO  ]         Loaded fulllibc.lib(fnorm2.obj)
+BUILD: [01:0000000450:INFO  ]       Found __crtRaiseException
+BUILD: [01:0000000451:INFO  ]         Referenced in fulllibc.lib(diverr.obj)
+BUILD: [01:0000000452:INFO  ]         Referenced in fulllibc.lib(fpraise.obj)
+BUILD: [01:0000000453:INFO  ]         Loaded fulllibc.lib(raiseexc.obj)
+BUILD: [01:0000000454:INFO  ]       Found __fp_status_flags
+BUILD: [01:0000000455:INFO  ]         Referenced in fulllibc.lib(error.obj)
+BUILD: [01:0000000456:INFO  ]         Loaded fulllibc.lib(fpdata.obj)
+BUILD: [01:0000000457:INFO  ]       Found __fp_return_Inf
+BUILD: [01:0000000458:INFO  ]         Referenced in fulllibc.lib(error.obj)
+BUILD: [01:0000000459:INFO  ]         Loaded fulllibc.lib(check.obj)
+BUILD: [01:0000000460:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\nkstub.lib:
+BUILD: [01:0000000461:INFO  ]       Found NKDbgPrintfW
+BUILD: [01:0000000462:INFO  ]         Referenced in oal_memory_arm.lib(memory.obj)
+BUILD: [01:0000000463:INFO  ]         Referenced in oal_ioctl.lib(uuid.obj)
+BUILD: [01:0000000464:INFO  ]         Referenced in oal_ioctl.lib(deviceid.obj)
+BUILD: [01:0000000465:INFO  ]         Referenced in oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000466:INFO  ]         Referenced in oal_ioctl.lib(ioctl.obj)
+BUILD: [01:0000000467:INFO  ]         Referenced in oal_power.lib(ioctl.obj)
+BUILD: [01:0000000468:INFO  ]         Referenced in oal_ioctl.lib(securekeys.obj)
+BUILD: [01:0000000469:INFO  ]         Referenced in oal_ioctl.lib(imgupd.obj)
+BUILD: [01:0000000470:INFO  ]         Referenced in oal_ioctl.lib(procinfo.obj)
+BUILD: [01:0000000471:INFO  ]         Referenced in oal_io.lib(trans.obj)
+BUILD: [01:0000000472:INFO  ]         Referenced in oal_ilt.lib(ilt.obj)
+BUILD: [01:0000000473:INFO  ]         Referenced in oal_log.lib(debug.obj)
+BUILD: [01:0000000474:INFO  ]         Referenced in oal_intr_common.lib(ioctl.obj)
+BUILD: [01:0000000475:INFO  ]         Referenced in oal.lib(opp_map.obj)
+BUILD: [01:0000000476:INFO  ]         Referenced in oal.lib(oem_prof.obj)
+BUILD: [01:0000000477:INFO  ]         Referenced in oal_io.lib(ioctl.obj)
+BUILD: [01:0000000478:INFO  ]         Referenced in oal_io.lib(power.obj)
+BUILD: [01:0000000479:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000480:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000481:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000482:INFO  ]         Referenced in oal.lib(oem_latency.obj)
+BUILD: [01:0000000483:INFO  ]         Loaded nkstub.lib(nkstub.obj)
+BUILD: [01:0000000484:INFO  ]       Found KITLIoctl
+BUILD: [01:0000000485:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000486:INFO  ]         Loaded nkstub.lib(kitlstub.obj)
+BUILD: [01:0000000487:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib:
+BUILD: [01:0000000488:INFO  ]       Found OALLocalAllocInit
+BUILD: [01:0000000489:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000490:INFO  ]         Loaded common_ti_oal_alloc.lib(alloc.obj)
+BUILD: [01:0000000491:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib:
+BUILD: [01:0000000492:INFO  ]       Found OALTimerGetReg
+BUILD: [01:0000000493:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000494:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000495:INFO  ]         Loaded common_ti_gpt_systimer.lib(timer.obj)
+BUILD: [01:0000000496:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib:
+BUILD: [01:0000000497:INFO  ]       Found OALPerformanceTimerInit
+BUILD: [01:0000000498:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000499:INFO  ]         Loaded common_ti_gpt_profiler.lib(profiler.obj)
+BUILD: [01:0000000500:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib:
+BUILD: [01:0000000501:INFO  ]       Found OEMEnableDebugOutput
+BUILD: [01:0000000502:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000503:INFO  ]         Loaded common_ti_debugserial.lib(debugserial.obj)
+BUILD: [01:0000000504:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib:
+BUILD: [01:0000000505:INFO  ]       Found OALVFPInitialize
+BUILD: [01:0000000506:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000507:INFO  ]         Loaded common_ti_vfpneon.lib(vfphandler.obj)
+BUILD: [01:0000000508:INFO  ]       Found OALSaveNeonRegisters
+BUILD: [01:0000000509:INFO  ]         Referenced in common_ti_vfpneon.lib(vfphandler.obj)
+BUILD: [01:0000000510:INFO  ]         Loaded common_ti_vfpneon.lib(vfp.obj)
+BUILD: [01:0000000511:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib:
+BUILD: [01:0000000512:INFO  ]       Found OALIntrInit
+BUILD: [01:0000000513:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000514:INFO  ]         Loaded common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000515:INFO  ]       Found OALIntrRequestSysIntr
+BUILD: [01:0000000516:INFO  ]         Referenced in oal_intr_common.lib(ioctl.obj)
+BUILD: [01:0000000517:INFO  ]         Referenced in common_ti_gpt_systimer.lib(timer.obj)
+BUILD: [01:0000000518:INFO  ]         Loaded common_ti_intr.lib(map.obj)
+BUILD: [01:0000000519:INFO  ]       Found OEMInterruptMask
+BUILD: [01:0000000520:INFO  ]         Referenced in oemmain.lib(oemglobal.obj)
+BUILD: [01:0000000521:INFO  ]         Loaded common_ti_intr.lib(oem.obj)
+BUILD: [01:0000000522:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_devicesmap.lib:
+BUILD: [01:0000000523:INFO  ]       Found GetAddressByDevice
+BUILD: [01:0000000524:INFO  ]         Referenced in common_ti_debugserial.lib(debugserial.obj)
+BUILD: [01:0000000525:INFO  ]         Referenced in common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000526:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000527:INFO  ]         Referenced in oal.lib(oem_prof.obj)
+BUILD: [01:0000000528:INFO  ]         Referenced in common_ti_gpt_systimer.lib(timer.obj)
+BUILD: [01:0000000529:INFO  ]         Referenced in common_ti_gpt_profiler.lib(profiler.obj)
+BUILD: [01:0000000530:INFO  ]         Loaded common_ti_devicesmap.lib(devicemap.obj)
+BUILD: [01:0000000531:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib:
+BUILD: [01:0000000532:INFO  ]       Found OALCacheGlobalsInit
+BUILD: [01:0000000533:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000534:INFO  ]         Loaded common_ti_cortexA8_cache.lib(init.obj)
+BUILD: [01:0000000535:INFO  ]       Found OALSetMemoryAttributes
+BUILD: [01:0000000536:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000537:INFO  ]         Loaded common_ti_cortexA8_cache.lib(attrib.obj)
+BUILD: [01:0000000538:INFO  ]       Found OALIoCtlHalGetCacheInfo
+BUILD: [01:0000000539:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000540:INFO  ]         Loaded common_ti_cortexA8_cache.lib(ioctl.obj)
+BUILD: [01:0000000541:INFO  ]       Found OEMCacheRangeFlush
+BUILD: [01:0000000542:INFO  ]         Referenced in oemmain.lib(oemglobal.obj)
+BUILD: [01:0000000543:INFO  ]         Loaded common_ti_cortexA8_cache.lib(flush.obj)
+BUILD: [01:0000000544:INFO  ]       Found OEMARMCacheMode
+BUILD: [01:0000000545:INFO  ]         Referenced in oemmain.lib(oemglobal.obj)
+BUILD: [01:0000000546:INFO  ]         Loaded common_ti_cortexA8_cache.lib(cachemode.obj)
+BUILD: [01:0000000547:INFO  ]       Found OALGetCacheSizeID
+BUILD: [01:0000000548:INFO  ]         Referenced in common_ti_cortexA8_cache.lib(init.obj)
+BUILD: [01:0000000549:INFO  ]         Loaded common_ti_cortexA8_cache.lib(cacheid.obj)
+BUILD: [01:0000000550:INFO  ]       Found g_oalCacheInfo
+BUILD: [01:0000000551:INFO  ]         Referenced in common_ti_cortexA8_cache.lib(init.obj)
+BUILD: [01:0000000552:INFO  ]         Referenced in common_ti_cortexA8_cache.lib(ioctl.obj)
+BUILD: [01:0000000553:INFO  ]         Referenced in common_ti_cortexA8_cache.lib(flush.obj)
+BUILD: [01:0000000554:INFO  ]         Loaded common_ti_cortexA8_cache.lib(global.obj)
+BUILD: [01:0000000555:INFO  ]       Found OALClearDTLB
+BUILD: [01:0000000556:INFO  ]         Referenced in common_ti_cortexA8_cache.lib(flush.obj)
+BUILD: [01:0000000557:INFO  ]         Loaded common_ti_cortexA8_cache.lib(tlb.obj)
+BUILD: [01:0000000558:INFO  ]       Found OALFlushICache
+BUILD: [01:0000000559:INFO  ]         Referenced in common_ti_cortexA8_cache.lib(flush.obj)
+BUILD: [01:0000000560:INFO  ]         Loaded common_ti_cortexA8_cache.lib(icache.obj)
+BUILD: [01:0000000561:INFO  ]       Found OALFlushDCacheLines
+BUILD: [01:0000000562:INFO  ]         Referenced in common_ti_cortexA8_cache.lib(flush.obj)
+BUILD: [01:0000000563:INFO  ]         Loaded common_ti_cortexA8_cache.lib(dcache.obj)
+BUILD: [01:0000000564:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib:
+BUILD: [01:0000000565:INFO  ]       Found OALI2CInit
+BUILD: [01:0000000566:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000567:INFO  ]         Loaded common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000568:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oalcpuver.lib:
+BUILD: [01:0000000569:INFO  ]       Found Get_CPUMaxSpeed
+BUILD: [01:0000000570:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000571:INFO  ]         Loaded OMAP3530_oalcpuver.lib(oalcpuver.obj)
+BUILD: [01:0000000572:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib:
+BUILD: [01:0000000573:INFO  ]       Found RequestAndConfigurePadArray
+BUILD: [01:0000000574:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000575:INFO  ]         Loaded common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000000576:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib:
+BUILD: [01:0000000577:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib:
+BUILD: [01:0000000578:INFO  ]       Found OALIoCtlIgnore
+BUILD: [01:0000000579:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000580:INFO  ]         Loaded common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000000581:INFO  ]       Found OALIoCtlHalGetRNdisMacAddr
+BUILD: [01:0000000582:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000583:INFO  ]         Loaded common_ti_ioctl.lib(rndismac.obj)
+BUILD: [01:0000000584:INFO  ]       Found OALIoCtlHalQueryFormatPartition
+BUILD: [01:0000000585:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000586:INFO  ]         Loaded common_ti_ioctl.lib(format.obj)
+BUILD: [01:0000000587:INFO  ]       Found OALIoCtlHalGetHWEntropy
+BUILD: [01:0000000588:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000589:INFO  ]         Loaded common_ti_ioctl.lib(hwentropy.obj)
+BUILD: [01:0000000590:INFO  ]       Found OALIoCtlHalReboot
+BUILD: [01:0000000591:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000592:INFO  ]         Loaded common_ti_ioctl.lib(reboot.obj)
+BUILD: [01:0000000593:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_power.lib:
+BUILD: [01:0000000594:INFO  ]       Found OEMPowerOff
+BUILD: [01:0000000595:INFO  ]         Referenced in oemmain.lib(oemglobal.obj)
+BUILD: [01:0000000596:INFO  ]         Loaded OMAP3530_oal_power.lib(power.obj)
+BUILD: [01:0000000597:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_soccfg.lib:
+BUILD: [01:0000000598:INFO  ]       Found SOCGetGPIODeviceByBank
+BUILD: [01:0000000599:INFO  ]         Referenced in common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000600:INFO  ]         Loaded OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000601:INFO  ]       Found s_DeviceAddressMap
+BUILD: [01:0000000602:INFO  ]         Referenced in common_ti_devicesmap.lib(devicemap.obj)
+BUILD: [01:0000000603:INFO  ]         Loaded OMAP3530_soccfg.lib(devicemap.obj)
+BUILD: [01:0000000604:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_padcfg.lib:
+BUILD: [01:0000000605:INFO  ]       Found SOCSetPadConfig
+BUILD: [01:0000000606:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000607:INFO  ]         Referenced in common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000000608:INFO  ]         Loaded OMAP3530_oal_padcfg.lib(soc_padcfg.obj)
+BUILD: [01:0000000609:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_misc.lib:
+BUILD: [01:0000000610:INFO  ]       Found OALIsProcessorFeaturePresent
+BUILD: [01:0000000611:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000612:INFO  ]         Loaded OMAP3530_oal_misc.lib(feature.obj)
+BUILD: [01:0000000613:INFO  ]       Found OALGetSiliconIdCode
+BUILD: [01:0000000614:INFO  ]         Referenced in common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000000615:INFO  ]         Loaded OMAP3530_oal_misc.lib(getidcode.obj)
+BUILD: [01:0000000616:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_sr.lib:
+BUILD: [01:0000000617:INFO  ]       Found SmartReflex_Get_functions_hander
+BUILD: [01:0000000618:INFO  ]         Referenced in oal.lib(opp_map.obj)
+BUILD: [01:0000000619:INFO  ]         Loaded OMAP3530_oal_sr.lib(oal_sr.obj)
+BUILD: [01:0000000620:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_prcm.lib:
+BUILD: [01:0000000621:INFO  ]       Found EnableDeviceClocks
+BUILD: [01:0000000622:INFO  ]         Referenced in common_ti_debugserial.lib(debugserial.obj)
+BUILD: [01:0000000623:INFO  ]         Referenced in common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000624:INFO  ]         Referenced in OMAP3530_oal_power.lib(power.obj)
+BUILD: [01:0000000625:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000626:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000627:INFO  ]         Referenced in common_ti_gpt_systimer.lib(timer.obj)
+BUILD: [01:0000000628:INFO  ]         Referenced in common_ti_gpt_profiler.lib(profiler.obj)
+BUILD: [01:0000000629:INFO  ]         Loaded OMAP3530_oal_prcm.lib(prcm_device.obj)
+BUILD: [01:0000000630:INFO  ]       Found OALSRAMFnInit
+BUILD: [01:0000000631:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000632:INFO  ]         Loaded OMAP3530_oal_prcm.lib(prcm.obj)
+BUILD: [01:0000000633:INFO  ]       Found PrcmClockGetParentClockInfo
+BUILD: [01:0000000634:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000635:INFO  ]         Loaded OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000636:INFO  ]       Found PrcmDomainSetWakeupDependency
+BUILD: [01:0000000637:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000638:INFO  ]         Referenced in OMAP3530_oal_prcm.lib(prcm_device.obj)
+BUILD: [01:0000000639:INFO  ]         Loaded OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000000640:INFO  ]       Found PrcmDomainResetRelease
+BUILD: [01:0000000641:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000642:INFO  ]         Loaded OMAP3530_oal_prcm.lib(prcm_reset.obj)
+BUILD: [01:0000000643:INFO  ]       Found PrcmVoltSetControlPolarity
+BUILD: [01:0000000644:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000645:INFO  ]         Loaded OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000000646:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_cpuidle.lib:
+BUILD: [01:0000000647:INFO  ]       Found OALGetL2Aux
+BUILD: [01:0000000648:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000649:INFO  ]         Loaded OMAP3530_oal_cpuidle.lib(cpu.obj)
+BUILD: [01:0000000650:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_oal_rtc.lib:
+BUILD: [01:0000000651:INFO  ]       Found OALIoCtlHalInitRTC
+BUILD: [01:0000000652:INFO  ]         Referenced in oal.lib(ioctl.obj)
+BUILD: [01:0000000653:INFO  ]         Loaded TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000000654:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_oal_gpio.lib:
+BUILD: [01:0000000655:INFO  ]       Found Tps659xx_Gpio
+BUILD: [01:0000000656:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000657:INFO  ]         Loaded TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000000658:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_oal.lib:
+BUILD: [01:0000000659:INFO  ]       Found TWLWriteRegs
+BUILD: [01:0000000660:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000661:INFO  ]         Referenced in TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000000662:INFO  ]         Referenced in TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000000663:INFO  ]         Loaded triton_oal.lib(twl_access.obj)
+BUILD: [01:0000000664:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_omap_gpio.lib:
+BUILD: [01:0000000665:INFO  ]       Found Omap_Gpio
+BUILD: [01:0000000666:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000667:INFO  ]         Loaded common_ti_oal_omap_gpio.lib(omap35xx_gpio.obj)
+BUILD: [01:0000000668:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_gpiodispatch.lib:
+BUILD: [01:0000000669:INFO  ]       Found GPIOClose
+BUILD: [01:0000000670:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000671:INFO  ]         Loaded common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000000672:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_args.lib:
+BUILD: [01:0000000673:INFO  ]       Found OALArgsQuery
+BUILD: [01:0000000674:INFO  ]         Referenced in common_ti_ioctl.lib(hwentropy.obj)
+BUILD: [01:0000000675:INFO  ]         Referenced in oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000676:INFO  ]         Referenced in common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000000677:INFO  ]         Referenced in common_ti_ioctl.lib(rndismac.obj)
+BUILD: [01:0000000678:INFO  ]         Referenced in common_ti_ioctl.lib(format.obj)
+BUILD: [01:0000000679:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000680:INFO  ]         Referenced in oal.lib(oem_pm.obj)
+BUILD: [01:0000000681:INFO  ]         Referenced in oal_ioctl.lib(imgupd.obj)
+BUILD: [01:0000000682:INFO  ]         Referenced in oal_ioctl.lib(uuid.obj)
+BUILD: [01:0000000683:INFO  ]         Loaded bsp_args.lib(args.obj)
+BUILD: [01:0000000684:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bspcfg.lib:
+BUILD: [01:0000000685:INFO  ]       Found BSPGetDebugUARTConfig
+BUILD: [01:0000000686:INFO  ]         Referenced in oal.lib(startup.obj)
+BUILD: [01:0000000687:INFO  ]         Referenced in common_ti_debugserial.lib(debugserial.obj)
+BUILD: [01:0000000688:INFO  ]         Loaded bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000000689:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_padcfg.lib:
+BUILD: [01:0000000690:INFO  ]       Found BSPGetDevicePadInfo
+BUILD: [01:0000000691:INFO  ]         Referenced in oal.lib(init.obj)
+BUILD: [01:0000000692:INFO  ]         Referenced in common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000000693:INFO  ]         Loaded bsp_padcfg.lib(bsp_padcfg.obj)
+BUILD: [01:0000000694:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oal.lib:
+BUILD: [01:0000000695:INFO  ]       Found OEMInterruptHandlerFIQ
+BUILD: [01:0000000696:INFO  ]         Referenced in oemmain.lib(oemglobal.obj)
+BUILD: [01:0000000697:INFO  ]         Loaded oal.lib(fiq.obj)
+BUILD: [01:0000000698:INFO  ]       Found OALTickTimerIntr
+BUILD: [01:0000000699:INFO  ]         Referenced in common_ti_gpt_systimer.lib(timer.obj)
+BUILD: [01:0000000700:INFO  ]         Loaded oal.lib(oem_intrex.obj)
+BUILD: [01:0000000701:INFO  ]       Found BSPIntrRequestIrqs
+BUILD: [01:0000000702:INFO  ]         Referenced in common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000703:INFO  ]         Loaded oal.lib(intr.obj)
+BUILD: [01:0000000704:INFO  ]       Found BSPPowerOn
+BUILD: [01:0000000705:INFO  ]         Referenced in OMAP3530_oal_power.lib(power.obj)
+BUILD: [01:0000000706:INFO  ]         Loaded oal.lib(power.obj)
+BUILD: [01:0000000707:INFO  ]       Found s_rgClockDomainDependency
+BUILD: [01:0000000708:INFO  ]         Referenced in OMAP3530_oal_prcm.lib(prcm_device.obj)
+BUILD: [01:0000000709:INFO  ]         Loaded oal.lib(oem_prcm_device.obj)
+BUILD: [01:0000000710:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_stall.lib:
+BUILD: [01:0000000711:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_tps659xx.lib:
+BUILD: [01:0000000712:INFO  ]       Found BSPSetT2MSECURE
+BUILD: [01:0000000713:INFO  ]         Referenced in TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000000714:INFO  ]         Loaded bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000000715:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_io.lib:
+BUILD: [01:0000000716:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ilt.lib:
+BUILD: [01:0000000717:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_timer.lib:
+BUILD: [01:0000000718:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_other.lib:
+BUILD: [01:0000000719:INFO  ]       Found OEMGetExtensionDRAM
+BUILD: [01:0000000720:INFO  ]         Referenced in oemmain.lib(oemglobal.obj)
+BUILD: [01:0000000721:INFO  ]         Loaded oal_other.lib(memory.obj)
+BUILD: [01:0000000722:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_log.lib:
+BUILD: [01:0000000723:INFO  ]       Found OALLogPrintf
+BUILD: [01:0000000724:INFO  ]         Referenced in TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000000725:INFO  ]         Loaded oal_log.lib(log.obj)
+BUILD: [01:0000000726:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_intr_common.lib:
+BUILD: [01:0000000727:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_power.lib:
+BUILD: [01:0000000728:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_ioctl.lib:
+BUILD: [01:0000000729:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\oal_memory_arm.lib:
+BUILD: [01:0000000730:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\oemmain.lib:
+BUILD: [01:0000000731:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\nkldr.lib:
+BUILD: [01:0000000732:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\fulllibc.lib:
+BUILD: [01:0000000733:INFO  ]       Found _CountLeadingZeros
+BUILD: [01:0000000734:INFO  ]         Referenced in common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000735:INFO  ]         Loaded fulllibc.lib(countlead.obj)
+BUILD: [01:0000000736:INFO  ]       Found wcscmp
+BUILD: [01:0000000737:INFO  ]         Referenced in common_ti_devicesmap.lib(devicemap.obj)
+BUILD: [01:0000000738:INFO  ]         Referenced in common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000000739:INFO  ]         Loaded fulllibc.lib(wcscmp.obj)
+BUILD: [01:0000000740:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\nkstub.lib:
+BUILD: [01:0000000741:INFO  ]       Found InterlockedDecrement
+BUILD: [01:0000000742:INFO  ]         Referenced in OMAP3530_oal_prcm.lib(prcm_device.obj)
+BUILD: [01:0000000743:INFO  ]         Referenced in OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000000744:INFO  ]         Loaded nkstub.lib(intrlock.obj)
+BUILD: [01:0000000745:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_alloc.lib:
+BUILD: [01:0000000746:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_systimer.lib:
+BUILD: [01:0000000747:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_gpt_profiler.lib:
+BUILD: [01:0000000748:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_debugserial.lib:
+BUILD: [01:0000000749:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_vfpneon.lib:
+BUILD: [01:0000000750:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_intr.lib:
+BUILD: [01:0000000751:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_devicesmap.lib:
+BUILD: [01:0000000752:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_cortexA8_cache.lib:
+BUILD: [01:0000000753:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oali2c.lib:
+BUILD: [01:0000000754:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oalcpuver.lib:
+BUILD: [01:0000000755:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oalpadcfg.lib:
+BUILD: [01:0000000756:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_oal_watchdog.lib:
+BUILD: [01:0000000757:INFO  ]       Found OALWatchdogEnable
+BUILD: [01:0000000758:INFO  ]         Referenced in OMAP3530_oal_power.lib(power.obj)
+BUILD: [01:0000000759:INFO  ]         Loaded common_ti_oal_watchdog.lib(watchdog.obj)
+BUILD: [01:0000000760:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_ioctl.lib:
+BUILD: [01:0000000761:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_oal_power.lib:
+BUILD: [01:0000000762:INFO  ]       Found OALCPURestoreContext
+BUILD: [01:0000000763:INFO  ]         Referenced in OMAP3530_oal_prcm.lib(prcm.obj)
+BUILD: [01:0000000764:INFO  ]         Loaded OMAP3530_oal_power.lib(restore.obj)
+BUILD: [01:0000000765:INFO  ] 
+BUILD: [01:0000000766:INFO  ] Finished searching libraries
+BUILD: [01:0000000767:INFO  ] 
+BUILD: [01:0000000768:INFO  ] Finished pass 1
+BUILD: [01:0000000769:INFO  ] 
+BUILD: [01:0000000770:INFO  ]     Discarded prevGpioFClkState
+BUILD: [01:0000000771:INFO  ]     Discarded prevGpioIClkState
+BUILD: [01:0000000772:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000773:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000774:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000775:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000776:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000777:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000778:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000779:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000780:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000781:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000782:INFO  ]     Discarded '.pdata' from oal.lib(oem_pm.obj)
+BUILD: [01:0000000783:INFO  ]     Discarded '.pdata' from oal.lib(oem_latency.obj)
+BUILD: [01:0000000784:INFO  ]     Discarded '.pdata' from oal.lib(oem_latency.obj)
+BUILD: [01:0000000785:INFO  ]     Discarded '.pdata' from oal.lib(oem_latency.obj)
+BUILD: [01:0000000786:INFO  ]     Discarded '.pdata' from oal.lib(opp_map.obj)
+BUILD: [01:0000000787:INFO  ]     Discarded '.pdata' from oal.lib(opp_map.obj)
+BUILD: [01:0000000788:INFO  ]     Discarded '.pdata' from oal.lib(opp_map.obj)
+BUILD: [01:0000000789:INFO  ]     Discarded '.pdata' from oal.lib(opp_map.obj)
+BUILD: [01:0000000790:INFO  ]     Discarded '.pdata' from oal.lib(opp_map.obj)
+BUILD: [01:0000000791:INFO  ]     Discarded '.pdata' from oal.lib(opp_map.obj)
+BUILD: [01:0000000792:INFO  ]     Discarded '.pdata' from oal.lib(oem_padwakeup.obj)
+BUILD: [01:0000000793:INFO  ]     Discarded '.pdata' from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000794:INFO  ]     Discarded '.pdata' from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000795:INFO  ]     Discarded '.pdata' from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000796:INFO  ]     Discarded '.pdata' from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000797:INFO  ]     Discarded '.pdata' from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000798:INFO  ]     Discarded '.pdata' from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000799:INFO  ]     Discarded '.pdata' from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000800:INFO  ]     Discarded '.pdata' from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000801:INFO  ]     Discarded '.pdata' from fulllibc.lib(diverr.obj)
+BUILD: [01:0000000802:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000803:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000804:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000805:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000806:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000807:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000808:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000809:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000810:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000811:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000812:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000813:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000814:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000815:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000816:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000817:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000818:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000819:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000820:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000821:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000822:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000823:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000824:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000825:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000826:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000827:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000828:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000829:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000830:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000831:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000832:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000833:INFO  ]     Discarded '.pdata' from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000834:INFO  ]     Discarded '.pdata' from common_ti_debugserial.lib(debugserial.obj)
+BUILD: [01:0000000835:INFO  ]     Discarded '.pdata' from common_ti_vfpneon.lib(vfphandler.obj)
+BUILD: [01:0000000836:INFO  ]     Discarded '.pdata' from common_ti_vfpneon.lib(vfphandler.obj)
+BUILD: [01:0000000837:INFO  ]     Discarded '.pdata' from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000838:INFO  ]     Discarded '.pdata' from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000839:INFO  ]     Discarded '.pdata' from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000840:INFO  ]     Discarded '.pdata' from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000841:INFO  ]     Discarded '.pdata' from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000842:INFO  ]     Discarded '.pdata' from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000843:INFO  ]     Discarded '.pdata' from common_ti_intr.lib(map.obj)
+BUILD: [01:0000000844:INFO  ]     Discarded '.pdata' from common_ti_devicesmap.lib(devicemap.obj)
+BUILD: [01:0000000845:INFO  ]     Discarded '.pdata' from common_ti_devicesmap.lib(devicemap.obj)
+BUILD: [01:0000000846:INFO  ]     Discarded '.pdata' from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000847:INFO  ]     Discarded '.pdata' from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000848:INFO  ]     Discarded '.pdata' from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000849:INFO  ]     Discarded '.pdata' from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000850:INFO  ]     Discarded '.pdata' from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000851:INFO  ]     Discarded '.pdata' from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000852:INFO  ]     Discarded '.pdata' from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000853:INFO  ]     Discarded '.pdata' from common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000000854:INFO  ]     Discarded '.pdata' from common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000000855:INFO  ]     Discarded '.pdata' from common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000000856:INFO  ]     Discarded '.pdata' from common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000000857:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000858:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000859:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000860:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000861:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000862:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000863:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000864:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000865:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000866:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000867:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000868:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000869:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000870:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000871:INFO  ]     Discarded '.pdata' from OMAP3530_oal_padcfg.lib(soc_padcfg.obj)
+BUILD: [01:0000000872:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_device.obj)
+BUILD: [01:0000000873:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm.obj)
+BUILD: [01:0000000874:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000875:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000876:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000877:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000000878:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000000879:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000000880:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000000881:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_reset.obj)
+BUILD: [01:0000000882:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_reset.obj)
+BUILD: [01:0000000883:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000000884:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000000885:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000000886:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000000887:INFO  ]     Discarded '.pdata' from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000000888:INFO  ]     Discarded '.pdata' from TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000000889:INFO  ]     Discarded '.pdata' from TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000000890:INFO  ]     Discarded '.pdata' from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000000891:INFO  ]     Discarded '.pdata' from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000000892:INFO  ]     Discarded '.pdata' from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000000893:INFO  ]     Discarded '.pdata' from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000000894:INFO  ]     Discarded '.pdata' from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000000895:INFO  ]     Discarded '.pdata' from triton_oal.lib(twl_access.obj)
+BUILD: [01:0000000896:INFO  ]     Discarded '.pdata' from common_ti_oal_omap_gpio.lib(omap35xx_gpio.obj)
+BUILD: [01:0000000897:INFO  ]     Discarded '.pdata' from common_ti_oal_omap_gpio.lib(omap35xx_gpio.obj)
+BUILD: [01:0000000898:INFO  ]     Discarded '.pdata' from common_ti_oal_omap_gpio.lib(omap35xx_gpio.obj)
+BUILD: [01:0000000899:INFO  ]     Discarded '.pdata' from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000000900:INFO  ]     Discarded '.pdata' from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000000901:INFO  ]     Discarded '.pdata' from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000000902:INFO  ]     Discarded '.pdata' from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000000903:INFO  ]     Discarded '.pdata' from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000000904:INFO  ]     Discarded '.pdata' from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000000905:INFO  ]     Discarded '.pdata' from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000000906:INFO  ]     Discarded '.pdata' from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000000907:INFO  ]     Discarded '.pdata' from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000000908:INFO  ]     Discarded '.pdata' from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000000909:INFO  ]     Discarded '.pdata' from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000000910:INFO  ]     Discarded '.pdata' from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000000911:INFO  ]     Discarded '.pdata' from oal.lib(oem_intrex.obj)
+BUILD: [01:0000000912:INFO  ]     Discarded '.pdata' from bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000000913:INFO  ]     Discarded '.pdata' from bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000000914:INFO  ]     Discarded '.pdata' from bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000000915:INFO  ]     Discarded '.pdata' from bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000000916:INFO  ]     Discarded '.pdata' from oal_log.lib(log.obj)
+BUILD: [01:0000000917:INFO  ]     Discarded '.pdata' from fulllibc.lib(countlead.obj)
+BUILD: [01:0000000918:INFO  ]     Discarded '.pdata' from fulllibc.lib(countlead.obj)
+BUILD: [01:0000000919:INFO  ]     Discarded '.pdata' from fulllibc.lib(countlead.obj)
+BUILD: [01:0000000920:INFO  ]     Discarded '.pdata' from fulllibc.lib(countlead.obj)
+BUILD: [01:0000000921:INFO  ]     Discarded '.pdata' from fulllibc.lib(countlead.obj)
+BUILD: [01:0000000922:INFO  ]     Discarded '.pdata' from common_ti_oal_watchdog.lib(watchdog.obj)
+BUILD: [01:0000000923:INFO  ]     Discarded '.pdata' from common_ti_oal_watchdog.lib(watchdog.obj)
+BUILD: [01:0000000924:INFO  ]     Discarded "`string'" (??_C@_1FO@JLFGCFEN@?$AA?9?$AAO?$AAA?$AAL?$AAI?$AAo?$AAC?$AAt?$AAl?$AAP?$AAr?$AAc?$AAm?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAe?$AAt?$AAA?$AAu?$AAt?$AAo?$AAI?$AAd?$AAl?$AAe?$AAS?$AAt@) from oal.lib(oem_pm.obj)
+BUILD: [01:0000000925:INFO  ]     Discarded "`string'" (??_C@_1EM@EIPOCMLO@?$AA?$CL?$AAO?$AAA?$AAL?$AAI?$AAo?$AAC?$AAt?$AAl?$AAP?$AAr?$AAc?$AAm?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAe?$AAt?$AAA?$AAu?$AAt?$AAo?$AAI?$AAd?$AAl?$AAe?$AAS?$AAt@) from oal.lib(oem_pm.obj)
+BUILD: [01:0000000926:INFO  ]     Discarded "`string'" (??_C@_1FA@GPKMIFJB@?$AA?$AN?$AA?6?$AAS?$AAm?$AAa?$AAr?$AAt?$AAR?$AAe?$AAf?$AAl?$AAe?$AAx?$AA_?$AAd?$AAu?$AAm?$AAp?$AA_?$AAs?$AAe?$AAn?$AAs?$AAo?$AAr?$AA_?$AAd?$AAa?$AAt?$AAa?$AA?5?$AA?3@) from oal.lib(opp_map.obj)
+BUILD: [01:0000000927:INFO  ]     Discarded "`string'" (??_C@_1CE@FNBKDMFJ@?$AAi?$AAd?$AAx?$AA?$DN?$AA?$CF?$AAd?$AA?7?$AA?5?$AAo?$AAp?$AAp?$AA?$DN?$AA?$CF?$AAx?$AA?5?$AA?$AN?$AA?6?$AA?$AA@) from oal.lib(opp_map.obj)
+BUILD: [01:0000000928:INFO  ]     Discarded "`string'" (??_C@_1EM@KCFGIBMD@?$AAS?$AAm?$AAa?$AAr?$AAt?$AAR?$AAe?$AAf?$AAl?$AAe?$AAx?$AA_?$AAd?$AAu?$AAm?$AAp?$AA_?$AAs?$AAe?$AAn?$AAs?$AAo?$AAr?$AA_?$AAd?$AAa?$AAt?$AAa?$AA?5?$AA?3?$AA?5?$AAV@) from oal.lib(opp_map.obj)
+BUILD: [01:0000000929:INFO  ]     Discarded "`string'" (??_C@_1DA@PIDAEGAC@?$AA?9?$AAO?$AAA?$AAL?$AAI?$AAn?$AAt?$AAr?$AAS?$AAe?$AAt?$AAD?$AAa?$AAt?$AAa?$AAI?$AAr?$AAq?$AAs?$AA?$CI?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@) from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000930:INFO  ]     Discarded "`string'" (??_C@_1FM@NKDACBOK@?$AA?$CL?$AAO?$AAA?$AAL?$AAI?$AAn?$AAt?$AAr?$AAS?$AAe?$AAt?$AAD?$AAa?$AAt?$AAa?$AAI?$AAr?$AAq?$AAs?$AA?$CI?$AA?$CF?$AAd?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5@) from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000000931:INFO  ]     Discarded "`string'" (??_C@_1DE@CBLJKBBB@?$AA?9?$AAO?$AAA?$AAL?$AAI?$AAn?$AAt?$AAr?$AAS?$AAt?$AAa?$AAt?$AAi?$AAc?$AAT?$AAr?$AAa?$AAn?$AAs?$AAl?$AAa?$AAt?$AAe?$AA?$AN?$AA?6?$AA?$AA@) from common_ti_intr.lib(map.obj)
+BUILD: [01:0000000932:INFO  ]     Discarded "`string'" (??_C@_1EE@DPKCCBO@?$AA?$CL?$AAO?$AAA?$AAL?$AAI?$AAn?$AAt?$AAr?$AAS?$AAt?$AAa?$AAt?$AAi?$AAc?$AAT?$AAr?$AAa?$AAn?$AAs?$AAl?$AAa?$AAt?$AAe?$AA?$CI?$AA?$CF?$AAd?$AA?0?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN@) from common_ti_intr.lib(map.obj)
+BUILD: [01:0000000933:INFO  ]     Discarded "`string'" (??_C@_1FM@DHKEFDNK@?$AAW?$AAA?$AAR?$AAN?$AA?3?$AA?5?$AAI?$AA2?$AAC?$AA?3?$AA?5?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CI?$AAs?$AAl?$AAa?$AAv?$AAe?$AA?5?$AAa?$AAd@) from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000000934:INFO  ]     Discarded "`string'" (??_C@_1DK@FKFBOCNN@?$AA?9?$AAI?$AAO?$AAC?$AAT?$AAL?$AA_?$AAH?$AAA?$AAL?$AA_?$AAG?$AAE?$AAT?$AA_?$AAM?$AAA?$AAC?$AA_?$AAA?$AAD?$AAD?$AAR?$AAE?$AAS?$AAS?$AA?$AN?$AA?6?$AA?$AA@) from common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000000935:INFO  ]     Discarded "`string'" (??_C@_1DK@DPLCMFPG@?$AA?$CL?$AAI?$AAO?$AAC?$AAT?$AAL?$AA_?$AAH?$AAA?$AAL?$AA_?$AAG?$AAE?$AAT?$AA_?$AAM?$AAA?$AAC?$AA_?$AAA?$AAD?$AAD?$AAR?$AAE?$AAS?$AAS?$AA?$AN?$AA?6?$AA?$AA@) from common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000000936:INFO  ]     Discarded "`string'" (??_C@_1EM@DOKMKDJO@?$AA?$CL?$AAP?$AAr?$AAc?$AAm?$AAC?$AAl?$AAo?$AAc?$AAk?$AAS?$AAe?$AAt?$AAD?$AAp?$AAl?$AAl?$AAA?$AAu?$AAt?$AAo?$AAI?$AAd?$AAl?$AAe?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$CI?$AA?$CJ@) from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000937:INFO  ]     Discarded "`string'" (??_C@_1IM@JIIHLGCG@?$AA?$CL?$AAP?$AAr?$AAc?$AAm?$AAC?$AAl?$AAo?$AAc?$AAk?$AAS?$AAe?$AAt?$AAD?$AAp?$AAl?$AAl?$AAA?$AAu?$AAt?$AAo?$AAI?$AAd?$AAl?$AAe?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$CI?$AAd@) from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000938:INFO  ]     Discarded "`string'" (??_C@_1EE@NGFCOLAD@?$AA?9?$AAP?$AAr?$AAc?$AAm?$AAC?$AAl?$AAo?$AAc?$AAk?$AAG?$AAe?$AAt?$AAD?$AAp?$AAl?$AAl?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$CI?$AA?$CJ?$AA?$DN?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAX?$AA?$AN@) from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000939:INFO  ]     Discarded "`string'" (??_C@_1EI@DKCKIEEG@?$AA?$CL?$AAP?$AAr?$AAc?$AAm?$AAC?$AAl?$AAo?$AAc?$AAk?$AAG?$AAe?$AAt?$AAD?$AAp?$AAl?$AAl?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$CI?$AAd?$AAp?$AAl?$AAl?$AAI?$AAd?$AA?$DN?$AA?$CF?$AAd@) from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000940:INFO  ]     Discarded "`string'" (??_C@_1DE@MNKDAJMB@?$AA?$AN?$AA?6?$AAS?$AAR?$AAC?$AA?5?$AAC?$AAL?$AAO?$AAC?$AAK?$AA?5?$AAr?$AAe?$AAf?$AA?5?$AAc?$AAo?$AAu?$AAn?$AAt?$AAs?$AA?3?$AA?$AN?$AA?6?$AA?$AA@) from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000941:INFO  ]     Discarded "`string'" (??_C@_1DI@PIJNCBJB@?$AA?$AN?$AA?6?$AAD?$AAP?$AAL?$AAL?$AA?5?$AAC?$AAL?$AAK?$AAO?$AAU?$AAT?$AA?5?$AAr?$AAe?$AAf?$AA?5?$AAc?$AAo?$AAu?$AAn?$AAt?$AAs?$AA?3?$AA?$AN?$AA?6?$AA?$AA@) from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000942:INFO  ]     Discarded "`string'" (??_C@_1CK@MBLFPBCE@?$AA?$AN?$AA?6?$AAD?$AAP?$AAL?$AAL?$AA?5?$AAr?$AAe?$AAf?$AA?5?$AAc?$AAo?$AAu?$AAn?$AAt?$AAs?$AA?3?$AA?$AN?$AA?6?$AA?$AA@) from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000943:INFO  ]     Discarded "`string'" (??_C@_1CI@DFICMPGN@?$AA?$AN?$AA?6?$AAV?$AAD?$AAD?$AA?5?$AAr?$AAe?$AAf?$AA?5?$AAc?$AAo?$AAu?$AAn?$AAt?$AAs?$AA?3?$AA?$AN?$AA?6?$AA?$AA@) from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000000944:INFO  ]     Discarded "`string'" (??_C@_1HI@JDGLDLD@?$AAN?$AAA?$AAN?$AAD?$AA?5?$AAm?$AAa?$AAn?$AAu?$AAf?$AAa?$AAc?$AAt?$AAu?$AAr?$AAe?$AAr?$AA?5?$AA?$CF?$AAx?$AA?5?$AAd?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AA?$CF?$AAx?$AA?5?$AA?3@) from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000000945:INFO  ]     Discarded TWLWriteByteReg from oal.lib(oem_pm.obj)
+BUILD: [01:0000000946:INFO  ]     Discarded OALIoCtlPrcmDeviceSetAutoIdleState from oal.lib(oem_pm.obj)
+BUILD: [01:0000000947:INFO  ]     Discarded ReleaseIvaReset from oal.lib(oem_pm.obj)
+BUILD: [01:0000000948:INFO  ]     Discarded ResetDisplay from oal.lib(oem_pm.obj)
+BUILD: [01:0000000949:INFO  ]     Discarded TWLconfigOFFmode from oal.lib(oem_pm.obj)
+BUILD: [01:0000000950:INFO  ]     Discarded OALPowerVFP from oal.lib(oem_pm.obj)
+BUILD: [01:0000000951:INFO  ]     Discarded OALContextSaveDMA from oal.lib(oem_pm.obj)
+BUILD: [01:0000000952:INFO  ]     Discarded OALContextSaveSMS from oal.lib(oem_pm.obj)
+BUILD: [01:0000000953:INFO  ]     Discarded OALContextRestoreDMA from oal.lib(oem_pm.obj)
+BUILD: [01:0000000954:INFO  ]     Discarded OALContextRestoreSMS from oal.lib(oem_pm.obj)
+BUILD: [01:0000000955:INFO  ]     Discarded OALContextUpdateCleanRegister from oal.lib(oem_pm.obj)
+BUILD: [01:0000000956:INFO  ]     Discarded _OALWakeupLatency_Lock from oal.lib(oem_latency.obj)
+BUILD: [01:0000000957:INFO  ]     Discarded _OALWakeupLatency_Unlock from oal.lib(oem_latency.obj)
+BUILD: [01:0000000958:INFO  ]     Discarded OALWakeupLatency_SetOffModeConstraint from oal.lib(oem_latency.obj)
+BUILD: [01:0000000959:INFO  ]     Discarded SmartReflexLock from oal.lib(opp_map.obj)
+BUILD: [01:0000000960:INFO  ]     Discarded SmartReflexUnlock from oal.lib(opp_map.obj)
+BUILD: [01:0000000961:INFO  ]     Discarded SmartReflex_dump_sensor_data from oal.lib(opp_map.obj)
+BUILD: [01:0000000962:INFO  ]     Discarded cal_reciprocal from oal.lib(opp_map.obj)
+BUILD: [01:0000000963:INFO  ]     Discarded cal_test_nvalue from oal.lib(opp_map.obj)
+BUILD: [01:0000000964:INFO  ]     Discarded SetVoltageOpp from oal.lib(opp_map.obj)
+BUILD: [01:0000000965:INFO  ]     Discarded OEMGetIOPadWakeupStatus from oal.lib(oem_padwakeup.obj)
+BUILD: [01:0000000966:INFO  ]     Discarded "int __cdecl GetPlatformType(void *,unsigned int,unsigned int *,unsigned short const * *)" (?GetPlatformType@@YAHPAXIPAIPAPBG@Z) from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000967:INFO  ]     Discarded "void __cdecl ErrorNotSupported(unsigned short const *)" (?ErrorNotSupported@@YAXPBG@Z) from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000968:INFO  ]     Discarded "int __cdecl GetOEMInfo(void *,unsigned int,unsigned int *,unsigned short const * *)" (?GetOEMInfo@@YAHPAXIPAIPAPBG@Z) from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000969:INFO  ]     Discarded "int __cdecl GetPlatformVersion(void *,unsigned int,unsigned int *,unsigned short const * *)" (?GetPlatformVersion@@YAHPAXIPAIPAPBG@Z) from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000970:INFO  ]     Discarded "int __cdecl GetProjectName(void *,unsigned int,unsigned int *,unsigned short const * *)" (?GetProjectName@@YAHPAXIPAIPAPBG@Z) from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000971:INFO  ]     Discarded "int __cdecl GetPlatformName(void *,unsigned int,unsigned int *,unsigned short const * *)" (?GetPlatformName@@YAHPAXIPAIPAPBG@Z) from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000972:INFO  ]     Discarded "int __cdecl GetUUID(void *,unsigned int,unsigned int *,unsigned short const * *)" (?GetUUID@@YAHPAXIPAIPAPBG@Z) from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000973:INFO  ]     Discarded "int __cdecl GetGUIDPattern(void *,unsigned int,unsigned int *,unsigned short const * *)" (?GetGUIDPattern@@YAHPAXIPAIPAPBG@Z) from oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000000974:INFO  ]     Discarded __raise_int_overflow from fulllibc.lib(diverr.obj)
+BUILD: [01:0000000975:INFO  ]     Discarded NKOutputDebugString from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000976:INFO  ]     Discarded NKvDbgPrintfW from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000977:INFO  ]     Discarded NKGetLastError from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000978:INFO  ]     Discarded INTERRUPTS_OFF from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000979:INFO  ]     Discarded INTERRUPTS_ON from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000980:INFO  ]     Discarded HookInterrupt from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000981:INFO  ]     Discarded UnhookInterrupt from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000982:INFO  ]     Discarded NKCallIntChain from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000983:INFO  ]     Discarded NKIsSysIntrValid from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000984:INFO  ]     Discarded NKSleep from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000985:INFO  ]     Discarded NKCreateStaticMapping from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000986:INFO  ]     Discarded NKDeleteStaticMapping from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000987:INFO  ]     Discarded NKRegCloseKey from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000988:INFO  ]     Discarded NKRegFlushKey from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000989:INFO  ]     Discarded NKRegCreateKeyExW from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000990:INFO  ]     Discarded NKRegOpenKeyExW from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000991:INFO  ]     Discarded NKRegQueryValueExW from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000992:INFO  ]     Discarded NKRegSetValueExW from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000993:INFO  ]     Discarded NKReboot from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000994:INFO  ]     Discarded NKwcscmp from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000995:INFO  ]     Discarded NKwcsicmp from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000996:INFO  ]     Discarded NKwcsnicmp from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000997:INFO  ]     Discarded NKwcsncpy from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000998:INFO  ]     Discarded NKstrcmpiAandW from nkstub.lib(nkstub.obj)
+BUILD: [01:0000000999:INFO  ]     Discarded NKUnicodeToAscii from nkstub.lib(nkstub.obj)
+BUILD: [01:0000001000:INFO  ]     Discarded NKAsciiToUnicode from nkstub.lib(nkstub.obj)
+BUILD: [01:0000001001:INFO  ]     Discarded NKCompareFileTime from nkstub.lib(nkstub.obj)
+BUILD: [01:0000001002:INFO  ]     Discarded ProfilerHitEx from nkstub.lib(nkstub.obj)
+BUILD: [01:0000001003:INFO  ]     Discarded GetEPC from nkstub.lib(nkstub.obj)
+BUILD: [01:0000001004:INFO  ]     Discarded __GetUserKData from nkstub.lib(nkstub.obj)
+BUILD: [01:0000001005:INFO  ]     Discarded GetOriginalDAbortHandlerAddress from nkstub.lib(nkstub.obj)
+BUILD: [01:0000001006:INFO  ]     Discarded NKSetDataAbortHandler from nkstub.lib(nkstub.obj)
+BUILD: [01:0000001007:INFO  ]     Discarded OEMDebugInit from common_ti_debugserial.lib(debugserial.obj)
+BUILD: [01:0000001008:INFO  ]     Discarded OALSaveNeonRegistersEx from common_ti_vfpneon.lib(vfphandler.obj)
+BUILD: [01:0000001009:INFO  ]     Discarded OALRestoreNeonRegistersEx from common_ti_vfpneon.lib(vfphandler.obj)
+BUILD: [01:0000001010:INFO  ]     Discarded OALGPIOIntrHandler from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000001011:INFO  ]     Discarded OALGPIOEnableIRQ from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000001012:INFO  ]     Discarded OALGPIODisableIRQ from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000001013:INFO  ]     Discarded OALGPIODoneIRQ from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000001014:INFO  ]     Discarded OALGPIOIsIrqPending from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000001015:INFO  ]     Discarded OALIntrSetDataIrqs from common_ti_intr.lib(intr.obj)
+BUILD: [01:0000001016:INFO  ]     Discarded OALIntrStaticTranslate from common_ti_intr.lib(map.obj)
+BUILD: [01:0000001017:INFO  ]     Discarded GetDeviceByAddress from common_ti_devicesmap.lib(devicemap.obj)
+BUILD: [01:0000001018:INFO  ]     Discarded GetDeviceByIrq from common_ti_devicesmap.lib(devicemap.obj)
+BUILD: [01:0000001019:INFO  ]     Discarded GetIndexByDevice from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000001020:INFO  ]     Discarded I2CGetTickCount from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000001021:INFO  ]     Discarded I2CSetDeviceBaudrate from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000001022:INFO  ]     Discarded I2CGetBufferSize from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000001023:INFO  ]     Discarded I2CGetPacketSize from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000001024:INFO  ]     Discarded I2CReprogramDevice from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000001025:INFO  ]     Discarded I2CRawRead from common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000001026:INFO  ]     Discarded PadCfgLock from common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000001027:INFO  ]     Discarded PadCfgUnlock from common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000001028:INFO  ]     Discarded SortPadInfoArray from common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000001029:INFO  ]     Discarded OALIoctlGetMacAddress from common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000001030:INFO  ]     Discarded SOCGetSDHCDeviceBySlot from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001031:INFO  ]     Discarded SOCGetMCSPIDeviceByBus from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001032:INFO  ]     Discarded SOCGetMCBSPDeviceByBus from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001033:INFO  ]     Discarded SOCGetMCBSPSidetoneAddress from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001034:INFO  ]     Discarded SOCGetI2CDeviceByBus from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001035:INFO  ]     Discarded SOCGetUartDeviceByIndex from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001036:INFO  ]     Discarded SOCGetGPMCAddress from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001037:INFO  ]     Discarded SOCGetDSSInfo from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001038:INFO  ]     Discarded SOCGetDMADevice from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001039:INFO  ]     Discarded SOCGetVRFBDevice from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001040:INFO  ]     Discarded SOCGetUSBHInfo from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001041:INFO  ]     Discarded SOCGetUSBOTGAddress from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001042:INFO  ]     Discarded SOCGetIDCodeAddress from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001043:INFO  ]     Discarded SOCGetHDQDevice from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001044:INFO  ]     Discarded MapPadRegisters from OMAP3530_oal_padcfg.lib(soc_padcfg.obj)
+BUILD: [01:0000001045:INFO  ]     Discarded SelectSourceClocks from OMAP3530_oal_prcm.lib(prcm_device.obj)
+BUILD: [01:0000001046:INFO  ]     Discarded ClearXNBit from OMAP3530_oal_prcm.lib(prcm.obj)
+BUILD: [01:0000001047:INFO  ]     Discarded PrcmClockSetDpllAutoIdleState from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000001048:INFO  ]     Discarded PrcmClockGetDpllState from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000001049:INFO  ]     Discarded PrcmDumpRefCounts from OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000001050:INFO  ]     Discarded _DomainInitialize from OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000001051:INFO  ]     Discarded _PrcmDomainClockInitialize from OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000001052:INFO  ]     Discarded PrcmDomainSetClockStateKernel from OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000001053:INFO  ]     Discarded PrcmDomainClearWakeupStatus from OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000001054:INFO  ]     Discarded PrcmDomainResetStatus from OMAP3530_oal_prcm.lib(prcm_reset.obj)
+BUILD: [01:0000001055:INFO  ]     Discarded PrcmDomainReset from OMAP3530_oal_prcm.lib(prcm_reset.obj)
+BUILD: [01:0000001056:INFO  ]     Discarded PrcmVoltI2cInitialize from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000001057:INFO  ]     Discarded PrcmVoltI2cSetHighSpeedMode from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000001058:INFO  ]     Discarded PrcmVoltInitializeVoltageLevels from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000001059:INFO  ]     Discarded PrcmVoltSetSlewRange from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000001060:INFO  ]     Discarded PrcmVoltSetLimits from OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000001061:INFO  ]     Discarded TWLWriteByteReg from TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000001062:INFO  ]     Discarded TWLReadByteReg from TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000001063:INFO  ]     Discarded "int __cdecl OpenTwl(void)" (?OpenTwl@@YAHXZ) from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000001064:INFO  ]     Discarded "void __cdecl CloseTwl(void)" (?CloseTwl@@YAXXZ) from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000001065:INFO  ]     Discarded "void __cdecl Lock(void)" (?Lock@@YAXXZ) from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000001066:INFO  ]     Discarded "void __cdecl Unlock(void)" (?Unlock@@YAXXZ) from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000001067:INFO  ]     Discarded "void __cdecl SetGpioBankPowerState(unsigned int,enum _CEDEVICE_POWER_STATE)" (?SetGpioBankPowerState@@YAXIW4_CEDEVICE_POWER_STATE@@@Z) from TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000001068:INFO  ]     Discarded TWLSetValue from triton_oal.lib(twl_access.obj)
+BUILD: [01:0000001069:INFO  ]     Discarded "void __cdecl InternalSetGpioBankPowerState(struct OmapGpioDevice_t *,unsigned int,enum _CEDEVICE_POWER_STATE)" (?InternalSetGpioBankPowerState@@YAXPAUOmapGpioDevice_t@@IW4_CEDEVICE_POWER_STATE@@@Z) from common_ti_oal_omap_gpio.lib(omap35xx_gpio.obj)
+BUILD: [01:0000001070:INFO  ]     Discarded "void __cdecl OmapGpioPowerUp(void *)" (?OmapGpioPowerUp@@YAXPAX@Z) from common_ti_oal_omap_gpio.lib(omap35xx_gpio.obj)
+BUILD: [01:0000001071:INFO  ]     Discarded "void __cdecl OmapGpioPowerDown(void *)" (?OmapGpioPowerDown@@YAXPAX@Z) from common_ti_oal_omap_gpio.lib(omap35xx_gpio.obj)
+BUILD: [01:0000001072:INFO  ]     Discarded GPIOPostInit from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000001073:INFO  ]     Discarded GPIOGetBit from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000001074:INFO  ]     Discarded GPIOGetMode from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000001075:INFO  ]     Discarded GPIOPullup from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000001076:INFO  ]     Discarded GPIOPulldown from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000001077:INFO  ]     Discarded GPIOIoControl from common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000001078:INFO  ]     Discarded BSPGetNandIrqWait from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000001079:INFO  ]     Discarded BSPGetNandCS from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000001080:INFO  ]     Discarded BSPGetNandInfo from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000001081:INFO  ]     Discarded BSPGetSDHCCardDetect from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000001082:INFO  ]     Discarded BSPGetRTCGpioIrq from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000001083:INFO  ]     Discarded BPSGetWatchdogDevice from bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000001084:INFO  ]     Discarded OALSWIntrSetDataIrq from oal.lib(oem_intrex.obj)
+BUILD: [01:0000001085:INFO  ]     Discarded TWLWriteByteReg from bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000001086:INFO  ]     Discarded DecideTwlVMMC from bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000001087:INFO  ]     Discarded ShowT2Reg from bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000001088:INFO  ]     Discarded InitTwlPower from bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000001089:INFO  ]     Discarded OALLogSerial from oal_log.lib(log.obj)
+BUILD: [01:0000001090:INFO  ]     Discarded _CountLeadingZeros64 from fulllibc.lib(countlead.obj)
+BUILD: [01:0000001091:INFO  ]     Discarded _CountLeadingOnes from fulllibc.lib(countlead.obj)
+BUILD: [01:0000001092:INFO  ]     Discarded _CountLeadingOnes64 from fulllibc.lib(countlead.obj)
+BUILD: [01:0000001093:INFO  ]     Discarded _CountLeadingSigns from fulllibc.lib(countlead.obj)
+BUILD: [01:0000001094:INFO  ]     Discarded _CountLeadingSigns64 from fulllibc.lib(countlead.obj)
+BUILD: [01:0000001095:INFO  ]     Discarded WatchdogRefresh from common_ti_oal_watchdog.lib(watchdog.obj)
+BUILD: [01:0000001096:INFO  ]     Discarded OALWatchdogInit from common_ti_oal_watchdog.lib(watchdog.obj)
+BUILD: [01:0000001097:INFO  ]     Discarded '.xdata' from oal_log.lib(log.obj)
+BUILD: [01:0000001098:INFO  ] Starting pass 2
+BUILD: [01:0000001099:INFO  ]      common_ti_oal_alloc.lib(alloc.obj)
+BUILD: [01:0000001100:INFO  ]      common_ti_gpt_systimer.lib(timer.obj)
+BUILD: [01:0000001101:INFO  ]      common_ti_gpt_profiler.lib(profiler.obj)
+BUILD: [01:0000001102:INFO  ]      common_ti_debugserial.lib(debugserial.obj)
+BUILD: [01:0000001103:INFO  ]      common_ti_vfpneon.lib(vfphandler.obj)
+BUILD: [01:0000001104:INFO  ]      common_ti_vfpneon.lib(vfp.obj)
+BUILD: [01:0000001105:INFO  ]      common_ti_intr.lib(map.obj)
+BUILD: [01:0000001106:INFO  ]      common_ti_intr.lib(intr.obj)
+BUILD: [01:0000001107:INFO  ]      common_ti_intr.lib(oem.obj)
+BUILD: [01:0000001108:INFO  ]      common_ti_devicesmap.lib(devicemap.obj)
+BUILD: [01:0000001109:INFO  ]      common_ti_cortexA8_cache.lib(init.obj)
+BUILD: [01:0000001110:INFO  ]      common_ti_cortexA8_cache.lib(attrib.obj)
+BUILD: [01:0000001111:INFO  ]      common_ti_cortexA8_cache.lib(flush.obj)
+BUILD: [01:0000001112:INFO  ]      common_ti_cortexA8_cache.lib(cacheid.obj)
+BUILD: [01:0000001113:INFO  ]      common_ti_cortexA8_cache.lib(cachemode.obj)
+BUILD: [01:0000001114:INFO  ]      common_ti_cortexA8_cache.lib(icache.obj)
+BUILD: [01:0000001115:INFO  ]      common_ti_cortexA8_cache.lib(dcache.obj)
+BUILD: [01:0000001116:INFO  ]      common_ti_cortexA8_cache.lib(tlb.obj)
+BUILD: [01:0000001117:INFO  ]      common_ti_cortexA8_cache.lib(ioctl.obj)
+BUILD: [01:0000001118:INFO  ]      common_ti_cortexA8_cache.lib(global.obj)
+BUILD: [01:0000001119:INFO  ]      common_ti_oali2c.lib(oali2c.obj)
+BUILD: [01:0000001120:INFO  ]      OMAP3530_oalcpuver.lib(oalcpuver.obj)
+BUILD: [01:0000001121:INFO  ]      common_ti_oalpadcfg.lib(oalpadcfg.obj)
+BUILD: [01:0000001122:INFO  ]      common_ti_oal_watchdog.lib(watchdog.obj)
+BUILD: [01:0000001123:INFO  ]      common_ti_ioctl.lib(hwentropy.obj)
+BUILD: [01:0000001124:INFO  ]      common_ti_ioctl.lib(reboot.obj)
+BUILD: [01:0000001125:INFO  ]      common_ti_ioctl.lib(rndismac.obj)
+BUILD: [01:0000001126:INFO  ]      common_ti_ioctl.lib(format.obj)
+BUILD: [01:0000001127:INFO  ]      common_ti_ioctl.lib(ioctlex.obj)
+BUILD: [01:0000001128:INFO  ]      OMAP3530_oal_power.lib(power.obj)
+BUILD: [01:0000001129:INFO  ]      OMAP3530_oal_power.lib(restore.obj)
+BUILD: [01:0000001130:INFO  ]      OMAP3530_soccfg.lib(devicemap.obj)
+BUILD: [01:0000001131:INFO  ]      OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000001132:INFO  ]      OMAP3530_oal_padcfg.lib(soc_padcfg.obj)
+BUILD: [01:0000001133:INFO  ]      OMAP3530_oal_misc.lib(feature.obj)
+BUILD: [01:0000001134:INFO  ]      OMAP3530_oal_misc.lib(getidcode.obj)
+BUILD: [01:0000001135:INFO  ]      OMAP3530_oal_sr.lib(oal_sr.obj)
+BUILD: [01:0000001136:INFO  ]      OMAP3530_oal_prcm.lib(prcm.obj)
+BUILD: [01:0000001137:INFO  ]      OMAP3530_oal_prcm.lib(prcm_clock.obj)
+BUILD: [01:0000001138:INFO  ]      OMAP3530_oal_prcm.lib(prcm_device.obj)
+BUILD: [01:0000001139:INFO  ]      OMAP3530_oal_prcm.lib(prcm_domain.obj)
+BUILD: [01:0000001140:INFO  ]      OMAP3530_oal_prcm.lib(prcm_reset.obj)
+BUILD: [01:0000001141:INFO  ]      OMAP3530_oal_prcm.lib(prcm_volt.obj)
+BUILD: [01:0000001142:INFO  ]      OMAP3530_oal_cpuidle.lib(cpu.obj)
+BUILD: [01:0000001143:INFO  ]      TPS659xx_oal_rtc.lib(rtc.obj)
+BUILD: [01:0000001144:INFO  ]      TPS659xx_oal_gpio.lib(tps659xx_gpio.obj)
+BUILD: [01:0000001145:INFO  ]      triton_oal.lib(twl_access.obj)
+BUILD: [01:0000001146:INFO  ]      common_ti_oal_omap_gpio.lib(omap35xx_gpio.obj)
+BUILD: [01:0000001147:INFO  ]      common_ti_oal_gpiodispatch.lib(gpio_dispatch.obj)
+BUILD: [01:0000001148:INFO  ]      bsp_args.lib(args.obj)
+BUILD: [01:0000001149:INFO  ]      bspcfg.lib(bspcfg.obj)
+BUILD: [01:0000001150:INFO  ]      bsp_padcfg.lib(bsp_padcfg.obj)
+BUILD: [01:0000001151:INFO  ]      oal.lib(init.obj)
+BUILD: [01:0000001152:INFO  ]      oal.lib(intr.obj)
+BUILD: [01:0000001153:INFO  ]      oal.lib(fiq.obj)
+BUILD: [01:0000001154:INFO  ]      oal.lib(ioctl.obj)
+BUILD: [01:0000001155:INFO  ]      oal.lib(power.obj)
+BUILD: [01:0000001156:INFO  ]      oal.lib(oem_latency.obj)
+BUILD: [01:0000001157:INFO  ]      oal.lib(oem_padwakeup.obj)
+BUILD: [01:0000001158:INFO  ]      oal.lib(oem_prcm_device.obj)
+BUILD: [01:0000001159:INFO  ]      oal.lib(oem_pm.obj)
+BUILD: [01:0000001160:INFO  ]      oal.lib(oem_intrex.obj)
+BUILD: [01:0000001161:INFO  ]      oal.lib(oem_prof.obj)
+BUILD: [01:0000001162:INFO  ]      oal.lib(opp_map.obj)
+BUILD: [01:0000001163:INFO  ]      oal.lib(startup.obj)
+BUILD: [01:0000001164:INFO  ]      bsp_stall.lib(stall.obj)
+BUILD: [01:0000001165:INFO  ]      bsp_tps659xx.lib(bsp_tps659xx.obj)
+BUILD: [01:0000001166:INFO  ]      oal_io.lib(data.obj)
+BUILD: [01:0000001167:INFO  ]      oal_io.lib(power.obj)
+BUILD: [01:0000001168:INFO  ]      oal_io.lib(trans.obj)
+BUILD: [01:0000001169:INFO  ]      oal_io.lib(ioctl.obj)
+BUILD: [01:0000001170:INFO  ]      oal_ilt.lib(ilt.obj)
+BUILD: [01:0000001171:INFO  ]      oal_timer.lib(globals.obj)
+BUILD: [01:0000001172:INFO  ]      oal_other.lib(memory.obj)
+BUILD: [01:0000001173:INFO  ]      oal_log.lib(log.obj)
+BUILD: [01:0000001174:INFO  ]      oal_log.lib(debug.obj)
+BUILD: [01:0000001175:INFO  ]      oal_intr_common.lib(ioctl.obj)
+BUILD: [01:0000001176:INFO  ]      oal_power.lib(ioctl.obj)
+BUILD: [01:0000001177:INFO  ]      oal_ioctl.lib(imgupd.obj)
+BUILD: [01:0000001178:INFO  ]      oal_ioctl.lib(ioctl.obj)
+BUILD: [01:0000001179:INFO  ]      oal_ioctl.lib(deviceid.obj)
+BUILD: [01:0000001180:INFO  ]      oal_ioctl.lib(deviceinfo.obj)
+BUILD: [01:0000001181:INFO  ]      oal_ioctl.lib(securekeys.obj)
+BUILD: [01:0000001182:INFO  ]      oal_ioctl.lib(procinfo.obj)
+BUILD: [01:0000001183:INFO  ]      oal_ioctl.lib(uuid.obj)
+BUILD: [01:0000001184:INFO  ]      oal_memory_arm.lib(memory.obj)
+BUILD: [01:0000001185:INFO  ]      oemmain.lib(oemglobal.obj)
+BUILD: [01:0000001186:INFO  ]      nkldr.lib(arminit.obj)
+BUILD: [01:0000001187:INFO  ]      nkldr.lib(armstart.obj)
+BUILD: [01:0000001188:INFO  ]      nkldr.lib(ldrcmn.obj)
+BUILD: [01:0000001189:INFO  ]      nkldr.lib(strings.obj)
+BUILD: [01:0000001190:INFO  ]      nkldr.lib(kdinfo.obj)
+BUILD: [01:0000001191:INFO  ]      fulllibc.lib(raiseexc.obj)
+BUILD: [01:0000001192:INFO  ]      fulllibc.lib(fpraise.obj)
+BUILD: [01:0000001193:WARNN ] fulllibc.lib(fpraise.obj) : warning LNK4099: PDB 'ccrtfpw1.pdb' was not found with 'C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\fulllibc.lib' or at 'C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\ccrtfpw1.pdb'; linking object as if no debug info
+BUILD: [01:0000001194:INFO  ]      fulllibc.lib(r_stou.obj)
+BUILD: [01:0000001195:INFO  ]      fulllibc.lib(r_muls.obj)
+BUILD: [01:0000001196:INFO  ]      fulllibc.lib(r_lts.obj)
+BUILD: [01:0000001197:INFO  ]      fulllibc.lib(r_itos.obj)
+BUILD: [01:0000001198:INFO  ]      fulllibc.lib(r_gts.obj)
+BUILD: [01:0000001199:INFO  ]      fulllibc.lib(r_divs.obj)
+BUILD: [01:0000001200:INFO  ]      fulllibc.lib(r_adds.obj)
+BUILD: [01:0000001201:INFO  ]      fulllibc.lib(normop1.obj)
+BUILD: [01:0000001202:INFO  ]      fulllibc.lib(fpdata.obj)
+BUILD: [01:0000001203:INFO  ]      fulllibc.lib(fnorm2.obj)
+BUILD: [01:0000001204:INFO  ]      fulllibc.lib(error.obj)
+BUILD: [01:0000001205:INFO  ]      fulllibc.lib(check.obj)
+BUILD: [01:0000001206:INFO  ]      fulllibc.lib(tolower.obj)
+BUILD: [01:0000001207:WARNN ] fulllibc.lib(tolower.obj) : warning LNK4099: PDB 'ccrtconv.pdb' was not found with 'C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\fulllibc.lib' or at 'C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\ccrtconv.pdb'; linking object as if no debug info
+BUILD: [01:0000001208:INFO  ]      fulllibc.lib(mdsdiv64.obj)
+BUILD: [01:0000001209:INFO  ]      fulllibc.lib(__udiv.obj)
+BUILD: [01:0000001210:INFO  ]      fulllibc.lib(diverr.obj)
+BUILD: [01:0000001211:WARNN ] fulllibc.lib(diverr.obj) : warning LNK4099: PDB 'ccrthelp.pdb' was not found with 'C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\fulllibc.lib' or at 'C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\ccrthelp.pdb'; linking object as if no debug info
+BUILD: [01:0000001212:INFO  ]      fulllibc.lib(countlead.obj)
+BUILD: [01:0000001213:WARNN ] fulllibc.lib(countlead.obj) : warning LNK4099: PDB 'ccrtmisc.pdb' was not found with 'C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\fulllibc.lib' or at 'C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\ccrtmisc.pdb'; linking object as if no debug info
+BUILD: [01:0000001214:INFO  ]      fulllibc.lib(memcpy.obj)
+BUILD: [01:0000001215:INFO  ]      fulllibc.lib(memset.obj)
+BUILD: [01:0000001216:INFO  ]      fulllibc.lib(mdsstrlen.obj)
+BUILD: [01:0000001217:INFO  ]      fulllibc.lib(wcscmp.obj)
+BUILD: [01:0000001218:WARNN ] fulllibc.lib(wcscmp.obj) : warning LNK4099: PDB 'ccrtstrg.pdb' was not found with 'C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\fulllibc.lib' or at 'C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\ccrtstrg.pdb'; linking object as if no debug info
+BUILD: [01:0000001219:INFO  ]      fulllibc.lib(gshandler.obj)
+BUILD: [01:0000001220:INFO  ]      fulllibc.lib(armsecgs.obj)
+BUILD: [01:0000001221:INFO  ]      nkstub.lib(intrlock.obj)
+BUILD: [01:0000001222:INFO  ]      nkstub.lib(nkstub.obj)
+BUILD: [01:0000001223:INFO  ]      nkstub.lib(kitlstub.obj)
+BUILD: [01:0000001224:INFO  ] Finished pass 2
+BUILD: [01:0000001225:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe
+BUILD: [01:0000001226:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000001227:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000001228:INFO  ] 
+BUILD: [01:0000001229:INFO  ] 
+BUILD: [01:0000001230:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.exe C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\oal.exe
+BUILD: [01:0000001231:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\oal.map
+BUILD: [01:0000001232:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000001233:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oal.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\oal.rel
+BUILD: [00:0000001234:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000001235:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\oalioctl.def because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.dll is missing.
+BUILD: [00:0000001236:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000001237:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\obj\ARMV4I\retail\oalioctl.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.dll is missing.
+BUILD: [00:0000001238:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.dll is missing.
+BUILD: [00:0000001239:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\ directory.
+BUILD: [00:0000001240:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000001241:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000001242:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000001243:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000001244:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL\sources
+BUILD: [01:0000001245:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000001246:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALIOCTL
+BUILD: [01:0000001247:INFO  ] TARGETNAME: oalioctl
+BUILD: [01:0000001248:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000001249:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000001250:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.dll
+BUILD: [01:0000001251:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.dll -dll -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm325.tmp
+BUILD: [01:0000001252:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000001253:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000001254:INFO  ] 
+BUILD: [01:0000001255:INFO  ] -nodefaultlib 
+BUILD: [01:0000001256:INFO  ] -include:DllMain -entry:_DllMainCRTStartup 
+BUILD: [01:0000001257:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.pdb 
+BUILD: [01:0000001258:INFO  ] -pdbaltpath:oalioctl.pdb 
+BUILD: [01:0000001259:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000001260:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000001261:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.map 
+BUILD: [01:0000001262:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.rel 
+BUILD: [01:0000001263:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000001264:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000001265:INFO  ] /base:0x10000000 
+BUILD: [01:0000001266:INFO  ] obj\ARMV4I\retail\oalioctl.obj 
+BUILD: [01:0000001267:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000001268:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\oalioctl.exp 
+BUILD: [01:0000001269:INFO  ] 
+BUILD: [01:0000001270:INFO  ] Starting pass 1
+BUILD: [01:0000001271:INFO  ] 
+BUILD: [01:0000001272:INFO  ] Searching libraries
+BUILD: [01:0000001273:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000001274:INFO  ]       Found SetLastError
+BUILD: [01:0000001275:INFO  ]         Referenced in oalioctl.obj
+BUILD: [01:0000001276:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001277:INFO  ]       Found DisableThreadLibraryCalls
+BUILD: [01:0000001278:INFO  ]         Referenced in oalioctl.obj
+BUILD: [01:0000001279:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001280:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000001281:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000001282:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000001283:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001284:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000001285:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000001286:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001287:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000001288:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000001289:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001290:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000001291:INFO  ]       Found _DllMainCRTStartup
+BUILD: [01:0000001292:INFO  ]         Loaded corelib0.lib(pegdmain.obj)
+BUILD: [01:0000001293:INFO  ]       Found _cexit
+BUILD: [01:0000001294:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000001295:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000001296:INFO  ]       Found _cinit
+BUILD: [01:0000001297:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000001298:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000001299:INFO  ]       Found __security_init_cookie
+BUILD: [01:0000001300:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000001301:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000001302:INFO  ]       Found __onexitend
+BUILD: [01:0000001303:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000001304:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000001305:INFO  ]       Found __xt_z
+BUILD: [01:0000001306:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000001307:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000001308:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000001309:INFO  ]       Found _XcptFilter
+BUILD: [01:0000001310:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000001311:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001312:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000001313:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000001314:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001315:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001316:INFO  ]       Found free
+BUILD: [01:0000001317:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000001318:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001319:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001320:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000001321:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000001322:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001323:INFO  ]       Found malloc
+BUILD: [01:0000001324:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001325:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001326:INFO  ]       Found realloc
+BUILD: [01:0000001327:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001328:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001329:INFO  ]       Found _msize
+BUILD: [01:0000001330:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001331:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001332:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000001333:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000001334:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000001335:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001336:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001337:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000001338:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000001339:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001340:INFO  ]       Found TerminateProcess
+BUILD: [01:0000001341:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000001342:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001343:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000001344:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001345:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001346:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000001347:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001348:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001349:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000001350:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001351:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001352:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000001353:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000001354:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000001355:INFO  ] 
+BUILD: [01:0000001356:INFO  ] Finished searching libraries
+BUILD: [01:0000001357:INFO  ] 
+BUILD: [01:0000001358:INFO  ] Finished pass 1
+BUILD: [01:0000001359:INFO  ] 
+BUILD: [01:0000001360:INFO  ]     Discarded __imp_malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001361:INFO  ]     Discarded __imp_realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001362:INFO  ]     Discarded __imp__msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001363:INFO  ]     Discarded __imp_EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001364:INFO  ]     Discarded __imp_InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001365:INFO  ]     Discarded __imp_InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001366:INFO  ]     Discarded __imp_LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001367:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000001368:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000001369:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000001370:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000001371:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000001372:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000001373:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000001374:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000001375:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000001376:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000001377:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000001378:INFO  ]     Discarded exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000001379:INFO  ]     Discarded _exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000001380:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000001381:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000001382:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000001383:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000001384:INFO  ]     Discarded _onexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000001385:INFO  ]     Discarded atexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000001386:INFO  ]     Discarded malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001387:INFO  ]     Discarded realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001388:INFO  ]     Discarded _msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001389:INFO  ]     Discarded EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001390:INFO  ]     Discarded InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001391:INFO  ]     Discarded InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001392:INFO  ]     Discarded LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001393:INFO  ]     Discarded '.xdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000001394:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001395:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001396:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001397:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001398:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001399:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001400:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000001401:INFO  ] Starting pass 2
+BUILD: [01:0000001402:INFO  ]      oalioctl.exp
+BUILD: [01:0000001403:INFO  ]      oalioctl.obj
+BUILD: [01:0000001404:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001405:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001406:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001407:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001408:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001409:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001410:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001411:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001412:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001413:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001414:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001415:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000001416:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000001417:INFO  ]      corelib0.lib(pegdmain.obj)
+BUILD: [01:0000001418:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000001419:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000001420:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000001421:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000001422:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001423:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001424:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001425:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001426:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001427:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001428:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000001429:INFO  ] Finished pass 2
+BUILD: [01:0000001430:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.dll
+BUILD: [01:0000001431:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000001432:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000001433:INFO  ] 
+BUILD: [01:0000001434:INFO  ] 
+BUILD: [01:0000001435:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\oalioctl.map
+BUILD: [01:0000001436:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000001437:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\oalioctl.rel
+BUILD: [01:0000001438:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\oalioctl.dll C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\oalioctl.dll
+BUILD: [00:0000001439:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000001440:INFO  ] Done.
+BUILD: [00:0000001441:PROGC ] Done.
+BUILD: [00:0000001442:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000001443:PROGC ] Midl                       0         0       0
+BUILD: [00:0000001444:PROGC ] Message                    0         0       0
+BUILD: [00:0000001445:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000001446:PROGC ] Resource                   0         0       0
+BUILD: [00:0000001447:PROGC ] MASM                       0         0       0
+BUILD: [00:0000001448:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000001449:PROGC ] ARMASM                     1         1       0
+BUILD: [00:0000001450:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000001451:PROGC ] C++                        1         0       0
+BUILD: [00:0000001452:PROGC ] C                         12         0       0
+BUILD: [00:0000001453:PROGC ] Static Libraries           1         0       0
+BUILD: [00:0000001454:PROGC ] Exe's                      1         5       0
+BUILD: [00:0000001455:PROGC ] Dll's                      2         0       0
+BUILD: [00:0000001456:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000001457:PROGC ] Resx                       0         0       0
+BUILD: [00:0000001458:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000001459:PROGC ] Other                      0         0       0
+BUILD: [00:0000001460:PROGC ] 
+BUILD: [00:0000001461:PROGC ] Total                     18         6       0
+BUILD: [00:0000001462:PROGC ] 
+BUILD: [00:0000001463:PROGC ] 6 Warnings,  0 Errors
+BUILD: [00:0000001464:PROGC ] GetSystemTimes (seconds): Idle: 55    Kernel: 62    User: 10   
+BUILD: [00:0000001465:PROGC ] Elapsed  time  (seconds): 18   

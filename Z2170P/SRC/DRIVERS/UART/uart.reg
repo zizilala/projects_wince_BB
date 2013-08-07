@@ -1,0 +1,95 @@
+; All rights reserved ADENEO EMBEDDED 2010
+;-- UART Driver -----------------------------------------------------------------
+IF BSP_OMAP_UART1
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\UART1]
+	"Prefix"="COM"
+	"Dll"="omap_uart.dll"
+	"DeviceArrayIndex"=dword:1
+	"Index"=dword:1
+	"Order"=dword:9
+	"MemBase"=multi_sz:"4806A000"
+	"MemLen"=multi_sz:"00000400"
+	"PowerFlags"=dword:00000103		; send pre/post device state changes
+	"RxBuffer" = dword:2000
+	;"TxDmaRequest"=dword:31		; S_DMA_48 TX DMA Request Line, use ffffffff to disable TX DMA
+	"TxDmaRequest"=dword:ffffffff	; TxDma has issues after RX of break, disabled with ffffffff
+	"TxDmaBufferSize"=dword:2000	; Size of DMA transmit buffer
+	"RxDmaRequest"=dword:32			; S_DMA_49 RX DMA Request Line, use ffffffff to disable RX DMA
+	"RxDmaBufferSize"=dword:2000	; Size of DMA receive buffer
+	"RtsCtsEnable"=dword:0			; 1=enable RTS/CTS handshake support, 0=disable
+	"HWMode"=dword:1				; Use hardware auto RTS/CTS
+	; PMCLASS_PMEXT_GUID, CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID
+	"IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}","{A32942B7-920C-486b-B0E6-92A702A99B35}"
+	        
+ENDIF
+
+IF BSP_OMAP_UART2
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\UART2]
+	"Prefix"="COM"
+	"Dll"="omap_uart.dll"
+	"DeviceArrayIndex"=dword:2
+	"Index"=dword:2
+	"Order"=dword:9
+	"MemBase"=multi_sz:"4806C000"
+	"MemLen"=multi_sz:"00000400"	
+	"PowerFlags"=dword:00000103         ; send pre/post device state changes
+	"RxBuffer" = dword:2000
+	;"TxDmaRequest"=dword:33                       ; S_DMA_50 TX DMA Request Line, use ffffffff to disable TX DMA
+	"TxDmaRequest"=dword:ffffffff                 ; TxDma has issues after RX of break, disabled with ffffffff
+	"TxDmaBufferSize"=dword:2000                  ; Size of DMA transmit buffer
+	"RxDmaRequest"=dword:34                       ; S_DMA_51 RX DMA Request Line, use ffffffff to disable RX DMA
+	"RxDmaBufferSize"=dword:2000                  ; Size of DMA receive buffer
+	"RtsCtsEnable"=dword:0                        ; 1=enable RTS/CTS handshake support, 0=disable
+	"HWMode"=dword:1                              ; Use hardware auto RTS/CTS
+	; PMCLASS_PMEXT_GUID, CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID
+	"IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}",
+					  "{A32942B7-920C-486b-B0E6-92A702A99B35}"
+ENDIF
+
+IF BSP_OMAP_UART3
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\UART3]
+	"Prefix"="COM"
+	"Dll"="omap_uart.dll"
+	"DeviceArrayIndex"=dword:3
+	"Index"=dword:3
+	"Order"=dword:9
+	"MemBase"=multi_sz:"49020000"
+	"MemLen"=multi_sz:"00000400"		
+	"PowerFlags"=dword:00000103         ; send pre/post device state changes
+	"RxBuffer" = dword:2000
+	;"TxDmaRequest"=dword:35                       ; S_DMA_52 TX DMA Request Line, use ffffffff to disable TX DMA
+	"TxDmaRequest"=dword:ffffffff                 ; TxDma has issues after RX of break, disabled with ffffffff
+	"TxDmaBufferSize"=dword:2000                  ; Size of DMA transmit buffer
+	"RxDmaRequest"=dword:36                       ; S_DMA_53 RX DMA Request Line, use ffffffff to disable RX DMA
+	"RxDmaBufferSize"=dword:2000                  ; Size of DMA receive buffer
+	"RtsCtsEnable"=dword:0                        ; 1=enable RTS/CTS handshake support, 0=disable
+	"HWMode"=dword:1                              ; Use hardware auto RTS/CTS
+	; PMCLASS_PMEXT_GUID, CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID
+	"IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}",
+					  "{A32942B7-920C-486b-B0E6-92A702A99B35}"
+ENDIF
+
+IF BSP_OMAP_UART4
+; The 37xx has 4 UARTs, but the EVM does not have connections for UART4
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\UART4]
+	"Prefix"="COM"
+	"Dll"="omap_uart.dll"
+	"DeviceArrayIndex"=dword:4
+	"Index"=dword:4
+	"Order"=dword:9
+	"MemBase"=multi_sz:"49022000"
+	"MemLen"=multi_sz:"00000400"			
+	"PowerFlags"=dword:00000103         ; send pre/post device state changes
+	"RxBuffer" = dword:2000
+    ;"TxDmaRequest"=dword:50                       ; S_DMA_80 TX DMA Request Line, use ffffffff to disable TX DMA
+	"TxDmaRequest"=dword:ffffffff                 ; TxDma has issues after RX of break, disabled with ffffffff
+	"TxDmaBufferSize"=dword:2000                  ; Size of DMA transmit buffer
+	"RxDmaRequest"=dword:51                        ; S_DMA_81 RX DMA Request Line, use ffffffff to disable RX DMA
+	"RxDmaBufferSize"=dword:2000                  ; Size of DMA receive buffer
+	"RtsCtsEnable"=dword:0                        ; 1=enable RTS/CTS handshake support, 0=disable
+	"HWMode"=dword:1                              ; Use hardware auto RTS/CTS
+	; PMCLASS_PMEXT_GUID, CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID
+	"IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}",
+					  "{A32942B7-920C-486b-B0E6-92A702A99B35}"
+ENDIF
+

@@ -1,0 +1,147 @@
+ headset
+
+ Timestamp is 51ecc70c (Mon Jul 22 13:45:48 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000108H .rdata                  CODE
+ 0001:00000128 00000024H .rdata$debug            CODE
+ 0001:0000014c 0000090cH .text                   CODE
+ 0001:00000a58 00000014H .xdata                  CODE
+ 0001:00000a6c 00000028H .idata$2                CODE
+ 0001:00000a94 00000014H .idata$3                CODE
+ 0001:00000aa8 0000008cH .idata$4                CODE
+ 0001:00000b34 00000016H .idata$6                CODE
+ 0001:00000b50 0000009bH .edata                  CODE
+ 0002:00000000 0000008cH .idata$5                DATA
+ 0002:00000090 0000044cH .data                   DATA
+ 0002:000004dc 00000014H .bss                    DATA
+ 0003:00000000 00000080H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BK@BADOLFOK@?$AAH?$AAd?$AAs?$AAt?$AAM?$AAu?$AAt?$AAe?$AAG?$AAp?$AAi?$AAo?$AA?$AA@ 1000103c     headset.obj
+ 0001:00000058       ??_C@_1BI@FNMBFBFA@?$AAH?$AAd?$AAs?$AAt?$AAD?$AAe?$AAt?$AAG?$AAp?$AAi?$AAo?$AA?$AA@ 10001058     headset.obj
+ 0001:00000070       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001070     headset.obj
+ 0001:00000088       DEVICE_IFC_TWL_GUID        10001088     headset.obj
+ 0001:000000e0       ??_C@_1BA@LDBHIHGH@?$AAH?$AAe?$AAa?$AAd?$AAs?$AAe?$AAt?$AA?$AA@ 100010e0     headset.obj
+ 0001:000000f0       ??_C@_1CM@EMKLBGBG@?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?2?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?2?$AAH?$AAa?$AAr?$AAd?$AAw?$AAa?$AAr?$AAe?$AA?$AA@ 100010f0     headset.obj
+ 0001:0000011c       ??_C@_1M@HOEINAAB@?$AAW?$AAA?$AAV?$AA1?$AA?3?$AA?$AA@ 1000111c     headset.obj
+ 0001:0000014c       ?HDS_Deinit@@YAHK@Z        1000114c f   headset.obj
+ 0001:0000021c       ?HDS_Open@@YAKKKK@Z        1000121c f   headset.obj
+ 0001:00000220       ?HDS_Close@@YAHK@Z         10001220 f   headset.obj
+ 0001:00000228       ?HDS_IOControl@@YAHKKPAEK0KPAK@Z 10001228 f   headset.obj
+ 0001:00000230       ?SetHeadsetHardwareState@@YAXH@Z 10001230 f   headset.obj
+ 0001:000002cc       ?HDS_IntrThread@@YAKPAX@Z  100012cc f   headset.obj
+ 0001:0000038c       DllMain                    1000138c f   headset.obj
+ 0001:000003bc       ?HDS_Init@@YAKPBGPBX@Z     100013bc f   headset.obj
+ 0001:00000538       GPIOClose                  10001538 f   ceddk:CEDDK.dll
+ 0001:00000548       GPIOInterruptDisable       10001548 f   ceddk:CEDDK.dll
+ 0001:00000558       GPIOInterruptMask          10001558 f   ceddk:CEDDK.dll
+ 0001:00000568       GPIOGetBit                 10001568 f   ceddk:CEDDK.dll
+ 0001:00000578       GPIOInterruptInitialize    10001578 f   ceddk:CEDDK.dll
+ 0001:00000588       GPIOSetBit                 10001588 f   ceddk:CEDDK.dll
+ 0001:00000598       GPIOSetMode                10001598 f   ceddk:CEDDK.dll
+ 0001:000005a8       GPIOOpen                   100015a8 f   ceddk:CEDDK.dll
+ 0001:000005b8       GetDeviceRegistryParams    100015b8 f   ceddk:CEDDK.dll
+ 0001:000005c8       EventModify                100015c8 f   coredll:COREDLL.dll
+ 0001:000005d8       LocalFree                  100015d8 f   coredll:COREDLL.dll
+ 0001:000005e8       DeleteCriticalSection      100015e8 f   coredll:COREDLL.dll
+ 0001:000005f8       CloseHandle                100015f8 f   coredll:COREDLL.dll
+ 0001:00000608       WaitForSingleObject        10001608 f   coredll:COREDLL.dll
+ 0001:00000618       RegCloseKey                10001618 f   coredll:COREDLL.dll
+ 0001:00000628       RegSetValueExW             10001628 f   coredll:COREDLL.dll
+ 0001:00000638       RegCreateKeyExW            10001638 f   coredll:COREDLL.dll
+ 0001:00000648       DeviceIoControl            10001648 f   coredll:COREDLL.dll
+ 0001:00000658       DisableThreadLibraryCalls  10001658 f   coredll:COREDLL.dll
+ 0001:00000668       RegisterDbgZones           10001668 f   coredll:COREDLL.dll
+ 0001:00000678       CeSetThreadPriority        10001678 f   coredll:COREDLL.dll
+ 0001:00000688       CreateThread               10001688 f   coredll:COREDLL.dll
+ 0001:00000698       CreateEventW               10001698 f   coredll:COREDLL.dll
+ 0001:000006a8       CreateFileW                100016a8 f   coredll:COREDLL.dll
+ 0001:000006b8       InitializeCriticalSection  100016b8 f   coredll:COREDLL.dll
+ 0001:000006c8       LocalAlloc                 100016c8 f   coredll:COREDLL.dll
+ 0001:000007dc       _DllMainCRTStartup         100017dc f   corelib0:pegdmain.obj
+ 0001:00000908       _cexit                     10001908 f   corelib0:cexit.obj
+ 0001:00000924       _initterm                  10001924 f   corelib0:crt0dat.obj
+ 0001:00000958       _cinit                     10001958 f   corelib0:crt0dat.obj
+ 0001:0000098c       __security_init_cookie     1000198c f   corelib0:seccinit.obj
+ 0001:000009e8       memset                     100019e8 f   corelib1:COREDLL.dll
+ 0001:000009f8       _XcptFilter                100019f8 f   corelib1:COREDLL.dll
+ 0001:00000a08       __C_specific_handler       10001a08 f   corelib1:COREDLL.dll
+ 0001:00000a18       free                       10001a18 f   corelib1:COREDLL.dll
+ 0001:00000a28       __security_gen_cookie2     10001a28 f   corelib1:COREDLL.dll
+ 0001:00000a38       InterlockedExchange        10001a38 f   coredll:COREDLL.dll
+ 0001:00000a48       TerminateProcess           10001a48 f   coredll:COREDLL.dll
+ 0001:00000a6c       __IMPORT_DESCRIPTOR_CEDDK  10001a6c     ceddk:CEDDK.dll
+ 0001:00000a80       __IMPORT_DESCRIPTOR_COREDLL 10001a80     coredll:COREDLL.dll
+ 0001:00000a94       __NULL_IMPORT_DESCRIPTOR   10001a94     ceddk:CEDDK.dll
+ 0002:00000000       __imp_GPIOClose            10002000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_GPIOInterruptDisable 10002004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_GPIOInterruptMask    10002008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_GPIOGetBit           1000200c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_GPIOInterruptInitialize 10002010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_GPIOSetBit           10002014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_GPIOSetMode          10002018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_GPIOOpen             1000201c     ceddk:CEDDK.dll
+ 0002:00000020       __imp_GetDeviceRegistryParams 10002020     ceddk:CEDDK.dll
+ 0002:00000024       \177CEDDK_NULL_THUNK_DATA  10002024     ceddk:CEDDK.dll
+ 0002:00000028       __imp_EventModify          10002028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_LocalFree            1000202c     coredll:COREDLL.dll
+ 0002:00000030       __imp_DeleteCriticalSection 10002030     coredll:COREDLL.dll
+ 0002:00000034       __imp_CloseHandle          10002034     coredll:COREDLL.dll
+ 0002:00000038       __imp_WaitForSingleObject  10002038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_RegCloseKey          1000203c     coredll:COREDLL.dll
+ 0002:00000040       __imp_RegSetValueExW       10002040     coredll:COREDLL.dll
+ 0002:00000044       __imp_RegCreateKeyExW      10002044     coredll:COREDLL.dll
+ 0002:00000048       __imp_DeviceIoControl      10002048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_DisableThreadLibraryCalls 1000204c     coredll:COREDLL.dll
+ 0002:00000050       __imp_RegisterDbgZones     10002050     coredll:COREDLL.dll
+ 0002:00000054       __imp_CeSetThreadPriority  10002054     coredll:COREDLL.dll
+ 0002:00000058       __imp_CreateThread         10002058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_CreateEventW         1000205c     coredll:COREDLL.dll
+ 0002:00000060       __imp_CreateFileW          10002060     coredll:COREDLL.dll
+ 0002:00000064       __imp_InitializeCriticalSection 10002064     coredll:COREDLL.dll
+ 0002:00000068       __imp_LocalAlloc           10002068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_memset               1000206c     corelib1:COREDLL.dll
+ 0002:00000070       __imp__XcptFilter          10002070     corelib1:COREDLL.dll
+ 0002:00000074       __imp___C_specific_handler 10002074     corelib1:COREDLL.dll
+ 0002:00000078       __imp_free                 10002078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp___security_gen_cookie2 1000207c     corelib1:COREDLL.dll
+ 0002:00000080       __imp_InterlockedExchange  10002080     coredll:COREDLL.dll
+ 0002:00000084       __imp_TerminateProcess     10002084     coredll:COREDLL.dll
+ 0002:00000088       \177COREDLL_NULL_THUNK_DATA 10002088     coredll:COREDLL.dll
+ 0002:00000090       dpCurSettings              10002090     headset.obj
+ 0002:000004d4       __security_cookie          100024d4     corelib0:seccinit.obj
+ 0002:000004d8       __security_cookie_complement 100024d8     corelib0:seccinit.obj
+ 0002:000004dc       _exitflag                  100024dc     corelib0:cexit.obj
+ 0002:000004e0       __onexitend                100024e0     <common>
+ 0002:000004e4       __onexitbegin              100024e4     <common>
+ 0002:000004e8       g_pcsExit                  100024e8     <common>
+ 0002:000004ec       _pRawDllMain               100024ec     <common>
+
+ entry point at        0001:000007dc
+
+ Static symbols
+
+ 0001:000006e0       _DllMainCRTStartupHelper   100016e0 f   corelib0:pegdmain.obj
+ 0001:0000080c       doexit                     1000180c f   corelib0:cexit.obj

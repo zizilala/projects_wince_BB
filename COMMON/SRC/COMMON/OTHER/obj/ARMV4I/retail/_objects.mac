@@ -1,0 +1,6 @@
+OBJECTS=\
+    obj\ARMV4I\retail\clock.obj\
+    obj\ARMV4I\retail\parallel.obj\
+    obj\ARMV4I\retail\debug.obj\
+    obj\ARMV4I\retail\memory.obj
+

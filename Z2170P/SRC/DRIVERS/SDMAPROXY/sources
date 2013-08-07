@@ -1,0 +1,15 @@
+TARGETNAME=SdmaProxy
+RELEASETYPE=PLATFORM
+TARGETTYPE=DYNLINK 
+DEFFILE=SdmaProxy.def
+DLLENTRY=DllEntry
+  
+TARGETLIBS= \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib \
+    $(_SYSGENSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib
+
+SOURCES=\
+    sdmaproxy.cpp \
+    sdmapx.cpp \
+    sdmapxclient.cpp
+   

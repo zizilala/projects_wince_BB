@@ -1,0 +1,7 @@
+OBJECTS=\
+    obj\ARMV4I\retail\debug.obj\
+    obj\ARMV4I\retail\mcbsp.obj\
+    obj\ARMV4I\retail\mcbspprofile.obj\
+    obj\ARMV4I\retail\mcbspconfig.obj\
+    obj\ARMV4I\retail\dataport.obj
+

@@ -1,0 +1,60 @@
+# All rights reserved ADENEO EMBEDDED 2010
+!if 0
+;================================================================================
+;             Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+; Use of this software is controlled by the terms and conditions found
+; in the license agreement under which this software has been supplied.
+;
+;================================================================================
+!endif
+
+TARGETNAME=xldrnor
+TARGETTYPE=PROGRAM
+RELEASETYPE=PLATFORM
+EXEENTRY=StartUp
+SYNCHRONIZE_DRAIN=1
+
+# XLDR has severe size constraints that can only be met by optimized code.
+# This requires that we link explicitly to retail libraries built in the
+# BSP as well as forcing optimizations in the XLDR code itself.  This 
+# could result in confusion if other BSP libraries are out of date, so 
+# we will not build the xldr at all in debug environment.
+!IF "$(WINCEDEBUG)" == "debug"
+SKIPBUILD=1
+!ENDIF
+
+# Disable the generation of unwanted and unnecessary checking code in boot loader
+STACK_CHECK_DISABLE=1
+
+LDEFINES=/DEBUG /DEBUGTYPE:CV /FIXED:NO
+WINCETARGETFILES=xldr_romimage_raw
+
+CDEFINES=$(CDEFINES) -DFMD_NOR
+
+!IF "$(FIX_DDR_STALL_ERRATA)" == "1"
+CDEFINES=$(CDEFINES) -DFIX_DDR_STALL_ERRATA=1
+!ENDIF
+
+SOURCES=\
+    ..\main.c \
+    ..\platform.c
+
+ARM_SOURCES=\
+    ..\startup.s \
+    ..\jumpto.s
+
+TARGETLIBS= \
+    $(_COMMONOAKLIB)\$(_CPUDEPPATH)\gsnull.lib                                  \
+    $(_COMMONOAKLIB)\$(_CPUDEPPATH)\fulllibc.lib                                \
+    $(_TILIBS)\$(TI_COMMON)_oal_alloc.lib                                       \
+    $(_TILIBS)\$(TI_COMMON)_debugserial.lib                                     \
+    $(_TILIBS)\$(TI_COMMON)_oali2c.lib                                          \
+    $(_TILIBS)\$(TI_COMMON)_devicesmap.lib                                      \
+    $(_TILIBS)\$(_SOC)_soccfg.lib                                               \
+    $(_TILIBS)\$(_SOC)_oal_padcfg.lib											\
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\bspcfg.lib                                 \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\bsp_bootstubs.lib                          \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\bsp_stall.lib                              \
+    

@@ -1,0 +1,621 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\
+BUILD: [00:0000000008:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\
+BUILD: [00:0000000009:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000010:INFO  ] Done.
+BUILD: [00:0000000011:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\main.cpp because target: obj\ARMV4I\retail\main.obj is missing.
+BUILD: [00:0000000012:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\ directory.
+BUILD: [00:0000000013:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000014:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000015:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000016:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000017:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\sources
+BUILD: [01:0000000018:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000019:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE
+BUILD: [01:0000000020:INFO  ] TARGETNAME: bsppnl
+BUILD: [01:0000000021:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000022:PROGC ] Compiling .\main.cpp
+BUILD: [01:0000000023:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\main.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\PUBLIC\SHELLSDK\SDK\INC -IC:\WINCE600\PUBLIC\IE\SDK\INC -IC:\WINCE600\PUBLIC\common\oak\inc -IC:\WINCE600\PUBLIC\common\ddk\inc -IC:\WINCE600\PUBLIC\common\sdk\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\main.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\.\main.cpp
+BUILD: [01:0000000024:INFO  ] main.cpp
+BUILD: [00:0000000025:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\bsppnl.rc because target: obj\ARMV4I\retail\bsppnl.res is missing.
+BUILD: [00:0000000026:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\bsppnl.cpp because target: obj\ARMV4I\retail\bsppnl.obj is missing.
+BUILD: [00:0000000027:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\ directory.
+BUILD: [00:0000000028:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000029:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000030:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000031:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000032:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\sources
+BUILD: [01:0000000033:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000034:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL
+BUILD: [01:0000000035:INFO  ] TARGETNAME: bsppnl
+BUILD: [01:0000000036:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000037:PROGC ] Resource Compiling .\bsppnl.rc
+BUILD: [01:0000000038:INFO  ] 	rc -r -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -DWINCEINTERNAL  -DUNDER_CE=600  -DINTERNATIONAL -l 409 -c 1252  -foobj\ARMV4I\retail\bsppnl.res C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\.\bsppnl.rc
+BUILD: [01:0000000039:INFO  ] Microsoft (R) Windows (R) Resource Compiler Version 6.0.5478.0
+BUILD: [01:0000000040:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000041:INFO  ] 
+BUILD: [01:0000000042:PROGC ] Compiling .\bsppnl.cpp
+BUILD: [01:0000000043:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\bsppnl.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\bsppnl.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\.\bsppnl.cpp
+BUILD: [01:0000000044:INFO  ] bsppnl.cpp
+BUILD: [00:0000000045:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\obj\ARMV4I\retail\bsppnl.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsppnl.lib is missing.
+BUILD: [00:0000000046:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsppnl.lib is missing.
+BUILD: [00:0000000047:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\ directory.
+BUILD: [00:0000000048:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000049:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000050:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000051:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000052:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\sources
+BUILD: [01:0000000053:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000054:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL
+BUILD: [01:0000000055:INFO  ] TARGETNAME: bsppnl
+BUILD: [01:0000000056:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000057:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsppnl.lib
+BUILD: [01:0000000058:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsppnl.lib -def:bsppnl.def -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm20A0.tmp
+BUILD: [01:0000000059:INFO  ] Microsoft (R) Library Manager Version 8.00.50727.42
+BUILD: [01:0000000060:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000061:INFO  ] 
+BUILD: [01:0000000062:INFO  ] -nodefaultlib 
+BUILD: [01:0000000063:INFO  ] -ignore:4001 
+BUILD: [01:0000000064:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000065:INFO  ] obj\ARMV4I\retail\bsppnl.res obj\ARMV4I\retail\bsppnl.obj 
+BUILD: [01:0000000066:INFO  ]    Creating library C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsppnl.lib and object C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsppnl.exp
+BUILD: [00:0000000067:INFO  ] Will Build C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.exe is missing.
+BUILD: [00:0000000068:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\obj\ARMV4I\retail\main.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.exe is missing.
+BUILD: [00:0000000069:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.exe is missing.
+BUILD: [00:0000000070:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\ directory.
+BUILD: [00:0000000071:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000072:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000073:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000074:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000075:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE\sources
+BUILD: [01:0000000076:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000077:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\EXE
+BUILD: [01:0000000078:INFO  ] TARGETNAME: bsppnl
+BUILD: [01:0000000079:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000080:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000081:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.exe
+BUILD: [01:0000000082:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.exe -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm20A2.tmp
+BUILD: [01:0000000083:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000084:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000085:INFO  ] 
+BUILD: [01:0000000086:INFO  ] -nodefaultlib 
+BUILD: [01:0000000087:INFO  ] -entry:WinMainCRTStartup 
+BUILD: [01:0000000088:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.pdb 
+BUILD: [01:0000000089:INFO  ] -pdbaltpath:bsppnl.pdb 
+BUILD: [01:0000000090:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000091:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000092:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.map 
+BUILD: [01:0000000093:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.rel 
+BUILD: [01:0000000094:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000095:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000096:INFO  ] -base:0x00010000 
+BUILD: [01:0000000097:INFO  ] obj\ARMV4I\retail\main.obj 
+BUILD: [01:0000000098:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000099:INFO  ] 
+BUILD: [01:0000000100:INFO  ] Starting pass 1
+BUILD: [01:0000000101:INFO  ] 
+BUILD: [01:0000000102:INFO  ] Searching libraries
+BUILD: [01:0000000103:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000104:INFO  ]       Found PostQuitMessage
+BUILD: [01:0000000105:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000106:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000107:INFO  ]       Found DestroyWindow
+BUILD: [01:0000000108:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000109:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000110:INFO  ]       Found DefWindowProcW
+BUILD: [01:0000000111:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000112:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000113:INFO  ]       Found GetMessageW
+BUILD: [01:0000000114:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000115:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000116:INFO  ]       Found DispatchMessageW
+BUILD: [01:0000000117:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000118:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000119:INFO  ]       Found TranslateMessage
+BUILD: [01:0000000120:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000121:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000122:INFO  ]       Found UpdateWindow
+BUILD: [01:0000000123:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000124:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000125:INFO  ]       Found ShowWindow
+BUILD: [01:0000000126:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000127:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000128:INFO  ]       Found CreateWindowExW
+BUILD: [01:0000000129:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000130:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000131:INFO  ]       Found KernelIoControl
+BUILD: [01:0000000132:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000133:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000134:INFO  ]       Found GetSystemMetrics
+BUILD: [01:0000000135:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000136:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000137:INFO  ]       Found MessageBoxW
+BUILD: [01:0000000138:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000139:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000140:INFO  ]       Found RegisterClassW
+BUILD: [01:0000000141:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000142:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000143:INFO  ]       Found GetStockObject
+BUILD: [01:0000000144:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000145:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000146:INFO  ]       Found LoadCursorW
+BUILD: [01:0000000147:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000148:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000149:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000150:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000151:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000152:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000153:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000154:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000155:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000156:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000157:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000158:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000159:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000160:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000161:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000162:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000163:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000164:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000165:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000166:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000167:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000168:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000169:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000170:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000171:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000172:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000173:INFO  ]       Found WinMainCRTStartup
+BUILD: [01:0000000174:INFO  ]         Loaded corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000175:INFO  ]       Found __GSHandlerCheck
+BUILD: [01:0000000176:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000177:INFO  ]         Loaded corelib0.lib(gshandler.obj)
+BUILD: [01:0000000178:INFO  ]       Found __security_cookie
+BUILD: [01:0000000179:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000180:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000000181:INFO  ]       Found __security_check_cookie
+BUILD: [01:0000000182:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000183:INFO  ]         Referenced in corelib0.lib(gshandler.obj)
+BUILD: [01:0000000184:INFO  ]         Loaded corelib0.lib(armsecgs.obj)
+BUILD: [01:0000000185:INFO  ]       Found _exit
+BUILD: [01:0000000186:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000187:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000000188:INFO  ]       Found _cinit
+BUILD: [01:0000000189:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000190:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000191:INFO  ]       Found __onexitend
+BUILD: [01:0000000192:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000193:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000000194:INFO  ]       Found __xt_z
+BUILD: [01:0000000195:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000196:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000000197:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000198:INFO  ]       Found _ltow
+BUILD: [01:0000000199:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000200:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000201:INFO  ]       Found wcscat
+BUILD: [01:0000000202:INFO  ]         Referenced in main.obj
+BUILD: [01:0000000203:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000204:INFO  ]       Found _XcptFilter
+BUILD: [01:0000000205:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000206:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000207:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000000208:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000209:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000210:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000211:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000000212:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000000213:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000214:INFO  ]       Found __report_gsfailure
+BUILD: [01:0000000215:INFO  ]         Referenced in corelib0.lib(armsecgs.obj)
+BUILD: [01:0000000216:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000217:INFO  ]       Found free
+BUILD: [01:0000000218:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000219:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000220:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000221:INFO  ]       Found malloc
+BUILD: [01:0000000222:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000223:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000224:INFO  ]       Found realloc
+BUILD: [01:0000000225:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000226:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000227:INFO  ]       Found _msize
+BUILD: [01:0000000228:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000229:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000230:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000231:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000000232:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000233:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000234:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000235:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000000236:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000237:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000238:INFO  ]       Found TerminateProcess
+BUILD: [01:0000000239:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000240:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000241:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000000242:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000243:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000244:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000000245:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000246:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000247:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000000248:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000249:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000250:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000000251:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000252:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000253:INFO  ] 
+BUILD: [01:0000000254:INFO  ] Finished searching libraries
+BUILD: [01:0000000255:INFO  ] 
+BUILD: [01:0000000256:INFO  ] Finished pass 1
+BUILD: [01:0000000257:INFO  ] 
+BUILD: [01:0000000258:INFO  ]     Discarded __imp_malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000259:INFO  ]     Discarded __imp_realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000260:INFO  ]     Discarded __imp__msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000261:INFO  ]     Discarded __imp_EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000262:INFO  ]     Discarded __imp_InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000263:INFO  ]     Discarded __imp_InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000264:INFO  ]     Discarded __imp_LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000265:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000266:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000267:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000268:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000269:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000270:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000271:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000272:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000273:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000274:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000000275:INFO  ]     Discarded _cexit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000276:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000277:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000278:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000279:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000000280:INFO  ]     Discarded _onexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000281:INFO  ]     Discarded atexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000282:INFO  ]     Discarded malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000283:INFO  ]     Discarded realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000284:INFO  ]     Discarded _msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000285:INFO  ]     Discarded EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000286:INFO  ]     Discarded InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000287:INFO  ]     Discarded InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000288:INFO  ]     Discarded LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000289:INFO  ]     Discarded '.xdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000290:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000291:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000292:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000293:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000294:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000295:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000296:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000297:INFO  ] Starting pass 2
+BUILD: [01:0000000298:INFO  ]      main.obj
+BUILD: [01:0000000299:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000300:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000301:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000302:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000303:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000304:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000305:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000306:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000307:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000308:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000309:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000310:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000311:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000312:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000313:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000314:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000315:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000316:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000317:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000318:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000319:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000320:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000321:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000322:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000323:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000324:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000000325:INFO  ]      corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000326:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000000327:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000000328:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000329:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000000330:INFO  ]      corelib0.lib(gshandler.obj)
+BUILD: [01:0000000331:INFO  ]      corelib0.lib(armsecgs.obj)
+BUILD: [01:0000000332:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000333:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000334:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000335:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000336:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000337:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000338:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000339:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000340:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000341:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000342:INFO  ] Finished pass 2
+BUILD: [01:0000000343:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.exe
+BUILD: [01:0000000344:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000345:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000346:INFO  ] 
+BUILD: [01:0000000347:INFO  ] 
+BUILD: [01:0000000348:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.exe C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\bsppnl.exe
+BUILD: [01:0000000349:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\bsppnl.map
+BUILD: [01:0000000350:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000351:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\bsppnl.rel
+BUILD: [00:0000000352:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\bsppnl.def because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll is missing.
+BUILD: [00:0000000353:INFO  ] Will Build C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\commctrl.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll is missing.
+BUILD: [00:0000000354:INFO  ] Will Build C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll is missing.
+BUILD: [00:0000000355:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\obj\ARMV4I\retail\bsppnl.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll is missing.
+BUILD: [00:0000000356:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll is missing.
+BUILD: [00:0000000357:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\ directory.
+BUILD: [00:0000000358:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1MAKEDLL=1'
+BUILD: [01:0000000359:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000360:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000361:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000362:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL\sources
+BUILD: [01:0000000363:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000364:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\BSPVERSION\PNL
+BUILD: [01:0000000365:INFO  ] TARGETNAME: bsppnl
+BUILD: [01:0000000366:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000367:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000368:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll
+BUILD: [01:0000000369:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll -dll -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm20A4.tmp
+BUILD: [01:0000000370:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000371:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000372:INFO  ] 
+BUILD: [01:0000000373:INFO  ] -nodefaultlib 
+BUILD: [01:0000000374:INFO  ] -entry:_DllEntryCRTStartup 
+BUILD: [01:0000000375:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.pdb 
+BUILD: [01:0000000376:INFO  ] -pdbaltpath:bsppnl.pdb 
+BUILD: [01:0000000377:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000378:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000379:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.map 
+BUILD: [01:0000000380:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.rel 
+BUILD: [01:0000000381:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000382:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000383:INFO  ] /base:0x10000000 
+BUILD: [01:0000000384:INFO  ] obj\ARMV4I\retail\bsppnl.res obj\ARMV4I\retail\bsppnl.obj 
+BUILD: [01:0000000385:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\commctrl.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000386:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsppnl.exp 
+BUILD: [01:0000000387:INFO  ] 
+BUILD: [01:0000000388:INFO  ] Starting pass 1
+BUILD: [01:0000000389:INFO  ] 
+BUILD: [01:0000000390:INFO  ] Searching libraries
+BUILD: [01:0000000391:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\commctrl.lib:
+BUILD: [01:0000000392:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000393:INFO  ]       Found CloseHandle
+BUILD: [01:0000000394:INFO  ]         Referenced in bsppnl.obj
+BUILD: [01:0000000395:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000396:INFO  ]       Found CreateProcessW
+BUILD: [01:0000000397:INFO  ]         Referenced in bsppnl.obj
+BUILD: [01:0000000398:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000399:INFO  ]       Found LoadStringW
+BUILD: [01:0000000400:INFO  ]         Referenced in bsppnl.obj
+BUILD: [01:0000000401:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000402:INFO  ]       Found LoadIconW
+BUILD: [01:0000000403:INFO  ]         Referenced in bsppnl.obj
+BUILD: [01:0000000404:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000405:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000406:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000407:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000408:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000409:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000410:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000411:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000412:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000413:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000414:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000415:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000416:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000417:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000418:INFO  ]       Found _DllEntryCRTStartup
+BUILD: [01:0000000419:INFO  ]         Loaded corelib0.lib(pegdentry.obj)
+BUILD: [01:0000000420:INFO  ]       Found _cexit
+BUILD: [01:0000000421:INFO  ]         Referenced in corelib0.lib(pegdentry.obj)
+BUILD: [01:0000000422:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000000423:INFO  ]       Found _cinit
+BUILD: [01:0000000424:INFO  ]         Referenced in corelib0.lib(pegdentry.obj)
+BUILD: [01:0000000425:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000426:INFO  ]       Found __security_init_cookie
+BUILD: [01:0000000427:INFO  ]         Referenced in corelib0.lib(pegdentry.obj)
+BUILD: [01:0000000428:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000000429:INFO  ]       Found __onexitend
+BUILD: [01:0000000430:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000431:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000000432:INFO  ]       Found __xt_z
+BUILD: [01:0000000433:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000434:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000000435:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000436:INFO  ]       Found memset
+BUILD: [01:0000000437:INFO  ]         Referenced in bsppnl.obj
+BUILD: [01:0000000438:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000439:INFO  ]       Found wcscpy
+BUILD: [01:0000000440:INFO  ]         Referenced in bsppnl.obj
+BUILD: [01:0000000441:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000442:INFO  ]       Found free
+BUILD: [01:0000000443:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000444:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000445:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000446:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000000447:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000000448:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000449:INFO  ]       Found malloc
+BUILD: [01:0000000450:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000451:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000452:INFO  ]       Found realloc
+BUILD: [01:0000000453:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000454:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000455:INFO  ]       Found _msize
+BUILD: [01:0000000456:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000457:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000458:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000000459:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000460:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000461:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\commctrl.lib:
+BUILD: [01:0000000462:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000463:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000000464:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000465:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000466:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000467:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000000468:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000469:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000470:INFO  ]       Found TerminateProcess
+BUILD: [01:0000000471:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000472:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000473:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000000474:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000475:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000476:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000000477:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000478:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000479:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000000480:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000481:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000482:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000000483:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000484:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000485:INFO  ] 
+BUILD: [01:0000000486:INFO  ] Finished searching libraries
+BUILD: [01:0000000487:INFO  ] 
+BUILD: [01:0000000488:INFO  ] Finished pass 1
+BUILD: [01:0000000489:INFO  ] 
+BUILD: [01:0000000490:INFO  ] 
+BUILD: [01:0000000491:INFO  ] Invoking CVTRES.EXE:
+BUILD: [01:0000000492:INFO  ]  /machine:thumb
+BUILD: [01:0000000493:INFO  ]  /verbose
+BUILD: [01:0000000494:INFO  ]  /out:"C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\lnk20A6.tmp"
+BUILD: [01:0000000495:INFO  ]  /readonly
+BUILD: [01:0000000496:INFO  ]  /windowsce
+BUILD: [01:0000000497:INFO  ]  "obj\ARMV4I\retail\bsppnl.res"
+BUILD: [01:0000000498:INFO  ] Microsoft (R) Windows Resource To Object Converter Version 8.00.50727.42
+BUILD: [01:0000000499:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000500:INFO  ] 
+BUILD: [01:0000000501:INFO  ] adding resource. type:ICON, name:1, language:0x0409, flags:0x1030, size:744
+BUILD: [01:0000000502:INFO  ] adding resource. type:ICON, name:2, language:0x0409, flags:0x1030, size:1128
+BUILD: [01:0000000503:INFO  ] adding resource. type:GROUP_ICON, name:3000, language:0x0409, flags:0x1030, size:34
+BUILD: [01:0000000504:INFO  ] adding resource. type:STRING, name:376, language:0x0409, flags:0x1030, size:108
+BUILD: [01:0000000505:INFO  ]     Discarded __imp_malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000506:INFO  ]     Discarded __imp_realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000507:INFO  ]     Discarded __imp__msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000508:INFO  ]     Discarded __imp___C_specific_handler from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000509:INFO  ]     Discarded __imp_EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000510:INFO  ]     Discarded __imp_InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000511:INFO  ]     Discarded __imp_InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000512:INFO  ]     Discarded __imp_LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000513:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000514:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000515:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000516:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000517:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000518:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000519:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000520:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000521:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000522:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000523:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000000524:INFO  ]     Discarded exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000525:INFO  ]     Discarded _exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000526:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000527:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000528:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000529:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000000530:INFO  ]     Discarded _onexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000531:INFO  ]     Discarded atexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000532:INFO  ]     Discarded malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000533:INFO  ]     Discarded realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000534:INFO  ]     Discarded _msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000535:INFO  ]     Discarded __C_specific_handler from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000536:INFO  ]     Discarded EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000537:INFO  ]     Discarded InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000538:INFO  ]     Discarded InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000539:INFO  ]     Discarded LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000540:INFO  ]     Discarded '.xdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000541:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000542:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000543:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000544:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000545:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000546:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000547:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000548:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000549:INFO  ] Starting pass 2
+BUILD: [01:0000000550:INFO  ]      bsppnl.res
+BUILD: [01:0000000551:INFO  ]      bsppnl.exp
+BUILD: [01:0000000552:INFO  ]      bsppnl.obj
+BUILD: [01:0000000553:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000554:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000555:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000556:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000557:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000558:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000559:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000560:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000561:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000562:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000563:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000564:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000565:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000566:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000567:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000000568:INFO  ]      corelib0.lib(pegdentry.obj)
+BUILD: [01:0000000569:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000000570:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000000571:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000572:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000000573:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000574:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000575:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000576:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000577:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000578:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000579:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000580:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000581:INFO  ] Finished pass 2
+BUILD: [01:0000000582:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll
+BUILD: [01:0000000583:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000584:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000585:INFO  ] 
+BUILD: [01:0000000586:INFO  ] 
+BUILD: [01:0000000587:INFO  ] 	copy C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.dll C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.cpl
+BUILD: [01:0000000588:INFO  ] 複製了         1 個檔案。
+BUILD: [01:0000000589:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\bsppnl.map
+BUILD: [01:0000000590:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000591:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\bsppnl.rel
+BUILD: [01:0000000592:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\bsppnl.cpl C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\bsppnl.cpl
+BUILD: [00:0000000593:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000594:INFO  ] Done.
+BUILD: [00:0000000595:PROGC ] Done.
+BUILD: [00:0000000596:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000597:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000598:PROGC ] Message                    0         0       0
+BUILD: [00:0000000599:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000600:PROGC ] Resource                   1         0       0
+BUILD: [00:0000000601:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000602:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000603:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000604:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000605:PROGC ] C++                        2         0       0
+BUILD: [00:0000000606:PROGC ] C                          0         0       0
+BUILD: [00:0000000607:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000608:PROGC ] Exe's                      1         0       0
+BUILD: [00:0000000609:PROGC ] Dll's                      2         0       0
+BUILD: [00:0000000610:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000611:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000612:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000613:PROGC ] Other                      0         0       0
+BUILD: [00:0000000614:PROGC ] 
+BUILD: [00:0000000615:PROGC ] Total                      6         0       0
+BUILD: [00:0000000616:PROGC ] 
+BUILD: [00:0000000617:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000618:PROGC ] GetSystemTimes (seconds): Idle: 18    Kernel: 20    User: 3    
+BUILD: [00:0000000619:PROGC ] Elapsed  time  (seconds): 6    

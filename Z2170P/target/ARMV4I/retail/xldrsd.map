@@ -1,0 +1,311 @@
+ xldrsd
+
+ Timestamp is 51ede8be (Tue Jul 23 10:21:50 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000019cH .astart                 CODE
+ 0001:000001a0 00002e29H .rdata                  CODE
+ 0001:00002fcc 00000023H .rdata$debug            CODE
+ 0001:00002ff0 00007db8H .text                   CODE
+ 0001:0000ada8 00000008H .xdata                  CODE
+ 0001:0000adb0 00000000H .edata                  CODE
+ 0002:00000000 00000844H .data                   DATA
+ 0002:00000860 00000950H .bss                    DATA
+ 0003:00000000 00000478H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       StartUp                    00011000 f   startup.obj
+ 0001:00000054       EnableCache_GP             00011054 f   startup.obj
+ 0001:000000b0       EnableCache_HS             000110b0 f   startup.obj
+ 0001:00000138       CopyCode                   00011138 f   startup.obj
+ 0001:00000250       pTOC                       00011250     sdmain.obj
+ 0001:00000254       dwOEMHighSecurity          00011254     sdmain.obj
+ 0001:00000258       ??_C@_1CA@MCLKGBIP@?$AAB?$AAS?$AAP?$AAG?$AAp?$AAi?$AAo?$AAI?$AAn?$AAi?$AAt?$AA?$CI?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 00011258     sdmain.obj
+ 0001:00000278       ??_C@_1BC@MABDLOIF@?$AA?$AN?$AA?6?$AAH?$AAA?$AAL?$AAT?$AA?$AN?$AA?6?$AA?$AA@ 00011278     sdmain.obj
+ 0001:0000028c       ??_C@_1DG@PGACBJIG@?$AAj?$AAu?$AAm?$AAp?$AAi?$AAn?$AAg?$AA?5?$AAt?$AAo?$AA?5?$AAe?$AAb?$AAo?$AAo?$AAt?$AAs?$AAd?$AA?5?$AAi?$AAm?$AAa?$AAg?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 0001128c     sdmain.obj
+ 0001:000002c4       ??_C@_1DM@MLNCKNAG@?$AAS?$AAD?$AA?5?$AAb?$AAo?$AAo?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 000112c4     sdmain.obj
+ 0001:00000300       ??_C@_1DM@DAIBIGKK@?$AAS?$AAD?$AA?5?$AAb?$AAo?$AAo?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 00011300     sdmain.obj
+ 0001:00000340       ??_C@_1GO@DPJAHHOG@?$AA?$AN?$AA?6?$AAZ?$AAE?$AAB?$AAE?$AAX?$AA?5?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AAs?$AA?5?$AAC?$AAE?$AA?5?$AAS?$AAD?$AA?5?$AAX?$AA?9?$AAL?$AAo?$AAa?$AAd?$AAe?$AAr?$AA?5?$AAf@ 00011340     sdmain.obj
+ 0001:000003b0       ??_C@_1EE@PENLPBOO@?$AA?$AN?$AA?6?$AAB?$AAu?$AAi?$AAl?$AAt?$AA?5?$AAJ?$AAu?$AAl?$AA?5?$AA2?$AA2?$AA?5?$AA2?$AA0?$AA1?$AA3?$AA?5?$AAa?$AAt?$AA?5?$AA1?$AA3?$AA?3?$AA4?$AA4?$AA?3?$AA4?$AA6?$AA?5@ 000113b0     sdmain.obj
+ 0001:000003f4       ??_C@_17KPMHKKFB@?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 000113f4     sdmain.obj
+ 0001:000003fc       ??_C@_1BI@NFFGLHIF@?$AAe?$AAb?$AAo?$AAo?$AAt?$AAs?$AAd?$AA?4?$AAn?$AAb?$AA0?$AA?$AA@ 000113fc     sdmain.obj
+ 0001:00000414       ??_C@_1DA@FBNLCKKB@?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAe?$AAb?$AAo?$AAo?$AAt?$AAs?$AAd?$AA?4?$AAn?$AAb?$AA0?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 00011414     sdmain.obj
+ 0001:00000444       ??_C@_19PONNFJAB@?$AA3?$AA7?$AAX?$AAX?$AA?$AA@ 00011444     sdmain.obj
+ 0001:00000450       ??_C@_19CAFJHOAJ@?$AA3?$AA5?$AA3?$AA0?$AA?$AA@ 00011450     sdmain.obj
+ 0001:000008c0       ??_C@_1EA@CJMKJJJH@?$AAO?$AAA?$AAL?$AAL?$AAo?$AAc?$AAa?$AAl?$AAA?$AAl?$AAl?$AAo?$AAc?$AA?5?$AAr?$AAe?$AAt?$AAu?$AAr?$AAn?$AAe?$AAd?$AA?5?$AAN?$AAU?$AAL?$AAL?$AA?5?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 000118c0     common_ti_oal_alloc:alloc.obj
+ 0001:00000a28       ??_C@_1KM@EEHAFCCJ@?$AAC?$AA?3?$AA?2?$AAW?$AAI?$AAN?$AAC?$AAE?$AA6?$AA0?$AA0?$AA?2?$AAP?$AAL?$AAA?$AAT?$AAF?$AAO?$AAR?$AAM?$AA?2?$AAC?$AAO?$AAM?$AAM?$AAO?$AAN?$AA?2?$AAS?$AAR?$AAC?$AA?2@ 00011a28     common_ti_oali2c:oali2c.obj
+ 0001:00000ad4       ??_C@_1CI@OHCJFJPM@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5?$AA?$AA@ 00011ad4     common_ti_oali2c:oali2c.obj
+ 0001:00000afc       ??_C@_1CC@EHKJMBJI@?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$AA@ 00011afc     common_ti_oali2c:oali2c.obj
+ 0001:00000b20       ??_C@_1KA@GOKKFLEJ@?$AAW?$AAA?$AAR?$AAN?$AA?3?$AA?5?$AAI?$AA2?$AAC?$AA?3?$AA?3?$AAI?$AA2?$AAC?$AAP?$AAo?$AAl?$AAl?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?5?$AA?9?$AA?5?$AAc?$AAh?$AAe?$AAc?$AAk@ 00011b20     common_ti_oali2c:oali2c.obj
+ 0001:00000bc0       ??_C@_1GK@FLELOHLG@?$AAW?$AAA?$AAR?$AAN?$AA?3?$AA?5?$AAI?$AA2?$AAC?$AA?3?$AA?3?$AAI?$AA2?$AAC?$AAR?$AAe?$AAs?$AAe?$AAt?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AA?9?$AA?5?$AAf?$AAa?$AAi?$AAl@ 00011bc0     common_ti_oali2c:oali2c.obj
+ 0001:00000c30       ??_C@_1GO@NCGHHJFM@?$AAW?$AAA?$AAR?$AAN?$AA?3?$AA?5?$AAI?$AA2?$AAC?$AA?3?$AA?5?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CI?$AAS?$AAA?$AA?$DN?$AA0?$AAx?$AA?$CF?$AA0@ 00011c30     common_ti_oali2c:oali2c.obj
+ 0001:00000ca0       ??_C@_1CO@EBLPIMOB@?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?3?$AA?5?$AAA?$AAt?$AAt?$AAe?$AAm?$AAp?$AAt?$AAs?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00011ca0     common_ti_oali2c:oali2c.obj
+ 0001:00000cd0       ??_C@_1HM@LEOLDKCA@?$AAW?$AAA?$AAR?$AAN?$AA?3?$AA?5?$AAI?$AA2?$AAC?$AA?3?$AA?5?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$CI?$AAs?$AAl?$AAa?$AAv?$AAe?$AA?5?$AAa?$AAd@ 00011cd0     common_ti_oali2c:oali2c.obj
+ 0001:00000d4c       ??_C@_1CM@HPEFBBEG@?$AAR?$AAe?$AAa?$AAd?$AA?3?$AA?5?$AAA?$AAt?$AAt?$AAe?$AAm?$AAp?$AAt?$AAs?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00011d4c     common_ti_oali2c:oali2c.obj
+ 0001:00000d78       ??_C@_1CO@IKDMELMO@?$AAI?$AA2?$AAC?$AA?3?$AA?5?$AAR?$AAE?$AAS?$AAE?$AAT?$AA?5?$AAd?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00011d78     common_ti_oali2c:oali2c.obj
+ 0001:00000e38       ??_C@_1CO@BANOFPG@?$AAG?$AAe?$AAt?$AA_?$AAC?$AAP?$AAU?$AAV?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 00011e38     OMAP3530_oalcpuver:oalcpuver.obj
+ 0001:00001078       ??_C@_1GE@IHFMNDC@?$AAM?$AAM?$AAC?$AA?3?$AA?3?$AAM?$AAM?$AAC?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?3?$AA?5?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd@ 00012078     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000010e0       ??_C@_1IM@IDDFJJFI@?$AAM?$AAM?$AAC?$AA?3?$AA?3?$AAM?$AAM?$AAC?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?3?$AA?5?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd@ 000120e0     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001170       ??_C@_1HM@GLHKNEKG@?$AAM?$AAM?$AAC?$AA?3?$AA?3?$AAM?$AAM?$AAC?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAS?$AAe?$AAn?$AAd@ 00012170     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000011f0       ??_C@_1FE@BCNJBLJK@?$AAS?$AAD?$AAM?$AAe?$AAm?$AA?3?$AA?5?$AAc?$AAa?$AAr?$AAd?$AA?5?$AAr?$AAd?$AAy?$AA?5?$AAb?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?0?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAu?$AAs@ 000121f0     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001244       ??_C@_1DG@LHNGMEJK@?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAm?$AAu?$AAl?$AAt?$AAi?$AA?5?$AAs?$AAe?$AAc?$AAt?$AAo?$AAr?$AAs?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 00012244     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001280       ??_C@_1IM@NDHBECDO@?$AAM?$AAM?$AAC?$AAR?$AAe?$AAa?$AAd?$AAM?$AAu?$AAl?$AAt?$AAi?$AAS?$AAe?$AAc?$AAt?$AAo?$AAr?$AAs?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAR@ 00012280     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001310       ??_C@_1JA@ILPGFCNI@?$AAM?$AAM?$AAC?$AAR?$AAe?$AAa?$AAd?$AAM?$AAu?$AAl?$AAt?$AAi?$AAS?$AAe?$AAc?$AAt?$AAo?$AAr?$AAs?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAR@ 00012310     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000013a0       ??_C@_1FK@HAPCNFMM@?$AAM?$AAM?$AAC?$AAR?$AAe?$AAa?$AAd?$AAM?$AAu?$AAl?$AAt?$AAi?$AAS?$AAe?$AAc?$AAt?$AAo?$AAr?$AAs?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAW?$AAa?$AAi?$AAt?$AAF?$AAo?$AAr?$AAR@ 000123a0     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000013fc       ??_C@_1BK@GAKJANPH@?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 000123fc     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001418       ??_C@_1HE@HOGFNIBK@?$AAM?$AAM?$AAC?$AAR?$AAe?$AAa?$AAd?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?5?$AAe?$AAr?$AAr?$AAo@ 00012418     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001490       ??_C@_1KA@GCFNELEL@?$AAM?$AAM?$AAC?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAC?$AAa?$AAr?$AAd?$AA?3?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?5?$AAw?$AAa?$AAi?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAf@ 00012490     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001530       ??_C@_1GK@CDAMFDEK@?$AAM?$AAM?$AAC?$AA?3?$AA?5?$AAu?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAw?$AAi?$AAd?$AAe?$AA?5?$AAb?$AAu?$AAs?$AA?5?$AAm?$AAo?$AAd?$AAe@ 00012530     common_ti_boot_sdmemory:sdcard.obj
+ 0001:0000159c       ??_C@_1CC@BECOMKMK@?$AAA?$AAP?$AAP?$AA_?$AAC?$AAM?$AAD?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 0001259c     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000015c0       ??_C@_1EK@FDKGIIKM@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAS?$AAe?$AAt?$AAB?$AAl?$AAo?$AAc?$AAk?$AAL?$AAe?$AAn?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe@ 000125c0     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001610       ??_C@_1GE@FEOFGONO@?$AAM?$AAM?$AAC?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAC?$AAa?$AAr?$AAd?$AA?3?$AA?5?$AAp?$AAo?$AAl?$AAl?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr@ 00012610     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001678       ??_C@_1JO@JCBKFGLI@?$AAM?$AAM?$AAC?$AAI?$AAs?$AAs?$AAu?$AAe?$AAI?$AAd?$AAe?$AAn?$AAt?$AAi?$AAf?$AAy?$AA?3?$AA?5?$AAb?$AAu?$AAs?$AAy?$AA?5?$AAb?$AAi?$AAt?$AA?5?$AAn?$AAe?$AAv?$AAe?$AAr@ 00012678     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001718       ??_C@_1KE@BIOPJCPI@?$AAM?$AAM?$AAC?$AAI?$AAs?$AAs?$AAu?$AAe?$AAI?$AAd?$AAe?$AAn?$AAt?$AAi?$AAf?$AAy?$AA?3?$AA?5?$AAb?$AAu?$AAs?$AAy?$AA?5?$AAb?$AAi?$AAt?$AA?5?$AAn?$AAe?$AAv?$AAe?$AAr@ 00012718     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000017c0       ??_C@_1FK@HAIGBMKL@?$AAM?$AAM?$AAC?$AAI?$AAs?$AAs?$AAu?$AAe?$AAI?$AAd?$AAe?$AAn?$AAt?$AAi?$AAf?$AAy?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAR?$AAe?$AAs?$AAp@ 000127c0     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001820       ??_C@_1EI@DCCPDMOI@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAC?$AAa?$AAr?$AAd?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd@ 00012820     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001868       ??_C@_1EM@FDPFBDGI@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAW?$AAa?$AAi?$AAt?$AAF?$AAo?$AAr?$AAR?$AAe?$AAa?$AAd?$AAy?$AA?5?$AAf?$AAa?$AAi?$AAl@ 00012868     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000018b4       ??_C@_1DM@BFOJJFFG@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAN?$AAo?$AA?5?$AAm?$AAe?$AAd?$AAi?$AAa?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 000128b4     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000018f0       ??_C@_1EE@PJJAIGOH@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAM?$AAM?$AAC?$AAI?$AAn?$AAi?$AAt?$AAD?$AAi?$AAs?$AAk?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$CB?$AA?$AN@ 000128f0     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001938       ??_C@_1GI@CBFICDBE@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAR?$AAe?$AAa?$AAd?$AAS?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?3?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAr?$AAe?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5@ 00012938     common_ti_boot_sdmemory:sdcard.obj
+ 0001:000019a0       ??_C@_1HE@MOOOFOKP@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAR?$AAe?$AAa?$AAd?$AAS?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?3?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAr?$AAe?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5@ 000129a0     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001a18       ??_C@_1IM@HCIKFOHM@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAR?$AAe?$AAa?$AAd?$AAM?$AAu?$AAl?$AAt?$AAi?$AAS?$AAe?$AAc?$AAt?$AAo?$AAr?$AAs?$AA?3?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAr?$AAe@ 00012a18     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001aa8       ??_C@_1IA@BMANGLND@?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAR?$AAe?$AAa?$AAd?$AAM?$AAu?$AAl?$AAt?$AAi?$AAS?$AAe?$AAc?$AAt?$AAo?$AAr?$AAs?$AA?3?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAr?$AAe@ 00012aa8     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001b28       ??_C@_1EM@KMLGLOML@?$AAB?$AAL?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAD?$AAo?$AAw?$AAn?$AAl?$AAo?$AAa?$AAd?$AA?3?$AA?5?$AA?5?$AAc?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAf@ 00012b28     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001b78       ??_C@_1FA@PHKOKPHG@?$AAB?$AAL?$AAS?$AAD?$AAC?$AAa?$AAr?$AAd?$AAD?$AAo?$AAw?$AAn?$AAl?$AAo?$AAa?$AAd?$AA?3?$AA?5?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAi?$AAo?$AA?5?$AAi?$AAn?$AAi?$AAt?$AA?5?$AAf@ 00012b78     common_ti_boot_sdmemory:sdcard.obj
+ 0001:00001c58       gwaCMD                     00012c58     common_ti_boot_sdhc:sdhc.obj
+ 0001:00001e58       ??_C@_1DA@PKLOKBNI@?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAH?$AAW?$AA?3?$AA?5?$AAT?$AAI?$AAM?$AAE?$AAO?$AAU?$AAT?$AA?$AN?$AA?6?$AA?$AA@ 00012e58     common_ti_boot_sdhc:sdhc.obj
+ 0001:00001e88       ??_C@_1DO@PKNJPAKP@?$AAI?$AAn?$AAi?$AAt?$AA?5?$AAS?$AAD?$AAH?$AAC?$AA?5?$AAH?$AAW?$AA?3?$AA?5?$AAc?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AA?5?$AAR?$AAS?$AAT?$AA?$AN?$AA?6?$AA?$AA@ 00012e88     common_ti_boot_sdhc:sdhc.obj
+ 0001:00001ec8       ??_C@_1CI@EBIAGFPN@?$AAM?$AAM?$AAC?$AA?5?$AAR?$AAe?$AAs?$AAe?$AAt?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$AN?$AA?6?$AA?$AA@ 00012ec8     common_ti_boot_sdhc:sdhc.obj
+ 0001:00001ef0       ??_C@_1CI@DLLABNKH@?$AAS?$AAD?$AAH?$AAC?$AA?5?$AAb?$AAa?$AAd?$AA?5?$AAs?$AAl?$AAo?$AAt?$AA?5?$AAn?$AAu?$AAm?$AA?$AN?$AA?6?$AA?$AA@ 00012ef0     common_ti_boot_sdhc:sdhc.obj
+ 0001:00001f18       ??_C@_1GK@EBPKPBPE@?$AAG?$AAe?$AAt?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?$CI?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAU?$AAn?$AAr?$AAe?$AAc?$AAo?$AAg?$AAn?$AAi@ 00012f18     common_ti_boot_sdhc:sdhc.obj
+ 0001:00001f84       ??_C@_1DM@FAHGNIG@?$AAS?$AAD?$AAI?$AAP?$AAo?$AAl?$AAl?$AAi?$AAn?$AAg?$AAR?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AA?3?$AA?5?$AAT?$AAI?$AAM?$AAE?$AAO?$AAU?$AAT?$AA3?$AA?$AN?$AA?6?$AA?$AA@ 00012f84     common_ti_boot_sdhc:sdhc.obj
+ 0001:00001fc0       ??_C@_1DM@ILIIGKGF@?$AAS?$AAD?$AAI?$AAP?$AAo?$AAl?$AAl?$AAi?$AAn?$AAg?$AAR?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AA?3?$AA?5?$AAT?$AAI?$AAM?$AAE?$AAO?$AAU?$AAT?$AA0?$AA?$AN?$AA?6?$AA?$AA@ 00012fc0     common_ti_boot_sdhc:sdhc.obj
+ 0001:00001ffc       ??_C@_1DM@EHCCGKPL@?$AAS?$AAD?$AAI?$AAP?$AAo?$AAl?$AAl?$AAi?$AAn?$AAg?$AAR?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AA?3?$AA?5?$AAT?$AAI?$AAM?$AAE?$AAO?$AAU?$AAT?$AA1?$AA?$AN?$AA?6?$AA?$AA@ 00012ffc     common_ti_boot_sdhc:sdhc.obj
+ 0001:00002038       ??_C@_1EG@HOIABLIC@?$AAS?$AAD?$AAH?$AAC?$AA?3?$AA?5?$AAS?$AAD?$AAI?$AAP?$AAo?$AAl?$AAl?$AAi?$AAn?$AAg?$AAR?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd@ 00013038     common_ti_boot_sdhc:sdhc.obj
+ 0001:00002080       ??_C@_1GA@HNKHACLA@?$AAS?$AAD?$AAH?$AAC?$AA?3?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAg?$AAe?$AAt?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAr?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?5?$AAf?$AAo?$AAr@ 00013080     common_ti_boot_sdhc:sdhc.obj
+ 0001:000020e0       ??_C@_1EM@JOOFMKFB@?$AAS?$AAD?$AAH?$AAC?$AA?3?$AA?5?$AAc?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?5?$AAr?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?5?$AAC@ 000130e0     common_ti_boot_sdhc:sdhc.obj
+ 0001:00002130       ??_C@_1EO@LNFDCIBN@?$AAS?$AAD?$AAH?$AAC?$AA?3?$AA?5?$AAc?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?5?$AAr?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?5?$AAD@ 00013130     common_ti_boot_sdhc:sdhc.obj
+ 0001:00002180       ??_C@_1EM@PLCIGAJB@?$AAS?$AAD?$AAH?$AAC?$AA?3?$AA?5?$AAc?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?5?$AAr?$AAe?$AAs?$AAp?$AAo?$AAn?$AAs?$AAe?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?5?$AAD@ 00013180     common_ti_boot_sdhc:sdhc.obj
+ 0001:000021cc       ??_C@_1DG@OHDKIEBD@?$AAS?$AAD?$AAH?$AAC?$AA?3?$AA?5?$AAc?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?5?$AAC?$AAR?$AAC?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 000131cc     common_ti_boot_sdhc:sdhc.obj
+ 0001:00002204       ??_C@_1DG@MBAMAGDP@?$AAS?$AAD?$AAH?$AAC?$AA?3?$AA?5?$AAC?$AAa?$AAr?$AAd?$AA?5?$AAB?$AAU?$AAS?$AAY?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 00013204     common_ti_boot_sdhc:sdhc.obj
+ 0001:0000223c       ??_C@_1CM@GCMKJBGI@?$AAS?$AAD?$AAH?$AAC?$AA?3?$AA?5?$AAC?$AAa?$AAr?$AAd?$AA?5?$AAr?$AAe?$AAm?$AAo?$AAv?$AAe?$AAd?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 0001323c     common_ti_boot_sdhc:sdhc.obj
+ 0001:000022f8       ??_C@_1HK@FIHOCGBD@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAG?$AAI?$AAO?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi@ 000132f8     common_ti_oal_gpiodispatch:gpio_dispatch.obj
+ 0001:00002374       ??_C@_19NNFDHLJH@?$AAb?$AAo?$AAo?$AAt?$AA?$AA@ 00013374     common_ti_oal_gpiodispatch:gpio_dispatch.obj
+ 0001:00002380       DEVICE_IFC_TWL_GUID        00013380     TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:00002420       ??_C@_15BMCNAON@?$AAR?$AAX?$AA?$AA@ 00013420     OMAP3530_soccfg:devicemap.obj
+ 0001:00002428       ??_C@_15NHJLDDPA@?$AAT?$AAX?$AA?$AA@ 00013428     OMAP3530_soccfg:devicemap.obj
+ 0001:00002430       ??_C@_17GHFABBII@?$AAM?$AAM?$AAU?$AA?$AA@ 00013430     OMAP3530_soccfg:devicemap.obj
+ 0001:00002438       ??_C@_19EMJFMDEF@?$AAI?$AAR?$AAQ?$AA3?$AA?$AA@ 00013438     OMAP3530_soccfg:devicemap.obj
+ 0001:00002444       ??_C@_19PECJKECA@?$AAI?$AAR?$AAQ?$AA2?$AA?$AA@ 00013444     OMAP3530_soccfg:devicemap.obj
+ 0001:00002450       ??_C@_19OGJMALMO@?$AAI?$AAR?$AAQ?$AA1?$AA?$AA@ 00013450     OMAP3530_soccfg:devicemap.obj
+ 0001:0000245c       ??_C@_19FOCAGMKL@?$AAI?$AAR?$AAQ?$AA0?$AA?$AA@ 0001345c     OMAP3530_soccfg:devicemap.obj
+ 0001:00002468       ??_C@_1BC@JBFPJMDB@?$AAo?$AAv?$AAe?$AAr?$AAf?$AAl?$AAo?$AAw?$AA?$AA@ 00013468     OMAP3530_soccfg:devicemap.obj
+ 0001:00002510       s_DeviceAddressMap         00013510     OMAP3530_soccfg:devicemap.obj
+ 0001:00002710       s_DeviceIrqMap             00013710     OMAP3530_soccfg:devicemap.obj
+ 0001:00002bf8       I2CDefaultI2CTimeout       00013bf8     bspcfg:bspcfg.obj
+ 0001:00002c00       g_BSP_icL1Level            00013c00     bspcfg:bspcfg.obj
+ 0001:00002fc0       ??_C@_08GGFKNFHG@?5?5?5?5?5?5?5?5?$AA@ 00013fc0     common_ti_boot_fatfs:fileio.obj
+ 0001:00002ff0       JumpTo                     00013ff0 f   jumpto.obj
+ 0001:00002ff4       BSPGpioInit                00013ff4 f   sdmain.obj
+ 0001:00003034       OALPAtoVA                  00014034 f   sdmain.obj
+ 0001:000030c4       NKvDbgPrintfW              000140c4 f   sdmain.obj
+ 0001:0000326c       NKDbgPrintfW               0001426c f   sdmain.obj
+ 0001:0000328c       XLDRMain                   0001428c f   sdmain.obj
+ 0001:00003454       OALGetTickCount            00014454 f   platform.obj
+ 0001:0000345c       Mpu_dpll_init              0001445c f   platform.obj
+ 0001:000034d4       Iva_dpll_init              000144d4 f   platform.obj
+ 0001:00003560       Omap37xx_dpll4_init        00014560 f   platform.obj
+ 0001:000035f4       Omap37xx_core_dpll_init    000145f4 f   platform.obj
+ 0001:00003638       Omap37xx_per_dpll_init     00014638 f   platform.obj
+ 0001:00003954       PlatformSetup              00014954 f   platform.obj
+ 0001:00003c48       OALLocalAllocInit          00014c48 f   common_ti_oal_alloc:alloc.obj
+ 0001:00003cb0       OALLocalAlloc              00014cb0 f   common_ti_oal_alloc:alloc.obj
+ 0001:00003da0       OALLocalFree               00014da0 f   common_ti_oal_alloc:alloc.obj
+ 0001:00003e08       OEMInitDebugSerial         00014e08 f   common_ti_debugserial:debugserial.obj
+ 0001:00003e9c       OEMDeinitDebugSerial       00014e9c f   common_ti_debugserial:debugserial.obj
+ 0001:00003ee8       OEMWriteDebugByte          00014ee8 f   common_ti_debugserial:debugserial.obj
+ 0001:00003f30       OEMWriteDebugString        00014f30 f   common_ti_debugserial:debugserial.obj
+ 0001:00003f5c       I2CLock                    00014f5c f   common_ti_oali2c:oali2c.obj
+ 0001:00003fa4       I2CUnlock                  00014fa4 f   common_ti_oali2c:oali2c.obj
+ 0001:00003fec       I2CPollStatus              00014fec f i common_ti_oali2c:oali2c.obj
+ 0001:00004180       OALI2CInit                 00015180 f   common_ti_oali2c:oali2c.obj
+ 0001:0000426c       OALI2CPostInit             0001526c f   common_ti_oali2c:oali2c.obj
+ 0001:000042cc       I2CSetSlaveAddress         000152cc f   common_ti_oali2c:oali2c.obj
+ 0001:000042d8       I2COpen                    000152d8 f   common_ti_oali2c:oali2c.obj
+ 0001:000043a4       I2CClose                   000153a4 f   common_ti_oali2c:oali2c.obj
+ 0001:0000483c       I2CWrite                   0001583c f   common_ti_oali2c:oali2c.obj
+ 0001:00004a08       I2CRead                    00015a08 f   common_ti_oali2c:oali2c.obj
+ 0001:00004c08       Get_CPUVersion             00015c08 f   OMAP3530_oalcpuver:oalcpuver.obj
+ 0001:00004dc8       GetAddressByDevice         00015dc8 f   common_ti_devicesmap:devicemap.obj
+ 0001:00004e18       INTF_MMCSendCommand        00015e18 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00004f98       INTF_MMCReadResponse       00015f98 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005630       MMCSetTranSpeed            00016630 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005670       UTIL_csd_get_devicesize    00016670 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005774       UTIL_csd_get_tran_speed    00016774 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005890       MMCCommandResponse         00016890 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:0000593c       MMCInitDisk                0001693c f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005984       SDCardIdentify             00016984 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:0000598c       BLSDCardReadData           0001698c f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:000059c8       MMCSetBlockLen             000169c8 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005a24       MMCWaitForReady            00016a24 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005b20       MMCReadMultiSectors        00016b20 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005c7c       MMCRead                    00016c7c f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005d68       MMCSelectCard              00016d68 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00005fec       MMCIssueIdentify           00016fec f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00006404       MMCCardDetect              00017404 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:0000644c       SDCardInit                 0001744c f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:0000653c       SDCardReadSector           0001753c f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:000065cc       SDCardReadMultiSectors     000175cc f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:00006668       BLSDCardDownload           00017668 f   common_ti_boot_sdmemory:sdcard.obj
+ 0001:0000676c       SdhcCardDetect             0001776c f   common_ti_boot_sdhc:sdhc.obj
+ 0001:000069ac       SdhcSetClockRate           000179ac f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00006cdc       SdhcHandleInsertion        00017cdc f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00006e3c       SdhcBusRequestHandler      00017e3c f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00007270       SdhcSetInterface           00018270 f   common_ti_boot_sdhc:sdhc.obj
+ 0001:0000769c       SdhcControllerIstThread    0001869c f   common_ti_boot_sdhc:sdhc.obj
+ 0001:000076dc       SdhcInitialize             000186dc f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00007700       OALGetSiliconIdCode        00018700 f   common_ti_boot_sdhc:getidcode.obj
+ 0001:00007754       GPIOInit                   00018754 f   common_ti_oal_gpiodispatch:gpio_dispatch.obj
+ 0001:000077ec       GPIOOpen                   000187ec f   common_ti_oal_gpiodispatch:gpio_dispatch.obj
+ 0001:000077fc       GPIOGetBit                 000187fc f   common_ti_oal_gpiodispatch:gpio_dispatch.obj
+ 0001:0000785c       GPIOSetMode                0001885c f   common_ti_oal_gpiodispatch:gpio_dispatch.obj
+ 0001:000078bc       GPIOPullup                 000188bc f   common_ti_oal_gpiodispatch:gpio_dispatch.obj
+ 0001:000085cc       TWLOpen                    000195cc f   triton_oal:twl_access.obj
+ 0001:0000862c       TWLClose                   0001962c f   triton_oal:twl_access.obj
+ 0001:00008668       TWLReadRegs                00019668 f   triton_oal:twl_access.obj
+ 0001:000086f4       TWLWriteRegs               000196f4 f   triton_oal:twl_access.obj
+ 0001:00008780       SOCGetGPIODeviceByBank     00019780 f   OMAP3530_soccfg:soccfg.obj
+ 0001:000087e0       SOCGetSDHCDeviceBySlot     000197e0 f   OMAP3530_soccfg:soccfg.obj
+ 0001:00008800       SocSdhcDevconf             00019800 f   OMAP3530_sdhc_stub:sdhc_stub.obj
+ 0001:00008804       SOCSetPadConfig            00019804 f   OMAP3530_oal_padcfg:soc_padcfg.obj
+ 0001:000088c0       BSPGetDebugUARTConfig      000198c0 f   bspcfg:bspcfg.obj
+ 0001:000088cc       BSPInsertGpioDevice        000198cc f   bspcfg:bspcfg.obj
+ 0001:00008920       BSPGetGpioDevicesTable     00019920 f   bspcfg:bspcfg.obj
+ 0001:0000892c       BSPGetTritonBusID          0001992c f   bspcfg:bspcfg.obj
+ 0001:00008934       BSPGetTritonSlaveAddress   00019934 f   bspcfg:bspcfg.obj
+ 0001:0000893c       BSPGetSDHCCardDetect       0001993c f   bspcfg:bspcfg.obj
+ 0001:0000894c       INTERRUPTS_STATUS          0001994c f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008954       EnterCriticalSection       00019954 f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008958       LeaveCriticalSection       00019958 f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:0000895c       InitializeCriticalSection  0001995c f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008960       DeleteCriticalSection      00019960 f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008964       EnableDeviceClocks         00019964 f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008a98       PrcmDeviceGetContextState  00019a98 f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008aa0       MmUnmapIoSpace             00019aa0 f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008aa4       MmMapIoSpace               00019aa4 f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008ab8       HalContextUpdateDirtyRegister 00019ab8 f   bsp_bootstubs_xldr:bsp_bootstubs.obj
+ 0001:00008abc       OALStall                   00019abc f   bsp_stall:stall.obj
+ 0001:00008ad4       __report_gsfailure         00019ad4 f   gsnull:gsnull.obj
+ 0001:00008ad8       wcscpy                     00019ad8 f   fulllibc:wcscpy.obj
+ 0001:00008af0       memset                     00019af0 f   fulllibc:memset.obj
+ 0001:00008b78       __GSHandlerCheckCommon     00019b78 f   fulllibc:gshandler.obj
+ 0001:00008bb4       __GSHandlerCheck           00019bb4 f   fulllibc:gshandler.obj
+ 0001:00008bd8       __security_check_cookie    00019bd8 f   fulllibc:armsecgs.obj
+ 0001:00008bec       __gsfailure                00019bec f   fulllibc:armsecgs.obj
+ 0001:00008c30       __rt_udiv                  00019c30 f   fulllibc:__udiv.obj
+ 0001:00008cf4       __raise_int_divide_by_zero 00019cf4 f   fulllibc:diverr.obj
+ 0001:00008d18       __crtRaiseException        00019d18 f   fulllibc:raiseexc.obj
+ 0001:00008d34       InitTwlPower               00019d34 f   bsp_tps659xx:bsp_tps659xx.obj
+ 0001:00009810       FileNameToDirEntry         0001a810 f   common_ti_boot_fatfs:fileio.obj
+ 0001:000098e4       FileIoInit                 0001a8e4 f   common_ti_boot_fatfs:fileio.obj
+ 0001:00009c30       FileIoOpen                 0001ac30 f   common_ti_boot_fatfs:fileio.obj
+ 0001:00009e50       FileIoRead                 0001ae50 f   common_ti_boot_fatfs:fileio.obj
+ 0001:00009f5c       memcpy                     0001af5c f   fulllibc:memcpy.obj
+ 0001:0000a308       memcpybigblk               0001b308 f   fulllibc:memcpy.obj
+ 0001:0000acbc       toupper                    0001bcbc f   fulllibc:toupper.obj
+ 0001:0000accc       __rt_sdiv                  0001bccc f   fulllibc:__div.obj
+ 0002:00000000       OMAP35x_OPP_Table          0001c000     platform.obj
+ 0002:00000060       OMAP37x_OPP_Table          0001c060     platform.obj
+ 0002:000000a0       BSP_DDR_device_params      0001c0a0     platform.obj
+ 0002:000000e8       OMAPCpuInfo                0001c0e8     OMAP3530_oalcpuver:oalcpuver.obj
+ 0002:00000130       CPUMaxSpeed                0001c130     OMAP3530_oalcpuver:oalcpuver.obj
+ 0002:00000140       Omap_Gpio                  0001c140     common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0002:00000248       Tps659xx_Gpio              0001c248     TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0002:00000290       g_dwMeasuredSysClkFreq     0001c290     bspcfg:bspcfg.obj
+ 0002:00000294       _rgScaleTable              0001c294     bspcfg:bspcfg.obj
+ 0002:000002b8       _rgI2CDevice               0001c2b8     bspcfg:bspcfg.obj
+ 0002:00000398       SupportedNands             0001c398     bspcfg:bspcfg.obj
+ 0002:000003d4       BSPGpioTables              0001c3d4     bspcfg:bspcfg.obj
+ 0002:000003f0       initialOALLogZones         0001c3f0     oal_log:debug.obj
+ 0002:000003f8       dpCurSettings              0001c3f8     oal_log:debug.obj
+ 0002:0000083c       __security_cookie          0001c83c     gsnull:gsnull.obj
+ 0002:00000840       __security_cookie_complement 0001c840     gsnull:gsnull.obj
+ 0002:00000a7c       ?csGpio@@3UCRITICAL_SECTION@@A 0001ca7c     TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0002:00000a94       ?g_fGpioPostInit@@3HA      0001ca94     TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0002:00000d54       gCPU_family                0001cd54     <common>
+ 0002:00000d60       g_bootCfg                  0001cd60     <common>
+ 0002:00000ddc       map                        0001cddc     <common>
+ 0002:00000de0       nbBlock                    0001cde0     <common>
+ 0002:00000de4       poolSize                   0001cde4     <common>
+ 0002:00000de8       pool                       0001cde8     <common>
+ 0002:00000dec       ExtendedPartionBaseSector  0001cdec     <common>
+ 0002:00000e00       MMCcmd                     0001ce00     <common>
+ 0002:00000e80       File                       0001ce80     <common>
+ 0002:000010a4       pFile                      0001d0a4     <common>
+ 0002:000010c0       Request                    0001d0c0     <common>
+ 0002:00001120       fileio_ops                 0001d120     <common>
+ 0002:00001140       Disk                       0001d140     <common>
+ 0002:00001178       m_fFirstTime               0001d178     <common>
+ 0002:0000117c       m_dwCPURev                 0001d17c     <common>
+ 0002:00001180       m_fMMCMode                 0001d180     <common>
+ 0002:00001184       m_dwSlot                   0001d184     <common>
+ 0002:00001188       m_fCardPresent             0001d188     <common>
+ 0002:0000118c       m_dwMaxTimeout             0001d18c     <common>
+ 0002:00001190       m_fInitialized             0001d190     <common>
+ 0002:00001194       m_fAppCmdMode              0001d194     <common>
+ 0002:00001198       m_fCardInitialized         0001d198     <common>
+ 0002:0000119c       g_hGPIO                    0001d19c     <common>
+ 0002:000011a0       m_dwSDIOCard               0001d1a0     <common>
+ 0002:000011a4       m_pbRegisters              0001d1a4     <common>
+ 0002:000011a8       m_TransferClass            0001d1a8     <common>
+ 0002:000011ac       m_dwMaxClockRate           0001d1ac     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00003038       OutputNumHex               00014038 f   sdmain.obj
+ 0001:00003080       OutputNumDecimal           00014080 f   sdmain.obj
+ 0001:00003680       MemorySetup                00014680 f   platform.obj
+ 0001:0000409c       I2CResetDevice             0001509c f   common_ti_oali2c:oali2c.obj
+ 0001:000043b4       I2CTransaction             000153b4 f   common_ti_oali2c:oali2c.obj
+ 0001:000067bc       InitializeHardware         000177bc f   common_ti_boot_sdhc:sdhc.obj
+ 0001:000068f8       MmcReset                   000178f8 f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00006ad0       SendInitSequence           00017ad0 f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00006b9c       SendCommand                00017b9c f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00006e54       GetCommandResponse         00017e54 f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00006fb0       SDIPollingReceive          00017fb0 f   common_ti_boot_sdhc:sdhc.obj
+ 0001:000072a4       CommandCompleteHandler     000182a4 f   common_ti_boot_sdhc:sdhc.obj
+ 0001:0000755c       SdhcControllerInit         0001855c f   common_ti_boot_sdhc:sdhc.obj
+ 0001:00007708       GetGroupByID               00018708 f   common_ti_oal_gpiodispatch:gpio_dispatch.obj
+ 0001:00007920       ?OmapGpioPostInit@@YAHPAX@Z 00018920 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007978       ?OmapGpioDeinit@@YAHPAX@Z  00018978 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007a48       ?OmapGpioSetMode@@YAHPAXII@Z 00018a48 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007b70       ?OmapGpioGetMode@@YAKPAXI@Z 00018b70 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007c64       ?OmapGpioPullup@@YAHPAXII@Z 00018c64 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007c6c       ?OmapGpioPulldown@@YAHPAXII@Z 00018c6c f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007c74       ?OmapGpioSetBit@@YAHPAXI@Z 00018c74 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007d2c       ?OmapGpioClrBit@@YAHPAXI@Z 00018d2c f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007de4       ?OmapGpioGetBit@@YAKPAXI@Z 00018de4 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007e90       ?OmapGpioIoControl@@YAHPAXIPAEI1IPAK@Z 00018e90 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007e98       ?OmapGpioInit@@YAHPBGPAPAXPAI@Z 00018e98 f   common_ti_oal_omap_gpio:omap35xx_gpio.obj
+ 0001:00007ff0       ?WriteTwlReg@@YAHKPAEI@Z   00018ff0 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:00008048       ?ReadTwlReg@@YAHKPAEI@Z    00019048 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:000080a0       ?Tps659xxGpioInit@@YAHPBGPAPAXPAI@Z 000190a0 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:000080b0       ?Tps659xxGpioPostInit@@YAHPAX@Z 000190b0 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:000080d8       ?Tps659xxGpioDeinit@@YAHPAX@Z 000190d8 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:00008118       ?Tps659xxGpioSetMode@@YAHPAXII@Z 00019118 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:00008280       ?Tps659xxGpioGetMode@@YAKPAXI@Z 00019280 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:00008350       ?Tps659xxGpioPullup@@YAHPAXII@Z 00019350 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:00008404       ?Tps659xxGpioPulldown@@YAHPAXII@Z 00019404 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:000084b8       ?Tps659xxGpioSetBit@@YAHPAXI@Z 000194b8 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:00008510       ?Tps659xxGpioClrBit@@YAHPAXI@Z 00019510 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:00008568       ?Tps659xxGpioGetBit@@YAKPAXI@Z 00019568 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:000085c4       ?Tps659xxGpioIoControl@@YAHPAXIPAEI1IPAK@Z 000195c4 f   TPS659xx_oal_gpio:tps659xx_gpio.obj
+ 0001:000092b8       BpbCopy                    0001a2b8 f   common_ti_boot_fatfs:fileio.obj
+ 0001:00009428       FileIoReadNextSectors      0001a428 f   common_ti_boot_fatfs:fileio.obj

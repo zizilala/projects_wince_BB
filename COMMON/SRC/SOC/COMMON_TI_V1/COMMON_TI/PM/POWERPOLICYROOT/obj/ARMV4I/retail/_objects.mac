@@ -1,0 +1,6 @@
+OBJECTS=\
+    obj\ARMV4I\retail\policyroot.obj\
+    obj\ARMV4I\retail\policyadapter.obj\
+    obj\ARMV4I\retail\policycontainer.obj\
+    obj\ARMV4I\retail\api.obj
+

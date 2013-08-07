@@ -1,0 +1,10 @@
+
+LIBRARY     OMAP_NLED
+
+EXPORTS Init
+    Deinit
+    Open
+    Close
+    PowerDown
+    PowerUp
+    IOControl

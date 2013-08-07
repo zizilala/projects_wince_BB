@@ -1,0 +1,8 @@
+; All rights reserved ADENEO EMBEDDED 2010
+IF BSP_OMAP_GPIO
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\OMAP_GPIO]
+    "Prefix"="GIO"
+    "Dll"="omap_gpio.dll"
+    "Index"=dword:1
+    "order"=dword:0
+ENDIF BSP_OMAP_GPIO

@@ -1,0 +1,8 @@
+; All rights reserved ADENEO EMBEDDED 2010
+
+IF BSP_SIMPLE_BENCHMARK
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\SIMPLEDLL]
+    "Prefix"="SID"
+    "Dll"="simpledll.dll"
+    "Index"=dword:1
+ENDIF

@@ -1,0 +1,16 @@
+RELEASETYPE=PLATFORM
+TARGETNAME=sysctrl
+TARGETTYPE=DYNLINK
+DLLENTRY=DllMain
+
+TARGETLIBS= \
+	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib\
+	$(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib \
+	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\toolhelp.lib\
+    
+DEFFILE= sysctrl.def
+
+SOURCES= sysctrl.cpp\
+         startup.cpp\
+         sysctrl.rc
+

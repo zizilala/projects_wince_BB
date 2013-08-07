@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\bkldrvapi.obj\
+    obj\ARMV4I\retail\bkldrvmain.obj
+

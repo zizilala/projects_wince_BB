@@ -1,0 +1,4 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000010:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\DISPLAY\DSS\sources(40) : Build.exe does not evaluate IF conditional statements. Conditional statements that affect macro definitions might cause Build.exe to not rebuild modified source code. Refer to the Platform Builder documentation.
+BUILD: [00:0000000011:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\DISPLAY\DSS\: Missing source file: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap35xx_ddgpe_neon.lib.
+BUILD: [00:0000000042:WARNN ] File: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap35xx_ddgpe_neon.lib does not exist (2).

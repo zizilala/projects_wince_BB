@@ -1,0 +1,7 @@
+OBJECTS=\
+    obj\ARMV4I\retail\hwentropy.obj\
+    obj\ARMV4I\retail\reboot.obj\
+    obj\ARMV4I\retail\rndismac.obj\
+    obj\ARMV4I\retail\format.obj\
+    obj\ARMV4I\retail\ioctlex.obj
+

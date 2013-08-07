@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\bsppnl.res\
+    obj\ARMV4I\retail\bsppnl.obj
+

@@ -1,0 +1,59 @@
+; All rights reserved ADENEO EMBEDDED 2010
+;-- SDIO host controller driver ------------------------------------------------
+; @CESYSGEN IF CE_MODULES_SDBUS
+;; @XIPREGION IF PACKAGE_OEMDRIVERS
+
+IF BSP_SDHC 
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\SDHC]
+    "Prefix"="SHC"
+    "Dll"="omap_sdhc.dll"
+    "Index"=dword:1
+    "Order"=dword:21
+    "PowerFlags"=dword:00000103         ; send pre/post device state changes
+    "MemBase"=multi_sz:"4809C000"
+    "MemLen"=multi_sz:"00000200"
+
+    "SDIOPriority"=dword:d3
+    "CDPriority"=dword:d4
+
+IF BSP_SDHIGHSPEEDSUPPORT_SDHC1
+    "BaseClockFrequency"=dword:2DC6C00 ; override the max clock rate (48 MHz)
+ELSE
+    "BaseClockFrequency"=dword:16e3600 ; override the max clock rate (24 MHz default)
+ENDIF
+
+    "ReadWriteTimeout"=dword:1000   ; (0x1000 clock ticks default)
+    "DTOTimeout"=dword:200          ; Data timeout in milliseconds - 512 ms default
+ 
+    "WakeupSources"=dword:3         ; 0 - no wakeup, 1 - wakeup on SDIO, 
+                                    ; 2 - wakeup on card detect, 
+                                    ; 3 - wakeup on both
+
+    "CardDetectGPIO"=dword:100       ; card insertion detection is GPIO_0 on Triton (256 + 0)
+    "CardInsertedState"=dword:0     ; logical 0 means a card is inserted
+
+    "CardWPGPIO"=dword:3F           ; card R/W protection detection is done via GPIO 63
+    "CardWriteProtectedState"=dword:1 ; logical 1 means the card is write protected
+
+    "SlotNumber"=dword:1
+IF MMCHS1_LOW_VOLTAGE
+    "LowVoltageSlot"=dword:1        ; 1 if MMC/SD/SDIO slot 1 is a low voltage (1.8V slot)
+ENDIF
+    
+    "Sdio4BitDisable"=dword:0         ; 1 if SDIO cards must use 1 bit data path, 0 for 4 bit data path
+    "SdMem4BitDisable"=dword:0        ; 1 if SD Memory cards must use 1 bit data path, 0 for 4 bit data path
+
+IF BSP_SDHIGHSPEEDSUPPORT_SDHC1
+    "SDHighSpeedSupport"=dword:1       ; 1 to enable high speed SD support
+ELSE
+    "SDHighSpeedSupport"=dword:0       ; 1 to enable high speed SD support
+ENDIF
+
+    ; CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID, PMCLASS_PMEXT_GUID   
+    "IClass"=multi_sz:"{A32942B7-920C-486b-B0E6-92A702A99B35}",
+                      "{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+   
+ENDIF BSP_SDHC
+;; @XIPREGION ENDIF PACKAGE_OEMDRIVERS
+; @CESYSGEN ENDIF CE_MODULES_SDBUS
+;-------------------------------------------------------------------------------

@@ -1,0 +1,565 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI\
+BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000009:INFO  ] Done.
+BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_mcspi.lib because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_mcspi.lib is missing.
+BUILD: [00:0000000011:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_soccfg.lib because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_mcspi.lib is missing.
+BUILD: [00:0000000012:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_mcspi.lib is missing.
+BUILD: [00:0000000013:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI\ directory.
+BUILD: [00:0000000014:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000015:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000016:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000017:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000018:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI\sources
+BUILD: [01:0000000019:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000020:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI
+BUILD: [01:0000000021:INFO  ] TARGETNAME: omap_mcspi
+BUILD: [01:0000000022:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000023:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_mcspi.lib
+BUILD: [01:0000000024:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_mcspi.lib -def:omap_mcspi.def -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nmBB1.tmp
+BUILD: [01:0000000025:INFO  ] Microsoft (R) Library Manager Version 8.00.50727.42
+BUILD: [01:0000000026:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000027:INFO  ] 
+BUILD: [01:0000000028:INFO  ] -nodefaultlib 
+BUILD: [01:0000000029:INFO  ] -ignore:4001 
+BUILD: [01:0000000030:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000031:INFO  ] C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_mcspi.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_soccfg.lib 
+BUILD: [01:0000000032:INFO  ]    Creating library C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_mcspi.lib and object C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_mcspi.exp
+BUILD: [00:0000000033:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000000034:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_mcspi.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.dll is missing.
+BUILD: [00:0000000035:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_soccfg.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.dll is missing.
+BUILD: [00:0000000036:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.dll is missing.
+BUILD: [00:0000000037:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000000038:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.dll is missing.
+BUILD: [00:0000000039:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI\ directory.
+BUILD: [00:0000000040:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000000041:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000042:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000043:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000044:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI\sources
+BUILD: [01:0000000045:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000046:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\MCSPI
+BUILD: [01:0000000047:INFO  ] TARGETNAME: omap_mcspi
+BUILD: [01:0000000048:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000049:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000050:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.dll
+BUILD: [01:0000000051:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.dll -dll -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nmBB2.tmp
+BUILD: [01:0000000052:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000053:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000054:INFO  ] 
+BUILD: [01:0000000055:INFO  ] -nodefaultlib 
+BUILD: [01:0000000056:INFO  ] -include:DllMain -entry:_DllMainCRTStartup 
+BUILD: [01:0000000057:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.pdb 
+BUILD: [01:0000000058:INFO  ] -pdbaltpath:omap_mcspi.pdb 
+BUILD: [01:0000000059:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000060:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000061:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.map 
+BUILD: [01:0000000062:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.rel 
+BUILD: [01:0000000063:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000064:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000065:INFO  ] /base:0x10000000 
+BUILD: [01:0000000066:INFO  ] C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_mcspi.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_soccfg.lib 
+BUILD: [01:0000000067:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000068:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\omap_mcspi.exp 
+BUILD: [01:0000000069:INFO  ] 
+BUILD: [01:0000000070:INFO  ] Starting pass 1
+BUILD: [01:0000000071:INFO  ] 
+BUILD: [01:0000000072:INFO  ] Searching libraries
+BUILD: [01:0000000073:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_mcspi.lib:
+BUILD: [01:0000000074:INFO  ]       Found DllMain
+BUILD: [01:0000000075:INFO  ]         Loaded common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000076:INFO  ]       Found SpiDmaDeinit
+BUILD: [01:0000000077:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000078:INFO  ]         Loaded common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000079:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_soccfg.lib:
+BUILD: [01:0000000080:INFO  ]       Found SOCGetMCSPIDeviceByBus
+BUILD: [01:0000000081:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000082:INFO  ]         Loaded OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000083:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000084:INFO  ]       Found DmaGetLogicalChannel
+BUILD: [01:0000000085:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000086:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000087:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000088:INFO  ]       Found SetDevicePowerState
+BUILD: [01:0000000089:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000090:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000091:INFO  ]       Found MmUnmapIoSpace
+BUILD: [01:0000000092:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000093:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000094:INFO  ]       Found CloseBusAccessHandle
+BUILD: [01:0000000095:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000096:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000097:INFO  ]       Found DmaInterruptDone
+BUILD: [01:0000000098:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000099:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000100:INFO  ]       Found StallExecution
+BUILD: [01:0000000101:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000102:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000103:INFO  ]       Found RequestDevicePads
+BUILD: [01:0000000104:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000105:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000106:INFO  ]       Found MmMapIoSpace
+BUILD: [01:0000000107:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000108:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000109:INFO  ]       Found GetAddressByDevice
+BUILD: [01:0000000110:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000111:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000112:INFO  ]       Found GetIrqByDevice
+BUILD: [01:0000000113:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000114:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000115:INFO  ]       Found CreateBusAccessHandle
+BUILD: [01:0000000116:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000117:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000118:INFO  ]       Found GetDeviceRegistryParams
+BUILD: [01:0000000119:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000120:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000121:INFO  ]       Found DmaGetLogicalChannelId
+BUILD: [01:0000000122:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000123:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000124:INFO  ]       Found DmaFreeChannel
+BUILD: [01:0000000125:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000126:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000127:INFO  ]       Found DmaEnableInterrupts
+BUILD: [01:0000000128:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000129:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000130:INFO  ]       Found DmaAllocateChannel
+BUILD: [01:0000000131:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000132:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000133:INFO  ]       Found __IMPORT_DESCRIPTOR_CEDDK
+BUILD: [01:0000000134:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000135:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000136:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000137:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000138:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000139:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000140:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000141:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000142:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000143:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000144:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000145:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000146:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000147:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000148:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000149:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000150:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000151:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000152:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000153:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000154:INFO  ]       Found CEDDK_NULL_THUNK_DATA
+BUILD: [01:0000000155:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000156:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000157:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000158:INFO  ]       Found EventModify
+BUILD: [01:0000000159:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000160:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000161:INFO  ]       Found __GetUserKData
+BUILD: [01:0000000162:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000163:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000164:INFO  ]       Found NKDbgPrintfW
+BUILD: [01:0000000165:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000166:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000167:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000000168:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000169:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000170:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000000171:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000172:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000173:INFO  ]       Found InterlockedIncrement
+BUILD: [01:0000000174:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000175:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000176:INFO  ]       Found WaitForSingleObject
+BUILD: [01:0000000177:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000178:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000179:INFO  ]       Found InterlockedDecrement
+BUILD: [01:0000000180:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000181:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000182:INFO  ]       Found ReleaseMutex
+BUILD: [01:0000000183:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000184:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000185:INFO  ]       Found LocalFree
+BUILD: [01:0000000186:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000187:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000188:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000000189:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000190:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000191:INFO  ]       Found KernelIoControl
+BUILD: [01:0000000192:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000193:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000194:INFO  ]       Found InterruptDisable
+BUILD: [01:0000000195:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000196:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000197:INFO  ]       Found CloseHandle
+BUILD: [01:0000000198:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000199:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000200:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000201:INFO  ]       Found LocalAlloc
+BUILD: [01:0000000202:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000203:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000204:INFO  ]       Found Sleep
+BUILD: [01:0000000205:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000206:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000207:INFO  ]       Found DisableThreadLibraryCalls
+BUILD: [01:0000000208:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000209:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000210:INFO  ]       Found RegisterDbgZones
+BUILD: [01:0000000211:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000212:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000213:INFO  ]       Found InterruptInitialize
+BUILD: [01:0000000214:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000215:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000216:INFO  ]       Found CeSetThreadPriority
+BUILD: [01:0000000217:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000218:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000219:INFO  ]       Found CreateThread
+BUILD: [01:0000000220:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000221:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000222:INFO  ]       Found CreateEventW
+BUILD: [01:0000000223:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000224:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000225:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000226:INFO  ]       Found CreateMutexW
+BUILD: [01:0000000227:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000228:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000229:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000000230:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000231:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000232:INFO  ]       Found CeSafeCopyMemory
+BUILD: [01:0000000233:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000234:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000235:INFO  ]       Found SetLastError
+BUILD: [01:0000000236:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000237:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000238:INFO  ]       Found GetCallerProcess
+BUILD: [01:0000000239:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000240:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000241:INFO  ]       Found FreePhysMem
+BUILD: [01:0000000242:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000243:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000244:INFO  ]       Found AllocPhysMem
+BUILD: [01:0000000245:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000246:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000247:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000248:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000249:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000250:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000251:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000252:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000253:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000254:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000255:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000256:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000257:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000258:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000259:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000260:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000261:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000262:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000263:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000264:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000265:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000266:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000267:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000268:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000269:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000270:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000271:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000272:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000273:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000274:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000275:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000276:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000277:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000278:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000279:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000280:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000281:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000282:INFO  ]       Found _DllMainCRTStartup
+BUILD: [01:0000000283:INFO  ]         Loaded corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000284:INFO  ]       Found _cexit
+BUILD: [01:0000000285:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000286:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000000287:INFO  ]       Found _cinit
+BUILD: [01:0000000288:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000289:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000290:INFO  ]       Found __security_init_cookie
+BUILD: [01:0000000291:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000292:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000000293:INFO  ]       Found __onexitend
+BUILD: [01:0000000294:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000295:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000000296:INFO  ]       Found __xt_z
+BUILD: [01:0000000297:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000298:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000000299:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000300:INFO  ]       Found memset
+BUILD: [01:0000000301:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000302:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000303:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000304:INFO  ]       Found memcpy
+BUILD: [01:0000000305:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000306:INFO  ]         Referenced in common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000307:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000308:INFO  ]       Found __rt_udiv
+BUILD: [01:0000000309:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000310:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000311:INFO  ]       Found wcslen
+BUILD: [01:0000000312:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000313:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000314:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000000315:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000316:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000317:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000318:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000319:INFO  ]       Found memcmp
+BUILD: [01:0000000320:INFO  ]         Referenced in common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000321:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000322:INFO  ]       Found _XcptFilter
+BUILD: [01:0000000323:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000324:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000325:INFO  ]       Found free
+BUILD: [01:0000000326:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000327:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000328:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000329:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000000330:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000000331:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000332:INFO  ]       Found malloc
+BUILD: [01:0000000333:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000334:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000335:INFO  ]       Found realloc
+BUILD: [01:0000000336:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000337:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000338:INFO  ]       Found _msize
+BUILD: [01:0000000339:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000340:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000341:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\common_ti_mcspi.lib:
+BUILD: [01:0000000342:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\OMAP3530_soccfg.lib:
+BUILD: [01:0000000343:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000344:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000345:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000000346:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000347:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000348:INFO  ]       Found TerminateProcess
+BUILD: [01:0000000349:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000350:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000351:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000000352:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000353:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000354:INFO  ] 
+BUILD: [01:0000000355:INFO  ] Finished searching libraries
+BUILD: [01:0000000356:INFO  ] 
+BUILD: [01:0000000357:INFO  ] Finished pass 1
+BUILD: [01:0000000358:INFO  ] 
+BUILD: [01:0000000359:INFO  ]     Discarded __imp_malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000360:INFO  ]     Discarded __imp_realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000361:INFO  ]     Discarded __imp__msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000362:INFO  ]     Discarded __imp_InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000363:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000364:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000365:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000366:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000367:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000368:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000369:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000370:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000371:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000372:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000373:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000374:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000375:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000376:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000377:INFO  ]     Discarded '.pdata' from common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000378:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000379:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000380:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000381:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000382:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000383:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000384:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000385:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000386:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000387:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000388:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000389:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000390:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000391:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000392:INFO  ]     Discarded '.pdata' from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000393:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000394:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000395:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000396:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000397:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000398:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000399:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000400:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000401:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000402:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000403:INFO  ]     Discarded ResetEvent from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000404:INFO  ]     Discarded SetEvent from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000405:INFO  ]     Discarded GetCurrentProcessId from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000406:INFO  ]     Discarded DmaSetElementAndFrameCount from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000407:INFO  ]     Discarded DmaStart from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000408:INFO  ]     Discarded DmaGetStatus from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000409:INFO  ]     Discarded DmaClearStatus from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000410:INFO  ]     Discarded SpiDmaTxEnabled from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000411:INFO  ]     Discarded SpiDmaRxEnabled from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000412:INFO  ]     Discarded SPI_DmaWriteRead from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000413:INFO  ]     Discarded SPI_PowerUp from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000414:INFO  ]     Discarded SPI_PowerDown from common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000415:INFO  ]     Discarded DmaSetDstBuffer from common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000416:INFO  ]     Discarded DmaSetSrcBuffer from common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000417:INFO  ]     Discarded DmaSetRepeatMode from common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000418:INFO  ]     Discarded SOCGetGPIODeviceByBank from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000419:INFO  ]     Discarded SOCGetSDHCDeviceBySlot from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000420:INFO  ]     Discarded SOCGetMCBSPDeviceByBus from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000421:INFO  ]     Discarded SOCGetMCBSPSidetoneAddress from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000422:INFO  ]     Discarded SOCGetI2CDeviceByBus from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000423:INFO  ]     Discarded SOCGetUartDeviceByIndex from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000424:INFO  ]     Discarded SOCGetGPMCAddress from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000425:INFO  ]     Discarded SOCGetIntCtrlAddr from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000426:INFO  ]     Discarded SOCGetDSSInfo from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000427:INFO  ]     Discarded SOCGetDMADevice from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000428:INFO  ]     Discarded SOCGetVRFBDevice from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000429:INFO  ]     Discarded SOCGetUSBHInfo from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000430:INFO  ]     Discarded SOCGetUSBOTGAddress from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000431:INFO  ]     Discarded SOCGetIDCodeAddress from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000432:INFO  ]     Discarded SOCGetHDQDevice from OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000433:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000000434:INFO  ]     Discarded exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000435:INFO  ]     Discarded _exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000436:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000437:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000438:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000439:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000000440:INFO  ]     Discarded _onexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000441:INFO  ]     Discarded atexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000442:INFO  ]     Discarded malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000443:INFO  ]     Discarded realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000444:INFO  ]     Discarded _msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000445:INFO  ]     Discarded InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000446:INFO  ]     Discarded '.xdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000447:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000448:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000449:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000450:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000451:INFO  ] Starting pass 2
+BUILD: [01:0000000452:INFO  ]      omap_mcspi.exp
+BUILD: [01:0000000453:INFO  ]      common_ti_mcspi.lib(dma_init.obj)
+BUILD: [01:0000000454:INFO  ]      common_ti_mcspi.lib(spi.obj)
+BUILD: [01:0000000455:INFO  ]      OMAP3530_soccfg.lib(soccfg.obj)
+BUILD: [01:0000000456:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000457:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000458:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000459:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000460:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000461:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000462:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000463:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000464:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000465:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000466:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000467:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000468:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000469:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000470:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000471:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000472:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000473:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000474:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000475:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000476:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000477:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000478:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000479:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000480:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000481:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000482:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000483:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000484:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000485:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000486:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000487:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000488:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000489:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000490:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000491:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000492:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000493:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000494:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000495:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000496:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000497:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000498:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000499:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000500:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000501:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000502:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000503:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000504:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000505:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000506:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000507:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000508:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000509:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000000510:INFO  ]      corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000511:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000000512:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000000513:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000514:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000000515:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000516:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000517:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000518:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000519:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000520:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000521:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000522:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000523:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000524:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000525:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000526:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000527:INFO  ] Finished pass 2
+BUILD: [01:0000000528:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.dll
+BUILD: [01:0000000529:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000530:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000531:INFO  ] 
+BUILD: [01:0000000532:INFO  ] 
+BUILD: [01:0000000533:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\omap_mcspi.map
+BUILD: [01:0000000534:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000535:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\omap_mcspi.rel
+BUILD: [01:0000000536:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\omap_mcspi.dll C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\omap_mcspi.dll
+BUILD: [00:0000000537:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000538:INFO  ] Done.
+BUILD: [00:0000000539:PROGC ] Done.
+BUILD: [00:0000000540:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000541:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000542:PROGC ] Message                    0         0       0
+BUILD: [00:0000000543:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000544:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000545:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000546:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000547:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000548:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000549:PROGC ] C++                        0         0       0
+BUILD: [00:0000000550:PROGC ] C                          0         0       0
+BUILD: [00:0000000551:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000552:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000553:PROGC ] Dll's                      2         0       0
+BUILD: [00:0000000554:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000555:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000556:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000557:PROGC ] Other                      0         0       0
+BUILD: [00:0000000558:PROGC ] 
+BUILD: [00:0000000559:PROGC ] Total                      2         0       0
+BUILD: [00:0000000560:PROGC ] 
+BUILD: [00:0000000561:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000562:PROGC ] GetSystemTimes (seconds): Idle: 4     Kernel: 5     User: 0    
+BUILD: [00:0000000563:PROGC ] Elapsed  time  (seconds): 1    

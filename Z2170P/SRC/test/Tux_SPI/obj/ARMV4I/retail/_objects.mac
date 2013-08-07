@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\Tux_SPI.obj\
+    obj\ARMV4I\retail\globals.obj\
+    obj\ARMV4I\retail\test.obj
+

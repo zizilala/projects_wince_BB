@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\debug\blcommon.obj\
+    obj\ARMV4I\debug\format.obj\
+    obj\ARMV4I\debug\signimage.obj
+

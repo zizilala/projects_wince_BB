@@ -1,0 +1,26 @@
+; @CESYSGEN IF CE_MODULES_BATTDRVR
+; @CESYSGEN IF PM_PMSTUBS !
+
+; HIVE BOOT SECTION
+[HKEY_LOCAL_MACHINE\System\Events]
+    "SYSTEM/BatteryAPIsReady"="Battery Interface APIs"
+; END HIVE BOOT SECTION
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Battery]
+    "Prefix"="BAT"
+    "Dll"="battdrvr.dll"
+    "Flags"=dword:00010008
+    "Index"=dword:1
+    "Order"=dword:13          
+IF BSP_BATTERY_BQ27000
+    "PollInterval"=dword:EA60               ; Battery poll interval is used for AC sensing (ms) 
+    "AR"=dword:0
+    "USBChargerNotify"="vbus.power.event"
+    "PreScale"=dword:2                      ; scale by 2 gives a range of [0,1704] mA
+    "USBChargeCurrent"=dword:1F4            ; def. usb charge current is 500mA
+    "ACChargeCurrent"=dword:2EE             ; def. ac charge current is 750mA
+ENDIF
+    "IClass"="{DD176277-CD34-4980-91EE-67DBEF3D8913}"    ; WM7 only BATTERY_DRIVER_CLASS
+    "HotDieTempSel"=dword:0                 ;Hot die temperature level select. This range is from 0 to 2
+
+; @CESYSGEN ENDIF PM_PMSTUBS !
+; @CESYSGEN ENDIF CE_MODULES_BATTDRVR

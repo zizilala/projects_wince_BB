@@ -1,0 +1,10 @@
+OBJECTS=\
+    obj\ARMV4I\retail\chw.obj\
+    obj\ARMV4I\retail\hcdpdd.obj\
+    obj\ARMV4I\retail\cpipe.obj\
+    obj\ARMV4I\retail\transfer.obj\
+    obj\ARMV4I\retail\cohcd.obj\
+    obj\ARMV4I\retail\desclist.obj\
+    obj\ARMV4I\retail\cppidma.obj\
+    obj\ARMV4I\retail\testmode.obj
+

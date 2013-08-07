@@ -1,0 +1,262 @@
+ ti_constraintadapters
+
+ Timestamp is 51ede8c7 (Tue Jul 23 10:21:59 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000014H .CRT$XCU                CODE
+ 0001:00000018 00000004H .CRT$XCZ                CODE
+ 0001:0000001c 00000004H .CRT$XIA                CODE
+ 0001:00000020 00000004H .CRT$XIZ                CODE
+ 0001:00000024 00000004H .CRT$XPA                CODE
+ 0001:00000028 00000004H .CRT$XPZ                CODE
+ 0001:0000002c 00000004H .CRT$XTA                CODE
+ 0001:00000030 00000004H .CRT$XTZ                CODE
+ 0001:00000040 000002bcH .rdata                  CODE
+ 0001:000002fc 00000032H .rdata$debug            CODE
+ 0001:00000330 00002fc8H .text                   CODE
+ 0001:000032f8 00000128H .text$yc                CODE
+ 0001:00003420 000000c0H .text$yd                CODE
+ 0001:000034e0 00000030H .xdata                  CODE
+ 0001:00003510 00000028H .idata$2                CODE
+ 0001:00003538 00000014H .idata$3                CODE
+ 0001:0000354c 00000098H .idata$4                CODE
+ 0001:000035e4 00000016H .idata$6                CODE
+ 0001:00003600 000002d6H .edata                  CODE
+ 0002:00000000 00000098H .idata$5                DATA
+ 0002:00000098 00000008H .data                   DATA
+ 0002:000000a0 000002e0H .bss                    DATA
+ 0003:00000000 000002f8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000018       __xc_z                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xi_a                     1000101c     corelib0:crt0init.obj
+ 0001:00000020       __xi_z                     10001020     corelib0:crt0init.obj
+ 0001:00000024       __xp_a                     10001024     corelib0:crt0init.obj
+ 0001:00000028       __xp_z                     10001028     corelib0:crt0init.obj
+ 0001:0000002c       __xt_a                     1000102c     corelib0:crt0init.obj
+ 0001:00000030       __xt_z                     10001030     corelib0:crt0init.obj
+ 0001:00000060       ??_C@_1GC@MFOCLLAG@?$AAD?$AAV?$AAF?$AAS?$AA_?$AAI?$AAn?$AAi?$AAt?$AAC?$AAo?$AAn?$AAs?$AAt?$AAr?$AAa?$AAi?$AAn?$AAt?$AA?3?$AA?5?$AAU?$AAn?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd@ 10001060     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000000c8       ??_C@_1HO@MCEJPKI@?$AAD?$AAV?$AAF?$AAS?$AA_?$AAI?$AAn?$AAi?$AAt?$AAC?$AAo?$AAn?$AAs?$AAt?$AAr?$AAa?$AAi?$AAn?$AAt?$AA?3?$AA?5?$AAo?$AAp?$AAm?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AA?$DN@ 100010c8     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000148       ??_C@_1BC@BFINDJLA@?$AAO?$AAp?$AAm?$AAF?$AAl?$AAo?$AAo?$AAr?$AA?$AA@ 10001148     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:0000015c       ??_C@_1BC@JLOAIBPJ@?$AAC?$AAO?$AAR?$AAE?$AA1?$AAM?$AAa?$AAp?$AA?$AA@ 1000115c     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000170       ??_C@_1BA@CKJNKENB@?$AAM?$AAP?$AAU?$AA1?$AAM?$AAa?$AAp?$AA?$AA@ 10001170     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000180       ??_C@_1BG@LAODCCDA@?$AAO?$AAp?$AAm?$AAC?$AAe?$AAi?$AAl?$AAi?$AAn?$AAg?$AA?$AA@ 10001180     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000198       ??_C@_1BA@IDCKAMHD@?$AAO?$AAp?$AAm?$AAI?$AAn?$AAi?$AAt?$AA?$AA@ 10001198     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000001a8       ??_C@_1M@FBGIFOCP@?$AA?2?$AA3?$AA5?$AA1?$AA7?$AA?$AA@ 100011a8     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000001b4       ??_C@_1M@LKEIENOA@?$AA?2?$AA3?$AA5?$AAx?$AAx?$AA?$AA@ 100011b4     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000001c0       ??_C@_1M@PIGNEKJN@?$AA?2?$AA3?$AA7?$AAx?$AAx?$AA?$AA@ 100011c0     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000001cc       ??_C@_1BE@DAEMMAAB@?$AAO?$AAP?$AAM?$AA?$CF?$AAd?$AA?$CF?$AAs?$AA?$AN?$AA?6?$AA?$AA@ 100011cc     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000001e0       ??_C@_17MGNEPMPH@?$AA?5?$AA?9?$AAf?$AA?$AA@ 100011e0     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000001e8       ??_C@_11LOCGONAA@?$AA?$AA@ 100011e8     dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000001ec       ??_7PowerDomainConstraint@@6B@ 100011ec     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000001f8       ??_7MpuPowerDomainConstraint@@6B@ 100011f8     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000204       ??_7CorePowerDomainConstraint@@6B@ 10001204     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000210       ??_7IvaPowerDomainConstraint@@6B@ 10001210     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:0000021c       ??_7UsbHostPowerDomainConstraint@@6B@ 1000121c     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000228       ??_7DssPowerDomainConstraint@@6B@ 10001228     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000234       ??_7SgxPowerDomainConstraint@@6B@ 10001234     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000240       ??_7PeripheralPowerDomainConstraint@@6B@ 10001240     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:0000024c       ??_7CameraPowerDomainConstraint@@6B@ 1000124c     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000258       ??_7NeonPowerDomainConstraint@@6B@ 10001258     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000264       ??_C@_19HILOPLKE@?$AAN?$AAE?$AAO?$AAN?$AA?$AA@ 10001264     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000270       ??_C@_1O@NAINHJLA@?$AAC?$AAA?$AAM?$AAE?$AAR?$AAA?$AA?$AA@ 10001270     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000280       ??_C@_1BG@CDNAOEMP@?$AAP?$AAE?$AAR?$AAI?$AAP?$AAH?$AAE?$AAR?$AAA?$AAL?$AA?$AA@ 10001280     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00000298       ??_C@_17FNJAMJCK@?$AAS?$AAG?$AAX?$AA?$AA@ 10001298     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000002a0       ??_C@_17GEKIDGJE@?$AAD?$AAS?$AAS?$AA?$AA@ 100012a0     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000002a8       ??_C@_1BA@JFNDBDEI@?$AAU?$AAS?$AAB?$AAH?$AAO?$AAS?$AAT?$AA?$AA@ 100012a8     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000002b8       ??_C@_17FFHACNOC@?$AAI?$AAV?$AAA?$AA?$AA@ 100012b8     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000002c0       ??_C@_19HEMJPKJI@?$AAC?$AAO?$AAR?$AAE?$AA?$AA@ 100012c0     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000002cc       ??_C@_17NIBIAAMN@?$AAM?$AAP?$AAU?$AA?$AA@ 100012cc     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000002d4       ??_C@_1M@DFKENGJN@?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs?$AA?$AA@ 100012d4     OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000002e0       ??_C@_1M@KBPAKIPB@?$AAF?$AAl?$AAo?$AAo?$AAr?$AA?$AA@ 100012e0     OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000002ec       ??_C@_1BA@DJAHLPIB@?$AAC?$AAe?$AAi?$AAl?$AAi?$AAn?$AAg?$AA?$AA@ 100012ec     OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00000330       ?IsHex@@YAHG@Z             10001330 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000370       ?ParseOppToOpmMap@@YAHPBGKPAKK@Z 10001370 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000464       ?DVFS_InitConstraint@@YAPAXPBG@Z 10001464 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000750       ?DVFS_DeinitConstraint@@YAHPAX@Z 10001750 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000007a8       ?NewIndex@?$IndexList@K@@QAAHPAPAKPAK@Z 100017a8 f i dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:0000086c       ?GetIndex@?$IndexList@K@@QAAPAKK@Z 1000186c f i dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000008b0       ?DVFS_CreateConstraint@@YAPAXPAX@Z 100018b0 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000908       ?erase@?$list@PAUDVFSCallbackInfo_t@@V?$allocator@PAUDVFSCallbackInfo_t@@@std@@@std@@QAA?AViterator@12@V312@@Z 10001908 f i dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000960       ?erase@?$list@PAUDVFSCallbackInfo_t@@V?$allocator@PAUDVFSCallbackInfo_t@@@std@@@std@@QAA?AViterator@12@V312@0@Z 10001960 f i dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000009cc       ?NotifyCallbacks@@YAXKK@Z  100019cc f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000a54       ?UpdateOpm@@YAHK@Z         10001a54 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000cdc       ?DVFS_UpdateConstraint@@YAHPAXK0I@Z 10001cdc f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000dd0       ?DVFS_CloseConstraint@@YAHPAX@Z 10001dd0 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000ef8       ?DVFS_RemoveConstraintCallback@@YAHPAX@Z 10001ef8 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000f8c       ??1?$list@PAUDVFSCallbackInfo_t@@V?$allocator@PAUDVFSCallbackInfo_t@@@std@@@std@@QAA@XZ 10001f8c f i dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00000fc8       ?insert@?$list@PAUDVFSCallbackInfo_t@@V?$allocator@PAUDVFSCallbackInfo_t@@@std@@@std@@QAA?AViterator@12@V312@ABQAUDVFSCallbackInfo_t@@@Z 10001fc8 f i dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00001034       ?DVFS_InsertConstraintCallback@@YAPAXPAX00I0@Z 10002034 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:000010d0       ?PWRDOM_DeinitConstraint@@YAHPAX@Z 100020d0 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000010ec       ??0PowerDomainConstraint@@QAA@XZ 100020ec f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001150       ?CreatePowerDomainConstraint@PowerDomainConstraint@@QAAPAXXZ 10002150 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001194       ?ClosePowerDomainContraint@PowerDomainConstraint@@QAAHPAX@Z 10002194 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001250       ?PWRDOM_CreateConstraint@@YAPAXPAX@Z 10002250 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000012e8       ?PWRDOM_UpdateConstraint@@YAHPAXK0I@Z 100022e8 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000013e0       ?PWRDOM_CloseConstraint@@YAHPAX@Z 100023e0 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014a4       ?GetPowerDomain@MpuPowerDomainConstraint@@MBAKXZ 100024a4 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014ac       ?GetPowerDomain@CorePowerDomainConstraint@@MBAKXZ 100024ac f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014b4       ?GetPowerDomain@IvaPowerDomainConstraint@@MBAKXZ 100024b4 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014bc       ?GetPowerDomain@UsbHostPowerDomainConstraint@@MBAKXZ 100024bc f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014c4       ?GetPowerDomain@DssPowerDomainConstraint@@MBAKXZ 100024c4 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014cc       ?GetPowerDomain@SgxPowerDomainConstraint@@MBAKXZ 100024cc f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014d4       ?GetPowerDomain@PeripheralPowerDomainConstraint@@MBAKXZ 100024d4 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014dc       ?GetPowerDomain@CameraPowerDomainConstraint@@MBAKXZ 100024dc f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014e4       ?GetPowerDomain@NeonPowerDomainConstraint@@MBAKXZ 100024e4 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000014ec       ?erase@?$list@PAUPowerDomainCallbackInfo_t@@V?$allocator@PAUPowerDomainCallbackInfo_t@@@std@@@std@@QAA?AViterator@12@V312@@Z 100024ec f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001544       ?erase@?$list@PAUPowerDomainCallbackInfo_t@@V?$allocator@PAUPowerDomainCallbackInfo_t@@@std@@@std@@QAA?AViterator@12@V312@0@Z 10002544 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000015b0       ?NotifyDomainCallbacks@@YAXIIK@Z 100025b0 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001680       ?PWRDOM_InitConstraint@@YAPAXPBG@Z 10002680 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001ac8       ?PWRDOM_RemoveConstraintCallback@@YAHPAX@Z 10002ac8 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001b5c       ??1?$list@PAUPowerDomainCallbackInfo_t@@V?$allocator@PAUPowerDomainCallbackInfo_t@@@std@@@std@@QAA@XZ 10002b5c f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001b98       ?insert@?$list@PAUPowerDomainCallbackInfo_t@@V?$allocator@PAUPowerDomainCallbackInfo_t@@@std@@@std@@QAA?AViterator@12@V312@ABQAUPowerDomainCallbackInfo_t@@@Z 10002b98 f i OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001c04       ?PWRDOM_InsertConstraintCallback@@YAPAXPAX00I0@Z 10002c04 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00001ca4       ?InitializePowerDomain@PowerDomainConstraint@@QAAHPBG@Z 10002ca4 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00001d9c       ?FlushDomainPowerState@MpuPowerDomainConstraint@@UAAHXZ 10002d9c f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00001e38       ?FlushDomainPowerState@IvaPowerDomainConstraint@@UAAHXZ 10002e38 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00001ec4       ?FlushDomainPowerState@CorePowerDomainConstraint@@UAAHXZ 10002ec4 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00001f60       ?FlushDomainPowerState@PeripheralPowerDomainConstraint@@UAAHXZ 10002f60 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00001fe4       ?FlushDomainPowerState@DssPowerDomainConstraint@@UAAHXZ 10002fe4 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00002068       ?FlushDomainPowerState@SgxPowerDomainConstraint@@UAAHXZ 10003068 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000020e4       ?FlushDomainPowerState@CameraPowerDomainConstraint@@UAAHXZ 100030e4 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00002168       ?FlushDomainPowerState@UsbHostPowerDomainConstraint@@UAAHXZ 10003168 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000021ec       ?FlushDomainPowerState@NeonPowerDomainConstraint@@UAAHXZ 100031ec f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00002270       ?UpdatePowerDomainConstraint@PowerDomainConstraint@@MAAHK@Z 10003270 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000022ec       ?UpdatePowerDomainConstraint@PowerDomainConstraint@@QAAHPAXKKIK@Z 100032ec f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000023ec       ?UpdatePowerDomainConstraint@MpuPowerDomainConstraint@@MAAHK@Z 100033ec f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00002444       ?UpdatePowerDomainConstraint@IvaPowerDomainConstraint@@MAAHK@Z 10003444 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:0000249c       ?UpdatePowerDomainConstraint@CorePowerDomainConstraint@@MAAHK@Z 1000349c f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000024f4       ?UpdatePowerDomainConstraint@PeripheralPowerDomainConstraint@@MAAHK@Z 100034f4 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:0000254c       ?UpdatePowerDomainConstraint@DssPowerDomainConstraint@@MAAHK@Z 1000354c f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000025a4       ?UpdatePowerDomainConstraint@SgxPowerDomainConstraint@@MAAHK@Z 100035a4 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000025fc       ?UpdatePowerDomainConstraint@CameraPowerDomainConstraint@@MAAHK@Z 100035fc f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00002654       ?UpdatePowerDomainConstraint@UsbHostPowerDomainConstraint@@MAAHK@Z 10003654 f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:000026ac       ?UpdatePowerDomainConstraint@NeonPowerDomainConstraint@@MAAHK@Z 100036ac f   OMAP3530_pwrdom_constraint_lib:powerdomainconstraint.obj
+ 0001:00002704       ?INTRLAT_InitConstraint@@YAPAXPBG@Z 10003704 f   intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:00002780       ?INTRLAT_DeinitConstraint@@YAHPAX@Z 10003780 f   intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:000027b0       ?NewIndex@?$IndexList@M@@QAAHPAPAMPAK@Z 100037b0 f i intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:00002874       ?GetIndex@?$IndexList@M@@QAAPAMK@Z 10003874 f i intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:000028b8       ?UpdateConstraint@@YAHXZ   100038b8 f   intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:000029a8       ?INTRLAT_CreateConstraint@@YAPAXPAX@Z 100039a8 f   intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:00002a04       ?INTRLAT_UpdateConstraint@@YAHPAXK0I@Z 10003a04 f   intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:00002a98       ?INTRLAT_CloseConstraint@@YAHPAX@Z 10003a98 f   intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:00002b28       PmxSendDeviceNotification  10003b28 f   ceddk:CEDDK.dll
+ 0001:00002b38       EnterCriticalSection       10003b38 f   coredll:COREDLL.dll
+ 0001:00002b48       LeaveCriticalSection       10003b48 f   coredll:COREDLL.dll
+ 0001:00002b58       RegCloseKey                10003b58 f   coredll:COREDLL.dll
+ 0001:00002b68       InitializeCriticalSection  10003b68 f   coredll:COREDLL.dll
+ 0001:00002b78       NKDbgPrintfW               10003b78 f   coredll:COREDLL.dll
+ 0001:00002b88       RegQueryValueExW           10003b88 f   coredll:COREDLL.dll
+ 0001:00002b98       RegOpenKeyExW              10003b98 f   coredll:COREDLL.dll
+ 0001:00002ba8       KernelIoControl            10003ba8 f   coredll:COREDLL.dll
+ 0001:00002bb8       DeleteCriticalSection      10003bb8 f   coredll:COREDLL.dll
+ 0001:00002bc8       LocalFree                  10003bc8 f   coredll:COREDLL.dll
+ 0001:00002bd8       LocalAlloc                 10003bd8 f   coredll:COREDLL.dll
+ 0001:00002be8       __GetUserKData             10003be8 f   coredll:COREDLL.dll
+ 0001:00002bf8       DllMain                    10003bf8 f   corelib0:dllmain.obj
+ 0001:00002d14       _DllMainCRTStartup         10003d14 f   corelib0:pegdmain.obj
+ 0001:00002d44       __GSHandlerCheckCommon     10003d44 f   corelib0:gshandler.obj
+ 0001:00002d80       __GSHandlerCheck           10003d80 f   corelib0:gshandler.obj
+ 0001:00002da4       __security_init_cookie     10003da4 f   corelib0:seccinit.obj
+ 0001:00002e00       __security_check_cookie    10003e00 f   corelib0:armsecgs.obj
+ 0001:00002e14       __gsfailure                10003e14 f   corelib0:armsecgs.obj
+ 0001:00002e60       _onexit                    10003e60 f   corelib0:onexit.obj
+ 0001:00002fe8       atexit                     10003fe8 f   corelib0:onexit.obj
+ 0001:00003104       _cexit                     10004104 f   corelib0:cexit.obj
+ 0001:00003120       _initterm                  10004120 f   corelib0:crt0dat.obj
+ 0001:00003154       _cinit                     10004154 f   corelib0:crt0dat.obj
+ 0001:00003188       wcstoul                    10004188 f   corelib1:COREDLL.dll
+ 0001:00003198       wcscat                     10004198 f   corelib1:COREDLL.dll
+ 0001:000031a8       wcscpy                     100041a8 f   corelib1:COREDLL.dll
+ 0001:000031b8       memset                     100041b8 f   corelib1:COREDLL.dll
+ 0001:000031c8       ??3@YAXPAX@Z               100041c8 f   corelib1:COREDLL.dll
+ 0001:000031d8       ??2@YAPAXI@Z               100041d8 f   corelib1:COREDLL.dll
+ 0001:000031e8       _purecall                  100041e8 f   corelib1:COREDLL.dll
+ 0001:000031f8       swprintf                   100041f8 f   corelib1:COREDLL.dll
+ 0001:00003208       __ges                      10004208 f   corelib1:COREDLL.dll
+ 0001:00003218       __lts                      10004218 f   corelib1:COREDLL.dll
+ 0001:00003228       __nes                      10004228 f   corelib1:COREDLL.dll
+ 0001:00003238       _XcptFilter                10004238 f   corelib1:COREDLL.dll
+ 0001:00003248       __C_specific_handler       10004248 f   corelib1:COREDLL.dll
+ 0001:00003258       __security_gen_cookie2     10004258 f   corelib1:COREDLL.dll
+ 0001:00003268       __report_gsfailure         10004268 f   corelib1:COREDLL.dll
+ 0001:00003278       free                       10004278 f   corelib1:COREDLL.dll
+ 0001:00003288       malloc                     10004288 f   corelib1:COREDLL.dll
+ 0001:00003298       realloc                    10004298 f   corelib1:COREDLL.dll
+ 0001:000032a8       _msize                     100042a8 f   corelib1:COREDLL.dll
+ 0001:000032b8       DisableThreadLibraryCalls  100042b8 f   coredll:COREDLL.dll
+ 0001:000032c8       InterlockedCompareExchange 100042c8 f   coredll:COREDLL.dll
+ 0001:000032d8       InterlockedExchange        100042d8 f   coredll:COREDLL.dll
+ 0001:000032e8       TerminateProcess           100042e8 f   coredll:COREDLL.dll
+ 0001:00003510       __IMPORT_DESCRIPTOR_CEDDK  10004510     ceddk:CEDDK.dll
+ 0001:00003524       __IMPORT_DESCRIPTOR_COREDLL 10004524     coredll:COREDLL.dll
+ 0001:00003538       __NULL_IMPORT_DESCRIPTOR   10004538     ceddk:CEDDK.dll
+ 0002:00000000       __imp_PmxSendDeviceNotification 10005000     ceddk:CEDDK.dll
+ 0002:00000004       \177CEDDK_NULL_THUNK_DATA  10005004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_EnterCriticalSection 10005008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_LeaveCriticalSection 1000500c     coredll:COREDLL.dll
+ 0002:00000010       __imp_RegCloseKey          10005010     coredll:COREDLL.dll
+ 0002:00000014       __imp_InitializeCriticalSection 10005014     coredll:COREDLL.dll
+ 0002:00000018       __imp_NKDbgPrintfW         10005018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_RegQueryValueExW     1000501c     coredll:COREDLL.dll
+ 0002:00000020       __imp_RegOpenKeyExW        10005020     coredll:COREDLL.dll
+ 0002:00000024       __imp_KernelIoControl      10005024     coredll:COREDLL.dll
+ 0002:00000028       __imp_DeleteCriticalSection 10005028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_LocalFree            1000502c     coredll:COREDLL.dll
+ 0002:00000030       __imp_LocalAlloc           10005030     coredll:COREDLL.dll
+ 0002:00000034       __imp___GetUserKData       10005034     coredll:COREDLL.dll
+ 0002:00000038       __imp_wcstoul              10005038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp_wcscat               1000503c     corelib1:COREDLL.dll
+ 0002:00000040       __imp_wcscpy               10005040     corelib1:COREDLL.dll
+ 0002:00000044       __imp_memset               10005044     corelib1:COREDLL.dll
+ 0002:00000048       __imp_??3@YAXPAX@Z         10005048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp_??2@YAPAXI@Z         1000504c     corelib1:COREDLL.dll
+ 0002:00000050       __imp__purecall            10005050     corelib1:COREDLL.dll
+ 0002:00000054       __imp_swprintf             10005054     corelib1:COREDLL.dll
+ 0002:00000058       __imp___ges                10005058     corelib1:COREDLL.dll
+ 0002:0000005c       __imp___lts                1000505c     corelib1:COREDLL.dll
+ 0002:00000060       __imp___nes                10005060     corelib1:COREDLL.dll
+ 0002:00000064       __imp__XcptFilter          10005064     corelib1:COREDLL.dll
+ 0002:00000068       __imp___C_specific_handler 10005068     corelib1:COREDLL.dll
+ 0002:0000006c       __imp___security_gen_cookie2 1000506c     corelib1:COREDLL.dll
+ 0002:00000070       __imp___report_gsfailure   10005070     corelib1:COREDLL.dll
+ 0002:00000074       __imp_free                 10005074     corelib1:COREDLL.dll
+ 0002:00000078       __imp_malloc               10005078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp_realloc              1000507c     corelib1:COREDLL.dll
+ 0002:00000080       __imp__msize               10005080     corelib1:COREDLL.dll
+ 0002:00000084       __imp_DisableThreadLibraryCalls 10005084     coredll:COREDLL.dll
+ 0002:00000088       __imp_InterlockedCompareExchange 10005088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_InterlockedExchange  1000508c     coredll:COREDLL.dll
+ 0002:00000090       __imp_TerminateProcess     10005090     coredll:COREDLL.dll
+ 0002:00000094       \177COREDLL_NULL_THUNK_DATA 10005094     coredll:COREDLL.dll
+ 0002:00000098       __security_cookie          10005098     corelib0:seccinit.obj
+ 0002:0000009c       __security_cookie_complement 1000509c     corelib0:seccinit.obj
+ 0002:0000036c       _exitflag                  1000536c     corelib0:cexit.obj
+ 0002:00000370       __onexitend                10005370     <common>
+ 0002:00000374       __onexitbegin              10005374     <common>
+ 0002:00000378       g_pcsExit                  10005378     <common>
+ 0002:0000037c       _pRawDllMain               1000537c     <common>
+
+ entry point at        0001:00002d14
+
+ Static symbols
+
+ 0001:00002c18       _DllMainCRTStartupHelper   10003c18 f   corelib0:pegdmain.obj
+ 0001:00003008       doexit                     10004008 f   corelib0:cexit.obj
+ 0001:000032f8       ??__Es_IndexList@@YAXXZ    100042f8 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00003330       ??__Es_CallbackList@@YAXXZ 10004330 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00003370       ??__Es_CallbackList@@YAXXZ 10004370 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000033b0       ??__Es_PowerDomainInfo@@YAXXZ 100043b0 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000033e8       ??__Es_IndexList@@YAXXZ    100043e8 f   intrlatency_constraint_lib:intrlatencyconstraint.obj
+ 0001:00003420       ??__Fs_IndexList@@YAXXZ    10004420 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00003450       ??__Fs_CallbackList@@YAXXZ 10004450 f   dvfs_constraint_lib:dvfsconstraint.obj
+ 0001:00003468       ??__Fs_PowerDomainInfo@@YAXXZ 10004468 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:00003498       ??__Fs_CallbackList@@YAXXZ 10004498 f   OMAP3530_pwrdom_constraint_lib:powerdomaincontext.obj
+ 0001:000034b0       ??__Fs_IndexList@@YAXXZ    100044b0 f   intrlatency_constraint_lib:intrlatencyconstraint.obj

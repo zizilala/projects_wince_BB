@@ -1,0 +1,51 @@
+#ifndef __ComProtocol_H__
+#define __ComProtocol_H__
+
+#define MAX_Buffer_Size (1024*sizeof(TCHAR))
+
+#define MAX_CMD_STR 1024
+
+class CComProtocol  
+{
+private:
+        
+        
+public:
+ 
+  
+  CComProtocol();
+  
+  ~CComProtocol();  
+  
+   BOOL   EnumCOMPorts(LPTSTR DeviceKey,LPTSTR COMPortStr); 
+  
+   HANDLE SetupCOMPort(LPCTSTR  COMPort,DWORD BaudRate,BYTE Parity,BYTE ByteSize,BYTE StopBits);  
+   
+   void   CloseCOMPort(HANDLE PortHandle);
+   
+   BOOL   BaudRate(HANDLE PortHandle,DWORD BaudRate);
+   
+   BOOL   SetTimeouts(HANDLE PortHandle,
+                      DWORD ReadIntervalTimeout, 
+                      DWORD ReadTotalTimeoutMultiplier, 
+                      DWORD ReadTotalTimeoutConstant, 
+                      DWORD WriteTotalTimeoutMultiplier, 
+                      DWORD WriteTotalTimeoutConstant 
+                      );
+   
+  BOOL WriteCOMPort(HANDLE PortHandle,LPCVOID DataBuffer,DWORD NumOfBytes) ;        
+   
+  BOOL ReadCOMPort(HANDLE PortHandle,LPCVOID DataBuffer,DWORD NumOfBytes,PDWORD lpTotalReadBytes); 
+  
+  BOOL Write_AT_CMD(HANDLE hDevComPort,LPTSTR  CMDString) ;
+  
+  BOOL Read_AT_CMD (HANDLE hDevComPort,LPTSTR  RespondString );
+  
+  BOOL Write_RFID_CMD(HANDLE hDevComPort,char  *CMDString);
+  
+  BOOL Read_RFID_CMD (HANDLE hDevComPort,PBYTE lpDataBuffer,DWORD dwBufferSize ,LPDWORD  lpNumberOfBytesRead);
+  
+};
+
+
+#endif  

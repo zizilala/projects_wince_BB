@@ -1,0 +1,329 @@
+ Tux_PowerManagement
+
+ Timestamp is 51dcc2a2 (Wed Jul 10 10:10:42 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00001832H .rdata                  CODE
+ 0001:00001854 00000030H .rdata$debug            CODE
+ 0001:00001884 000028f8H .text                   CODE
+ 0001:0000417c 00000024H .xdata                  CODE
+ 0001:000041a0 00000028H .idata$2                CODE
+ 0001:000041c8 00000014H .idata$3                CODE
+ 0001:000041dc 000000dcH .idata$4                CODE
+ 0001:000042b8 00000086H .idata$6                CODE
+ 0001:00004340 00000054H .edata                  CODE
+ 0002:00000000 000000dcH .idata$5                DATA
+ 0002:000000e0 000000d4H .data                   DATA
+ 0002:000001b8 000199ecH .bss                    DATA
+ 0003:00000000 000000d8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_15JNBOKNOG@?$AA?$AN?$AA?6?$AA?$AA@ 1000103c     Tux_PowerManagementTest.obj
+ 0001:00000044       ??_C@_1CC@OCNIMJBA@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAn?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?5?$AA?6?$AA?$AA@ 10001044     Tux_PowerManagementTest.obj
+ 0001:00000068       ??_C@_1EC@KAHLNJHF@?$AAI?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$EA?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AAV?$AAa?$AAl?$AAu?$AAe?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAV?$AAa?$AAl?$AAi?$AAd?$AA?5@ 10001068     Tux_PowerManagementTest.obj
+ 0001:000000b0       ??_C@_1EG@PNOECICE@?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?5?$AAL?$AAi?$AAn?$AAe?$AA?5?$AAO?$AAp?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?5?$AAa?$AAr?$AAe?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd@ 100010b0     Tux_PowerManagementTest.obj
+ 0001:000000f8       ??_C@_1BI@NHEFPFMB@?$AAr?$AAe?$AAt?$AAu?$AAr?$AAn?$AA?5?$AAT?$AAR?$AAU?$AAE?$AA?$AA@ 100010f8     Tux_PowerManagementTest.obj
+ 0001:00000110       ??_C@_1DE@BECLEOD@?$AA0?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA_?$AAt?$AAc?$AAs?$AAl?$AAe?$AAn?$AA?$CI?$AAl?$AAp?$AAs?$AAz?$AAC?$AAm?$AAd?$AAL?$AAi?$AAn?$AAe?$AA?$CJ?$AA?$AA@ 10001110     Tux_PowerManagementTest.obj
+ 0001:00000144       ??_C@_1DI@EMOMAECC@?$AAT?$AAu?$AAx?$AA_?$AAP?$AAo?$AAw?$AAe?$AAr?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAm?$AAe?$AAn?$AAt?$AAT?$AAe?$AAs?$AAt?$AA?4?$AAc?$AAp?$AAp?$AA?$AA@ 10001144     Tux_PowerManagementTest.obj
+ 0001:00000180       ??_C@_1GG@IAPCIIAO@?$AAF?$AAA?$AAI?$AAL?$AA?5?$AAi?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$EA?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5?$AAC?$AAO?$AAN?$AAD?$AAI?$AAT?$AAI?$AAO?$AAN?$AA?$CI@ 10001180     Tux_PowerManagementTest.obj
+ 0001:000001e8       ??_C@_1EK@DIIDMDAD@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa@ 100011e8     Tux_PowerManagementTest.obj
+ 0001:00000234       ??_C@_1CI@KACAOMDA@?$AAE?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAo?$AAc?$AAc?$AAu?$AAr?$AAr?$AAe?$AAd?$AA?$CB?$AA?$AA@ 10001234     Tux_PowerManagementTest.obj
+ 0001:00000260       ??_C@_1EC@KDFHODIP@?$AAE?$AAN?$AAD?$AA?5?$AAT?$AAE?$AAS?$AAT?$AA?3?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AA?$CF?$AAs?$AA?0?$AA?5?$AAT?$AAi?$AAm?$AAe?$AA?$DN?$AA?$CF?$AAu?$AA?4?$AA?$CF?$AA0?$AA3?$AAu@ 10001260     Tux_PowerManagementTest.obj
+ 0001:000002a4       ??_C@_1BA@FGBMDHOA@?$AAA?$AAB?$AAO?$AAR?$AAT?$AAE?$AAD?$AA?$AA@ 100012a4     Tux_PowerManagementTest.obj
+ 0001:000002b4       ??_C@_1O@GLIHGOJN@?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AA@ 100012b4     Tux_PowerManagementTest.obj
+ 0001:000002c4       ??_C@_1O@GAOACLOB@?$AAP?$AAA?$AAS?$AAS?$AAE?$AAD?$AA?$AA@ 100012c4     Tux_PowerManagementTest.obj
+ 0001:000002d4       ??_C@_1BA@PGEPKIHK@?$AAS?$AAK?$AAI?$AAP?$AAP?$AAE?$AAD?$AA?$AA@ 100012d4     Tux_PowerManagementTest.obj
+ 0001:000002e8       ??_C@_1EI@LEDNBHEI@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAE?$AAN?$AAD?$AA_?$AAT?$AAE?$AAS?$AAT?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa?$AAl@ 100012e8     Tux_PowerManagementTest.obj
+ 0001:00000330       ??_C@_1EM@FHMCMOKK@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAB?$AAE?$AAG?$AAI?$AAN?$AA_?$AAT?$AAE?$AAS?$AAT?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc@ 10001330     Tux_PowerManagementTest.obj
+ 0001:00000380       ??_C@_1EM@FOHJMLNM@?$AAB?$AAE?$AAG?$AAI?$AAN?$AA?5?$AAT?$AAE?$AAS?$AAT?$AA?3?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAs?$AA?$DN?$AA?$CF?$AAu?$AA?0?$AA?5?$AAS?$AAe@ 10001380     Tux_PowerManagementTest.obj
+ 0001:000003d0       ??_C@_1EK@GHDGMMPI@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAE?$AAN?$AAD?$AA_?$AAG?$AAR?$AAO?$AAU?$AAP?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa@ 100013d0     Tux_PowerManagementTest.obj
+ 0001:00000420       ??_C@_1EG@PADLHGGO@?$AAE?$AAN?$AAD?$AA?5?$AAG?$AAR?$AAO?$AAU?$AAP?$AA?3?$AA?5?$AAT?$AAu?$AAx?$AA_?$AAP?$AAo?$AAw?$AAe?$AAr?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAm?$AAe?$AAn?$AAt?$AA?4?$AAD@ 10001420     Tux_PowerManagementTest.obj
+ 0001:00000468       ??_C@_1EO@PEHBNEBJ@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAB?$AAE?$AAG?$AAI?$AAN?$AA_?$AAG?$AAR?$AAO?$AAU?$AAP?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5@ 10001468     Tux_PowerManagementTest.obj
+ 0001:000004b8       ??_C@_1EK@PODIAEEH@?$AAB?$AAE?$AAG?$AAI?$AAN?$AA?5?$AAG?$AAR?$AAO?$AAU?$AAP?$AA?3?$AA?5?$AAT?$AAu?$AAx?$AA_?$AAP?$AAo?$AAw?$AAe?$AAr?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAm?$AAe?$AAn?$AAt@ 100014b8     Tux_PowerManagementTest.obj
+ 0001:00000508       ??_C@_1EO@MABEFEBO@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAS?$AAT?$AAO?$AAP?$AA_?$AAS?$AAC?$AAR?$AAI?$AAP?$AAT?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5@ 10001508     Tux_PowerManagementTest.obj
+ 0001:00000558       ??_C@_1FA@IPECFONB@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAS?$AAT?$AAA?$AAR?$AAT?$AA_?$AAS?$AAC?$AAR?$AAI?$AAP?$AAT?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ@ 10001558     Tux_PowerManagementTest.obj
+ 0001:000005a8       ??_C@_1EI@BIFLJGHA@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAR?$AAE?$AAG?$AAI?$AAS?$AAT?$AAE?$AAR?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa?$AAl@ 100015a8     Tux_PowerManagementTest.obj
+ 0001:000005f0       ??_C@_1DM@PBGNCCNB@?$AAR?$AAe?$AAt?$AAu?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAf?$AAr?$AAo?$AAm?$AA?5?$AAS?$AAP?$AAM?$AA_?$AAS?$AAH?$AAE?$AAL?$AAL?$AA_?$AAI?$AAN?$AAF?$AAO?$AA?$AA@ 100015f0     Tux_PowerManagementTest.obj
+ 0001:00000630       ??_C@_1IC@NMLGEFPE@?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?5?$AAi?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$EA?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5?$AA?5?$AAN?$AAo?$AA?5?$AAc?$AAo?$AAm@ 10001630     Tux_PowerManagementTest.obj
+ 0001:000006b8       ??_C@_1GA@JBHDKOEF@?$AAF?$AAA?$AAI?$AAL?$AA?5?$AAi?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$EA?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AAn?$AA?8?$AAt?$AA?5?$AAs@ 100016b8     Tux_PowerManagementTest.obj
+ 0001:00000718       ??_C@_1EM@LCENFKIH@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAS?$AAH?$AAE?$AAL?$AAL?$AA_?$AAI?$AAN?$AAF?$AAO?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc@ 10001718     Tux_PowerManagementTest.obj
+ 0001:00000764       ??_C@_1CC@FLPNONNI@?$AAG?$AAe?$AAt?$AA?5?$AAc?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?$AA@ 10001764     Tux_PowerManagementTest.obj
+ 0001:00000788       ??_C@_1EM@DHBFOELL@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAU?$AAN?$AAL?$AAO?$AAA?$AAD?$AA_?$AAD?$AAL?$AAL?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc@ 10001788     Tux_PowerManagementTest.obj
+ 0001:000007d8       ??_C@_1EI@LLGCEHFM@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAL?$AAO?$AAA?$AAD?$AA_?$AAD?$AAL?$AAL?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa?$AAl@ 100017d8     Tux_PowerManagementTest.obj
+ 0001:00000820       ??_C@_1CI@OPLDDIKK@?$AAS?$AAu?$AAs?$AAp?$AAe?$AAn?$AAd?$AA?1?$AAR?$AAe?$AAs?$AAu?$AAm?$AAe?$AA?5?$AAT?$AAe?$AAs?$AAt?$AA?$AA@ 10001820     globals.obj
+ 0001:00000848       ??_C@_1CM@LBJIMLOB@?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAT?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAT?$AAe?$AAs?$AAt?$AA?$AA@ 10001848     globals.obj
+ 0001:00000874       ??_C@_1CC@PKHCGMDB@?$AAP?$AAo?$AAw?$AAe?$AAr?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAT?$AAe?$AAs?$AAt?$AA?$AA@ 10001874     globals.obj
+ 0001:00000898       ??_C@_1DC@KAFKMFIH@?$AAP?$AAo?$AAw?$AAe?$AAr?$AA?5?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAr?$AA?5?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAC?$AAa?$AAs?$AAe?$AAs?$AA?$AA@ 10001898     globals.obj
+ 0001:000008d0       ??_C@_1FG@INLINDEP@?$AAC?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAa?$AAl?$AAl?$AA?5?$AAe?$AAx?$AAp?$AAe?$AAc?$AAt?$AAe?$AAd?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5?$AAf@ 100018d0     test.obj
+ 0001:00000928       ??_C@_1FE@CFAPMLEH@?$AAC?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAw?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAa?$AAl?$AAl?$AA?5?$AAe?$AAx?$AAp?$AAe?$AAc?$AAt?$AAe?$AAd?$AA?5?$AAb?$AAy?$AAt?$AAe?$AAs?$AA?5@ 10001928     test.obj
+ 0001:0000097c       ??_C@_1CG@PDCNFPKJ@?$AAC?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAf?$AAi?$AAl?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 1000197c     test.obj
+ 0001:000009a8       ??_C@_1GE@OKBCCAC@?$AAB?$AAy?$AAt?$AAe?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$CF?$AAu?$AA?5?$AAi?$AAs?$AA?5?$AAd?$AAi?$AAf?$AAf?$AAe?$AAr?$AAe?$AAn?$AAt?$AA?5?$AAf?$AAr?$AAo?$AAm?$AA?5?$AAb@ 100019a8     test.obj
+ 0001:00000a0c       ??_C@_01KDCPPGHE@r?$AA@    10001a0c     test.obj
+ 0001:00000a10       ??_C@_01NOFIACDB@w?$AA@    10001a10     test.obj
+ 0001:00000a14       ??_C@_08DCCHEKFN@test?4bin?$AA@ 10001a14     test.obj
+ 0001:00000a20       ??_C@_1BG@GJPBPDCP@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAE?$AAn?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001a20     test.obj
+ 0001:00000a38       ??_C@_1FE@IEBHJAND@?$AA?2?$AA?2?$AA?4?$AA?2?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?2?$AAN?$AAa?$AAm?$AAe?$AAd?$AAE?$AAv?$AAe?$AAn?$AAt?$AAs?$AA?2?$AAR?$AAe@ 10001a38     test.obj
+ 0001:00000a8c       ??_C@_1CA@ICPALGO@?$AAS?$AAu?$AAs?$AAp?$AAe?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?4?$AA?4?$AA?4?$AA?$AN?$AA?6?$AA?$AA@ 10001a8c     test.obj
+ 0001:00000aac       ??_C@_1BA@DAAKBIFE@?$AAs?$AAu?$AAs?$AAp?$AAe?$AAn?$AAd?$AA?$AA@ 10001aac     test.obj
+ 0001:00000abc       ??_C@_1BI@CCJADCIO@?$AAR?$AAe?$AAs?$AAu?$AAm?$AAe?$AAd?$AA?5?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 10001abc     test.obj
+ 0001:00000ad4       ??_C@_1DM@JCEKNHLI@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AA?5?$AAr?$AAe?$AAs?$AAu?$AAm?$AAe?$AAd?$AA?5?$AA?$CF?$AAu?$AA?5?$AAt?$AAi?$AAm?$AAe?$AA?$CI?$AAs?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001ad4     test.obj
+ 0001:00000b10       ??_C@_1BI@LNFJDFFK@?$AAR?$AAe?$AAs?$AAu?$AAm?$AAe?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?$AA@ 10001b10     test.obj
+ 0001:00000b28       ??_C@_1BG@COFBNNCL@?$AAs?$AAy?$AAs?$AAt?$AAe?$AAm?$AAi?$AAd?$AAl?$AAe?$AA?$AA@ 10001b28     test.obj
+ 0001:00000b40       ??_C@_1BC@IJEKHFDC@?$AAu?$AAs?$AAe?$AAr?$AAi?$AAd?$AAl?$AAe?$AA?$AA@ 10001b40     test.obj
+ 0001:00000b54       ??_C@_15GMGGGDOD@?$AAo?$AAn?$AA?$AA@ 10001b54     test.obj
+ 0001:00000b60       ??_C@_1EG@IAIMDKPN@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr?$AAy@ 10001b60     test.obj
+ 0001:00000ba8       ??_C@_1DC@JICMBMDM@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAM?$AAs?$AAg?$AAQ?$AAu?$AAe?$AAu?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 10001ba8     test.obj
+ 0001:00000be0       ??_C@_1GE@EFHOMKPO@?$AAT?$AAu?$AAx?$AA_?$AAP?$AAo?$AAw?$AAe?$AAr?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAm?$AAe?$AAn?$AAt?$AA?3?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAo?$AAp?$AAe?$AAn?$AAi@ 10001be0     test.obj
+ 0001:00000c48       ??_C@_1FA@PLCDGEBN@?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAP?$AAM?$AA?5?$AAr?$AAe?$AAl?$AAo?$AAa?$AAd?$AA?5@ 10001c48     test.obj
+ 0001:00000c98       ??_C@_1BG@BDFEBKKE@?$AAA?$AAC?$AAU?$AAs?$AAe?$AAr?$AAI?$AAd?$AAl?$AAe?$AA?$AA@ 10001c98     test.obj
+ 0001:00000cb0       ??_C@_1BK@LDFDNBMD@?$AAA?$AAC?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AAI?$AAd?$AAl?$AAe?$AA?$AA@ 10001cb0     test.obj
+ 0001:00000ccc       ??_C@_1BE@MEMPIFKD@?$AAA?$AAC?$AAS?$AAu?$AAs?$AAp?$AAe?$AAn?$AAd?$AA?$AA@ 10001ccc     test.obj
+ 0001:00000ce0       ??_C@_1BK@ONLBCKCN@?$AAB?$AAa?$AAt?$AAt?$AAU?$AAs?$AAe?$AAr?$AAI?$AAd?$AAl?$AAe?$AA?$AA@ 10001ce0     test.obj
+ 0001:00000cfc       ??_C@_1BO@HOGFBFFA@?$AAB?$AAa?$AAt?$AAt?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AAI?$AAd?$AAl?$AAe?$AA?$AA@ 10001cfc     test.obj
+ 0001:00000d1c       ??_C@_1BI@IBLOPCAN@?$AAB?$AAa?$AAt?$AAt?$AAS?$AAu?$AAs?$AAp?$AAe?$AAn?$AAd?$AA?$AA@ 10001d1c     test.obj
+ 0001:00000d38       ??_C@_1EI@FPBANDCM@?$AAP?$AAo?$AAw?$AAe?$AAr?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAr?$AA?1?$AAR?$AAe?$AAl?$AAo?$AAa?$AAd?$AAA?$AAc?$AAt?$AAi?$AAv?$AAi?$AAt?$AAy?$AAT?$AAi?$AAm?$AAe?$AAo@ 10001d38     test.obj
+ 0001:00000d80       ??_C@_1GA@BFBHIFBH@?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?2?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAS?$AAe?$AAt?$AA?2?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl@ 10001d80     test.obj
+ 0001:00000de0       ??_C@_1BA@KNMKEODK@?$AAP?$AAo?$AAw?$AAe?$AAr?$AAO?$AAn?$AA?$AA@ 10001de0     test.obj
+ 0001:00000df0       ??_C@_1EE@CBBDDOBO@?$AAT?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AAI?$AAD?$AAL?$AAE?$AA?9?$AA?$DO?$AAS?$AAU?$AAS?$AAP?$AAE?$AAN?$AAD?$AA?$AN@ 10001df0     test.obj
+ 0001:00000e38       ??_C@_1JO@EDLNMEAP@?$AAT?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAU?$AAS?$AAE?$AAR?$AAI?$AAD?$AAL?$AAE?$AA?9?$AA?$DO?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AAI?$AAD?$AAL?$AAE@ 10001e38     test.obj
+ 0001:00000ed8       ??_C@_1IO@GMDPPHDB@?$AAT?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAO?$AAN?$AA?9?$AA?$DO?$AAU?$AAS?$AAE?$AAR?$AAI?$AAD?$AAL?$AAE?$AA?0?$AA?5?$AAm?$AAe?$AAa?$AAs?$AAu?$AAr@ 10001ed8     test.obj
+ 0001:00000f68       ??_C@_1CO@FEHGJCJM@?$AAT?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAO?$AAN?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 10001f68     test.obj
+ 0001:00000f98       ??_C@_1FA@EOEDFPAC@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAP?$AAM?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAT@ 10001f98     test.obj
+ 0001:00000fe8       ??_C@_1GC@MNKINKMA@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAp?$AAa?$AAr?$AAa?$AAm?$AAe?$AAt?$AAe?$AAr?$AAs?$AA?5?$AAp?$AAa?$AAs?$AAs?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAC?$AAh?$AAe@ 10001fe8     test.obj
+ 0001:00001050       ??_C@_1FE@MOOHLGBE@?$AAR?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AAd?$AA?5?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAp?$AAo?$AAw?$AAe?$AAr?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAt?$AAr?$AAa@ 10002050     test.obj
+ 0001:000010a8       ??_C@_1GA@GEJMMJDJ@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAF?$AAi?$AAn?$AAi?$AAs?$AAh?$AAe?$AAd?$AA?5?$AAS?$AAu?$AAc?$AAc?$AAe?$AAs?$AAs?$AAf?$AAu?$AAl?$AAl?$AAy?$AA?5?$AAo?$AAn?$AA?5?$AA?$CC?$AAS@ 100020a8     test.obj
+ 0001:00001108       ??_C@_1EO@DHACNHEC@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAo?$AA?5?$AAS?$AAu?$AAs@ 10002108     test.obj
+ 0001:00001158       ??_C@_1GI@BPELOFCG@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAF?$AAi?$AAn?$AAi?$AAs?$AAh?$AAe?$AAd?$AA?5?$AAS?$AAu?$AAc?$AAc?$AAe?$AAs?$AAs?$AAf?$AAu?$AAl?$AAl?$AAy?$AA?5?$AAo?$AAn?$AA?5?$AA?$CC?$AAS@ 10002158     test.obj
+ 0001:000011c0       ??_C@_1FG@HBEFAMNM@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAo?$AA?5?$AAS?$AAy?$AAs@ 100021c0     test.obj
+ 0001:00001218       ??_C@_1GE@KCIONJEN@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAF?$AAi?$AAn?$AAi?$AAs?$AAh?$AAe?$AAd?$AA?5?$AAS?$AAu?$AAc?$AAc?$AAe?$AAs?$AAs?$AAf?$AAu?$AAl?$AAl?$AAy?$AA?5?$AAo?$AAn?$AA?5?$AA?$CC?$AAU@ 10002218     test.obj
+ 0001:00001280       ??_C@_1FC@IIOOPGDK@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAo?$AA?5?$AAU?$AAs?$AAe@ 10002280     test.obj
+ 0001:000012d8       ??_C@_1FG@BJDAAOMM@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAF?$AAi?$AAn?$AAi?$AAs?$AAh?$AAe?$AAd?$AA?5?$AAS?$AAu?$AAc?$AAc?$AAe?$AAs?$AAs?$AAf?$AAu?$AAl?$AAl?$AAy?$AA?5?$AAo?$AAn?$AA?5?$AA?$CC?$AAO@ 100022d8     test.obj
+ 0001:00001330       ??_C@_1EA@FDCBOILK@?$AAR?$AAe?$AAs?$AAt?$AAo?$AAr?$AAe?$AA?5?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AAs?$AA?$AN?$AA?6?$AA?$AA@ 10002330     test.obj
+ 0001:00001370       ??_C@_1EO@ECFDONO@?$AAS?$AAU?$AAS?$AAP?$AAE?$AAN?$AAD?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAe?$AAn?$AA?0?$AA?5?$AAt?$AAe?$AAs?$AAt?$AA?5?$AAf?$AAa?$AAi@ 10002370     test.obj
+ 0001:000013c0       ??_C@_1FE@GJFPBNGL@?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AAI?$AAD?$AAL?$AAE?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAe?$AAn?$AA?0?$AA?5?$AAt?$AAe?$AAs?$AAt?$AA?5@ 100023c0     test.obj
+ 0001:00001418       ??_C@_1FA@FBKOKNDN@?$AAU?$AAS?$AAE?$AAR?$AAI?$AAD?$AAL?$AAE?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAe?$AAn?$AA?0?$AA?5?$AAt?$AAe?$AAs?$AAt?$AA?5?$AAf?$AAa@ 10002418     test.obj
+ 0001:00001468       ??_C@_1EE@MJBHFAGK@?$AAO?$AAN?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAe?$AAn?$AA?0?$AA?5?$AAt?$AAe?$AAs?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$CB?$AA?$AN@ 10002468     test.obj
+ 0001:000014ac       ??_C@_1CM@HFCBIJPE@?$AAS?$AAU?$AAS?$AAP?$AAE?$AAN?$AAD?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAe?$AAe?$AAn?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 100024ac     test.obj
+ 0001:000014d8       ??_C@_1DC@KHBLKIHC@?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AAI?$AAD?$AAL?$AAE?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAe?$AAe?$AAn?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 100024d8     test.obj
+ 0001:00001510       ??_C@_1HM@GGKMMLIC@?$AAT?$AAe?$AAs?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAS?$AAU?$AAS?$AAP?$AAE?$AAN?$AAD?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?0?$AA?5?$AAp?$AAl?$AAe?$AAa?$AAs?$AAe?$AA?5?$AAw?$AAa@ 10002510     test.obj
+ 0001:0000158c       ??_C@_1CO@JNLECNJ@?$AAU?$AAS?$AAE?$AAR?$AAI?$AAD?$AAL?$AAE?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAe?$AAe?$AAn?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 1000258c     test.obj
+ 0001:000015bc       ??_C@_1DI@CLJLDKGD@?$AAT?$AAe?$AAs?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AAI?$AAD?$AAL?$AAE?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?3?$AA?$AN?$AA?6?$AA?$AA@ 100025bc     test.obj
+ 0001:000015f4       ??_C@_1CC@EPEEMMFL@?$AAO?$AAN?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAe?$AAe?$AAn?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 100025f4     test.obj
+ 0001:00001618       ??_C@_1DE@DGFCAPHC@?$AAT?$AAe?$AAs?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAU?$AAS?$AAE?$AAR?$AAI?$AAD?$AAL?$AAE?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?3?$AA?$AN?$AA?6?$AA?$AA@ 10002618     test.obj
+ 0001:0000164c       ??_C@_1CC@OACPGEEM@?$AAS?$AAt?$AAa?$AAr?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAT?$AAe?$AAs?$AAt?$AA?3?$AA?$AN?$AA?6?$AA?$AA@ 1000264c     test.obj
+ 0001:00001670       ??_C@_1CI@OHKBINOF@?$AAT?$AAe?$AAs?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAO?$AAN?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?3?$AA?$AN?$AA?6?$AA?$AA@ 10002670     test.obj
+ 0001:00001698       ??_C@_1EG@MIEFDNJL@?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AAi?$AAn?$AAg?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAP?$AAM?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs@ 10002698     test.obj
+ 0001:000016e0       ??_C@_1FK@NNJALGKB@?$AAS?$AAa?$AAv?$AAi?$AAn?$AAg?$AA?5?$AAa?$AAn?$AAd?$AA?5?$AAD?$AAi?$AAs?$AAa?$AAb?$AAl?$AAi?$AAn?$AAg?$AA?5?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?5?$AAS?$AAt?$AAa?$AAt@ 100026e0     test.obj
+ 0001:00001740       ??_C@_1EK@PNGAOHLO@?$AAR?$AAe?$AAc?$AAi?$AAe?$AAv?$AAe?$AAd?$AA?5?$AAa?$AA?5?$AAn?$AAe?$AAw?$AA?5?$AAP?$AAo?$AAw?$AAe?$AAr?$AA?5?$AAN?$AAo?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo@ 10002740     test.obj
+ 0001:00001790       ??_C@_1EI@ENBHFIGI@?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAt?$AAr?$AAa?$AAn?$AAs?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?5?$AAr?$AAe?$AAa?$AAc?$AAh?$AAe?$AAd@ 10002790     test.obj
+ 0001:000017d8       ??_C@_1BK@JEPHKMEI@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAA?$AAb?$AAo?$AAr?$AAt?$AA?$AN?$AA?6?$AA?$AA@ 100027d8     test.obj
+ 0001:000017f4       ??_C@_1BK@LHMDEIBD@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 100027f4     test.obj
+ 0001:00001810       ??_C@_1BO@KLNMJA@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 10002810     test.obj
+ 0001:00001830       ??_C@_1CC@FGOJDFKB@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAs?$AAu?$AAc?$AAc?$AAe?$AAe?$AAd?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10002830     test.obj
+ 0001:00001884       DllMain                    10002884 f   Tux_PowerManagementTest.obj
+ 0001:00001894       ?Debug@@YAXPBGZZ           10002894 f   Tux_PowerManagementTest.obj
+ 0001:00001ba0       ShellProc                  10002ba0 f   Tux_PowerManagementTest.obj
+ 0001:00001f74       ?file_thread@@YAKPAX@Z     10002f74 f   test.obj
+ 0001:00002198       ?TestSuspendResume@@YAHIPAKPAU_FUNCTION_TABLE_ENTRY@@@Z 10003198 f   test.obj
+ 0001:00003254       ?TestPowerStates@@YAHIPAKPAU_FUNCTION_TABLE_ENTRY@@@Z 10004254 f   test.obj
+ 0001:00003890       ?TestSystemStateMachine@@YAHIPAKPAU_FUNCTION_TABLE_ENTRY@@@Z 10004890 f   test.obj
+ 0001:00003a94       OutputDebugStringW         10004a94 f   coredll:COREDLL.dll
+ 0001:00003aa4       wvsprintfW                 10004aa4 f   coredll:COREDLL.dll
+ 0001:00003ab4       EventModify                10004ab4 f   coredll:COREDLL.dll
+ 0001:00003ac4       CloseHandle                10004ac4 f   coredll:COREDLL.dll
+ 0001:00003ad4       WaitForSingleObject        10004ad4 f   coredll:COREDLL.dll
+ 0001:00003ae4       Sleep                      10004ae4 f   coredll:COREDLL.dll
+ 0001:00003af4       SetSystemPowerState        10004af4 f   coredll:COREDLL.dll
+ 0001:00003b04       NKDbgPrintfW               10004b04 f   coredll:COREDLL.dll
+ 0001:00003b14       CeRunAppAtTime             10004b14 f   coredll:COREDLL.dll
+ 0001:00003b24       FileTimeToSystemTime       10004b24 f   coredll:COREDLL.dll
+ 0001:00003b34       SystemTimeToFileTime       10004b34 f   coredll:COREDLL.dll
+ 0001:00003b44       GetLocalTime               10004b44 f   coredll:COREDLL.dll
+ 0001:00003b54       CreateThread               10004b54 f   coredll:COREDLL.dll
+ 0001:00003b64       CreateEventW               10004b64 f   coredll:COREDLL.dll
+ 0001:00003b74       ReadMsgQueue               10004b74 f   coredll:COREDLL.dll
+ 0001:00003b84       RequestPowerNotifications  10004b84 f   coredll:COREDLL.dll
+ 0001:00003b94       CreateMsgQueue             10004b94 f   coredll:COREDLL.dll
+ 0001:00003ba4       RegCloseKey                10004ba4 f   coredll:COREDLL.dll
+ 0001:00003bb4       OpenEventW                 10004bb4 f   coredll:COREDLL.dll
+ 0001:00003bc4       RegSetValueExW             10004bc4 f   coredll:COREDLL.dll
+ 0001:00003bd4       RegOpenKeyExW              10004bd4 f   coredll:COREDLL.dll
+ 0001:00003be4       GetSystemPowerStatusEx2    10004be4 f   coredll:COREDLL.dll
+ 0001:00003bf4       RegQueryValueExW           10004bf4 f   coredll:COREDLL.dll
+ 0001:00003c04       RegEnumValueW              10004c04 f   coredll:COREDLL.dll
+ 0001:00003c14       TerminateThread            10004c14 f   coredll:COREDLL.dll
+ 0001:00003c24       GetExitCodeThread          10004c24 f   coredll:COREDLL.dll
+ 0001:00003c34       GetSystemTimeAsFileTime    10004c34 f   coredll:COREDLL.dll
+ 0001:00003c44       keybd_event                10004c44 f   coredll:COREDLL.dll
+ 0001:00003c54       KatoGetDefaultObject       10004c54 f   kato:kato.dll
+ 0001:00003d68       _DllMainCRTStartup         10004d68 f   corelib0:pegdmain.obj
+ 0001:00003d98       __GSHandlerCheckCommon     10004d98 f   corelib0:gshandler.obj
+ 0001:00003dd4       __GSHandlerCheck           10004dd4 f   corelib0:gshandler.obj
+ 0001:00003df8       __security_init_cookie     10004df8 f   corelib0:seccinit.obj
+ 0001:00003e54       __security_check_cookie    10004e54 f   corelib0:armsecgs.obj
+ 0001:00003e68       __gsfailure                10004e68 f   corelib0:armsecgs.obj
+ 0001:00003fa8       _cexit                     10004fa8 f   corelib0:cexit.obj
+ 0001:00003fc4       _initterm                  10004fc4 f   corelib0:crt0dat.obj
+ 0001:00003ff8       _cinit                     10004ff8 f   corelib0:crt0dat.obj
+ 0001:0000402c       wcscat                     1000502c f   corelib1:COREDLL.dll
+ 0001:0000403c       wcscpy                     1000503c f   corelib1:COREDLL.dll
+ 0001:0000404c       atoi                       1000504c f   corelib1:COREDLL.dll
+ 0001:0000405c       wcslen                     1000505c f   corelib1:COREDLL.dll
+ 0001:0000406c       ??3@YAXPAX@Z               1000506c f   corelib1:COREDLL.dll
+ 0001:0000407c       ??2@YAPAXI@Z               1000507c f   corelib1:COREDLL.dll
+ 0001:0000408c       memcpy                     1000508c f   corelib1:COREDLL.dll
+ 0001:0000409c       fread                      1000509c f   corelib1:COREDLL.dll
+ 0001:000040ac       fclose                     100050ac f   corelib1:COREDLL.dll
+ 0001:000040bc       fwrite                     100050bc f   corelib1:COREDLL.dll
+ 0001:000040cc       fopen                      100050cc f   corelib1:COREDLL.dll
+ 0001:000040dc       wcsncmp                    100050dc f   corelib1:COREDLL.dll
+ 0001:000040ec       wcsncpy                    100050ec f   corelib1:COREDLL.dll
+ 0001:000040fc       _XcptFilter                100050fc f   corelib1:COREDLL.dll
+ 0001:0000410c       __C_specific_handler       1000510c f   corelib1:COREDLL.dll
+ 0001:0000411c       __security_gen_cookie2     1000511c f   corelib1:COREDLL.dll
+ 0001:0000412c       __report_gsfailure         1000512c f   corelib1:COREDLL.dll
+ 0001:0000413c       free                       1000513c f   corelib1:COREDLL.dll
+ 0001:0000414c       DeleteCriticalSection      1000514c f   coredll:COREDLL.dll
+ 0001:0000415c       InterlockedExchange        1000515c f   coredll:COREDLL.dll
+ 0001:0000416c       TerminateProcess           1000516c f   coredll:COREDLL.dll
+ 0001:000041a0       __IMPORT_DESCRIPTOR_COREDLL 100051a0     coredll:COREDLL.dll
+ 0001:000041b4       __IMPORT_DESCRIPTOR_kato   100051b4     kato:kato.dll
+ 0001:000041c8       __NULL_IMPORT_DESCRIPTOR   100051c8     coredll:COREDLL.dll
+ 0002:00000000       __imp_OutputDebugStringW   10006000     coredll:COREDLL.dll
+ 0002:00000004       __imp_wvsprintfW           10006004     coredll:COREDLL.dll
+ 0002:00000008       __imp_EventModify          10006008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_CloseHandle          1000600c     coredll:COREDLL.dll
+ 0002:00000010       __imp_WaitForSingleObject  10006010     coredll:COREDLL.dll
+ 0002:00000014       __imp_Sleep                10006014     coredll:COREDLL.dll
+ 0002:00000018       __imp_SetSystemPowerState  10006018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_NKDbgPrintfW         1000601c     coredll:COREDLL.dll
+ 0002:00000020       __imp_CeRunAppAtTime       10006020     coredll:COREDLL.dll
+ 0002:00000024       __imp_FileTimeToSystemTime 10006024     coredll:COREDLL.dll
+ 0002:00000028       __imp_SystemTimeToFileTime 10006028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_GetLocalTime         1000602c     coredll:COREDLL.dll
+ 0002:00000030       __imp_CreateThread         10006030     coredll:COREDLL.dll
+ 0002:00000034       __imp_CreateEventW         10006034     coredll:COREDLL.dll
+ 0002:00000038       __imp_ReadMsgQueue         10006038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_RequestPowerNotifications 1000603c     coredll:COREDLL.dll
+ 0002:00000040       __imp_CreateMsgQueue       10006040     coredll:COREDLL.dll
+ 0002:00000044       __imp_RegCloseKey          10006044     coredll:COREDLL.dll
+ 0002:00000048       __imp_OpenEventW           10006048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_RegSetValueExW       1000604c     coredll:COREDLL.dll
+ 0002:00000050       __imp_RegOpenKeyExW        10006050     coredll:COREDLL.dll
+ 0002:00000054       __imp_GetSystemPowerStatusEx2 10006054     coredll:COREDLL.dll
+ 0002:00000058       __imp_RegQueryValueExW     10006058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_RegEnumValueW        1000605c     coredll:COREDLL.dll
+ 0002:00000060       __imp_TerminateThread      10006060     coredll:COREDLL.dll
+ 0002:00000064       __imp_GetExitCodeThread    10006064     coredll:COREDLL.dll
+ 0002:00000068       __imp_GetSystemTimeAsFileTime 10006068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_keybd_event          1000606c     coredll:COREDLL.dll
+ 0002:00000070       __imp_TerminateProcess     10006070     coredll:COREDLL.dll
+ 0002:00000074       __imp_wcscat               10006074     corelib1:COREDLL.dll
+ 0002:00000078       __imp_wcscpy               10006078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp_atoi                 1000607c     corelib1:COREDLL.dll
+ 0002:00000080       __imp_wcslen               10006080     corelib1:COREDLL.dll
+ 0002:00000084       __imp_??3@YAXPAX@Z         10006084     corelib1:COREDLL.dll
+ 0002:00000088       __imp_??2@YAPAXI@Z         10006088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp_memcpy               1000608c     corelib1:COREDLL.dll
+ 0002:00000090       __imp_fread                10006090     corelib1:COREDLL.dll
+ 0002:00000094       __imp_fclose               10006094     corelib1:COREDLL.dll
+ 0002:00000098       __imp_fwrite               10006098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp_fopen                1000609c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp_wcsncmp              100060a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp_wcsncpy              100060a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp__XcptFilter          100060a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp___C_specific_handler 100060ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp___security_gen_cookie2 100060b0     corelib1:COREDLL.dll
+ 0002:000000b4       __imp___report_gsfailure   100060b4     corelib1:COREDLL.dll
+ 0002:000000b8       __imp_free                 100060b8     corelib1:COREDLL.dll
+ 0002:000000bc       __imp_DeleteCriticalSection 100060bc     coredll:COREDLL.dll
+ 0002:000000c0       __imp_InterlockedExchange  100060c0     coredll:COREDLL.dll
+ 0002:000000c4       \177COREDLL_NULL_THUNK_DATA 100060c4     coredll:COREDLL.dll
+ 0002:000000c8       __imp_?BeginLevel@CKato@@QAAHKPBGZZ 100060c8     kato:kato.dll
+ 0002:000000cc       __imp_KatoGetDefaultObject 100060cc     kato:kato.dll
+ 0002:000000d0       __imp_?Log@CKato@@QAAHKPBGZZ 100060d0     kato:kato.dll
+ 0002:000000d4       __imp_?EndLevel@CKato@@QAAHPBGZZ 100060d4     kato:kato.dll
+ 0002:000000d8       \177kato_NULL_THUNK_DATA   100060d8     kato:kato.dll
+ 0002:000000e0       ?g_StressCount@@3KA        100060e0     Tux_PowerManagementTest.obj
+ 0002:000000e4       ?g_NbLoop@@3KA             100060e4     Tux_PowerManagementTest.obj
+ 0002:000000e8       ?g_TimeToSleep@@3KA        100060e8     Tux_PowerManagementTest.obj
+ 0002:000000ec       ?g_NbBytes@@3KA            100060ec     Tux_PowerManagementTest.obj
+ 0002:00000120       ?g_lpFTE@@3PAU_FUNCTION_TABLE_ENTRY@@A 10006120     globals.obj
+ 0002:00000184       ?dwStateId_useridle@@3KA   10006184     test.obj
+ 0002:00000188       ?dwStateId_systemidle@@3KA 10006188     test.obj
+ 0002:0000018c       ?dwStateId_suspend@@3KA    1000618c     test.obj
+ 0002:00000190       ?g_bTestStatus@@3KA        10006190     test.obj
+ 0002:00000194       ?g_bTestResult@@3KA        10006194     test.obj
+ 0002:00000198       ?g_dwOnStateSeen@@3KA      10006198     test.obj
+ 0002:0000019c       ?g_dwUserIdleStateSeen@@3KA 1000619c     test.obj
+ 0002:000001a0       ?g_dwSystemIdleStateSeen@@3KA 100061a0     test.obj
+ 0002:000001a4       ?g_dwSuspendStateSeen@@3KA 100061a4     test.obj
+ 0002:000001a8       ?g_numofstates@@3KA        100061a8     test.obj
+ 0002:000001ac       __security_cookie          100061ac     corelib0:seccinit.obj
+ 0002:000001b0       __security_cookie_complement 100061b0     corelib0:seccinit.obj
+ 0002:000001b8       ?g_fStress@@3HA            100061b8     Tux_PowerManagementTest.obj
+ 0002:000001bc       ?g_spsShellInfo@@3U_SPS_SHELL_INFO@@A 100061bc     globals.obj
+ 0002:000001d8       ?g_pShellInfo@@3PAU_SPS_SHELL_INFO@@A 100061d8     globals.obj
+ 0002:000001dc       ?g_pKato@@3PAVCKato@@A     100061dc     globals.obj
+ 0002:000001e0       ?g_CurrentSystemTime@@3U_FILETIME@@A 100061e0     test.obj
+ 0002:000001e8       ?g_hPMThread1@@3PAXA       100061e8     test.obj
+ 0002:000001ec       ?g_hPMThread2@@3PAXA       100061ec     test.obj
+ 0002:000001f0       ?g_StateInfoTable@@3PAUStateInfo@@A 100061f0     test.obj
+ 0002:00019b50       ?dwStateId_on@@3KA         1001fb50     test.obj
+ 0002:00019b54       ?bOnState@@3HA             1001fb54     test.obj
+ 0002:00019b58       ?bUserIdleState@@3HA       1001fb58     test.obj
+ 0002:00019b5c       ?bSystemIdleState@@3HA     1001fb5c     test.obj
+ 0002:00019b60       ?bSuspendState@@3HA        1001fb60     test.obj
+ 0002:00019b64       ?g_dwMaxTimeout@@3KA       1001fb64     test.obj
+ 0002:00019b68       ?g_dwSaveACUserIdle@@3KA   1001fb68     test.obj
+ 0002:00019b6c       ?g_dwSaveACSystemIdle@@3KA 1001fb6c     test.obj
+ 0002:00019b70       ?g_dwSaveACSuspend@@3KA    1001fb70     test.obj
+ 0002:00019b74       ?g_dwSaveBattUserIdle@@3KA 1001fb74     test.obj
+ 0002:00019b78       ?g_dwSaveBattSystemIdle@@3KA 1001fb78     test.obj
+ 0002:00019b7c       ?g_dwSaveBattSuspend@@3KA  1001fb7c     test.obj
+ 0002:00019b80       ?g_bTestBegin@@3HA         1001fb80     test.obj
+ 0002:00019b84       ?g_TestStartTime@@3KA      1001fb84     test.obj
+ 0002:00019b88       ?g_PreviousState@@3KA      1001fb88     test.obj
+ 0002:00019b8c       ?g_CurrentState@@3KA       1001fb8c     test.obj
+ 0002:00019b90       _exitflag                  1001fb90     corelib0:cexit.obj
+ 0002:00019b94       __onexitend                1001fb94     <common>
+ 0002:00019b98       __onexitbegin              1001fb98     <common>
+ 0002:00019b9c       g_pcsExit                  1001fb9c     <common>
+ 0002:00019ba0       _pRawDllMain               1001fba0     <common>
+
+ entry point at        0001:00003d68
+
+ Static symbols
+
+ 0001:00001928       ?SetTestOptions@@YAHPAG@Z  10002928 f   Tux_PowerManagementTest.obj
+ 0001:00002380       ?PMNotificationThread2@@YAKXZ 10003380 f   test.obj
+ 0001:000025b0       ?RestoreStateTimeouts@@YAHXZ 100035b0 f   test.obj
+ 0001:00002738       ?DisableStateTimeouts@@YAHXZ 10003738 f   test.obj
+ 0001:00002a3c       ?InitializeStateMachine@@YAHXZ 10003a3c f   test.obj
+ 0001:00002d60       ?IsLastState@@YAHK@Z       10003d60 f   test.obj
+ 0001:00002da4       ?UpdateTestTicker@@YAHKK@Z 10003da4 f   test.obj
+ 0001:00002f10       ?CheckStateMachine@@YAKPAU_POWER_BROADCAST@@PAU_FILETIME@@@Z 10003f10 f   test.obj
+ 0001:000035ec       ?PMNotificationThread@@YAKXZ 100045ec f   test.obj
+ 0001:00003c6c       _DllMainCRTStartupHelper   10004c6c f   corelib0:pegdmain.obj
+ 0001:00003eac       doexit                     10004eac f   corelib0:cexit.obj

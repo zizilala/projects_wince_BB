@@ -1,0 +1,3 @@
+OBJECTS=\
+    obj\ARMV4I\retail\omap35xx_gpio.obj
+

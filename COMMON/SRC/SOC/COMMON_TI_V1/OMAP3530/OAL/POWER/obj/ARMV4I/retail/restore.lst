@@ -1,0 +1,698 @@
+ARM macroassembler      Page:1 
+    1 00000000          ;/* 
+    2 00000000          ;=============================================================================== 
+    3 00000000          ;*             Texas Instruments OMAP(TM) Platform Software 
+    4 00000000          ;* (c) Copyright Texas Instruments, Incorporated. All Rights Reserved. 
+    5 00000000          ;* 
+    6 00000000          ;* Use of this software is controlled by the terms and conditions found 
+    7 00000000          ;* in the license agreement under which this software has been supplied. 
+    8 00000000          ;* 
+    9 00000000          ;=============================================================================== 
+   10 00000000          ;*/ 
+   11 00000000          ; 
+   12 00000000          ;  File:  restore.s 
+   13 00000000            
+   14 00000000                  INCLUDE kxarm.h 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000          ;++ 
+   14 00000000          ; 
+   15 00000000          ; 
+   16 00000000          ; Module Name: 
+   17 00000000          ; 
+   18 00000000          ;    kxarm.h 
+   19 00000000          ; 
+   20 00000000          ; Abstract: 
+   21 00000000          ; 
+   22 00000000          ;    This is an implementation of the WINCE/ARM Calling Sequence 
+   23 00000000          ;    Specification. 
+   24 00000000          ; 
+   25 00000000          ; Environment: 
+   26 00000000          ;    String Library 
+   27 00000000          ; 
+   28 00000000          ; Revision History: 
+   29 00000000          ;-- 
+   30 00000000            
+   31 00000000                          GBLS    VBar 
+   32 00000000          VBar    SETS    "|" 
+   33 00000000                          GBLL    HaveExceptHandler 
+   34 00000000                          GBLS    AreaName 
+   35 00000000                          GBLS    FuncName 
+   36 00000000                          GBLS    PrologName 
+   37 00000000                          GBLS    FuncEndName 
+   38 00000000                          GBLS    ExceptHandler 
+   39 00000000                          GBLS    ExceptData 
+   40 00000000          AreaName SETS   "|.text|" 
+   41 00000000          HaveExceptHandler SETL {FALSE} 
+   42 00000000            
+   43 00000000                  MACRO 
+   44 00000000                  TEXTAREA 
+   45 00000000                  AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   47 00000000                  MEND 
+   48 00000000            
+   49 00000000              MACRO 
+   50 00000000              THUMBAREA 
+   51 00000000              AREA |.text|,ALIGN=2,CODE,READONLY,THUMB 
+   52 00000000          AreaName SETS "|.text|" 
+   53 00000000              MEND 
+   54 00000000            
+   55 00000000                  MACRO 
+   56 00000000                  STARTUPTEXT 
+   57 00000000                  AREA |.astart|,ALIGN=2,CODE 
+   58 00000000          AreaName SETS "|.astart|" 
+   59 00000000                  MEND 
+   60 00000000            
+   61 00000000                  MACRO 
+   62 00000000                  START_REGION    $NameBegin 
+   63 00000000                  LCLS    TempName 
+   64 00000000          TempName SETS    VBar:CC:"$NameBegin":CC:VBar 
+   65 00000000                  EXPORT  $TempName[DATA] 
+   66 00000000          $TempName 
+   67 00000000                  MEND 
+   68 00000000            
+   69 00000000                  MACRO 
+   70 00000000                  END_REGION              $NameEnd 
+   71 00000000                  LCLS    TempName 
+   72 00000000          TempName SETS    VBar:CC:"$NameEnd":CC:VBar 
+   73 00000000                  EXPORT  $TempName[DATA] 
+   74 00000000          $TempName 
+   75 00000000                  MEND 
+   76 00000000            
+   77 00000000          ; 
+   78 00000000          ;   This macro should be used if the assembly function is in ARM 
+   79 00000000          ; 
+   80 00000000            
+   81 00000000                  MACRO 
+   82 00000000                  NESTED_ARMENTRY $Name 
+   83 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+   84 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+   85 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+   86 00000000                  LCLS    ExceptBit 
+   87 00000000                  IF HaveExceptHandler 
+   88 00000000          ExceptBit   SETS        "0x80000000" 
+   89 00000000                  ELSE 
+   90 00000000          ExceptBit   SETS        "0" 
+   91 00000000                  ENDIF 
+   92 00000000            
+   93 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+   94 00000000                  DCD         $FuncName 
+   95 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+   96 00000000                  AREA $AreaName,CODE,READONLY 
+   97 00000000                  ALIGN   2 
+   98 00000000                  EXPORT  $FuncName [FUNC] 
+   99 00000000                  IF HaveExceptHandler 
+  100 00000000              DCD $ExceptHandler 
+  101 00000000              DCD $ExceptData 
+  102 00000000          HaveExceptHandler SETL {FALSE} 
+  103 00000000                  ENDIF 
+  104 00000000          $FuncName 
+  105 00000000                  ROUT 
+  106 00000000                  MEND 
+  107 00000000            
+  108 00000000          ; 
+  109 00000000          ;   This macro should be used if the assembly function is in THUMB 
+  110 00000000          ; 
+  111 00000000                  MACRO 
+  112 00000000                  NESTED_THUMBENTRY       $Name 
+  113 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  114 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  115 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  116 00000000                  LCLS    ExceptBit 
+  117 00000000                  IF HaveExceptHandler 
+  118 00000000          ExceptBit   SETS        "0x80000000" 
+  119 00000000                  ELSE 
+  120 00000000          ExceptBit   SETS        "0" 
+  121 00000000                  ENDIF 
+  122 00000000            
+  123 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  124 00000000                  DCD         $FuncName 
+  125 00000000              DCD     (($PrologName-$FuncName)/2) :OR: ((($FuncEndName-$FuncName)/2):SHL:8) :OR: $ExceptBit 
+  126 00000000                  AREA $AreaName,CODE,READONLY 
+  127 00000000                  ALIGN   2 
+  128 00000000                  EXPORT  $FuncName [FUNC] 
+  129 00000000                  IF HaveExceptHandler 
+  130 00000000              DCD $ExceptHandler 
+  131 00000000              DCD $ExceptData 
+  132 00000000          HaveExceptHandler SETL {FALSE} 
+  133 00000000                  ENDIF 
+  134 00000000          $FuncName 
+  135 00000000                  ROUT 
+  136 00000000                  MEND 
+  137 00000000            
+  138 00000000          ; 
+  139 00000000          ;   This macro should be used if the assembly function is in ARM 
+  140 00000000          ; 
+  141 00000000                  MACRO 
+  142 00000000                  NESTED_ENTRY    $Name 
+  143 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  144 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  145 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  146 00000000                  LCLS    ExceptBit 
+  147 00000000                  IF HaveExceptHandler 
+  148 00000000          ExceptBit   SETS        "0x80000000" 
+  149 00000000                  ELSE 
+  150 00000000          ExceptBit   SETS        "0" 
+  151 00000000                  ENDIF 
+  152 00000000            
+  153 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  154 00000000                  DCD         $FuncName 
+  155 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+  156 00000000                  AREA $AreaName,CODE,READONLY 
+  157 00000000                  ALIGN   2 
+  158 00000000                  EXPORT  $FuncName [FUNC] 
+  159 00000000                  IF HaveExceptHandler 
+  160 00000000              DCD $ExceptHandler 
+  161 00000000              DCD $ExceptData 
+  162 00000000          HaveExceptHandler SETL {FALSE} 
+  163 00000000                  ENDIF 
+  164 00000000          $FuncName 
+  165 00000000                  ROUT 
+  166 00000000                  MEND 
+  167 00000000            
+  168 00000000                  MACRO 
+  169 00000000                  PROLOG_END 
+  170 00000000          $PrologName 
+  171 00000000                  MEND 
+  172 00000000            
+  173 00000000                  MACRO 
+  174 00000000                  LEAF_ENTRY      $Name 
+  175 00000000          FuncName SETS    VBar:CC:"$Name":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  $FuncName [FUNC] 
+  180 00000000          $FuncName 
+  181 00000000                  ROUT 
+  182 00000000                  MEND 
+  183 00000000            
+  184 00000000                  MACRO 
+  185 00000000                  ALTERNATE_ENTRY $Name 
+  186 00000000                  LCLS    TempName 
+  187 00000000          TempName SETS    VBar:CC:"$Name":CC:VBar 
+  188 00000000                  EXPORT  $TempName [FUNC] 
+  189 00000000          $TempName 
+  190 00000000                  MEND 
+  191 00000000            
+  192 00000000                  MACRO 
+  193 00000000                  ENTRY_END       $Name 
+  194 00000000          $FuncEndName 
+  195 00000000                  MEND 
+  196 00000000            
+  197 00000000                  MACRO 
+  198 00000000                  EXCEPTION_HANDLER       $Handler 
+  199 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  200 00000000          ExceptData SETS "0" 
+  201 00000000          HaveExceptHandler SETL {TRUE} 
+  202 00000000                  MEND 
+  203 00000000            
+  204 00000000                  MACRO 
+  205 00000000                  EXCEPTION_HANDLER_DATA  $Handler, $HandlerData 
+  206 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  207 00000000          ExceptData SETS    VBar:CC:"$HandlerData":CC:VBar 
+  208 00000000          HaveExceptHandler SETL {TRUE} 
+  209 00000000                  MEND 
+  210 00000000            
+  211 00000000                  MACRO 
+  212 00000000                  EXCEPTION_HANDLER_MILLICODE     $Handler, $HandlerData 
+  213 00000000          ExceptHandler SETS    "$Handler" 
+  214 00000000          ExceptData SETS    "$HandlerData" 
+  215 00000000          HaveExceptHandler SETL {TRUE} 
+  216 00000000                  MEND 
+  217 00000000            
+  218 00000000            
+  219 00000000                  END 
+   15 00000000                  INCLUDE omap3530_const.inc 
+    1 00000000          ; All rights reserved ADENEO EMBEDDED 2010 
+    2 00000000          ; 
+    3 00000000          ;============================================================================== 
+    4 00000000          ;             Texas Instruments OMAP(TM) Platform Software 
+    5 00000000          ; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved. 
+    6 00000000          ; 
+    7 00000000          ; Use of this software is controlled by the terms and conditions found 
+    8 00000000          ; in the license agreement under which this software has been supplied. 
+    9 00000000          ; 
+   10 00000000          ;============================================================================== 
+   11 00000000          ; 
+   12 00000000          ; 
+   13 00000000          ;  File: omap35xx_const.inc 
+   14 00000000          ; 
+   15 00000000            
+   16 00000000          ;------------------------------------------------------------------------------ 
+   17 00000000          ; Physical Address of Registers 
+   18 00000000          OMAP_CONTEXT_RESTORE_REGS_PA    EQU 0x48002910 
+   19 00000000          OMAP_SDRC_REGS_PA               EQU 0x6D000000 
+   20 00000000            
+   21 00000000          ;------------------------------------------------------------------------------ 
+   22 00000000          ; Useful constants 
+   23 00000000          WFI                             EQU 0xE320F003 
+   24 00000000          SMI                             EQU 0xE1600070 
+   25 00000000          SMI_INVAL_L2                    EQU 0x0001 
+   26 00000000            
+   27 00000000          ;------------------------------------------------------------------------------ 
+   28 00000000          ; following offset must be kept in sync with the CPUIDLE_INFO data structure 
+   29 00000000          ; defined in oal_prcm.h 
+   30 00000000            
+   31 00000000          SDRC_REGS_OFFSET                EQU 0x0000 
+   32 00000000          MPU_CM_REGS_OFFSET              EQU 0x0004 
+   33 00000000          CORE_CM_REGS_OFFSET             EQU 0x0008 
+   34 00000000          CLOCK_CTRL_CM_REGS_OFFSET       EQU 0x000C 
+   35 00000000          GPTIMER_REGS_OFFSET             EQU 0x0010 
+   36 00000000          MPU_PRM_REGS_OFFSET             EQU 0x0014 
+   37 00000000          CORE_PRM_REGS_OFFSET            EQU 0x0018 
+   38 00000000          GLOBAL_PRM_REGS_OFFSET                  EQU     0x001C 
+   39 00000000          MPU_CONTEXT_PA_OFFSET           EQU 0x0020 
+   40 00000000          MPU_CONTEXT_VA_OFFSET           EQU 0x0024 
+   41 00000000          SDRC_HIGH_RFR_FREQ_OFFSET       EQU 0x0028 
+   42 00000000          SDRC_LOW_RFR_FREQ_OFFSET        EQU 0x002C 
+   43 00000000          TLB_INV_FUNC_ADDR_OFFSET        EQU 0x0030 
+   44 00000000            
+   45 00000000          ;------------------------------------------------------------------------------ 
+   46 00000000            
+   47 00000000          SDRC_SYSCONFIG_OA               EQU 0x0010 
+   48 00000000          SDRC_MR_0_OA                    EQU 0x0084 
+   49 00000000          SDRC_MR_1_OA                    EQU 0x00B4 
+   50 00000000            
+   51 00000000          SDRC_EMR2_0_OA                  EQU 0x008C 
+   52 00000000          SDRC_EMR2_1_OA                  EQU 0x00BC 
+   53 00000000            
+   54 00000000          SDRC_MANUAL_0_OA                EQU 0x00A8 
+   55 00000000          SDRC_MANUAL_1_OA                EQU 0x00D8 
+   56 00000000            
+   57 00000000          SDRC_POWER_OA                   EQU 0x0070  ; enable/disable SDRAM self-refresh 
+   58 00000000          SDRC_DLLA_CTRL_OA               EQU 0x0060 
+   59 00000000          SDRC_DLLA_STATUS_OA             EQU 0x0064 
+   60 00000000          SDRC_RFR_CTRL_0_OA              EQU 0x00A4 
+   61 00000000          SDRC_RFR_CTRL_1_OA              EQU 0x00D4 
+   62 00000000            
+   63 00000000          SDRC_MANUAL_AUTOREFRESH_CMD     EQU 0x0002 
+   64 00000000            
+   65 00000000          SDRC_POWER_CLKCTRL_MASK         EQU 0x0003 
+   66 00000000            
+   67 00000000          SDRC_SYSCONFIG_MRS_BIT          EQU 0x0100 
+   68 00000000            
+   69 00000000          SDRC_DLL_DLLIDLE_BIT            EQU 0x0004 
+   70 00000000          SDRC_DLL_ENADLL_BIT             EQU 0x0003 
+   71 00000000          SDRC_DLL_LOCKDLL_BIT            EQU 0x0002 
+   72 00000000          SDRC_DLL_DLLPHASE_BIT           EQU 0x0001 
+   73 00000000          SDRC_DLL_TIMING_WAIT_COUNT      EQU 0x0800 
+   74 00000000            
+   75 00000000          SDRC_DLLA_STATUS_UNLOCKED       EQU 0x0000 
+   76 00000000          SDRC_DLLA_STATUS_LOCKED         EQU 0x0004 
+   77 00000000            
+   78 00000000          SDRC_RFR_CTRL0_ARE_SHIFT        EQU 0x0000 
+   79 00000000          SDRC_RFR_CTRL0_ARCV_SHIFT       EQU 0x0008 
+   80 00000000            
+   81 00000000          SDRC_ENABLE_ICLK                EQU 0x0001 
+   82 00000000          SDRC_DISABLE_ICLK               EQU 0x0000 
+   83 00000000            
+   84 00000000          SDRAM_REFRESH_DELAY_VAL         EQU 0x1000  ; time to wait for autorefresh 
+   85 00000000            
+   86 00000000          ;------------------------------------------------------------------------------ 
+   87 00000000          CM_CLKEN_PLL_OA                 EQU 0x0000 
+   88 00000000          CM_IDLEST_CKGEN_OA              EQU 0x0020 
+   89 00000000          CM_IDLEST_PLL_MPU_OA            EQU 0x0024 
+   90 00000000          CM_CLKSEL1_PLL_OA               EQU 0x0040 
+   91 00000000            
+   92 00000000          CM_IDLEST_ST_MPU_CLK_BIT        EQU 0x0001 
+   93 00000000            
+   94 00000000          CM_CLKSEL1_PLL_M2_SHIFT         EQU 0x001B 
+   95 00000000            
+   96 00000000          CM_CLKEN_PLL_DPLL_LOWBYPASS     EQU 0x0005 
+   97 00000000          CM_CLKEN_PLL_DPLL_HIGHBYPASS    EQU 0x0006 
+   98 00000000          CM_CLKEN_PLL_DPLL_LOCKED        EQU 0x0007 
+   99 00000000          CM_CLKEN_PLL_DPLL_MASK          EQU 0x0007 
+  100 00000000            
+  101 00000000          DVFS_LOW_OPP_STALL              EQU 0x0000 
+  102 00000000          DVFS_HIGH_OPP_STALL             EQU 0x0010 ;0x00C8 
+  103 00000000            
+  104 00000000          ;------------------------------------------------------------------------------ 
+  105 00000000          CM_CLKSTST_CORE_OA              EQU 0x004C 
+  106 00000000          CM_ICLKEN1_CORE_OA              EQU 0x0010 
+  107 00000000          CM_IDLEST1_CORE_OA              EQU 0x0020 
+  108 00000000            
+  109 00000000          CM_CLKSTST_CLKACTIVITY_L3_BIT   EQU 0x0001 
+  110 00000000          CM_ICLKEN1_CORE_SDRC_BIT        EQU 0x0001 
+  111 00000000            
+  112 00000000          ;------------------------------------------------------------------------------ 
+  113 00000000          PRM_PWRSTCTRL_MPU_OA            EQU 0x00E0 
+  114 00000000            
+  115 00000000          ;------------------------------------------------------------------------------ 
+  116 00000000          PRM_RSTCTRL_GLOBAL_OA                   EQU 0x0050 
+  117 00000000          PRM_RSTCTRL_RST_GS_BIT                  EQU     0x0002 
+  118 00000000            
+  119 00000000          ;------------------------------------------------------------------------------ 
+  120 00000000          PRM_LOGICL1CACHERETSTATE_VAL    EQU 0x0004 
+  121 00000000          PRM_POWERSTATE_MASK             EQU 0x0003 
+  122 00000000          PRM_POWERSTATE_OFF_VAL          EQU 0x0000 
+  123 00000000          PRM_POWERSTATE_RET_VAL          EQU 0x0001 
+  124 00000000          PRM_POWERSTATE_ON_VAL           EQU 0x0003 
+  125 00000000            
+  126 00000000          ;------------------------------------------------------------------------------ 
+  127 00000000          TIMER_TCRR_OA                   EQU 0x0028  ; tcrr offset for gptimer1 
+  128 00000000            
+  129 00000000          ;------------------------------------------------------------------------------ 
+  130 00000000          ; location of restore register and offsets to the various fields. 
+  131 00000000          ; Must be kept in sync with OMAP_CONTEXT_RESTORE_REGS structure 
+  132 00000000          OEM_CPU_INFO_PA_OFFSET          EQU 0x1C 
+  133 00000000          OEM_CPU_INFO_UA_OFFSET          EQU 0x20 
+  134 00000000            
+  135 00000000          ;------------------------------------------------------------------------------ 
+  136 00000000          ; useful ARM masks 
+  137 00000000          IRQ_MASK                        EQU 0x80    ; IRQ mask value 
+  138 00000000          FIQ_MASK                        EQU 0x40    ; FIQ mask value 
+  139 00000000          MODE_MASK                       EQU 0x1F    ; Processor Mode Mask 
+  140 00000000          TBIT_MASK                       EQU 0x20    ; Thumb mode bit mask  
+  141 00000000            
+  142 00000000          ;------------------------------------------------------------------------------ 
+  143 00000000          ; ARM modes 
+  144 00000000          USR_MODE                        EQU 0x10    ; user mode 
+  145 00000000          FIQ_MODE                        EQU 0x11    ; Fast Interrupt Mode (FIQ) 
+  146 00000000          IRQ_MODE                        EQU 0x12    ; Interrupt Mode (IRQ) 
+  147 00000000          SUP_MODE                        EQU 0x13    ; Supervisor Mode 
+  148 00000000          ABORT_MODE                      EQU 0x17    ; Abort Mode 
+  149 00000000          UNDEF_MODE                      EQU 0x1B    ; undef Mode 
+  150 00000000          SYS_MODE                        EQU 0x1F    ; sys Mode 
+  151 00000000            
+  152 00000000          ;------------------------------------------------------------------------------ 
+  153 00000000          ; Cache related constants 
+  154 00000000          ICACHE_MASK                     EQU 0x1000 
+  155 00000000          DCACHE_MASK                     EQU 0x0004 
+  156 00000000          MAX_ASSOCIATIVITY               EQU 0x03FF  ; max val of associativity (10-bit) 
+  157 00000000          MAX_SETNUMBER                   EQU 0x7FFF  ; max val for set number (15-bit) 
+  158 00000000            
+  159 00000000          ;------------------------------------------------------------------------------ 
+  160 00000000          ; MMU related constants 
+  161 00000000          MMU_MASK                        EQU 0x0001 
+  162 00000000          DESC_MASK                       EQU 0x0003 
+  163 00000000          PTL1_SECTION                    EQU 0x0002  
+  164 00000000          PTL1_KRW                        EQU 0x0400  ; bits 10, 11 
+  165 00000000          TTBRBIT_MASK                    EQU 0xFFFFC000 
+  166 00000000          MB_BOUNDARY                     EQU 0xFFF00000 
+  167 00000000          WINCE_FIRSTPT                   EQU 0xFFFD0000 ; from armhigh.inc 
+  168 00000000            
+  169 00000000          ;------------------------------------------------------------------------------ 
+  170 00000000            
+  171 00000000                  END 
+   16 00000000            
+   17 00000000                  EXPORT OALCPURestoreContext 
+   18 00000000            
+   19 00000000                  TEXTAREA 
+   45                           AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   20 00000000            
+   21 00000000          BEGIN_REGION 
+   22 00000000            
+   23 00000000          sdrc_reg 
+   24 00000000 6d000000        DCD         OMAP_SDRC_REGS_PA  
+   25 00000004                  
+   26 00000004          ;------------------------------------------------------------------------------- 
+   27 00000004          ; 
+   28 00000004          ;  Function:  OALCPURestoreContext 
+   29 00000004          ; 
+   30 00000004          ;  This function recovers from mpu OFF or mpu open retention 
+   31 00000004          ; 
+   32 00000004           LEAF_ENTRY OALCPURestoreContext 
+  175 00000004          FuncName SETS    VBar:CC:"OALCPURestoreContext":CC:VBar 
+  176 00000004          PrologName SETS "Invalid Prolog" 
+  177 00000004          FuncEndName SETS    VBar:CC:"OALCPURestoreContext":CC:"_end":CC:VBar 
+  178 00000004                  ALIGN   2 
+  179 00000004                  EXPORT  |OALCPURestoreContext| [FUNC] 
+  180 00000004          |OALCPURestoreContext| 
+  181 00000004                  ROUT 
+   33 00000004                                                  ;-------------------------------------- 
+   34 00000004                                                  ; ES 3.0 errata 
+   35 00000004                                                  ; UNDONE: need errata number 
+   36 00000004                                                  ; 
+   37 00000004 e51f000c         ldr         r0, sdrc_reg  
+   38 00000008                                                  ;-------------------------------------- 
+   39 00000008                                                  ; clear mrs to enable writes to MR & EMR2  
+   40 00000008 e5901010         ldr         r1, [r0, #SDRC_SYSCONFIG_OA] 
+   41 0000000c e3c12c01         bic         r2, r1, #SDRC_SYSCONFIG_MRS_BIT 
+   42 00000010 e5802010         str         r2, [r0, #SDRC_SYSCONFIG_OA] 
+   43 00000014            
+   44 00000014                                                  ;-------------------------------------- 
+   45 00000014                                                  ; rewrite to MR0, EMR0. enable autorefresh 
+   46 00000014 e5901084         ldr         r1, [r0, #SDRC_MR_0_OA] 
+   47 00000018 e590208c         ldr         r2, [r0, #SDRC_EMR2_0_OA] 
+   48 0000001c e5801084         str         r1, [r0, #SDRC_MR_0_OA]         
+   49 00000020 e580208c         str         r2, [r0, #SDRC_EMR2_0_OA] 
+   50 00000024 e3a03002         mov         r3, #SDRC_MANUAL_AUTOREFRESH_CMD 
+   51 00000028 e58030a8         str         r3, [r0, #SDRC_MANUAL_0_OA] 
+   52 0000002c            
+   53 0000002c                                                  ;-------------------------------------- 
+   54 0000002c                                                  ; rewrite to MR1, EMR1. enable autorefresh 
+   55 0000002c e59010b4         ldr         r1, [r0, #SDRC_MR_1_OA] 
+   56 00000030 e59020bc         ldr         r2, [r0, #SDRC_EMR2_1_OA] 
+   57 00000034 e58010b4         str         r1, [r0, #SDRC_MR_1_OA]         
+   58 00000038 e58020bc         str         r2, [r0, #SDRC_EMR2_1_OA] 
+   59 0000003c e3a03002         mov         r3, #SDRC_MANUAL_AUTOREFRESH_CMD 
+   60 00000040 e58030d8         str         r3, [r0, #SDRC_MANUAL_1_OA] 
+   61 00000044 e1a00000         nop 
+   62 00000048 e1a00000         nop 
+   63 0000004c e1a00000         nop 
+   64 00000050 e1a00000         nop 
+   65 00000054 e1a00000         nop 
+   66 00000058            
+   67 00000058                                                  ;-------------------------------------- 
+   68 00000058                                                  ; OMAP35XX ROM svc: invalidate entire  
+   69 00000058                                                  ; L2 cache for GP devices we need to  
+   70 00000058                                                  ; use ROM services 
+   71 00000058 e3a0c001         mov         r12, #SMI_INVAL_L2 
+   72 0000005c e1600070         DCD         SMI 
+   73 00000060            
+   74 00000060 e3a01000         mov         r1, #0 
+   75 00000064 ee071f15         mcr         p15, 0, r1, c7, c5, 0       ; invalidate instruction caches 
+   76 00000068 ee071f95         mcr         p15, 0, r1, c7, c5, 4       ; prefetch flush 
+   77 0000006c ee071fd5         mcr         p15, 0, r1, c7, c5, 6       ; invalidate branch predictor array 
+   78 00000070 ee071ff5         mcr         p15, 0, r1, c7, c5, 7       ; invalidate MVA from branch predictor array (?) 
+   79 00000074 ee081f15         mcr         p15, 0, r1, c8, c5, 0       ; invalidate instruction TLBs 
+   80 00000078 ee081f16         mcr         p15, 0, r1, c8, c6, 0       ; invalidate data TLBs 
+   81 0000007c                   
+   82 0000007c                                                  ;-------------------------------------- 
+   83 0000007c                                                  ; get restore location 
+   84 0000007c e59f2180         ldr         r2, =OMAP_CONTEXT_RESTORE_REGS_PA 
+   85 00000080 e592101c         ldr         r1, [r2, #OEM_CPU_INFO_PA_OFFSET] 
+   86 00000084 e5910020         ldr         r0, [r1, #MPU_CONTEXT_PA_OFFSET] 
+   87 00000088 e591a030         ldr         r10, [r1, #TLB_INV_FUNC_ADDR_OFFSET] 
+   88 0000008c                   
+   89 0000008c                                                  ;-------------------------------------- 
+   90 0000008c                                                  ; restore content of all registers  
+   91 0000008c e8b0000c         ldmia       r0!, {r2 - r3} 
+   92 00000090 e16ff002         msr         spsr_cxsf, r2 
+   93 00000094 e1a0d003         mov         sp, r3 
+   94 00000098                                                  ;-------------------------------------- 
+   95 00000098                                                  ; restore coprocessor access control reg 
+   96 00000098 e8b0007e         ldmia       r0!, {r1-r6} 
+   97 0000009c ee011f50         mcr         p15, 0, r1, c1, c0, 2 
+   98 000000a0                                                  ;-------------------------------------- 
+   99 000000a0                                                  ; restore TTBR0, TTBR1, Trans. tbl base 
+  100 000000a0 ee022f10         mcr         p15, 0, r2, c2, c0, 0 
+  101 000000a4 ee023f30         mcr         p15, 0, r3, c2, c0, 1 
+  102 000000a8 ee024f50         mcr         p15, 0, r4, c2, c0, 2         
+  103 000000ac                                                  ;-------------------------------------- 
+  104 000000ac                                                  ; Data TLB lockdown, instr. TLB lockdown 
+  105 000000ac ee0a5f10         mcr         p15, 0, r5, c10, c0, 0 
+  106 000000b0 ee0a6f30         mcr         p15, 0, r6, c10, c0, 1 
+  107 000000b4                                                  ;-------------------------------------- 
+  108 000000b4                                                  ; Primary remap, normal remap regs. 
+  109 000000b4 e8b0003e         ldmia       r0!, {r1 - r5} 
+  110 000000b8 ee0a1f12         mcr         p15, 0, r1, c10, c2, 0         
+  111 000000bc ee0a2f32         mcr         p15, 0, r2, c10, c2, 1 
+  112 000000c0                                                  ;-------------------------------------- 
+  113 000000c0                                                  ; secure/non-secure vector base address 
+  114 000000c0                                                  ; FCSE PI, Context PID 
+  115 000000c0 ee0c3f10         mcr         p15, 0, r3, c12, c0, 0 
+  116 000000c4 ee0d4f10         mcr         p15, 0, r4, c13, c0, 0 
+  117 000000c8 ee0d5f30         mcr         p15, 0, r5, c13, c0, 1         
+  118 000000cc                                                  ;-------------------------------------- 
+  119 000000cc                                                  ; domain access control reg 
+  120 000000cc                                                  ; data status fault, inst. status fault 
+  121 000000cc                                                  ; data aux fault status,  
+  122 000000cc                                                  ; intr. aux fault status, 
+  123 000000cc                                                  ; data fault addr, instr fault addr 
+  124 000000cc e8b000fe         ldmia       r0!, {r1 - r7} 
+  125 000000d0 ee031f10         mcr         p15, 0, r1, c3, c0, 0 
+  126 000000d4 ee052f10         mcr         p15, 0, r2, c5, c0, 0 
+  127 000000d8 ee053f30         mcr         p15, 0, r3, c5, c0, 1 
+  128 000000dc ee054f11         mcr         p15, 0, r4, c5, c1, 0 
+  129 000000e0 ee055f31         mcr         p15, 0, r5, c5, c1, 1 
+  130 000000e4 ee066f10         mcr         p15, 0, r6, c6, c0, 0 
+  131 000000e8 ee067f50         mcr         p15, 0, r7, c6, c0, 2 
+  132 000000ec                                                  ;-------------------------------------- 
+  133 000000ec                                                  ; user r/w thread & proc id 
+  134 000000ec                                                  ; user r/o thread and proc id 
+  135 000000ec                                                  ; priv only thread and proc id 
+  136 000000ec                                                  ; cache size selection 
+  137 000000ec e8b0001e         ldmia       r0!, {r1 - r4} 
+  138 000000f0 ee0d1f50         mcr         p15, 0, r1, c13, c0, 2 
+  139 000000f4 ee0d2f70         mcr         p15, 0, r2, c13, c0, 3 
+  140 000000f8 ee0d3f90         mcr         p15, 0, r3, c13, c0, 4                                         
+  141 000000fc ee404f10         mcr         p15, 2, r4, c0, c0, 0         
+  142 00000100                                                  ;-------------------------------------- 
+  143 00000100                                                  ; restore all modes 
+  144 00000100 e10f3000         mrs         r3, cpsr 
+  145 00000104                                                  ;-------------------------------------- 
+  146 00000104                                                  ; fiq mode 
+  147 00000104 e3c3101f         bic         r1, r3, #MODE_MASK 
+  148 00000108 e3811011         orr         r1, r1, #FIQ_MODE 
+  149 0000010c e129f001         msr         CPSR, r1 
+  150 00000110 e8b07f80         ldmia       r0!, {r7 - r14} 
+  151 00000114 e169f007         msr         spsr, r7         
+  152 00000118                                                  ;-------------------------------------- 
+  153 00000118                                                  ; irq mode 
+  154 00000118 e3c3101f         bic         r1, r3, #MODE_MASK 
+  155 0000011c e3811012         orr         r1, r1, #IRQ_MODE 
+  156 00000120 e129f001         msr         CPSR, r1 
+  157 00000124 e8b06080         ldmia       r0!, {r7, r13, r14} 
+  158 00000128 e169f007         msr         spsr, r7 
+  159 0000012c                                                  ;-------------------------------------- 
+  160 0000012c                                                  ; abort mode 
+  161 0000012c e3c3101f         bic         r1, r3, #MODE_MASK 
+  162 00000130 e3811017         orr         r1, r1, #ABORT_MODE 
+  163 00000134 e129f001         msr         CPSR, r1 
+  164 00000138 e8b06080         ldmia       r0!, {r7, r13, r14} 
+  165 0000013c e169f007         msr         spsr, r7         
+  166 00000140                                                  ;-------------------------------------- 
+  167 00000140                                                  ; undef mode 
+  168 00000140 e3c3101f         bic         r1, r3, #MODE_MASK 
+  169 00000144 e381101b         orr         r1, r1, #UNDEF_MODE 
+  170 00000148 e129f001         msr         CPSR, r1 
+  171 0000014c e8b06080         ldmia       r0!, {r7, r13, r14} 
+  172 00000150 e169f007         msr         spsr, r7 
+  173 00000154                                                  ;-------------------------------------- 
+  174 00000154                                                  ; system/user mode 
+  175 00000154 e3c3101f         bic         r1, r3, #MODE_MASK 
+  176 00000158 e381101f         orr         r1, r1, #SYS_MODE 
+  177 0000015c e129f001         msr         CPSR, r1 
+  178 00000160 e8b06080         ldmia       r0!, {r7, r13, r14} 
+  179 00000164 e169f007         msr         spsr, r7                                         
+  180 00000168                                                  ;-------------------------------------- 
+  181 00000168                                                  ; system/user mode 
+  182 00000168 e8b00002         ldmia       r0!, {r1}         
+  183 0000016c                                                  ;-------------------------------------- 
+  184 0000016c                                                  ; original mode 
+  185 0000016c e129f001         msr         CPSR, r1 
+  186 00000170            
+  187 00000170          ;------------------------------------------------------------------------------ 
+  188 00000170          ; For ARM it's recommended to make the physical address identical to the  
+  189 00000170          ; virtual address, as instruction prefetch can cause problems if not done 
+  190 00000170          ; so.  Modify the page table entry corresponding to the code location such 
+  191 00000170          ; that the physical address is identical to the virtual address. 
+  192 00000170            
+  193 00000170                                                  ;-------------------------------------- 
+  194 00000170                                                  ; The translation base address could be 
+  195 00000170                                                  ; either in TTBR0 or TTBR1 based on 
+  196 00000170                                                  ; N valud of TTBRC.  If (n>0) and  
+  197 00000170                                                  ; (31:32-N) of VA is 0 use TTBR0 
+  198 00000170                                                  ; else use TTBR1.                                         
+  199 00000170 ee121f50         mrc     p15, 0, r1, c2, c0, 2 
+  200 00000174 e2011007         and     r1, r1, #0x7 
+  201 00000178 e3510000         cmp     r1, #0x0 
+  202 0000017c 0e129f10         mrceq   p15, 0, r9, c2, c0, 0 
+  203 00000180 1e129f30         mrcne   p15, 0, r9, c2, c0, 1    
+  204 00000184                                                  ;-------------------------------------- 
+  205 00000184                                                  ; declare masks for TTBR bits 
+  206 00000184                                                  ; and to help set the identity 
+  207 00000184                                                  ; mapping in the MMU 1st PTE 
+  208 00000184 e59f607c         ldr     r6, =TTBRBIT_MASK 
+  209 00000188 e59f507c         ldr     r5, =MB_BOUNDARY 
+  210 0000018c                                                  ;-------------------------------------- 
+  211 0000018c                                                  ; get location of ttbr and mask out 
+  212 0000018c                                                  ; attribute bits 
+  213 0000018c                                                  ; (r9) = base addr of PT 
+  214 0000018c e0099006         and     r9, r9, r6                       
+  215 00000190                                                  ;-------------------------------------- 
+  216 00000190                                                  ; get physical address of PTE restore 
+  217 00000190                                                  ; point 
+  218 00000190                                                  ; (r8) = phys addr of PTE restore pt 
+  219 00000190                                                  ; (r6) = mb boundary of PTE restore pt 
+  220 00000190 e59f107c         ldr     r1, =|$PTE_RESTORE|            
+  221 00000194 e1c12005         bic     r2, r1, r5 
+  222 00000198 e00f6005         and     r6, pc, r5 
+  223 0000019c e1828006         orr     r8, r2, r6 
+  224 000001a0                                                  ;-------------------------------------- 
+  225 000001a0                                                  ; (r7) = PTE index 
+  226 000001a0                                                  ; clear any description bits 
+  227 000001a0 e1a07928         mov     r7, r8, lsr #18 
+  228 000001a4 e3c77003         bic     r7, r7, #DESC_MASK 
+  229 000001a8                                                  ;-------------------------------------- 
+  230 000001a8                                                  ; (r9) = location of PTE 
+  231 000001a8 e0899007         add     r9, r9, r7 
+  232 000001ac                                                  ;-------------------------------------- 
+  233 000001ac                                                  ; get identity value based on phys 
+  234 000001ac                                                  ; addr of restore pt 
+  235 000001ac                                                  ; (r5) = identity value to put in the 
+  236 000001ac                                                  ; PTE 
+  237 000001ac e1a05006         mov     r5, r6                    
+  238 000001b0 e3855b01         orr     r5, r5, #PTL1_KRW 
+  239 000001b4 e3855002         orr     r5, r5, #PTL1_SECTION 
+  240 000001b8                                                  ;-------------------------------------- 
+  241 000001b8                                                  ; swap value in PTE to create the  
+  242 000001b8                                                  ; identity map 
+  243 000001b8                                                  ; (r6) = orig val in PTE 
+  244 000001b8 e5996000         ldr     r6, [r9] 
+  245 000001bc e5895000         str     r5, [r9] 
+  246 000001c0                                                  ;-------------------------------------- 
+  247 000001c0                                                  ; memory barrier 
+  248 000001c0 e3a05000         mov     r5, #0 
+  249 000001c4 ee075f9a         mcr     p15, 0, r5, c7, c10, 4 
+  250 000001c8                                                  ;-------------------------------------- 
+  251 000001c8                                                  ; get original control register value 
+  252 000001c8                                                  ; (r9) = original control register value 
+  253 000001c8 e8b00010         ldmia   r0!, {r4} 
+  254 000001cc                                                  ;-------------------------------------- 
+  255 000001cc                                                  ; restore original control register 
+  256 000001cc                                                  ; w/ cache and MMU *DISABLED* 
+  257 000001cc e3c44a01         bic     r4, r4, #ICACHE_MASK 
+  258 000001d0 e3c44004         bic     r4, r4, #DCACHE_MASK 
+  259 000001d4 e3c44001         bic     r4, r4, #MMU_MASK 
+  260 000001d8 ee014f10         mcr     p15, r0, r4, c1, c0, 0 
+  261 000001dc                                                  ;-------------------------------------- 
+  262 000001dc                                                  ; drain write buffers             
+  263 000001dc ee075f9a         mcr     p15, 0, r5, c7, c10, 4 
+  264 000001e0                                                  ;-------------------------------------- 
+  265 000001e0                                                  ; enable MMU  
+  266 000001e0 e3844001         orr     r4, r4, #MMU_MASK 
+  267 000001e4 ee014f10         mcr     p15, 0, r4, c1, c0, 0 
+  268 000001e8                                                  ;-------------------------------------- 
+  269 000001e8                                                  ; move pc to restore pt; ie  
+  270 000001e8                                                  ; |%PTE_RESTORE| 
+  271 000001e8 e1a0f008         mov     pc, r8 
+  272 000001ec            
+  273 000001ec                                                  ;-------------------------------------- 
+  274 000001ec          |$PTE_RESTORE|                          ; restore original PTE entry, must use VA 
+  275 000001ec e1a00000         nop 
+  276 000001f0                                                         
+  277 000001f0 e59f9018         ldr     r9, =WINCE_FIRSTPT      ; non-cached VA for base of first level page tables 
+  278 000001f4 e7896007         str     r6, [r9, r7]            ; restore saved PTE value 
+  279 000001f8                   
+  280 000001f8 e1a0100a         mov     r1, r10 
+  281 000001fc e8bd5ff8         ldmia   sp!, {r3 - r12, lr}  
+  282 00000200                                                   
+  283 00000200 e1a0f001         mov     pc, r1                  ; returns to OALInvalidateTlb in cpu.s 
+  284 00000204            
+  285 00000204           ENTRY_END OALCPURestoreContext 
+  194 00000204          |OALCPURestoreContext_end| 
+  286 00000204          ;------------------------------------------------------------------------------- 
+  287 00000204            
+  288 00000204          END_REGION 
+  289 00000204          ;------------------------------------------------------------------------------- 
+  290 00000204            
+  291 00000204                  END 
+  292 00000204 48002910 *literal pool: constant 
+  292 00000208 ffffc000 *literal pool: constant 
+  292 0000020c fff00000 *literal pool: constant 
+  292 00000210 fffd0000 *literal pool: constant 
+  292 00000214 000001ec *literal pool: symbol:  $PTE_RESTORE + 0x0 
+Assembly terminated, errors: 0, warnings: 0 

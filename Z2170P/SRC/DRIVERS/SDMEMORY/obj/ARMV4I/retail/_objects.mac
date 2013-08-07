@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\sdmemmain.obj\
+    obj\ARMV4I\retail\SDMemDiskIO.obj\
+    obj\ARMV4I\retail\SDMemCardIO.obj
+

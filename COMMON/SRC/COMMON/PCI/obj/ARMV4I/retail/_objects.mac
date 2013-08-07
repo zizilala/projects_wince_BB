@@ -1,0 +1,7 @@
+OBJECTS=\
+    obj\ARMV4I\retail\config.obj\
+    obj\ARMV4I\retail\register.obj\
+    obj\ARMV4I\retail\id.obj\
+    obj\ARMV4I\retail\find.obj\
+    obj\ARMV4I\retail\dump.obj
+

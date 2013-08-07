@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\sysctrl.res\
+    obj\ARMV4I\retail\sysctrl.obj\
+    obj\ARMV4I\retail\startup.obj
+

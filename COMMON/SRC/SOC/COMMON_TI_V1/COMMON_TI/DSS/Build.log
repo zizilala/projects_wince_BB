@@ -1,0 +1,180 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\
+BUILD: [00:0000000008:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\
+BUILD: [00:0000000009:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\
+BUILD: [00:0000000010:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000011:INFO  ] Done.
+BUILD: [00:0000000012:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\dssai.cpp because target: obj\ARMV4I\retail\dssai.obj is missing.
+BUILD: [00:0000000013:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\dssai_debug.cpp because target: obj\ARMV4I\retail\dssai_debug.obj is missing.
+BUILD: [00:0000000014:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\dssai_globals.cpp because target: obj\ARMV4I\retail\dssai_globals.obj is missing.
+BUILD: [00:0000000015:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\heap.cpp because target: obj\ARMV4I\retail\heap.obj is missing.
+BUILD: [00:0000000016:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\surfmgr_flat.cpp because target: obj\ARMV4I\retail\surfmgr_flat.obj is missing.
+BUILD: [00:0000000017:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\surfmgr_vrfb.cpp because target: obj\ARMV4I\retail\surfmgr_vrfb.obj is missing.
+BUILD: [00:0000000018:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\ directory.
+BUILD: [00:0000000019:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000020:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000021:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000022:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000023:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\sources
+BUILD: [01:0000000024:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000025:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI
+BUILD: [01:0000000026:INFO  ] TARGETNAME: omap_ddgpe_dssai
+BUILD: [01:0000000027:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000028:PROGC ] Compiling .\dssai.cpp
+BUILD: [01:0000000029:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\dssai.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DCEDDK_USEDDKMACRO -DUSE_PMX_WRAPPER -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\dssai.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\.\dssai.cpp
+BUILD: [01:0000000030:INFO  ] dssai.cpp
+BUILD: [01:0000000031:PROGC ] Compiling .\dssai_debug.cpp
+BUILD: [01:0000000032:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\dssai_debug.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DCEDDK_USEDDKMACRO -DUSE_PMX_WRAPPER -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\dssai_debug.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\.\dssai_debug.cpp
+BUILD: [01:0000000033:INFO  ] dssai_debug.cpp
+BUILD: [01:0000000034:PROGC ] Compiling .\dssai_globals.cpp
+BUILD: [01:0000000035:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\dssai_globals.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DCEDDK_USEDDKMACRO -DUSE_PMX_WRAPPER -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\dssai_globals.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\.\dssai_globals.cpp
+BUILD: [01:0000000036:INFO  ] dssai_globals.cpp
+BUILD: [01:0000000037:PROGC ] Compiling .\heap.cpp
+BUILD: [01:0000000038:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\heap.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DCEDDK_USEDDKMACRO -DUSE_PMX_WRAPPER -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\heap.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\.\heap.cpp
+BUILD: [01:0000000039:INFO  ] heap.cpp
+BUILD: [01:0000000040:PROGC ] Compiling .\surfmgr_flat.cpp
+BUILD: [01:0000000041:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\surfmgr_flat.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DCEDDK_USEDDKMACRO -DUSE_PMX_WRAPPER -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\surfmgr_flat.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\.\surfmgr_flat.cpp
+BUILD: [01:0000000042:INFO  ] surfmgr_flat.cpp
+BUILD: [01:0000000043:PROGC ] Compiling .\surfmgr_vrfb.cpp
+BUILD: [01:0000000044:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\surfmgr_vrfb.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DCEDDK_USEDDKMACRO -DUSE_PMX_WRAPPER -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\surfmgr_vrfb.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\.\surfmgr_vrfb.cpp
+BUILD: [01:0000000045:INFO  ] surfmgr_vrfb.cpp
+BUILD: [00:0000000046:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\omap_ddgpe.cpp because target: obj\ARMV4I\retail\omap_ddgpe.obj is missing.
+BUILD: [00:0000000047:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\omap_ddsurf.cpp because target: obj\ARMV4I\retail\omap_ddsurf.obj is missing.
+BUILD: [00:0000000048:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\omap_dmablt.cpp because target: obj\ARMV4I\retail\omap_dmablt.obj is missing.
+BUILD: [00:0000000049:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\omap_optblt.cpp because target: obj\ARMV4I\retail\omap_optblt.obj is missing.
+BUILD: [00:0000000050:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\halcaps.cpp because target: obj\ARMV4I\retail\halcaps.obj is missing.
+BUILD: [00:0000000051:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\haldebug.cpp because target: obj\ARMV4I\retail\haldebug.obj is missing.
+BUILD: [00:0000000052:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\halsurf.cpp because target: obj\ARMV4I\retail\halsurf.obj is missing.
+BUILD: [00:0000000053:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\ directory.
+BUILD: [00:0000000054:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000055:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000056:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000057:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000058:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\sources
+BUILD: [01:0000000059:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000060:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE
+BUILD: [01:0000000061:INFO  ] TARGETNAME: omap_ddgpe_dss
+BUILD: [01:0000000062:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000063:PROGC ] Compiling .\omap_ddgpe.cpp
+BUILD: [01:0000000064:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\omap_ddgpe.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\omap_ddgpe.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\.\omap_ddgpe.cpp
+BUILD: [01:0000000065:INFO  ] omap_ddgpe.cpp
+BUILD: [01:0000000066:PROGC ] Compiling .\omap_ddsurf.cpp
+BUILD: [01:0000000067:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\omap_ddsurf.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\omap_ddsurf.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\.\omap_ddsurf.cpp
+BUILD: [01:0000000068:INFO  ] omap_ddsurf.cpp
+BUILD: [01:0000000069:PROGC ] Compiling .\omap_dmablt.cpp
+BUILD: [01:0000000070:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\omap_dmablt.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\omap_dmablt.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\.\omap_dmablt.cpp
+BUILD: [01:0000000071:INFO  ] omap_dmablt.cpp
+BUILD: [01:0000000072:PROGC ] Compiling .\omap_optblt.cpp
+BUILD: [01:0000000073:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\omap_optblt.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\omap_optblt.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\.\omap_optblt.cpp
+BUILD: [01:0000000074:INFO  ] omap_optblt.cpp
+BUILD: [01:0000000075:PROGC ] Compiling .\halcaps.cpp
+BUILD: [01:0000000076:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\halcaps.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\halcaps.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\.\halcaps.cpp
+BUILD: [01:0000000077:INFO  ] halcaps.cpp
+BUILD: [01:0000000078:PROGC ] Compiling .\haldebug.cpp
+BUILD: [01:0000000079:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\haldebug.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\haldebug.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\.\haldebug.cpp
+BUILD: [01:0000000080:INFO  ] haldebug.cpp
+BUILD: [01:0000000081:PROGC ] Compiling .\halsurf.cpp
+BUILD: [01:0000000082:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\halsurf.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DDDI -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\halsurf.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\.\halsurf.cpp
+BUILD: [01:0000000083:INFO  ] halsurf.cpp
+BUILD: [00:0000000084:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\entry.cpp because target: obj\ARMV4I\retail\entry.obj is missing.
+BUILD: [00:0000000085:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\ directory.
+BUILD: [00:0000000086:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000087:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000088:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000089:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000090:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\sources
+BUILD: [01:0000000091:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000092:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY
+BUILD: [01:0000000093:INFO  ] TARGETNAME: omap_dss_entry
+BUILD: [01:0000000094:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000095:PROGC ] Compiling .\entry.cpp
+BUILD: [01:0000000096:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\entry.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -I..\INC -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap_dss_entry.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DOAL_BSP_CALLBACKS -DOAL_ILTIMING -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\entry.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\.\entry.cpp
+BUILD: [01:0000000097:INFO  ] entry.cpp
+BUILD: [00:0000000098:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\obj\ARMV4I\retail\dssai.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib is missing.
+BUILD: [00:0000000099:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\obj\ARMV4I\retail\dssai_debug.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib is missing.
+BUILD: [00:0000000100:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\obj\ARMV4I\retail\dssai_globals.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib is missing.
+BUILD: [00:0000000101:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\obj\ARMV4I\retail\heap.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib is missing.
+BUILD: [00:0000000102:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\obj\ARMV4I\retail\surfmgr_flat.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib is missing.
+BUILD: [00:0000000103:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\obj\ARMV4I\retail\surfmgr_vrfb.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib is missing.
+BUILD: [00:0000000104:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib is missing.
+BUILD: [00:0000000105:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\ directory.
+BUILD: [00:0000000106:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000107:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000108:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000109:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000110:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI\sources
+BUILD: [01:0000000111:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000112:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DSSAI
+BUILD: [01:0000000113:INFO  ] TARGETNAME: omap_ddgpe_dssai
+BUILD: [01:0000000114:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000115:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib
+BUILD: [01:0000000116:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dssai.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm411.tmp
+BUILD: [00:0000000117:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\obj\ARMV4I\retail\omap_ddgpe.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib is missing.
+BUILD: [00:0000000118:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\obj\ARMV4I\retail\omap_ddsurf.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib is missing.
+BUILD: [00:0000000119:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\obj\ARMV4I\retail\omap_dmablt.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib is missing.
+BUILD: [00:0000000120:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\obj\ARMV4I\retail\omap_optblt.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib is missing.
+BUILD: [00:0000000121:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\obj\ARMV4I\retail\halcaps.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib is missing.
+BUILD: [00:0000000122:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\obj\ARMV4I\retail\haldebug.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib is missing.
+BUILD: [00:0000000123:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\obj\ARMV4I\retail\halsurf.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib is missing.
+BUILD: [00:0000000124:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib is missing.
+BUILD: [00:0000000125:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\ directory.
+BUILD: [00:0000000126:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000127:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000128:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000129:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000130:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE\sources
+BUILD: [01:0000000131:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000132:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\DDGPE
+BUILD: [01:0000000133:INFO  ] TARGETNAME: omap_ddgpe_dss
+BUILD: [01:0000000134:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000135:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib
+BUILD: [01:0000000136:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_ddgpe_dss.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm412.tmp
+BUILD: [01:0000000137:WARNN ] haldebug.obj : warning LNK4221: no public symbols found; archive member will be inaccessible
+BUILD: [00:0000000138:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\obj\ARMV4I\retail\entry.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_dss_entry.lib is missing.
+BUILD: [00:0000000139:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_dss_entry.lib is missing.
+BUILD: [00:0000000140:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\ directory.
+BUILD: [00:0000000141:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000142:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000143:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000144:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000145:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY\sources
+BUILD: [01:0000000146:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000147:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\DSS\ENTRY
+BUILD: [01:0000000148:INFO  ] TARGETNAME: omap_dss_entry
+BUILD: [01:0000000149:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000150:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_dss_entry.lib
+BUILD: [01:0000000151:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\omap_dss_entry.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm413.tmp
+BUILD: [00:0000000152:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000153:INFO  ] Done.
+BUILD: [00:0000000154:PROGC ] Done.
+BUILD: [00:0000000155:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000156:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000157:PROGC ] Message                    0         0       0
+BUILD: [00:0000000158:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000159:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000160:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000161:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000162:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000163:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000164:PROGC ] C++                       14         0       0
+BUILD: [00:0000000165:PROGC ] C                          0         0       0
+BUILD: [00:0000000166:PROGC ] Static Libraries           3         1       0
+BUILD: [00:0000000167:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000168:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000000169:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000170:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000171:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000172:PROGC ] Other                      0         0       0
+BUILD: [00:0000000173:PROGC ] 
+BUILD: [00:0000000174:PROGC ] Total                     17         1       0
+BUILD: [00:0000000175:PROGC ] 
+BUILD: [00:0000000176:PROGC ] 1 Warnings,  0 Errors
+BUILD: [00:0000000177:PROGC ] GetSystemTimes (seconds): Idle: 44    Kernel: 52    User: 7    
+BUILD: [00:0000000178:PROGC ] Elapsed  time  (seconds): 15   

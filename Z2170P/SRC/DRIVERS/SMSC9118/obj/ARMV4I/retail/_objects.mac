@@ -1,0 +1,7 @@
+OBJECTS=\
+    obj\ARMV4I\retail\lan9118.obj\
+    obj\ARMV4I\retail\os.obj\
+    obj\ARMV4I\retail\smsc9118.obj\
+    obj\ARMV4I\retail\platform.obj\
+    obj\ARMV4I\retail\util.obj
+

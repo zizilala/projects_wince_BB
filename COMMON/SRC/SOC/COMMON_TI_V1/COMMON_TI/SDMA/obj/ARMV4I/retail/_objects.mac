@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\dmamediator.obj\
+    obj\ARMV4I\retail\dmacontroller.obj\
+    obj\ARMV4I\retail\dma.obj
+

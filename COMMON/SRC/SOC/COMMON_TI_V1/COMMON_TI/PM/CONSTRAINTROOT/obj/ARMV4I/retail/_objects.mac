@@ -1,0 +1,6 @@
+OBJECTS=\
+    obj\ARMV4I\retail\constraintroot.obj\
+    obj\ARMV4I\retail\constraintadapter.obj\
+    obj\ARMV4I\retail\constraintcontainer.obj\
+    obj\ARMV4I\retail\api.obj
+

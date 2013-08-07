@@ -1,0 +1,7 @@
+OBJECTS=\
+    obj\ARMV4I\retail\shellproc.obj\
+    obj\ARMV4I\retail\utils.obj\
+    obj\ARMV4I\retail\log.obj\
+    obj\ARMV4I\retail\reglib.obj\
+    obj\ARMV4I\retail\driverreg.obj
+

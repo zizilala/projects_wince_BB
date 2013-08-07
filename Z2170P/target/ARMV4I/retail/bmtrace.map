@@ -1,0 +1,110 @@
+ bmtrace
+
+ Timestamp is 51dcc7a1 (Wed Jul 10 10:32:01 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000539H .rdata                  CODE
+ 0001:0000053c 00000024H .rdata$debug            CODE
+ 0001:00000560 000008c4H .text                   CODE
+ 0001:00000e24 00000014H .idata$2                CODE
+ 0001:00000e38 00000014H .idata$3                CODE
+ 0001:00000e4c 00000038H .idata$4                CODE
+ 0001:00000e84 0000000cH .idata$6                CODE
+ 0001:00000e90 000000f5H .edata                  CODE
+ 0002:00000000 00000038H .idata$5                DATA
+ 0003:00000000 00000060H .pdata                  DATA
+ 0004:00000000 00004070H .bmshmem                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:0000001c       ??_C@_0DI@DJDLLJEF@?6?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DO?5tic?5time?5is?5?$CK?5?$CFl@ 1000101c     bmtrace.obj
+ 0001:00000054       ??_C@_0CJ@EBLPHBHL@LUT?5Overflow?$CB?0?5please?5set?5MAX_LU@ 10001054     bmtrace.obj
+ 0001:00000080       ??_C@_0BF@DONLDBLG@?$CFs?3?5?$CFs?3?5?$CFs?3?5?$CFd?3?5?$CFs?$CFs?$AA@ 10001080     bmtrace.obj
+ 0001:00000098       ??_C@_0CK@JCHDCFLG@Bmtrace?5buffer?5is?5full?4?5Stopping@ 10001098     bmtrace.obj
+ 0001:000000c8       ??_C@_0EK@GNPEELON@?6?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5END?5OF@ 100010c8     bmtrace.obj
+ 0001:00000114       ??_C@_0CE@LKFLDEDB@TI?9SoT?3?5CLT_REC?3?5?$CFs?3?5?$DM?9?$DO?3?5?$CFlu?3?5?$CF@ 10001114     bmtrace.obj
+ 0001:00000138       ??_C@_0CH@NNAFHMMF@TI?9SoT?3?5CLT_REC?3?5UINT64?3?5?$CFs?3?5?$CFlu@ 10001138     bmtrace.obj
+ 0001:00000160       ??_C@_0BL@PAJLEFJM@Enter?5to?5print_out_buffer?6?$AA@ 10001160     bmtrace.obj
+ 0001:00000180       ??_C@_0EM@HBENBOGE@?6?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?5TRACE?5BUFFER?0?5@ 10001180     bmtrace.obj
+ 0001:000001cc       ??_C@_0BK@FGAGCGKC@Bmtrace?5buffer?5disabled?4?6?$AA@ 100011cc     bmtrace.obj
+ 0001:000001e8       ??_C@_0BJ@NCKBMPMD@Bmtrace?5buffer?5enabled?4?6?$AA@ 100011e8     bmtrace.obj
+ 0001:00000204       ??_C@_0CB@BONEHHDM@bm_test_simple_loop?5result?3?5?$CFlu?6@ 10001204     bmtrace.obj
+ 0001:00000228       ??_C@_0BN@KELDCGFB@bm_test_pointer?5result?3?5?$CFlu?6?$AA@ 10001228     bmtrace.obj
+ 0001:00000248       ??_C@_0CD@DBOJBNEK@bm_test_function_call?5result?3?5?$CFl@ 10001248     bmtrace.obj
+ 0001:0000026c       ??_C@_0BP@NHLNDEHP@bm_mis_calibration?5result?3?5?$CFd?6?$AA@ 1000126c     bmtrace.obj
+ 0001:0000028c       ??_C@_0BP@OMLGIOML@bm_test_cache_miss?5result?3?5?$CFd?6?$AA@ 1000128c     bmtrace.obj
+ 0001:000002ac       ??_C@_0BN@GMKAAFGI@bm_test_tlb_miss?5result?3?5?$CFd?6?$AA@ 100012ac     bmtrace.obj
+ 0001:000002cc       ??_C@_0BL@PHDFKBCJ@Running?3?5bm_test_tlb_miss?6?$AA@ 100012cc     bmtrace.obj
+ 0001:000002e8       ??_C@_0DH@EIMCNDI@?5?5?5?5?5?5?5?5?5assume?3?5?$CFd?5TLBs?5in?5the?5@ 100012e8     bmtrace.obj
+ 0001:00000320       ??_C@_0BN@ECKEMCHB@Running?3?5bm_test_cache_miss?6?$AA@ 10001320     bmtrace.obj
+ 0001:00000340       ??_C@_0DM@GPLHMLPB@?5?5?5?5?5?5?5?5?5assume?3?5d?9cache?5size?5is@ 10001340     bmtrace.obj
+ 0001:0000037c       ??_C@_0BN@INJHLPFN@Running?3?5bm_mis_calibration?6?$AA@ 1000137c     bmtrace.obj
+ 0001:0000039c       ??_C@_0BN@BGAPOICE@?5?5?5?5?5?5?5?5?5number?5of?5reads?5?$CFd?6?$AA@ 1000139c     bmtrace.obj
+ 0001:000003bc       ??_C@_0CA@GDOFECF@Running?3?5bm_test_function_call?6?$AA@ 100013bc     bmtrace.obj
+ 0001:000003dc       ??_C@_0CP@MIFFKIBI@?5?5?5?5?5?5?5?5?5via?5fibonacci?0?5recursiv@ 100013dc     bmtrace.obj
+ 0001:0000040c       ??_C@_0BK@HBHIKJFE@Running?3?5bm_test_pointer?6?$AA@ 1000140c     bmtrace.obj
+ 0001:00000428       ??_C@_0CH@KFEIEPKK@?5?5?5?5?5?5?5?5?5number?5of?5redirections?5@ 10001428     bmtrace.obj
+ 0001:00000450       ??_C@_0BO@DIINJENI@Running?3?5bm_test_simple_loop?6?$AA@ 10001450     bmtrace.obj
+ 0001:00000470       ??_C@_0CA@NFGNAMDB@?5?5?5?5?5?5?5?5?5number?5of?5loops?5is?5?$CFd?6?$AA@ 10001470     bmtrace.obj
+ 0001:00000490       ??_C@_0CC@KBGBCLAG@Running?3?5bm_test_two_seq_samples@ 10001490     bmtrace.obj
+ 0001:000004b4       ??_C@_0BA@PMJGIMBA@?6Trace?5disable?6?$AA@ 100014b4     bmtrace.obj
+ 0001:000004c4       ??_C@_0CE@GFDBLFEF@?6Done?0?5please?5print?5the?5trace?5lo@ 100014c4     bmtrace.obj
+ 0001:000004e8       ??_C@_0P@MCAJFJMB@?6Trace?5enable?6?$AA@ 100014e8     bmtrace.obj
+ 0001:000004f8       ??_C@_0BA@PCJPKLHE@?6Reseting?5logs?6?$AA@ 100014f8     bmtrace.obj
+ 0001:00000508       ??_C@_0DB@NFCNLDGB@?6Running?5measurements?5?$CFd?5times?0?5@ 10001508     bmtrace.obj
+ 0001:00000560       print_tic_time             10001560 f   bmtrace.obj
+ 0001:000005a4       bm_act_trace_in            100015a4 f   bmtrace.obj
+ 0001:000005e8       bm_act_register_event      100015e8 f   bmtrace.obj
+ 0001:000006c0       bm_act_trace_out           100016c0 f   bmtrace.obj
+ 0001:00000768       print_out_buffer           10001768 f   bmtrace.obj
+ 0001:00000850       bm_disable                 10001850 f   bmtrace.obj
+ 0001:00000878       bm_enable                  10001878 f   bmtrace.obj
+ 0001:000008a0       bm_init                    100018a0 f   bmtrace.obj
+ 0001:000008fc       DllEntry                   100018fc f   bmtrace.obj
+ 0001:00000c94       bm_test_all                10001c94 f   bmtrace.obj
+ 0001:00000d54       QueryPerformanceFrequency  10001d54 f   coredll:COREDLL.dll
+ 0001:00000d64       QueryPerformanceCounter    10001d64 f   coredll:COREDLL.dll
+ 0001:00000d74       LeaveCriticalSection       10001d74 f   coredll:COREDLL.dll
+ 0001:00000d84       EnterCriticalSection       10001d84 f   coredll:COREDLL.dll
+ 0001:00000d94       InitializeCriticalSection  10001d94 f   coredll:COREDLL.dll
+ 0001:00000da4       DisableThreadLibraryCalls  10001da4 f   coredll:COREDLL.dll
+ 0001:00000db4       LocalFree                  10001db4 f   coredll:COREDLL.dll
+ 0001:00000dc4       LocalAlloc                 10001dc4 f   coredll:COREDLL.dll
+ 0001:00000dd4       CeSetThreadQuantum         10001dd4 f   coredll:COREDLL.dll
+ 0001:00000de4       printf                     10001de4 f   corelib1:COREDLL.dll
+ 0001:00000df4       __rt_udiv                  10001df4 f   corelib1:COREDLL.dll
+ 0001:00000e04       _snprintf                  10001e04 f   corelib1:COREDLL.dll
+ 0001:00000e14       memset                     10001e14 f   corelib1:COREDLL.dll
+ 0001:00000e24       __IMPORT_DESCRIPTOR_COREDLL 10001e24     coredll:COREDLL.dll
+ 0001:00000e38       __NULL_IMPORT_DESCRIPTOR   10001e38     coredll:COREDLL.dll
+ 0002:00000000       __imp_QueryPerformanceFrequency 10002000     coredll:COREDLL.dll
+ 0002:00000004       __imp_QueryPerformanceCounter 10002004     coredll:COREDLL.dll
+ 0002:00000008       __imp_LeaveCriticalSection 10002008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_EnterCriticalSection 1000200c     coredll:COREDLL.dll
+ 0002:00000010       __imp_InitializeCriticalSection 10002010     coredll:COREDLL.dll
+ 0002:00000014       __imp_DisableThreadLibraryCalls 10002014     coredll:COREDLL.dll
+ 0002:00000018       __imp_LocalFree            10002018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_LocalAlloc           1000201c     coredll:COREDLL.dll
+ 0002:00000020       __imp_CeSetThreadQuantum   10002020     coredll:COREDLL.dll
+ 0002:00000024       __imp_printf               10002024     corelib1:COREDLL.dll
+ 0002:00000028       __imp___rt_udiv            10002028     corelib1:COREDLL.dll
+ 0002:0000002c       __imp__snprintf            1000202c     corelib1:COREDLL.dll
+ 0002:00000030       __imp_memset               10002030     corelib1:COREDLL.dll
+ 0002:00000034       \177COREDLL_NULL_THUNK_DATA 10002034     coredll:COREDLL.dll
+ 0004:00000000       bm_trace_lut               10004000     bmtrace.obj
+ 0004:00001044       bm_entry_start             10005044     bmtrace.obj
+ 0004:00001048       bm_entries                 10005048     bmtrace.obj
+ 0004:00004048       bm_entry_pointer           10008048     bmtrace.obj
+ 0004:0000404c       bm_entry_end               1000804c     bmtrace.obj
+ 0004:00004050       bm_control                 10008050     bmtrace.obj
+
+ entry point at        0001:000008fc
+
+ Static symbols
+
+ 0001:0000091c       bm_test_fibonacci          1000191c f   bmtrace.obj
+ 0001:00000950       bm_measure_all             10001950 f   bmtrace.obj

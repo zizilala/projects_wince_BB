@@ -1,0 +1,617 @@
+ARM macroassembler      Page:1 
+    1 00000000          ; 
+    2 00000000          ;================================================================================ 
+    3 00000000          ;             Texas Instruments OMAP(TM) Platform Software 
+    4 00000000          ; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved. 
+    5 00000000          ; 
+    6 00000000          ; Use of this software is controlled by the terms and conditions found 
+    7 00000000          ; in the license agreement under which this software has been supplied. 
+    8 00000000          ; 
+    9 00000000          ;================================================================================ 
+   10 00000000          ; 
+   11 00000000          ;   File:  startup.s 
+   12 00000000          ; 
+   13 00000000                  INCLUDE kxarm.h 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000          ;++ 
+   14 00000000          ; 
+   15 00000000          ; 
+   16 00000000          ; Module Name: 
+   17 00000000          ; 
+   18 00000000          ;    kxarm.h 
+   19 00000000          ; 
+   20 00000000          ; Abstract: 
+   21 00000000          ; 
+   22 00000000          ;    This is an implementation of the WINCE/ARM Calling Sequence 
+   23 00000000          ;    Specification. 
+   24 00000000          ; 
+   25 00000000          ; Environment: 
+   26 00000000          ;    String Library 
+   27 00000000          ; 
+   28 00000000          ; Revision History: 
+   29 00000000          ;-- 
+   30 00000000            
+   31 00000000                          GBLS    VBar 
+   32 00000000          VBar    SETS    "|" 
+   33 00000000                          GBLL    HaveExceptHandler 
+   34 00000000                          GBLS    AreaName 
+   35 00000000                          GBLS    FuncName 
+   36 00000000                          GBLS    PrologName 
+   37 00000000                          GBLS    FuncEndName 
+   38 00000000                          GBLS    ExceptHandler 
+   39 00000000                          GBLS    ExceptData 
+   40 00000000          AreaName SETS   "|.text|" 
+   41 00000000          HaveExceptHandler SETL {FALSE} 
+   42 00000000            
+   43 00000000                  MACRO 
+   44 00000000                  TEXTAREA 
+   45 00000000                  AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   47 00000000                  MEND 
+   48 00000000            
+   49 00000000              MACRO 
+   50 00000000              THUMBAREA 
+   51 00000000              AREA |.text|,ALIGN=2,CODE,READONLY,THUMB 
+   52 00000000          AreaName SETS "|.text|" 
+   53 00000000              MEND 
+   54 00000000            
+   55 00000000                  MACRO 
+   56 00000000                  STARTUPTEXT 
+   57 00000000                  AREA |.astart|,ALIGN=2,CODE 
+   58 00000000          AreaName SETS "|.astart|" 
+   59 00000000                  MEND 
+   60 00000000            
+   61 00000000                  MACRO 
+   62 00000000                  START_REGION    $NameBegin 
+   63 00000000                  LCLS    TempName 
+   64 00000000          TempName SETS    VBar:CC:"$NameBegin":CC:VBar 
+   65 00000000                  EXPORT  $TempName[DATA] 
+   66 00000000          $TempName 
+   67 00000000                  MEND 
+   68 00000000            
+   69 00000000                  MACRO 
+   70 00000000                  END_REGION              $NameEnd 
+   71 00000000                  LCLS    TempName 
+   72 00000000          TempName SETS    VBar:CC:"$NameEnd":CC:VBar 
+   73 00000000                  EXPORT  $TempName[DATA] 
+   74 00000000          $TempName 
+   75 00000000                  MEND 
+   76 00000000            
+   77 00000000          ; 
+   78 00000000          ;   This macro should be used if the assembly function is in ARM 
+   79 00000000          ; 
+   80 00000000            
+   81 00000000                  MACRO 
+   82 00000000                  NESTED_ARMENTRY $Name 
+   83 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+   84 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+   85 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+   86 00000000                  LCLS    ExceptBit 
+   87 00000000                  IF HaveExceptHandler 
+   88 00000000          ExceptBit   SETS        "0x80000000" 
+   89 00000000                  ELSE 
+   90 00000000          ExceptBit   SETS        "0" 
+   91 00000000                  ENDIF 
+   92 00000000            
+   93 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+   94 00000000                  DCD         $FuncName 
+   95 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+   96 00000000                  AREA $AreaName,CODE,READONLY 
+   97 00000000                  ALIGN   2 
+   98 00000000                  EXPORT  $FuncName [FUNC] 
+   99 00000000                  IF HaveExceptHandler 
+  100 00000000              DCD $ExceptHandler 
+  101 00000000              DCD $ExceptData 
+  102 00000000          HaveExceptHandler SETL {FALSE} 
+  103 00000000                  ENDIF 
+  104 00000000          $FuncName 
+  105 00000000                  ROUT 
+  106 00000000                  MEND 
+  107 00000000            
+  108 00000000          ; 
+  109 00000000          ;   This macro should be used if the assembly function is in THUMB 
+  110 00000000          ; 
+  111 00000000                  MACRO 
+  112 00000000                  NESTED_THUMBENTRY       $Name 
+  113 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  114 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  115 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  116 00000000                  LCLS    ExceptBit 
+  117 00000000                  IF HaveExceptHandler 
+  118 00000000          ExceptBit   SETS        "0x80000000" 
+  119 00000000                  ELSE 
+  120 00000000          ExceptBit   SETS        "0" 
+  121 00000000                  ENDIF 
+  122 00000000            
+  123 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  124 00000000                  DCD         $FuncName 
+  125 00000000              DCD     (($PrologName-$FuncName)/2) :OR: ((($FuncEndName-$FuncName)/2):SHL:8) :OR: $ExceptBit 
+  126 00000000                  AREA $AreaName,CODE,READONLY 
+  127 00000000                  ALIGN   2 
+  128 00000000                  EXPORT  $FuncName [FUNC] 
+  129 00000000                  IF HaveExceptHandler 
+  130 00000000              DCD $ExceptHandler 
+  131 00000000              DCD $ExceptData 
+  132 00000000          HaveExceptHandler SETL {FALSE} 
+  133 00000000                  ENDIF 
+  134 00000000          $FuncName 
+  135 00000000                  ROUT 
+  136 00000000                  MEND 
+  137 00000000            
+  138 00000000          ; 
+  139 00000000          ;   This macro should be used if the assembly function is in ARM 
+  140 00000000          ; 
+  141 00000000                  MACRO 
+  142 00000000                  NESTED_ENTRY    $Name 
+  143 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  144 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  145 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  146 00000000                  LCLS    ExceptBit 
+  147 00000000                  IF HaveExceptHandler 
+  148 00000000          ExceptBit   SETS        "0x80000000" 
+  149 00000000                  ELSE 
+  150 00000000          ExceptBit   SETS        "0" 
+  151 00000000                  ENDIF 
+  152 00000000            
+  153 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  154 00000000                  DCD         $FuncName 
+  155 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+  156 00000000                  AREA $AreaName,CODE,READONLY 
+  157 00000000                  ALIGN   2 
+  158 00000000                  EXPORT  $FuncName [FUNC] 
+  159 00000000                  IF HaveExceptHandler 
+  160 00000000              DCD $ExceptHandler 
+  161 00000000              DCD $ExceptData 
+  162 00000000          HaveExceptHandler SETL {FALSE} 
+  163 00000000                  ENDIF 
+  164 00000000          $FuncName 
+  165 00000000                  ROUT 
+  166 00000000                  MEND 
+  167 00000000            
+  168 00000000                  MACRO 
+  169 00000000                  PROLOG_END 
+  170 00000000          $PrologName 
+  171 00000000                  MEND 
+  172 00000000            
+  173 00000000                  MACRO 
+  174 00000000                  LEAF_ENTRY      $Name 
+  175 00000000          FuncName SETS    VBar:CC:"$Name":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  $FuncName [FUNC] 
+  180 00000000          $FuncName 
+  181 00000000                  ROUT 
+  182 00000000                  MEND 
+  183 00000000            
+  184 00000000                  MACRO 
+  185 00000000                  ALTERNATE_ENTRY $Name 
+  186 00000000                  LCLS    TempName 
+  187 00000000          TempName SETS    VBar:CC:"$Name":CC:VBar 
+  188 00000000                  EXPORT  $TempName [FUNC] 
+  189 00000000          $TempName 
+  190 00000000                  MEND 
+  191 00000000            
+  192 00000000                  MACRO 
+  193 00000000                  ENTRY_END       $Name 
+  194 00000000          $FuncEndName 
+  195 00000000                  MEND 
+  196 00000000            
+  197 00000000                  MACRO 
+  198 00000000                  EXCEPTION_HANDLER       $Handler 
+  199 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  200 00000000          ExceptData SETS "0" 
+  201 00000000          HaveExceptHandler SETL {TRUE} 
+  202 00000000                  MEND 
+  203 00000000            
+  204 00000000                  MACRO 
+  205 00000000                  EXCEPTION_HANDLER_DATA  $Handler, $HandlerData 
+  206 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  207 00000000          ExceptData SETS    VBar:CC:"$HandlerData":CC:VBar 
+  208 00000000          HaveExceptHandler SETL {TRUE} 
+  209 00000000                  MEND 
+  210 00000000            
+  211 00000000                  MACRO 
+  212 00000000                  EXCEPTION_HANDLER_MILLICODE     $Handler, $HandlerData 
+  213 00000000          ExceptHandler SETS    "$Handler" 
+  214 00000000          ExceptData SETS    "$HandlerData" 
+  215 00000000          HaveExceptHandler SETL {TRUE} 
+  216 00000000                  MEND 
+  217 00000000            
+  218 00000000            
+  219 00000000                  END 
+   14 00000000                  INCLUDE bsp.inc 
+    1 00000000          ; All rights reserved ADENEO EMBEDDED 2010 
+    2 00000000          ; 
+    3 00000000          ;================================================================================ 
+    4 00000000          ;             Texas Instruments OMAP(TM) Platform Software 
+    5 00000000          ; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved. 
+    6 00000000          ; 
+    7 00000000          ; Use of this software is controlled by the terms and conditions found 
+    8 00000000          ; in the license agreement under which this software has been supplied. 
+    9 00000000          ; 
+   10 00000000          ;================================================================================ 
+   11 00000000          ; 
+   12 00000000          ;  File:  bsp_cfg.inc 
+   13 00000000          ; 
+   14 00000000            
+   15 00000000            
+   16 00000000            
+   17 00000000          ;------------------------------------------------------------------------------ 
+   18 00000000          ; 
+   19 00000000          ;  Define:  BSP_STALL_DELAY 
+   20 00000000          ; 
+   21 00000000          ;  This constant is used to generate stall in assembler code. We assume 
+   22 00000000          ;  worst case when CPU clock is already at 330 MHz which give us 
+   23 00000000          ;  165 instruction cycles (divide by 2) per microseconds. 
+   24 00000000          ; 
+   25 00000000          BSP_STALL_DELAY         EQU     165 
+   26 00000000            
+   27 00000000          ;------------------------------------------------------------------------------ 
+   28 00000000          ; 
+   29 00000000          ;  Define:  BSP_PTES_PA 
+   30 00000000          ; 
+   31 00000000          ;  This is the area of PTEs used by the MMU in EBOOT 
+   32 00000000          ; 
+   33 00000000          BSP_PTES_PA             EQU     (0x87EE0000) 
+   34 00000000            
+   35 00000000            
+   36 00000000          ;------------------------------------------------------------------------------ 
+   37 00000000          ; 
+   38 00000000          ;  Define:  IMAGE_EBOOT_STACK_xxxxx 
+   39 00000000          ; 
+   40 00000000          ;  This defines the stack size and loction for EBOOT (virtual address) 
+   41 00000000          ; 
+   42 00000000            
+   43 00000000          IMAGE_EBOOT_STACK_CA    EQU     (0x87EE4000) 
+   44 00000000          IMAGE_EBOOT_STACK_SIZE  EQU     (0x0001C000) 
+   45 00000000            
+   46 00000000          ;------------------------------------------------------------------------------ 
+   47 00000000          ; 
+   48 00000000          ;  Define:  OMAP_IDCODE_REGS_PA 
+   49 00000000          ; 
+   50 00000000          ;  This defines the Register Physical address for chip id code 
+   51 00000000          ; 
+   52 00000000          OMAP_IDCODE_REGS_PA  EQU    0x4830A204        
+   53 00000000            
+   54 00000000                              END 
+   15 00000000                  
+   16 00000000                  IMPORT  KernelStart 
+   17 00000000                  IMPORT BSPGetDebugUARTConfig 
+   18 00000000                  IMPORT EnableDebugSerialClock 
+   19 00000000            
+   20 00000000                  TEXTAREA 
+   45                           AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   21 00000000                   
+   22 00000000          ;------------------------------------------------------------------------------- 
+   23 00000000          ; 
+   24 00000000          ;  Function:  StartUp 
+   25 00000000          ; 
+   26 00000000          ;  This function is entry point to Windows CE OS.  
+   27 00000000          ; 
+   28 00000000          ; 
+   29 00000000                  LEAF_ENTRY StartUp 
+  175 00000000          FuncName SETS    VBar:CC:"StartUp":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"StartUp":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  |StartUp| [FUNC] 
+  180 00000000          |StartUp| 
+  181 00000000                  ROUT 
+   30 00000000            
+   31 00000000                  ;--------------------------------------------------------------- 
+   32 00000000                  ; Invalidate all caches 
+   33 00000000                  ;--------------------------------------------------------------- 
+   34 00000000            
+   35 00000000                  ; Invalidate TLB and I cache 
+   36 00000000 e3a00000         mov     r0, #0                          ; setup up for MCR 
+   37 00000004 ee080f17         mcr     p15, 0, r0, c8, c7, 0           ; invalidate TLB's 
+   38 00000008 ee070f15         mcr     p15, 0, r0, c7, c5, 0           ; invalidate icache 
+   39 0000000c            
+   40 0000000c            
+   41 0000000c                  ; Flush D cache 
+   42 0000000c ee300f30         mrc     p15, 1, r0, c0, c0, 1           ; read clidr 
+   43 00000010 e2103407         ands    r3, r0, #0x7000000   
+   44 00000014 e1a03ba3         mov     r3, r3, lsr #23                 ; cache level value 
+   45 00000018 0a00001b         beq     doneb                
+   46 0000001c            
+   47 0000001c e3a0a000         mov     r10, #0                         ; start clean at cache level 0 
+   48 00000020 e08a20aa loop1b  add     r2, r10, r10, lsr #1            ; work out 3x current cache level 
+   49 00000024 e1a01230         mov     r1, r0, lsr r2                  ; extract cache type bits from clidr 
+   50 00000028 e2011007         and     r1, r1, #7                      ; mask of the bits for current cache only 
+   51 0000002c e3510002         cmp     r1, #2                          ; see what cache we have at this level 
+   52 00000030 ba000012         blt     skipb                           ; skip if no cache, or just i-cache 
+   53 00000034            
+   54 00000034 ee40af10         mcr     p15, 2, r10, c0, c0, 0          ; select current cache level in cssr 
+   55 00000038 e3a01000         mov     r1, #0 
+   56 0000003c ee071f95         mcr     p15, 0, r1, c7, c5, 4           ; prefetch flush to sync the change to the cachesize id reg 
+   57 00000040 ee301f10         mrc     p15, 1, r1, c0, c0, 0           ; read the new csidr 
+   58 00000044 e2012007         and     r2, r1, #7                      ; extract the length of the cache lines 
+   59 00000048 e2822004         add     r2, r2, #4                      ; add 4 (line length offset) 
+   60 0000004c e59f41e4         ldr     r4, =0x3ff 
+   61 00000050 e01441a1         ands    r4, r4, r1, lsr #3              ; r4 is maximum number on the way size 
+warning:Instruction clz not supported for -cpu "-arch 4t"
+   62 00000054 e16f5f14         clz     r5, r4                          ; r5 find bit position of way size increment 
+   63 00000058 e59f71dc         ldr     r7, =0x7fff 
+   64 0000005c e01776a1         ands    r7, r7, r1, lsr #13             ; r7 extract max number of the index size 
+   65 00000060            
+   66 00000060 e1a09004 loop2b  mov     r9, r4                          ; r9 is working copy of max way size 
+   67 00000064 e18ab519 loop3b  orr     r11, r10, r9, lsl r5            ; factor way and cache number into r11 
+   68 00000068 e18bb217         orr     r11, r11, r7, lsl r2            ; factor index number into r11 
+   69 0000006c            
+   70 0000006c ee07bf5e         mcr     p15, 0, r11, c7, c14, 2         ; clean and invalidate by set/way 
+   71 00000070            
+   72 00000070 e2599001         subs    r9, r9, #1                      ; decrement the way 
+   73 00000074 aafffffa         bge     loop3b 
+   74 00000078            
+   75 00000078 e2577001         subs    r7, r7, #1                      ; decrement the index 
+   76 0000007c aafffff7         bge     loop2b 
+   77 00000080            
+   78 00000080 e28aa002 skipb   add     r10, r10, #2                    ; increment cache number 
+   79 00000084 e153000a         cmp     r3, r10 
+   80 00000088 caffffe4         bgt     loop1b 
+   81 0000008c            
+   82 0000008c e3a0a000 doneb   mov     r10, #0                         ; switch back to cache level 0 
+   83 00000090 ee40af10         mcr     p15, 2, r10, c0, c0, 0          ; select current cache level in cssr 
+   84 00000094            
+   85 00000094                  ;-------------------------------------------------------------- 
+   86 00000094                  ; Enable clock for debug serial port 
+   87 00000094                  ;-------------------------------------------------------------- 
+   88 00000094 eb000000         bl     BSPGetDebugUARTConfig 
+   89 00000098 e5900000         ldr r0, [r0] 
+   90 0000009c eb000000         bl        EnableDebugSerialClock 
+   91 000000a0            
+   92 000000a0                  ;--------------------------------------------------------------- 
+   93 000000a0                  ; Jump to WinCE KernelStart 
+   94 000000a0                  ;--------------------------------------------------------------- 
+   95 000000a0                  ; Compute the OEMAddressTable's physical address and  
+   96 000000a0                  ; load it into r0. KernelStart expects r0 to contain 
+   97 000000a0                  ; the physical address of this table. The MMU isn't  
+   98 000000a0                  ; turned on until well into KernelStart.   
+   99 000000a0            
+  100 000000a0            
+  101 000000a0                  ; find out CHIP id, use chip id to determine what DDR is used 
+  102 000000a0                  ; This approach has following assumptions: 
+  103 000000a0                  ; 1. 35xx uses Micron DDR that has 128M connected to CS0  
+  104 000000a0                  ;     and another 128M connected to CS1, if BSP_SDRAM_BANK1_ENABLE 
+  105 000000a0                  ;     is enabled. 
+  106 000000a0                  ; 2. 37xx uses Hynix DDR that has 256M continuous memory connected to CS0 
+  107 000000a0                  ; 
+  108 000000a0 e59f0198         ldr     r0, =OMAP_IDCODE_REGS_PA 
+  109 000000a4 e5901000         ldr     r1, [r0] 
+  110 000000a8 e59f2194         ldr     r2, =0x0FFFF000 
+  111 000000ac e59f3194         ldr     r3, =0x0B891000 
+  112 000000b0 e0011002         and    r1, r1, r2 
+  113 000000b4 e1510003         cmp   r1, r3 
+  114 000000b8 128f0008         addne     r0, pc, #g_oalAddressTable - (. + 8) 
+  115 000000bc 028f00ac         addeq     r0, pc, #g_oalAddressTableHynix - (. + 8) 
+  116 000000c0 eb000000         bl      KernelStart 
+  117 000000c4 eafffffe         b       . 
+  118 000000c8            
+  119 000000c8                  ; Include memory configuration file with g_oalAddressTable 
+  120 000000c8                  INCLUDE addrtab_cfg.inc 
+    1 000000c8          ; All rights reserved ADENEO EMBEDDED 2010 
+    2 000000c8          ;============================================================================== 
+    3 000000c8          ;             Texas Instruments OMAP(TM) Platform Software 
+    4 000000c8          ; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved. 
+    5 000000c8          ; 
+    6 000000c8          ; Use of this software is controlled by the terms and conditions found 
+    7 000000c8          ; in the license agreement under which this software has been supplied. 
+    8 000000c8          ; 
+    9 000000c8          ;============================================================================== 
+   10 000000c8          ; 
+   11 000000c8          ;------------------------------------------------------------------------------ 
+   12 000000c8          ; 
+   13 000000c8          ;  File:  memory_cfg.inc 
+   14 000000c8          ; 
+   15 000000c8          ;  This file is used to define g_oalAddressTable. This table is passed to 
+   16 000000c8          ;  KernelStart to estabilish physical to virtual memory mapping. This table 
+   17 000000c8          ;  is used also in memory OAL module to map between physical and virtual 
+   18 000000c8          ;  memory addresses via OALPAtoVA/OALVAtoPA functions. 
+   19 000000c8          ; 
+   20 000000c8          ;  The config.bib file defines image memory layout ant it contains virtual 
+   21 000000c8          ;  cached memory addresses which must be synchronized with g_oalAddressTable. 
+   22 000000c8          ;  With each table change make sure that those constant are still valid. 
+   23 000000c8          ; 
+   24 000000c8          ;------------------------------------------------------------------------------ 
+   25 000000c8          ;  Export Definition 
+   26 000000c8            
+   27 000000c8                  EXPORT  g_oalAddressTable[DATA] 
+   28 000000c8                  EXPORT  g_oalAddressTableHynix[DATA] 
+   29 000000c8                   
+   30 000000c8          ;------------------------------------------------------------------------------ 
+   31 000000c8          ;  Table format: cached address, physical address, size 
+   32 000000c8            
+   33 000000c8          g_oalAddressTable 
+   34 000000c8            
+   35 000000c8 80000000     DCD     0x80000000, 0x80000000, 128     ; SDRAM   
+               80000000   
+               00000080   
+   36 000000d4              IF BSP_SDRAM_BANK1_ENABLE 
+   37 000000d4 88000000         DCD     0x88000000, 0xA0000000, 128     ; SDRAM 
+               a0000000   
+               00000080   
+   38 000000e0              ENDIF 
+   39 000000e0 95000000     DCD     0x95000000, 0x15000000,  16     ; CS5, LAN9115 
+               15000000   
+               00000010   
+   40 000000ec 96000000     DCD     0x96000000, 0x48000000,  16     ; L4 Core/Wakeup registers 
+               48000000   
+               00000010   
+   41 000000f8 97000000     DCD     0x97000000, 0x49000000,   1     ; L4 Peripheral 
+               49000000   
+               00000001   
+   42 00000104 97100000     DCD     0x97100000, 0x68000000,  16     ; L3 registers 
+               68000000   
+               00000010   
+   43 00000110 98100000     DCD     0x98100000, 0x6C000000,  16     ; SMS registers 
+               6c000000   
+               00000010   
+   44 0000011c 99100000     DCD     0x99100000, 0x6D000000,  16     ; SDRC registers 
+               6d000000   
+               00000010   
+   45 00000128 9a100000     DCD     0x9a100000, 0x6E000000,  16     ; GPMC registers 
+               6e000000   
+               00000010   
+   46 00000134 9b100000     DCD     0x9b100000, 0x40200000,   1     ; 64KB SRAM 
+               40200000   
+               00000001   
+   47 00000140 9b200000     DCD     0x9b200000, 0x5C000000,  16     ; IPSS interconnect 
+               5c000000   
+               00000010   
+   48 0000014c 9c200000     DCD     0x9C200000, 0x00000000,   1     ; ROM 
+               00000000   
+               00000001   
+   49 00000158 9c300000     DCD     0x9C300000, 0x08000000,   1     ; NAND Registers (FIFO) 
+               08000000   
+               00000001   
+   50 00000164 00000000     DCD     0x00000000, 0x00000000,   0     ; end of table 
+               00000000   
+               00000000   
+   51 00000170            
+   52 00000170          g_oalAddressTableHynix 
+   53 00000170            
+   54 00000170            
+   55 00000170 80000000     DCD     0x80000000, 0x80000000, 256     ; SDRAM            
+               80000000   
+               00000100   
+   56 0000017c 94000000     DCD     0x94000000, 0x11000000,  16     ; CS2, NOR flash  
+               11000000   
+               00000010   
+   57 00000188 95000000     DCD     0x95000000, 0x15000000,  16     ; CS5, LAN9115 
+               15000000   
+               00000010   
+   58 00000194 96000000     DCD     0x96000000, 0x48000000,  16     ; L4 Core/Wakeup registers 
+               48000000   
+               00000010   
+   59 000001a0 97000000     DCD     0x97000000, 0x49000000,   1     ; L4 Peripheral 
+               49000000   
+               00000001   
+   60 000001ac 97100000     DCD     0x97100000, 0x68000000,  16     ; L3 registers 
+               68000000   
+               00000010   
+   61 000001b8 98100000     DCD     0x98100000, 0x6C000000,  16     ; SMS registers 
+               6c000000   
+               00000010   
+   62 000001c4 99100000     DCD     0x99100000, 0x6D000000,  16     ; SDRC registers 
+               6d000000   
+               00000010   
+   63 000001d0 9a100000     DCD     0x9a100000, 0x6E000000,  16     ; GPMC registers 
+               6e000000   
+               00000010   
+   64 000001dc 9b100000     DCD     0x9b100000, 0x40200000,   1     ; 64KB SRAM 
+               40200000   
+               00000001   
+   65 000001e8 9b200000     DCD     0x9b200000, 0x5C000000,  16     ; IPSS interconnect 
+               5c000000   
+               00000010   
+   66 000001f4 9c200000     DCD     0x9C200000, 0x00000000,   1     ; ROM 
+               00000000   
+               00000001   
+   67 00000200 9c300000     DCD     0x9C300000, 0x08000000,   1     ; NAND Registers (FIFO) 
+               08000000   
+               00000001   
+   68 0000020c 00000000     DCD     0x00000000, 0x00000000,   0     ; end of table 
+               00000000   
+               00000000   
+   69 00000218            
+   70 00000218          ;------------------------------------------------------------------------------ 
+   71 00000218            
+   72 00000218              END        
+  121 00000218            
+  122 00000218                  ENTRY_END  
+  194 00000218          |StartUp_end| 
+  123 00000218            
+  124 00000218          ;------------------------------------------------------------------------------- 
+  125 00000218          ; 
+  126 00000218          ;  Function:  GetCp15ControlRegister 
+  127 00000218          ; 
+  128 00000218          ;  Returns value of CP15 control register, used in OEMInit() 
+  129 00000218          ; 
+  130 00000218          ; 
+  131 00000218            
+  132 00000218                  EXPORT GetCp15ControlRegister 
+  133 00000218                  LEAF_ENTRY GetCp15ControlRegister 
+  175 00000218          FuncName SETS    VBar:CC:"GetCp15ControlRegister":CC:VBar 
+  176 00000218          PrologName SETS "Invalid Prolog" 
+  177 00000218          FuncEndName SETS    VBar:CC:"GetCp15ControlRegister":CC:"_end":CC:VBar 
+  178 00000218                  ALIGN   2 
+  179 00000218                  EXPORT  |GetCp15ControlRegister| [FUNC] 
+  180 00000218          |GetCp15ControlRegister| 
+  181 00000218                  ROUT 
+  134 00000218            
+  135 00000218 ee110f10         mrc     p15, 0, R0, c1, c0, 0 ; Read Control Register 
+  136 0000021c e1a0f00e         mov     pc, lr 
+  137 00000220            
+  138 00000220                  ENTRY_END  
+  194 00000220          |GetCp15ControlRegister_end| 
+  139 00000220            
+  140 00000220          ;------------------------------------------------------------------------------- 
+  141 00000220          ; 
+  142 00000220          ;  Function:  GetCp15AuxiliaryControlRegister 
+  143 00000220          ; 
+  144 00000220          ;  Returns value of CP15 control register, used in OEMInit() 
+  145 00000220          ; 
+  146 00000220          ; 
+  147 00000220            
+  148 00000220                  EXPORT GetCp15AuxiliaryControlRegister 
+  149 00000220                  LEAF_ENTRY GetCp15AuxiliaryControlRegister 
+  175 00000220          FuncName SETS    VBar:CC:"GetCp15AuxiliaryControlRegister":CC:VBar 
+  176 00000220          PrologName SETS "Invalid Prolog" 
+  177 00000220          FuncEndName SETS    VBar:CC:"GetCp15AuxiliaryControlRegister":CC:"_end":CC:VBar 
+  178 00000220                  ALIGN   2 
+  179 00000220                  EXPORT  |GetCp15AuxiliaryControlRegister| [FUNC] 
+  180 00000220          |GetCp15AuxiliaryControlRegister| 
+  181 00000220                  ROUT 
+  150 00000220            
+  151 00000220 ee110f30         mrc p15, 0, r0, c1, c0, 1 ; Read Auxiliary Control Register 
+  152 00000224 e1a0f00e         mov     pc, lr 
+  153 00000228            
+  154 00000228                  ENTRY_END  
+  194 00000228          |GetCp15AuxiliaryControlRegister_end| 
+  155 00000228                  
+  156 00000228           ;------------------------------------------------------------------------------- 
+  157 00000228          ; 
+  158 00000228          ;  Function:  EnableUnalignedAccess 
+  159 00000228          ; 
+  160 00000228          ;  disables strict alignment checking 
+  161 00000228          ; 
+  162 00000228          ; 
+  163 00000228            
+  164 00000228                  EXPORT EnableUnalignedAccess 
+  165 00000228                  LEAF_ENTRY EnableUnalignedAccess 
+  175 00000228          FuncName SETS    VBar:CC:"EnableUnalignedAccess":CC:VBar 
+  176 00000228          PrologName SETS "Invalid Prolog" 
+  177 00000228          FuncEndName SETS    VBar:CC:"EnableUnalignedAccess":CC:"_end":CC:VBar 
+  178 00000228                  ALIGN   2 
+  179 00000228                  EXPORT  |EnableUnalignedAccess| [FUNC] 
+  180 00000228          |EnableUnalignedAccess| 
+  181 00000228                  ROUT 
+  166 00000228            
+  167 00000228 ee111f10         mrc     p15, 0, r1, c1, c0, 0   ; Read Control Register 
+  168 0000022c e3c11002         bic     r1, r1, #0x2            ; disable strict alignment check. 
+  169 00000230 ee011f10         mcr     p15, 0, r1, c1, c0, 0   ; MMU ON:  All memory accesses are now virtual. 
+  170 00000234 e1a0f00e         mov     pc, lr 
+  171 00000238            
+  172 00000238                  ENTRY_END  
+  194 00000238          |EnableUnalignedAccess_end| 
+  173 00000238            
+  174 00000238                  END 
+  175 00000238 000003ff *literal pool: constant 
+  175 0000023c 00007fff *literal pool: constant 
+  175 00000240 4830a204 *literal pool: constant 
+  175 00000244 0ffff000 *literal pool: constant 
+  175 00000248 0b891000 *literal pool: constant 
+Assembly terminated, errors: 0, warnings: 1 

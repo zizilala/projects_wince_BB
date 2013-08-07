@@ -1,0 +1,1021 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\
+BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000009:INFO  ] Done.
+BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\debug.c because target: obj\ARMV4I\retail\debug.obj is missing.
+BUILD: [00:0000000011:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\audiomgr.cpp because target: obj\ARMV4I\retail\audiomgr.obj is missing.
+BUILD: [00:0000000012:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\strmmgr.cpp because target: obj\ARMV4I\retail\strmmgr.obj is missing.
+BUILD: [00:0000000013:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\mixermgr.cpp because target: obj\ARMV4I\retail\mixermgr.obj is missing.
+BUILD: [00:0000000014:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\audiolin.cpp because target: obj\ARMV4I\retail\audiolin.obj is missing.
+BUILD: [00:0000000015:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\audioctrl.cpp because target: obj\ARMV4I\retail\audioctrl.obj is missing.
+BUILD: [00:0000000016:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\istrmmgr.cpp because target: obj\ARMV4I\retail\istrmmgr.obj is missing.
+BUILD: [00:0000000017:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\ostrmmgr.cpp because target: obj\ARMV4I\retail\ostrmmgr.obj is missing.
+BUILD: [00:0000000018:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\wav_init.cpp because target: obj\ARMV4I\retail\wav_init.obj is missing.
+BUILD: [00:0000000019:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\strmctxt.cpp because target: obj\ARMV4I\retail\strmctxt.obj is missing.
+BUILD: [00:0000000020:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\output.cpp because target: obj\ARMV4I\retail\output.obj is missing.
+BUILD: [00:0000000021:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\input.cpp because target: obj\ARMV4I\retail\input.obj is missing.
+BUILD: [00:0000000022:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\StreamClass.cpp because target: obj\ARMV4I\retail\StreamClass.obj is missing.
+BUILD: [00:0000000023:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\wavemain.cpp because target: obj\ARMV4I\retail\wavemain.obj is missing.
+BUILD: [00:0000000024:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\dmtaudioport.cpp because target: obj\ARMV4I\retail\dmtaudioport.obj is missing.
+BUILD: [00:0000000025:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\omap35xx_hwbridge.cpp because target: obj\ARMV4I\retail\omap35xx_hwbridge.obj is missing.
+BUILD: [00:0000000026:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\wavertgctrl.cpp because target: obj\ARMV4I\retail\wavertgctrl.obj is missing.
+BUILD: [00:0000000027:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\dtpnotify.cpp because target: obj\ARMV4I\retail\dtpnotify.obj is missing.
+BUILD: [00:0000000028:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\dasfaudioport.cpp because target: obj\ARMV4I\retail\dasfaudioport.obj is missing.
+BUILD: [00:0000000029:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\guids.cpp because target: obj\ARMV4I\retail\guids.obj is missing.
+BUILD: [00:0000000030:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\ directory.
+BUILD: [00:0000000031:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000032:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000033:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000034:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000035:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\sources
+BUILD: [01:0000000036:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000037:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE
+BUILD: [01:0000000038:INFO  ] TARGETNAME: tps659xx_wave
+BUILD: [01:0000000039:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000040:PROGC ] Compiling .\debug.c
+BUILD: [01:0000000041:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\debug.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\debug.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\debug.c
+BUILD: [01:0000000042:INFO  ] debug.c
+BUILD: [01:0000000043:PROGC ] Compiling .\audiomgr.cpp
+BUILD: [01:0000000044:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\audiomgr.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\audiomgr.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\audiomgr.cpp
+BUILD: [01:0000000045:INFO  ] audiomgr.cpp
+BUILD: [01:0000000046:PROGC ] Compiling .\strmmgr.cpp
+BUILD: [01:0000000047:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\strmmgr.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\strmmgr.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\strmmgr.cpp
+BUILD: [01:0000000048:INFO  ] strmmgr.cpp
+BUILD: [01:0000000049:PROGC ] Compiling .\mixermgr.cpp
+BUILD: [01:0000000050:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\mixermgr.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\mixermgr.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\mixermgr.cpp
+BUILD: [01:0000000051:INFO  ] mixermgr.cpp
+BUILD: [01:0000000052:PROGC ] Compiling .\audiolin.cpp
+BUILD: [01:0000000053:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\audiolin.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\audiolin.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\audiolin.cpp
+BUILD: [01:0000000054:INFO  ] audiolin.cpp
+BUILD: [01:0000000055:PROGC ] Compiling .\audioctrl.cpp
+BUILD: [01:0000000056:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\audioctrl.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\audioctrl.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\audioctrl.cpp
+BUILD: [01:0000000057:INFO  ] audioctrl.cpp
+BUILD: [01:0000000058:PROGC ] Compiling .\istrmmgr.cpp
+BUILD: [01:0000000059:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\istrmmgr.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\istrmmgr.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\istrmmgr.cpp
+BUILD: [01:0000000060:INFO  ] istrmmgr.cpp
+BUILD: [01:0000000061:PROGC ] Compiling .\ostrmmgr.cpp
+BUILD: [01:0000000062:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\ostrmmgr.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\ostrmmgr.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\ostrmmgr.cpp
+BUILD: [01:0000000063:INFO  ] ostrmmgr.cpp
+BUILD: [01:0000000064:PROGC ] Compiling .\wav_init.cpp
+BUILD: [01:0000000065:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\wav_init.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\wav_init.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\wav_init.cpp
+BUILD: [01:0000000066:INFO  ] wav_init.cpp
+BUILD: [01:0000000067:PROGC ] Compiling .\strmctxt.cpp
+BUILD: [01:0000000068:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\strmctxt.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\strmctxt.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\strmctxt.cpp
+BUILD: [01:0000000069:INFO  ] strmctxt.cpp
+BUILD: [01:0000000070:PROGC ] Compiling .\output.cpp
+BUILD: [01:0000000071:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\output.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\output.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\output.cpp
+BUILD: [01:0000000072:INFO  ] output.cpp
+BUILD: [01:0000000073:PROGC ] Compiling .\input.cpp
+BUILD: [01:0000000074:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\input.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\input.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\input.cpp
+BUILD: [01:0000000075:INFO  ] input.cpp
+BUILD: [01:0000000076:PROGC ] Compiling .\StreamClass.cpp
+BUILD: [01:0000000077:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\StreamClass.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\StreamClass.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\StreamClass.cpp
+BUILD: [01:0000000078:INFO  ] StreamClass.cpp
+BUILD: [01:0000000079:PROGC ] Compiling .\wavemain.cpp
+BUILD: [01:0000000080:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\wavemain.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\wavemain.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\wavemain.cpp
+BUILD: [01:0000000081:INFO  ] wavemain.cpp
+BUILD: [01:0000000082:PROGC ] Compiling .\dmtaudioport.cpp
+BUILD: [01:0000000083:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\dmtaudioport.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\dmtaudioport.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\dmtaudioport.cpp
+BUILD: [01:0000000084:INFO  ] dmtaudioport.cpp
+BUILD: [01:0000000085:PROGC ] Compiling .\omap35xx_hwbridge.cpp
+BUILD: [01:0000000086:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\omap35xx_hwbridge.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\omap35xx_hwbridge.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\omap35xx_hwbridge.cpp
+BUILD: [01:0000000087:INFO  ] omap35xx_hwbridge.cpp
+BUILD: [01:0000000088:PROGC ] Compiling .\wavertgctrl.cpp
+BUILD: [01:0000000089:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\wavertgctrl.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\wavertgctrl.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\wavertgctrl.cpp
+BUILD: [01:0000000090:INFO  ] wavertgctrl.cpp
+BUILD: [01:0000000091:PROGC ] Compiling .\dtpnotify.cpp
+BUILD: [01:0000000092:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\dtpnotify.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\dtpnotify.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\dtpnotify.cpp
+BUILD: [01:0000000093:INFO  ] dtpnotify.cpp
+BUILD: [01:0000000094:PROGC ] Compiling .\dasfaudioport.cpp
+BUILD: [01:0000000095:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\dasfaudioport.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\dasfaudioport.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\dasfaudioport.cpp
+BUILD: [01:0000000096:INFO  ] dasfaudioport.cpp
+BUILD: [01:0000000097:PROGC ] Compiling .\guids.cpp
+BUILD: [01:0000000098:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\guids.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DMIXER_CACHEDMEM -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\guids.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\.\guids.cpp
+BUILD: [01:0000000099:INFO  ] guids.cpp
+BUILD: [00:0000000100:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\tps659xx_wave.lib because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000101:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000102:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\debug.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000103:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\audiomgr.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000104:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\strmmgr.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000105:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\mixermgr.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000106:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\audiolin.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000107:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\audioctrl.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000108:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\istrmmgr.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000109:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\ostrmmgr.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000110:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\wav_init.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000111:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\strmctxt.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000112:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\output.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000113:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\input.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000114:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\StreamClass.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000115:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\wavemain.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000116:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\dmtaudioport.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000117:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\omap35xx_hwbridge.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000118:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\wavertgctrl.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000119:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\dtpnotify.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000120:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\dasfaudioport.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000121:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\guids.obj because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000122:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib is missing.
+BUILD: [00:0000000123:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\ directory.
+BUILD: [00:0000000124:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000125:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000126:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000127:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000128:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\sources
+BUILD: [01:0000000129:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000130:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE
+BUILD: [01:0000000131:INFO  ] TARGETNAME: tps659xx_wave
+BUILD: [01:0000000132:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000133:PROGC ] Linking C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib
+BUILD: [01:0000000134:INFO  ] 	link -lib -out:C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib -def:tps659xx_wave.def -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm259C.tmp
+BUILD: [01:0000000135:INFO  ] Microsoft (R) Library Manager Version 8.00.50727.42
+BUILD: [01:0000000136:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000137:INFO  ] 
+BUILD: [01:0000000138:INFO  ] -nodefaultlib 
+BUILD: [01:0000000139:INFO  ] -ignore:4001 
+BUILD: [01:0000000140:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000141:INFO  ] obj\ARMV4I\retail\debug.obj obj\ARMV4I\retail\audiomgr.obj obj\ARMV4I\retail\strmmgr.obj obj\ARMV4I\retail\mixermgr.obj obj\ARMV4I\retail\audiolin.obj obj\ARMV4I\retail\audioctrl.obj obj\ARMV4I\retail\istrmmgr.obj obj\ARMV4I\retail\ostrmmgr.obj obj\ARMV4I\retail\wav_init.obj obj\ARMV4I\retail\strmctxt.obj obj\ARMV4I\retail\output.obj obj\ARMV4I\retail\input.obj obj\ARMV4I\retail\StreamClass.obj obj\ARMV4I\retail\wavemain.obj obj\ARMV4I\retail\dmtaudioport.obj obj\ARMV4I\retail\omap35xx_hwbridge.obj obj\ARMV4I\retail\wavertgctrl.obj obj\ARMV4I\retail\dtpnotify.obj obj\ARMV4I\retail\dasfaudioport.obj obj\ARMV4I\retail\guids.obj 
+BUILD: [01:0000000142:INFO  ] C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_wave.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib 
+BUILD: [01:0000000143:INFO  ]    Creating library C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.lib and object C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.exp
+BUILD: [00:0000000144:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000000145:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\tps659xx_wave.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000146:INFO  ] Will Build C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000147:INFO  ] Will Build C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000148:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000000149:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\debug.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000150:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\audiomgr.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000151:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\strmmgr.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000152:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\mixermgr.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000153:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\audiolin.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000154:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\audioctrl.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000155:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\istrmmgr.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000156:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\ostrmmgr.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000157:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\wav_init.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000158:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\strmctxt.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000159:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\output.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000160:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\input.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000161:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\StreamClass.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000162:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\wavemain.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000163:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\dmtaudioport.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000164:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\omap35xx_hwbridge.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000165:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\wavertgctrl.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000166:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\dtpnotify.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000167:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\dasfaudioport.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000168:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\obj\ARMV4I\retail\guids.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000169:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll is missing.
+BUILD: [00:0000000170:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\ directory.
+BUILD: [00:0000000171:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000000172:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000173:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000174:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000175:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE\sources
+BUILD: [01:0000000176:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000177:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\TPS659XX_WAVE
+BUILD: [01:0000000178:INFO  ] TARGETNAME: tps659xx_wave
+BUILD: [01:0000000179:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000180:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000181:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll
+BUILD: [01:0000000182:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll -dll -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm259D.tmp
+BUILD: [01:0000000183:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000184:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000185:INFO  ] 
+BUILD: [01:0000000186:INFO  ] -nodefaultlib 
+BUILD: [01:0000000187:INFO  ] -include:DllMain -entry:_DllMainCRTStartup 
+BUILD: [01:0000000188:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb 
+BUILD: [01:0000000189:INFO  ] -pdbaltpath:tps659xx_wave.pdb 
+BUILD: [01:0000000190:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000191:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000192:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.map 
+BUILD: [01:0000000193:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.rel 
+BUILD: [01:0000000194:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000195:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000196:INFO  ] /base:0x10000000 
+BUILD: [01:0000000197:INFO  ] obj\ARMV4I\retail\debug.obj obj\ARMV4I\retail\audiomgr.obj obj\ARMV4I\retail\strmmgr.obj obj\ARMV4I\retail\mixermgr.obj obj\ARMV4I\retail\audiolin.obj obj\ARMV4I\retail\audioctrl.obj obj\ARMV4I\retail\istrmmgr.obj obj\ARMV4I\retail\ostrmmgr.obj obj\ARMV4I\retail\wav_init.obj obj\ARMV4I\retail\strmctxt.obj obj\ARMV4I\retail\output.obj obj\ARMV4I\retail\input.obj obj\ARMV4I\retail\StreamClass.obj obj\ARMV4I\retail\wavemain.obj obj\ARMV4I\retail\dmtaudioport.obj obj\ARMV4I\retail\omap35xx_hwbridge.obj obj\ARMV4I\retail\wavertgctrl.obj obj\ARMV4I\retail\dtpnotify.obj obj\ARMV4I\retail\dasfaudioport.obj obj\ARMV4I\retail\guids.obj 
+BUILD: [01:0000000198:INFO  ] C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_wave.lib C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib 
+BUILD: [01:0000000199:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000200:INFO  ] C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\tps659xx_wave.exp 
+BUILD: [01:0000000201:INFO  ] 
+BUILD: [01:0000000202:INFO  ] Starting pass 1
+BUILD: [01:0000000203:INFO  ] 
+BUILD: [01:0000000204:INFO  ] Searching libraries
+BUILD: [01:0000000205:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_wave.lib:
+BUILD: [01:0000000206:INFO  ]       Found SetHwCodecMode_Disabled
+BUILD: [01:0000000207:INFO  ]         Referenced in omap35xx_hwbridge.obj
+BUILD: [01:0000000208:INFO  ]         Loaded TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000209:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib:
+BUILD: [01:0000000210:INFO  ]       Found TWLOpen
+BUILD: [01:0000000211:INFO  ]         Referenced in TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000212:INFO  ]         Loaded triton_device.lib(twl_access.obj)
+BUILD: [01:0000000213:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000214:INFO  ]       Found CloseBusAccessHandle
+BUILD: [01:0000000215:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000216:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000217:INFO  ]       Found SetDevicePowerState
+BUILD: [01:0000000218:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000219:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000220:INFO  ]       Found CreateBusAccessHandle
+BUILD: [01:0000000221:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000222:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000223:INFO  ]       Found GetDeviceRegistryParams
+BUILD: [01:0000000224:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000225:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000226:INFO  ]       Found __IMPORT_DESCRIPTOR_CEDDK
+BUILD: [01:0000000227:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000228:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000229:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000230:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000231:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000232:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000233:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000234:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000235:INFO  ]       Found CEDDK_NULL_THUNK_DATA
+BUILD: [01:0000000236:INFO  ]         Referenced in ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000237:INFO  ]         Loaded ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000238:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000239:INFO  ]       Found SetLastError
+BUILD: [01:0000000240:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000241:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000242:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000243:INFO  ]       Found NKDbgPrintfW
+BUILD: [01:0000000244:INFO  ]         Referenced in dmtaudioport.obj
+BUILD: [01:0000000245:INFO  ]         Referenced in omap35xx_hwbridge.obj
+BUILD: [01:0000000246:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000247:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000248:INFO  ]         Referenced in mixermgr.obj
+BUILD: [01:0000000249:INFO  ]         Referenced in strmctxt.obj
+BUILD: [01:0000000250:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000251:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000252:INFO  ]       Found CeSafeCopyMemory
+BUILD: [01:0000000253:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000254:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000255:INFO  ]       Found CloseHandle
+BUILD: [01:0000000256:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000257:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000258:INFO  ]         Referenced in strmmgr.obj
+BUILD: [01:0000000259:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000260:INFO  ]         Referenced in dmtaudioport.obj
+BUILD: [01:0000000261:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000262:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000263:INFO  ]       Found OpenProcess
+BUILD: [01:0000000264:INFO  ]         Referenced in strmmgr.obj
+BUILD: [01:0000000265:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000266:INFO  ]       Found GetCallerVMProcessId
+BUILD: [01:0000000267:INFO  ]         Referenced in strmmgr.obj
+BUILD: [01:0000000268:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000269:INFO  ]       Found LocalFree
+BUILD: [01:0000000270:INFO  ]         Referenced in mixermgr.obj
+BUILD: [01:0000000271:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000272:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000273:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000274:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000275:INFO  ]       Found LocalAlloc
+BUILD: [01:0000000276:INFO  ]         Referenced in mixermgr.obj
+BUILD: [01:0000000277:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000278:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000279:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000280:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000281:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000000282:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000283:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000284:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000285:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000286:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000287:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000000288:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000289:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000290:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000291:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000292:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000000293:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000294:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000295:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000296:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000000297:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000298:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000299:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000300:INFO  ]       Found DisableThreadLibraryCalls
+BUILD: [01:0000000301:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000302:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000303:INFO  ]       Found RegisterDbgZones
+BUILD: [01:0000000304:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000305:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000306:INFO  ]       Found DeviceIoControl
+BUILD: [01:0000000307:INFO  ]         Referenced in dmtaudioport.obj
+BUILD: [01:0000000308:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000309:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000310:INFO  ]       Found GetLastError
+BUILD: [01:0000000311:INFO  ]         Referenced in dmtaudioport.obj
+BUILD: [01:0000000312:INFO  ]         Referenced in omap35xx_hwbridge.obj
+BUILD: [01:0000000313:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000314:INFO  ]       Found CreateFileW
+BUILD: [01:0000000315:INFO  ]         Referenced in dmtaudioport.obj
+BUILD: [01:0000000316:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000317:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000318:INFO  ]       Found OpenMsgQueue
+BUILD: [01:0000000319:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000320:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000321:INFO  ]       Found WriteMsgQueue
+BUILD: [01:0000000322:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000323:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000324:INFO  ]       Found EventModify
+BUILD: [01:0000000325:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000326:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000327:INFO  ]       Found InterlockedIncrement
+BUILD: [01:0000000328:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000329:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000330:INFO  ]       Found GetProcAddressW
+BUILD: [01:0000000331:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000332:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000333:INFO  ]       Found LoadLibraryW
+BUILD: [01:0000000334:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000335:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000336:INFO  ]       Found FreeLibrary
+BUILD: [01:0000000337:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000338:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000339:INFO  ]       Found InterlockedDecrement
+BUILD: [01:0000000340:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000341:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000342:INFO  ]       Found WaitForSingleObject
+BUILD: [01:0000000343:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000344:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000345:INFO  ]       Found CeSetThreadPriority
+BUILD: [01:0000000346:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000347:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000348:INFO  ]       Found CreateThread
+BUILD: [01:0000000349:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000350:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000351:INFO  ]       Found CreateEventW
+BUILD: [01:0000000352:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000353:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000354:INFO  ]       Found __GetUserKData
+BUILD: [01:0000000355:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000356:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000357:INFO  ]       Found ReadFile
+BUILD: [01:0000000358:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000359:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000360:INFO  ]       Found SetFilePointer
+BUILD: [01:0000000361:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000362:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000363:INFO  ]       Found WriteFile
+BUILD: [01:0000000364:INFO  ]         Referenced in triton_device.lib(twl_access.obj)
+BUILD: [01:0000000365:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000366:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000367:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000368:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000369:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000370:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000371:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000372:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000373:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000374:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000375:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000376:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000377:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000378:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000379:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000380:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000381:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000382:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000383:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000384:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000385:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000386:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000387:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000388:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000389:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000390:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000391:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000392:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000393:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000394:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000395:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000396:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000397:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000398:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000399:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000400:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000401:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000402:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000403:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000404:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000405:INFO  ]       Found _DllMainCRTStartup
+BUILD: [01:0000000406:INFO  ]         Loaded corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000407:INFO  ]       Found atexit
+BUILD: [01:0000000408:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000409:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000000410:INFO  ]       Found _cexit
+BUILD: [01:0000000411:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000412:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000000413:INFO  ]       Found _cinit
+BUILD: [01:0000000414:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000415:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000416:INFO  ]       Found __security_init_cookie
+BUILD: [01:0000000417:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000418:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000000419:INFO  ]       Found __xt_z
+BUILD: [01:0000000420:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000421:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000000422:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000423:INFO  ]       Found "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z)
+BUILD: [01:0000000424:INFO  ]         Referenced in StreamClass.obj
+BUILD: [01:0000000425:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000426:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000427:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000428:INFO  ]         Referenced in istrmmgr.obj
+BUILD: [01:0000000429:INFO  ]         Referenced in ostrmmgr.obj
+BUILD: [01:0000000430:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000431:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000432:INFO  ]       Found memset
+BUILD: [01:0000000433:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000434:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000435:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000436:INFO  ]         Referenced in strmmgr.obj
+BUILD: [01:0000000437:INFO  ]         Referenced in ostrmmgr.obj
+BUILD: [01:0000000438:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000439:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000440:INFO  ]       Found "void __cdecl operator delete(void *)" (??3@YAXPAX@Z)
+BUILD: [01:0000000441:INFO  ]         Referenced in dtpnotify.obj
+BUILD: [01:0000000442:INFO  ]         Referenced in dasfaudioport.obj
+BUILD: [01:0000000443:INFO  ]         Referenced in audiomgr.obj
+BUILD: [01:0000000444:INFO  ]         Referenced in istrmmgr.obj
+BUILD: [01:0000000445:INFO  ]         Referenced in ostrmmgr.obj
+BUILD: [01:0000000446:INFO  ]         Referenced in StreamClass.obj
+BUILD: [01:0000000447:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000448:INFO  ]       Found memcmp
+BUILD: [01:0000000449:INFO  ]         Referenced in strmmgr.obj
+BUILD: [01:0000000450:INFO  ]         Referenced in strmctxt.obj
+BUILD: [01:0000000451:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000452:INFO  ]       Found _purecall
+BUILD: [01:0000000453:INFO  ]         Referenced in ostrmmgr.obj
+BUILD: [01:0000000454:INFO  ]         Referenced in wav_init.obj
+BUILD: [01:0000000455:INFO  ]         Referenced in strmmgr.obj
+BUILD: [01:0000000456:INFO  ]         Referenced in audiolin.obj
+BUILD: [01:0000000457:INFO  ]         Referenced in audioctrl.obj
+BUILD: [01:0000000458:INFO  ]         Referenced in istrmmgr.obj
+BUILD: [01:0000000459:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000460:INFO  ]       Found wcscpy
+BUILD: [01:0000000461:INFO  ]         Referenced in mixermgr.obj
+BUILD: [01:0000000462:INFO  ]         Referenced in audiolin.obj
+BUILD: [01:0000000463:INFO  ]         Referenced in audioctrl.obj
+BUILD: [01:0000000464:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000465:INFO  ]       Found memcpy
+BUILD: [01:0000000466:INFO  ]         Referenced in dmtaudioport.obj
+BUILD: [01:0000000467:INFO  ]         Referenced in wavertgctrl.obj
+BUILD: [01:0000000468:INFO  ]         Referenced in istrmmgr.obj
+BUILD: [01:0000000469:INFO  ]         Referenced in ostrmmgr.obj
+BUILD: [01:0000000470:INFO  ]         Referenced in strmctxt.obj
+BUILD: [01:0000000471:INFO  ]         Referenced in StreamClass.obj
+BUILD: [01:0000000472:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000473:INFO  ]       Found __rt_udiv
+BUILD: [01:0000000474:INFO  ]         Referenced in strmctxt.obj
+BUILD: [01:0000000475:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000476:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000000477:INFO  ]         Referenced in strmctxt.obj
+BUILD: [01:0000000478:INFO  ]         Referenced in wavemain.obj
+BUILD: [01:0000000479:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000480:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000481:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000482:INFO  ]       Found __utos
+BUILD: [01:0000000483:INFO  ]         Referenced in output.obj
+BUILD: [01:0000000484:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000485:INFO  ]       Found __divs
+BUILD: [01:0000000486:INFO  ]         Referenced in output.obj
+BUILD: [01:0000000487:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000488:INFO  ]       Found __itos
+BUILD: [01:0000000489:INFO  ]         Referenced in output.obj
+BUILD: [01:0000000490:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000491:INFO  ]       Found __subs
+BUILD: [01:0000000492:INFO  ]         Referenced in output.obj
+BUILD: [01:0000000493:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000494:INFO  ]       Found __muls
+BUILD: [01:0000000495:INFO  ]         Referenced in output.obj
+BUILD: [01:0000000496:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000497:INFO  ]       Found __stoi
+BUILD: [01:0000000498:INFO  ]         Referenced in output.obj
+BUILD: [01:0000000499:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000500:INFO  ]       Found __rt_udiv64by64
+BUILD: [01:0000000501:INFO  ]         Referenced in input.obj
+BUILD: [01:0000000502:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000503:INFO  ]       Found _XcptFilter
+BUILD: [01:0000000504:INFO  ]         Referenced in corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000505:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000506:INFO  ]       Found free
+BUILD: [01:0000000507:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000508:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000509:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000510:INFO  ]       Found malloc
+BUILD: [01:0000000511:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000512:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000513:INFO  ]       Found realloc
+BUILD: [01:0000000514:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000515:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000516:INFO  ]       Found _msize
+BUILD: [01:0000000517:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000518:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000519:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000000520:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000000521:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000522:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\TPS659xx_wave.lib:
+BUILD: [01:0000000523:INFO  ]     Searching C:\WINCE600\platform\common\lib\ARMV4I\retail\triton_device.lib:
+BUILD: [01:0000000524:INFO  ]     Searching C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\ceddk.lib:
+BUILD: [01:0000000525:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000526:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000000527:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000528:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000529:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000000530:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000531:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000532:INFO  ]       Found TerminateProcess
+BUILD: [01:0000000533:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000534:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000535:INFO  ] 
+BUILD: [01:0000000536:INFO  ] Finished searching libraries
+BUILD: [01:0000000537:INFO  ] 
+BUILD: [01:0000000538:INFO  ] Finished pass 1
+BUILD: [01:0000000539:INFO  ] 
+BUILD: [01:0000000540:INFO  ]     Discarded __imp_FreeLibrary from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000541:INFO  ]     Discarded __imp___GetUserKData from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000542:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000543:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000544:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000545:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000546:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000547:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000548:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000549:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000550:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000551:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000552:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000553:INFO  ]     Discarded '.pdata' from audiomgr.obj
+BUILD: [01:0000000554:INFO  ]     Discarded '.pdata' from strmmgr.obj
+BUILD: [01:0000000555:INFO  ]     Discarded '.pdata' from strmmgr.obj
+BUILD: [01:0000000556:INFO  ]     Discarded '.pdata' from strmmgr.obj
+BUILD: [01:0000000557:INFO  ]     Discarded '.pdata' from strmmgr.obj
+BUILD: [01:0000000558:INFO  ]     Discarded '.pdata' from strmmgr.obj
+BUILD: [01:0000000559:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000560:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000561:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000562:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000563:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000564:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000565:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000566:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000567:INFO  ]     Discarded '.pdata' from mixermgr.obj
+BUILD: [01:0000000568:INFO  ]     Discarded '.pdata' from audiolin.obj
+BUILD: [01:0000000569:INFO  ]     Discarded '.pdata' from audiolin.obj
+BUILD: [01:0000000570:INFO  ]     Discarded '.pdata' from audiolin.obj
+BUILD: [01:0000000571:INFO  ]     Discarded '.pdata' from audiolin.obj
+BUILD: [01:0000000572:INFO  ]     Discarded '.pdata' from audiolin.obj
+BUILD: [01:0000000573:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000574:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000575:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000576:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000577:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000578:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000579:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000580:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000581:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000582:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000583:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000584:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000585:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000586:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000587:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000588:INFO  ]     Discarded '.pdata' from istrmmgr.obj
+BUILD: [01:0000000589:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000590:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000591:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000592:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000593:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000594:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000595:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000596:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000597:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000598:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000599:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000600:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000601:INFO  ]     Discarded '.pdata' from ostrmmgr.obj
+BUILD: [01:0000000602:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000603:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000604:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000605:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000606:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000607:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000608:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000609:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000610:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000611:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000612:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000613:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000614:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000615:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000616:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000617:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000618:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000619:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000620:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000621:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000622:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000623:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000624:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000625:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000626:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000627:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000628:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000629:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000630:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000631:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000632:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000633:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000634:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000635:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000636:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000637:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000638:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000639:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000640:INFO  ]     Discarded '.pdata' from wav_init.obj
+BUILD: [01:0000000641:INFO  ]     Discarded '.pdata' from strmctxt.obj
+BUILD: [01:0000000642:INFO  ]     Discarded '.pdata' from strmctxt.obj
+BUILD: [01:0000000643:INFO  ]     Discarded '.pdata' from strmctxt.obj
+BUILD: [01:0000000644:INFO  ]     Discarded '.pdata' from strmctxt.obj
+BUILD: [01:0000000645:INFO  ]     Discarded '.pdata' from strmctxt.obj
+BUILD: [01:0000000646:INFO  ]     Discarded '.pdata' from strmctxt.obj
+BUILD: [01:0000000647:INFO  ]     Discarded '.pdata' from strmctxt.obj
+BUILD: [01:0000000648:INFO  ]     Discarded '.pdata' from output.obj
+BUILD: [01:0000000649:INFO  ]     Discarded '.pdata' from StreamClass.obj
+BUILD: [01:0000000650:INFO  ]     Discarded '.pdata' from wavemain.obj
+BUILD: [01:0000000651:INFO  ]     Discarded '.pdata' from wavemain.obj
+BUILD: [01:0000000652:INFO  ]     Discarded '.pdata' from omap35xx_hwbridge.obj
+BUILD: [01:0000000653:INFO  ]     Discarded '.pdata' from omap35xx_hwbridge.obj
+BUILD: [01:0000000654:INFO  ]     Discarded '.pdata' from omap35xx_hwbridge.obj
+BUILD: [01:0000000655:INFO  ]     Discarded '.pdata' from omap35xx_hwbridge.obj
+BUILD: [01:0000000656:INFO  ]     Discarded '.pdata' from omap35xx_hwbridge.obj
+BUILD: [01:0000000657:INFO  ]     Discarded '.pdata' from wavertgctrl.obj
+BUILD: [01:0000000658:INFO  ]     Discarded '.pdata' from wavertgctrl.obj
+BUILD: [01:0000000659:INFO  ]     Discarded '.pdata' from wavertgctrl.obj
+BUILD: [01:0000000660:INFO  ]     Discarded '.pdata' from dtpnotify.obj
+BUILD: [01:0000000661:INFO  ]     Discarded '.pdata' from dtpnotify.obj
+BUILD: [01:0000000662:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000663:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000664:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000665:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000666:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000667:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000668:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000669:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000670:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000671:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000672:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000673:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000674:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000675:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000676:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000677:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000678:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000679:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000680:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000681:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000682:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000683:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000684:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000685:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000686:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000687:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000688:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000689:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000690:INFO  ]     Discarded '.pdata' from dasfaudioport.obj
+BUILD: [01:0000000691:INFO  ]     Discarded '.pdata' from TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000692:INFO  ]     Discarded '.pdata' from TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000693:INFO  ]     Discarded '.pdata' from TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000694:INFO  ]     Discarded '.pdata' from TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000695:INFO  ]     Discarded '.pdata' from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000696:INFO  ]     Discarded '.pdata' from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000697:INFO  ]     Discarded '.pdata' from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000698:INFO  ]     Discarded '.pdata' from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000699:INFO  ]     Discarded '.pdata' from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000700:INFO  ]     Discarded '.pdata' from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000701:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000702:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000703:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000704:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000705:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000706:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000707:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000708:INFO  ]     Discarded "const CStreamCallback::`vftable'" (??_7CStreamCallback@@6B@) from strmmgr.obj
+BUILD: [01:0000000709:INFO  ]     Discarded "const CAudioControlType<536936448>::`vftable'" (??_7?$CAudioControlType@$0CAABAAAA@@@6B@) from istrmmgr.obj
+BUILD: [01:0000000710:INFO  ]     Discarded "const WaveStreamContext::`vftable'" (??_7WaveStreamContext@@6B@) from istrmmgr.obj
+BUILD: [01:0000000711:INFO  ]     Discarded "const OutputStreamContext::`vftable'" (??_7OutputStreamContext@@6B@) from ostrmmgr.obj
+BUILD: [01:0000000712:INFO  ]     Discarded "const CHardwareAudioBridge::`vftable'" (??_7CHardwareAudioBridge@@6B@) from wav_init.obj
+BUILD: [01:0000000713:INFO  ]     Discarded "const CAudioControlType<1342373889>::`vftable'" (??_7?$CAudioControlType@$0FAADAAAB@@@6B@) from wav_init.obj
+BUILD: [01:0000000714:INFO  ]     Discarded "const CAudioControlType<536936450>::`vftable'" (??_7?$CAudioControlType@$0CAABAAAC@@@6B@) from wav_init.obj
+BUILD: [01:0000000715:INFO  ]     Discarded "const AudioStreamPort::`vftable'" (??_7AudioStreamPort@@6B@) from wav_init.obj
+BUILD: [01:0000000716:INFO  ]     Discarded "public: class CAudioMixerManager * __cdecl CAudioManager::get_AudioMixerManager(void)const " (?get_AudioMixerManager@CAudioManager@@QBAPAVCAudioMixerManager@@XZ) from audiomgr.obj
+BUILD: [01:0000000717:INFO  ]     Discarded "public: class CStreamManager * __cdecl CAudioManager::get_InputStreamManager(unsigned int)const " (?get_InputStreamManager@CAudioManager@@QBAPAVCStreamManager@@I@Z) from audiomgr.obj
+BUILD: [01:0000000718:INFO  ]     Discarded "public: class CStreamManager * __cdecl CAudioManager::get_OutputStreamManager(unsigned int)const " (?get_OutputStreamManager@CAudioManager@@QBAPAVCStreamManager@@I@Z) from audiomgr.obj
+BUILD: [01:0000000719:INFO  ]     Discarded "public: class CHardwareAudioBridge * __cdecl CAudioManager::get_HardwareAudioBridge(void)const " (?get_HardwareAudioBridge@CAudioManager@@QBAPAVCHardwareAudioBridge@@XZ) from audiomgr.obj
+BUILD: [01:0000000720:INFO  ]     Discarded "public: class CStreamManager * __cdecl CAudioManager::get_OutStreamManager(void)" (?get_OutStreamManager@CAudioManager@@QAAPAVCStreamManager@@XZ) from audiomgr.obj
+BUILD: [01:0000000721:INFO  ]     Discarded "public: class CStreamManager * __cdecl StreamContext::GetStreamManager(void)" (?GetStreamManager@StreamContext@@QAAPAVCStreamManager@@XZ) from audiomgr.obj
+BUILD: [01:0000000722:INFO  ]     Discarded "public: unsigned long __cdecl StreamContext::GetGain(void)" (?GetGain@StreamContext@@QAAKXZ) from audiomgr.obj
+BUILD: [01:0000000723:INFO  ]     Discarded "public: unsigned long __cdecl StreamContext::SetGain(unsigned long)" (?SetGain@StreamContext@@QAAKK@Z) from audiomgr.obj
+BUILD: [01:0000000724:INFO  ]     Discarded "public: class CAudioLineBase * __cdecl CAudioControlBase::get_AudioLine(void)const " (?get_AudioLine@CAudioControlBase@@QBAPAVCAudioLineBase@@XZ) from audiomgr.obj
+BUILD: [01:0000000725:INFO  ]     Discarded "public: unsigned long __cdecl CAudioControlBase::get_ControlId(void)const " (?get_ControlId@CAudioControlBase@@QBAKXZ) from audiomgr.obj
+BUILD: [01:0000000726:INFO  ]     Discarded "public: unsigned long __cdecl CAudioLineBase::get_ChannelCount(void)const " (?get_ChannelCount@CAudioLineBase@@QBAKXZ) from audiomgr.obj
+BUILD: [01:0000000727:INFO  ]     Discarded "public: virtual __cdecl CAudioManager::~CAudioManager(void)" (??1CAudioManager@@UAA@XZ) from audiomgr.obj
+BUILD: [01:0000000728:INFO  ]     Discarded "int __cdecl IsEqualGUID(struct _GUID const &,struct _GUID const &)" (?IsEqualGUID@@YAHABU_GUID@@0@Z) from strmmgr.obj
+BUILD: [01:0000000729:INFO  ]     Discarded "public: __cdecl CStreamCallback::CStreamCallback(void)" (??0CStreamCallback@@QAA@XZ) from strmmgr.obj
+BUILD: [01:0000000730:INFO  ]     Discarded "public: int __cdecl CStreamManager::IsBypassDeviceGain(unsigned long)" (?IsBypassDeviceGain@CStreamManager@@QAAHK@Z) from strmmgr.obj
+BUILD: [01:0000000731:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::GetClassGain(unsigned long)" (?GetClassGain@CStreamManager@@QAAKK@Z) from strmmgr.obj
+BUILD: [01:0000000732:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::SetClassGain(unsigned long,unsigned long)" (?SetClassGain@CStreamManager@@QAAKKK@Z) from strmmgr.obj
+BUILD: [01:0000000733:INFO  ]     Discarded "public: unsigned short __cdecl CAudioLineBase::get_DestinationId(void)const " (?get_DestinationId@CAudioLineBase@@QBAGXZ) from mixermgr.obj
+BUILD: [01:0000000734:INFO  ]     Discarded "public: unsigned short __cdecl CAudioLineBase::get_LineId(void)const " (?get_LineId@CAudioLineBase@@QBAGXZ) from mixermgr.obj
+BUILD: [01:0000000735:INFO  ]     Discarded "public: unsigned short __cdecl CAudioLineBase::get_ConnectionCount(void)const " (?get_ConnectionCount@CAudioLineBase@@QBAGXZ) from mixermgr.obj
+BUILD: [01:0000000736:INFO  ]     Discarded "public: unsigned long __cdecl CAudioLineBase::get_ComponentType(void)const " (?get_ComponentType@CAudioLineBase@@QBAKXZ) from mixermgr.obj
+BUILD: [01:0000000737:INFO  ]     Discarded "public: unsigned long __cdecl CAudioLineBase::get_TargetType(void)const " (?get_TargetType@CAudioLineBase@@QBAKXZ) from mixermgr.obj
+BUILD: [01:0000000738:INFO  ]     Discarded "public: unsigned short __cdecl CAudioLineBase::get_ControlCount(void)const " (?get_ControlCount@CAudioLineBase@@QBAGXZ) from mixermgr.obj
+BUILD: [01:0000000739:INFO  ]     Discarded "public: unsigned long __cdecl CAudioMixerManager::get_AudioMixerVersion(void)const " (?get_AudioMixerVersion@CAudioMixerManager@@QBAKXZ) from mixermgr.obj
+BUILD: [01:0000000740:INFO  ]     Discarded "public: unsigned short const * __cdecl CAudioMixerManager::get_AudioMixerName(void)const " (?get_AudioMixerName@CAudioMixerManager@@QBAPBGXZ) from mixermgr.obj
+BUILD: [01:0000000741:INFO  ]     Discarded "protected: class CAudioLineBase * __cdecl CAudioMixerManager::query_AudioLineByTargetType(unsigned long)const " (?query_AudioLineByTargetType@CAudioMixerManager@@IBAPAVCAudioLineBase@@K@Z) from mixermgr.obj
+BUILD: [01:0000000742:INFO  ]     Discarded "private: void __cdecl CAudioControlBase::put_ControlId(unsigned long,class CAudioLineBase *)" (?put_ControlId@CAudioControlBase@@AAAXKPAVCAudioLineBase@@@Z) from audiolin.obj
+BUILD: [01:0000000743:INFO  ]     Discarded "public: unsigned short __cdecl CAudioLineBase::get_SourceId(void)const " (?get_SourceId@CAudioLineBase@@QBAGXZ) from audiolin.obj
+BUILD: [01:0000000744:INFO  ]     Discarded "public: unsigned long __cdecl CAudioLineBase::get_LineStatus(void)const " (?get_LineStatus@CAudioLineBase@@QBAKXZ) from audiolin.obj
+BUILD: [01:0000000745:INFO  ]     Discarded "public: unsigned long __cdecl CAudioLineBase::get_DeviceId(void)const " (?get_DeviceId@CAudioLineBase@@QBAKXZ) from audiolin.obj
+BUILD: [01:0000000746:INFO  ]     Discarded "public: class CAudioControlBase * __cdecl CAudioLineBase::query_ControlByControlId(unsigned long)const " (?query_ControlByControlId@CAudioLineBase@@QBAPAVCAudioControlBase@@K@Z) from audiolin.obj
+BUILD: [01:0000000747:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::get_Gain(void)const " (?get_Gain@CStreamManager@@QBAKXZ) from istrmmgr.obj
+BUILD: [01:0000000748:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::put_Gain(unsigned long)" (?put_Gain@CStreamManager@@QAAKK@Z) from istrmmgr.obj
+BUILD: [01:0000000749:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::get_Mute(void)const " (?get_Mute@CStreamManager@@QBAKXZ) from istrmmgr.obj
+BUILD: [01:0000000750:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::put_Mute(int)" (?put_Mute@CStreamManager@@QAAKH@Z) from istrmmgr.obj
+BUILD: [01:0000000751:INFO  ]     Discarded "public: unsigned long __cdecl CInputStreamManager::GetInputProperty(struct tag_WAVEPROPINFO *)" (?GetInputProperty@CInputStreamManager@@QAAKPAUtag_WAVEPROPINFO@@@Z) from istrmmgr.obj
+BUILD: [01:0000000752:INFO  ]     Discarded "public: unsigned long __cdecl CInputStreamManager::SetInputProperty(struct tag_WAVEPROPINFO *)" (?SetInputProperty@CInputStreamManager@@QAAKPAUtag_WAVEPROPINFO@@@Z) from istrmmgr.obj
+BUILD: [01:0000000753:INFO  ]     Discarded "public: __cdecl CAudioControlType<536936448>::CAudioControlType<536936448>(void)" (??0?$CAudioControlType@$0CAABAAAA@@@QAA@XZ) from istrmmgr.obj
+BUILD: [01:0000000754:INFO  ]     Discarded "public: __cdecl StreamContext::StreamContext(void)" (??0StreamContext@@QAA@XZ) from istrmmgr.obj
+BUILD: [01:0000000755:INFO  ]     Discarded "public: virtual __cdecl StreamContext::~StreamContext(void)" (??1StreamContext@@UAA@XZ) from istrmmgr.obj
+BUILD: [01:0000000756:INFO  ]     Discarded "public: void __cdecl StreamContext::DoDriverCallback(unsigned int,unsigned long,unsigned long)" (?DoDriverCallback@StreamContext@@QAAXIKK@Z) from istrmmgr.obj
+BUILD: [01:0000000757:INFO  ]     Discarded "public: __cdecl WaveStreamContext::WaveStreamContext(void)" (??0WaveStreamContext@@QAA@XZ) from istrmmgr.obj
+BUILD: [01:0000000758:INFO  ]     Discarded "public: virtual __cdecl WaveStreamContext::~WaveStreamContext(void)" (??1WaveStreamContext@@UAA@XZ) from istrmmgr.obj
+BUILD: [01:0000000759:INFO  ]     Discarded "public: virtual void * __cdecl WaveStreamContext::`scalar deleting destructor'(unsigned int)" (??_GWaveStreamContext@@UAAPAXI@Z) from istrmmgr.obj
+BUILD: [01:0000000760:INFO  ]     Discarded "public: __cdecl CAudioControl_MicMute::CAudioControl_MicMute(void)" (??0CAudioControl_MicMute@@QAA@XZ) from istrmmgr.obj
+BUILD: [01:0000000761:INFO  ]     Discarded "public: __cdecl InputStreamContext::InputStreamContext(void)" (??0InputStreamContext@@QAA@XZ) from istrmmgr.obj
+BUILD: [01:0000000762:INFO  ]     Discarded "public: virtual __cdecl InputStreamContext::~InputStreamContext(void)" (??1InputStreamContext@@UAA@XZ) from istrmmgr.obj
+BUILD: [01:0000000763:INFO  ]     Discarded "public: unsigned long __cdecl COutputStreamManager::GetOutputProperty(struct tag_WAVEPROPINFO *)" (?GetOutputProperty@COutputStreamManager@@QAAKPAUtag_WAVEPROPINFO@@@Z) from ostrmmgr.obj
+BUILD: [01:0000000764:INFO  ]     Discarded "public: unsigned long __cdecl COutputStreamManager::SetOutputProperty(struct tag_WAVEPROPINFO *)" (?SetOutputProperty@COutputStreamManager@@QAAKPAUtag_WAVEPROPINFO@@@Z) from ostrmmgr.obj
+BUILD: [01:0000000765:INFO  ]     Discarded "public: __cdecl OutputStreamContext::OutputStreamContext(void)" (??0OutputStreamContext@@QAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000766:INFO  ]     Discarded "public: virtual __cdecl OutputStreamContext::~OutputStreamContext(void)" (??1OutputStreamContext@@UAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000767:INFO  ]     Discarded "public: virtual void * __cdecl OutputStreamContext::`scalar deleting destructor'(unsigned int)" (??_GOutputStreamContext@@UAAPAXI@Z) from ostrmmgr.obj
+BUILD: [01:0000000768:INFO  ]     Discarded "public: __cdecl OutputStreamContextM8::OutputStreamContextM8(void)" (??0OutputStreamContextM8@@QAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000769:INFO  ]     Discarded "public: virtual __cdecl OutputStreamContextM8::~OutputStreamContextM8(void)" (??1OutputStreamContextM8@@UAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000770:INFO  ]     Discarded "public: __cdecl OutputStreamContextM16::OutputStreamContextM16(void)" (??0OutputStreamContextM16@@QAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000771:INFO  ]     Discarded "public: virtual __cdecl OutputStreamContextM16::~OutputStreamContextM16(void)" (??1OutputStreamContextM16@@UAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000772:INFO  ]     Discarded "public: __cdecl OutputStreamContextS8::OutputStreamContextS8(void)" (??0OutputStreamContextS8@@QAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000773:INFO  ]     Discarded "public: virtual __cdecl OutputStreamContextS8::~OutputStreamContextS8(void)" (??1OutputStreamContextS8@@UAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000774:INFO  ]     Discarded "public: __cdecl OutputStreamContextS16::OutputStreamContextS16(void)" (??0OutputStreamContextS16@@QAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000775:INFO  ]     Discarded "public: virtual __cdecl OutputStreamContextS16::~OutputStreamContextS16(void)" (??1OutputStreamContextS16@@UAA@XZ) from ostrmmgr.obj
+BUILD: [01:0000000776:INFO  ]     Discarded "public: __cdecl CHardwareAudioBridge::CHardwareAudioBridge(void)" (??0CHardwareAudioBridge@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000777:INFO  ]     Discarded "public: void __cdecl CHardwareAudioBridge::put_StreamCallback(enum CHardwareAudioBridge::StreamType,class CStreamCallback *)" (?put_StreamCallback@CHardwareAudioBridge@@QAAXW4StreamType@1@PAVCStreamCallback@@@Z) from wav_init.obj
+BUILD: [01:0000000778:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::start_AudioPort(enum CHardwareAudioBridge::StreamType)" (?start_AudioPort@CHardwareAudioBridge@@UAAHW4StreamType@1@@Z) from wav_init.obj
+BUILD: [01:0000000779:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::stop_AudioPort(enum CHardwareAudioBridge::StreamType)" (?stop_AudioPort@CHardwareAudioBridge@@UAAHW4StreamType@1@@Z) from wav_init.obj
+BUILD: [01:0000000780:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::start_Stream(enum CHardwareAudioBridge::StreamType,void *)" (?start_Stream@CHardwareAudioBridge@@UAAHW4StreamType@1@PAX@Z) from wav_init.obj
+BUILD: [01:0000000781:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::start_Stream(enum CHardwareAudioBridge::StreamType)" (?start_Stream@CHardwareAudioBridge@@UAAHW4StreamType@1@@Z) from wav_init.obj
+BUILD: [01:0000000782:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::stop_Stream(enum CHardwareAudioBridge::StreamType,void *)" (?stop_Stream@CHardwareAudioBridge@@UAAHW4StreamType@1@PAX@Z) from wav_init.obj
+BUILD: [01:0000000783:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::set_StreamGain(enum CHardwareAudioBridge::StreamType,void *,unsigned long)" (?set_StreamGain@CHardwareAudioBridge@@UAAHW4StreamType@1@PAXK@Z) from wav_init.obj
+BUILD: [01:0000000784:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::switch_AudioStreamPort(int)" (?switch_AudioStreamPort@CHardwareAudioBridge@@UAAHH@Z) from wav_init.obj
+BUILD: [01:0000000785:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::query_AudioStreamPort(void)" (?query_AudioStreamPort@CHardwareAudioBridge@@UAAHXZ) from wav_init.obj
+BUILD: [01:0000000786:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::enable_I2SClocks(int)" (?enable_I2SClocks@CHardwareAudioBridge@@UAAHH@Z) from wav_init.obj
+BUILD: [01:0000000787:INFO  ]     Discarded "public: virtual void __cdecl CHardwareAudioBridge::request_PowerState(enum _CEDEVICE_POWER_STATE)" (?request_PowerState@CHardwareAudioBridge@@UAAXW4_CEDEVICE_POWER_STATE@@@Z) from wav_init.obj
+BUILD: [01:0000000788:INFO  ]     Discarded "public: virtual void __cdecl CHardwareAudioBridge::notify_BTHeadsetAttached(int)" (?notify_BTHeadsetAttached@CHardwareAudioBridge@@UAAXH@Z) from wav_init.obj
+BUILD: [01:0000000789:INFO  ]     Discarded "public: virtual void __cdecl CHardwareAudioBridge::notify_HdmiAudioAttached(int)" (?notify_HdmiAudioAttached@CHardwareAudioBridge@@UAAXH@Z) from wav_init.obj
+BUILD: [01:0000000790:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::enable_Headset(int)" (?enable_Headset@CHardwareAudioBridge@@UAAHH@Z) from wav_init.obj
+BUILD: [01:0000000791:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::enable_AuxHeadset(int)" (?enable_AuxHeadset@CHardwareAudioBridge@@UAAHH@Z) from wav_init.obj
+BUILD: [01:0000000792:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::enable_Speaker(int)" (?enable_Speaker@CHardwareAudioBridge@@UAAHH@Z) from wav_init.obj
+BUILD: [01:0000000793:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::query_HeadsetEnable(void)const " (?query_HeadsetEnable@CHardwareAudioBridge@@UBAHXZ) from wav_init.obj
+BUILD: [01:0000000794:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::query_SpeakerEnable(void)const " (?query_SpeakerEnable@CHardwareAudioBridge@@UBAHXZ) from wav_init.obj
+BUILD: [01:0000000795:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::query_WideBand(void)const " (?query_WideBand@CHardwareAudioBridge@@UBAHXZ) from wav_init.obj
+BUILD: [01:0000000796:INFO  ]     Discarded "public: virtual int __cdecl CHardwareAudioBridge::query_CarkitEnable(void)const " (?query_CarkitEnable@CHardwareAudioBridge@@UBAHXZ) from wav_init.obj
+BUILD: [01:0000000797:INFO  ]     Discarded "public: static void __cdecl CStreamManager::SetAttenMax(unsigned long,unsigned long,unsigned long)" (?SetAttenMax@CStreamManager@@SAXKKK@Z) from wav_init.obj
+BUILD: [01:0000000798:INFO  ]     Discarded "public: void __cdecl CStreamManager::put_AudioManager(class CAudioManager *)" (?put_AudioManager@CStreamManager@@QAAXPAVCAudioManager@@@Z) from wav_init.obj
+BUILD: [01:0000000799:INFO  ]     Discarded "public: void __cdecl CAudioManager::put_InputStreamManager(class CStreamManager *)" (?put_InputStreamManager@CAudioManager@@QAAXPAVCStreamManager@@@Z) from wav_init.obj
+BUILD: [01:0000000800:INFO  ]     Discarded "public: void __cdecl CAudioManager::put_OutputStreamManager(class CStreamManager *)" (?put_OutputStreamManager@CAudioManager@@QAAXPAVCStreamManager@@@Z) from wav_init.obj
+BUILD: [01:0000000801:INFO  ]     Discarded "public: void __cdecl CAudioManager::put_HardwareAudioBridge(class CHardwareAudioBridge *)" (?put_HardwareAudioBridge@CAudioManager@@QAAXPAVCHardwareAudioBridge@@@Z) from wav_init.obj
+BUILD: [01:0000000802:INFO  ]     Discarded "public: __cdecl CStreamManager::~CStreamManager(void)" (??1CStreamManager@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000803:INFO  ]     Discarded "public: __cdecl CAudioControlType<1342373889>::CAudioControlType<1342373889>(void)" (??0?$CAudioControlType@$0FAADAAAB@@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000804:INFO  ]     Discarded "public: __cdecl CAudioControl_MasterVolume::CAudioControl_MasterVolume(void)" (??0CAudioControl_MasterVolume@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000805:INFO  ]     Discarded "public: __cdecl CAudioControlType<536936450>::CAudioControlType<536936450>(void)" (??0?$CAudioControlType@$0CAABAAAC@@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000806:INFO  ]     Discarded "public: __cdecl DMTAudioStreamPort::~DMTAudioStreamPort(void)" (??1DMTAudioStreamPort@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000807:INFO  ]     Discarded "public: __cdecl AudioStreamPort::AudioStreamPort(void)" (??0AudioStreamPort@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000808:INFO  ]     Discarded "public: __cdecl DASFAudioStreamPort::~DASFAudioStreamPort(void)" (??1DASFAudioStreamPort@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000809:INFO  ]     Discarded "public: __cdecl AudioStreamPort_Client::AudioStreamPort_Client(void)" (??0AudioStreamPort_Client@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000810:INFO  ]     Discarded "public: __cdecl COutputStreamManager::~COutputStreamManager(void)" (??1COutputStreamManager@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000811:INFO  ]     Discarded "public: __cdecl CInputStreamManager::~CInputStreamManager(void)" (??1CInputStreamManager@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000812:INFO  ]     Discarded "public: __cdecl CAudioControl_RecordVolume::CAudioControl_RecordVolume(void)" (??0CAudioControl_RecordVolume@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000813:INFO  ]     Discarded "public: __cdecl CAudioControl_MasterMute::CAudioControl_MasterMute(void)" (??0CAudioControl_MasterMute@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000814:INFO  ]     Discarded "public: __cdecl DMTAudioStreamPort::DMTAudioStreamPort(void)" (??0DMTAudioStreamPort@@QAA@XZ) from wav_init.obj
+BUILD: [01:0000000815:INFO  ]     Discarded "public: int __cdecl StreamContext::StillPlaying(void)" (?StillPlaying@StreamContext@@QAAHXZ) from strmctxt.obj
+BUILD: [01:0000000816:INFO  ]     Discarded "public: void __cdecl StreamContext::ReturnBuffer(struct wavehdr_tag *)" (?ReturnBuffer@StreamContext@@QAAXPAUwavehdr_tag@@@Z) from strmctxt.obj
+BUILD: [01:0000000817:INFO  ]     Discarded "public: int __cdecl CStreamManager::get_Mono(void)const " (?get_Mono@CStreamManager@@QBAHXZ) from strmctxt.obj
+BUILD: [01:0000000818:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::get_DefaultStreamGain(void)" (?get_DefaultStreamGain@CStreamManager@@QAAKXZ) from strmctxt.obj
+BUILD: [01:0000000819:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::get_StreamAttenMax(void)const " (?get_StreamAttenMax@CStreamManager@@QBAKXZ) from strmctxt.obj
+BUILD: [01:0000000820:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::get_DeviceAttenMax(void)const " (?get_DeviceAttenMax@CStreamManager@@QBAKXZ) from strmctxt.obj
+BUILD: [01:0000000821:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::get_ClassAttenMax(void)const " (?get_ClassAttenMax@CStreamManager@@QBAKXZ) from strmctxt.obj
+BUILD: [01:0000000822:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::get_CurrentSampleRate(void)const " (?get_CurrentSampleRate@CStreamManager@@QBAKXZ) from output.obj
+BUILD: [01:0000000823:INFO  ]     Discarded "public: int __cdecl StreamClassTable::Reinitialize(struct _STREAMCLASSCONFIG *,unsigned long)" (?Reinitialize@StreamClassTable@@QAAHPAU_STREAMCLASSCONFIG@@K@Z) from StreamClass.obj
+BUILD: [01:0000000824:INFO  ]     Discarded "public: void __cdecl CAudioManager::Lock(void)" (?Lock@CAudioManager@@QAAXXZ) from wavemain.obj
+BUILD: [01:0000000825:INFO  ]     Discarded "public: void __cdecl CAudioManager::Unlock(void)" (?Unlock@CAudioManager@@QAAXXZ) from wavemain.obj
+BUILD: [01:0000000826:INFO  ]     Discarded "void __cdecl DisableAudio(void *)" (?DisableAudio@@YAXPAX@Z) from omap35xx_hwbridge.obj
+BUILD: [01:0000000827:INFO  ]     Discarded "void __cdecl EnableT2AudioClk(void *)" (?EnableT2AudioClk@@YAXPAX@Z) from omap35xx_hwbridge.obj
+BUILD: [01:0000000828:INFO  ]     Discarded "void __cdecl RouteAudioToHandset(void *,unsigned long,int)" (?RouteAudioToHandset@@YAXPAXKH@Z) from omap35xx_hwbridge.obj
+BUILD: [01:0000000829:INFO  ]     Discarded "void __cdecl RouteAudioToHeadset(void *,unsigned long,int)" (?RouteAudioToHeadset@@YAXPAXKH@Z) from omap35xx_hwbridge.obj
+BUILD: [01:0000000830:INFO  ]     Discarded "void __cdecl RouteAudioToAuxHeadset(void *,unsigned long,int)" (?RouteAudioToAuxHeadset@@YAXPAXKH@Z) from omap35xx_hwbridge.obj
+BUILD: [01:0000000831:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::NotifyHeadphonesAttached(int)" (?NotifyHeadphonesAttached@CStreamManager@@QAAKH@Z) from wavertgctrl.obj
+BUILD: [01:0000000832:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::NotifyCarKitAttached(int)" (?NotifyCarKitAttached@CStreamManager@@QAAKH@Z) from wavertgctrl.obj
+BUILD: [01:0000000833:INFO  ]     Discarded "public: unsigned long __cdecl CStreamManager::NotifyBthScoEnabled(int)" (?NotifyBthScoEnabled@CStreamManager@@QAAKH@Z) from wavertgctrl.obj
+BUILD: [01:0000000834:INFO  ]     Discarded "private: void __cdecl DtpNotify::LockList(void)" (?LockList@DtpNotify@@AAAXXZ) from dtpnotify.obj
+BUILD: [01:0000000835:INFO  ]     Discarded "private: void __cdecl DtpNotify::UnlockList(void)" (?UnlockList@DtpNotify@@AAAXXZ) from dtpnotify.obj
+BUILD: [01:0000000836:INFO  ]     Discarded SetEvent from dasfaudioport.obj
+BUILD: [01:0000000837:INFO  ]     Discarded GetCurrentThread from dasfaudioport.obj
+BUILD: [01:0000000838:INFO  ]     Discarded "public: static int __cdecl DASF::IsDASFInitialized(void)" (?IsDASFInitialized@DASF@@SAHXZ) from dasfaudioport.obj
+BUILD: [01:0000000839:INFO  ]     Discarded "protected: __cdecl DASFStream::DASFStream(void)" (??0DASFStream@@IAA@XZ) from dasfaudioport.obj
+BUILD: [01:0000000840:INFO  ]     Discarded "protected: __cdecl DASFStream::~DASFStream(void)" (??1DASFStream@@IAA@XZ) from dasfaudioport.obj
+BUILD: [01:0000000841:INFO  ]     Discarded "public: void * __cdecl DASFStream::GetStreamContext(void)const " (?GetStreamContext@DASFStream@@QBAPAXXZ) from dasfaudioport.obj
+BUILD: [01:0000000842:INFO  ]     Discarded "public: void * __cdecl DASFStream::GetDASFContext(void)const " (?GetDASFContext@DASFStream@@QBAPAXXZ) from dasfaudioport.obj
+BUILD: [01:0000000843:INFO  ]     Discarded "public: unsigned int __cdecl DASFStream::GetDASFStreamId(void)const " (?GetDASFStreamId@DASFStream@@QBAIXZ) from dasfaudioport.obj
+BUILD: [01:0000000844:INFO  ]     Discarded "public: int __cdecl DASFStream::IsOutputStream(void)const " (?IsOutputStream@DASFStream@@QBAHXZ) from dasfaudioport.obj
+BUILD: [01:0000000845:INFO  ]     Discarded "public: int __cdecl DASFStream::IsInputStream(void)const " (?IsInputStream@DASFStream@@QBAHXZ) from dasfaudioport.obj
+BUILD: [01:0000000846:INFO  ]     Discarded "public: int __cdecl DASFStream::GetActiveDASFBufferCount(void)const " (?GetActiveDASFBufferCount@DASFStream@@QBAHXZ) from dasfaudioport.obj
+BUILD: [01:0000000847:INFO  ]     Discarded "public: int __cdecl DASFStream::IsDASFBufferSpaceAvailable(void)const " (?IsDASFBufferSpaceAvailable@DASFStream@@QBAHXZ) from dasfaudioport.obj
+BUILD: [01:0000000848:INFO  ]     Discarded "public: void __cdecl DASFStream::IncrementActiveDASFBufferCount(void)" (?IncrementActiveDASFBufferCount@DASFStream@@QAAXXZ) from dasfaudioport.obj
+BUILD: [01:0000000849:INFO  ]     Discarded "public: unsigned char * __cdecl DASFStream::GetCurrentActiveBuffer(void)const " (?GetCurrentActiveBuffer@DASFStream@@QBAPAEXZ) from dasfaudioport.obj
+BUILD: [01:0000000850:INFO  ]     Discarded "public: enum DASFStream::DASFStreamState __cdecl DASFStream::GetDASFStreamState(void)const " (?GetDASFStreamState@DASFStream@@QBA?AW4DASFStreamState@1@XZ) from dasfaudioport.obj
+BUILD: [01:0000000851:INFO  ]     Discarded "protected: void __cdecl DASFAudioStreamPort::Lock(void)" (?Lock@DASFAudioStreamPort@@IAAXXZ) from dasfaudioport.obj
+BUILD: [01:0000000852:INFO  ]     Discarded "protected: void __cdecl DASFAudioStreamPort::Unlock(void)" (?Unlock@DASFAudioStreamPort@@IAAXXZ) from dasfaudioport.obj
+BUILD: [01:0000000853:INFO  ]     Discarded "public: int __cdecl DASFAudioStreamPort::SendAudioStreamMessage(unsigned long,void *)" (?SendAudioStreamMessage@DASFAudioStreamPort@@QAAHKPAX@Z) from dasfaudioport.obj
+BUILD: [01:0000000854:INFO  ]     Discarded "public: struct tWAVEFORMATEX * __cdecl StreamContext::GetWaveFormat(void)" (?GetWaveFormat@StreamContext@@QAAPAUtWAVEFORMATEX@@XZ) from dasfaudioport.obj
+BUILD: [01:0000000855:INFO  ]     Discarded "int __cdecl Mutex(int)" (?Mutex@@YAHH@Z) from dasfaudioport.obj
+BUILD: [01:0000000856:INFO  ]     Discarded "public: static void __cdecl DASF::Uninitialize(void)" (?Uninitialize@DASF@@SAXXZ) from dasfaudioport.obj
+BUILD: [01:0000000857:INFO  ]     Discarded "public: static int __cdecl DASF::InsertTransmitBuffer(unsigned char *,unsigned int,class DASFStream *)" (?InsertTransmitBuffer@DASF@@SAHPAEIPAVDASFStream@@@Z) from dasfaudioport.obj
+BUILD: [01:0000000858:INFO  ]     Discarded "public: static int __cdecl DASF::InsertCaptureBuffer(unsigned char *,unsigned int,class DASFStream *)" (?InsertCaptureBuffer@DASF@@SAHPAEIPAVDASFStream@@@Z) from dasfaudioport.obj
+BUILD: [01:0000000859:INFO  ]     Discarded "protected: void * __cdecl DASFStream::`scalar deleting destructor'(unsigned int)" (??_GDASFStream@@IAAPAXI@Z) from dasfaudioport.obj
+BUILD: [01:0000000860:INFO  ]     Discarded "public: static class DASFStream * __cdecl DASFStream::CreateDASFStream(void)" (?CreateDASFStream@DASFStream@@SAPAV1@XZ) from dasfaudioport.obj
+BUILD: [01:0000000861:INFO  ]     Discarded "protected: unsigned char * __cdecl DASFStream::GetNextBuffer(void)" (?GetNextBuffer@DASFStream@@IAAPAEXZ) from dasfaudioport.obj
+BUILD: [01:0000000862:INFO  ]     Discarded "public: struct tWAVEFORMATEX const * __cdecl DASFStream::GetWaveFormat(void)" (?GetWaveFormat@DASFStream@@QAAPBUtWAVEFORMATEX@@XZ) from dasfaudioport.obj
+BUILD: [01:0000000863:INFO  ]     Discarded "public: int __cdecl DASFStream::SetStreamGain(unsigned int)" (?SetStreamGain@DASFStream@@QAAHI@Z) from dasfaudioport.obj
+BUILD: [01:0000000864:INFO  ]     Discarded "public: void __cdecl DASFStream::DecrementActiveDASFBufferCount(void)" (?DecrementActiveDASFBufferCount@DASFStream@@QAAXXZ) from dasfaudioport.obj
+BUILD: [01:0000000865:INFO  ]     Discarded SetHwCodecMode_DisableCodecPower from TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000866:INFO  ]     Discarded SetHwCodecMode_EnableCodecPower from TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000867:INFO  ]     Discarded SetHwCodecMode_DisableCodec from TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000868:INFO  ]     Discarded SetHwCodecMode_Gain from TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000869:INFO  ]     Discarded GetCurrentProcessId from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000870:INFO  ]     Discarded TWLClose from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000871:INFO  ]     Discarded TWLInterruptInitialize from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000872:INFO  ]     Discarded TWLInterruptMask from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000873:INFO  ]     Discarded TWLInterruptDisable from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000874:INFO  ]     Discarded TWLWakeEnable from triton_device.lib(twl_access.obj)
+BUILD: [01:0000000875:INFO  ]     Discarded FreeLibrary from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000876:INFO  ]     Discarded __GetUserKData from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000877:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000878:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000879:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000000880:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000000881:INFO  ]     Discarded exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000882:INFO  ]     Discarded _exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000883:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000884:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000885:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000886:INFO  ] Starting pass 2
+BUILD: [01:0000000887:INFO  ]      tps659xx_wave.exp
+BUILD: [01:0000000888:INFO  ]      guids.obj
+BUILD: [01:0000000889:INFO  ]      dasfaudioport.obj
+BUILD: [01:0000000890:INFO  ]      dtpnotify.obj
+BUILD: [01:0000000891:INFO  ]      wavertgctrl.obj
+BUILD: [01:0000000892:INFO  ]      omap35xx_hwbridge.obj
+BUILD: [01:0000000893:INFO  ]      dmtaudioport.obj
+BUILD: [01:0000000894:INFO  ]      wavemain.obj
+BUILD: [01:0000000895:INFO  ]      StreamClass.obj
+BUILD: [01:0000000896:INFO  ]      input.obj
+BUILD: [01:0000000897:INFO  ]      output.obj
+BUILD: [01:0000000898:INFO  ]      strmctxt.obj
+BUILD: [01:0000000899:INFO  ]      wav_init.obj
+BUILD: [01:0000000900:INFO  ]      ostrmmgr.obj
+BUILD: [01:0000000901:INFO  ]      istrmmgr.obj
+BUILD: [01:0000000902:INFO  ]      audioctrl.obj
+BUILD: [01:0000000903:INFO  ]      audiolin.obj
+BUILD: [01:0000000904:INFO  ]      mixermgr.obj
+BUILD: [01:0000000905:INFO  ]      strmmgr.obj
+BUILD: [01:0000000906:INFO  ]      audiomgr.obj
+BUILD: [01:0000000907:INFO  ]      debug.obj
+BUILD: [01:0000000908:INFO  ]      TPS659xx_wave.lib(tps659xx_audio.obj)
+BUILD: [01:0000000909:INFO  ]      triton_device.lib(twl_access.obj)
+BUILD: [01:0000000910:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000911:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000912:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000913:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000914:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000915:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000916:INFO  ]      ceddk.lib(CEDDK.dll)
+BUILD: [01:0000000917:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000918:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000919:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000920:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000921:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000922:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000923:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000924:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000925:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000926:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000927:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000928:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000929:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000930:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000931:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000932:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000933:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000934:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000935:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000936:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000937:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000938:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000939:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000940:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000941:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000942:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000943:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000944:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000945:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000946:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000947:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000948:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000949:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000950:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000951:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000952:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000953:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000954:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000955:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000000956:INFO  ]      corelib0.lib(pegdmain.obj)
+BUILD: [01:0000000957:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000000958:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000000959:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000960:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000000961:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000962:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000963:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000964:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000965:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000966:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000967:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000968:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000969:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000970:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000971:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000972:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000973:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000974:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000975:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000976:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000977:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000978:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000979:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000980:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000981:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000982:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000983:INFO  ] Finished pass 2
+BUILD: [01:0000000984:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll
+BUILD: [01:0000000985:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000986:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000987:INFO  ] 
+BUILD: [01:0000000988:INFO  ] 
+BUILD: [01:0000000989:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\tps659xx_wave.map
+BUILD: [01:0000000990:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000991:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\tps659xx_wave.rel
+BUILD: [01:0000000992:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\tps659xx_wave.dll C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\tps659xx_wave.dll
+BUILD: [00:0000000993:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000994:INFO  ] Done.
+BUILD: [00:0000000995:PROGC ] Done.
+BUILD: [00:0000000996:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000997:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000998:PROGC ] Message                    0         0       0
+BUILD: [00:0000000999:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000001000:PROGC ] Resource                   0         0       0
+BUILD: [00:0000001001:PROGC ] MASM                       0         0       0
+BUILD: [00:0000001002:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000001003:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000001004:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000001005:PROGC ] C++                       19         0       0
+BUILD: [00:0000001006:PROGC ] C                          1         0       0
+BUILD: [00:0000001007:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000001008:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000001009:PROGC ] Dll's                      2         0       0
+BUILD: [00:0000001010:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000001011:PROGC ] Resx                       0         0       0
+BUILD: [00:0000001012:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000001013:PROGC ] Other                      0         0       0
+BUILD: [00:0000001014:PROGC ] 
+BUILD: [00:0000001015:PROGC ] Total                     22         0       0
+BUILD: [00:0000001016:PROGC ] 
+BUILD: [00:0000001017:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000001018:PROGC ] GetSystemTimes (seconds): Idle: 78    Kernel: 88    User: 18   
+BUILD: [00:0000001019:PROGC ] Elapsed  time  (seconds): 26   

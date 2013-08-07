@@ -1,0 +1,15 @@
+; All rights reserved ADENEO EMBEDDED 2010
+; HIVE BOOT SECTION
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn]
+    "Dll"="omapbus.dll"
+    "Prefix"="BUS"
+    "BusName"="BuiltIn"
+    "Flags"=dword:00010000
+    "BusIoctl"=dword:2a0048
+    "InterfaceType"=dword:0
+    ; CE_DRIVER_BUILTIN_BUS_GUID, CE_DRIVER_BUS_GUID
+    "IClass"=multi_sz:"{B3CC6EBA-5507-4196-8E41-2BF42E4A47C9}=%b",
+                      "{6F40791D-300E-44E4-BC38-E0E63CA8375C}=%b"
+                      
+; END HIVE BOOT SECTION

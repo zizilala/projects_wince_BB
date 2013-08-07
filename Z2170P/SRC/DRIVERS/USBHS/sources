@@ -1,0 +1,25 @@
+# All rights reserved ADENEO EMBEDDED 2010
+
+SYNCHRONIZE_DRAIN=1
+
+TARGETNAME=omap_ehcihcd
+TARGETTYPE=DYNLINK
+DEFFILE=omap_usbhcd.def
+
+SOURCELIBS= \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\Ehcdmdd.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\hcd2lib.lib \
+    
+#    $(_PLATCOMMONLIB)\$(_CPUINDPATH)\common_ti_hcd2lib.lib \
+
+TARGETLIBS= \
+    $(_TILIBS)\$(_SOC)_soccfg.lib	\
+    $(_PLATCOMMONLIB)\$(_CPUINDPATH)\common_ti_ehcihcd.lib \
+    $(_PLATCOMMONLIB)\$(_CPUINDPATH)\$(OMAP3530)_ehcihcd.lib \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib \
+    $(_COMMONSDKLIB)\$(_CPUINDPATH)\coredll.lib
+
+SOURCES=
+
+FILE_VIEW_RESOURCE_FOLDER= \
+	omap_usbhs.reg

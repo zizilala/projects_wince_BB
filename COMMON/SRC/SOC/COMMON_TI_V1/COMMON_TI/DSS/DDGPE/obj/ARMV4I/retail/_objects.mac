@@ -1,0 +1,9 @@
+OBJECTS=\
+    obj\ARMV4I\retail\omap_ddgpe.obj\
+    obj\ARMV4I\retail\omap_ddsurf.obj\
+    obj\ARMV4I\retail\omap_dmablt.obj\
+    obj\ARMV4I\retail\omap_optblt.obj\
+    obj\ARMV4I\retail\halcaps.obj\
+    obj\ARMV4I\retail\haldebug.obj\
+    obj\ARMV4I\retail\halsurf.obj
+

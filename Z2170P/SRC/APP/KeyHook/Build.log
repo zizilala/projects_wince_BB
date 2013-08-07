@@ -1,0 +1,362 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\
+BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000009:INFO  ] Done.
+BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\KeyHook.rc because target: obj\ARMV4I\retail\KeyHook.res is missing.
+BUILD: [00:0000000011:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\KeyHookMain.cpp because target: obj\ARMV4I\retail\KeyHookMain.obj is missing.
+BUILD: [00:0000000012:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\KBHook.cpp because target: obj\ARMV4I\retail\KBHook.obj is missing.
+BUILD: [00:0000000013:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\ directory.
+BUILD: [00:0000000014:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000015:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000016:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000017:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000018:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\sources
+BUILD: [01:0000000019:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000020:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook
+BUILD: [01:0000000021:INFO  ] TARGETNAME: KeyHook
+BUILD: [01:0000000022:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000023:PROGC ] Resource Compiling .\KeyHook.rc
+BUILD: [01:0000000024:INFO  ] 	rc -r -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -DWINCEINTERNAL  -DUNDER_CE=600  -DINTERNATIONAL -l 409 -c 1252  -foobj\ARMV4I\retail\KeyHook.res C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\.\KeyHook.rc
+BUILD: [01:0000000025:INFO  ] Microsoft (R) Windows (R) Resource Compiler Version 6.0.5478.0
+BUILD: [01:0000000026:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000027:INFO  ] 
+BUILD: [01:0000000028:PROGC ] Compiling .\KeyHookMain.cpp
+BUILD: [01:0000000029:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\KeyHookMain.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\KeyHookMain.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\.\KeyHookMain.cpp
+BUILD: [01:0000000030:INFO  ] KeyHookMain.cpp
+BUILD: [01:0000000031:PROGC ] Compiling .\KBHook.cpp
+BUILD: [01:0000000032:INFO  ] cl -nologo    /Gy -Foobj\ARMV4I\retail\KBHook.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\KBHook.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\.\KBHook.cpp
+BUILD: [01:0000000033:INFO  ] KBHook.cpp
+BUILD: [00:0000000034:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000000035:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\commctrl.lib.
+BUILD: [00:0000000036:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib because filename is missing from build database
+BUILD: [00:0000000037:INFO  ] Will Build C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\commctrl.lib because filename is missing from build database
+BUILD: [00:0000000038:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\obj\ARMV4I\retail\KeyHookMain.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.exe is missing.
+BUILD: [00:0000000039:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\obj\ARMV4I\retail\KBHook.obj because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.exe is missing.
+BUILD: [00:0000000040:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.exe is missing.
+BUILD: [00:0000000041:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\ directory.
+BUILD: [00:0000000042:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000043:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000044:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000045:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000046:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook\sources
+BUILD: [01:0000000047:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000048:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\APP\KeyHook
+BUILD: [01:0000000049:INFO  ] TARGETNAME: KeyHook
+BUILD: [01:0000000050:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000000051:INFO  ] 	set LIB=C:\WINCE600\sdk\CE\lib
+BUILD: [01:0000000052:PROGC ] Linking C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.exe
+BUILD: [01:0000000053:INFO  ] 	link /LARGEADDRESSAWARE -out:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.exe -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nm10AE.tmp
+BUILD: [01:0000000054:INFO  ] Microsoft (R) Incremental Linker Version 8.00.50727.42
+BUILD: [01:0000000055:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000056:INFO  ] 
+BUILD: [01:0000000057:INFO  ] -nodefaultlib 
+BUILD: [01:0000000058:INFO  ] -entry:WinMainCRTStartup 
+BUILD: [01:0000000059:INFO  ] -pdb:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.pdb 
+BUILD: [01:0000000060:INFO  ] -pdbaltpath:KeyHook.pdb 
+BUILD: [01:0000000061:INFO  ] /opt:ref /verbose 
+BUILD: [01:0000000062:INFO  ] -debug -debugtype:cv -incremental:no 
+BUILD: [01:0000000063:INFO  ] -map:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.map 
+BUILD: [01:0000000064:INFO  ] -savebaserelocations:C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.rel 
+BUILD: [01:0000000065:INFO  ] -MERGE:.rdata=.text -merge:.astart=.text -align:4096 -ignore:4001,4070,4078,4086,4089,4096,4099,4108,4229 /STACK:65536,4096 -debugtype:cv,fixup -incremental:no 
+BUILD: [01:0000000066:INFO  ] /subsystem:windowsce,6.00 
+BUILD: [01:0000000067:INFO  ] -base:0x00010000 
+BUILD: [01:0000000068:INFO  ] obj\ARMV4I\retail\KeyHook.res obj\ARMV4I\retail\KeyHookMain.obj obj\ARMV4I\retail\KBHook.obj 
+BUILD: [01:0000000069:INFO  ] C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\commctrl.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib 
+BUILD: [01:0000000070:INFO  ] 
+BUILD: [01:0000000071:INFO  ] Starting pass 1
+BUILD: [01:0000000072:INFO  ] 
+BUILD: [01:0000000073:INFO  ] Searching libraries
+BUILD: [01:0000000074:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000075:INFO  ]       Found PostQuitMessage
+BUILD: [01:0000000076:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000077:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000078:INFO  ]       Found SetWindowTextW
+BUILD: [01:0000000079:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000080:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000081:INFO  ]       Found ShowWindow
+BUILD: [01:0000000082:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000083:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000084:INFO  ]       Found PostMessageW
+BUILD: [01:0000000085:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000086:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000087:INFO  ]       Found GetForegroundWindow
+BUILD: [01:0000000088:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000089:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000090:INFO  ]       Found NKDbgPrintfW
+BUILD: [01:0000000091:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000092:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000093:INFO  ]       Found GetMessageW
+BUILD: [01:0000000094:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000095:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000096:INFO  ]       Found DispatchMessageW
+BUILD: [01:0000000097:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000098:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000099:INFO  ]       Found TranslateMessage
+BUILD: [01:0000000100:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000101:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000102:INFO  ]       Found CreateDialogIndirectParamW
+BUILD: [01:0000000103:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000104:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000105:INFO  ]       Found LoadResource
+BUILD: [01:0000000106:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000107:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000108:INFO  ]       Found FindResourceW
+BUILD: [01:0000000109:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000110:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000111:INFO  ]       Found FindWindowW
+BUILD: [01:0000000112:INFO  ]         Referenced in KeyHookMain.obj
+BUILD: [01:0000000113:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000114:INFO  ]       Found UnhookWindowsHookEx
+BUILD: [01:0000000115:INFO  ]         Referenced in KBHook.obj
+BUILD: [01:0000000116:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000117:INFO  ]       Found CallNextHookEx
+BUILD: [01:0000000118:INFO  ]         Referenced in KBHook.obj
+BUILD: [01:0000000119:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000120:INFO  ]       Found SendMessageW
+BUILD: [01:0000000121:INFO  ]         Referenced in KBHook.obj
+BUILD: [01:0000000122:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000123:INFO  ]       Found SetWindowsHookExW
+BUILD: [01:0000000124:INFO  ]         Referenced in KBHook.obj
+BUILD: [01:0000000125:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000126:INFO  ]       Found __IMPORT_DESCRIPTOR_COREDLL
+BUILD: [01:0000000127:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000128:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000129:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000130:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000131:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000132:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000133:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000134:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000135:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000136:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000137:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000138:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000139:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000140:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000141:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000142:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000143:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000144:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000145:INFO  ]       Found __NULL_IMPORT_DESCRIPTOR
+BUILD: [01:0000000146:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000147:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000148:INFO  ]       Found COREDLL_NULL_THUNK_DATA
+BUILD: [01:0000000149:INFO  ]         Referenced in coredll.lib(COREDLL.dll)
+BUILD: [01:0000000150:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000151:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\commctrl.lib:
+BUILD: [01:0000000152:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib0.lib:
+BUILD: [01:0000000153:INFO  ]       Found WinMainCRTStartup
+BUILD: [01:0000000154:INFO  ]         Loaded corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000155:INFO  ]       Found _exit
+BUILD: [01:0000000156:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000157:INFO  ]         Loaded corelib0.lib(cexit.obj)
+BUILD: [01:0000000158:INFO  ]       Found _cinit
+BUILD: [01:0000000159:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000160:INFO  ]         Loaded corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000161:INFO  ]       Found __security_init_cookie
+BUILD: [01:0000000162:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000163:INFO  ]         Loaded corelib0.lib(seccinit.obj)
+BUILD: [01:0000000164:INFO  ]       Found __onexitend
+BUILD: [01:0000000165:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000166:INFO  ]         Loaded corelib0.lib(onexit.obj)
+BUILD: [01:0000000167:INFO  ]       Found __xt_z
+BUILD: [01:0000000168:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000169:INFO  ]         Loaded corelib0.lib(crt0init.obj)
+BUILD: [01:0000000170:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\oak\lib\ARMV4I\retail\corelib1.lib:
+BUILD: [01:0000000171:INFO  ]       Found "void __cdecl operator delete(void *)" (??3@YAXPAX@Z)
+BUILD: [01:0000000172:INFO  ]         Referenced in KBHook.obj
+BUILD: [01:0000000173:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000174:INFO  ]       Found _XcptFilter
+BUILD: [01:0000000175:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000176:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000177:INFO  ]       Found __C_specific_handler
+BUILD: [01:0000000178:INFO  ]         Referenced in corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000179:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000180:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000181:INFO  ]       Found free
+BUILD: [01:0000000182:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000183:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000184:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000185:INFO  ]       Found __security_gen_cookie2
+BUILD: [01:0000000186:INFO  ]         Referenced in corelib0.lib(seccinit.obj)
+BUILD: [01:0000000187:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000188:INFO  ]       Found malloc
+BUILD: [01:0000000189:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000190:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000191:INFO  ]       Found realloc
+BUILD: [01:0000000192:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000193:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000194:INFO  ]       Found _msize
+BUILD: [01:0000000195:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000196:INFO  ]         Loaded corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000197:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\coredll.lib:
+BUILD: [01:0000000198:INFO  ]       Found DeleteCriticalSection
+BUILD: [01:0000000199:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000200:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000201:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000202:INFO  ]       Found InterlockedExchange
+BUILD: [01:0000000203:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000204:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000205:INFO  ]       Found TerminateProcess
+BUILD: [01:0000000206:INFO  ]         Referenced in corelib0.lib(cexit.obj)
+BUILD: [01:0000000207:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000208:INFO  ]       Found EnterCriticalSection
+BUILD: [01:0000000209:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000210:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000211:INFO  ]       Found InterlockedCompareExchange
+BUILD: [01:0000000212:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000213:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000214:INFO  ]       Found InitializeCriticalSection
+BUILD: [01:0000000215:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000216:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000217:INFO  ]       Found LeaveCriticalSection
+BUILD: [01:0000000218:INFO  ]         Referenced in corelib0.lib(onexit.obj)
+BUILD: [01:0000000219:INFO  ]         Loaded coredll.lib(COREDLL.dll)
+BUILD: [01:0000000220:INFO  ]     Searching C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\commctrl.lib:
+BUILD: [01:0000000221:INFO  ] 
+BUILD: [01:0000000222:INFO  ] Finished searching libraries
+BUILD: [01:0000000223:INFO  ] 
+BUILD: [01:0000000224:INFO  ] Finished pass 1
+BUILD: [01:0000000225:INFO  ] 
+BUILD: [01:0000000226:INFO  ] 
+BUILD: [01:0000000227:INFO  ] Invoking CVTRES.EXE:
+BUILD: [01:0000000228:INFO  ]  /machine:thumb
+BUILD: [01:0000000229:INFO  ]  /verbose
+BUILD: [01:0000000230:INFO  ]  /out:"C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\lnk10B0.tmp"
+BUILD: [01:0000000231:INFO  ]  /readonly
+BUILD: [01:0000000232:INFO  ]  /windowsce
+BUILD: [01:0000000233:INFO  ]  "obj\ARMV4I\retail\KeyHook.res"
+BUILD: [01:0000000234:INFO  ] Microsoft (R) Windows Resource To Object Converter Version 8.00.50727.42
+BUILD: [01:0000000235:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000236:INFO  ] 
+BUILD: [01:0000000237:INFO  ] adding resource. type:DIALOG, name:103, language:0x0409, flags:0x1030, size:68
+BUILD: [01:0000000238:INFO  ]     Discarded __imp_malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000239:INFO  ]     Discarded __imp_realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000240:INFO  ]     Discarded __imp__msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000241:INFO  ]     Discarded __imp_EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000242:INFO  ]     Discarded __imp_InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000243:INFO  ]     Discarded __imp_InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000244:INFO  ]     Discarded __imp_LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000245:INFO  ]     Discarded '.pdata' from KeyHookMain.obj
+BUILD: [01:0000000246:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000247:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000248:INFO  ]     Discarded '.pdata' from corelib0.lib(cexit.obj)
+BUILD: [01:0000000249:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000250:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000251:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000252:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000253:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000254:INFO  ]     Discarded '.pdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000255:INFO  ]     Discarded "void __cdecl FuncKeyHandle(unsigned long,unsigned long)" (?FuncKeyHandle@@YAXKK@Z) from KeyHookMain.obj
+BUILD: [01:0000000256:INFO  ]     Discarded GetCurrentProcess from corelib0.lib(cexit.obj)
+BUILD: [01:0000000257:INFO  ]     Discarded _cexit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000258:INFO  ]     Discarded _c_exit from corelib0.lib(cexit.obj)
+BUILD: [01:0000000259:INFO  ]     Discarded lockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000260:INFO  ]     Discarded unlockexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000261:INFO  ]     Discarded _onexit_nolock from corelib0.lib(onexit.obj)
+BUILD: [01:0000000262:INFO  ]     Discarded _onexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000263:INFO  ]     Discarded atexit from corelib0.lib(onexit.obj)
+BUILD: [01:0000000264:INFO  ]     Discarded malloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000265:INFO  ]     Discarded realloc from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000266:INFO  ]     Discarded _msize from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000267:INFO  ]     Discarded EnterCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000268:INFO  ]     Discarded InterlockedCompareExchange from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000269:INFO  ]     Discarded InitializeCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000270:INFO  ]     Discarded LeaveCriticalSection from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000271:INFO  ]     Discarded '.xdata' from corelib0.lib(onexit.obj)
+BUILD: [01:0000000272:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000273:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000274:INFO  ]     Discarded '.idata$4' from corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000275:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000276:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000277:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000278:INFO  ]     Discarded '.idata$4' from coredll.lib(COREDLL.dll)
+BUILD: [01:0000000279:INFO  ] Starting pass 2
+BUILD: [01:0000000280:INFO  ]      KeyHook.res
+BUILD: [01:0000000281:INFO  ]      KBHook.obj
+BUILD: [01:0000000282:INFO  ]      KeyHookMain.obj
+BUILD: [01:0000000283:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000284:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000285:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000286:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000287:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000288:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000289:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000290:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000291:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000292:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000293:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000294:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000295:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000296:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000297:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000298:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000299:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000300:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000301:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000302:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000303:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000304:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000305:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000306:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000307:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000308:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000309:INFO  ]      coredll.lib(COREDLL.dll)
+BUILD: [01:0000000310:INFO  ]      corelib0.lib(seccinit.obj)
+BUILD: [01:0000000311:INFO  ]      corelib0.lib(pegwmain.obj)
+BUILD: [01:0000000312:INFO  ]      corelib0.lib(onexit.obj)
+BUILD: [01:0000000313:INFO  ]      corelib0.lib(crt0init.obj)
+BUILD: [01:0000000314:INFO  ]      corelib0.lib(crt0dat.obj)
+BUILD: [01:0000000315:INFO  ]      corelib0.lib(cexit.obj)
+BUILD: [01:0000000316:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000317:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000318:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000319:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000320:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000321:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000322:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000323:INFO  ]      corelib1.lib(COREDLL.dll)
+BUILD: [01:0000000324:INFO  ] Finished pass 2
+BUILD: [01:0000000325:INFO  ] 	editbin /nxcompat C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.exe
+BUILD: [01:0000000326:INFO  ] Microsoft (R) COFF/PE Editor Version 8.00.50727.42
+BUILD: [01:0000000327:INFO  ] Copyright (C) Microsoft Corporation.  All rights reserved.
+BUILD: [01:0000000328:INFO  ] 
+BUILD: [01:0000000329:INFO  ] 
+BUILD: [01:0000000330:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.exe C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\KeyHook.exe
+BUILD: [01:0000000331:INFO  ] 	copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.map C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\KeyHook.map
+BUILD: [01:0000000332:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.pdb copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.pdb C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release
+BUILD: [01:0000000333:INFO  ] 	if exist C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.rel copylink /S:a /D:f /E:a /R:n C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\KeyHook.rel C:\WINCE600\OSDesigns\Z2170P\Z2170P\RelDir\Z2170P_ARMV4I_Release\KeyHook.rel
+BUILD: [00:0000000334:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000335:INFO  ] Done.
+BUILD: [00:0000000336:PROGC ] Done.
+BUILD: [00:0000000337:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000338:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000339:PROGC ] Message                    0         0       0
+BUILD: [00:0000000340:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000341:PROGC ] Resource                   1         0       0
+BUILD: [00:0000000342:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000343:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000344:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000345:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000346:PROGC ] C++                        2         0       0
+BUILD: [00:0000000347:PROGC ] C                          0         0       0
+BUILD: [00:0000000348:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000349:PROGC ] Exe's                      1         0       0
+BUILD: [00:0000000350:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000000351:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000352:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000353:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000354:PROGC ] Other                      0         0       0
+BUILD: [00:0000000355:PROGC ] 
+BUILD: [00:0000000356:PROGC ] Total                      4         0       0
+BUILD: [00:0000000357:PROGC ] 
+BUILD: [00:0000000358:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000359:PROGC ] GetSystemTimes (seconds): Idle: 11    Kernel: 13    User: 3    
+BUILD: [00:0000000360:PROGC ] Elapsed  time  (seconds): 4    

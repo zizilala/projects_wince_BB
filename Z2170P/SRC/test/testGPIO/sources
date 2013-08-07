@@ -1,0 +1,18 @@
+# All rights reserved ADENEO EMBEDDED 2010
+TARGETNAME=GpioTest
+
+SOURCES= \
+    GpioTest.cpp \
+
+WARNLEVEL=
+
+RELEASETYPE=PLATFORM
+TARGETTYPE=PROGRAM
+
+EXEENTRY=mainWCRTStartup
+
+TARGETLIBS= \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib \
+
+SOURCELIBS= 

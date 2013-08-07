@@ -1,0 +1,40 @@
+ARM macroassembler      Page:1 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000          ; oemabort.s - header file for the data abort veneer 
+   14 00000000          ; 
+   15 00000000          ; This file selects options suitable for Windows CE's use of 
+   16 00000000          ; the data abort veneer. 
+   17 00000000          ; 
+   18 00000000            
+   21 00000000                  OPT     1       ; reenable listing 
+   22 00000000                           
+   23 00000000                  TEXTAREA 
+   45                           AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   24 00000000                  IMPORT DataAbortHandler 
+   25 00000000                   
+   26 00000000                  LEAF_ENTRY OEMDataAbortHandler 
+  175 00000000          FuncName SETS    VBar:CC:"OEMDataAbortHandler":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"OEMDataAbortHandler":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  |OEMDataAbortHandler| [FUNC] 
+  180 00000000          |OEMDataAbortHandler| 
+  181 00000000                  ROUT 
+   27 00000000 ea000000         b       DataAbortHandler 
+   28 00000004                  ENTRY_END 
+  194 00000004          |OEMDataAbortHandler_end| 
+   29 00000004            
+   30 00000004                  END 
+Assembly terminated, errors: 0, warnings: 0 

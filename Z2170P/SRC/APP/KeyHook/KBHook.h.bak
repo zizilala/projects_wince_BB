@@ -1,0 +1,30 @@
+#ifndef __KBHook_H__
+#define __KBHook_H__
+
+#define KEY_HOOK_OFF           (WM_APP + 164)
+#define KEY_HOOK_ON            (WM_APP + 165)
+#define WM_KBHOOK_NOTIFY       (WM_APP + 170)
+#define WM_KEY_EVENT_NOTIFY    (WM_APP + 188)
+
+#include "pwinuser.h"
+
+#define KEY_HOOK_WND  TEXT("FunKeyHook")
+
+class KBHook
+{
+protected:
+    static HWND		m_hTargetWnd;   // Handle of the window deal with hotkey notify messages.
+    static HHOOK	m_hHook;        // Handle of the hook;
+
+public:
+    KBHook();
+    virtual ~KBHook();
+
+    BOOL    StartKBHook ( HWND hWnd, HINSTANCE hInstance );
+    BOOL    StopKBHook ( void );
+
+    static LRESULT CALLBACK KBHookProc ( int nCode, WPARAM wParam, LPARAM lParam );
+   
+};
+
+#endif

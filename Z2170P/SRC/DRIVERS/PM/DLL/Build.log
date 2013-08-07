@@ -1,0 +1,123 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\
+BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000009:INFO  ] Done.
+BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pminit.cpp because target: obj\ARMV4I\retail\pminit.obj is missing.
+BUILD: [00:0000000011:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmpnp.cpp because target: obj\ARMV4I\retail\pmpnp.obj is missing.
+BUILD: [00:0000000012:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmdevice.cpp because target: obj\ARMV4I\retail\pmdevice.obj is missing.
+BUILD: [00:0000000013:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmrequire.cpp because target: obj\ARMV4I\retail\pmrequire.obj is missing.
+BUILD: [00:0000000014:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmrelation.cpp because target: obj\ARMV4I\retail\pmrelation.obj is missing.
+BUILD: [00:0000000015:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmnotify.cpp because target: obj\ARMV4I\retail\pmnotify.obj is missing.
+BUILD: [00:0000000016:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmresume.cpp because target: obj\ARMV4I\retail\pmresume.obj is missing.
+BUILD: [00:0000000017:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmutils.cpp because target: obj\ARMV4I\retail\pmutils.obj is missing.
+BUILD: [00:0000000018:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmsysstate.cpp because target: obj\ARMV4I\retail\pmsysstate.obj is missing.
+BUILD: [00:0000000019:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmtimer.cpp because target: obj\ARMV4I\retail\pmtimer.obj is missing.
+BUILD: [00:0000000020:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmsystem.cpp because target: obj\ARMV4I\retail\pmsystem.obj is missing.
+BUILD: [00:0000000021:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmstream.cpp because target: obj\ARMV4I\retail\pmstream.obj is missing.
+BUILD: [00:0000000022:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\pmdisplay.cpp because target: obj\ARMV4I\retail\pmdisplay.obj is missing.
+BUILD: [00:0000000023:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\ directory.
+BUILD: [00:0000000024:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000025:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000026:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000027:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000028:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\sources
+BUILD: [01:0000000029:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000030:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL
+BUILD: [01:0000000031:INFO  ] TARGETNAME: pm
+BUILD: [01:0000000032:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [00:0000000033:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pminit.obj does not exist (2).
+BUILD: [00:0000000034:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmpnp.obj does not exist (2).
+BUILD: [00:0000000035:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmdevice.obj does not exist (2).
+BUILD: [00:0000000036:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmrequire.obj does not exist (2).
+BUILD: [00:0000000037:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmrelation.obj does not exist (2).
+BUILD: [00:0000000038:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmnotify.obj does not exist (2).
+BUILD: [00:0000000039:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmresume.obj does not exist (2).
+BUILD: [00:0000000040:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmutils.obj does not exist (2).
+BUILD: [00:0000000041:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmsysstate.obj does not exist (2).
+BUILD: [00:0000000042:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmtimer.obj does not exist (2).
+BUILD: [00:0000000043:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmsystem.obj does not exist (2).
+BUILD: [00:0000000044:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmstream.obj does not exist (2).
+BUILD: [00:0000000045:WARNN ] File: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmdisplay.obj does not exist (2).
+BUILD: [00:0000000046:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pminit.obj because filename is missing from build database
+BUILD: [00:0000000047:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmpnp.obj because filename is missing from build database
+BUILD: [00:0000000048:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmdevice.obj because filename is missing from build database
+BUILD: [00:0000000049:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmrequire.obj because filename is missing from build database
+BUILD: [00:0000000050:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmrelation.obj because filename is missing from build database
+BUILD: [00:0000000051:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmnotify.obj because filename is missing from build database
+BUILD: [00:0000000052:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmresume.obj because filename is missing from build database
+BUILD: [00:0000000053:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmutils.obj because filename is missing from build database
+BUILD: [00:0000000054:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmsysstate.obj because filename is missing from build database
+BUILD: [00:0000000055:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmtimer.obj because filename is missing from build database
+BUILD: [00:0000000056:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmsystem.obj because filename is missing from build database
+BUILD: [00:0000000057:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmstream.obj because filename is missing from build database
+BUILD: [00:0000000058:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmdisplay.obj because filename is missing from build database
+BUILD: [00:0000000059:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\ because target: C:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\pm.lib is missing.
+BUILD: [00:0000000060:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\ directory.
+BUILD: [00:0000000061:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000062:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000063:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000064:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000065:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\sources
+BUILD: [01:0000000066:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000067:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL
+BUILD: [01:0000000068:INFO  ] TARGETNAME: pm
+BUILD: [01:0000000069:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [00:0000000070:INFO  ] Will Build C:\WINCE600\public\common\oak\inc\pm.def because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\pm.dll is missing.
+BUILD: [00:0000000071:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pminit.obj because filename is missing from build database
+BUILD: [00:0000000072:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmpnp.obj because filename is missing from build database
+BUILD: [00:0000000073:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmdevice.obj because filename is missing from build database
+BUILD: [00:0000000074:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmrequire.obj because filename is missing from build database
+BUILD: [00:0000000075:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmrelation.obj because filename is missing from build database
+BUILD: [00:0000000076:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmnotify.obj because filename is missing from build database
+BUILD: [00:0000000077:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmresume.obj because filename is missing from build database
+BUILD: [00:0000000078:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmutils.obj because filename is missing from build database
+BUILD: [00:0000000079:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmsysstate.obj because filename is missing from build database
+BUILD: [00:0000000080:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmtimer.obj because filename is missing from build database
+BUILD: [00:0000000081:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmsystem.obj because filename is missing from build database
+BUILD: [00:0000000082:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmstream.obj because filename is missing from build database
+BUILD: [00:0000000083:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\obj\ARMV4I\retail\pmdisplay.obj because filename is missing from build database
+BUILD: [00:0000000084:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\ because target: C:\WINCE600\platform\Z2170P\target\ARMV4I\retail\pm.dll is missing.
+BUILD: [00:0000000085:PROGC ] Building LINK Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\ directory.
+BUILD: [00:0000000086:PROG  ] 'NMAKE.EXE TargetExeFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 LINKONLY=1 NOPASS0=1MAKEDLL=1'
+BUILD: [01:0000000087:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000088:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
+BUILD: [01:0000000089:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
+BUILD: [01:0000000090:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL\sources
+BUILD: [01:0000000091:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000092:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\DRIVERS\PM\DLL
+BUILD: [01:0000000093:INFO  ] TARGETNAME: pm
+BUILD: [01:0000000094:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [00:0000000095:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
+BUILD: [00:0000000096:INFO  ] Done.
+BUILD: [00:0000000097:PROGC ] Done.
+BUILD: [00:0000000098:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000099:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000100:PROGC ] Message                    0         0       0
+BUILD: [00:0000000101:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000102:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000103:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000104:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000105:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000106:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000107:PROGC ] C++                        0         0       0
+BUILD: [00:0000000108:PROGC ] C                          0         0       0
+BUILD: [00:0000000109:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000110:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000111:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000000112:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000113:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000114:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000115:PROGC ] Other                      0         0       0
+BUILD: [00:0000000116:PROGC ] 
+BUILD: [00:0000000117:PROGC ] Total                      0         0       0
+BUILD: [00:0000000118:PROGC ] 
+BUILD: [00:0000000119:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000120:PROGC ] GetSystemTimes (seconds): Idle: 2     Kernel: 2     User: 0    
+BUILD: [00:0000000121:PROGC ] Elapsed  time  (seconds): 0    

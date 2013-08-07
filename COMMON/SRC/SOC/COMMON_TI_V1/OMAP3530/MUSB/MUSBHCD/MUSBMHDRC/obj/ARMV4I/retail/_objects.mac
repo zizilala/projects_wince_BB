@@ -1,0 +1,8 @@
+OBJECTS=\
+    obj\ARMV4I\retail\chw.obj\
+    obj\ARMV4I\retail\cpipe.obj\
+    obj\ARMV4I\retail\ctd.obj\
+    obj\ARMV4I\retail\trans.obj\
+    obj\ARMV4I\retail\cmhcd.obj\
+    obj\ARMV4I\retail\usb2lib.obj
+

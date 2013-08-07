@@ -1,0 +1,108 @@
+; All rights reserved ADENEO EMBEDDED 2010
+; @CESYSGEN IF CE_MODULES_NDIS
+;-------------------------------------------------------------------------------
+IF BSP_NOETHERNET !
+IF BSP_SMSC911X
+[HKEY_LOCAL_MACHINE\Comm\SMSC9118]
+    "DisplayName"="SMSC11X Ethernet Driver"
+    "Group"="NDIS"
+    "ImagePath"="Smsc9118.dll"
+
+[HKEY_LOCAL_MACHINE\Comm\SMSC9118\Linkage]
+    "Route"=multi_sz:"SMSC91181"
+
+[HKEY_LOCAL_MACHINE\Comm\SMSC91181]
+    "DisplayName"="SMSC11X Ethernet Driver"
+    "Group"="NDIS"
+    "ImagePath"="Smsc9118.dll"
+
+[HKEY_LOCAL_MACHINE\Comm\SMSC91181\Parms]
+    "BusNumber"=dword:0
+    "BusType"=dword:0
+	"SysIntr"=dword:10				; FIXED in the OAL to SYSINTR_FIRMWARE + 0
+    "IoBaseAddress"=dword:15000000  ; ETHERNET_BASE (Physical Addr)
+    "PhyAddress"=dword:20           ; PHY address (0x20:Auto, 0xFF:Internal)
+    "RxDMAMode"=dword:0             ; 1-DMA, 0-PIO
+    "TxDMAMode"=dword:0             ; 1-DMA, 0-PIO
+    "FlowControl"=dword:1           ; 1-Enabled, 0-Disabled
+    ; LinkMode will replace Duplex, Speed and FlowControl
+    ; bit7: RESERVED, bit6: ANEG, bit5: ASymmetric Pause, bit4: Symmetric Pause
+    ; bit3: 100FD, bit2: 100HD, bit1: 10FD, bit0: 10HD
+    "LinkMode"=dword:7F
+    ; Setting Auto-Mdix Status
+    ; 0: Override strap, Disable Auto Mdix, straight cable
+    ; 1: Override strap, Disable Auto Mdix, CrossOver cable
+    ; 2: Override strap, Enable Auto Mdix
+    ; Others or No Keyword: AutoMdix controlled by strap 
+    "AutoMdix"=dword:4 
+    ; INT_CFG value applied following HW_CFG_SRST_.  Note valid settings below:
+     "IntCfg"=dword:0               ; bit4:IRQ_POL, bit0:IRQ_TYP (11/10/1/0)
+    ;----------------------------------------------------------------------
+    ; Following 3 keys use following value 
+    ;   2 = NdisDeviceStateD1 (WOL)
+    ;   3 = NdisDeviceStateD2 (Energy Detect)
+    ;   4 = NdisDeviceStateD3 (Full Power Down)
+    ; NOTE
+    ; Parm starts from 2 to 4 because NDIS enumerates as follows
+    ;   typedef enum _NDIS_DEVICE_POWER_STATE
+    ;   {
+    ;       NdisDeviceStateUnspecified = 0,
+    ;       NdisDeviceStateD0,
+    ;       NdisDeviceStateD1,
+    ;       NdisDeviceStateD2,
+    ;       NdisDeviceStateD3,
+    ;       NdisDeviceStateMaximum
+    ;   } NDIS_DEVICE_POWER_STATE, *PNDIS_DEVICE_POWER_STATE;
+    ;  
+    ; See NDIS Powermanagement Comment in PUBLIC\COMMON\OAK\FILES\COMMON.REG
+     "MinLinkChangeWakeUp"=dword:4
+     "MinMagicPacketWakeUp"=dword:4
+     "MinPatternWakeUp"=dword:4
+    ;----------------------------------------------------------------------
+
+[HKEY_LOCAL_MACHINE\Comm\SMSC91181\Parms\TcpIp]
+    "EnableDHCP"=dword:1
+    "IpAddress"="192.168.128.94"
+    "Subnetmask"="255.255.255.0"
+    "DefaultGateway"="192.168.128.249"
+    "UseZeroBroadcast"=dword:0
+
+;---------------------------------------------------------------------------
+; NOTE
+;  This registry key is from PUBLIC\COMMON\OAK\FILES\COMMON.REG
+;  As commented, default setting is to D4(NdisDeviceStateD3)
+;  For testing Power Management, it is changed to D3
+;---------------------------------------------------------------------------
+;
+; Since we generally don't want arbitrary network adapters to be wake
+; sources, override the default suspend setting to turn adapters completely
+; off.  Add adapters to this section that we DO want to be wake sources, or
+; have the application using the adapter use the SetPowerRequirement() API
+; to make it a wake source.
+;
+; NDIS maps power manager device power states to NDIS device power states
+; as follows:
+;   PM State                        NDIS State
+;
+;       D0                      NdisDeviceStateD0
+;       D1                      NdisDeviceStateD0
+;       D2                      NdisDeviceStateD0
+;
+;       D4                      NdisDeviceStateD3
+;       D3                      See below.
+;
+; Note on D3:  If an adapter supports wake sources, NDIS will map
+; the PM device power state D3 to the highest-power-consuming state
+; reported by the miniport driver in response to an OID_PNP_CAPABILITIES
+; query. For example, suppose the miniport reports:
+;       MinLinkChangeWakeUp     NdisDeviceStateD2
+;       MinMagicPacketWakeUp    NdisDeviceStateD1
+;       MinPatternWakeUp        NdisDeviceStateD2
+; For this miniport, NDIS translates D3 from Power Manager to
+; NdisDeviceStateD1.
+;
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\State\Suspend\{98C5250D-C29A-4985-AE5F-AFE5367E5006}]
+    "Default"=dword:3           ; D3
+ENDIF BSP_SMSC911X
+ENDIF BSP_NOETHERNET !
+; @CESYSGEN ENDIF CE_MODULES_NDIS

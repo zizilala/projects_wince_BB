@@ -1,0 +1,7 @@
+OBJECTS=\
+    obj\ARMV4I\debug\config.obj\
+    obj\ARMV4I\debug\register.obj\
+    obj\ARMV4I\debug\id.obj\
+    obj\ARMV4I\debug\find.obj\
+    obj\ARMV4I\debug\dump.obj
+

@@ -1,0 +1,34 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters:
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\COMMON
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000005:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000006:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000007:INFO  ] Done.
+BUILD: [00:0000000008:PROGC ] Done.
+BUILD: [00:0000000009:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000010:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000011:PROGC ] Message                    0         0       0
+BUILD: [00:0000000012:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000013:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000014:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000015:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000016:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000017:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000018:PROGC ] C++                        0         0       0
+BUILD: [00:0000000019:PROGC ] C                          0         0       0
+BUILD: [00:0000000020:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000000021:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000022:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000000023:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000024:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000025:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000026:PROGC ] Other                      0         0       0
+BUILD: [00:0000000027:PROGC ] 
+BUILD: [00:0000000028:PROGC ] Total                      0         0       0
+BUILD: [00:0000000029:PROGC ] 
+BUILD: [00:0000000030:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000031:PROGC ] GetSystemTimes (seconds): Idle: 0     Kernel: 0     User: 0    
+BUILD: [00:0000000032:PROGC ] Elapsed  time  (seconds): 0    

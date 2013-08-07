@@ -1,0 +1,2 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [01:0000000040:WARNN ] C:\WINCE600\PLATFORM\EVM_OMAP3530\SRC\test\testNAND\testapp\.\nandtest.c : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss

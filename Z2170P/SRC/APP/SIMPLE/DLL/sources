@@ -1,0 +1,19 @@
+# All rights reserved ADENEO EMBEDDED 2010
+TARGETNAME=simple
+RELEASETYPE=PLATFORM
+TARGETTYPE=DYNLINK
+
+TARGETLIBS= \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib \
+	$(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib
+
+DEFFILE=simple.def
+
+SOURCES=simpledll.c
+
+FILE_VIEW_RESOURCE_FOLDER= \
+    simple.reg \
+    simple.def
+    
+WARNLEVEL=
+WARNISERROR=

@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\shell.obj\
+    obj\ARMV4I\retail\profile.obj\
+    obj\ARMV4I\retail\utils.obj
+

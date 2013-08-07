@@ -1,0 +1,130 @@
+ pmset
+
+ Timestamp is 51dcc29e (Wed Jul 10 10:10:38 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCU                CODE
+ 0001:00000008 00000004H .CRT$XCZ                CODE
+ 0001:0000000c 00000004H .CRT$XIA                CODE
+ 0001:00000010 00000004H .CRT$XIZ                CODE
+ 0001:00000014 00000004H .CRT$XPA                CODE
+ 0001:00000018 00000004H .CRT$XPZ                CODE
+ 0001:0000001c 00000004H .CRT$XTA                CODE
+ 0001:00000020 00000004H .CRT$XTZ                CODE
+ 0001:00000030 00000414H .rdata                  CODE
+ 0001:00000444 00000022H .rdata$debug            CODE
+ 0001:00000468 00000884H .text                   CODE
+ 0001:00000cec 00000010H .text$yc                CODE
+ 0001:00000cfc 00000018H .text$yd                CODE
+ 0001:00000d14 0000001cH .xdata                  CODE
+ 0001:00000d30 00000014H .idata$2                CODE
+ 0001:00000d44 00000014H .idata$3                CODE
+ 0001:00000d58 00000058H .idata$4                CODE
+ 0001:00000db0 0000000cH .idata$6                CODE
+ 0001:00000dbc 00000000H .edata                  CODE
+ 0002:00000000 00000058H .idata$5                DATA
+ 0002:00000058 00000008H .data                   DATA
+ 0002:00000060 00000028H .bss                    DATA
+ 0003:00000000 00000078H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     00011000     corelib0:crt0init.obj
+ 0001:00000008       __xc_z                     00011008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_a                     0001100c     corelib0:crt0init.obj
+ 0001:00000010       __xi_z                     00011010     corelib0:crt0init.obj
+ 0001:00000014       __xp_a                     00011014     corelib0:crt0init.obj
+ 0001:00000018       __xp_z                     00011018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_a                     0001101c     corelib0:crt0init.obj
+ 0001:00000020       __xt_z                     00011020     corelib0:crt0init.obj
+ 0001:0000004c       ??_C@_1BE@NPIILPOD@?$AAP?$AAM?$AAS?$AAE?$AAT?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 0001104c     set.obj
+ 0001:00000060       ??_C@_1FI@KIMKHAEC@?$AAP?$AAM?$AAS?$AAE?$AAT?$AA?5?$AA?$DM?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DO?$AA?5?$AA?$DM?$AAH?$AAe?$AAx?$AAS?$AAt?$AAa?$AAt?$AAe?$AAF?$AAl?$AAa?$AAg?$AAs?$AA?$DO?$AA?5?$AA?$DM?$AAH@ 00011060     set.obj
+ 0001:000000b8       ??_C@_1JG@BGIOFIHM@?$AA?5?$AA?5?$AAw?$AAh?$AAe?$AAr?$AAe?$AA?5?$AA?$DM?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DO?$AA?5?$AAi?$AAs?$AA?5?$AAs?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?5?$AAp?$AAo?$AAw?$AAe?$AAr?$AA?5@ 000110b8     set.obj
+ 0001:00000150       ??_C@_1LE@NHCBGIKI@?$AA?5?$AA?5?$AA?5?$AA?5?$AAo?$AAp?$AAt?$AAi?$AAo?$AAn?$AAa?$AAl?$AA?5?$AA?$DM?$AAS?$AAt?$AAa?$AAt?$AAe?$AAF?$AAl?$AAa?$AAg?$AAs?$AA?$DO?$AA?5?$AAs?$AAp?$AAe?$AAc?$AAi?$AAf@ 00011150     set.obj
+ 0001:00000208       ??_C@_1JC@HAPAMACI@?$AA?5?$AA?5?$AA?5?$AA?5?$AAo?$AAp?$AAt?$AAi?$AAo?$AAn?$AAa?$AAl?$AA?5?$AA?$DM?$AAO?$AAp?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?$DO?$AA?5?$AAs?$AAp?$AAe?$AAc?$AAi?$AAf?$AAy?$AA?5?$AAo@ 00011208     set.obj
+ 0001:000002a0       ??_C@_1IC@ILILFGPB@?$AA?5?$AA?5?$AAE?$AAx?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AAP?$AAM?$AAS?$AAE?$AAT?$AA?5?$AAR?$AAu?$AAn?$AAA?$AAC?$AA?5?$AA1?$AA?0?$AA?5?$AAs?$AAe?$AAt?$AAs?$AA?5?$AAt@ 000112a0     set.obj
+ 0001:00000328       ??_C@_1KK@GPIOJAHL@?$AA?5?$AA?5?$AAE?$AAx?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AAP?$AAM?$AAS?$AAE?$AAT?$AA?5?$AA0?$AA?5?$AA2?$AA0?$AA0?$AA0?$AA0?$AA0?$AA?5?$AA1?$AA0?$AA0?$AA0?$AA?0?$AA?5@ 00011328     set.obj
+ 0001:000003d8       ??_C@_1EG@JMFLCHAE@?$AAS?$AAe?$AAt?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AAP?$AAo?$AAw?$AAe?$AAr?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?3?$AA?8?$AA?$CF?$AAs?$AA?8?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?$CF@ 000113d8     set.obj
+ 0001:00000420       ??_C@_15LHNHECKK@?$AA?$CF?$AAx?$AA?$AA@ 00011420     set.obj
+ 0001:00000428       ??_C@_15GANGMFKL@?$AA?$CF?$AAs?$AA?$AA@ 00011428     set.obj
+ 0001:00000430       ??_C@_15KNBIKKIN@?$AA?$CF?$AAd?$AA?$AA@ 00011430     set.obj
+ 0001:00000438       ??_C@_1M@BDEGBIID@?$AAP?$AAM?$AAS?$AAE?$AAT?$AA?$AA@ 00011438     set.obj
+ 0001:00000470       RetailPrint                00011470 f   set.obj
+ 0001:0000051c       WinMain                    0001151c f   set.obj
+ 0001:000006ac       NKDbgPrintfW               000116ac f   coredll:COREDLL.dll
+ 0001:000006bc       SetSystemPowerState        000116bc f   coredll:COREDLL.dll
+ 0001:000006cc       CreateArgvArgc             000116cc f   cclib:ccutil.obj
+ 0001:000007b4       ?get_lock@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@KAAAVcritical_section@2@XZ 000117b4 f i cclib:ccutil.obj
+ 0001:0000080c       __GSHandlerCheckCommon     0001180c f   corelib0:gshandler.obj
+ 0001:00000848       __GSHandlerCheck           00011848 f   corelib0:gshandler.obj
+ 0001:0000086c       __security_check_cookie    0001186c f   corelib0:armsecgs.obj
+ 0001:00000880       __gsfailure                00011880 f   corelib0:armsecgs.obj
+ 0001:000009c0       exit                       000119c0 f   corelib0:cexit.obj
+ 0001:000009e0       _onexit                    000119e0 f   corelib0:onexit.obj
+ 0001:00000b68       atexit                     00011b68 f   corelib0:onexit.obj
+ 0001:00000b88       _initterm                  00011b88 f   corelib0:crt0dat.obj
+ 0001:00000bbc       vswprintf                  00011bbc f   corelib1:COREDLL.dll
+ 0001:00000bcc       swprintf                   00011bcc f   corelib1:COREDLL.dll
+ 0001:00000bdc       vwprintf                   00011bdc f   corelib1:COREDLL.dll
+ 0001:00000bec       swscanf                    00011bec f   corelib1:COREDLL.dll
+ 0001:00000bfc       memset                     00011bfc f   corelib1:COREDLL.dll
+ 0001:00000c0c       _isctype                   00011c0c f   corelib1:COREDLL.dll
+ 0001:00000c1c       __report_gsfailure         00011c1c f   corelib1:COREDLL.dll
+ 0001:00000c2c       free                       00011c2c f   corelib1:COREDLL.dll
+ 0001:00000c3c       malloc                     00011c3c f   corelib1:COREDLL.dll
+ 0001:00000c4c       realloc                    00011c4c f   corelib1:COREDLL.dll
+ 0001:00000c5c       _msize                     00011c5c f   corelib1:COREDLL.dll
+ 0001:00000c6c       __C_specific_handler       00011c6c f   corelib1:COREDLL.dll
+ 0001:00000c7c       InitializeCriticalSection  00011c7c f   coredll:COREDLL.dll
+ 0001:00000c8c       DeleteCriticalSection      00011c8c f   coredll:COREDLL.dll
+ 0001:00000c9c       InterlockedExchange        00011c9c f   coredll:COREDLL.dll
+ 0001:00000cac       TerminateProcess           00011cac f   coredll:COREDLL.dll
+ 0001:00000cbc       EnterCriticalSection       00011cbc f   coredll:COREDLL.dll
+ 0001:00000ccc       InterlockedCompareExchange 00011ccc f   coredll:COREDLL.dll
+ 0001:00000cdc       LeaveCriticalSection       00011cdc f   coredll:COREDLL.dll
+ 0001:00000cfc       ??__Fcs@?1??get_lock@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@KAAAVcritical_section@2@XZ@YAXXZ 00011cfc f i cclib:ccutil.obj
+ 0001:00000d30       __IMPORT_DESCRIPTOR_COREDLL 00011d30     coredll:COREDLL.dll
+ 0001:00000d44       __NULL_IMPORT_DESCRIPTOR   00011d44     coredll:COREDLL.dll
+ 0002:00000000       __imp_NKDbgPrintfW         00012000     coredll:COREDLL.dll
+ 0002:00000004       __imp_SetSystemPowerState  00012004     coredll:COREDLL.dll
+ 0002:00000008       __imp_vswprintf            00012008     corelib1:COREDLL.dll
+ 0002:0000000c       __imp_swprintf             0001200c     corelib1:COREDLL.dll
+ 0002:00000010       __imp_vwprintf             00012010     corelib1:COREDLL.dll
+ 0002:00000014       __imp_swscanf              00012014     corelib1:COREDLL.dll
+ 0002:00000018       __imp_memset               00012018     corelib1:COREDLL.dll
+ 0002:0000001c       __imp__isctype             0001201c     corelib1:COREDLL.dll
+ 0002:00000020       __imp___report_gsfailure   00012020     corelib1:COREDLL.dll
+ 0002:00000024       __imp_free                 00012024     corelib1:COREDLL.dll
+ 0002:00000028       __imp_malloc               00012028     corelib1:COREDLL.dll
+ 0002:0000002c       __imp_realloc              0001202c     corelib1:COREDLL.dll
+ 0002:00000030       __imp__msize               00012030     corelib1:COREDLL.dll
+ 0002:00000034       __imp___C_specific_handler 00012034     corelib1:COREDLL.dll
+ 0002:00000038       __imp_InitializeCriticalSection 00012038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_DeleteCriticalSection 0001203c     coredll:COREDLL.dll
+ 0002:00000040       __imp_InterlockedExchange  00012040     coredll:COREDLL.dll
+ 0002:00000044       __imp_TerminateProcess     00012044     coredll:COREDLL.dll
+ 0002:00000048       __imp_EnterCriticalSection 00012048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_InterlockedCompareExchange 0001204c     coredll:COREDLL.dll
+ 0002:00000050       __imp_LeaveCriticalSection 00012050     coredll:COREDLL.dll
+ 0002:00000054       \177COREDLL_NULL_THUNK_DATA 00012054     coredll:COREDLL.dll
+ 0002:00000058       __security_cookie          00012058     corelib0:seccinit.obj
+ 0002:0000005c       __security_cookie_complement 0001205c     corelib0:seccinit.obj
+ 0002:00000060       ??_B?1??get_lock@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@KAAAVcritical_section@2@XZ@51 00012060     cclib:ccutil.obj
+ 0002:00000064       ?cs@?1??get_lock@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@KAAAVcritical_section@3@XZ@4V43@A 00012064     cclib:ccutil.obj
+ 0002:00000078       ?_factory@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@1Ulock_factory@12@A 00012078     cclib:ccutil.obj
+ 0002:00000079       _exitflag                  00012079     corelib0:cexit.obj
+ 0002:0000007c       __onexitend                0001207c     <common>
+ 0002:00000080       __onexitbegin              00012080     <common>
+ 0002:00000084       g_pcsExit                  00012084     <common>
+
+ entry point at        0001:0000051c
+
+ Static symbols
+
+ 0001:000008c4       doexit                     000118c4 f   corelib0:cexit.obj
+ 0001:00000cec       ??__E?_factory@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@1Ulock_factory@12@A@@YAXXZ 00011cec f   cclib:ccutil.obj

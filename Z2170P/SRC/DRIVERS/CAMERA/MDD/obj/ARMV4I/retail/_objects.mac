@@ -1,0 +1,6 @@
+OBJECTS=\
+    obj\ARMV4I\retail\CameraDevice.obj\
+    obj\ARMV4I\retail\cameradriver.obj\
+    obj\ARMV4I\retail\pindevice.obj\
+    obj\ARMV4I\retail\pindriver.obj
+

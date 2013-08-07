@@ -1,0 +1,211 @@
+ omap_sdma
+
+ Timestamp is 51ecc6fd (Mon Jul 22 13:45:33 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000ac8H .rdata                  CODE
+ 0001:00000ae8 00000026H .rdata$debug            CODE
+ 0001:00000b10 00001bc0H .text                   CODE
+ 0001:000026d0 00000028H .xdata                  CODE
+ 0001:000026f8 00000028H .idata$2                CODE
+ 0001:00002720 00000014H .idata$3                CODE
+ 0001:00002734 000000acH .idata$4                CODE
+ 0001:000027e0 00000016H .idata$6                CODE
+ 0001:00002800 0000009dH .edata                  CODE
+ 0002:00000000 000000acH .idata$5                DATA
+ 0002:000000b0 0000044cH .data                   DATA
+ 0002:000004fc 00000014H .bss                    DATA
+ 0003:00000000 00000178H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BI@OJGHJKJA@?$AAp?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 1000103c     common_ti_sdmadrv:dma.obj
+ 0001:00000054       ??_C@_1BC@MIOPDHCM@?$AAD?$AAm?$AAa?$AAI?$AAn?$AAd?$AAe?$AAx?$AA?$AA@ 10001054     common_ti_sdmadrv:dma.obj
+ 0001:00000098       ??_7SystemDmaController@@6B@ 10001098     common_ti_sdmadrv:dma.obj
+ 0001:000000c8       ??_C@_1MM@FBHDPICO@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AA?$CI?$AAD?$AAM?$AAA?$AA?$CJ?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AA?3?$AAF@ 100010c8     common_ti_sdmadrv:dma.obj
+ 0001:00000198       ??_C@_1KM@BDFIBLIG@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AA?$CI?$AAD?$AAM?$AAA?$AA?$CJ?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AA?3?$AAF@ 10001198     common_ti_sdmadrv:dma.obj
+ 0001:00000244       ??_C@_19FOCAGMKL@?$AAI?$AAR?$AAQ?$AA0?$AA?$AA@ 10001244     common_ti_sdmadrv:dma.obj
+ 0001:00000250       ??_C@_19OGJMALMO@?$AAI?$AAR?$AAQ?$AA1?$AA?$AA@ 10001250     common_ti_sdmadrv:dma.obj
+ 0001:0000025c       ??_C@_19PECJKECA@?$AAI?$AAR?$AAQ?$AA2?$AA?$AA@ 1000125c     common_ti_sdmadrv:dma.obj
+ 0001:00000268       ??_C@_19EMJFMDEF@?$AAI?$AAR?$AAQ?$AA3?$AA?$AA@ 10001268     common_ti_sdmadrv:dma.obj
+ 0001:00000278       ??_C@_1KI@PEEAJLIM@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AA?$CI?$AAD?$AAM?$AAA?$AA?$CJ?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AA?3?$AAU@ 10001278     common_ti_sdmadrv:dma.obj
+ 0001:00000320       ??_7DmaMediator@@6B@       10001320     common_ti_sdmadrv:dmacontroller.obj
+ 0001:00000328       ??_C@_1IC@PHOICJFD@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAD?$AAm?$AAa?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AAB?$AAa?$AAs?$AAe?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa@ 10001328     common_ti_sdmadrv:dmacontroller.obj
+ 0001:000003b0       ??_C@_1IO@CLGOBNPN@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAD?$AAm?$AAa?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AAB?$AAa?$AAs?$AAe?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa@ 100013b0     common_ti_sdmadrv:dmacontroller.obj
+ 0001:00000440       ??_C@_1LG@MNCLIHGA@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAD?$AAm?$AAa?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AAB?$AAa?$AAs?$AAe?$AA?3?$AA?3?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs@ 10001440     common_ti_sdmadrv:dmacontroller.obj
+ 0001:000004f8       ??_C@_1JA@PONGHOCH@?$AAD?$AAm?$AAa?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AAB?$AAa?$AAs?$AAe?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AAS?$AAe?$AAc?$AAo?$AAn?$AAd?$AAa?$AAr?$AAy?$AAI@ 100014f8     common_ti_sdmadrv:dmacontroller.obj
+ 0001:00000588       ??_C@_1IE@OLFCAEKN@?$AAD?$AAm?$AAa?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AAB?$AAa?$AAs?$AAe?$AA?3?$AA?3?$AAG?$AAe?$AAt?$AAL?$AAa?$AAs?$AAt?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr@ 10001588     common_ti_sdmadrv:dmacontroller.obj
+ 0001:00000610       ??_C@_1IA@HIKFKCCG@?$AAD?$AAm?$AAa?$AAM?$AAe?$AAd?$AAi?$AAa?$AAt?$AAo?$AAr?$AA?3?$AA?3?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AAH?$AAa?$AAn?$AAd?$AAl?$AAe?$AAr?$AA?3?$AA?5?$AAe@ 10001610     common_ti_sdmadrv:dmamediator.obj
+ 0001:00000690       ??_C@_1EK@LOCPFGLK@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAl?$AAe?$AAa?$AAr?$AA?5?$AAd?$AAm?$AAa?$AA?5?$AAi?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AA?5?$AAm?$AAa@ 10001690     common_ti_sdmadrv:dmamediator.obj
+ 0001:000006e0       ??_C@_1EG@CDEDOPNL@?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAg?$AAe?$AAt?$AA?5?$AAd?$AAm?$AAa?$AA?5?$AAi?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AA?5?$AAm?$AAa?$AAs?$AAk@ 100016e0     common_ti_sdmadrv:dmamediator.obj
+ 0001:00000728       ??_C@_1EM@KHPJDBGO@?$AAW?$AAA?$AAR?$AAN?$AA?$CB?$AA?5?$AAD?$AAm?$AAa?$AAM?$AAe?$AAd?$AAi?$AAa?$AAt?$AAo?$AAr?$AA?3?$AA?3?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr@ 10001728     common_ti_sdmadrv:dmamediator.obj
+ 0001:00000778       ??_C@_1KI@KNOHBGEA@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAD?$AAm?$AAa?$AAM?$AAe?$AAd?$AAi?$AAa?$AAt?$AAo?$AAr?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AAH?$AAa?$AAn?$AAd@ 10001778     common_ti_sdmadrv:dmamediator.obj
+ 0001:00000820       ??_C@_1KC@PNLANBE@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAD?$AAm?$AAa?$AAM?$AAe?$AAd?$AAi?$AAa?$AAt?$AAo?$AAr?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AAH?$AAa?$AAn?$AAd@ 10001820     common_ti_sdmadrv:dmamediator.obj
+ 0001:000008c8       ??_C@_1HK@FCPGKFG@?$AAW?$AAA?$AAR?$AAN?$AA?$CB?$AA?5?$AAD?$AAm?$AAa?$AAM?$AAe?$AAd?$AAi?$AAa?$AAt?$AAo?$AAr?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AAH?$AAa?$AAn?$AAd?$AAl@ 100018c8     common_ti_sdmadrv:dmamediator.obj
+ 0001:00000948       ??_C@_1IK@BGLCGHBJ@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAD?$AAm?$AAa?$AAM?$AAe?$AAd?$AAi?$AAa?$AAt?$AAo?$AAr?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?3?$AA?5@ 10001948     common_ti_sdmadrv:dmamediator.obj
+ 0001:000009d8       ??_C@_1HM@KIGJMDBN@?$AAD?$AAm?$AAa?$AAM?$AAe?$AAd?$AAi?$AAa?$AAt?$AAo?$AAr?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?3?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5@ 100019d8     common_ti_sdmadrv:dmamediator.obj
+ 0001:00000b10       ??0SystemDmaController@@QAA@XZ 10001b10 f i common_ti_sdmadrv:dma.obj
+ 0001:00000b68       ?InitializeDevice@@YAHPAUDevice_t@@@Z 10001b68 f   common_ti_sdmadrv:dma.obj
+ 0001:00000cf4       ?DMA_Open@@YAKKKK@Z        10001cf4 f   common_ti_sdmadrv:dma.obj
+ 0001:00000d68       ?DMA_Close@@YAHK@Z         10001d68 f   common_ti_sdmadrv:dma.obj
+ 0001:00000dac       ?DMA_IOControl@@YAHKKPAEK0KPAK@Z 10001dac f   common_ti_sdmadrv:dma.obj
+ 0001:000010b8       DllMain                    100020b8 f   common_ti_sdmadrv:dma.obj
+ 0001:000010e8       ?DMA_Deinit@@YAHK@Z        100020e8 f   common_ti_sdmadrv:dma.obj
+ 0001:00001188       ?DMA_Init@@YAKPBGPBX@Z     10002188 f   common_ti_sdmadrv:dma.obj
+ 0001:0000122c       ?FindUnusedChannel@DmaControllerBase@@IAAHXZ 1000222c f i common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001288       ?DI_FindUnusedInterrupt@SystemDmaController@@IAAHXZ 10002288 f i common_ti_sdmadrv:dmacontroller.obj
+ 0001:000012d8       ?DI_ResetUsedInterrupt@SystemDmaController@@IAAHK@Z 100022d8 f i common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001330       ?EnableInterrupt@DmaMediator@@MAAXHH@Z 10002330 f i common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001364       ?InterruptDone@DmaMediator@@QAAHH@Z 10002364 f i common_ti_sdmadrv:dmacontroller.obj
+ 0001:000013a4       ?Initialize@DmaControllerBase@@UAAHABT_LARGE_INTEGER@@K@Z 100023a4 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001490       ?Uninitialize@DmaControllerBase@@UAAXXZ 10002490 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:000014dc       ?ReserveChannel@DmaControllerBase@@UAAHPAUDmaChannelContext_t@@@Z 100024dc f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:0000153c       ?ReleaseChannel@DmaControllerBase@@UAAXPBUDmaChannelContext_t@@@Z 1000253c f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:000015c0       ?StartInterruptThread@DmaControllerBase@@UAAHKK@Z 100025c0 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:000015d4       ?SetSecondaryInterruptHandler@DmaControllerBase@@QAAHPBUDmaChannelContext_t@@PAXK@Z 100025d4 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001628       ?InterruptDone@DmaControllerBase@@QAAHPBUDmaChannelContext_t@@@Z 10002628 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:0000167c       ?Initialize@SystemDmaController@@UAAHABT_LARGE_INTEGER@@KPAK@Z 1000267c f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:000017c0       ?Uninitialize@SystemDmaController@@UAAXXZ 100027c0 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001804       ?EnableInterrupt@SystemDmaController@@MAAXHH@Z 10002804 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001860       ?GetInterruptMask@SystemDmaController@@UAAHPAXPAK@Z 10002860 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:000018a4       ?ClearInterruptMask@SystemDmaController@@UAAHPAXK@Z 100028a4 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:000018ec       ?DisableStandby@SystemDmaController@@UAAHPAXH@Z 100028ec f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001988       ?DI_ReserveInterrupt@SystemDmaController@@UAAHKPAK00@Z 10002988 f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001a7c       ?DI_ReleaseInterrupt@SystemDmaController@@UAAHK@Z 10002a7c f   common_ti_sdmadrv:dmacontroller.obj
+ 0001:00001ac4       ?InterruptHandler@DmaMediator@@KAKPAX@Z 10002ac4 f   common_ti_sdmadrv:dmamediator.obj
+ 0001:00001b6c       ?SetDmaController@DmaMediator@@QAAXPAXPAVDmaControllerBase@@@Z 10002b6c f   common_ti_sdmadrv:dmamediator.obj
+ 0001:00001b78       ?StopInterruptHandler@DmaMediator@@QAAXXZ 10002b78 f   common_ti_sdmadrv:dmamediator.obj
+ 0001:00001c18       ?ProcessInterrupt@DmaMediator@@MAAHXZ 10002c18 f   common_ti_sdmadrv:dmamediator.obj
+ 0001:00001d14       ?SetEventHandler@DmaMediator@@QAAHHPAXK@Z 10002d14 f   common_ti_sdmadrv:dmamediator.obj
+ 0001:00001ec4       ?Initialize@DmaMediator@@QAAHHQCUOMAP_DMA_LC_REGS@@@Z 10002ec4 f   common_ti_sdmadrv:dmamediator.obj
+ 0001:00001f90       ?Uninitialize@DmaMediator@@QAAXXZ 10002f90 f   common_ti_sdmadrv:dmamediator.obj
+ 0001:00001ff4       ?StartInterruptHandler@DmaMediator@@QAAHKK@Z 10002ff4 f   common_ti_sdmadrv:dmamediator.obj
+ 0001:000020dc       ?ResetChannel@DmaMediator@@QAAHH@Z 100030dc f   common_ti_sdmadrv:dmamediator.obj
+ 0001:00002128       SOCGetDMADevice            10003128 f   OMAP3530_soccfg:soccfg.obj
+ 0001:00002130       GetAddressByDevice         10003130 f   ceddk:CEDDK.dll
+ 0001:00002140       GetIrqByDevice             10003140 f   ceddk:CEDDK.dll
+ 0001:00002150       EnableDeviceClocks         10003150 f   ceddk:CEDDK.dll
+ 0001:00002160       GetDeviceRegistryParams    10003160 f   ceddk:CEDDK.dll
+ 0001:00002170       HalContextUpdateDirtyRegister 10003170 f   ceddk:CEDDK.dll
+ 0001:00002180       MmMapIoSpace               10003180 f   ceddk:CEDDK.dll
+ 0001:00002190       MmUnmapIoSpace             10003190 f   ceddk:CEDDK.dll
+ 0001:000021a0       NKDbgPrintfW               100031a0 f   coredll:COREDLL.dll
+ 0001:000021b0       GetLastError               100031b0 f   coredll:COREDLL.dll
+ 0001:000021c0       InterlockedIncrement       100031c0 f   coredll:COREDLL.dll
+ 0001:000021d0       LocalAlloc                 100031d0 f   coredll:COREDLL.dll
+ 0001:000021e0       LocalFree                  100031e0 f   coredll:COREDLL.dll
+ 0001:000021f0       InterlockedDecrement       100031f0 f   coredll:COREDLL.dll
+ 0001:00002200       SetLastError               10003200 f   coredll:COREDLL.dll
+ 0001:00002210       LeaveCriticalSection       10003210 f   coredll:COREDLL.dll
+ 0001:00002220       EnterCriticalSection       10003220 f   coredll:COREDLL.dll
+ 0001:00002230       DisableThreadLibraryCalls  10003230 f   coredll:COREDLL.dll
+ 0001:00002240       RegisterDbgZones           10003240 f   coredll:COREDLL.dll
+ 0001:00002250       DeleteCriticalSection      10003250 f   coredll:COREDLL.dll
+ 0001:00002260       InitializeCriticalSection  10003260 f   coredll:COREDLL.dll
+ 0001:00002270       EventModify                10003270 f   coredll:COREDLL.dll
+ 0001:00002280       InterruptDone              10003280 f   coredll:COREDLL.dll
+ 0001:00002290       WaitForSingleObject        10003290 f   coredll:COREDLL.dll
+ 0001:000022a0       KernelIoControl            100032a0 f   coredll:COREDLL.dll
+ 0001:000022b0       InterruptDisable           100032b0 f   coredll:COREDLL.dll
+ 0001:000022c0       CloseHandle                100032c0 f   coredll:COREDLL.dll
+ 0001:000022d0       DuplicateHandle            100032d0 f   coredll:COREDLL.dll
+ 0001:000022e0       OpenProcess                100032e0 f   coredll:COREDLL.dll
+ 0001:000022f0       CeSetThreadPriority        100032f0 f   coredll:COREDLL.dll
+ 0001:00002300       CreateThread               10003300 f   coredll:COREDLL.dll
+ 0001:00002310       InterruptInitialize        10003310 f   coredll:COREDLL.dll
+ 0001:00002320       CreateEventW               10003320 f   coredll:COREDLL.dll
+ 0001:00002434       _DllMainCRTStartup         10003434 f   corelib0:pegdmain.obj
+ 0001:00002560       _cexit                     10003560 f   corelib0:cexit.obj
+ 0001:0000257c       _initterm                  1000357c f   corelib0:crt0dat.obj
+ 0001:000025b0       _cinit                     100035b0 f   corelib0:crt0dat.obj
+ 0001:000025e4       __security_init_cookie     100035e4 f   corelib0:seccinit.obj
+ 0001:00002640       ??2@YAPAXI@Z               10003640 f   corelib1:COREDLL.dll
+ 0001:00002650       ??3@YAXPAX@Z               10003650 f   corelib1:COREDLL.dll
+ 0001:00002660       memset                     10003660 f   corelib1:COREDLL.dll
+ 0001:00002670       __C_specific_handler       10003670 f   corelib1:COREDLL.dll
+ 0001:00002680       _XcptFilter                10003680 f   corelib1:COREDLL.dll
+ 0001:00002690       free                       10003690 f   corelib1:COREDLL.dll
+ 0001:000026a0       __security_gen_cookie2     100036a0 f   corelib1:COREDLL.dll
+ 0001:000026b0       InterlockedExchange        100036b0 f   coredll:COREDLL.dll
+ 0001:000026c0       TerminateProcess           100036c0 f   coredll:COREDLL.dll
+ 0001:000026f8       __IMPORT_DESCRIPTOR_CEDDK  100036f8     ceddk:CEDDK.dll
+ 0001:0000270c       __IMPORT_DESCRIPTOR_COREDLL 1000370c     coredll:COREDLL.dll
+ 0001:00002720       __NULL_IMPORT_DESCRIPTOR   10003720     ceddk:CEDDK.dll
+ 0002:00000000       __imp_GetIrqByDevice       10004000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_EnableDeviceClocks   10004004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_GetDeviceRegistryParams 10004008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_HalContextUpdateDirtyRegister 1000400c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_MmMapIoSpace         10004010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_MmUnmapIoSpace       10004014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_GetAddressByDevice   10004018     ceddk:CEDDK.dll
+ 0002:0000001c       \177CEDDK_NULL_THUNK_DATA  1000401c     ceddk:CEDDK.dll
+ 0002:00000020       __imp_NKDbgPrintfW         10004020     coredll:COREDLL.dll
+ 0002:00000024       __imp_GetLastError         10004024     coredll:COREDLL.dll
+ 0002:00000028       __imp_InterlockedIncrement 10004028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_LocalAlloc           1000402c     coredll:COREDLL.dll
+ 0002:00000030       __imp_LocalFree            10004030     coredll:COREDLL.dll
+ 0002:00000034       __imp_InterlockedDecrement 10004034     coredll:COREDLL.dll
+ 0002:00000038       __imp_SetLastError         10004038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_LeaveCriticalSection 1000403c     coredll:COREDLL.dll
+ 0002:00000040       __imp_EnterCriticalSection 10004040     coredll:COREDLL.dll
+ 0002:00000044       __imp_DisableThreadLibraryCalls 10004044     coredll:COREDLL.dll
+ 0002:00000048       __imp_RegisterDbgZones     10004048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_DeleteCriticalSection 1000404c     coredll:COREDLL.dll
+ 0002:00000050       __imp_InitializeCriticalSection 10004050     coredll:COREDLL.dll
+ 0002:00000054       __imp_EventModify          10004054     coredll:COREDLL.dll
+ 0002:00000058       __imp_InterruptDone        10004058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_WaitForSingleObject  1000405c     coredll:COREDLL.dll
+ 0002:00000060       __imp_KernelIoControl      10004060     coredll:COREDLL.dll
+ 0002:00000064       __imp_InterruptDisable     10004064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CloseHandle          10004068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_DuplicateHandle      1000406c     coredll:COREDLL.dll
+ 0002:00000070       __imp_OpenProcess          10004070     coredll:COREDLL.dll
+ 0002:00000074       __imp_CeSetThreadPriority  10004074     coredll:COREDLL.dll
+ 0002:00000078       __imp_CreateThread         10004078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_InterruptInitialize  1000407c     coredll:COREDLL.dll
+ 0002:00000080       __imp_CreateEventW         10004080     coredll:COREDLL.dll
+ 0002:00000084       __imp_??2@YAPAXI@Z         10004084     corelib1:COREDLL.dll
+ 0002:00000088       __imp_??3@YAXPAX@Z         10004088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp_memset               1000408c     corelib1:COREDLL.dll
+ 0002:00000090       __imp___C_specific_handler 10004090     corelib1:COREDLL.dll
+ 0002:00000094       __imp__XcptFilter          10004094     corelib1:COREDLL.dll
+ 0002:00000098       __imp_free                 10004098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp___security_gen_cookie2 1000409c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp_InterlockedExchange  100040a0     coredll:COREDLL.dll
+ 0002:000000a4       __imp_TerminateProcess     100040a4     coredll:COREDLL.dll
+ 0002:000000a8       \177COREDLL_NULL_THUNK_DATA 100040a8     coredll:COREDLL.dll
+ 0002:000000b0       dpCurSettings              100040b0     common_ti_sdmadrv:dma.obj
+ 0002:000004f4       __security_cookie          100044f4     corelib0:seccinit.obj
+ 0002:000004f8       __security_cookie_complement 100044f8     corelib0:seccinit.obj
+ 0002:000004fc       _exitflag                  100044fc     corelib0:cexit.obj
+ 0002:00000500       __onexitend                10004500     <common>
+ 0002:00000504       __onexitbegin              10004504     <common>
+ 0002:00000508       g_pcsExit                  10004508     <common>
+ 0002:0000050c       _pRawDllMain               1000450c     <common>
+
+ entry point at        0001:00002434
+
+ Static symbols
+
+ 0001:00002338       _DllMainCRTStartupHelper   10003338 f   corelib0:pegdmain.obj
+ 0001:00002464       doexit                     10003464 f   corelib0:cexit.obj

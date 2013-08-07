@@ -1,0 +1,529 @@
+ARM macroassembler      Page:1 
+    1 00000000          ; 
+    2 00000000          ;================================================================================ 
+    3 00000000          ;             Texas Instruments OMAP(TM) Platform Software 
+    4 00000000          ; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved. 
+    5 00000000          ; 
+    6 00000000          ; Use of this software is controlled by the terms and conditions found 
+    7 00000000          ; in the license agreement under which this software has been supplied. 
+    8 00000000          ; 
+    9 00000000          ;================================================================================ 
+   10 00000000          ; 
+   11 00000000          ;------------------------------------------------------------------------------- 
+   12 00000000          ; 
+   13 00000000          ;  File:  tlb.s 
+   14 00000000          ; 
+   15 00000000          ; 
+   16 00000000                  INCLUDE kxarm.h 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000          ;++ 
+   14 00000000          ; 
+   15 00000000          ; 
+   16 00000000          ; Module Name: 
+   17 00000000          ; 
+   18 00000000          ;    kxarm.h 
+   19 00000000          ; 
+   20 00000000          ; Abstract: 
+   21 00000000          ; 
+   22 00000000          ;    This is an implementation of the WINCE/ARM Calling Sequence 
+   23 00000000          ;    Specification. 
+   24 00000000          ; 
+   25 00000000          ; Environment: 
+   26 00000000          ;    String Library 
+   27 00000000          ; 
+   28 00000000          ; Revision History: 
+   29 00000000          ;-- 
+   30 00000000            
+   31 00000000                          GBLS    VBar 
+   32 00000000          VBar    SETS    "|" 
+   33 00000000                          GBLL    HaveExceptHandler 
+   34 00000000                          GBLS    AreaName 
+   35 00000000                          GBLS    FuncName 
+   36 00000000                          GBLS    PrologName 
+   37 00000000                          GBLS    FuncEndName 
+   38 00000000                          GBLS    ExceptHandler 
+   39 00000000                          GBLS    ExceptData 
+   40 00000000          AreaName SETS   "|.text|" 
+   41 00000000          HaveExceptHandler SETL {FALSE} 
+   42 00000000            
+   43 00000000                  MACRO 
+   44 00000000                  TEXTAREA 
+   45 00000000                  AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   47 00000000                  MEND 
+   48 00000000            
+   49 00000000              MACRO 
+   50 00000000              THUMBAREA 
+   51 00000000              AREA |.text|,ALIGN=2,CODE,READONLY,THUMB 
+   52 00000000          AreaName SETS "|.text|" 
+   53 00000000              MEND 
+   54 00000000            
+   55 00000000                  MACRO 
+   56 00000000                  STARTUPTEXT 
+   57 00000000                  AREA |.astart|,ALIGN=2,CODE 
+   58 00000000          AreaName SETS "|.astart|" 
+   59 00000000                  MEND 
+   60 00000000            
+   61 00000000                  MACRO 
+   62 00000000                  START_REGION    $NameBegin 
+   63 00000000                  LCLS    TempName 
+   64 00000000          TempName SETS    VBar:CC:"$NameBegin":CC:VBar 
+   65 00000000                  EXPORT  $TempName[DATA] 
+   66 00000000          $TempName 
+   67 00000000                  MEND 
+   68 00000000            
+   69 00000000                  MACRO 
+   70 00000000                  END_REGION              $NameEnd 
+   71 00000000                  LCLS    TempName 
+   72 00000000          TempName SETS    VBar:CC:"$NameEnd":CC:VBar 
+   73 00000000                  EXPORT  $TempName[DATA] 
+   74 00000000          $TempName 
+   75 00000000                  MEND 
+   76 00000000            
+   77 00000000          ; 
+   78 00000000          ;   This macro should be used if the assembly function is in ARM 
+   79 00000000          ; 
+   80 00000000            
+   81 00000000                  MACRO 
+   82 00000000                  NESTED_ARMENTRY $Name 
+   83 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+   84 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+   85 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+   86 00000000                  LCLS    ExceptBit 
+   87 00000000                  IF HaveExceptHandler 
+   88 00000000          ExceptBit   SETS        "0x80000000" 
+   89 00000000                  ELSE 
+   90 00000000          ExceptBit   SETS        "0" 
+   91 00000000                  ENDIF 
+   92 00000000            
+   93 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+   94 00000000                  DCD         $FuncName 
+   95 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+   96 00000000                  AREA $AreaName,CODE,READONLY 
+   97 00000000                  ALIGN   2 
+   98 00000000                  EXPORT  $FuncName [FUNC] 
+   99 00000000                  IF HaveExceptHandler 
+  100 00000000              DCD $ExceptHandler 
+  101 00000000              DCD $ExceptData 
+  102 00000000          HaveExceptHandler SETL {FALSE} 
+  103 00000000                  ENDIF 
+  104 00000000          $FuncName 
+  105 00000000                  ROUT 
+  106 00000000                  MEND 
+  107 00000000            
+  108 00000000          ; 
+  109 00000000          ;   This macro should be used if the assembly function is in THUMB 
+  110 00000000          ; 
+  111 00000000                  MACRO 
+  112 00000000                  NESTED_THUMBENTRY       $Name 
+  113 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  114 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  115 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  116 00000000                  LCLS    ExceptBit 
+  117 00000000                  IF HaveExceptHandler 
+  118 00000000          ExceptBit   SETS        "0x80000000" 
+  119 00000000                  ELSE 
+  120 00000000          ExceptBit   SETS        "0" 
+  121 00000000                  ENDIF 
+  122 00000000            
+  123 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  124 00000000                  DCD         $FuncName 
+  125 00000000              DCD     (($PrologName-$FuncName)/2) :OR: ((($FuncEndName-$FuncName)/2):SHL:8) :OR: $ExceptBit 
+  126 00000000                  AREA $AreaName,CODE,READONLY 
+  127 00000000                  ALIGN   2 
+  128 00000000                  EXPORT  $FuncName [FUNC] 
+  129 00000000                  IF HaveExceptHandler 
+  130 00000000              DCD $ExceptHandler 
+  131 00000000              DCD $ExceptData 
+  132 00000000          HaveExceptHandler SETL {FALSE} 
+  133 00000000                  ENDIF 
+  134 00000000          $FuncName 
+  135 00000000                  ROUT 
+  136 00000000                  MEND 
+  137 00000000            
+  138 00000000          ; 
+  139 00000000          ;   This macro should be used if the assembly function is in ARM 
+  140 00000000          ; 
+  141 00000000                  MACRO 
+  142 00000000                  NESTED_ENTRY    $Name 
+  143 00000000          FuncName    SETS    VBar:CC:"$Name":CC:VBar 
+  144 00000000          PrologName  SETS    VBar:CC:"$Name":CC:"_Prolog":CC:VBar 
+  145 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  146 00000000                  LCLS    ExceptBit 
+  147 00000000                  IF HaveExceptHandler 
+  148 00000000          ExceptBit   SETS        "0x80000000" 
+  149 00000000                  ELSE 
+  150 00000000          ExceptBit   SETS        "0" 
+  151 00000000                  ENDIF 
+  152 00000000            
+  153 00000000                  AREA |.pdata|,ALIGN=2,PDATA 
+  154 00000000                  DCD         $FuncName 
+  155 00000000              DCD     (($PrologName-$FuncName)/4) :OR: ((($FuncEndName-$FuncName)/4):SHL:8) :OR: 0x40000000 :OR: $ExceptBit 
+  156 00000000                  AREA $AreaName,CODE,READONLY 
+  157 00000000                  ALIGN   2 
+  158 00000000                  EXPORT  $FuncName [FUNC] 
+  159 00000000                  IF HaveExceptHandler 
+  160 00000000              DCD $ExceptHandler 
+  161 00000000              DCD $ExceptData 
+  162 00000000          HaveExceptHandler SETL {FALSE} 
+  163 00000000                  ENDIF 
+  164 00000000          $FuncName 
+  165 00000000                  ROUT 
+  166 00000000                  MEND 
+  167 00000000            
+  168 00000000                  MACRO 
+  169 00000000                  PROLOG_END 
+  170 00000000          $PrologName 
+  171 00000000                  MEND 
+  172 00000000            
+  173 00000000                  MACRO 
+  174 00000000                  LEAF_ENTRY      $Name 
+  175 00000000          FuncName SETS    VBar:CC:"$Name":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"$Name":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  $FuncName [FUNC] 
+  180 00000000          $FuncName 
+  181 00000000                  ROUT 
+  182 00000000                  MEND 
+  183 00000000            
+  184 00000000                  MACRO 
+  185 00000000                  ALTERNATE_ENTRY $Name 
+  186 00000000                  LCLS    TempName 
+  187 00000000          TempName SETS    VBar:CC:"$Name":CC:VBar 
+  188 00000000                  EXPORT  $TempName [FUNC] 
+  189 00000000          $TempName 
+  190 00000000                  MEND 
+  191 00000000            
+  192 00000000                  MACRO 
+  193 00000000                  ENTRY_END       $Name 
+  194 00000000          $FuncEndName 
+  195 00000000                  MEND 
+  196 00000000            
+  197 00000000                  MACRO 
+  198 00000000                  EXCEPTION_HANDLER       $Handler 
+  199 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  200 00000000          ExceptData SETS "0" 
+  201 00000000          HaveExceptHandler SETL {TRUE} 
+  202 00000000                  MEND 
+  203 00000000            
+  204 00000000                  MACRO 
+  205 00000000                  EXCEPTION_HANDLER_DATA  $Handler, $HandlerData 
+  206 00000000          ExceptHandler SETS    VBar:CC:"$Handler":CC:VBar 
+  207 00000000          ExceptData SETS    VBar:CC:"$HandlerData":CC:VBar 
+  208 00000000          HaveExceptHandler SETL {TRUE} 
+  209 00000000                  MEND 
+  210 00000000            
+  211 00000000                  MACRO 
+  212 00000000                  EXCEPTION_HANDLER_MILLICODE     $Handler, $HandlerData 
+  213 00000000          ExceptHandler SETS    "$Handler" 
+  214 00000000          ExceptData SETS    "$HandlerData" 
+  215 00000000          HaveExceptHandler SETL {TRUE} 
+  216 00000000                  MEND 
+  217 00000000            
+  218 00000000            
+  219 00000000                  END 
+   17 00000000                  INCLUDE armmacros.s 
+    1 00000000          ; 
+    2 00000000          ; Copyright (c) Microsoft Corporation.  All rights reserved. 
+    3 00000000          ; 
+    4 00000000          ; 
+    5 00000000          ; Use of this sample source code is subject to the terms of the Microsoft 
+    6 00000000          ; license agreement under which you licensed this sample source code. If 
+    7 00000000          ; you did not accept the terms of the license agreement, you are not 
+    8 00000000          ; authorized to use this sample source code. For the terms of the license, 
+    9 00000000          ; please see the license agreement between you and Microsoft or, if applicable, 
+   10 00000000          ; see the LICENSE.RTF on your install media or the root of your tools installation. 
+   11 00000000          ; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES. 
+   12 00000000          ; 
+   13 00000000            
+   14 00000000          ;/*********************************************************************** 
+   15 00000000          ;  Copyright (c) ARM Limited 1998.  All rights reserved. 
+   16 00000000          ; 
+   17 00000000          ; NOTE: The CALL and CALLEQ macros shouldn't be used in OS startup code 
+   18 00000000          ;       before the MMU is enabled since in the Thumbing case it relies 
+   19 00000000          ;       on an absolute address which will be virtual in the case of the 
+   20 00000000          ;       OS code and if the MMU isn't enabled, all branches should be 
+   21 00000000          ;       relative (or a computed physical address). 
+   22 00000000          ; 
+   23 00000000          ;***********************************************************************/ 
+   24 00000000            
+   25 00000000            IF Interworking :LOR: Thumbing 
+   26 00000000            
+   27 00000000              MACRO 
+   28 00000000              CALL $Fn 
+   29 00000000              ldr     r12, =$Fn 
+   30 00000000              mov     lr, pc 
+   31 00000000              bx      r12 
+   32 00000000              MEND 
+   33 00000000            
+   34 00000000              MACRO 
+   35 00000000              CALLEQ $Fn 
+   36 00000000              ldreq   r12, =$Fn 
+   37 00000000              moveq   lr, pc 
+   38 00000000              bxeq    r12 
+   39 00000000              MEND 
+   40 00000000            
+   41 00000000              MACRO 
+   42 00000000              RETURN 
+   43 00000000              bx      lr 
+   44 00000000              MEND 
+   45 00000000            
+   46 00000000              MACRO 
+   47 00000000              RETURN_EQ 
+   48 00000000              bxeq    lr 
+   49 00000000              MEND 
+   50 00000000            
+   51 00000000              MACRO 
+   52 00000000              RETURN_NE 
+   53 00000000              bxne    lr 
+   54 00000000              MEND 
+   55 00000000            
+   56 00000000            ELSE 
+   83 00000000            ENDIF 
+   84 00000000            
+   85 00000000              END  
+   18 00000000            
+   19 00000000                  TEXTAREA 
+   45                           AREA |.text|,ALIGN=2,CODE,READONLY 
+   46 00000000          AreaName SETS "|.text|" 
+   20 00000000            
+   21 00000000          ;------------------------------------------------------------------------------- 
+   22 00000000          ; 
+   23 00000000          ;  Function:  OALClearITLB 
+   24 00000000          ; 
+   25 00000000          ;  Flush and invalidate the instruction TLB 
+   26 00000000          ; 
+   27 00000000                  LEAF_ENTRY OALClearITLB 
+  175 00000000          FuncName SETS    VBar:CC:"OALClearITLB":CC:VBar 
+  176 00000000          PrologName SETS "Invalid Prolog" 
+  177 00000000          FuncEndName SETS    VBar:CC:"OALClearITLB":CC:"_end":CC:VBar 
+  178 00000000                  ALIGN   2 
+  179 00000000                  EXPORT  |OALClearITLB| [FUNC] 
+  180 00000000          |OALClearITLB| 
+  181 00000000                  ROUT 
+   28 00000000            
+   29 00000000 e3a00000         mov     r0, #0 
+   30 00000004 ee080f15         mcr     p15, 0, r0, c8, c5, 0   ; flush instruction TLB 
+   31 00000008            
+   32 00000008 e1a00000         nop 
+   33 0000000c e1a00000         nop 
+   34 00000010            
+   35 00000010                  RETURN 
+   43 00000010 e12fff1e     bx      lr 
+   36 00000014            
+   37 00000014          ;------------------------------------------------------------------------------- 
+   38 00000014          ; 
+   39 00000014          ;  Function:  OALClearITLBEntry 
+   40 00000014          ; 
+   41 00000014          ;  Flush and invalidate an entry in the instruction TLB 
+   42 00000014          ; 
+   43 00000014                  LEAF_ENTRY OALClearITLBEntry 
+  175 00000014          FuncName SETS    VBar:CC:"OALClearITLBEntry":CC:VBar 
+  176 00000014          PrologName SETS "Invalid Prolog" 
+  177 00000014          FuncEndName SETS    VBar:CC:"OALClearITLBEntry":CC:"_end":CC:VBar 
+  178 00000014                  ALIGN   2 
+  179 00000014                  EXPORT  |OALClearITLBEntry| [FUNC] 
+  180 00000014          |OALClearITLBEntry| 
+  181 00000014                  ROUT 
+   44 00000014            
+   45 00000014 ee080f35         mcr     p15, 0, r0, c8, c5, 1   ; flush instruction TLB entry 
+   46 00000018            
+   47 00000018 e1a00000         nop 
+   48 0000001c e1a00000         nop 
+   49 00000020            
+   50 00000020                  RETURN 
+   43 00000020 e12fff1e     bx      lr 
+   51 00000024            
+   52 00000024          ;------------------------------------------------------------------------------- 
+   53 00000024          ; 
+   54 00000024          ;  Function:  OALClearITLBAsid 
+   55 00000024          ; 
+   56 00000024          ;  Flush and invalidate the instruction TLB for a particular process 
+   57 00000024          ; 
+   58 00000024                  LEAF_ENTRY OALClearITLBAsid 
+  175 00000024          FuncName SETS    VBar:CC:"OALClearITLBAsid":CC:VBar 
+  176 00000024          PrologName SETS "Invalid Prolog" 
+  177 00000024          FuncEndName SETS    VBar:CC:"OALClearITLBAsid":CC:"_end":CC:VBar 
+  178 00000024                  ALIGN   2 
+  179 00000024                  EXPORT  |OALClearITLBAsid| [FUNC] 
+  180 00000024          |OALClearITLBAsid| 
+  181 00000024                  ROUT 
+   59 00000024            
+   60 00000024 ee080f55         mcr     p15, 0, r0, c8, c5, 2   ; flush instruction TLB for ASID 
+   61 00000028            
+   62 00000028 e1a00000         nop 
+   63 0000002c e1a00000         nop 
+   64 00000030            
+   65 00000030                  RETURN 
+   43 00000030 e12fff1e     bx      lr 
+   66 00000034            
+   67 00000034          ;------------------------------------------------------------------------------- 
+   68 00000034          ; 
+   69 00000034          ;  Function:  OALClearDTLB 
+   70 00000034          ; 
+   71 00000034          ;  Flush and invalidate the data TLB 
+   72 00000034          ; 
+   73 00000034                  LEAF_ENTRY OALClearDTLB 
+  175 00000034          FuncName SETS    VBar:CC:"OALClearDTLB":CC:VBar 
+  176 00000034          PrologName SETS "Invalid Prolog" 
+  177 00000034          FuncEndName SETS    VBar:CC:"OALClearDTLB":CC:"_end":CC:VBar 
+  178 00000034                  ALIGN   2 
+  179 00000034                  EXPORT  |OALClearDTLB| [FUNC] 
+  180 00000034          |OALClearDTLB| 
+  181 00000034                  ROUT 
+   74 00000034            
+   75 00000034 e3a00000         mov     r0, #0 
+   76 00000038 ee080f16         mcr     p15, 0, r0, c8, c6, 0   ; flush data TLB 
+   77 0000003c            
+   78 0000003c e1a00000         nop 
+   79 00000040 e1a00000         nop 
+   80 00000044            
+   81 00000044                  RETURN 
+   43 00000044 e12fff1e     bx      lr 
+   82 00000048            
+   83 00000048            
+   84 00000048          ;------------------------------------------------------------------------------- 
+   85 00000048          ; 
+   86 00000048          ;  Function:  OALClearDTLBEntry 
+   87 00000048          ; 
+   88 00000048          ;  Flush and invalidate an entry in the data TLB 
+   89 00000048          ; 
+   90 00000048                  LEAF_ENTRY OALClearDTLBEntry 
+  175 00000048          FuncName SETS    VBar:CC:"OALClearDTLBEntry":CC:VBar 
+  176 00000048          PrologName SETS "Invalid Prolog" 
+  177 00000048          FuncEndName SETS    VBar:CC:"OALClearDTLBEntry":CC:"_end":CC:VBar 
+  178 00000048                  ALIGN   2 
+  179 00000048                  EXPORT  |OALClearDTLBEntry| [FUNC] 
+  180 00000048          |OALClearDTLBEntry| 
+  181 00000048                  ROUT 
+   91 00000048            
+   92 00000048 ee080f36         mcr     p15, 0, r0, c8, c6, 1   ; flush data TLB entry 
+   93 0000004c            
+   94 0000004c e1a00000         nop 
+   95 00000050 e1a00000         nop 
+   96 00000054            
+   97 00000054                  RETURN 
+   43 00000054 e12fff1e     bx      lr 
+   98 00000058            
+   99 00000058          ;------------------------------------------------------------------------------- 
+  100 00000058          ; 
+  101 00000058          ;  Function:  OALClearDTLBAsid 
+  102 00000058          ; 
+  103 00000058          ;  Flush and invalidate the data TLB for a particular process 
+  104 00000058          ; 
+  105 00000058                  LEAF_ENTRY OALClearDTLBAsid 
+  175 00000058          FuncName SETS    VBar:CC:"OALClearDTLBAsid":CC:VBar 
+  176 00000058          PrologName SETS "Invalid Prolog" 
+  177 00000058          FuncEndName SETS    VBar:CC:"OALClearDTLBAsid":CC:"_end":CC:VBar 
+  178 00000058                  ALIGN   2 
+  179 00000058                  EXPORT  |OALClearDTLBAsid| [FUNC] 
+  180 00000058          |OALClearDTLBAsid| 
+  181 00000058                  ROUT 
+  106 00000058            
+  107 00000058 ee080f56         mcr     p15, 0, r0, c8, c6, 2   ; flush data TLB for ASID 
+  108 0000005c            
+  109 0000005c e1a00000         nop 
+  110 00000060 e1a00000         nop 
+  111 00000064            
+  112 00000064                  RETURN 
+   43 00000064 e12fff1e     bx      lr 
+  113 00000068            
+  114 00000068          ;------------------------------------------------------------------------------- 
+  115 00000068          ; 
+  116 00000068          ;  Function:  OALClearTLB 
+  117 00000068          ; 
+  118 00000068          ;  Flush and invalidate the unified TLB 
+  119 00000068          ; 
+  120 00000068                  LEAF_ENTRY OALClearTLB 
+  175 00000068          FuncName SETS    VBar:CC:"OALClearTLB":CC:VBar 
+  176 00000068          PrologName SETS "Invalid Prolog" 
+  177 00000068          FuncEndName SETS    VBar:CC:"OALClearTLB":CC:"_end":CC:VBar 
+  178 00000068                  ALIGN   2 
+  179 00000068                  EXPORT  |OALClearTLB| [FUNC] 
+  180 00000068          |OALClearTLB| 
+  181 00000068                  ROUT 
+  121 00000068            
+  122 00000068 e3a00000         mov     r0, #0 
+  123 0000006c ee080f17         mcr     p15, 0, r0, c8, c7, 0   ; flush unified TLB 
+  124 00000070            
+  125 00000070 e3a02000         mov     r2, #0 
+  126 00000074 ee072f9a         mcr     p15, 0, r2, c7, c10, 4      ; data sync barrier operation 
+  127 00000078 ee072f95         mcr     p15, 0, r2, c7, c5, 4       ; instr sync barrier operation 
+  128 0000007c            
+  129 0000007c e1a00000         nop 
+  130 00000080 e1a00000         nop 
+  131 00000084            
+  132 00000084                  RETURN 
+   43 00000084 e12fff1e     bx      lr 
+  133 00000088            
+  134 00000088            
+  135 00000088          ;------------------------------------------------------------------------------- 
+  136 00000088          ; 
+  137 00000088          ;  Function:  OALClearTLBEntry 
+  138 00000088          ; 
+  139 00000088          ;  Flush and invalidate an entry in the unified TLB 
+  140 00000088          ; 
+  141 00000088                  LEAF_ENTRY OALClearTLBEntry 
+  175 00000088          FuncName SETS    VBar:CC:"OALClearTLBEntry":CC:VBar 
+  176 00000088          PrologName SETS "Invalid Prolog" 
+  177 00000088          FuncEndName SETS    VBar:CC:"OALClearTLBEntry":CC:"_end":CC:VBar 
+  178 00000088                  ALIGN   2 
+  179 00000088                  EXPORT  |OALClearTLBEntry| [FUNC] 
+  180 00000088          |OALClearTLBEntry| 
+  181 00000088                  ROUT 
+  142 00000088            
+  143 00000088 ee080f37         mcr     p15, 0, r0, c8, c7, 1   ; flush unified TLB entry 
+  144 0000008c            
+  145 0000008c e3a02000         mov     r2, #0 
+  146 00000090 ee072f9a         mcr     p15, 0, r2, c7, c10, 4      ; data sync barrier operation 
+  147 00000094 ee072f95         mcr     p15, 0, r2, c7, c5, 4       ; instr sync barrier operation 
+  148 00000098            
+  149 00000098 e1a00000         nop 
+  150 0000009c e1a00000         nop 
+  151 000000a0            
+  152 000000a0                  RETURN 
+   43 000000a0 e12fff1e     bx      lr 
+  153 000000a4            
+  154 000000a4          ;------------------------------------------------------------------------------- 
+  155 000000a4          ; 
+  156 000000a4          ;  Function:  OALClearTLBAsid 
+  157 000000a4          ; 
+  158 000000a4          ;  Flush and invalidate the unified TLB for a particular process 
+  159 000000a4          ; 
+  160 000000a4                  LEAF_ENTRY OALClearTLBAsid 
+  175 000000a4          FuncName SETS    VBar:CC:"OALClearTLBAsid":CC:VBar 
+  176 000000a4          PrologName SETS "Invalid Prolog" 
+  177 000000a4          FuncEndName SETS    VBar:CC:"OALClearTLBAsid":CC:"_end":CC:VBar 
+  178 000000a4                  ALIGN   2 
+  179 000000a4                  EXPORT  |OALClearTLBAsid| [FUNC] 
+  180 000000a4          |OALClearTLBAsid| 
+  181 000000a4                  ROUT 
+  161 000000a4            
+  162 000000a4 ee080f57         mcr     p15, 0, r0, c8, c7, 2   ; flush unified TLB for ASID 
+  163 000000a8            
+  164 000000a8 e3a02000         mov     r2, #0 
+  165 000000ac ee072f9a         mcr     p15, 0, r2, c7, c10, 4      ; data sync barrier operation 
+  166 000000b0 ee072f95         mcr     p15, 0, r2, c7, c5, 4       ; instr sync barrier operation 
+  167 000000b4            
+  168 000000b4 e1a00000         nop 
+  169 000000b8 e1a00000         nop 
+  170 000000bc            
+  171 000000bc                  RETURN 
+   43 000000bc e12fff1e     bx      lr 
+  172 000000c0            
+  173 000000c0          ;------------------------------------------------------------------------------- 
+  174 000000c0            
+  175 000000c0                  END 
+Assembly terminated, errors: 0, warnings: 0 

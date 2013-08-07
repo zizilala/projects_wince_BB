@@ -1,0 +1,12 @@
+OBJECTS=\
+    obj\ARMV4I\retail\wavemain.obj\
+    obj\ARMV4I\retail\devctxt.obj\
+    obj\ARMV4I\retail\strmctxt.obj\
+    obj\ARMV4I\retail\input.obj\
+    obj\ARMV4I\retail\output.obj\
+    obj\ARMV4I\retail\midistrm.obj\
+    obj\ARMV4I\retail\midinote.obj\
+    obj\ARMV4I\retail\mixerdrv.obj\
+    obj\ARMV4I\retail\hwctxt.obj\
+    obj\ARMV4I\retail\aic23.obj
+

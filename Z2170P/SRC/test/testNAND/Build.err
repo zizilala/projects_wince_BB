@@ -1,0 +1,2 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [01:0000000039:ERRORE] C:\WINCE600\PLATFORM\EVM_OMAP3530\SRC\test\testNAND\testapp\.\nandtest.c : error C2220: warning treated as error - no 'object' file generated

@@ -1,0 +1,31 @@
+!if 0
+Copyright (c) MPC Data Limited 2007. All rights reserved.
+Copyright (c) Texas Instruments 2009. All rights reserved.
+!endif
+
+
+SYNCHRONIZE_DRAIN=1
+
+TARGETNAME=cetk_fstest
+TARGETTYPE=DYNLINK
+RELEASETYPE=PLATFORM
+DLLENTRY=DllMain
+
+_COMMONPUBROOT=$(_PROJECTROOT)\cesysgen
+__PROJROOT=$(_PROJECTROOT)
+_ISVINCPATH=$(_WINCEROOT)\public\common\sdk\inc;$(_WINCEROOT)\public\common\ddk\inc;
+_OEMINCPATH=$(_WINCEROOT)\public\common\oak\inc;$(_WINCEROOT)\public\common\sdk\inc;$(_WINCEROOT)\public\common\ddk\inc;
+
+CDEFINES=$(CDEFINES) -DCETK_FSTEST_EXPORTS
+
+INCLUDES= \
+    $(_PB_INSTALL_ROOT)\CEPB\WCETK\TUX\INC;$(INCLUDES) \
+
+TARGETLIBS= \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_PB_INSTALL_ROOT)\CEPB\WCETK\TUX\LIB\$(_TGTCPU)\RETAIL\kato.lib \
+
+SOURCES= \
+    main.cpp \
+    globals.cpp \
+    fstest.cpp \

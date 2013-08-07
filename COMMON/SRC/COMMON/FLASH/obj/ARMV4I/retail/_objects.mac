@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\flash.obj\
+    obj\ARMV4I\retail\dump.obj
+

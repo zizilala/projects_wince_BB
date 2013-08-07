@@ -1,0 +1,6 @@
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\sysctrl]
+   "Prefix"="SYS"
+   "Dll"="sysctrl.dll"
+   "Index"=dword:1
+   "Order"=dword:3    

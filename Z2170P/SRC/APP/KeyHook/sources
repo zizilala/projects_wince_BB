@@ -1,0 +1,16 @@
+TARGETNAME=KeyHook
+
+TARGETTYPE=PROGRAM
+
+RELEASETYPE=PLATFORM
+
+
+TARGETLIBS= \
+	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib\
+	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\commctrl.lib
+	
+
+SOURCES= KeyHookMain.cpp\
+         KBHook.cpp\
+         KeyHook.rc
+         

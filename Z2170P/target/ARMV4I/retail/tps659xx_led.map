@@ -1,0 +1,166 @@
+ tps659xx_led
+
+ Timestamp is 51ede8ca (Tue Jul 23 10:22:02 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000d4cH .rdata                  CODE
+ 0001:00000d6c 00000029H .rdata$debug            CODE
+ 0001:00000d98 00000e78H .text                   CODE
+ 0001:00001c10 00000014H .xdata                  CODE
+ 0001:00001c24 00000028H .idata$2                CODE
+ 0001:00001c4c 00000014H .idata$3                CODE
+ 0001:00001c60 00000070H .idata$4                CODE
+ 0001:00001cd0 00000016H .idata$6                CODE
+ 0001:00001cf0 00000098H .edata                  CODE
+ 0002:00000000 00000070H .idata$5                DATA
+ 0002:00000070 0000044cH .data                   DATA
+ 0002:000004bc 00000014H .bss                    DATA
+ 0003:00000000 000000a8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BC@KCONIAEJ@?$AAM?$AAa?$AAx?$AAV?$AAa?$AAl?$AAu?$AAe?$AA?$AA@ 1000103c     TPS659xx_tled:tled.obj
+ 0001:00000050       ??_C@_1BC@DJFAEHO@?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 10001050     TPS659xx_tled:tled.obj
+ 0001:00000064       DEVICE_IFC_TWL_GUID        10001064     TPS659xx_tled:tled.obj
+ 0001:00000074       DEVICE_IFC_TLED_GUID       10001074     TPS659xx_tled:tled.obj
+ 0001:000000b8       ??_C@_1FC@KIBBCEMF@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?9?$AAD?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAL?$AAe?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ@ 100010b8     TPS659xx_tled:tled.obj
+ 0001:00000110       ??_C@_1IG@HIEGLENJ@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAD?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAL?$AAe?$AAd?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd@ 10001110     TPS659xx_tled:tled.obj
+ 0001:00000198       ??_C@_1EG@IEICPNAO@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CL?$AAD?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAL?$AAe?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ@ 10001198     TPS659xx_tled:tled.obj
+ 0001:000001e0       ??_C@_1FC@INEJBAFK@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?9?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AAL?$AAe?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ@ 100011e0     TPS659xx_tled:tled.obj
+ 0001:00000238       ??_C@_1IE@OKJIPLH@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AAL?$AAe?$AAd?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5@ 10001238     TPS659xx_tled:tled.obj
+ 0001:000002c0       ??_C@_1EG@JCFOEOMN@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?$CL?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AAL?$AAe?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ@ 100012c0     TPS659xx_tled:tled.obj
+ 0001:00000308       ??_C@_1FE@KPHHIKFB@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?9?$AAS?$AAe?$AAt?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 10001308     TPS659xx_tled:tled.obj
+ 0001:00000360       ??_C@_1HA@KJJINLKN@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAS?$AAe?$AAt?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr@ 10001360     TPS659xx_tled:tled.obj
+ 0001:000003d0       ??_C@_1FI@OGEMEIDB@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAS?$AAe?$AAt?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi@ 100013d0     TPS659xx_tled:tled.obj
+ 0001:00000428       ??_C@_1EI@FGMHDLBO@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?$CL?$AAS?$AAe?$AAt?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 10001428     TPS659xx_tled:tled.obj
+ 0001:00000470       ??_C@_1FG@EHNAOLKP@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?9?$AAS?$AAe?$AAt?$AAD?$AAu?$AAt?$AAy?$AAC?$AAy?$AAc?$AAl?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8@ 10001470     TPS659xx_tled:tled.obj
+ 0001:000004c8       ??_C@_1HE@MFHCMAHK@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAS?$AAe?$AAt?$AAD?$AAu?$AAt?$AAy?$AAC?$AAy?$AAc?$AAl?$AAe?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAc?$AAo@ 100014c8     TPS659xx_tled:tled.obj
+ 0001:00000540       ??_C@_1HG@DMKAMPOG@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAS?$AAe?$AAt?$AAD?$AAu?$AAt?$AAy?$AAC?$AAy?$AAc?$AAl?$AAe?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAi?$AAn?$AAv?$AAa@ 10001540     TPS659xx_tled:tled.obj
+ 0001:000005b8       ??_C@_1EK@JLBPEEOC@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CL?$AAS?$AAe?$AAt?$AAD?$AAu?$AAt?$AAy?$AAC?$AAy?$AAc?$AAl?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8@ 100015b8     TPS659xx_tled:tled.obj
+ 0001:00000608       ??_C@_1EE@EBEIDAHP@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?9?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN@ 10001608     TPS659xx_tled:tled.obj
+ 0001:00000650       ??_C@_1IE@MCMOOGII@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5@ 10001650     TPS659xx_tled:tled.obj
+ 0001:000006d8       ??_C@_1IE@LFFADEHI@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5@ 100016d8     TPS659xx_tled:tled.obj
+ 0001:00000760       ??_C@_1HK@OPLBNBPM@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5@ 10001760     TPS659xx_tled:tled.obj
+ 0001:000007e0       ??_C@_1EE@MDGFIIN@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?5?$AA?$CL?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN@ 100017e0     TPS659xx_tled:tled.obj
+ 0001:00000824       ??_C@_1CO@MICKMIJI@?$AA?9?$AAT?$AAL?$AAD?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AA?$CI?$AAr?$AAc?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001824     TPS659xx_tled:tled.obj
+ 0001:00000858       ??_C@_1JM@HHLGIFC@?$AAT?$AAW?$AAL?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAT?$AAL?$AAD?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAC?$AAa?$AAn?$AA?8?$AAt?$AA?5@ 10001858     TPS659xx_tled:tled.obj
+ 0001:000008f4       ??_C@_1CM@OJJDFLCC@?$AA?$CL?$AAT?$AAL?$AAD?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 100018f4     TPS659xx_tled:tled.obj
+ 0001:00000920       ??_C@_1JA@EFLDOMEG@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAT?$AAL?$AAD?$AA_?$AAO?$AAp?$AAe?$AAn?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAa@ 10001920     TPS659xx_tled:tled.obj
+ 0001:000009b0       ??_C@_1JA@LCEIAHHD@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAT?$AAL?$AAD?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAr?$AAe?$AAf?$AAC?$AAo?$AAu?$AAn@ 100019b0     TPS659xx_tled:tled.obj
+ 0001:00000a40       ??_C@_1GI@LEACMMDI@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAT?$AAL?$AAD?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?3?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr?$AAe?$AAc?$AAt?$AA?5@ 10001a40     TPS659xx_tled:tled.obj
+ 0001:00000aa8       ??_C@_1OG@JPDIKJHA@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAT?$AAL?$AAD?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?3?$AA?5?$AAI?$AAO?$AAC?$AAT?$AAL?$AA_?$AAD?$AAD?$AAK?$AA_@ 10001aa8     TPS659xx_tled:tled.obj
+ 0001:00000b90       ??_C@_1CI@EECKNKAE@?$AA?9?$AAT?$AAL?$AAD?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?$CI?$AAr?$AAc?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001b90     TPS659xx_tled:tled.obj
+ 0001:00000bb8       ??_C@_1GI@OFBLHIJO@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAT?$AAL?$AAD?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAT?$AAr?$AAi@ 10001bb8     TPS659xx_tled:tled.obj
+ 0001:00000c20       ??_C@_1HO@KHCEBHIB@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAT?$AAL?$AAD?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe@ 10001c20     TPS659xx_tled:tled.obj
+ 0001:00000ca0       ??_C@_1DA@GLLBLDJ@?$AA?$CL?$AAT?$AAL?$AAD?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?$CI?$AA?$CF?$AAs?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001ca0     TPS659xx_tled:tled.obj
+ 0001:00000d60       ??_C@_1M@MOBNNOLN@?$AAT?$AAW?$AAL?$AA1?$AA?3?$AA?$AA@ 10001d60     triton_device:twl_access.obj
+ 0001:00000d98       ?DisableLed@@YAHPAUDevice_t@@K@Z 10001d98 f   TPS659xx_tled:tled.obj
+ 0001:00000e3c       ?EnableLed@@YAHPAUDevice_t@@K@Z 10001e3c f   TPS659xx_tled:tled.obj
+ 0001:00000ee0       ?SetChannel@@YAHKK@Z       10001ee0 f   TPS659xx_tled:tled.obj
+ 0001:00000f9c       ?SetDutyCycle@@YAHKK@Z     10001f9c f   TPS659xx_tled:tled.obj
+ 0001:000010c8       ?InitializeDevice@@YAHPAUDevice_t@@@Z 100020c8 f   TPS659xx_tled:tled.obj
+ 0001:00001204       ?TLD_Deinit@@YAHK@Z        10002204 f   TPS659xx_tled:tled.obj
+ 0001:000012c0       ?TLD_Open@@YAKKKK@Z        100022c0 f   TPS659xx_tled:tled.obj
+ 0001:0000134c       ?TLD_Close@@YAHK@Z         1000234c f   TPS659xx_tled:tled.obj
+ 0001:000013a8       ?TLD_IOControl@@YAHKKPAEK0KPAK@Z 100023a8 f   TPS659xx_tled:tled.obj
+ 0001:000014f0       DllMain                    100024f0 f   TPS659xx_tled:tled.obj
+ 0001:00001520       ?TLD_Init@@YAKPBGPBX@Z     10002520 f   TPS659xx_tled:tled.obj
+ 0001:00001618       TWLOpen                    10002618 f   triton_device:twl_access.obj
+ 0001:000016d8       TWLWriteRegs               100026d8 f   triton_device:twl_access.obj
+ 0001:00001760       GetDeviceRegistryParams    10002760 f   ceddk:CEDDK.dll
+ 0001:00001770       __GetUserKData             10002770 f   coredll:COREDLL.dll
+ 0001:00001780       NKDbgPrintfW               10002780 f   coredll:COREDLL.dll
+ 0001:00001790       LocalFree                  10002790 f   coredll:COREDLL.dll
+ 0001:000017a0       DeleteCriticalSection      100027a0 f   coredll:COREDLL.dll
+ 0001:000017b0       CloseHandle                100027b0 f   coredll:COREDLL.dll
+ 0001:000017c0       InterlockedIncrement       100027c0 f   coredll:COREDLL.dll
+ 0001:000017d0       LocalAlloc                 100027d0 f   coredll:COREDLL.dll
+ 0001:000017e0       InterlockedDecrement       100027e0 f   coredll:COREDLL.dll
+ 0001:000017f0       CeSafeCopyMemory           100027f0 f   coredll:COREDLL.dll
+ 0001:00001800       SetLastError               10002800 f   coredll:COREDLL.dll
+ 0001:00001810       GetCallerProcess           10002810 f   coredll:COREDLL.dll
+ 0001:00001820       DisableThreadLibraryCalls  10002820 f   coredll:COREDLL.dll
+ 0001:00001830       RegisterDbgZones           10002830 f   coredll:COREDLL.dll
+ 0001:00001840       InitializeCriticalSection  10002840 f   coredll:COREDLL.dll
+ 0001:00001850       DeviceIoControl            10002850 f   coredll:COREDLL.dll
+ 0001:00001860       CreateFileW                10002860 f   coredll:COREDLL.dll
+ 0001:00001870       SetFilePointer             10002870 f   coredll:COREDLL.dll
+ 0001:00001880       WriteFile                  10002880 f   coredll:COREDLL.dll
+ 0001:00001994       _DllMainCRTStartup         10002994 f   corelib0:pegdmain.obj
+ 0001:00001ac0       _cexit                     10002ac0 f   corelib0:cexit.obj
+ 0001:00001adc       _initterm                  10002adc f   corelib0:crt0dat.obj
+ 0001:00001b10       _cinit                     10002b10 f   corelib0:crt0dat.obj
+ 0001:00001b44       __security_init_cookie     10002b44 f   corelib0:seccinit.obj
+ 0001:00001ba0       memcmp                     10002ba0 f   corelib1:COREDLL.dll
+ 0001:00001bb0       _XcptFilter                10002bb0 f   corelib1:COREDLL.dll
+ 0001:00001bc0       __C_specific_handler       10002bc0 f   corelib1:COREDLL.dll
+ 0001:00001bd0       free                       10002bd0 f   corelib1:COREDLL.dll
+ 0001:00001be0       __security_gen_cookie2     10002be0 f   corelib1:COREDLL.dll
+ 0001:00001bf0       InterlockedExchange        10002bf0 f   coredll:COREDLL.dll
+ 0001:00001c00       TerminateProcess           10002c00 f   coredll:COREDLL.dll
+ 0001:00001c24       __IMPORT_DESCRIPTOR_CEDDK  10002c24     ceddk:CEDDK.dll
+ 0001:00001c38       __IMPORT_DESCRIPTOR_COREDLL 10002c38     coredll:COREDLL.dll
+ 0001:00001c4c       __NULL_IMPORT_DESCRIPTOR   10002c4c     ceddk:CEDDK.dll
+ 0002:00000000       __imp_GetDeviceRegistryParams 10003000     ceddk:CEDDK.dll
+ 0002:00000004       \177CEDDK_NULL_THUNK_DATA  10003004     ceddk:CEDDK.dll
+ 0002:00000008       __imp___GetUserKData       10003008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_NKDbgPrintfW         1000300c     coredll:COREDLL.dll
+ 0002:00000010       __imp_LocalFree            10003010     coredll:COREDLL.dll
+ 0002:00000014       __imp_DeleteCriticalSection 10003014     coredll:COREDLL.dll
+ 0002:00000018       __imp_CloseHandle          10003018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_InterlockedIncrement 1000301c     coredll:COREDLL.dll
+ 0002:00000020       __imp_LocalAlloc           10003020     coredll:COREDLL.dll
+ 0002:00000024       __imp_InterlockedDecrement 10003024     coredll:COREDLL.dll
+ 0002:00000028       __imp_CeSafeCopyMemory     10003028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_SetLastError         1000302c     coredll:COREDLL.dll
+ 0002:00000030       __imp_GetCallerProcess     10003030     coredll:COREDLL.dll
+ 0002:00000034       __imp_DisableThreadLibraryCalls 10003034     coredll:COREDLL.dll
+ 0002:00000038       __imp_RegisterDbgZones     10003038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_InitializeCriticalSection 1000303c     coredll:COREDLL.dll
+ 0002:00000040       __imp_DeviceIoControl      10003040     coredll:COREDLL.dll
+ 0002:00000044       __imp_CreateFileW          10003044     coredll:COREDLL.dll
+ 0002:00000048       __imp_SetFilePointer       10003048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_WriteFile            1000304c     coredll:COREDLL.dll
+ 0002:00000050       __imp_memcmp               10003050     corelib1:COREDLL.dll
+ 0002:00000054       __imp__XcptFilter          10003054     corelib1:COREDLL.dll
+ 0002:00000058       __imp___C_specific_handler 10003058     corelib1:COREDLL.dll
+ 0002:0000005c       __imp_free                 1000305c     corelib1:COREDLL.dll
+ 0002:00000060       __imp___security_gen_cookie2 10003060     corelib1:COREDLL.dll
+ 0002:00000064       __imp_InterlockedExchange  10003064     coredll:COREDLL.dll
+ 0002:00000068       __imp_TerminateProcess     10003068     coredll:COREDLL.dll
+ 0002:0000006c       \177COREDLL_NULL_THUNK_DATA 1000306c     coredll:COREDLL.dll
+ 0002:00000070       dpCurSettings              10003070     TPS659xx_tled:tled.obj
+ 0002:000004b4       __security_cookie          100034b4     corelib0:seccinit.obj
+ 0002:000004b8       __security_cookie_complement 100034b8     corelib0:seccinit.obj
+ 0002:000004bc       _exitflag                  100034bc     corelib0:cexit.obj
+ 0002:000004c0       __onexitend                100034c0     <common>
+ 0002:000004c4       __onexitbegin              100034c4     <common>
+ 0002:000004c8       g_pcsExit                  100034c8     <common>
+ 0002:000004cc       _pRawDllMain               100034cc     <common>
+
+ entry point at        0001:00001994
+
+ Static symbols
+
+ 0001:00001898       _DllMainCRTStartupHelper   10002898 f   corelib0:pegdmain.obj
+ 0001:000019c4       doexit                     100029c4 f   corelib0:cexit.obj

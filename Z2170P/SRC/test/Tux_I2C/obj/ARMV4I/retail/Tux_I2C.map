@@ -1,0 +1,210 @@
+ Tux_I2C
+
+ Timestamp is 51dcc2a1 (Wed Jul 10 10:10:41 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000e34H .rdata                  CODE
+ 0001:00000e54 00000024H .rdata$debug            CODE
+ 0001:00000e78 0000145cH .text                   CODE
+ 0001:000022d4 00000020H .xdata                  CODE
+ 0001:000022f4 00000028H .idata$2                CODE
+ 0001:0000231c 00000014H .idata$3                CODE
+ 0001:00002330 00000088H .idata$4                CODE
+ 0001:000023b8 00000086H .idata$6                CODE
+ 0001:00002440 00000048H .edata                  CODE
+ 0002:00000000 00000088H .idata$5                DATA
+ 0002:00000088 00000074H .data                   DATA
+ 0002:000000fc 0000003cH .bss                    DATA
+ 0003:00000000 000000b8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_15JNBOKNOG@?$AA?$AN?$AA?6?$AA?$AA@ 1000103c     Tux_I2C.obj
+ 0001:00000044       ??_C@_1CC@OCNIMJBA@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAn?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?5?$AA?6?$AA?$AA@ 10001044     Tux_I2C.obj
+ 0001:00000068       ??_C@_1EC@KAHLNJHF@?$AAI?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$EA?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AAV?$AAa?$AAl?$AAu?$AAe?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAV?$AAa?$AAl?$AAi?$AAd?$AA?5@ 10001068     Tux_I2C.obj
+ 0001:000000b0       ??_C@_1EG@PNOECICE@?$AAC?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?5?$AAL?$AAi?$AAn?$AAe?$AA?5?$AAO?$AAp?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?5?$AAa?$AAr?$AAe?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd@ 100010b0     Tux_I2C.obj
+ 0001:000000f8       ??_C@_1BI@NHEFPFMB@?$AAr?$AAe?$AAt?$AAu?$AAr?$AAn?$AA?5?$AAT?$AAR?$AAU?$AAE?$AA?$AA@ 100010f8     Tux_I2C.obj
+ 0001:00000110       ??_C@_1DE@BECLEOD@?$AA0?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA_?$AAt?$AAc?$AAs?$AAl?$AAe?$AAn?$AA?$CI?$AAl?$AAp?$AAs?$AAz?$AAC?$AAm?$AAd?$AAL?$AAi?$AAn?$AAe?$AA?$CJ?$AA?$AA@ 10001110     Tux_I2C.obj
+ 0001:00000144       ??_C@_1DI@EMOMAECC@?$AAT?$AAu?$AAx?$AA_?$AAP?$AAo?$AAw?$AAe?$AAr?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAm?$AAe?$AAn?$AAt?$AAT?$AAe?$AAs?$AAt?$AA?4?$AAc?$AAp?$AAp?$AA?$AA@ 10001144     Tux_I2C.obj
+ 0001:00000180       ??_C@_1GG@IAPCIIAO@?$AAF?$AAA?$AAI?$AAL?$AA?5?$AAi?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$EA?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5?$AAC?$AAO?$AAN?$AAD?$AAI?$AAT?$AAI?$AAO?$AAN?$AA?$CI@ 10001180     Tux_I2C.obj
+ 0001:000001e8       ??_C@_1EK@DIIDMDAD@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAE?$AAX?$AAC?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa@ 100011e8     Tux_I2C.obj
+ 0001:00000234       ??_C@_1CI@KACAOMDA@?$AAE?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAo?$AAc?$AAc?$AAu?$AAr?$AAr?$AAe?$AAd?$AA?$CB?$AA?$AA@ 10001234     Tux_I2C.obj
+ 0001:00000260       ??_C@_1EC@KDFHODIP@?$AAE?$AAN?$AAD?$AA?5?$AAT?$AAE?$AAS?$AAT?$AA?3?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AA?$CF?$AAs?$AA?0?$AA?5?$AAT?$AAi?$AAm?$AAe?$AA?$DN?$AA?$CF?$AAu?$AA?4?$AA?$CF?$AA0?$AA3?$AAu@ 10001260     Tux_I2C.obj
+ 0001:000002a4       ??_C@_1BA@FGBMDHOA@?$AAA?$AAB?$AAO?$AAR?$AAT?$AAE?$AAD?$AA?$AA@ 100012a4     Tux_I2C.obj
+ 0001:000002b4       ??_C@_1O@GLIHGOJN@?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AA@ 100012b4     Tux_I2C.obj
+ 0001:000002c4       ??_C@_1O@GAOACLOB@?$AAP?$AAA?$AAS?$AAS?$AAE?$AAD?$AA?$AA@ 100012c4     Tux_I2C.obj
+ 0001:000002d4       ??_C@_1BA@PGEPKIHK@?$AAS?$AAK?$AAI?$AAP?$AAP?$AAE?$AAD?$AA?$AA@ 100012d4     Tux_I2C.obj
+ 0001:000002e8       ??_C@_1EI@LEDNBHEI@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAE?$AAN?$AAD?$AA_?$AAT?$AAE?$AAS?$AAT?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa?$AAl@ 100012e8     Tux_I2C.obj
+ 0001:00000330       ??_C@_1EM@FHMCMOKK@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAB?$AAE?$AAG?$AAI?$AAN?$AA_?$AAT?$AAE?$AAS?$AAT?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc@ 10001330     Tux_I2C.obj
+ 0001:00000380       ??_C@_1EM@FOHJMLNM@?$AAB?$AAE?$AAG?$AAI?$AAN?$AA?5?$AAT?$AAE?$AAS?$AAT?$AA?3?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?0?$AA?5?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAs?$AA?$DN?$AA?$CF?$AAu?$AA?0?$AA?5?$AAS?$AAe@ 10001380     Tux_I2C.obj
+ 0001:000003d0       ??_C@_1EK@GHDGMMPI@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAE?$AAN?$AAD?$AA_?$AAG?$AAR?$AAO?$AAU?$AAP?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa@ 100013d0     Tux_I2C.obj
+ 0001:0000041c       ??_C@_1CO@NLDHHJBD@?$AAE?$AAN?$AAD?$AA?5?$AAG?$AAR?$AAO?$AAU?$AAP?$AA?3?$AA?5?$AAT?$AAu?$AAx?$AA_?$AAI?$AA2?$AAC?$AA?4?$AAD?$AAL?$AAL?$AA?$AA@ 1000141c     Tux_I2C.obj
+ 0001:00000450       ??_C@_1EO@PEHBNEBJ@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAB?$AAE?$AAG?$AAI?$AAN?$AA_?$AAG?$AAR?$AAO?$AAU?$AAP?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5@ 10001450     Tux_I2C.obj
+ 0001:000004a0       ??_C@_1DC@LCEIAIPG@?$AAB?$AAE?$AAG?$AAI?$AAN?$AA?5?$AAG?$AAR?$AAO?$AAU?$AAP?$AA?3?$AA?5?$AAT?$AAu?$AAx?$AA_?$AAI?$AA2?$AAC?$AA?4?$AAD?$AAL?$AAL?$AA?$AA@ 100014a0     Tux_I2C.obj
+ 0001:000004d8       ??_C@_1EO@MABEFEBO@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAS?$AAT?$AAO?$AAP?$AA_?$AAS?$AAC?$AAR?$AAI?$AAP?$AAT?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5@ 100014d8     Tux_I2C.obj
+ 0001:00000528       ??_C@_1FA@IPECFONB@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAS?$AAT?$AAA?$AAR?$AAT?$AA_?$AAS?$AAC?$AAR?$AAI?$AAP?$AAT?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ@ 10001528     Tux_I2C.obj
+ 0001:00000578       ??_C@_1EI@BIFLJGHA@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAR?$AAE?$AAG?$AAI?$AAS?$AAT?$AAE?$AAR?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa?$AAl@ 10001578     Tux_I2C.obj
+ 0001:000005c0       ??_C@_1DM@PBGNCCNB@?$AAR?$AAe?$AAt?$AAu?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAf?$AAr?$AAo?$AAm?$AA?5?$AAS?$AAP?$AAM?$AA_?$AAS?$AAH?$AAE?$AAL?$AAL?$AA_?$AAI?$AAN?$AAF?$AAO?$AA?$AA@ 100015c0     Tux_I2C.obj
+ 0001:00000600       ??_C@_1IC@NMLGEFPE@?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?5?$AAi?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$EA?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5?$AA?5?$AAN?$AAo?$AA?5?$AAc?$AAo?$AAm@ 10001600     Tux_I2C.obj
+ 0001:00000688       ??_C@_1GA@JBHDKOEF@?$AAF?$AAA?$AAI?$AAL?$AA?5?$AAi?$AAn?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$EA?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AAn?$AA?8?$AAt?$AA?5?$AAs@ 10001688     Tux_I2C.obj
+ 0001:000006e8       ??_C@_1EM@LCENFKIH@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAS?$AAH?$AAE?$AAL?$AAL?$AA_?$AAI?$AAN?$AAF?$AAO?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc@ 100016e8     Tux_I2C.obj
+ 0001:00000734       ??_C@_1CC@FLPNONNI@?$AAG?$AAe?$AAt?$AA?5?$AAc?$AAo?$AAm?$AAm?$AAa?$AAn?$AAd?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?$AA@ 10001734     Tux_I2C.obj
+ 0001:00000758       ??_C@_1EM@DHBFOELL@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAU?$AAN?$AAL?$AAO?$AAA?$AAD?$AA_?$AAD?$AAL?$AAL?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc@ 10001758     Tux_I2C.obj
+ 0001:000007a8       ??_C@_1EI@LLGCEHFM@?$AAS?$AAh?$AAe?$AAl?$AAl?$AAP?$AAr?$AAo?$AAc?$AA?$CI?$AAS?$AAP?$AAM?$AA_?$AAL?$AAO?$AAA?$AAD?$AA_?$AAD?$AAL?$AAL?$AA?0?$AA?5?$AA?4?$AA?4?$AA?4?$AA?$CJ?$AA?5?$AAc?$AAa?$AAl@ 100017a8     Tux_I2C.obj
+ 0001:000007f0       ??_C@_1CI@FHAKNBED@?$AAM?$AAu?$AAl?$AAt?$AAi?$AA?5?$AAI?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc?$AAe?$AA?5?$AAT?$AAe?$AAs?$AAt?$AA?$AA@ 100017f0     globals.obj
+ 0001:00000818       ??_C@_1CE@GDOGJLMD@?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAt?$AAe?$AAs?$AAt?$AA?5?$AAc?$AAa?$AAs?$AAe?$AAs?$AA?$AA@ 10001818     globals.obj
+ 0001:0000083c       ??_C@_1CK@NLHJNDEG@?$AAC?$AAl?$AAo?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$CF?$AAd?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 1000183c     test.obj
+ 0001:00000868       ??_C@_1CG@NCKKNNEK@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$CF?$AAd?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001868     test.obj
+ 0001:00000890       ??_C@_1EM@CJGILEGP@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAI?$AA2?$AAC?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?4?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AA?$DN@ 10001890     test.obj
+ 0001:000008e0       ??_C@_1LK@MJDKPDNI@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAw?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAI?$AA2?$AAC?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5?$AAa?$AAs?$AA?5?$AAe?$AAx?$AAp?$AAe@ 100018e0     test.obj
+ 0001:0000099c       ??_C@_1DI@OHOMLPLM@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAw?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAI?$AA2?$AAC?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?4?$AA?$AN?$AA?6?$AA?$AA@ 1000199c     test.obj
+ 0001:000009d8       ??_C@_1FE@CHMBLGPN@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAs?$AAu?$AAb?$AA?5?$AAA?$AAd?$AAd?$AAr?$AA?5?$AAm?$AAo?$AAd?$AAe?$AA?4?$AA?5?$AAE?$AAr?$AAr@ 100019d8     test.obj
+ 0001:00000a30       ??_C@_1FI@HJHEAOMK@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAb?$AAa?$AAu?$AAd?$AA?5?$AAr?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAp?$AAe?$AAe?$AAd?$AA?4?$AA?5?$AAE@ 10001a30     test.obj
+ 0001:00000a88       ??_C@_1FE@NNLCOGEJ@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAs?$AAl?$AAa?$AAv?$AAe?$AA?5?$AAa?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?4?$AA?5?$AAE?$AAr?$AAr@ 10001a88     test.obj
+ 0001:00000ae0       ??_C@_1EM@GJJDPBGB@?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?5?$AAi?$AAn?$AA?5?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$CF?$AAd?$AA?4?$AA?5?$AAO?$AAu?$AAt?$AA?5?$AAo?$AAf?$AA?5?$AAm?$AAe?$AAm@ 10001ae0     test.obj
+ 0001:00000b2c       ??_C@_1DC@FOPDDBKF@?$AAS?$AAt?$AAa?$AAr?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAI?$AA2?$AAc?$AA?5?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001b2c     test.obj
+ 0001:00000b60       ??_C@_1CE@JJCAOEMP@?$AAE?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAI?$AA2?$AAC?$AAT?$AAe?$AAs?$AAt?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 10001b60     test.obj
+ 0001:00000b88       ??_C@_1EE@FLEMGJLK@?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?5?$AAi?$AAn?$AA?5?$AAw?$AAa?$AAi?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AAs?$AA?5?$AA?$AN@ 10001b88     test.obj
+ 0001:00000bcc       ??_C@_1CI@DADHNEGA@?$AAS?$AAt?$AAa?$AAr?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAI?$AA2?$AAC?$AAT?$AAe?$AAs?$AAt?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 10001bcc     test.obj
+ 0001:00000bf4       ??_C@_1CI@MPJMDFJC@?$AAU?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAI?$AA2?$AAC?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001bf4     test.obj
+ 0001:00000c20       ??_C@_1HA@NDPBBFJH@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAi?$AAn?$AAg?$AA?5?$AA?$CF?$AAd?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AAs?$AA?5?$AAt?$AAh?$AAa?$AAt?$AA?5?$AAw?$AAi?$AAl?$AAl?$AA?5?$AAw?$AAr@ 10001c20     test.obj
+ 0001:00000c90       ??_C@_1O@PBFBKDAK@?$AAI?$AA2?$AAC?$AA?$CF?$AAd?$AA?3?$AA?$AA@ 10001c90     tux_i2c_OMAP3530_BSP.obj
+ 0001:00000ca0       ??_C@_1DC@DHGECIKF@?$AAI?$AA2?$AAC?$AA?3?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAr?$AAe?$AAt?$AA?5?$AAv?$AAa?$AAl?$AAu?$AAe?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001ca0     tux_i2c_OMAP3530_BSP.obj
+ 0001:00000cd8       ??_C@_1EA@DBIOIDPC@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAs?$AAl?$AAa?$AAv?$AAe?$AA?5?$AAa?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?4?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 10001cd8     tux_i2c_OMAP3530_BSP.obj
+ 0001:00000d18       ??_C@_1EE@KMKJIKIO@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAs?$AAu?$AAb?$AA?5?$AAA?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAM?$AAo?$AAd?$AAe?$AA?4?$AA?5?$AA?$AN@ 10001d18     tux_i2c_OMAP3530_BSP.obj
+ 0001:00000d60       ??_C@_1EE@COBCNLCC@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAb?$AAa?$AAu?$AAd?$AA?5?$AAr?$AAa?$AAt?$AAe?$AA?5?$AAs?$AAp?$AAe?$AAe?$AAd?$AA?4?$AA?5?$AA?$AN@ 10001d60     tux_i2c_OMAP3530_BSP.obj
+ 0001:00000da8       ??_C@_1FC@DLCCFPCI@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAw?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAI?$AA2?$AAC?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5?$AAd?$AAu?$AAe?$AA?5?$AAt?$AAo?$AA?5@ 10001da8     tux_i2c_OMAP3530_BSP.obj
+ 0001:00000e00       ??_C@_1FE@CADEGDHG@?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAe?$AAt?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAs?$AAu?$AAb?$AAA?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAs?$AAp?$AAe?$AAc@ 10001e00     tux_i2c_OMAP3530_BSP.obj
+ 0001:00000e78       DllMain                    10001e78 f   Tux_I2C.obj
+ 0001:00000e88       ?Debug@@YAXPBGZZ           10001e88 f   Tux_I2C.obj
+ 0001:000011c8       ShellProc                  100021c8 f   Tux_I2C.obj
+ 0001:00001894       ?TestI2CMultipleInstances@@YAHIPAKPAU_FUNCTION_TABLE_ENTRY@@@Z 10002894 f   test.obj
+ 0001:00001a64       ?Platform_Open@@YAPAXXZ    10002a64 f   tux_i2c_OMAP3530_BSP.obj
+ 0001:00001b0c       ?Platform_Close@@YAXPAX@Z  10002b0c f   tux_i2c_OMAP3530_BSP.obj
+ 0001:00001b1c       ?Platform_setSlaveAddress@@YAHPAX@Z 10002b1c f   tux_i2c_OMAP3530_BSP.obj
+ 0001:00001b9c       ?Platform_setSubAddrMode@@YAHPAX@Z 10002b9c f   tux_i2c_OMAP3530_BSP.obj
+ 0001:00001c1c       ?Platform_setBaudRateIndex@@YAHPAX@Z 10002c1c f   tux_i2c_OMAP3530_BSP.obj
+ 0001:00001c9c       ?Platform_Write@@YAIPAXJ0I@Z 10002c9c f   tux_i2c_OMAP3530_BSP.obj
+ 0001:00001d3c       OutputDebugStringW         10002d3c f   coredll:COREDLL.dll
+ 0001:00001d4c       wvsprintfW                 10002d4c f   coredll:COREDLL.dll
+ 0001:00001d5c       Sleep                      10002d5c f   coredll:COREDLL.dll
+ 0001:00001d6c       GetLastError               10002d6c f   coredll:COREDLL.dll
+ 0001:00001d7c       LocalAlloc                 10002d7c f   coredll:COREDLL.dll
+ 0001:00001d8c       WaitForSingleObject        10002d8c f   coredll:COREDLL.dll
+ 0001:00001d9c       CreateThread               10002d9c f   coredll:COREDLL.dll
+ 0001:00001dac       CreateFileW                10002dac f   coredll:COREDLL.dll
+ 0001:00001dbc       CloseHandle                10002dbc f   coredll:COREDLL.dll
+ 0001:00001dcc       DeviceIoControl            10002dcc f   coredll:COREDLL.dll
+ 0001:00001ddc       WriteFile                  10002ddc f   coredll:COREDLL.dll
+ 0001:00001dec       SetFilePointer             10002dec f   coredll:COREDLL.dll
+ 0001:00001dfc       KatoGetDefaultObject       10002dfc f   kato:kato.dll
+ 0001:00001f10       _DllMainCRTStartup         10002f10 f   corelib0:pegdmain.obj
+ 0001:00001f40       __GSHandlerCheckCommon     10002f40 f   corelib0:gshandler.obj
+ 0001:00001f7c       __GSHandlerCheck           10002f7c f   corelib0:gshandler.obj
+ 0001:00001fa0       __security_init_cookie     10002fa0 f   corelib0:seccinit.obj
+ 0001:00001ffc       __security_check_cookie    10002ffc f   corelib0:armsecgs.obj
+ 0001:00002010       __gsfailure                10003010 f   corelib0:armsecgs.obj
+ 0001:00002150       _cexit                     10003150 f   corelib0:cexit.obj
+ 0001:0000216c       _initterm                  1000316c f   corelib0:crt0dat.obj
+ 0001:000021a0       _cinit                     100031a0 f   corelib0:crt0dat.obj
+ 0001:000021d4       wcscat                     100031d4 f   corelib1:COREDLL.dll
+ 0001:000021e4       wcscpy                     100031e4 f   corelib1:COREDLL.dll
+ 0001:000021f4       atoi                       100031f4 f   corelib1:COREDLL.dll
+ 0001:00002204       wcslen                     10003204 f   corelib1:COREDLL.dll
+ 0001:00002214       ??3@YAXPAX@Z               10003214 f   corelib1:COREDLL.dll
+ 0001:00002224       ??2@YAPAXI@Z               10003224 f   corelib1:COREDLL.dll
+ 0001:00002234       memcpy                     10003234 f   corelib1:COREDLL.dll
+ 0001:00002244       swprintf                   10003244 f   corelib1:COREDLL.dll
+ 0001:00002254       _XcptFilter                10003254 f   corelib1:COREDLL.dll
+ 0001:00002264       __C_specific_handler       10003264 f   corelib1:COREDLL.dll
+ 0001:00002274       __security_gen_cookie2     10003274 f   corelib1:COREDLL.dll
+ 0001:00002284       __report_gsfailure         10003284 f   corelib1:COREDLL.dll
+ 0001:00002294       free                       10003294 f   corelib1:COREDLL.dll
+ 0001:000022a4       DeleteCriticalSection      100032a4 f   coredll:COREDLL.dll
+ 0001:000022b4       InterlockedExchange        100032b4 f   coredll:COREDLL.dll
+ 0001:000022c4       TerminateProcess           100032c4 f   coredll:COREDLL.dll
+ 0001:000022f4       __IMPORT_DESCRIPTOR_COREDLL 100032f4     coredll:COREDLL.dll
+ 0001:00002308       __IMPORT_DESCRIPTOR_kato   10003308     kato:kato.dll
+ 0001:0000231c       __NULL_IMPORT_DESCRIPTOR   1000331c     coredll:COREDLL.dll
+ 0002:00000000       __imp_OutputDebugStringW   10004000     coredll:COREDLL.dll
+ 0002:00000004       __imp_wvsprintfW           10004004     coredll:COREDLL.dll
+ 0002:00000008       __imp_Sleep                10004008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_GetLastError         1000400c     coredll:COREDLL.dll
+ 0002:00000010       __imp_LocalAlloc           10004010     coredll:COREDLL.dll
+ 0002:00000014       __imp_WaitForSingleObject  10004014     coredll:COREDLL.dll
+ 0002:00000018       __imp_CreateThread         10004018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_CreateFileW          1000401c     coredll:COREDLL.dll
+ 0002:00000020       __imp_CloseHandle          10004020     coredll:COREDLL.dll
+ 0002:00000024       __imp_DeviceIoControl      10004024     coredll:COREDLL.dll
+ 0002:00000028       __imp_WriteFile            10004028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_SetFilePointer       1000402c     coredll:COREDLL.dll
+ 0002:00000030       __imp_TerminateProcess     10004030     coredll:COREDLL.dll
+ 0002:00000034       __imp_InterlockedExchange  10004034     coredll:COREDLL.dll
+ 0002:00000038       __imp_wcscat               10004038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp_wcscpy               1000403c     corelib1:COREDLL.dll
+ 0002:00000040       __imp_atoi                 10004040     corelib1:COREDLL.dll
+ 0002:00000044       __imp_wcslen               10004044     corelib1:COREDLL.dll
+ 0002:00000048       __imp_??3@YAXPAX@Z         10004048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp_??2@YAPAXI@Z         1000404c     corelib1:COREDLL.dll
+ 0002:00000050       __imp_memcpy               10004050     corelib1:COREDLL.dll
+ 0002:00000054       __imp_swprintf             10004054     corelib1:COREDLL.dll
+ 0002:00000058       __imp__XcptFilter          10004058     corelib1:COREDLL.dll
+ 0002:0000005c       __imp___C_specific_handler 1000405c     corelib1:COREDLL.dll
+ 0002:00000060       __imp___security_gen_cookie2 10004060     corelib1:COREDLL.dll
+ 0002:00000064       __imp___report_gsfailure   10004064     corelib1:COREDLL.dll
+ 0002:00000068       __imp_free                 10004068     corelib1:COREDLL.dll
+ 0002:0000006c       __imp_DeleteCriticalSection 1000406c     coredll:COREDLL.dll
+ 0002:00000070       \177COREDLL_NULL_THUNK_DATA 10004070     coredll:COREDLL.dll
+ 0002:00000074       __imp_?EndLevel@CKato@@QAAHPBGZZ 10004074     kato:kato.dll
+ 0002:00000078       __imp_KatoGetDefaultObject 10004078     kato:kato.dll
+ 0002:0000007c       __imp_?Log@CKato@@QAAHKPBGZZ 1000407c     kato:kato.dll
+ 0002:00000080       __imp_?BeginLevel@CKato@@QAAHKPBGZZ 10004080     kato:kato.dll
+ 0002:00000084       \177kato_NULL_THUNK_DATA   10004084     kato:kato.dll
+ 0002:0000009c       ?g_lpFTE@@3PAU_FUNCTION_TABLE_ENTRY@@A 1000409c     globals.obj
+ 0002:000000d8       ?g_BufferSize@@3KA         100040d8     tux_i2c_OMAP3530_BSP.obj
+ 0002:000000dc       ?g_NbThreads@@3KA          100040dc     tux_i2c_OMAP3530_BSP.obj
+ 0002:000000e0       ?g_Writes@@3KA             100040e0     tux_i2c_OMAP3530_BSP.obj
+ 0002:000000e4       ?g_Address@@3KA            100040e4     tux_i2c_OMAP3530_BSP.obj
+ 0002:000000e8       ?g_Port@@3KA               100040e8     tux_i2c_OMAP3530_BSP.obj
+ 0002:000000ec       ?g_BaudRateIndex@@3KA      100040ec     tux_i2c_OMAP3530_BSP.obj
+ 0002:000000f0       ?g_SubAddressMode@@3KA     100040f0     tux_i2c_OMAP3530_BSP.obj
+ 0002:000000f4       __security_cookie          100040f4     corelib0:seccinit.obj
+ 0002:000000f8       __security_cookie_complement 100040f8     corelib0:seccinit.obj
+ 0002:000000fc       ?g_spsShellInfo@@3U_SPS_SHELL_INFO@@A 100040fc     globals.obj
+ 0002:00000118       ?g_pShellInfo@@3PAU_SPS_SHELL_INFO@@A 10004118     globals.obj
+ 0002:0000011c       ?g_pKato@@3PAVCKato@@A     1000411c     globals.obj
+ 0002:00000120       ?g_Fail@@3HA               10004120     test.obj
+ 0002:00000124       _exitflag                  10004124     corelib0:cexit.obj
+ 0002:00000128       __onexitend                10004128     <common>
+ 0002:0000012c       __onexitbegin              1000412c     <common>
+ 0002:00000130       g_pcsExit                  10004130     <common>
+ 0002:00000134       _pRawDllMain               10004134     <common>
+
+ entry point at        0001:00001f10
+
+ Static symbols
+
+ 0001:00000f1c       ?SetTestOptions@@YAHPAG@Z  10001f1c f   Tux_I2C.obj
+ 0001:00001594       ?WriteThread@@YAKPAX@Z     10002594 f   test.obj
+ 0001:00001e14       _DllMainCRTStartupHelper   10002e14 f   corelib0:pegdmain.obj
+ 0001:00002054       doexit                     10003054 f   corelib0:cexit.obj

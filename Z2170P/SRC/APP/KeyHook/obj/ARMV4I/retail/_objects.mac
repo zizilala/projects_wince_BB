@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\KeyHook.res\
+    obj\ARMV4I\retail\KeyHookMain.obj\
+    obj\ARMV4I\retail\KBHook.obj
+

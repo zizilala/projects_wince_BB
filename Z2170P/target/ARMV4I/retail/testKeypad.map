@@ -1,0 +1,154 @@
+ testKeypad
+
+ Timestamp is 51dcc2a0 (Wed Jul 10 10:10:40 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 0000017aH .rdata                  CODE
+ 0001:0000019c 00000027H .rdata$debug            CODE
+ 0001:000001c4 00000928H .text                   CODE
+ 0001:00000aec 00000018H .xdata                  CODE
+ 0001:00000b04 00000014H .idata$2                CODE
+ 0001:00000b18 00000014H .idata$3                CODE
+ 0001:00000b2c 00000078H .idata$4                CODE
+ 0001:00000ba4 0000000cH .idata$6                CODE
+ 0001:00000bb0 00000000H .edata                  CODE
+ 0002:00000000 00000078H .idata$5                DATA
+ 0002:00000078 00000138H .data                   DATA
+ 0002:000001b0 000005a8H .bss                    DATA
+ 0003:00000000 00000088H .pdata                  DATA
+ 0004:00000000 00000118H .rsrc$01                DATA
+ 0004:00000120 00000494H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     00011000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     00011004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     00011008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     0001100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     00011010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     00011014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     00011018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     0001101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_17HDJIHIPC@?$AAN?$AA?1?$AAA?$AA?$AA@ 0001103c     testKeypad.obj
+ 0001:00000044       ??_C@_1BE@BONPJBIM@?$AAV?$AAK?$AA_?$AAE?$AAS?$AAC?$AAA?$AAP?$AAE?$AA?$AA@ 00011044     testKeypad.obj
+ 0001:00000058       ??_C@_1O@LOEBKDPC@?$AAV?$AAK?$AA_?$AAT?$AAU?$AAP?$AA?$AA@ 00011058     testKeypad.obj
+ 0001:00000068       ??_C@_1BC@EAGEDJDD@?$AAV?$AAK?$AA_?$AAT?$AAL?$AAE?$AAF?$AAT?$AA?$AA@ 00011068     testKeypad.obj
+ 0001:0000007c       ??_C@_1BE@IKFHNANM@?$AAV?$AAK?$AA_?$AAT?$AAS?$AAO?$AAF?$AAT?$AA1?$AA?$AA@ 0001107c     testKeypad.obj
+ 0001:00000090       ??_C@_1BC@ICFANBAA@?$AAV?$AAK?$AA_?$AAT?$AAB?$AAA?$AAC?$AAK?$AA?$AA@ 00011090     testKeypad.obj
+ 0001:000000a4       ??_C@_1BC@DFEMBOGJ@?$AAV?$AAK?$AA_?$AAS?$AAP?$AAA?$AAC?$AAE?$AA?$AA@ 000110a4     testKeypad.obj
+ 0001:000000b8       ??_C@_1BE@JIOCHPDC@?$AAV?$AAK?$AA_?$AAT?$AAS?$AAO?$AAF?$AAT?$AA2?$AA?$AA@ 000110b8     testKeypad.obj
+ 0001:000000cc       ??_C@_1O@NMBGHMGL@?$AAV?$AAK?$AA_?$AAT?$AAA?$AAB?$AA?$AA@ 000110cc     testKeypad.obj
+ 0001:000000dc       ??_C@_1BE@KIKKCJLL@?$AAV?$AAK?$AA_?$AAT?$AAR?$AAI?$AAG?$AAH?$AAT?$AA?$AA@ 000110dc     testKeypad.obj
+ 0001:000000f0       ??_C@_1BC@DFFNADMK@?$AAV?$AAK?$AA_?$AAT?$AAD?$AAO?$AAW?$AAN?$AA?$AA@ 000110f0     testKeypad.obj
+ 0001:00000104       ??_C@_1BC@FKCNEFLI@?$AAV?$AAK?$AA_?$AAT?$AAH?$AAO?$AAM?$AAE?$AA?$AA@ 00011104     testKeypad.obj
+ 0001:00000118       ??_C@_1BG@KHIOFBEA@?$AAV?$AAK?$AA_?$AAT?$AAA?$AAC?$AAT?$AAI?$AAO?$AAN?$AA?$AA@ 00011118     testKeypad.obj
+ 0001:00000130       ??_C@_17FJFCONIE@?$AAk?$AAe?$AAy?$AA?$AA@ 00011130     testKeypad.obj
+ 0001:00000138       ??_C@_1DK@IACCBMLJ@?$AA?$CF?$AAs?$AA?5?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ?$AA?5?$AAp?$AAr?$AAe?$AAs?$AAs?$AAe?$AAd?$AA?5?$AA?$CF?$AAd?$AA?5?$AAt?$AAi?$AAm?$AAe?$AA?$CI?$AAs?$AA?$CJ?$AA?$AA@ 00011138     testKeypad.obj
+ 0001:00000174       ??_C@_1CG@ICJDHDLD@?$AA?$CF?$AAs?$AA?5?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?$AA@ 00011174     testKeypad.obj
+ 0001:000001c4       ?InitInstance@@YAHPAUHINSTANCE__@@H@Z 000111c4 f   testKeypad.obj
+ 0001:0000024c       ?GetKeyString@@YAPAGI@Z    0001124c f   testKeypad.obj
+ 0001:000002a4       ?WndProc@@YAJPAUHWND__@@IIJ@Z 000112a4 f   testKeypad.obj
+ 0001:00000438       ?MyRegisterClass@@YAGPAUHINSTANCE__@@@Z 00011438 f   testKeypad.obj
+ 0001:000004bc       WinMain                    000114bc f   testKeypad.obj
+ 0001:00000598       UpdateWindow               00011598 f   coredll:COREDLL.dll
+ 0001:000005a8       ShowWindow                 000115a8 f   coredll:COREDLL.dll
+ 0001:000005b8       CreateWindowExW            000115b8 f   coredll:COREDLL.dll
+ 0001:000005c8       PostQuitMessage            000115c8 f   coredll:COREDLL.dll
+ 0001:000005d8       EndPaint                   000115d8 f   coredll:COREDLL.dll
+ 0001:000005e8       DrawTextW                  000115e8 f   coredll:COREDLL.dll
+ 0001:000005f8       GetClientRect              000115f8 f   coredll:COREDLL.dll
+ 0001:00000608       BeginPaint                 00011608 f   coredll:COREDLL.dll
+ 0001:00000618       DefWindowProcW             00011618 f   coredll:COREDLL.dll
+ 0001:00000628       InvalidateRect             00011628 f   coredll:COREDLL.dll
+ 0001:00000638       RegisterClassW             00011638 f   coredll:COREDLL.dll
+ 0001:00000648       GetStockObject             00011648 f   coredll:COREDLL.dll
+ 0001:00000658       GetMessageW                00011658 f   coredll:COREDLL.dll
+ 0001:00000668       DispatchMessageW           00011668 f   coredll:COREDLL.dll
+ 0001:00000678       TranslateMessage           00011678 f   coredll:COREDLL.dll
+ 0001:00000688       TranslateAcceleratorW      00011688 f   coredll:COREDLL.dll
+ 0001:00000698       LoadAcceleratorsW          00011698 f   coredll:COREDLL.dll
+ 0001:000006a8       LoadStringW                000116a8 f   coredll:COREDLL.dll
+ 0001:00000738       WinMainCRTStartup          00011738 f   corelib0:pegwmain.obj
+ 0001:0000076c       __GSHandlerCheckCommon     0001176c f   corelib0:gshandler.obj
+ 0001:000007a8       __GSHandlerCheck           000117a8 f   corelib0:gshandler.obj
+ 0001:000007cc       __security_init_cookie     000117cc f   corelib0:seccinit.obj
+ 0001:00000828       __security_check_cookie    00011828 f   corelib0:armsecgs.obj
+ 0001:0000083c       __gsfailure                0001183c f   corelib0:armsecgs.obj
+ 0001:0000097c       exit                       0001197c f   corelib0:cexit.obj
+ 0001:00000994       _exit                      00011994 f   corelib0:cexit.obj
+ 0001:000009d4       _initterm                  000119d4 f   corelib0:crt0dat.obj
+ 0001:00000a08       _cinit                     00011a08 f   corelib0:crt0dat.obj
+ 0001:00000a3c       swprintf                   00011a3c f   corelib1:COREDLL.dll
+ 0001:00000a4c       wcslen                     00011a4c f   corelib1:COREDLL.dll
+ 0001:00000a5c       memset                     00011a5c f   corelib1:COREDLL.dll
+ 0001:00000a6c       _XcptFilter                00011a6c f   corelib1:COREDLL.dll
+ 0001:00000a7c       __C_specific_handler       00011a7c f   corelib1:COREDLL.dll
+ 0001:00000a8c       __security_gen_cookie2     00011a8c f   corelib1:COREDLL.dll
+ 0001:00000a9c       __report_gsfailure         00011a9c f   corelib1:COREDLL.dll
+ 0001:00000aac       free                       00011aac f   corelib1:COREDLL.dll
+ 0001:00000abc       DeleteCriticalSection      00011abc f   coredll:COREDLL.dll
+ 0001:00000acc       InterlockedExchange        00011acc f   coredll:COREDLL.dll
+ 0001:00000adc       TerminateProcess           00011adc f   coredll:COREDLL.dll
+ 0001:00000b04       __IMPORT_DESCRIPTOR_COREDLL 00011b04     coredll:COREDLL.dll
+ 0001:00000b18       __NULL_IMPORT_DESCRIPTOR   00011b18     coredll:COREDLL.dll
+ 0002:00000000       __imp_UpdateWindow         00012000     coredll:COREDLL.dll
+ 0002:00000004       __imp_ShowWindow           00012004     coredll:COREDLL.dll
+ 0002:00000008       __imp_CreateWindowExW      00012008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_PostQuitMessage      0001200c     coredll:COREDLL.dll
+ 0002:00000010       __imp_EndPaint             00012010     coredll:COREDLL.dll
+ 0002:00000014       __imp_DrawTextW            00012014     coredll:COREDLL.dll
+ 0002:00000018       __imp_GetClientRect        00012018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_BeginPaint           0001201c     coredll:COREDLL.dll
+ 0002:00000020       __imp_DefWindowProcW       00012020     coredll:COREDLL.dll
+ 0002:00000024       __imp_InvalidateRect       00012024     coredll:COREDLL.dll
+ 0002:00000028       __imp_RegisterClassW       00012028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_GetStockObject       0001202c     coredll:COREDLL.dll
+ 0002:00000030       __imp_GetMessageW          00012030     coredll:COREDLL.dll
+ 0002:00000034       __imp_DispatchMessageW     00012034     coredll:COREDLL.dll
+ 0002:00000038       __imp_TranslateMessage     00012038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_TranslateAcceleratorW 0001203c     coredll:COREDLL.dll
+ 0002:00000040       __imp_LoadAcceleratorsW    00012040     coredll:COREDLL.dll
+ 0002:00000044       __imp_LoadStringW          00012044     coredll:COREDLL.dll
+ 0002:00000048       __imp_swprintf             00012048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp_wcslen               0001204c     corelib1:COREDLL.dll
+ 0002:00000050       __imp_memset               00012050     corelib1:COREDLL.dll
+ 0002:00000054       __imp__XcptFilter          00012054     corelib1:COREDLL.dll
+ 0002:00000058       __imp___C_specific_handler 00012058     corelib1:COREDLL.dll
+ 0002:0000005c       __imp___security_gen_cookie2 0001205c     corelib1:COREDLL.dll
+ 0002:00000060       __imp___report_gsfailure   00012060     corelib1:COREDLL.dll
+ 0002:00000064       __imp_free                 00012064     corelib1:COREDLL.dll
+ 0002:00000068       __imp_DeleteCriticalSection 00012068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_InterlockedExchange  0001206c     coredll:COREDLL.dll
+ 0002:00000070       __imp_TerminateProcess     00012070     coredll:COREDLL.dll
+ 0002:00000074       \177COREDLL_NULL_THUNK_DATA 00012074     coredll:COREDLL.dll
+ 0002:00000078       ?table@@3PAUT_VKEY_AND_NAME@@A 00012078     testKeypad.obj
+ 0002:000000e0       ?labelText@@3PAGA          000120e0     testKeypad.obj
+ 0002:000001a8       __security_cookie          000121a8     corelib0:seccinit.obj
+ 0002:000001ac       __security_cookie_complement 000121ac     corelib0:seccinit.obj
+ 0002:000005b0       ?szWindowClass@@3PAGA      000125b0     testKeypad.obj
+ 0002:00000678       ?szTitle@@3PAGA            00012678     testKeypad.obj
+ 0002:00000740       ?hInst@@3PAUHINSTANCE__@@A 00012740     testKeypad.obj
+ 0002:00000744       __@@_PchSym_@00@UdrmxvGAAUkozgulinUaCBHAkUhixUgvhgUgvhgpvbkzwUlyqUzineErUivgzroUhgwzucOlyq@testKeypad 00012744     StdAfx.obj
+ 0002:00000748       _exitflag                  00012748     corelib0:cexit.obj
+ 0002:0000074c       __onexitend                0001274c     <common>
+ 0002:00000750       __onexitbegin              00012750     <common>
+ 0002:00000754       g_pcsExit                  00012754     <common>
+
+ entry point at        0001:00000738
+
+ Static symbols
+
+ 0001:000006c0       WinMainCRTStartupHelper    000116c0 f   corelib0:pegwmain.obj
+ 0001:00000880       doexit                     00011880 f   corelib0:cexit.obj

@@ -1,0 +1,28 @@
+_COMMONPUBROOT=$(_PROJECTROOT)\cesysgen
+__PROJROOT=$(_PROJECTROOT)
+RELEASETYPE=LOCAL
+_ISVINCPATH=$(_WINCEROOT)\public\common\sdk\inc;
+_OEMINCPATH=$(_WINCEROOT)\public\common\oak\inc;$(_WINCEROOT)\public\common\sdk\inc;
+TARGETNAME=Tux_SPI
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    ft.h \
+    globals.h \
+    main.h \
+
+SOURCES= \
+    Tux_SPI.cpp \
+    globals.cpp \
+    test.cpp \
+
+CDEFINES=$(CDEFINES) -DTux_SPI_EXPORTS
+TARGETLIBS= \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_PB_INSTALL_ROOT)\CEPB\WCETK\TUX\LIB\$(_TGTCPU)\RETAIL\kato.lib \
+
+INCLUDES= \
+    $(_PB_INSTALL_ROOT)\CEPB\WCETK\TUX\INC;$(_PLATFORMROOT)\common\src\soc\COMMON_TI_V1\COMMON_TI\INC\;$(INCLUDES) \
+
+TARGETTYPE=DYNLINK
+
+WARNLEVEL = 3

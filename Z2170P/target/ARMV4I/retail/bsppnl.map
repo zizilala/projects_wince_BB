@@ -1,0 +1,90 @@
+ bsppnl
+
+ Timestamp is 51ede8d0 (Tue Jul 23 10:22:08 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000046H .rdata                  CODE
+ 0001:00000068 00000023H .rdata$debug            CODE
+ 0001:0000008c 0000048cH .text                   CODE
+ 0001:00000518 00000000H .xdata                  CODE
+ 0001:00000518 00000014H .idata$2                CODE
+ 0001:0000052c 00000014H .idata$3                CODE
+ 0001:00000540 00000030H .idata$4                CODE
+ 0001:00000570 0000000cH .idata$6                CODE
+ 0001:00000580 00000047H .edata                  CODE
+ 0002:00000000 00000030H .idata$5                DATA
+ 0002:00000030 00000008H .data                   DATA
+ 0002:00000038 00000014H .bss                    DATA
+ 0003:00000000 00000040H .pdata                  DATA
+ 0004:00000000 00000118H .rsrc$01                DATA
+ 0004:00000120 000007e0H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1CI@KOAILFPF@?$AA?2?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AAs?$AA?2?$AAb?$AAs?$AAp?$AAp?$AAn?$AAl?$AA?4?$AAe?$AAx?$AAe?$AA?$AA@ 1000103c     bsppnl.obj
+ 0001:00000064       ??_C@_11LOCGONAA@?$AA?$AA@ 10001064     bsppnl.obj
+ 0001:0000008c       DllEntry                   1000108c f   bsppnl.obj
+ 0001:000000a4       CPlApplet                  100010a4 f   bsppnl.obj
+ 0001:00000244       CloseHandle                10001244 f   coredll:COREDLL.dll
+ 0001:00000254       CreateProcessW             10001254 f   coredll:COREDLL.dll
+ 0001:00000264       LoadStringW                10001264 f   coredll:COREDLL.dll
+ 0001:00000274       LoadIconW                  10001274 f   coredll:COREDLL.dll
+ 0001:00000284       _DllEntryCRTStartup        10001284 f   corelib0:pegdentry.obj
+ 0001:000003c8       _cexit                     100013c8 f   corelib0:cexit.obj
+ 0001:000003e4       _initterm                  100013e4 f   corelib0:crt0dat.obj
+ 0001:00000418       _cinit                     10001418 f   corelib0:crt0dat.obj
+ 0001:0000044c       __security_init_cookie     1000144c f   corelib0:seccinit.obj
+ 0001:000004a8       memset                     100014a8 f   corelib1:COREDLL.dll
+ 0001:000004b8       wcscpy                     100014b8 f   corelib1:COREDLL.dll
+ 0001:000004c8       free                       100014c8 f   corelib1:COREDLL.dll
+ 0001:000004d8       __security_gen_cookie2     100014d8 f   corelib1:COREDLL.dll
+ 0001:000004e8       DeleteCriticalSection      100014e8 f   coredll:COREDLL.dll
+ 0001:000004f8       InterlockedExchange        100014f8 f   coredll:COREDLL.dll
+ 0001:00000508       TerminateProcess           10001508 f   coredll:COREDLL.dll
+ 0001:00000518       __IMPORT_DESCRIPTOR_COREDLL 10001518     coredll:COREDLL.dll
+ 0001:0000052c       __NULL_IMPORT_DESCRIPTOR   1000152c     coredll:COREDLL.dll
+ 0002:00000000       __imp_CloseHandle          10002000     coredll:COREDLL.dll
+ 0002:00000004       __imp_CreateProcessW       10002004     coredll:COREDLL.dll
+ 0002:00000008       __imp_LoadStringW          10002008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_LoadIconW            1000200c     coredll:COREDLL.dll
+ 0002:00000010       __imp_memset               10002010     corelib1:COREDLL.dll
+ 0002:00000014       __imp_wcscpy               10002014     corelib1:COREDLL.dll
+ 0002:00000018       __imp_free                 10002018     corelib1:COREDLL.dll
+ 0002:0000001c       __imp___security_gen_cookie2 1000201c     corelib1:COREDLL.dll
+ 0002:00000020       __imp_DeleteCriticalSection 10002020     coredll:COREDLL.dll
+ 0002:00000024       __imp_InterlockedExchange  10002024     coredll:COREDLL.dll
+ 0002:00000028       __imp_TerminateProcess     10002028     coredll:COREDLL.dll
+ 0002:0000002c       \177COREDLL_NULL_THUNK_DATA 1000202c     coredll:COREDLL.dll
+ 0002:00000030       __security_cookie          10002030     corelib0:seccinit.obj
+ 0002:00000034       __security_cookie_complement 10002034     corelib0:seccinit.obj
+ 0002:00000038       ?g_hModule@@3PAUHINSTANCE__@@A 10002038     bsppnl.obj
+ 0002:0000003c       _exitflag                  1000203c     corelib0:cexit.obj
+ 0002:00000040       __onexitend                10002040     <common>
+ 0002:00000044       __onexitbegin              10002044     <common>
+ 0002:00000048       g_pcsExit                  10002048     <common>
+
+ entry point at        0001:00000284
+
+ Static symbols
+
+ 0001:000002cc       doexit                     100012cc f   corelib0:cexit.obj

@@ -1,0 +1,3 @@
+OBJECTS=\
+    obj\ARMV4I\retail\tca6416_gpio.obj
+

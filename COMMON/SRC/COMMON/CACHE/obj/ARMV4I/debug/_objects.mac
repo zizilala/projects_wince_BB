@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\debug\global.obj\
+    obj\ARMV4I\debug\ioctl.obj
+

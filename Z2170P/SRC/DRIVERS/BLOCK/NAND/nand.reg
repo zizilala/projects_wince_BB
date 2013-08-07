@@ -1,0 +1,80 @@
+; All rights reserved ADENEO EMBEDDED 2010
+
+;-------------------------------------------------------------------------------
+; @CESYSGEN IF FILESYS_FSREGHIVE
+; HIVE BOOT SECTION
+;
+; We want start both storage and device manager. Flags value is combination of
+;   0x0001  Start storage manager in boot phases 0 and 1 to load the boot
+;           file system.
+;   0x0002  Start device manager in boot phase 1 to load the boot file system.
+;
+[HKEY_LOCAL_MACHINE\Init\BootVars]
+    "Flags"=dword:3
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MSFlash]
+    "Flags"=dword:00011000  ; load driver in boot phase 1; do not load again later
+
+; END HIVE BOOT SECTION
+; @CESYSGEN ELSE
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MSFlash]
+    "Flags"=dword:00010000
+
+; @CESYSGEN ENDIF FILESYS_FSREGHIVE
+;-------------------------------------------------------------------------------
+
+; @CESYSGEN IF CE_MODULES_FSDMGR
+IF BSP_OMAP_NAND
+; HIVE BOOT SECTION
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\MSFlash\FATFS]
+    "Flags"=dword:14
+    "MountAsBootable"=dword:1     
+    "EnableWriteBack"=dword:1
+    "FormatTFAT"=dword:1
+    "Paging"=dword:1
+IF IMGREGHIVE
+    "MountAsRoot"=dword:1
+    "MountPermanent"=dword:1     ; Do not allow un-mounting (else we'd fail to flush the registry)
+    "MountAsROM"=dword:0
+    "MountHidden"=dword:0
+    "CheckForFormat"=dword:1     ; Ask the OAL if we should format on boot (i.e. cold reset)
+ENDIF
+
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\MSFlash]
+   "DriverPath"="Drivers\\BuiltIn\\MSFlash"
+   "LoadFlags"=dword:1
+IF IMGREGHIVE
+   "BootPhase"=dword:1          ; Make NAND available in BootPhase1, to load the persisted registry
+ELSE
+   "BootPhase"=dword:0
+ENDIF
+   "Order"=dword:0
+   "AutoMount"=dword:1
+   "AutoPart"=dword:0
+   "AutoFormat"=dword:0
+   "DefaultFileSystem"="FATFS"
+   "PartitionDriver"="mspart.dll"
+   "Folder"="Mounted Volume"
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\MSFlash\BINFS]
+   "MountHidden"=dword:1
+   "MountAsROM"=dword:1
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MSFlash]
+    "Dll"="omap_nand.dll"
+    "Prefix"="DSK"
+    "Index"=dword:1
+    "Order"=dword:4
+    "MemBase"=multi_sz:"6E000000","08000000"
+    "MemLen"=multi_sz:"00001000","00001000"
+    ;"DmaCh"=dword:3
+    ; CE_DRIVER_BLOCK_GUID
+    "IClass"="{A4E7EDDA-E575-4252-9D6B-4195D48BB865}"
+    "Profile"="MSFlash"
+
+; END HIVE BOOT SECTION
+ENDIF BSP_OMAP_NAND
+; @CESYSGEN ENDIF CE_MODULES_FSDMGR

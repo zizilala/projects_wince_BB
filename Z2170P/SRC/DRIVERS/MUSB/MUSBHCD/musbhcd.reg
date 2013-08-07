@@ -1,0 +1,21 @@
+; All rights reserved ADENEO EMBEDDED 2010
+
+IF BSP_OMAP_MUSBHCD
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MUSBOTG\HCD]
+    "Prefix"="HCD"
+    "Dll"="omap_musbhcd.dll"
+    "Index"=dword:2
+    "Order"=dword:65
+    "Dma"=dword:1
+    ; CE_DRIVER_BUS_GUID, PMCLASS_PMEXT_GUID
+    "IClass"=multi_sz:"{6F40791D-300E-44E4-BC38-E0E63CA8375C}=%b",
+                      "{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+    "BusIoctl"=dword:002a0048
+IF BSP_EVM2
+    ; EMV2 OTG port can supply 500 mA
+    "MaxCurrent"=dword:1f4
+ELSE
+    ; EVM1 OTG port can supply 100 mA
+    "MaxCurrent"=dword:64
+ENDIF
+ENDIF

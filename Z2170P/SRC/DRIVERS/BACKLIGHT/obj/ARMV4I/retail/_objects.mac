@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\tled_backlight.obj\
+    obj\ARMV4I\retail\gpio_backlight.obj
+

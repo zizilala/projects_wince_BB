@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\keypad.obj\
+    obj\ARMV4I\retail\vk_map.obj
+

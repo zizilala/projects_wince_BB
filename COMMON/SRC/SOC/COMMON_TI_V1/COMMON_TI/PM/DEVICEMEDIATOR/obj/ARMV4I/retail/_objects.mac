@@ -1,0 +1,7 @@
+OBJECTS=\
+    obj\ARMV4I\retail\api.obj\
+    obj\ARMV4I\retail\devicemediator.obj\
+    obj\ARMV4I\retail\displaydevice.obj\
+    obj\ARMV4I\retail\dvfslist.obj\
+    obj\ARMV4I\retail\devicelist.obj
+

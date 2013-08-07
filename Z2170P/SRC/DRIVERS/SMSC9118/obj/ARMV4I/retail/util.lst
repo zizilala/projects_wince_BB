@@ -1,0 +1,155 @@
+ARM macroassembler      Page:1 
+    1 00000000          ;/***************************************************************************** 
+    2 00000000          ;    
+    3 00000000          ;   Copyright (c) 2004-2008 SMSC. All rights reserved. 
+    4 00000000          ; 
+    5 00000000          ;   Use of this source code is subject to the terms of the SMSC Software 
+    6 00000000          ;   License Agreement (SLA) under which you licensed this software product.   
+    7 00000000          ;   If you did not accept the terms of the SLA, you are not authorized to use 
+    8 00000000          ;   this source code.  
+    9 00000000          ; 
+   10 00000000          ;   This code and information is provided as is without warranty of any kind, 
+   11 00000000          ;   either expressed or implied, including but not limited to the implied 
+   12 00000000          ;   warranties of merchantability and/or fitness for a particular purpose. 
+   13 00000000          ;     
+   14 00000000          ;   File name   : xsc-cache.s 
+   15 00000000          ;   Description : Xscale cache related routines 
+   16 00000000          ; 
+   17 00000000          ;   History     : 
+   18 00000000          ;       03-16-05 WH         First Release 
+   19 00000000          ;       08-12-05 MDG        ver 1.01  
+   20 00000000          ;           - add LED1 inversion, add PHY work around 
+   21 00000000          ;       11-07-05 WH         ver 1.02 
+   22 00000000          ;           - Fixed middle buffer handling bug 
+   23 00000000          ;             (Driver didn't handle middle buffers correctly if it is less than  
+   24 00000000          ;               4bytes size) 
+   25 00000000          ;           - workaround for Multicast bug 
+   26 00000000          ;           - Workaround for MAC RXEN bug 
+   27 00000000          ;       11-17-05 WH         ver 1.03 
+   28 00000000          ;           - 1.02 didn't have 1.01 patches 
+   29 00000000          ;           - 1.03 is 1.02 + 1.01 
+   30 00000000          ;       12-06-05 WH         ver 1.04 
+   31 00000000          ;           - Fixed RX doesn't work on Silicon A1 (REV_ID = 0x011x0002) 
+   32 00000000          ;           - Support SMSC9118x/117x/116x/115x family 
+   33 00000000          ;       02-27-05 WH         ver 1.05 
+   34 00000000          ;           - Fixing External Phy bug that doesn't work with 117x/115x 
+   35 00000000          ;       03-23-05 WH         ver 1.06 
+   36 00000000          ;           - Put the variable to avoid PHY_WORKAROUND for External PHY 
+   37 00000000          ;           - Change product name to 9118x->9218, 9115x->9215 
+   38 00000000          ;       07-26-06 WH, MDG, NL        ver 1.07 
+   39 00000000          ;           - Add RXE and TXE interrupt handlers 
+   40 00000000          ;           - Workaround Code for direct GPIO connection from 9118 family  
+   41 00000000          ;             Interrupt (Level Interrupt -> Edge Interrupt) 
+   42 00000000          ;           - Change GPT interrupt interval to 200mSec from 50mSec 
+   43 00000000          ;           - clean up un-used SH3 code 
+   44 00000000          ;       08-25-06  WH, MDG, NL       ver 1.08 
+   45 00000000          ;           - Fixed RXE and TXE interrupt handlers bug 
+   46 00000000          ;           - support for direct and nondirect Interrupt 
+   47 00000000          ;       02-15-07   NL               ver 1.09 
+   48 00000000          ;            - First version of WinCE 6.0 driver 
+   49 00000000          ;           - Removed Support for LAN9112 
+   50 00000000          ;           - Added AutoMdix as modifiable parameter in the Registry  
+   51 00000000          ;           - Fixed DMA Xmit Bug 
+   52 00000000          ;       04-17-07   NL               ver 1.10 
+   53 00000000          ;           - Added Support LAN9211 Chip 
+   54 00000000          ;           - Changed Register Name ENDIAN to WORD_SWAP According to the Menual 
+   55 00000000          ;           - Merged CE6.0 & 5.0 Drivers Together 
+   56 00000000          ;       10-24-07   NL               ver 1.11 
+   57 00000000          ;           - Added Support LAN9218A/LAN9217A/LAN9216A/LAN9215A Chips 
+   58 00000000          ;            
+   59 00000000          ;       01-08-08   AH               ver 1.12 
+   60 00000000          ;           - Added Support for LAN9210 Chip 
+   61 00000000          ;       ----------------------------------------------------------------------- 
+   62 00000000          ;       09-26-08   WH 
+   63 00000000          ;           - Move to version 2.00 intentionally 
+   64 00000000          ;           - From version 2.00,  
+   65 00000000          ;              driver drops support chip ID of 0x011x0000 and 0x011x0001 
+   66 00000000          ;       --------------------------------------------------------------------- 
+   67 00000000          ;       09-26-08   WH               ver 2.00 
+   68 00000000          ;           - replace TAB to SPACE 
+   69 00000000          ;           - Reorder initialization routines to avoid  
+   70 00000000          ;              possible unexpect behavior 
+   71 00000000          ;           - Fixed the issue Flow Control ignores "FlowControl" key  
+   72 00000000          ;              if not Auto Negotiation 
+   73 00000000          ;           - Added "MinLinkChangeWakeUp", "MinMagicPacketWakeUp" and 
+   74 00000000          ;              "MinPatternWakeUp" registry key for PM 
+   75 00000000          ;           - Fixed PM issues 
+   76 00000000          ;               - DHCP doesn't work after wakeup 
+   77 00000000          ;               - Disable GPTimer while in sleep mode 
+   78 00000000          ;               - Add routine to wakeup chip during Reset 
+   79 00000000          ;           - Fix discarding Rx Frame when it is less than 16bytes 
+   80 00000000          ;           - Enable RXE & RWT interrupt 
+   81 00000000          ;           - Chip goes to D2(Energy Detect Power Down) when there is no link 
+   82 00000000          ;              when POWERDOWN_AT_NO_LINK is defined (see smsc9118.h) 
+   83 00000000          ;           - Clean up Registers which are absolete 
+   84 00000000          ;           - See relnotes.txt for detail 
+   85 00000000          ;       11-17-08   WH               ver 2.01 
+   86 00000000          ;           - Lan_SetMiiRegW() and Lan_GetMiiRegW are changed to return BOOL. 
+   87 00000000          ;             Caller checks return value to detect error 
+   88 00000000          ;           - Tx Error Interrupt is enabled 
+   89 00000000          ;           - Check return from NdisAllocateMemory() is 32bit aligned or not 
+   90 00000000          ;             Technically it won't happen though 
+   91 00000000          ;             See comments in source (smsc9118.c) 
+   92 00000000          ;           - Fixed bug which does't go to AUTOIP when failed to get DHCP addr 
+   93 00000000          ;*****************************************************************************/ 
+   94                       AREA    |text|, CODE, READONLY, ALIGN=5 
+   95 00000000            
+   96 00000000              EXPORT  CleanCacheLine 
+   97 00000000              EXPORT  DrainWriteBuffers 
+   98 00000000              EXPORT  GetCPSR 
+   99 00000000              EXPORT  GetTTB 
+  100 00000000              EXPORT  GetPID 
+  101 00000000              EXPORT  ReadCLKCFG 
+  102 00000000              EXPORT  DisableCPUInt 
+  103 00000000              EXPORT  EnableCPUInt 
+  104 00000000            
+  105 00000000          CleanCacheLine  FUNCTION 
+  106 00000000 ee070f3a     mcr p15, 0, r0, c7, c10, 1 
+  107 00000004 ee070f36     mcr p15, 0, r0, c7, c6, 1 
+  108 00000008            
+  109 00000008 e1a0f00e     mov pc, lr 
+  110 0000000c              ENDFUNC 
+  111 0000000c            
+  112 0000000c          DrainWriteBuffers 
+  113 0000000c ee070f9a     mcr p15, 0, r0, c7, c10, 4 
+  114 00000010               
+  115 00000010 e1a0f00e     mov pc, lr 
+  116 00000014              ENDFUNC 
+  117 00000014            
+  118 00000014          GetCPSR 
+  119 00000014 e10f0000     mrs r0, cpsr 
+  120 00000018            
+  121 00000018 e1a0f00e     mov pc, lr 
+  122 0000001c              ENDFUNC 
+  123 0000001c            
+  124 0000001c          GetTTB 
+  125 0000001c ee120f10     mrc p15, 0, r0, c2, c0, 0 
+  126 00000020 e1a0f00e     mov pc, lr   
+  127 00000024              ENDFUNC 
+  128 00000024            
+  129 00000024          GetPID 
+  130 00000024 ee1d0f10     mrc p15, 0, r0, c13, c0, 0 
+  131 00000028 e1a0f00e     mov pc, lr 
+  132 0000002c              ENDFUNC 
+  133 0000002c            
+  134 0000002c          ReadCLKCFG 
+  135 0000002c ee160e10     mrc  p14, 0, r0, c6, c0, 0 
+  136 00000030 e1a0f00e     mov  pc, lr 
+  137 00000034              ENDFUNC 
+  138 00000034            
+  139 00000034          DisableCPUInt 
+  140 00000034 e10f0000     mrs  r0, cpsr 
+  141 00000038 e3801080     orr  r1, r0, #0x80 
+  142 0000003c e129f001     msr  cpsr, r1 
+  143 00000040 e1a0f00e     mov  pc, lr 
+  144 00000044              ENDFUNC 
+  145 00000044            
+  146 00000044          EnableCPUInt 
+  147 00000044 e10f0000     mrs  r0, cpsr 
+  148 00000048 e3c01080     bic  r1, r0, #0x80 
+  149 0000004c e129f001     msr  cpsr, r1 
+  150 00000050 e1a0f00e     mov  pc, lr 
+  151 00000054              ENDFUNC 
+  152 00000054            
+  153 00000054              END 
+Assembly terminated, errors: 0, warnings: 0 

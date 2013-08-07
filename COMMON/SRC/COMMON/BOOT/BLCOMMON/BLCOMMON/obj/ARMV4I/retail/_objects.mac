@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\blcommon.obj\
+    obj\ARMV4I\retail\format.obj\
+    obj\ARMV4I\retail\signimage.obj
+

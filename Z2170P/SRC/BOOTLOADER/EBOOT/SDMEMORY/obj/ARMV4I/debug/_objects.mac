@@ -1,0 +1,12 @@
+OBJECTS=\
+    obj\ARMV4I\debug\main.obj\
+    obj\ARMV4I\debug\eth.obj\
+    obj\ARMV4I\debug\menu.obj\
+    obj\ARMV4I\debug\stub.obj\
+    obj\ARMV4I\debug\flashmenu.obj\
+    obj\ARMV4I\debug\mmu.obj\
+    obj\ARMV4I\debug\startup.obj\
+    obj\ARMV4I\debug\jumpto.obj\
+    obj\ARMV4I\debug\flash.obj\
+    obj\ARMV4I\debug\cfg.obj
+

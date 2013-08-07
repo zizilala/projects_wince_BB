@@ -1,0 +1,158 @@
+﻿<!--
+Copyright (c) Microsoft Corporation.  All rights reserved.
+-->
+<!--
+Use of this sample source code is subject to the terms of the Microsoft
+license agreement under which you licensed this sample source code. If
+you did not accept the terms of the license agreement, you are not
+authorized to use this sample source code. For the terms of the license,
+please see the license agreement between you and Microsoft or, if applicable,
+see the LICENSE.RTF on your install media or the root of your tools installation.
+THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+-->
+<!--
+Copyright (c) 2010 Texas Instruments Incorporated - http://www.ti.com/
+All rights reserved.
+-->
+<Canvas
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+     <Canvas.Triggers>
+      <EventTrigger RoutedEvent="Canvas.Loaded">
+        <BeginStoryboard>
+            <Storyboard x:Name="Storyboard1" RepeatBehavior="Forever">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="filmimg" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="-25"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="422"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="337"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="429"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:04" Value="-23"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="131"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:07" Value="-25"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="filmimg" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="28"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="17"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="165"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="285"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:04" Value="277"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="139"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:07" Value="27"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="stoplightimg" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="345"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="494"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="502"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="81"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="230"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="206"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:07" Value="-1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="stoplightimg" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="218"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="337"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="293"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="164"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="58"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:07" Value="1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="plateimg" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="429"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="313"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="235"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="149"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="113"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:05" Value="45"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="91"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:07" Value="-1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="plateimg" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-20"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-287"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-143"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="-291"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="-173"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:05" Value="-301"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="-75"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="starimg" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="500"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="3"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="507"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="35"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="495"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="37"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:05.6000000" Value="508"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="20"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="519"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:07" Value="3"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="starimg" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="65"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="77"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="87"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="142"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="124"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="189"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:05.6000000" Value="202"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="189"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="173"/>
+                    <SplineDoubleKeyFrame KeyTime="00:00:07" Value="77"/>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+        </BeginStoryboard>
+      </EventTrigger>
+    </Canvas.Triggers>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Image Margin="0,0,0,0" Source="\windows\bounce_background.png" Stretch="Fill" CacheMode="BitmapCache" />
+        <Image HorizontalAlignment="Left" Margin="45,38,0,0" VerticalAlignment="Top" Source="\windows\bounce_style.png" Stretch="Fill" CacheMode="BitmapCache" x:Name="filmimg" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="\windows\bounce_media.png" Stretch="Fill" CacheMode="BitmapCache" x:Name="stoplightimg" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,23,0,0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="\windows\bounce_browser.png" Stretch="Fill" CacheMode="BitmapCache" RenderTransformOrigin="0.5,0.5" x:Name="plateimg" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="8,0,0,39">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="\windows\bounce_photo.png" Stretch="Fill" CacheMode="BitmapCache" RenderTransformOrigin="0.5,0.5" x:Name="starimg" HorizontalAlignment="Left" Margin="0,156,0,174">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Canvas>

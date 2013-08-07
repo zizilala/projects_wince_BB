@@ -1,0 +1,32 @@
+_COMMONPUBROOT=$(_PROJECTROOT)\cesysgen
+__PROJROOT=$(_PROJECTROOT)
+RELEASETYPE=PLATFORM
+_ISVINCPATH=$(_WINCEROOT)\public\common\sdk\inc;
+_OEMINCPATH=$(_WINCEROOT)\public\common\oak\inc;$(_WINCEROOT)\public\common\sdk\inc;
+TARGETNAME=testKeypad
+
+FILE_VIEW_RESOURCE_FOLDER= \
+    testKeypad.ico \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    StdAfx.h \
+    resource.h \
+    testKeypad.h \
+
+SOURCES= \
+    testKeypad.cpp \
+    testKeypad.rc \
+
+TARGETLIBS= \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+
+PRECOMPILED_PCH=StdAfx.pch
+PRECOMPILED_CXX=1
+PRECOMPILED_OBJ=StdAfx.obj
+PRECOMPILED_INCLUDE=StdAfx.h
+TARGETTYPE=PROGRAM
+
+
+WARNLEVEL=
+WARNISERROR=
+CODE_ANALYSIS=

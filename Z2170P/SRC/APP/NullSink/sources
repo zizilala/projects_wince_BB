@@ -1,0 +1,54 @@
+!if 0
+;================================================================================
+;             Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+; Use of this software is controlled by the terms and conditions found
+; in the license agreement under which this software has been supplied.
+;
+;================================================================================
+!endif
+
+TARGETNAME=NullSink
+TARGETTYPE=DYNLINK
+
+FILE_VIEW_ROOT_FOLDER= \
+    ReadMe.txt \
+
+FILE_VIEW_RESOURCE_FOLDER= \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    Resources.h \
+    NullSink.h \
+    StdAfx.h \
+
+SOURCES= \
+    NullSink.cpp \
+
+PRECOMPILED_CXX=1
+CDEFINES=$(CDEFINES) -DNullSink_EXPORTS
+PRECOMPILED_PCH=StdAfx.pch
+PRECOMPILED_INCLUDE=StdAfx.h
+TARGETLIBS= \
+    $(_WINCEROOT)\PUBLIC\DIRECTX\SDK\LIB\$(_CPUINDPATH)\strmiids.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\Ole32.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\oleaut32.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\commctrl.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\commdlg.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+
+SOURCELIBS= \
+  $(_WINCEROOT)\PUBLIC\DIRECTX\SDK\LIB\$(_CPUINDPATH)\strmbase.lib \
+
+PRECOMPILED_OBJ=StdAfx.obj
+FILE_VIEW_PARAMETER_FOLDER= \
+    NullSink.bib \
+    NullSink.reg \
+    NullSink.def \
+
+INCLUDES=$(INCLUDES); \
+		 $(_WINCEROOT)\PUBLIC\DIRECTX\SDK\SAMPLES\DSHOW\BASECLASSES; \
+		 $(_WINCEROOT)\PUBLIC\DIRECTX\SDK\INC; \
+    
+

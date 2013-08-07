@@ -1,0 +1,19 @@
+OBJECTS=\
+    obj\ARMV4I\retail\init.obj\
+    obj\ARMV4I\retail\flushdc.obj\
+    obj\ARMV4I\retail\flushdclines.obj\
+    obj\ARMV4I\retail\cleandc.obj\
+    obj\ARMV4I\retail\cleandclines.obj\
+    obj\ARMV4I\retail\flushic.obj\
+    obj\ARMV4I\retail\flushiclines.obj\
+    obj\ARMV4I\retail\flushuc.obj\
+    obj\ARMV4I\retail\flushuclines.obj\
+    obj\ARMV4I\retail\cleanuc.obj\
+    obj\ARMV4I\retail\cleanuclines.obj\
+    obj\ARMV4I\retail\cleardtlb.obj\
+    obj\ARMV4I\retail\cleardtlbentry.obj\
+    obj\ARMV4I\retail\clearitlb.obj\
+    obj\ARMV4I\retail\clearitlbentry.obj\
+    obj\ARMV4I\retail\clearutlb.obj\
+    obj\ARMV4I\retail\clearutlbentry.obj
+

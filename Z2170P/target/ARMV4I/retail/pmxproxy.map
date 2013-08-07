@@ -1,0 +1,125 @@
+ pmxproxy
+
+ Timestamp is 51ede8c8 (Tue Jul 23 10:22:00 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000322H .rdata                  CODE
+ 0001:00000344 00000025H .rdata$debug            CODE
+ 0001:0000036c 00000974H .text                   CODE
+ 0001:00000ce0 00000014H .xdata                  CODE
+ 0001:00000cf4 00000028H .idata$2                CODE
+ 0001:00000d1c 00000014H .idata$3                CODE
+ 0001:00000d30 00000060H .idata$4                CODE
+ 0001:00000d90 00000016H .idata$6                CODE
+ 0001:00000db0 0000009cH .edata                  CODE
+ 0002:00000000 00000060H .idata$5                DATA
+ 0002:00000060 0000044cH .data                   DATA
+ 0002:000004ac 00000014H .bss                    DATA
+ 0003:00000000 00000070H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:00000040       ??_C@_1FE@EIHDIJIG@?$AA?9?$AAP?$AAM?$AAX?$AA_?$AAO?$AAp?$AAe?$AAn?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 10001040     pmxproxy.obj
+ 0001:00000098       ??_C@_1HE@CBILKLCK@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAP?$AAM?$AAX?$AA_?$AAO?$AAp?$AAe?$AAn?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe@ 10001098     pmxproxy.obj
+ 0001:00000110       ??_C@_1EI@NKBIAEGK@?$AA?$CL?$AAP?$AAM?$AAX?$AA_?$AAO?$AAp?$AAe?$AAn?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 10001110     pmxproxy.obj
+ 0001:00000158       ??_C@_1CK@MKCKNGEE@?$AA?9?$AAP?$AAM?$AAX?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001158     pmxproxy.obj
+ 0001:00000188       ??_C@_1GO@EILJHIPE@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAP?$AAM?$AAX?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr?$AAe@ 10001188     pmxproxy.obj
+ 0001:000001f8       ??_C@_1CK@LKFNMAKC@?$AA?$CL?$AAP?$AAM?$AAX?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 100011f8     pmxproxy.obj
+ 0001:00000224       ??_C@_1DE@LFMFHMDF@?$AA?9?$AAP?$AAM?$AAX?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$CI?$AAr?$AAc?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001224     pmxproxy.obj
+ 0001:00000258       ??_C@_1GI@MNPCBNEO@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAP?$AAM?$AAX?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?3?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr?$AAe?$AAc?$AAt?$AA?5@ 10001258     pmxproxy.obj
+ 0001:000002c0       ??_C@_1IC@JKHIBKFA@?$AA?$CL?$AAP?$AAM?$AAX?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0@ 100012c0     pmxproxy.obj
+ 0001:0000036c       ?PMX_Init@@YAKPBGPBX@Z     1000136c f   pmxproxy.obj
+ 0001:00000378       ?PMX_Deinit@@YAHK@Z        10001378 f   pmxproxy.obj
+ 0001:00000390       ?PMX_Open@@YAKKKK@Z        10001390 f   pmxproxy.obj
+ 0001:00000448       ?PMX_Close@@YAHK@Z         10001448 f   pmxproxy.obj
+ 0001:000004dc       ?PMX_IOControl@@YAHKKPAXK0KPAK@Z 100014dc f   pmxproxy.obj
+ 0001:00000840       DllMain                    10001840 f   pmxproxy.obj
+ 0001:00000870       CeOpenCallerBuffer         10001870 f   coredll:COREDLL.dll
+ 0001:00000880       LocalAlloc                 10001880 f   coredll:COREDLL.dll
+ 0001:00000890       NKDbgPrintfW               10001890 f   coredll:COREDLL.dll
+ 0001:000008a0       LocalFree                  100018a0 f   coredll:COREDLL.dll
+ 0001:000008b0       CeCloseCallerBuffer        100018b0 f   coredll:COREDLL.dll
+ 0001:000008c0       DisableThreadLibraryCalls  100018c0 f   coredll:COREDLL.dll
+ 0001:000008d0       RegisterDbgZones           100018d0 f   coredll:COREDLL.dll
+ 0001:000008e0       PmxClosePolicy             100018e0 f   ceddk:CEDDK.dll
+ 0001:000008f0       PmxReleaseConstraint       100018f0 f   ceddk:CEDDK.dll
+ 0001:00000900       PmxSetConstraintById       10001900 f   ceddk:CEDDK.dll
+ 0001:00000910       PmxUpdateConstraint        10001910 f   ceddk:CEDDK.dll
+ 0001:00000920       PmxLoadConstraint          10001920 f   ceddk:CEDDK.dll
+ 0001:00000930       PmxLoadPolicy              10001930 f   ceddk:CEDDK.dll
+ 0001:00000940       PmxOpenPolicy              10001940 f   ceddk:CEDDK.dll
+ 0001:00000950       PmxNotifyPolicy            10001950 f   ceddk:CEDDK.dll
+ 0001:00000a64       _DllMainCRTStartup         10001a64 f   corelib0:pegdmain.obj
+ 0001:00000b90       _cexit                     10001b90 f   corelib0:cexit.obj
+ 0001:00000bac       _initterm                  10001bac f   corelib0:crt0dat.obj
+ 0001:00000be0       _cinit                     10001be0 f   corelib0:crt0dat.obj
+ 0001:00000c14       __security_init_cookie     10001c14 f   corelib0:seccinit.obj
+ 0001:00000c70       _XcptFilter                10001c70 f   corelib1:COREDLL.dll
+ 0001:00000c80       __C_specific_handler       10001c80 f   corelib1:COREDLL.dll
+ 0001:00000c90       free                       10001c90 f   corelib1:COREDLL.dll
+ 0001:00000ca0       __security_gen_cookie2     10001ca0 f   corelib1:COREDLL.dll
+ 0001:00000cb0       DeleteCriticalSection      10001cb0 f   coredll:COREDLL.dll
+ 0001:00000cc0       InterlockedExchange        10001cc0 f   coredll:COREDLL.dll
+ 0001:00000cd0       TerminateProcess           10001cd0 f   coredll:COREDLL.dll
+ 0001:00000cf4       __IMPORT_DESCRIPTOR_COREDLL 10001cf4     coredll:COREDLL.dll
+ 0001:00000d08       __IMPORT_DESCRIPTOR_CEDDK  10001d08     ceddk:CEDDK.dll
+ 0001:00000d1c       __NULL_IMPORT_DESCRIPTOR   10001d1c     coredll:COREDLL.dll
+ 0002:00000000       __imp_PmxNotifyPolicy      10002000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_PmxOpenPolicy        10002004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_PmxLoadPolicy        10002008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_PmxLoadConstraint    1000200c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_PmxUpdateConstraint  10002010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_PmxSetConstraintById 10002014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_PmxReleaseConstraint 10002018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_PmxClosePolicy       1000201c     ceddk:CEDDK.dll
+ 0002:00000020       \177CEDDK_NULL_THUNK_DATA  10002020     ceddk:CEDDK.dll
+ 0002:00000024       __imp_RegisterDbgZones     10002024     coredll:COREDLL.dll
+ 0002:00000028       __imp_DisableThreadLibraryCalls 10002028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_CeCloseCallerBuffer  1000202c     coredll:COREDLL.dll
+ 0002:00000030       __imp_LocalFree            10002030     coredll:COREDLL.dll
+ 0002:00000034       __imp_NKDbgPrintfW         10002034     coredll:COREDLL.dll
+ 0002:00000038       __imp_LocalAlloc           10002038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_CeOpenCallerBuffer   1000203c     coredll:COREDLL.dll
+ 0002:00000040       __imp__XcptFilter          10002040     corelib1:COREDLL.dll
+ 0002:00000044       __imp___C_specific_handler 10002044     corelib1:COREDLL.dll
+ 0002:00000048       __imp_free                 10002048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp___security_gen_cookie2 1000204c     corelib1:COREDLL.dll
+ 0002:00000050       __imp_DeleteCriticalSection 10002050     coredll:COREDLL.dll
+ 0002:00000054       __imp_InterlockedExchange  10002054     coredll:COREDLL.dll
+ 0002:00000058       __imp_TerminateProcess     10002058     coredll:COREDLL.dll
+ 0002:0000005c       \177COREDLL_NULL_THUNK_DATA 1000205c     coredll:COREDLL.dll
+ 0002:00000060       dpCurSettings              10002060     pmxproxy.obj
+ 0002:000004a4       __security_cookie          100024a4     corelib0:seccinit.obj
+ 0002:000004a8       __security_cookie_complement 100024a8     corelib0:seccinit.obj
+ 0002:000004ac       _exitflag                  100024ac     corelib0:cexit.obj
+ 0002:000004b0       __onexitend                100024b0     <common>
+ 0002:000004b4       __onexitbegin              100024b4     <common>
+ 0002:000004b8       g_pcsExit                  100024b8     <common>
+ 0002:000004bc       _pRawDllMain               100024bc     <common>
+
+ entry point at        0001:00000a64
+
+ Static symbols
+
+ 0001:00000968       _DllMainCRTStartupHelper   10001968 f   corelib0:pegdmain.obj
+ 0001:00000a94       doexit                     10001a94 f   corelib0:cexit.obj

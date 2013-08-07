@@ -1,0 +1,6 @@
+OBJECTS=\
+    obj\ARMV4I\retail\Tux_I2C.obj\
+    obj\ARMV4I\retail\globals.obj\
+    obj\ARMV4I\retail\test.obj\
+    obj\ARMV4I\retail\tux_i2c_OMAP3530_BSP.obj
+

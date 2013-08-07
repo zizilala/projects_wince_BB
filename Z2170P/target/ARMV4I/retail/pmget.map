@@ -1,0 +1,65 @@
+ pmget
+
+ Timestamp is 51dcc29d (Wed Jul 10 10:10:37 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000002a8H .rdata                  CODE
+ 0001:000002a8 00000022H .rdata$debug            CODE
+ 0001:000002cc 00000334H .text                   CODE
+ 0001:00000600 00000008H .xdata                  CODE
+ 0001:00000608 00000014H .idata$2                CODE
+ 0001:0000061c 00000014H .idata$3                CODE
+ 0001:00000630 00000020H .idata$4                CODE
+ 0001:00000650 0000000cH .idata$6                CODE
+ 0001:0000065c 00000000H .edata                  CODE
+ 0002:00000000 00000020H .idata$5                DATA
+ 0002:00000020 00000008H .data                   DATA
+ 0003:00000000 00000028H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:0000001c       ??_C@_1BG@BNMMPDJD@?$AAP?$AAM?$AAG?$AAE?$AAT?$AAD?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 0001101c     get.obj
+ 0001:00000034       ??_C@_1DC@FAFKIEO@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?7?$AAP?$AAO?$AAW?$AAE?$AAR?$AA_?$AAS?$AAT?$AAA?$AAT?$AAE?$AA_?$AAI?$AAD?$AAL?$AAE?$AA?6?$AA?$AA@ 00011034     get.obj
+ 0001:00000068       ??_C@_1DI@DMDGINJA@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?7?$AAP?$AAO?$AAW?$AAE?$AAR?$AA_?$AAS?$AAT?$AAA?$AAT?$AAE?$AA_?$AAS?$AAU?$AAS?$AAP?$AAE?$AAN?$AAD?$AA?6?$AA?$AA@ 00011068     get.obj
+ 0001:000000a0       ??_C@_1DE@ILEEFEDM@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?7?$AAP?$AAO?$AAW?$AAE?$AAR?$AA_?$AAS?$AAT?$AAA?$AAT?$AAE?$AA_?$AAR?$AAE?$AAS?$AAE?$AAT?$AA?6?$AA?$AA@ 000110a0     get.obj
+ 0001:000000d8       ??_C@_1EO@CJMLHAAE@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?7?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?5?$AAP?$AAo?$AAw?$AAe?$AAr?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAF?$AAl?$AAa?$AAg?$AAs@ 000110d8     get.obj
+ 0001:00000128       ??_C@_1DC@MKHCCBGK@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?7?$AAP?$AAO?$AAW?$AAE?$AAR?$AA_?$AAS?$AAT?$AAA?$AAT?$AAE?$AA_?$AAB?$AAO?$AAO?$AAT?$AA?6?$AA?$AA@ 00011128     get.obj
+ 0001:0000015c       ??_C@_1CO@OKGFFMIN@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?7?$AAP?$AAO?$AAW?$AAE?$AAR?$AA_?$AAS?$AAT?$AAA?$AAT?$AAE?$AA_?$AAO?$AAN?$AA?6?$AA?$AA@ 0001115c     get.obj
+ 0001:0000018c       ??_C@_1DA@CIDCCAHK@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?7?$AAP?$AAO?$AAW?$AAE?$AAR?$AA_?$AAS?$AAT?$AAA?$AAT?$AAE?$AA_?$AAO?$AAF?$AAF?$AA?6?$AA?$AA@ 0001118c     get.obj
+ 0001:000001bc       ??_C@_1DK@OGDACCBJ@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?7?$AAP?$AAO?$AAW?$AAE?$AAR?$AA_?$AAS?$AAT?$AAA?$AAT?$AAE?$AA_?$AAC?$AAR?$AAI?$AAT?$AAI?$AAC?$AAA?$AAL?$AA?6?$AA?$AA@ 000111bc     get.obj
+ 0001:000001f8       ??_C@_1GC@OEBIFMDB@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AA?5?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?5?$AAP?$AAo?$AAw?$AAe?$AAr?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAi?$AAs?$AA?5?$AA?8?$AA?$CF?$AAs@ 000111f8     get.obj
+ 0001:00000260       ??_C@_1EI@FCJJGCIE@?$AAP?$AAM?$AAG?$AAE?$AAT?$AA?$CB?$AAG?$AAe?$AAt?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AAP?$AAo?$AAw?$AAe?$AAr?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?3?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3@ 00011260     get.obj
+ 0001:000002d4       RetailPrint                000112d4 f   get.obj
+ 0001:00000380       WinMain                    00011380 f   get.obj
+ 0001:000004d8       NKDbgPrintfW               000114d8 f   coredll:COREDLL.dll
+ 0001:000004e8       GetSystemPowerState        000114e8 f   coredll:COREDLL.dll
+ 0001:000004f8       __GSHandlerCheckCommon     000114f8 f   corelib0:gshandler.obj
+ 0001:00000534       __GSHandlerCheck           00011534 f   corelib0:gshandler.obj
+ 0001:00000558       __security_check_cookie    00011558 f   corelib0:armsecgs.obj
+ 0001:0000056c       __gsfailure                0001156c f   corelib0:armsecgs.obj
+ 0001:000005b0       vswprintf                  000115b0 f   corelib1:COREDLL.dll
+ 0001:000005c0       swprintf                   000115c0 f   corelib1:COREDLL.dll
+ 0001:000005d0       vwprintf                   000115d0 f   corelib1:COREDLL.dll
+ 0001:000005e0       memset                     000115e0 f   corelib1:COREDLL.dll
+ 0001:000005f0       __report_gsfailure         000115f0 f   corelib1:COREDLL.dll
+ 0001:00000608       __IMPORT_DESCRIPTOR_COREDLL 00011608     coredll:COREDLL.dll
+ 0001:0000061c       __NULL_IMPORT_DESCRIPTOR   0001161c     coredll:COREDLL.dll
+ 0002:00000000       __imp_NKDbgPrintfW         00012000     coredll:COREDLL.dll
+ 0002:00000004       __imp_GetSystemPowerState  00012004     coredll:COREDLL.dll
+ 0002:00000008       __imp_vswprintf            00012008     corelib1:COREDLL.dll
+ 0002:0000000c       __imp_swprintf             0001200c     corelib1:COREDLL.dll
+ 0002:00000010       __imp_vwprintf             00012010     corelib1:COREDLL.dll
+ 0002:00000014       __imp_memset               00012014     corelib1:COREDLL.dll
+ 0002:00000018       __imp___report_gsfailure   00012018     corelib1:COREDLL.dll
+ 0002:0000001c       \177COREDLL_NULL_THUNK_DATA 0001201c     coredll:COREDLL.dll
+ 0002:00000020       __security_cookie          00012020     corelib0:seccinit.obj
+ 0002:00000024       __security_cookie_complement 00012024     corelib0:seccinit.obj
+
+ entry point at        0001:00000380
+
+ Static symbols
+

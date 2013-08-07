@@ -1,0 +1,8 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [01:0000000249:WARNN ] c:\wince600\others\atl8\include\atlosapice.h(334) : warning C6315: Incorrect order of operations: bitwise-and has higher precedence than bitwise-or. Add parentheses to clarify intent
+BUILD: [01:0000000250:WARNN ] c:\wince600\others\atl8\include\atlosapice.h(817) : warning C6246: Local declaration of 'dwType' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '802' of 'c:\wince600\others\atl8\include\atlosapice.h': Lines: 802
+BUILD: [01:0000000251:WARNN ] c:\wince600\others\atl8\include\atlosapice.h(940) : warning C6314: Incorrect order of operations: bitwise-or has higher precedence than the conditional-expression operator. Add parentheses to clarify intent
+BUILD: [01:0000000252:WARNN ] c:\wince600\others\atl8\include\atlosapice.h(965) : warning C6296: Ill-defined for-loop. Loop body only executed once
+BUILD: [00:0000000971:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\APP\SHELL\: Missing source file: C:\WINCE600\public\common\sdk\lib\ARMV4I\retail\coredll.lib.
+BUILD: [00:0000005417:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\APP\CaptureTest\: Missing source file: C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\strmiids.lib.
+BUILD: [00:0000005418:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\APP\CaptureTest\: Missing source file: C:\WINCE600\OSDesigns\Z2170P\Z2170P\Wince600\Z2170P_ARMV4I\cesysgen\sdk\lib\ARMV4I\retail\strmbase.lib.

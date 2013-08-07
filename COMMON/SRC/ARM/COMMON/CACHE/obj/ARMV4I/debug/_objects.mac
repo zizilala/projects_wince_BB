@@ -1,0 +1,19 @@
+OBJECTS=\
+    obj\ARMV4I\debug\init.obj\
+    obj\ARMV4I\debug\flushdc.obj\
+    obj\ARMV4I\debug\flushdclines.obj\
+    obj\ARMV4I\debug\cleandc.obj\
+    obj\ARMV4I\debug\cleandclines.obj\
+    obj\ARMV4I\debug\flushic.obj\
+    obj\ARMV4I\debug\flushiclines.obj\
+    obj\ARMV4I\debug\flushuc.obj\
+    obj\ARMV4I\debug\flushuclines.obj\
+    obj\ARMV4I\debug\cleanuc.obj\
+    obj\ARMV4I\debug\cleanuclines.obj\
+    obj\ARMV4I\debug\cleardtlb.obj\
+    obj\ARMV4I\debug\cleardtlbentry.obj\
+    obj\ARMV4I\debug\clearitlb.obj\
+    obj\ARMV4I\debug\clearitlbentry.obj\
+    obj\ARMV4I\debug\clearutlb.obj\
+    obj\ARMV4I\debug\clearutlbentry.obj
+

@@ -1,0 +1,2 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [01:0000000074:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\OAL\OALLIB\startup.s(62) warning : A0241: Instruction clz not supported for -cpu "-arch 4t"

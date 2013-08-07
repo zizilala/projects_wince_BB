@@ -1,0 +1,44 @@
+RELEASETYPE=PLATFORM
+TARGETNAME=sysctrl
+TARGETTYPE=DYNLINK
+DLLENTRY=DllMain
+
+TARGETLIBS= \
+	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib\
+	$(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib \
+	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\toolhelp.lib\
+	$(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\PowerCtl.lib\
+	$(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\SystemCtrl.lib\
+	$(_PLATCOMMONLIB)\$(_CPUDEPPATH)\runtime_context_drvapp_stub_$(_TGTSOC_PFX).lib \
+	$(_PLATCOMMONLIB)\$(_CPUDEPPATH)\clkmgr_$(_TGTSOC_PFX).lib\
+	$(_PLATCOMMONLIB)\$(_CPUDEPPATH)\ost_$(_TGTSOC_PFX).lib \
+	$(_PLATCOMMONLIB)\$(_CPUDEPPATH)\MFP_SOC_$(_TGTSOC_PFX).lib\
+	$(_PLATCOMMONLIB)\$(_CPUINDPATH)\GPIO_$(_TGTSOC_PFX).lib\
+	$(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\SSI.lib\
+	$(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\ZEBEX.lib\
+	$(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\BCRScanCtrl.lib\
+	$(_TARGETPLATROOT)\lib\$(_CPUDEPPATH)\$(_TGTPLAT_PFX)_MFP.lib\
+	$(_PLATLIB)\$(_CPUDEPPATH)\$(_TGTPLAT_PFX)_plat_nandfmd.lib\
+	$(_PLATCOMMONLIB)\$(_CPUDEPPATH)\$(_TGTPLAT_PFX)_soc_nandfmd.lib\
+	$(_PLATCOMMONLIB)\$(_CPUDEPPATH)\INTC_$(_TGTSOC_PFX).lib\
+  
+		
+INCLUDES= \
+    $(INCLUDES);\
+    $(_TARGETPLATROOT)\src\SDK\LIB\SSI;\
+    $(_TARGETPLATROOT)\src\SDK\LIB\BCRScanCtrl;\
+    $(_TARGETPLATROOT)\src\SDK\LIB\ZEBEX;\
+    
+DEFFILE= sysctrl.def
+
+SOURCES= sysctrl.cpp\
+         startup.cpp\
+         TrayIcon.cpp\
+         power.c\
+         LED.c\
+         fmdutil.c\
+         flash.c\
+         ComProtocol.cpp\
+         ChkDevice.cpp\
+         sysctrl.rc
+

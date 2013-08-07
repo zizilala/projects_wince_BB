@@ -1,0 +1,23 @@
+TARGETNAME=testSerialPerf
+FILE_VIEW_ROOT_FOLDER= \
+    ReadMe.txt \
+    StdAfx.cpp \
+
+FILE_VIEW_RESOURCE_FOLDER= \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    StdAfx.h \
+
+SOURCES= \
+    testSerialPerf.cpp \
+
+RELEASETYPE=PLATFORM
+TARGETLIBS= \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+
+PRECOMPILED_PCH=StdAfx.pch
+PRECOMPILED_CXX=1
+PRECOMPILED_OBJ=StdAfx.obj
+PRECOMPILED_INCLUDE=StdAfx.h
+TARGETTYPE=PROGRAM
+EXEENTRY=mainWCRTStartup

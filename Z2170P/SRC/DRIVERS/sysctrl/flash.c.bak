@@ -1,0 +1,741 @@
+//
+// (C) Copyright 2006-2009 Marvell International Ltd.
+// All Rights Reserved
+//
+//
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+//
+//
+// Use of this sample source code is subject to the terms of the Microsoft
+// license agreement under which you licensed this sample source code. If
+// you did not accept the terms of the license agreement, you are not
+// authorized to use this sample source code. For the terms of the license,
+// please see the license agreement between you and Microsoft or, if applicable,
+// see the LICENSE.RTF on your install media or the root of your tools installation.
+// THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+//
+//------------------------------------------------------------------------------
+//
+//  File:  flash.c
+//
+//  Flash routines for the Intel Zylonite bootloader.
+//
+#include <windows.h>
+#include <oal_memory.h>
+#include <pxa_nand.h>
+#include <flash_cfg.h>
+
+// Defines.
+//
+#ifndef MIN
+#define MIN(x, y)   (((x) < (y)) ? (x) : (y))
+#endif
+
+#define FLASH_DEVICE_ID_L18_MIN    0x880C
+#define FLASH_DEVICE_ID_L18_MAX    0x880F
+#define FLASH_DEVICE_ID_L30_MIN    0x8812
+#define FLASH_DEVICE_ID_L30_MAX    0x8815
+#define FLASH_DEVICE_ID_K3_MIN     0x8801
+#define FLASH_DEVICE_ID_K3_MAX     0x8803
+#define FLASH_DEVICE_ID_K18_MIN    0x8805
+#define FLASH_DEVICE_ID_K18_MAX    0x8807
+#define FLASH_DEVICE_ID_J3_MIN     0x0016
+#define FLASH_DEVICE_ID_J3_MAX     0x0018
+
+#define NAND_ATTEMPT_NUMBER 3
+// defines needed for FMD writes
+#define SECTOR_WRITE_IN_PROGRESS   0x0002
+#define SECTOR_WRITE_COMPLETED     0x0004
+
+
+// Type definitions.
+//
+
+
+typedef enum _FLASH_BLOCK_ARRAY_TYPE_
+{
+    CONSTANT_SIZE,
+    BOTTOM_PARAMETER,
+    TOP_PARAMETER
+} FLASH_BLOCK_ARRAY_TYPE, *PFLASH_BLOC_ARRAY_TYPE;
+
+typedef enum _FLASH_DEVICE_TYPE_
+{
+    NONE,
+    L18, 
+    L30,
+    K3,
+    K18,
+    J3,
+    SAMSUNG_ZYLONYTE
+} FLASH_DEVICE_TYPE, *PFLASH_DEVICE_TYPE;
+
+typedef enum
+{
+    BLOCK_SIZE_16KB = 16,
+    BLOCK_SIZE_32KB = 32,
+    BLOCK_SIZE_64KB = 64,
+    BLOCK_SIZE_128KB= 128 
+} NAND_FLASH_BLOCK_SIZE_T;
+
+// Local variables.
+//
+static FLASH_BLOCK_ARRAY_TYPE g_BlockArrayType  = CONSTANT_SIZE;
+static FLASH_DEVICE_TYPE      g_FlashDeviceType = NONE;
+
+static UINT32 FLASH_SIZE    = (16777216 * 2);   // Paired 16MB parts.
+static UINT32 ERASE_BLOCKS  = 128;              // Total number of blocks (hiding parameter blocks).
+static UINT32 L3_BLOCK_SIZE = 65536;            // 64KB per block on L3 (blocks 0 - 3).
+
+static UINT8 tempBuffer[LB_BYTES_PER_PAGE]; //SB:512 bytes/page  LB:2048 bytes/page
+
+// Global variables.
+//
+
+FlashInfo    g_FlashInfo;
+
+VOID WINAPI InitializeCriticalSection(LPCRITICAL_SECTION lpcs){}
+VOID WINAPI EnterCriticalSection(LPCRITICAL_SECTION lpcs){}
+VOID WINAPI LeaveCriticalSection(LPCRITICAL_SECTION lpcs){}
+VOID WINAPI DeleteCriticalSection(LPCRITICAL_SECTION lpcs){}
+
+BOOL PXA_DMA_ArmTransfer(PXA_DMA_ChannelHandle channel,PXA_DMA_TransferHandle transfer){return TRUE;}
+VOID PXA_DMA_UpdateTransferLength(PXA_DMA_TransferHandle transfer,UINT32 pos,UINT32 length){}
+BOOL PXA_DMA_TerminateTransfer(PXA_DMA_ChannelHandle channel, PXA_DMA_TransferStatus * p_status){return TRUE;}
+BOOL PXA_DMA_StartTransfer(PXA_DMA_ChannelHandle channel){return TRUE;}
+BOOL PXA_DMA_PollingForTransferDone(PXA_DMA_ChannelHandle channel){return TRUE;}
+
+
+BOOL FlashInit(void)
+{
+    PVOID hFMD = NULL;
+    hFMD = FMD_Init(FMD_CALLER_DLL, NULL, NULL);    
+
+    return FMD_GetInfo(&g_FlashInfo);
+}
+
+BOOL FlashReadSector(SECTOR_ADDR sector, UINT8 *pTmp, SectorInfo *pSectorInfo)
+{
+    BOOL rc;
+    UINT32 retry = NAND_ATTEMPT_NUMBER;
+    RETAILMSG(1, (TEXT("---------->444: FlashReadSector\r\n")));
+    do {
+        rc=FMD_ReadSector(sector, pTmp, pSectorInfo, 1);
+    }while (!rc && --retry > 0);
+    return rc;
+}
+
+BOOL FlashWriteSector(SECTOR_ADDR sector, VOID *pBuffer, SectorInfo *pInfo)
+{
+    BOOL rc;
+    UINT32 retry = NAND_ATTEMPT_NUMBER;
+    do {
+        rc = FMD_WriteSector(sector, pBuffer, pInfo, 1);
+    } while (!rc && --retry > 0);
+    return rc;
+}
+
+BOOL FlashEraseBlock(BLOCK_ID block)
+{
+    BOOL rc;
+    UINT32 retry = NAND_ATTEMPT_NUMBER;
+    do {
+        rc = FMD_EraseBlock(block);
+    } while (!rc && --retry > 0);
+    return rc;
+}
+
+//------------------------------------------------------------------------------
+//
+//FlashReadNANDFlash(UINT32 startBlock, UINT32 endBlock) read NAND Flash from startBlock to endBlock 
+//to test if it can be read successfully
+//
+BOOL FlashReadNANDFlash(UINT32 startBlock, UINT32 endBlock)
+{
+    BOOL rc = FALSE;
+    FlashInfo flashInfo;    
+    BLOCK_ID block;
+    UINT32  sectorsPerBlock;
+    SECTOR_ADDR sector;
+    SectorInfo sectorInfo;
+
+    //KITLOutputDebugString("+FlashReadNANDFlash\r\n");
+
+    if (!FMD_GetInfo(&flashInfo))
+    {
+        //KITLOutputDebugString("ERROR: FlashReadNANDFlash: FMD_GetInfo call failed!\r\n");
+        return rc;
+    }
+
+    sectorsPerBlock = flashInfo.wSectorsPerBlock;
+    block = startBlock;
+    
+    while (block <= endBlock)
+    {
+        //no need to read the relocation table, FMD_ReadSector will do the mapping operation
+        sector = block * sectorsPerBlock;
+        while(sector<(block+1) * sectorsPerBlock)
+        {
+        if (!FlashReadSector(sector, tempBuffer, &sectorInfo))
+        {
+            //KITLOutputDebugString("ERROR: FlashRead: Failed read sector %d from flash\r\n", sector);
+            return rc;
+        }
+            sector++;
+        }
+            //KITLOutputDebugString(".", block);
+        block++;
+    }
+
+    //KITLOutputDebugString("-FlashReadNANDFlash successfully\r\n");
+    return TRUE;
+}
+
+//------------------------------------------------------------------------------
+//
+//FlashFormatNANDFlash(UINT32 startBlock, UINT32 endBlock) format the blocks 
+// from startBlock to endBlock
+//When it fail to erase block, the FMD_EraseBlock will update the relocation table
+//
+BOOL FlashFormatNANDFlash(UINT32 startBlock, UINT32 endBlock)
+{
+    BOOL rc = FALSE;
+    FlashInfo flashInfo;        
+    BLOCK_ID block = startBlock;
+
+    //KITLOutputDebugString("+FlashFormatNANDFlash: startBlock = %d, endBlock = %d\r\n", startBlock, endBlock);
+
+    if (!FMD_GetInfo(&flashInfo)) 
+    {
+        //KITLOutputDebugString("ERROR: FlashFormatNANDFlash: FMD_GetInfo call failed!\r\n");
+        return rc;
+    }
+
+    do {
+        //KITLOutputDebugString(".");
+        if (!FlashEraseBlock(block))
+        {
+            //KITLOutputDebugString("ERROR: FlashFormatNANDFlash: Erase block %d failed!\r\n", block);
+            return rc;
+        }
+    } while (++block <= endBlock);
+
+    //KITLOutputDebugString("\r\n-FlashFormatNANDFlash: startBlock = %d, endBlock = %d block = %d\r\n", startBlock, endBlock, block);
+
+    return TRUE;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  ReadBlock read one block
+//  
+
+static BOOL ReadBlock(BLOCK_ID block, UINT8 *pDataBuffer, FlashInfo * pFlashInfo)
+{
+    BOOL rc = FALSE;
+    UINT32 count;
+    UINT32 sectorSize, sectorsPerBlock;
+    SectorInfo sectorInfo;
+    SECTOR_ADDR sector;
+
+    // Get flash info
+    sectorSize = pFlashInfo->wDataBytesPerSector;
+    sectorsPerBlock = pFlashInfo->wSectorsPerBlock;
+
+    // Read data from block
+    if (pDataBuffer != NULL)
+    {
+       // RETAILMSG(1, (TEXT("\n\r+++ReadBlock\r\n")));
+        sector = block * sectorsPerBlock;
+        for(count = 0; count < sectorsPerBlock; count++)
+        {
+            ////KITLOutputDebugString("FMD_ReadSector: sector=%d\r\n", sector);
+            if (!FlashReadSector(sector, pDataBuffer, &sectorInfo))
+            {
+                // When block read fail, there isn't much we can do more
+                //KITLOutputDebugString("ERROR: ReadBlock: Failed read sector %d from flash\r\n",  sector);
+             //   RETAILMSG(1, (TEXT("\n\rReadBlock: Failed read sector %d from flash\r\n")sector));
+                return rc;
+            }
+            // Move to next sector
+            sector++;
+            pDataBuffer += sectorSize;
+        }
+    }
+    else
+        return rc;
+    
+  //  RETAILMSG(1, (TEXT("--ReadBlock\r\n")));
+    
+    return TRUE;
+}
+
+
+//------------------------------------------------------------------------------
+//
+//  Function:  WriteBlock
+//  
+// BOOL fSectorInfo:
+//  TRUE means the sector info data include in the data buffer
+//  FALSE means the sector info data don't include in the data buffer
+
+static UINT8 *WriteBlock(BLOCK_ID block, UINT8 *pDataBuffer, FlashInfo * pFlashInfo, BOOL fSectorInfo)
+{   
+    UINT32 count;
+    UINT32 sectorSize, sectorsPerBlock;
+    SectorInfo sectorInfo;
+    SECTOR_ADDR sector;
+    UINT32 nextSectorSize;
+	BOOL badBlock = FALSE;
+	UINT32 attemptTimes = 0;
+
+
+    // Get flash info
+    sectorSize = pFlashInfo->wDataBytesPerSector;
+    sectorsPerBlock = pFlashInfo->wSectorsPerBlock;
+	//RETAILMSG (1, (TEXT("WriteBlock (%d)\r\n"),block));
+	do{
+		badBlock = FALSE;
+		// Erase block
+		if (!FlashEraseBlock(block))
+		{
+			//KITLOutputDebugString("ERROR: WriteBlock: Erase block %d failed!\r\n", block);
+			//    //KITLOutputDebugString("WARNING: Would just try to write the block directly\r\n");
+			return NULL;
+		}
+
+		// Read data from block
+		if (pDataBuffer != NULL)
+		{
+			sector = block * sectorsPerBlock;
+			for(count = 0; count < sectorsPerBlock; count++)
+			{
+				unsigned int i;
+				BOOL allones = FALSE;
+				////KITLOutputDebugString("-");
+				// Prepare sector info
+				if (fSectorInfo)
+				{
+					memcpy(&sectorInfo, pDataBuffer+sectorSize,sizeof(SectorInfo));
+					// In case the BIN/DIO image accidentally sets bBadBlock to anything other than 0xFF...
+					// (this will turn a good block bad!)
+					if (sectorInfo.bBadBlock != 0xFF)
+					{
+						//KITLOutputDebugString("WARNING: Bad block byte is set (%B) on sector %d of block %d! Resetting to 0xFF.\r\n", sectorInfo.bBadBlock, count, block);
+						sectorInfo.bBadBlock = 0xFF; 
+					}
+					nextSectorSize = sectorSize+sizeof(SectorInfo);
+				}
+				else
+				{               
+					memset(&sectorInfo, 0xFF, sizeof(sectorInfo));
+					sectorInfo.bOEMReserved &= ~(OEM_BLOCK_READONLY|OEM_BLOCK_RESERVED);
+					sectorInfo.dwReserved1 = 0;
+					sectorInfo.wReserved2 = 0;
+					nextSectorSize = sectorSize;
+				}
+
+				//Skip write operation for BBT reserved area and OS Image partision if all data are 'FF'
+				//Thus we could be in accordance with XDB
+				if(((sector >= (sectorsPerBlock - LB_RELOCATION_TABLE_NUM))&&(sector < sectorsPerBlock)) || (block >= LB_FLASH_BLOCK_OS_START))
+				{
+					allones = TRUE;
+				for(i=0;i<nextSectorSize;i++)
+				{
+					if ((*(pDataBuffer+i))!=0xff)
+					{
+						allones = FALSE;
+						break;
+					}
+				}
+				}
+
+				if (!allones) 
+				{
+					// Mark the Sector as Write in Progress
+					sectorInfo.wReserved2 &= ~SECTOR_WRITE_IN_PROGRESS;
+					if (!FlashWriteSector(sector, NULL, &sectorInfo))
+					{
+						// Write failed, mark block as bad
+						FMD_SetBlockStatus(block, BLOCK_STATUS_BAD);
+						//KITLOutputDebugString("ERROR: WriteBlock: Failed write sector %d to flash\r\n", sector);
+						badBlock = TRUE;
+					}
+					// Mark the Sector as Completed if success
+					sectorInfo.wReserved2 &= ~SECTOR_WRITE_COMPLETED;
+
+					if (!FlashWriteSector(sector, pDataBuffer, &sectorInfo))
+					{
+						//KITLOutputDebugString("ERROR: WriteBlock: Failed write sector %d to flash\r\n", sector);
+						badBlock = TRUE;
+					}
+				}
+				else
+				{
+					////KITLOutputDebugString("INFO: WriteBlock: all-one write sector %d to flash\r\n", sector);
+					//dumpData((char *)(pDataBuffer+sectorSize), 8, 0);
+					// Do nothing here. Don't program this page. Just skip it.
+				}
+
+				//Move to next sector
+				sector++;
+				pDataBuffer += nextSectorSize;
+			}
+		}
+		else
+			return NULL;
+		if(badBlock)
+		{
+			attemptTimes++;
+			if(attemptTimes >= NAND_ATTEMPT_NUMBER)
+				return NULL;
+		}
+	}while(badBlock);
+    
+    return pDataBuffer;
+}
+
+BOOL FlashReadNAND(UINT32 startBlock, UINT8 *pDataBuffer, UINT32 size)
+{
+    BOOL rc = FALSE;
+    FlashInfo flashInfo;
+    BLOCK_ID block = startBlock;
+    DWORD i=0;
+    DWORD index=0;
+    DWORD dwReadSize=size;    
+    UINT8 *lpBuffer=pDataBuffer;        
+    
+    if (!FMD_GetInfo(&flashInfo)) 
+    {
+        //KITLOutputDebugString("ERROR: FlashReadNAND: FMD_GetInfo call failed!\r\n");
+        return rc;
+    }
+
+    if (!lpBuffer)
+    {
+        //KITLOutputDebugString("ERROR: no buffer for configuration data!\r\n");
+        return rc;
+    }
+    else
+    {
+      
+    	  i=(size/flashInfo.dwBytesPerBlock);
+
+    	  if(size%flashInfo.dwBytesPerBlock)
+    	  i++;	
+    	  
+    //	  RETAILMSG(1, (TEXT("\n\rStart block %d, read  %d / %d blocks BytesPerBlock(%d)\r\n\r\n"),startBlock,(index+1),i,flashInfo.dwBytesPerBlock));
+    	  
+        for(index=0; index < i ; index++)
+    	  {
+    	  	
+    	  	 ////KITLOutputDebugString("\n\rStart block %d, read  %d / %d blocks\r\n",startBlock,(index+1),i );
+    	  	  
+    	  	  lpBuffer=pDataBuffer+(flashInfo.dwBytesPerBlock*index);            
+    	  	 
+    	  //	 RETAILMSG (1, (TEXT("\n\rFlashReadNAND data address (%x)\r\n"),lpBuffer));
+    	  	 
+            if(!ReadBlock((startBlock+index), lpBuffer, &flashInfo))
+        {
+            // When block read fail, there isn't much we can do more
+               //KITLOutputDebugString("ERROR: FlashRead: Failed read block %d from flash\r\n", (startBlock+index));
+          //     RETAILMSG (1, (TEXT("\n\rERROR: FlashRead: Failed read block %d from flash\r\n"),startBlock+index));
+               return FALSE;
+        }
+       } 
+           
+         	
+    }
+ //    RETAILMSG (1, (TEXT("\n\r---FlashReadNAND \r\n")));
+    return (TRUE);
+}
+
+BOOL FlashWriteNAND(UINT32 startBlock, UINT8 *pDataBuffer, UINT32 size)
+{
+    BOOL rc = FALSE;
+    FlashInfo flashInfo;
+    UINT32 blockSize;
+    BLOCK_ID block = startBlock; 
+    UINT32 count, numBlocksProgram, i;
+
+    if (pDataBuffer == NULL)
+    {
+        //KITLOutputDebugString("ERROR: no buffer for configuration data!\r\n");
+        return rc; 
+    }    
+    
+    // Get flash info
+    if (!FMD_GetInfo(&flashInfo)) 
+    {
+        //KITLOutputDebugString("ERROR: FlashWrite: FMD_GetInfo call failed!\r\n");
+        return rc;
+    }
+
+    blockSize = flashInfo.dwBytesPerBlock;
+
+    numBlocksProgram = size / blockSize;
+    if ((numBlocksProgram == 0) || (size%blockSize != 0)) numBlocksProgram++;
+    
+
+    ////KITLOutputDebugString("FlashWrite: blockSize = 0x%x\r\n", blockSize);
+    ////KITLOutputDebugString("FlashWrite: start writing at block %d\r\n", block);
+    ////KITLOutputDebugString("FlashWrite: numBlocksProgram: %d\r\n", numBlocksProgram);
+
+    // Write image down to flash
+    for (count = 0; count < numBlocksProgram; count++)
+    {
+       // //KITLOutputDebugString(".");
+        // Scan for bad block in bad block table
+        
+        i = 3;
+        do 
+        {
+            ////KITLOutputDebugString("FlashWriteNAND: pData: %x\r\n", pDataBuffer);
+
+            if (WriteBlock(block, pDataBuffer, &flashInfo, FALSE) == NULL)
+            {   
+                // Let us try three times
+
+                if (!FlashEraseBlock(block)) //Bad block will be relocated when erase
+                    return rc;
+                i--;
+            }
+            else
+                break;
+        } while (i > 0);
+
+        if (i == 0)
+        {
+            //KITLOutputDebugString("ERROR: FlashWrite: failed!\r\n");
+            return rc;
+        }
+        
+        block++;
+        pDataBuffer += blockSize;
+    }
+
+   // //KITLOutputDebugString("\r\nFlashWrite: Image written\r\n");
+   
+    return TRUE;
+}
+
+
+
+BOOL WriteDataToFlash(DWORD Offset,DWORD DataSize,PBYTE lpSourceData)
+{
+	  BOOL  status=FALSE;
+	
+    DWORD StartBlock=Offset/g_FlashInfo.dwBytesPerBlock;
+    
+    int iBlocks=DataSize/g_FlashInfo.dwBytesPerBlock;   
+    
+    int i=0;    
+    
+    PBYTE DataBuffer=NULL;
+    
+    DWORD wBytes=(Offset%g_FlashInfo.dwBytesPerBlock);
+    
+    
+    BYTE *lpTragetData=NULL;
+    
+    DWORD ShiftBytes,UpdateSize;  
+    
+    
+    
+    if(wBytes)
+    {
+    	
+    	UpdateSize=(DataSize+wBytes);
+    	
+    	DataBuffer= (PBYTE)malloc( UpdateSize );
+    	
+    	if(!DataBuffer)
+    	return FALSE;	
+    	
+        FlashReadNAND(StartBlock, DataBuffer, wBytes );   
+      
+        memcpy( (PBYTE)(DataBuffer+wBytes),lpSourceData,DataSize);
+      
+        lpTragetData=DataBuffer;
+           
+    
+    }
+    else
+    {	
+      lpTragetData=lpSourceData;
+      
+      UpdateSize=DataSize;
+    }
+    
+    
+    for(i =0 ; i<iBlocks ;i++ )
+    {
+    	 ShiftBytes=(i*g_FlashInfo.dwBytesPerBlock);    	
+    	  
+       if(!FlashWriteNAND( (StartBlock+i), (lpTragetData+ShiftBytes),g_FlashInfo.dwBytesPerBlock))
+       goto exit;
+       
+      
+      RETAILMSG (1,(TEXT("\n\rWriteNand Offset: 0x%x done\n\r"),Offset+ShiftBytes)); 
+    }
+    
+    if(UpdateSize%g_FlashInfo.dwBytesPerBlock)
+    {	 
+    	   	
+    	 if(!FlashWriteNAND( (StartBlock+i), (lpTragetData+(i*g_FlashInfo.dwBytesPerBlock)),(UpdateSize%g_FlashInfo.dwBytesPerBlock) ))
+    	 goto exit;	
+    }
+    
+     status=TRUE;
+    
+exit:
+	    
+    if(DataBuffer)
+	  {	
+	   free((void *) DataBuffer );
+	
+	   DataBuffer=NULL;	
+    } 
+    	
+    return status;
+    	
+
+}
+
+
+BOOL ReadDataFromFlash(DWORD Offset,DWORD DataSize,PBYTE lpTargetData)
+{	
+    DWORD StartBlock=Offset/g_FlashInfo.dwBytesPerBlock;                  
+    	
+    return FlashReadNAND(StartBlock, lpTargetData, DataSize );   
+    	
+
+}
+
+//luke add
+BOOL ReadFlashData(DWORD Offset,DWORD DataSize,PBYTE lpTargetData)
+{
+
+    BOOL rc = FALSE;
+    UINT32  sectorSize,OffsetinStartSector;
+    SECTOR_ADDR StartSector,EndSector; //DWORD
+    SectorInfo sectorInfo;
+    PBYTE pData=NULL;
+    int i=0;
+  
+      
+    //1.Get Nand Flash info from FlashInit
+    sectorSize   = g_FlashInfo.wDataBytesPerSector;
+    
+    
+    //2.Check start sector
+    //StartSector =Offset/sectorSize; //count from Block0.sector0
+    StartSector =(Offset>>11); //my gy friend asked
+    
+    //check if not start from sector start address
+    OffsetinStartSector  = (Offset&0x7FF);//(Offset%sectorSize);
+ 
+    //check the end of sector
+  //  EndSector =  (Offset+DataSize)/sectorSize;//count from Block0.sector0
+    EndSector =  (Offset+DataSize)>>11;//my gy friend asked
+   
+    RETAILMSG (1,(TEXT("\n\rReadFlashData: StartSector(%d), EndSector(%d), OffsetinStartSector(%d)\n\r"),StartSector,EndSector,OffsetinStartSector));
+    
+
+     pData = (PBYTE)malloc( (EndSector-StartSector+1)*sectorSize );
+     
+    do
+    {
+      FlashReadSector(StartSector+i, (pData+sectorSize*i), &sectorInfo);
+      i++;
+    }while(StartSector+i<=EndSector);
+    
+    memcpy( lpTargetData ,(pData+OffsetinStartSector),DataSize);
+
+    free((void *) pData );
+    
+ 
+    return TRUE;
+}
+
+BOOL WriteFlashData(DWORD Offset,DWORD DataSize,PBYTE lpSourceData)
+{
+
+
+    BOOL rc = FALSE;
+    UINT32  sectorSize,blockSize,OffsetinStartBlock,LeftBytesinEndBlock;
+    UINT32 StartBlock,EndBlock;
+//    FlashInfo  flashInfo;
+    
+    PBYTE pData=NULL;
+    UINT32 i=0,blockcount=0;
+  
+      
+    //1.Get Nand Flash info from FlashInit
+    sectorSize   = g_FlashInfo.wDataBytesPerSector;
+    blockSize    = g_FlashInfo.dwBytesPerBlock;
+    
+    //2.Check start sector
+    //StartSector =Offset/sectorSize; //count from Block0.sector0
+    StartBlock = (Offset>>17);
+//    StartSector =(Offset>>11); 
+    
+    //check if not start from sector start address
+//    OffsetinStartSector = (Offset&0x8FF);
+ 
+    //check the end of sector
+  //  EndSector =  (Offset+DataSize)/sectorSize;//count from Block0.sector0
+    EndBlock = (Offset+DataSize-1)>>17;
+//    EndSector =  (Offset+DataSize)>>11;
+   
+//    LeftBytesinEndSector =((Offset+DataSize)&0x8FF);
+    
+    pData= (PBYTE)malloc(blockSize);
+        
+    i=0;
+    blockcount=0;
+    
+    OffsetinStartBlock =(Offset&0x1FFFF);
+    LeftBytesinEndBlock =(Offset+DataSize)&0x1FFFF;
+ 
+    RETAILMSG (1,(TEXT("\n\rWriteFlashData: StartBlock(%d), EndBlock(%d), OffsetinStartBlock(%d), LeftBytesinEndBlock(%d)\n\r"),
+                              StartBlock,EndBlock,OffsetinStartBlock,LeftBytesinEndBlock));
+    
+    for(i=StartBlock;i<=EndBlock;i++)
+    {
+      //before write, we need ro erase block(min size), so we have to save block data first.
+     // ReadBlock(i, pData, &flashInfo);    
+        
+      FlashReadNAND(i, pData, blockSize);
+      
+      if(OffsetinStartBlock&&(i==StartBlock))
+      {
+        if(StartBlock==EndBlock)
+          memcpy(pData+OffsetinStartBlock,lpSourceData,DataSize);
+        else  
+          memcpy(pData+OffsetinStartBlock,lpSourceData,blockSize-OffsetinStartBlock);
+       //blockcount++;
+        FlashWriteNAND(StartBlock,pData,blockSize);
+        continue;
+      }
+      
+      if(LeftBytesinEndBlock&&(i==EndBlock))
+      {
+        memcpy(pData,(lpSourceData+DataSize-LeftBytesinEndBlock),LeftBytesinEndBlock);
+        FlashWriteNAND(EndBlock,pData,blockSize);
+        continue;
+      }
+      
+      memcpy(pData, lpSourceData+OffsetinStartBlock+blockSize*blockcount, blockSize);
+      FlashWriteNAND(StartBlock+(OffsetinStartBlock?blockcount+1:blockcount),pData,blockSize);
+      
+      blockcount++;
+      
+    }
+     
+   
+    free((void *) pData );
+    
+    return TRUE; 
+}

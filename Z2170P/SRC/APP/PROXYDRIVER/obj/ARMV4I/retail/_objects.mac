@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\proxydriver.obj\
+    obj\ARMV4I\retail\dvfslatency.obj
+

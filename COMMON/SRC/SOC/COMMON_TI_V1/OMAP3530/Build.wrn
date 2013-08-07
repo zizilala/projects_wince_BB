@@ -1,0 +1,2 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [01:0000000175:WARNN ] C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\CPUIDLE\cpu.s(205) warning : A0241: Instruction clz not supported for -cpu "-arch 4t"

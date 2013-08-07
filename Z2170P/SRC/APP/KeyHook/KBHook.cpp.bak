@@ -1,0 +1,47 @@
+#include "stdafx.h"
+#include "KBHook.h"
+
+HWND	KBHook::m_hTargetWnd	= NULL;
+HHOOK	KBHook::m_hHook			= NULL;
+////////////////////////////////////////////////////////////////////////////////
+// Construction/Destruction.
+KBHook::KBHook()
+{}
+
+KBHook::~KBHook()
+{}
+
+////////////////////////////////////////////////////////////////////////////////
+// Member functions of the start/stop keyboard hook.
+BOOL KBHook::StartKBHook ( HWND hWnd, HINSTANCE hInstance )
+{
+    ASSERT ( IsWindow ( hWnd ) );
+
+    m_hTargetWnd = hWnd;
+
+    if ( m_hHook != NULL )
+        StopKBHook();
+
+    m_hHook = SetWindowsHookEx ( WH_KEYBOARD_LL, KBHookProc, hInstance, 0);
+
+    return (m_hHook == NULL ? FALSE : TRUE);
+}
+
+BOOL KBHook::StopKBHook ( void )
+{
+    BOOL bResult = UnhookWindowsHookEx ( m_hHook );
+    m_hHook = NULL;
+
+    return bResult;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// The callback function of keyboard hook procedure.
+
+LRESULT CALLBACK KBHook::KBHookProc ( int nCode, WPARAM wParam, LPARAM lParam )
+{
+                     
+    //SendMessage ( KBHook::m_hTargetWnd, WM_KBHOOK_NOTIFY, wParam, lParam );      	    
+    
+    return CallNextHookEx ( KBHook::m_hHook, nCode, wParam, lParam );
+}

@@ -1,0 +1,91 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
+BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM
+BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
+BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
+BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
+BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
+BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
+BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\
+BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000009:INFO  ] Done.
+BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\prcm.c because target: obj\ARMV4I\retail\prcm.obj is missing.
+BUILD: [00:0000000011:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\prcm_clock.c because target: obj\ARMV4I\retail\prcm_clock.obj is missing.
+BUILD: [00:0000000012:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\prcm_device.c because target: obj\ARMV4I\retail\prcm_device.obj is missing.
+BUILD: [00:0000000013:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\prcm_domain.c because target: obj\ARMV4I\retail\prcm_domain.obj is missing.
+BUILD: [00:0000000014:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\prcm_reset.c because target: obj\ARMV4I\retail\prcm_reset.obj is missing.
+BUILD: [00:0000000015:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\prcm_volt.c because target: obj\ARMV4I\retail\prcm_volt.obj is missing.
+BUILD: [00:0000000016:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\ directory.
+BUILD: [00:0000000017:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 NOLINK=1 NOPASS0=1'
+BUILD: [01:0000000018:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000019:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000020:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000021:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\sources
+BUILD: [01:0000000022:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000023:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM
+BUILD: [01:0000000024:INFO  ] TARGETNAME: omap3530_oal_prcm
+BUILD: [01:0000000025:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000026:PROGC ] Compiling .\prcm.c
+BUILD: [01:0000000027:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\prcm.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\prcm.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\.\prcm.c
+BUILD: [01:0000000028:INFO  ] prcm.c
+BUILD: [01:0000000029:PROGC ] Compiling .\prcm_clock.c
+BUILD: [01:0000000030:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\prcm_clock.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\prcm_clock.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\.\prcm_clock.c
+BUILD: [01:0000000031:INFO  ] prcm_clock.c
+BUILD: [01:0000000032:PROGC ] Compiling .\prcm_device.c
+BUILD: [01:0000000033:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\prcm_device.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\prcm_device.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\.\prcm_device.c
+BUILD: [01:0000000034:INFO  ] prcm_device.c
+BUILD: [01:0000000035:PROGC ] Compiling .\prcm_domain.c
+BUILD: [01:0000000036:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\prcm_domain.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\prcm_domain.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\.\prcm_domain.c
+BUILD: [01:0000000037:INFO  ] prcm_domain.c
+BUILD: [01:0000000038:PROGC ] Compiling .\prcm_reset.c
+BUILD: [01:0000000039:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\prcm_reset.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\prcm_reset.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\.\prcm_reset.c
+BUILD: [01:0000000040:INFO  ] prcm_reset.c
+BUILD: [01:0000000041:PROGC ] Compiling .\prcm_volt.c
+BUILD: [01:0000000042:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\prcm_volt.obj -c -IARM\ -I. -IC:\WINCE600\platform\common\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -Dproject_cebase -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\prcm_volt.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4    /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\.\prcm_volt.c
+BUILD: [01:0000000043:INFO  ] prcm_volt.c
+BUILD: [00:0000000044:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\obj\ARMV4I\retail\prcm.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib is missing.
+BUILD: [00:0000000045:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\obj\ARMV4I\retail\prcm_clock.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib is missing.
+BUILD: [00:0000000046:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\obj\ARMV4I\retail\prcm_device.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib is missing.
+BUILD: [00:0000000047:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\obj\ARMV4I\retail\prcm_domain.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib is missing.
+BUILD: [00:0000000048:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\obj\ARMV4I\retail\prcm_reset.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib is missing.
+BUILD: [00:0000000049:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\obj\ARMV4I\retail\prcm_volt.obj because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib is missing.
+BUILD: [00:0000000050:INFO  ] Will Build C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\ because target: C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib is missing.
+BUILD: [00:0000000051:PROGC ] Building LIB Pass in C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\ directory.
+BUILD: [00:0000000052:PROG  ] 'NMAKE.EXE TargetLibFiles  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\COMMON CLEANBUILD=1 LINKONLY=1 NOPASS0=1'
+BUILD: [01:0000000053:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
+BUILD: [01:0000000054:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\COMMON
+BUILD: [01:0000000055:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\sources.cmn
+BUILD: [01:0000000056:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM\sources
+BUILD: [01:0000000057:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
+BUILD: [01:0000000058:INFO  ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\OMAP3530\OAL\PRCM
+BUILD: [01:0000000059:INFO  ] TARGETNAME: omap3530_oal_prcm
+BUILD: [01:0000000060:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORMCOMMON
+BUILD: [01:0000000061:PROGC ] Linking C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib
+BUILD: [01:0000000062:INFO  ] 	link -lib -out:C:\WINCE600\platform\common\lib\ARMV4I\retail\omap3530_oal_prcm.lib -machine:thumb @C:\DOCUME~1\brian.hsu\LOCALS~1\Temp\nmB91.tmp
+BUILD: [00:0000000063:PROGC ] Saving C:\WINCE600\PLATFORM\COMMON\Build.dat.
+BUILD: [00:0000000064:INFO  ] Done.
+BUILD: [00:0000000065:PROGC ] Done.
+BUILD: [00:0000000066:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000000067:PROGC ] Midl                       0         0       0
+BUILD: [00:0000000068:PROGC ] Message                    0         0       0
+BUILD: [00:0000000069:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000000070:PROGC ] Resource                   0         0       0
+BUILD: [00:0000000071:PROGC ] MASM                       0         0       0
+BUILD: [00:0000000072:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000000073:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000000074:PROGC ] MIPSASM                    0         0       0
+BUILD: [00:0000000075:PROGC ] C++                        0         0       0
+BUILD: [00:0000000076:PROGC ] C                          6         0       0
+BUILD: [00:0000000077:PROGC ] Static Libraries           1         0       0
+BUILD: [00:0000000078:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000000079:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000000080:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000000081:PROGC ] Resx                       0         0       0
+BUILD: [00:0000000082:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000000083:PROGC ] Other                      0         0       0
+BUILD: [00:0000000084:PROGC ] 
+BUILD: [00:0000000085:PROGC ] Total                      7         0       0
+BUILD: [00:0000000086:PROGC ] 
+BUILD: [00:0000000087:PROGC ] 0 Warnings,  0 Errors
+BUILD: [00:0000000088:PROGC ] GetSystemTimes (seconds): Idle: 12    Kernel: 14    User: 2    
+BUILD: [00:0000000089:PROGC ] Elapsed  time  (seconds): 4    

@@ -1,0 +1,224 @@
+ TPS659xx
+
+ Timestamp is 51ecc700 (Mon Jul 22 13:45:36 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 000004e0H .rdata                  CODE
+ 0001:00000500 00000025H .rdata$debug            CODE
+ 0001:00000528 00001fc4H .text                   CODE
+ 0001:000024ec 0000005cH .xdata                  CODE
+ 0001:00002548 00000028H .idata$2                CODE
+ 0001:00002570 00000014H .idata$3                CODE
+ 0001:00002584 000000ccH .idata$4                CODE
+ 0001:00002650 00000016H .idata$6                CODE
+ 0001:00002670 000000c5H .edata                  CODE
+ 0002:00000000 000000ccH .idata$5                DATA
+ 0002:000000d0 000006fcH .data                   DATA
+ 0002:000007d0 000000f8H .bss                    DATA
+ 0003:00000000 00000168H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 1000103c     TPS659xx_lib:tps659xx.obj
+ 0001:00000054       ??_C@_19IAPNKDAH@?$AAG?$AAp?$AAi?$AAo?$AA?$AA@ 10001054     TPS659xx_lib:tps659xx.obj
+ 0001:00000060       DEVICE_IFC_TWL_GUID        10001060     TPS659xx_lib:tps659xx.obj
+ 0001:000000a0       ??_C@_1JE@MPDFOMGM@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAS?$AAe?$AAc?$AAo?$AAn?$AAd?$AAa?$AAr?$AAy?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt@ 100010a0     TPS659xx_lib:tps659xx.obj
+ 0001:00000138       ??_C@_1JO@MEKAAHHG@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAT?$AAW?$AAL?$AA_?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAP?$AAr@ 10001138     TPS659xx_lib:tps659xx.obj
+ 0001:000001d8       ??_C@_1KC@MMBGIKIK@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAT?$AAW?$AAL?$AA_?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAP?$AAr@ 100011d8     TPS659xx_lib:tps659xx.obj
+ 0001:0000027c       ??_C@_1CK@MHJHMPML@?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAi?$AAo?$AAc?$AAt?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 1000127c     TPS659xx_lib:tps659xx.obj
+ 0001:000002a8       ??_C@_1CK@OBPLBNBH@?$AAE?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAi?$AAo?$AAc?$AAt?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 100012a8     TPS659xx_lib:tps659xx.obj
+ 0001:00000378       I2CDefaultI2CTimeout       10001378     bspcfg:bspcfg.obj
+ 0001:00000380       g_BSP_icL1Level            10001380     bspcfg:bspcfg.obj
+ 0001:00000528       ?GetFirstEventByGroup@@YAPAPAXPAUDevice_t@@K@Z 10001528 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000590       ?ReadRegs@@YAHPAUDevice_t@@KPAXK@Z 10001590 f   TPS659xx_lib:tps659xx.obj
+ 0001:0000060c       ?WriteRegs@@YAHPAUDevice_t@@KPBXK@Z 1000160c f   TPS659xx_lib:tps659xx.obj
+ 0001:00000688       ?WriteKeypadMatrixQueue@@YAHQAEPAX@Z 10001688 f   TPS659xx_lib:tps659xx.obj
+ 0001:000006f8       ?ReadKeypadMatrixQueue@@YAHQAEPAX@Z 100016f8 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000770       ?SendPBMessage@@YAHPAUDevice_t@@EE@Z 10001770 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000834       ?InitializeHardware@@YAHPAUDevice_t@@@Z 10001834 f   TPS659xx_lib:tps659xx.obj
+ 0001:0000087c       ?ProcessSecondaryInterrupts_USB@@YAHPAUDevice_t@@PAPAXPBUSIHEntry_t@@@Z 1000187c f   TPS659xx_lib:tps659xx.obj
+ 0001:0000099c       ?ProcessSecondaryInterrupts_Keypad@@YAHPAUDevice_t@@PAPAXPBUSIHEntry_t@@@Z 1000199c f   TPS659xx_lib:tps659xx.obj
+ 0001:00000a58       ?ProcessSecondaryInterrupts@@YAHPAUDevice_t@@PAPAXPBUSIHEntry_t@@@Z 10001a58 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000b58       ?SetInterruptMode@@YAHPAUDevice_t@@W4InterruptMode_e@@@Z 10001b58 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000d30       ?TWL_Deinit@@YAHK@Z        10001d30 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000dec       ?TWL_Open@@YAKKKK@Z        10001dec f   TPS659xx_lib:tps659xx.obj
+ 0001:00000e2c       ?TWL_Close@@YAHK@Z         10001e2c f   TPS659xx_lib:tps659xx.obj
+ 0001:00000e64       ?TWL_PowerUp@@YAXK@Z       10001e64 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000e98       ?TWL_PowerDown@@YAXK@Z     10001e98 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000fbc       ?TWL_InterruptThread@@YAKPAX@Z 10001fbc f   TPS659xx_lib:tps659xx.obj
+ 0001:000013e4       ?TWL_EnableWakeup@@YAHKKH@Z 100023e4 f   TPS659xx_lib:tps659xx.obj
+ 0001:000014e0       ?TWL_IOControl@@YAHKKPAEK0KPAK@Z 100024e0 f   TPS659xx_lib:tps659xx.obj
+ 0001:00001c34       DllMain                    10002c34 f   TPS659xx_lib:tps659xx.obj
+ 0001:00001c64       ?TWL_Init@@YAKPBGPBX@Z     10002c64 f   TPS659xx_lib:tps659xx.obj
+ 0001:00001e04       BSPGetTritonBusID          10002e04 f   bspcfg:bspcfg.obj
+ 0001:00001e0c       BSPGetTritonSlaveAddress   10002e0c f   bspcfg:bspcfg.obj
+ 0001:00001e14       I2CRead                    10002e14 f   ceddk:CEDDK.dll
+ 0001:00001e24       I2CSetSlaveAddress         10002e24 f   ceddk:CEDDK.dll
+ 0001:00001e34       I2CWrite                   10002e34 f   ceddk:CEDDK.dll
+ 0001:00001e44       GPIOClose                  10002e44 f   ceddk:CEDDK.dll
+ 0001:00001e54       I2CClose                   10002e54 f   ceddk:CEDDK.dll
+ 0001:00001e64       GPIOInterruptDisable       10002e64 f   ceddk:CEDDK.dll
+ 0001:00001e74       GPIOSetMode                10002e74 f   ceddk:CEDDK.dll
+ 0001:00001e84       GPIOInterruptDone          10002e84 f   ceddk:CEDDK.dll
+ 0001:00001e94       GPIOInterruptWakeUp        10002e94 f   ceddk:CEDDK.dll
+ 0001:00001ea4       GPIOInterruptInitialize    10002ea4 f   ceddk:CEDDK.dll
+ 0001:00001eb4       GPIOOpen                   10002eb4 f   ceddk:CEDDK.dll
+ 0001:00001ec4       I2COpen                    10002ec4 f   ceddk:CEDDK.dll
+ 0001:00001ed4       GetDeviceRegistryParams    10002ed4 f   ceddk:CEDDK.dll
+ 0001:00001ee4       EventModify                10002ee4 f   coredll:COREDLL.dll
+ 0001:00001ef4       __GetUserKData             10002ef4 f   coredll:COREDLL.dll
+ 0001:00001f04       LeaveCriticalSection       10002f04 f   coredll:COREDLL.dll
+ 0001:00001f14       EnterCriticalSection       10002f14 f   coredll:COREDLL.dll
+ 0001:00001f24       InterlockedIncrement       10002f24 f   coredll:COREDLL.dll
+ 0001:00001f34       InterlockedDecrement       10002f34 f   coredll:COREDLL.dll
+ 0001:00001f44       SetEventData               10002f44 f   coredll:COREDLL.dll
+ 0001:00001f54       Sleep                      10002f54 f   coredll:COREDLL.dll
+ 0001:00001f64       NKDbgPrintfW               10002f64 f   coredll:COREDLL.dll
+ 0001:00001f74       LocalFree                  10002f74 f   coredll:COREDLL.dll
+ 0001:00001f84       DeleteCriticalSection      10002f84 f   coredll:COREDLL.dll
+ 0001:00001f94       CloseHandle                10002f94 f   coredll:COREDLL.dll
+ 0001:00001fa4       WaitForSingleObject        10002fa4 f   coredll:COREDLL.dll
+ 0001:00001fb4       LocalAlloc                 10002fb4 f   coredll:COREDLL.dll
+ 0001:00001fc4       DuplicateHandle            10002fc4 f   coredll:COREDLL.dll
+ 0001:00001fd4       GetLastError               10002fd4 f   coredll:COREDLL.dll
+ 0001:00001fe4       OpenProcess                10002fe4 f   coredll:COREDLL.dll
+ 0001:00001ff4       CeSafeCopyMemory           10002ff4 f   coredll:COREDLL.dll
+ 0001:00002004       SetLastError               10003004 f   coredll:COREDLL.dll
+ 0001:00002014       GetCallerProcess           10003014 f   coredll:COREDLL.dll
+ 0001:00002024       DisableThreadLibraryCalls  10003024 f   coredll:COREDLL.dll
+ 0001:00002034       RegisterDbgZones           10003034 f   coredll:COREDLL.dll
+ 0001:00002044       CeSetThreadPriority        10003044 f   coredll:COREDLL.dll
+ 0001:00002054       CreateThread               10003054 f   coredll:COREDLL.dll
+ 0001:00002064       CreateEventW               10003064 f   coredll:COREDLL.dll
+ 0001:00002074       InitializeCriticalSection  10003074 f   coredll:COREDLL.dll
+ 0001:00002188       _DllMainCRTStartup         10003188 f   corelib0:pegdmain.obj
+ 0001:000021b8       __GSHandlerCheckCommon     100031b8 f   corelib0:gshandler.obj
+ 0001:000021f4       __GSHandlerCheck           100031f4 f   corelib0:gshandler.obj
+ 0001:00002218       __security_init_cookie     10003218 f   corelib0:seccinit.obj
+ 0001:00002274       __security_check_cookie    10003274 f   corelib0:armsecgs.obj
+ 0001:00002288       __gsfailure                10003288 f   corelib0:armsecgs.obj
+ 0001:000023c8       _cexit                     100033c8 f   corelib0:cexit.obj
+ 0001:000023e4       _initterm                  100033e4 f   corelib0:crt0dat.obj
+ 0001:00002418       _cinit                     10003418 f   corelib0:crt0dat.obj
+ 0001:0000244c       memcmp                     1000344c f   corelib1:COREDLL.dll
+ 0001:0000245c       memcpy                     1000345c f   corelib1:COREDLL.dll
+ 0001:0000246c       memset                     1000346c f   corelib1:COREDLL.dll
+ 0001:0000247c       __C_specific_handler       1000347c f   corelib1:COREDLL.dll
+ 0001:0000248c       _XcptFilter                1000348c f   corelib1:COREDLL.dll
+ 0001:0000249c       __security_gen_cookie2     1000349c f   corelib1:COREDLL.dll
+ 0001:000024ac       __report_gsfailure         100034ac f   corelib1:COREDLL.dll
+ 0001:000024bc       free                       100034bc f   corelib1:COREDLL.dll
+ 0001:000024cc       InterlockedExchange        100034cc f   coredll:COREDLL.dll
+ 0001:000024dc       TerminateProcess           100034dc f   coredll:COREDLL.dll
+ 0001:00002548       __IMPORT_DESCRIPTOR_CEDDK  10003548     ceddk:CEDDK.dll
+ 0001:0000255c       __IMPORT_DESCRIPTOR_COREDLL 1000355c     coredll:COREDLL.dll
+ 0001:00002570       __NULL_IMPORT_DESCRIPTOR   10003570     ceddk:CEDDK.dll
+ 0002:00000000       __imp_I2CRead              10004000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_I2CSetSlaveAddress   10004004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_I2CWrite             10004008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_GPIOClose            1000400c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_I2CClose             10004010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_GPIOInterruptDisable 10004014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_GPIOSetMode          10004018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_GPIOInterruptDone    1000401c     ceddk:CEDDK.dll
+ 0002:00000020       __imp_GPIOInterruptWakeUp  10004020     ceddk:CEDDK.dll
+ 0002:00000024       __imp_GPIOInterruptInitialize 10004024     ceddk:CEDDK.dll
+ 0002:00000028       __imp_GPIOOpen             10004028     ceddk:CEDDK.dll
+ 0002:0000002c       __imp_I2COpen              1000402c     ceddk:CEDDK.dll
+ 0002:00000030       __imp_GetDeviceRegistryParams 10004030     ceddk:CEDDK.dll
+ 0002:00000034       \177CEDDK_NULL_THUNK_DATA  10004034     ceddk:CEDDK.dll
+ 0002:00000038       __imp_EventModify          10004038     coredll:COREDLL.dll
+ 0002:0000003c       __imp___GetUserKData       1000403c     coredll:COREDLL.dll
+ 0002:00000040       __imp_LeaveCriticalSection 10004040     coredll:COREDLL.dll
+ 0002:00000044       __imp_EnterCriticalSection 10004044     coredll:COREDLL.dll
+ 0002:00000048       __imp_InterlockedIncrement 10004048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_InterlockedDecrement 1000404c     coredll:COREDLL.dll
+ 0002:00000050       __imp_SetEventData         10004050     coredll:COREDLL.dll
+ 0002:00000054       __imp_Sleep                10004054     coredll:COREDLL.dll
+ 0002:00000058       __imp_NKDbgPrintfW         10004058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_LocalFree            1000405c     coredll:COREDLL.dll
+ 0002:00000060       __imp_DeleteCriticalSection 10004060     coredll:COREDLL.dll
+ 0002:00000064       __imp_CloseHandle          10004064     coredll:COREDLL.dll
+ 0002:00000068       __imp_WaitForSingleObject  10004068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_LocalAlloc           1000406c     coredll:COREDLL.dll
+ 0002:00000070       __imp_DuplicateHandle      10004070     coredll:COREDLL.dll
+ 0002:00000074       __imp_GetLastError         10004074     coredll:COREDLL.dll
+ 0002:00000078       __imp_OpenProcess          10004078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_CeSafeCopyMemory     1000407c     coredll:COREDLL.dll
+ 0002:00000080       __imp_SetLastError         10004080     coredll:COREDLL.dll
+ 0002:00000084       __imp_GetCallerProcess     10004084     coredll:COREDLL.dll
+ 0002:00000088       __imp_DisableThreadLibraryCalls 10004088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_RegisterDbgZones     1000408c     coredll:COREDLL.dll
+ 0002:00000090       __imp_CeSetThreadPriority  10004090     coredll:COREDLL.dll
+ 0002:00000094       __imp_CreateThread         10004094     coredll:COREDLL.dll
+ 0002:00000098       __imp_CreateEventW         10004098     coredll:COREDLL.dll
+ 0002:0000009c       __imp_InitializeCriticalSection 1000409c     coredll:COREDLL.dll
+ 0002:000000a0       __imp_memcmp               100040a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp_memcpy               100040a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp_memset               100040a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp___C_specific_handler 100040ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp__XcptFilter          100040b0     corelib1:COREDLL.dll
+ 0002:000000b4       __imp___security_gen_cookie2 100040b4     corelib1:COREDLL.dll
+ 0002:000000b8       __imp___report_gsfailure   100040b8     corelib1:COREDLL.dll
+ 0002:000000bc       __imp_free                 100040bc     corelib1:COREDLL.dll
+ 0002:000000c0       __imp_InterlockedExchange  100040c0     coredll:COREDLL.dll
+ 0002:000000c4       __imp_TerminateProcess     100040c4     coredll:COREDLL.dll
+ 0002:000000c8       \177COREDLL_NULL_THUNK_DATA 100040c8     coredll:COREDLL.dll
+ 0002:000000d0       dpCurSettings              100040d0     TPS659xx_lib:tps659xx.obj
+ 0002:00000514       ?_SIHEntry_Keypad@@3USIHEntry_t@@A 10004514     TPS659xx_lib:tps659xx.obj
+ 0002:00000538       ?_SIHEntry_GPIO@@3USIHEntry_t@@A 10004538     TPS659xx_lib:tps659xx.obj
+ 0002:0000057c       ?_SIHEntry_BCI@@3USIHEntry_t@@A 1000457c     TPS659xx_lib:tps659xx.obj
+ 0002:000005b0       ?_SIHEntry_MADC@@3USIHEntry_t@@A 100045b0     TPS659xx_lib:tps659xx.obj
+ 0002:000005d4       ?_SIHEntry_Power@@3USIHEntry_t@@A 100045d4     TPS659xx_lib:tps659xx.obj
+ 0002:000005f8       ?_SIHEntry_USB@@3USIHEntry_t@@A 100045f8     TPS659xx_lib:tps659xx.obj
+ 0002:00000668       g_dwMeasuredSysClkFreq     10004668     bspcfg:bspcfg.obj
+ 0002:0000066c       _rgScaleTable              1000466c     bspcfg:bspcfg.obj
+ 0002:00000690       _rgI2CDevice               10004690     bspcfg:bspcfg.obj
+ 0002:00000770       SupportedNands             10004770     bspcfg:bspcfg.obj
+ 0002:000007ac       BSPGpioTables              100047ac     bspcfg:bspcfg.obj
+ 0002:000007c4       __security_cookie          100047c4     corelib0:seccinit.obj
+ 0002:000007c8       __security_cookie_complement 100047c8     corelib0:seccinit.obj
+ 0002:000007e8       ?_rgKeypadMatrixQueue@@3PAY07EA 100047e8     TPS659xx_lib:tps659xx.obj
+ 0002:00000868       ?_nKeypadMatrixQueueHead@@3KA 10004868     TPS659xx_lib:tps659xx.obj
+ 0002:0000086c       ?_nKeypadMatrixQueueTail@@3KA 1000486c     TPS659xx_lib:tps659xx.obj
+ 0002:00000870       ?_nKeypadMatrixQueueCount@@3JA 10004870     TPS659xx_lib:tps659xx.obj
+ 0002:000008b4       _exitflag                  100048b4     corelib0:cexit.obj
+ 0002:000008b8       __onexitend                100048b8     <common>
+ 0002:000008bc       __onexitbegin              100048bc     <common>
+ 0002:000008c0       g_pcsExit                  100048c0     <common>
+ 0002:000008c4       _pRawDllMain               100048c4     <common>
+
+ entry point at        0001:00002188
+
+ Static symbols
+
+ 0001:00000ed4       ?TWL_ReadRegs@@YAHKKPAXK@Z 10001ed4 f   TPS659xx_lib:tps659xx.obj
+ 0001:00000f94       ?TWL_WriteRegs@@YAHKKPBXK@Z 10001f94 f   TPS659xx_lib:tps659xx.obj
+ 0001:00001098       ?TWL_InterruptMask@@YAHKKH@Z 10002098 f   TPS659xx_lib:tps659xx.obj
+ 0001:000011ac       ?TWL_InterruptSetEvent@@YAHKKPAX@Z 100021ac f   TPS659xx_lib:tps659xx.obj
+ 0001:000012a8       ?TWL_InterruptInitialize@@YAHKKPAX@Z 100022a8 f   TPS659xx_lib:tps659xx.obj
+ 0001:000012c8       ?TWL_InterruptDisable@@YAHKK@Z 100022c8 f   TPS659xx_lib:tps659xx.obj
+ 0001:000012dc       ?TWL_InterruptInitializeProxy@@YAHKIKPAX@Z 100022dc f   TPS659xx_lib:tps659xx.obj
+ 0001:000019cc       ?InitializeInterrupts@@YAHPAUDevice_t@@@Z 100029cc f   TPS659xx_lib:tps659xx.obj
+ 0001:0000208c       _DllMainCRTStartupHelper   1000308c f   corelib0:pegdmain.obj
+ 0001:000022cc       doexit                     100032cc f   corelib0:cexit.obj

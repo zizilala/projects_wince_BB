@@ -1,0 +1,668 @@
+ omap_musbhcd
+
+ Timestamp is 51ede8cb (Tue Jul 23 10:22:03 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 0000252eH .rdata                  CODE
+ 0001:00002550 00000029H .rdata$debug            CODE
+ 0001:0000257c 0000d970H .text                   CODE
+ 0001:0000feec 000000a4H .xdata                  CODE
+ 0001:0000ff90 00000028H .idata$2                CODE
+ 0001:0000ffb8 00000014H .idata$3                CODE
+ 0001:0000ffcc 000000f0H .idata$4                CODE
+ 0001:000100bc 00000016H .idata$6                CODE
+ 0001:000100e0 00000108H .edata                  CODE
+ 0002:00000000 000000f0H .idata$5                DATA
+ 0002:000000f0 0000033cH .data                   DATA
+ 0002:0000042c 00000040H .bss                    DATA
+ 0003:00000000 00000ab0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1DK@JPBDFEOB@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AA?$AA@ 1000103c     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000078       ??_C@_1DE@IMCKALLA@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAD?$AAO?$AAN?$AAE?$AA?$AA@ 10001078     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000000ac       ??_C@_1DI@CEGNOBAM@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AA@ 100010ac     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000000e8       ??_C@_1HO@PGHDEMEK@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAI?$AAG?$AAN?$AAA?$AAL?$AA_?$AAN?$AAE?$AAW?$AA_@ 100010e8     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000168       ??_C@_1II@FBBOBKGN@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAI?$AAN?$AAS?$AAE?$AAR?$AAT?$AA_?$AAN?$AAE?$AAW?$AA_@ 10001168     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000001f0       ??_C@_1FC@LCLFDJDO@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAC?$AAR?$AAE?$AAA?$AAT?$AAE?$AA_?$AAN?$AAE?$AAW?$AA_@ 100011f0     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000248       ??_C@_1EI@COKEBMOE@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAC?$AAR?$AAE?$AAA?$AAT?$AAE?$AA_?$AAN?$AAE?$AAW?$AA_@ 10001248     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000290       ??_C@_1GG@HPGGGHKI@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 10001290     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000002f8       ??_C@_1HG@KPBCOGEF@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 100012f8     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000370       ??_C@_1FG@CFFAAPDL@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 10001370     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000003c8       ??_C@_1GA@NDHJOKMM@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAD?$AAE?$AAT?$AAE?$AAR?$AAM?$AAI?$AAN?$AAE?$AA_?$AAC@ 100013c8     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000428       ??_C@_1GM@JADKDKDC@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 10001428     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000498       ??_C@_1HM@NPLCKJLH@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 10001498     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000518       ??_C@_1HE@MEMGEMJJ@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAE?$AAT?$AAU?$AAP?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI@ 10001518     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000590       ??_C@_1GM@BCHKIAPP@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 10001590     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000600       ??_C@_1HM@FNPCBDHK@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 10001600     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000680       ??_C@_1EI@BBOOKHNN@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAL?$AAE?$AAA?$AAV?$AAE?$AA_?$AAA?$AAD?$AAD?$AAR?$AAE@ 10001680     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000006c8       ??_C@_1FI@LGLHPFAK@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 100016c8     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000720       ??_C@_1HG@BLNLBKIO@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAS?$AAC?$AAH?$AAE?$AAD?$AAU?$AAL?$AAI?$AAN?$AAG?$AA_@ 10001720     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000798       ??_C@_1FG@NMCKCJLL@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAR?$AAE?$AAS?$AAE?$AAT?$AA_?$AAA?$AAN?$AAD?$AA_?$AAE@ 10001798     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000007f0       ??_C@_1EI@KNOIBOPH@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAU?$AAS?$AAI?$AAN?$AAG?$AA_?$AAA?$AAD?$AAD?$AAR?$AAE@ 100017f0     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000838       ??_C@_1FI@COMJHLEF@?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAO?$AAP?$AAE?$AAN?$AAI?$AAN?$AAG?$AA_?$AAE?$AAN?$AAD@ 10001838     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00000890       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001890     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000008a8       ??_C@_17KACEIPNC@?$AAK?$AAe?$AAy?$AA?$AA@ 100018a8     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000008b0       ??_7CHcd@@6B@              100018b0     OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00000948       ??_C@_1EA@CGLNBNDN@?$AAB?$AAu?$AAs?$AAC?$AAh?$AAi?$AAl?$AAd?$AAI?$AAo?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AA?$AN?$AA?6?$AA?$AA@ 10001948     OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00000988       ??_7CDeviceGlobal@@6B@     10001988     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000990       ??_C@_1BE@NANPENDH@?$AAH?$AAc?$AAd?$AAA?$AAt?$AAt?$AAa?$AAc?$AAh?$AA?$AA@ 10001990     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000009a4       ??_C@_1CE@MBINLHH@?$AAH?$AAc?$AAd?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAA?$AAt?$AAt?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?$AA@ 100019a4     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000009c8       ??_C@_1CE@KAKNBFJP@?$AAH?$AAc?$AAd?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAD?$AAe?$AAt?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?$AA@ 100019c8     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000009ec       ??_C@_1CO@MCCAIHAO@?$AAH?$AAc?$AAd?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 100019ec     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000a1c       ??_C@_1DC@HKGGOMPG@?$AAH?$AAc?$AAd?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAu?$AAs?$AAp?$AAe?$AAn?$AAd?$AAe?$AAR?$AAe?$AAs?$AAu?$AAm?$AAe?$AAd?$AA?$AA@ 10001a1c     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000a50       ??_C@_1BC@MPAIGMIO@?$AAU?$AAS?$AAB?$AAD?$AA?4?$AAD?$AAL?$AAL?$AA?$AA@ 10001a50     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000a64       ??_C@_1BE@MDMBICMJ@?$AAH?$AAc?$AAd?$AAD?$AAe?$AAt?$AAa?$AAc?$AAh?$AA?$AA@ 10001a64     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000a78       ??_7CDevice@@6B@           10001a78     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000ab4       ??_C@_1DI@CPJNJMAA@?$AAI?$AAs?$AAo?$AAc?$AAh?$AAr?$AAo?$AAn?$AAo?$AAu?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001ab4     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000af0       ??_C@_1LG@HEEINJNP@?$AA?$CB?$AA?$CB?$AA?$CB?$AAC?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$CI?$AA?5?$AAt?$AAi?$AAe?$AAr?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?3?$AA?3?$AAI?$AAs?$AAs?$AAu?$AAe?$AAT?$AAr?$AAa@ 10001af0     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000ba8       ??_C@_1LE@DHENCBPM@?$AA?$CB?$AA?$CB?$AA?$CB?$AAC?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$CI?$AA?5?$AAt?$AAi?$AAe?$AAr?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?3?$AA?3?$AAI?$AAs?$AAP?$AAi?$AAp?$AAe?$AAH?$AAa@ 10001ba8     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000c60       ??_C@_1KI@NHPPIIBA@?$AA?$CB?$AA?$CB?$AA?$CB?$AAC?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$CI?$AA?5?$AAt?$AAi?$AAe?$AAr?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AAO?$AAr?$AAC?$AAl?$AAe@ 10001c60     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000d08       ??_7CHub@@6B@              10001d08     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000d70       ??_7CRootHub@@6B@          10001d70     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000dd8       ??_7CExternalHub@@6B@      10001dd8     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000e3c       ??_7CFunction@@6B@         10001e3c     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000e78       ??_C@_1EC@ILBLKPKJ@?$AAU?$AAS?$AAB?$AAD?$AAA?$AAt?$AAt?$AAa?$AAc?$AAh?$AAP?$AAr?$AAo?$AAc?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAa?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6@ 10001e78     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000ebc       ??_C@_1CE@KLMPEJIO@?$AAm?$AA_?$AAd?$AAe?$AAv?$AAi?$AAc?$AAe?$AAI?$AAn?$AAf?$AAo?$AA?5?$AA?$DN?$AA?$DO?$AA?$AN?$AA?6?$AA?$AA@ 10001ebc     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000ee0       ??_C@_1CC@DFLIAIAA@?$AAd?$AAw?$AAC?$AAo?$AAu?$AAn?$AAt?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001ee0     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000f04       ??_C@_1DC@BCNGPCJI@?$AAU?$AAS?$AAB?$AA_?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAD?$AAE?$AAS?$AAC?$AAR?$AAI?$AAP?$AAT?$AAO?$AAR?$AA?3?$AA?$AN?$AA?6?$AA?$AA@ 10001f04     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000f38       ??_C@_1CC@NCKMOJH@?$AAb?$AAL?$AAe?$AAn?$AAg?$AAt?$AAh?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001f38     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000f5c       ??_C@_1DC@DEHNMMLJ@?$AAb?$AAD?$AAe?$AAs?$AAc?$AAr?$AAi?$AAp?$AAt?$AAo?$AAr?$AAT?$AAy?$AAp?$AAe?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001f5c     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000f90       ??_C@_1CA@DGABLCAF@?$AAb?$AAc?$AAd?$AAU?$AAS?$AAB?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001f90     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000fb0       ??_C@_1CM@HDJIFDFM@?$AAb?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAC?$AAl?$AAa?$AAs?$AAs?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001fb0     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00000fdc       ??_C@_1DC@FKLDIJED@?$AAb?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAu?$AAb?$AAC?$AAl?$AAa?$AAs?$AAs?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001fdc     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001010       ??_C@_1DC@CABHEAEA@?$AAb?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAP?$AAr?$AAo?$AAt?$AAo?$AAc?$AAo?$AAl?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002010     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001044       ??_C@_1DC@DPMLGMIH@?$AAb?$AAM?$AAa?$AAx?$AAP?$AAa?$AAc?$AAk?$AAe?$AAt?$AAS?$AAi?$AAz?$AAe?$AA0?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002044     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001078       ??_C@_1CE@MNGHCBFG@?$AAi?$AAd?$AAV?$AAe?$AAn?$AAd?$AAo?$AAr?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002078     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000109c       ??_C@_1CG@KOCAHDAM@?$AAi?$AAd?$AAP?$AAr?$AAo?$AAd?$AAu?$AAc?$AAt?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 1000209c     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000010c4       ??_C@_1CG@KJNNFNMN@?$AAb?$AAc?$AAd?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 100020c4     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000010ec       ??_C@_1CO@OAEHEGJL@?$AAi?$AAM?$AAa?$AAn?$AAu?$AAf?$AAa?$AAc?$AAt?$AAu?$AAr?$AAe?$AAr?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 100020ec     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000111c       ??_C@_1CE@LAEKEHNO@?$AAi?$AAP?$AAr?$AAo?$AAd?$AAu?$AAc?$AAt?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 1000211c     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001140       ??_C@_1CO@HLPIHMEI@?$AAi?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002140     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001170       ??_C@_1DI@JNOOEBFJ@?$AAb?$AAN?$AAu?$AAm?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002170     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000011a8       ??_C@_1GE@OKHKLFOB@?$AAS?$AAE?$AAT?$AA?5?$AAF?$AAE?$AAA?$AAT?$AAU?$AAR?$AAE?$AA?5?$AAU?$AAS?$AAB?$AA_?$AAF?$AAE?$AAA?$AAT?$AAU?$AAR?$AAE?$AA_?$AAB?$AA_?$AAH?$AAN?$AAP?$AA_?$AAE?$AAN@ 100021a8     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001210       ??_C@_1KO@DBPBLAEA@?$AA?$CB?$AA?$CB?$AA?$CB?$AAC?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?$CI?$AA?5?$AAt?$AAi?$AAe?$AAr?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?3?$AA?3?$AAR?$AAe?$AAs?$AAe?$AAt?$AAP?$AAi?$AAp@ 10002210     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000012c0       ??_C@_1II@HDIFDMNL@?$AA?$CB?$AAU?$AAS?$AAB?$AA?5?$AAw?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?3?$AA?5?$AAc?$AAa?$AAn?$AAn?$AAo?$AAt?$AA?5?$AAa?$AAt?$AAt?$AAa?$AAc?$AAh?$AA?5?$AAh?$AAi?$AAg?$AAh@ 100022c0     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001348       ??_C@_1HE@DLPCNLDH@?$AA?$CB?$AAC?$AAH?$AAu?$AAb?$AA?3?$AA?3?$AAA?$AAt?$AAt?$AAa?$AAc?$AAh?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAw?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?3?$AA?5?$AAi?$AAn?$AAv@ 10002348     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000013c0       ??_C@_1HK@HGAGGCPB@?$AAU?$AAS?$AAB?$AA?5?$AAs?$AAp?$AAe?$AAc?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAd?$AAo?$AAe?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAw@ 100023c0     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001440       ??_C@_1HE@EJNPOODG@?$AAC?$AAH?$AAu?$AAb?$AA?3?$AA?3?$AAH?$AAu?$AAb?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AAC?$AAh?$AAa?$AAn?$AAg?$AAe?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?9?$AA?5?$AAd?$AAe@ 10002440     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000014b8       ??_C@_1IM@DCJHGIOD@?$AAC?$AAH?$AAu?$AAb?$AA?$CI?$AAt?$AAi?$AAe?$AAr?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?3?$AA?3?$AAH?$AAu?$AAb?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AAC?$AAh?$AAa?$AAn?$AAg?$AAe?$AAT?$AAh@ 100024b8     OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00001548       ??_7CMhcd@@6B@             10002548     OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:000015f0       ??_7CQTransfer@@6B@        100025f0     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:000015fc       ??_7CPipeAbs@@6B@          100025fc     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00001628       ??_7CPipe@@6B@             10002628     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00001670       ??_C@_1EC@HHJLHFCG@?$AAR?$AAe?$AAs?$AAe?$AAt?$AAE?$AAn?$AAd?$AAP?$AAo?$AAi?$AAn?$AAt?$AA?5?$AAa?$AAt?$AA?5?$AAe?$AAn?$AAd?$AAp?$AAo?$AAi?$AAn?$AAt?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6@ 10002670     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:000016b8       ??_7CQueuedPipe@@6B@       100026b8     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00001700       ??_C@_1BK@MICGADHL@?$AAA?$AAb?$AAo?$AAr?$AAt?$AAQ?$AAu?$AAe?$AAu?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 10002700     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000171c       ??_C@_1DE@HBNHEJMM@?$AAS?$AAc?$AAh?$AAe?$AAd?$AAu?$AAl?$AAe?$AAT?$AAr?$AAa?$AAn?$AAs?$AAf?$AAe?$AAr?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 1000271c     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00001750       ??_C@_1FG@FKIMPLIC@?$AAS?$AAc?$AAh?$AAe?$AAd?$AAu?$AAl?$AAe?$AAT?$AAr?$AAa?$AAn?$AAs?$AAf?$AAe?$AAr?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAa?$AAc?$AAq?$AAu?$AAi@ 10002750     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:000017a8       ??_7CBulkPipe@@6B@         100027a8     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:000017f0       ??_C@_1IA@CCAOPDIB@?$AAM?$AAU?$AAS?$AAB?$AAM?$AAH?$AAD?$AAR?$AAC?$AA?5?$AAi?$AAs?$AAs?$AAu?$AAe?$AA?5?$AA?9?$AA?5?$AAB?$AAU?$AAL?$AAK?$AA?5?$AAO?$AAU?$AAT?$AA?5?$AAp?$AAi?$AAp?$AAe?$AA?5@ 100027f0     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00001870       ??_7CControlPipe@@6B@      10002870     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:000018b8       ??_7CInterruptPipe@@6B@    100028b8     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00001900       ??_C@_1HG@EJKGBDMK@?$AAM?$AAU?$AAS?$AAB?$AAM?$AAH?$AAD?$AAR?$AAC?$AA?5?$AAi?$AAs?$AAs?$AAu?$AAe?$AA?5?$AA?9?$AA?5?$AAI?$AAN?$AAT?$AAE?$AAR?$AAR?$AAU?$AAP?$AAT?$AA?5?$AAO?$AAU?$AAT?$AA?5@ 10002900     OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00001980       ??_C@_1DE@OFOMOBKP@?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?5?$AAT?$AAO?$AA?5?$AAG?$AAE?$AAT?$AA?5?$AAT?$AAH?$AAE?$AA?5?$AAE?$AAP?$AA?$CB?$AA?$CB?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 10002980     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:000019b4       ??_C@_1DA@MKPOBGHE@?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?$AN?$AA?6?$AA?$AA@ 100029b4     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:000019e8       ??_C@_1FG@LOOHOAMO@?$AAC?$AAH?$AAW?$AA?3?$AA?3?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAE?$AAP?$AA?5?$AA?9?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AA?5?$AAo?$AAf?$AA?5?$AAt@ 100029e8     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001a40       ??_C@_1EG@PLHCCOK@?$AAT?$AAx?$AAC?$AAS?$AAR?$AA_?$AAH?$AA_?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAa?$AAt?$AA?5?$AAE?$AAP?$AA?5?$AA?$CF?$AAd?$AA?0?$AA?5?$AAc?$AAl?$AAe?$AAa?$AAr?$AA?5?$AAi?$AAt@ 10002a40     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001a88       ??_C@_1CM@EHMOJMHC@?$AAT?$AAx?$AAC?$AAS?$AAR?$AA?5?$AAT?$AAx?$AAS?$AAt?$AAa?$AAl?$AAl?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 10002a88     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001ab4       ??_C@_1CG@HEKDHLPK@?$AAC?$AAS?$AAR?$AA0?$AA?5?$AAN?$AAA?$AAK?$AA?5?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$AN?$AA?6?$AA?$AA@ 10002ab4     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001adc       ??_C@_1BK@BOEDCOMO@?$AAN?$AAA?$AAK?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$AN?$AA?6?$AA?$AA@ 10002adc     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001af8       ??_C@_1EG@DJCLFNB@?$AAR?$AAx?$AAC?$AAS?$AAR?$AA_?$AAH?$AA_?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAa?$AAt?$AA?5?$AAE?$AAP?$AA?5?$AA?$CF?$AAd?$AA?0?$AA?5?$AAc?$AAl?$AAe?$AAa?$AAr?$AA?5?$AAi?$AAt@ 10002af8     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001b40       ??_C@_1HE@PPBFEKOG@?$AAD?$AAe?$AAb?$AAu?$AAg?$AA?5?$AAp?$AAu?$AAr?$AAp?$AAo?$AAs?$AAe?$AA?0?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAF?$AAI?$AAF?$AAO?$AA?5?$AAa?$AAn?$AAd@ 10002b40     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001bb4       ??_C@_1CA@ILNHIEFH@?$AAR?$AAx?$AAT?$AAy?$AAp?$AAe?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002bb4     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001bd4       ??_C@_1CI@FBGKBILJ@?$AAR?$AAx?$AAI?$AAn?$AAt?$AAe?$AAr?$AAv?$AAa?$AAl?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002bd4     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001bfc       ??_C@_1CA@NLAFCFEK@?$AAR?$AAx?$AAM?$AAa?$AAx?$AAP?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002bfc     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001c1c       ??_C@_1CC@NLOOOCJA@?$AAR?$AAx?$AAC?$AAo?$AAu?$AAn?$AAt?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002c1c     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001c40       ??_C@_1CE@KCNNGIAN@?$AAF?$AAI?$AAF?$AAO?$AAS?$AAi?$AAz?$AAe?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002c40     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001c64       ??_C@_1CE@FLDNEIC@?$AAT?$AAx?$AAF?$AAI?$AAF?$AAO?$AAS?$AAz?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002c64     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001c88       ??_C@_1CE@MMHDCDHO@?$AAR?$AAx?$AAF?$AAI?$AAF?$AAO?$AAS?$AAz?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002c88     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001cac       ??_C@_1CG@FEBMBIBF@?$AAT?$AAx?$AAF?$AAI?$AAF?$AAO?$AAa?$AAd?$AAd?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002cac     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001cd4       ??_C@_1CG@MPMMBINL@?$AAR?$AAx?$AAF?$AAI?$AAF?$AAO?$AAa?$AAd?$AAd?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002cd4     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001cfc       ??_C@_1CA@DFGPJAME@?$AAE?$AAP?$AAI?$AAN?$AAF?$AAO?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10002cfc     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001d1c       ??_C@_1CK@CCMLIFMF@?$AAC?$AAS?$AAR?$AA0?$AA?5?$AAR?$AAx?$AAS?$AAt?$AAa?$AAl?$AAl?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 10002d1c     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001d48       ??_C@_1CE@NCLPFOEK@?$AAC?$AAS?$AAR?$AA0?$AA?5?$AAH?$AAa?$AAl?$AAt?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 10002d48     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001d6c       ??_C@_1DM@OEEGCANF@?$AAR?$AAe?$AAa?$AAd?$AAF?$AAI?$AAF?$AAO?$AA?5?$AAU?$AAS?$AAB?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAR?$AAe?$AAs?$AAp?$AAo?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?$AN?$AA?6?$AA?$AA@ 10002d6c     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001da8       ??_C@_1DM@NJMLNKGC@?$AAA?$AAs?$AAs?$AAu?$AAm?$AAe?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAn?$AAe?$AAx?$AAt?$AA?5?$AAd?$AAa?$AAt?$AAa?$AA?5?$AAa?$AAr?$AAr?$AAi?$AAv?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 10002da8     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001de8       ??_C@_1GC@EHKOAKKD@?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?$CB?$AA?$CB?$AA?$CB?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAe?$AAn?$AAo?$AAu?$AAg?$AAh?$AA?5?$AAb?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAs?$AAi?$AAz@ 10002de8     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001e50       ??_C@_1EA@HHCJHPPM@?$AAR?$AAe?$AAa?$AAd?$AAF?$AAI?$AAF?$AAO?$AA?5?$AAC?$AAr?$AAi?$AAt?$AAi?$AAc?$AAa?$AAl?$AAS?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAO?$AAU?$AAT?$AA?$AN?$AA?6?$AA?$AA@ 10002e50     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001e90       ??_C@_1EA@JGLCNLGH@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAC?$AAl?$AAe?$AAa?$AAr?$AAD?$AAM?$AAA?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CI?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10002e90     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001ed0       ??_C@_1EI@KCPHDJG@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAF?$AAI?$AAF?$AAO?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAe?$AAp?$AA?5?$AA?$CF@ 10002ed0     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001f18       ??_7CHW@@6B@               10002f18     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00001fc0       ??_C@_1GO@KEJCKFIF@?$AAR?$AAe?$AAa?$AAd?$AAD?$AAM?$AAA?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAT?$AAo?$AAt?$AAT?$AAf?$AAr?$AAS?$AAi?$AAz?$AAe?$AA?5?$AA?$DN@ 10002fc0     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00002030       ??_C@_1FI@MCGAOEPM@?$AAR?$AAe?$AAa?$AAd?$AAD?$AAM?$AAA?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAc?$AAo?$AAu?$AAn?$AAt?$AA?5?$AA?$DN?$AA?5?$AA0?$AA?0?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAR?$AAx?$AAC@ 10003030     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00002088       ??_C@_1BK@KBIGIHKK@?$AAD?$AAe?$AAb?$AAu?$AAg?$AA?5?$AAh?$AAe?$AAr?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 10003088     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:000020a8       ??_C@_1EM@CHCHNIDI@?$AAN?$AAo?$AA?5?$AAd?$AAa?$AAt?$AAa?$AA?5?$AAa?$AAv?$AAa?$AAi?$AAl?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAR?$AAx?$AAC?$AAS?$AAR?$AA?5?$AA?$DN?$AA?5?$AA0@ 100030a8     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:000020f8       ??_C@_1HK@FIIANMKL@?$AAC?$AAH?$AAW?$AA?3?$AA?3?$AAP?$AAr?$AAo?$AAc?$AAe?$AAs?$AAs?$AAT?$AAD?$AA?3?$AA?5?$AAT?$AAI?$AAM?$AAE?$AAO?$AAU?$AAT?$AA?5?$AAS?$AAe?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?5@ 100030f8     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00002178       ??_C@_1EI@MNPANNOD@?$AAS?$AAo?$AAm?$AAe?$AAt?$AAh?$AAi?$AAn?$AAg?$AA?5?$AAw?$AAr?$AAo?$AAn?$AAg?$AA?5?$AAw?$AAi?$AAt?$AAh?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?5?$AA?$CF?$AAd?$AA?$CB?$AA?$CB@ 10003178     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:000021c0       ??_C@_1GG@IBBFPGMN@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAg?$AAe?$AAt?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAD?$AAM?$AAA?$AA?5?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?0?$AA?5?$AAg@ 100031c0     OMAP3530_musbhcd_mdd:chw.obj
+ 0001:00002228       ??_7CTransfer@@6B@         10003228     OMAP3530_musbhcd_mdd:trans.obj
+ 0001:00002234       ??_C@_1CO@MKAIJBKB@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAT?$AAr?$AAa?$AAn?$AAs?$AAf?$AAe?$AAr?$AA?5?$AAO?$AAU?$AAT?$AA?$AN?$AA?6?$AA?$AA@ 10003234     OMAP3530_musbhcd_mdd:trans.obj
+ 0001:00002264       ??_C@_1CI@CJFFIHPL@?$AAT?$AAx?$AA?5?$AAS?$AAt?$AAa?$AAl?$AAl?$AA?5?$AAa?$AAt?$AA?5?$AAE?$AAP?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10003264     OMAP3530_musbhcd_mdd:trans.obj
+ 0001:00002290       ??_C@_1HE@JPLJFMLK@?$AAT?$AAh?$AAi?$AAs?$AA?5?$AAi?$AAs?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAr?$AAe?$AAm?$AAa?$AAi?$AAn?$AAi?$AAn?$AAg?$AA?5?$AAd?$AAa@ 10003290     OMAP3530_musbhcd_mdd:trans.obj
+ 0001:00002308       ??_C@_1EO@FIKDIPMK@?$AAC?$AAQ?$AAT?$AAD?$AA?3?$AA?3?$AAC?$AAl?$AAe?$AAa?$AAr?$AAR?$AAx?$AAP?$AAk?$AAt?$AAR?$AAd?$AAy?$AA?3?$AA?5?$AAG?$AAe?$AAt?$AA?5?$AAp?$AAO?$AAT?$AAG?$AA?5?$AAf?$AAa@ 10003308     OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:00002358       ??_C@_1HM@EEJMOJLC@?$AAC?$AAQ?$AAT?$AAD?$AA?3?$AA?3?$AAC?$AAl?$AAe?$AAa?$AAr?$AAR?$AAx?$AAP?$AAk?$AAt?$AAR?$AAd?$AAy?$AA?5?$AA?9?$AA?$DO?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAa?$AAb?$AAl?$AAe?$AA?5@ 10003358     OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:000023d8       ??_C@_1FA@PJLPIBKD@?$AAF?$AAl?$AAu?$AAs?$AAh?$AAF?$AAI?$AAF?$AAO?$AA?3?$AA?3?$AAT?$AAX?$AAC?$AAS?$AAR?$AA?5?$AA?$CI?$AA?$CF?$AAd?$AA?$CJ?$AA?5?$AAr?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AA?5?$AA?$DN@ 100033d8     OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:00002428       ??_C@_1CO@PJMJCBIE@?$AAC?$AAS?$AAR?$AA0?$AA?5?$AAr?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10003428     OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:00002458       ??_C@_1EO@FDEEAPGH@?$AAD?$AAM?$AAA?$AA?5?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?0?$AA?5?$AAu?$AAs?$AAe?$AA?5?$AAF?$AAI?$AAF?$AAO?$AA?5?$AAt?$AAo?$AA?5@ 10003458     OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:000024a8       ??_C@_1CC@NPEFILDH@?$AAP?$AAh?$AAy?$AAs?$AAi?$AAc?$AAa?$AAl?$AAP?$AAa?$AAg?$AAe?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 100034a8     OMAP3530_musbhcd:system.obj
+ 0001:000024cc       ??_C@_1BG@OGBHGPNH@?$AAM?$AAa?$AAx?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AA?$AA@ 100034cc     OMAP3530_musbhcd:system.obj
+ 0001:000024e4       ??_C@_1BE@EKANOLAD@?$AAD?$AAV?$AAF?$AAS?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 100034e4     OMAP3530_musbhcd:system.obj
+ 0001:000024f8       ??_C@_17PKGAGD@?$AAD?$AAm?$AAa?$AA?$AA@ 100034f8     OMAP3530_musbhcd:system.obj
+ 0001:00002500       ??_C@_1BE@JNKHMKGH@?$AAO?$AAT?$AAG?$AAA?$AAt?$AAt?$AAa?$AAc?$AAh?$AA?$AA@ 10003500     OMAP3530_musbhcd:system.obj
+ 0001:00002514       ??_C@_1BI@KEGLAEOK@?$AAO?$AAT?$AAG?$AAU?$AAS?$AAB?$AAC?$AAl?$AAo?$AAc?$AAk?$AA?$AA@ 10003514     OMAP3530_musbhcd:system.obj
+ 0001:0000252c       ??_C@_1CC@PKGPLCAL@?$AAo?$AAm?$AAa?$AAp?$AA_?$AAm?$AAu?$AAs?$AAb?$AAo?$AAt?$AAg?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 1000352c     OMAP3530_musbhcd:system.obj
+ 0001:0000257c       DllMain                    1000357c f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000025d8       HcdGetFrameNumber          100035d8 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000025f4       HcdGetFrameLength          100035f4 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002610       HcdSetFrameLength          10003610 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:0000262c       HcdStopAdjustingFrame      1000362c f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002648       HcdOpenPipe                10003648 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002658       HcdClosePipe               10003658 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002668       HcdResetPipe               10003668 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002678       HcdIsPipeHalted            10003678 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002688       HcdIssueTransfer           10003688 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002738       HcdAbortTransfer           10003738 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002760       HcdDisableDevice           10003760 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:0000277c       HcdSuspendResume           1000377c f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002798       HcdMdd_CreateHcdObject     10003798 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000027fc       HcdMdd_DestroyHcdObject    100037fc f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002824       HcdMdd_DestroyMemoryObject 10003824 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002854       HCD_Init                   10003854 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002998       HCD_PowerUp                10003998 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000029a8       HCD_PowerDown              100039a8 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000029b8       HCD_Deinit                 100039b8 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000029c8       HCD_Open                   100039c8 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000029d8       HCD_Close                  100039d8 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000029e8       HCD_Read                   100039e8 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:000029f8       HCD_Write                  100039f8 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002a08       HCD_Seek                   10003a08 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002a18       HCD_IOControl              10003a18 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002a48       HcdMdd_CreateMemoryObject  10003a48 f   OMAP3530_musbhcd2lib:hcddrv.obj
+ 0001:00002ac8       ??0CHcd@@QAA@XZ            10003ac8 f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002b34       ?WaitForPortStatusChange@CHcd@@UAAHPAX@Z 10003b34 f i OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002b3c       ?SuspendHC@CHcd@@UAAHXZ    10003b3c f i OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002b44       ?SignalHubStatusChange@CHcd@@UAAXXZ 10003b44 f i OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002b6c       ?ResumeNotification@CHcd@@MAAHXZ 10003b6c f i OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002bec       ??1CHcd@@UAA@XZ            10003bec f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002c6c       ?SetRootHub@CHcd@@QAAPAVCRootHub@@PAV2@@Z 10003c6c f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002c9c       ?OpenPipe@CHcd@@QAAHIPBU_USB_ENDPOINT_DESCRIPTOR@@PAI@Z 10003c9c f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002d2c       ?ClosePipe@CHcd@@QAAHII@Z  10003d2c f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002d8c       ?IssueTransfer@CHcd@@QAAHIIP6AKPAX@Z0KPBXKKPBKK0K2PAK4PAH44@Z 10003d8c f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002ebc       ?AbortTransfer@CHcd@@QAAHIIP6AKPAX@Z0PBX@Z 10003ebc f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002f3c       ?IsPipeHalted@CHcd@@QAAHIIPAH@Z 10003f3c f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00002fac       ?ResetPipe@CHcd@@QAAHII@Z  10003fac f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:0000300c       ?DisableDevice@CHcd@@UAAHIH@Z 1000400c f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:0000306c       ?SuspendResume@CHcd@@UAAHIH@Z 1000406c f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:000030cc       ?BusChildIoControl@CHcd@@QAAHKPAXK@Z 100040cc f   OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00003108       ??_ECHcd@@UAAPAXI@Z        10004108 f i OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00003108       ??_GCHcd@@UAAPAXI@Z        10004108 f i OMAP3530_musbhcd2lib:hcd.obj
+ 0001:00003130       ?CreateNewNode@CPhysMem@@AAAPAUtMEMLIST@@KKK@Z 10004130 f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:000031b0       ?FindFreeBlock@CPhysMem@@AAAPAUtMEMLIST@@KH@Z 100041b0 f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:00003224       ?AddNodeToFreeList@CPhysMem@@AAAHPAUtMEMLIST@@H@Z 10004224 f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:000033bc       ?FreeList@CPhysMem@@AAAHPAPAUtMEMLIST@@@Z 100043bc f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:0000340c       ?AllocateMemory@CPhysMem@@QAAHKQAPAEKPAH@Z 1000440c f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:00003578       ?FreeMemory@CPhysMem@@QAAXQAEKK@Z 10004578 f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:00003660       ?ReInit@CPhysMem@@QAAXXZ   10004660 f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:00003804       ??1CPhysMem@@QAA@XZ        10004804 f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:00003870       ??0CPhysMem@@QAA@KKPAE0@Z  10004870 f   OMAP3530_musbhcd2lib:cphysmem.obj
+ 0001:000039e0       ??0CDeviceGlobal@@QAA@XZ   100049e0 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003a44       ?Initialize@CDeviceGlobal@@QAAHPAX@Z 10004a44 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003b48       ?DeInitialize@CDeviceGlobal@@QAAXXZ 10004b48 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003bc0       ?ReserveAddress@CDeviceGlobal@@QAAHAAE@Z 10004bc0 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003c48       ?FreeAddress@CDeviceGlobal@@QAAXE@Z 10004c48 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003c8c       ?TransferDoneCallbackSetEvent@CDevice@@KAKPAX@Z 10004c8c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003ca4       ??0CDevice@@QAA@EABU_USB_DEVICE_INFO@@HHEQAVCDeviceGlobal@@QAVCHub@@E@Z 10004ca4 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003d28       ?ResumeNotification@CDevice@@UAAHXZ 10004d28 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003d30       ?NotifyOnSuspendedResumed@CDevice@@UAAHH@Z 10004d30 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003d38       ?SignalHub@CDevice@@UAAXXZ 10004d38 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003d3c       ?GetUSB2TT@CDevice@@UAAPAVCHub@@AAE0AAH@Z 10004d3c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003db4       ?DeleteUsbConfigurationStructure@CDevice@@QBAXAAU_NON_CONST_USB_CONFIGURATION@@@Z 10004db4 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003e64       ?AllocatePipeArray@CDevice@@IAAHXZ 10004e64 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003f30       ?DisableDevice@CDevice@@UAA?AW4HCD_REQUEST_STATUS@@IH@Z 10004f30 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003f68       ?SuspendResume@CDevice@@UAA?AW4HCD_REQUEST_STATUS@@IH@Z 10004f68 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00003fd0       ?GetDescriptor@CHub@@IAAHQAVCPipeAbs@@EEEGPAX@Z 10004fd0 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004188       ?DetachDownstreamDeviceThread@CHub@@IAAKXZ 10005188 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000041ec       ?AllocateDeviceArray@CHub@@IAAHXZ 100051ec f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000428c       ?HandleDetach@CHub@@UAAXXZ 1000528c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004400       ?OpenPipe@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IQBU_USB_ENDPOINT_DESCRIPTOR@@QAI@Z 10005400 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004494       ?ClosePipe@CHub@@UAA?AW4HCD_REQUEST_STATUS@@II@Z 10005494 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004520       ?IssueTransfer@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IIQ6AKPAX@ZQAXKQBXKKQBKK2K3QAK5QAH55@Z 10005520 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004638       ?AbortTransfer@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IIQ6AKPAX@ZQAXQBX@Z 10005638 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000046e4       ?IsPipeHalted@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IIQAH@Z 100056e4 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004778       ?ResetPipe@CHub@@UAA?AW4HCD_REQUEST_STATUS@@II@Z 10005778 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004804       ?DisableDevice@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IH@Z 10005804 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000048a4       ?NotifyOnSuspendedResumed@CHub@@UAAHH@Z 100058a4 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004918       ?SuspendResume@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IH@Z 10005918 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000049b8       ?SuspendResumeOffStreamDevice@CHub@@UAAHIH@Z 100059b8 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004aa4       ?PowerAllHubPorts@CRootHub@@EAAHXZ 10005aa4 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004aac       ?WaitForPortStatusChange@CRootHub@@EAAHAAEAAU_USB_HUB_AND_PORT_STATUS@@@Z 10005aac f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004be4       ?GetStatus@CRootHub@@EAAHEAAU_USB_HUB_AND_PORT_STATUS@@@Z 10005be4 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004c04       ?ResetAndEnablePort@CRootHub@@EAAHE@Z 10005c04 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004c24       ?DisablePort@CRootHub@@EAAXE@Z 10005c24 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004c44       ?SetOrClearFeature@CRootHub@@EAAHGEG@Z 10005c44 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004c68       ?SetOrClearRemoteWakup@CRootHub@@EAAHH@Z 10005c68 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004c70       ?PowerAllHubPorts@CExternalHub@@EAAHXZ 10005c70 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004d04       ?GetStatusChangeBitmap@CExternalHub@@AAAHAAK@Z 10005d04 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004e58       ?WaitForPortStatusChange@CExternalHub@@EAAHAAEAAU_USB_HUB_AND_PORT_STATUS@@@Z 10005e58 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00004f80       ?GetStatus@CExternalHub@@EAAHEAAU_USB_HUB_AND_PORT_STATUS@@@Z 10005f80 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000050d8       ?ResetAndEnablePort@CExternalHub@@EAAHE@Z 100060d8 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005210       ?DisablePort@CExternalHub@@EAAXE@Z 10006210 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005248       ?SetOrClearFeature@CExternalHub@@EAAHGEG@Z 10006248 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005394       ?SetOrClearRemoteWakup@CExternalHub@@EAAHH@Z 10006394 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000054e8       ?SignalHub@CExternalHub@@UAAXXZ 100064e8 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005520       ?NotifyOnSuspendedResumed@CFunction@@UAAHH@Z 10006520 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000557c       ?OpenPipe@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@IQBU_USB_ENDPOINT_DESCRIPTOR@@QAI@Z 1000657c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000589c       ?ClosePipe@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@II@Z 1000689c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000593c       ?IssueTransfer@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@IIQ6AKPAX@ZQAXKQBXKKQBKK2K3QAK5QAH55@Z 1000693c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005a7c       ?AbortTransfer@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@IIQ6AKPAX@ZQAXQBX@Z 10006a7c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005b00       ?IsPipeHalted@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@IIQAH@Z 10006b00 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005bb0       ?HandleDetach@CFunction@@EAAXXZ 10006bb0 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005cac       ?SetOrClearFeature@CFunction@@AAAHEGEG@Z 10006cac f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005e1c       ??1CDeviceGlobal@@QAA@XZ   10006e1c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005e54       ??1CDevice@@UAA@XZ         10006e54 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00005eec       ?CreateUsbConfigurationStructure@CDevice@@QBAHAAU_NON_CONST_USB_CONFIGURATION@@QAEI@Z 10006eec f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006260       ??0CHub@@QAA@EABU_USB_DEVICE_INFO@@HHEABU_USB_HUB_DESCRIPTOR@@QAVCHcd@@QAV0@E@Z 10007260 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006314       ?ResumeNotification@CHub@@UAAHXZ 10007314 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006338       ?SignalHubStatusChange@CHub@@UAAXXZ 10007338 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000063a0       ??1CHub@@UAA@XZ            100073a0 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006418       ?DetachDownstreamDeviceThreadStub@CHub@@KAKPAX@Z 10007418 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006428       ?DetachDevice@CHub@@IAAXE@Z 10007428 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006568       ??0CRootHub@@QAA@ABU_USB_DEVICE_INFO@@HHABU_USB_HUB_DESCRIPTOR@@QAVCHcd@@@Z 10007568 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000065c8       ??0CExternalHub@@QAA@EABU_USB_DEVICE_INFO@@HHEABU_USB_HUB_DESCRIPTOR@@QAVCHcd@@QAVCHub@@E@Z 100075c8 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006624       ??0CFunction@@QAA@EABU_USB_DEVICE_INFO@@HHEQAVCHcd@@QAVCHub@@E@Z 10007624 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006688       ?EnterOperationalState@CFunction@@UAAHQAVCPipeAbs@@@Z 10007688 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000068e4       ?ResetPipe@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@II@Z 100078e4 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000069d4       ??_ECDevice@@UAAPAXI@Z     100079d4 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000069d4       ??_GCDevice@@UAAPAXI@Z     100079d4 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000069fc       ??_ECHub@@UAAPAXI@Z        100079fc f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000069fc       ??_GCHub@@UAAPAXI@Z        100079fc f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00006a2c       ?AttachDevice@CHub@@IAAXEHH@Z 10007a2c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000777c       ?DisableOffStreamDevice@CHub@@UAAHIH@Z 1000877c f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000785c       ??_ECRootHub@@UAAPAXI@Z    1000885c f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:0000785c       ??_GCRootHub@@UAAPAXI@Z    1000885c f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00007890       ??_GCExternalHub@@UAAPAXI@Z 10008890 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00007890       ??_ECExternalHub@@UAAPAXI@Z 10008890 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000078c4       ??_ECFunction@@UAAPAXI@Z   100088c4 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000078c4       ??_GCFunction@@UAAPAXI@Z   100088c4 f i OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:000078f8       ?HubStatusChangeThread@CHub@@AAAKXZ 100088f8 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00007cd0       ?HubStatusChangeThreadStub@CHub@@KAKPAX@Z 10008cd0 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00007ce0       ?EnterOperationalState@CRootHub@@UAAHQAVCPipeAbs@@@Z 10008ce0 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00007da4       ?EnterOperationalState@CExternalHub@@UAAHQAVCPipeAbs@@@Z 10008da4 f   OMAP3530_musbhcd2lib:cdevice.obj
+ 0001:00007f8c       ?EnterCritSec_Ex@CritSec_Ex@@QAA?AW4e_CritSec_Status@@K@Z 10008f8c f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:000080b0       ?LeaveCritSec_Ex@CritSec_Ex@@QAAXXZ 100090b0 f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:000080f0       ?Initialize@CritSec_Ex@@QAAXXZ 100090f0 f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:00008124       ?PrepareDeleteCritSec_Ex@CritSec_Ex@@QAAXXZ 10009124 f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:00008174       ??1CritSec_Ex@@QAA@XZ      10009174 f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:000081e0       ??0Countdown@@QAA@K@Z      100091e0 f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:0000822c       ?IncrCountdown@Countdown@@QAAHXZ 1000922c f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:0000827c       ?DecrCountdown@Countdown@@QAAXXZ 1000927c f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:000082b0       ?WaitForCountdown@Countdown@@QAAXH@Z 100092b0 f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:000082e8       ??1Countdown@@QAA@XZ       100092e8 f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:00008310       ??0CritSec_Ex@@QAA@XZ      10009310 f   OMAP3530_musbhcd2lib:sync.obj
+ 0001:00008364       CreateBusAccessHandle      10009364 f   ceddk:CEDDK.dll
+ 0001:00008374       BusChildIoControl          10009374 f   ceddk:CEDDK.dll
+ 0001:00008384       DeleteCriticalSection      10009384 f   coredll:COREDLL.dll
+ 0001:00008394       InitializeCriticalSection  10009394 f   coredll:COREDLL.dll
+ 0001:000083a4       DisableThreadLibraryCalls  100093a4 f   coredll:COREDLL.dll
+ 0001:000083b4       RegCloseKey                100093b4 f   coredll:COREDLL.dll
+ 0001:000083c4       RegQueryValueExW           100093c4 f   coredll:COREDLL.dll
+ 0001:000083d4       OpenDeviceKey              100093d4 f   coredll:COREDLL.dll
+ 0001:000083e4       LeaveCriticalSection       100093e4 f   coredll:COREDLL.dll
+ 0001:000083f4       EnterCriticalSection       100093f4 f   coredll:COREDLL.dll
+ 0001:00008404       RegOpenKeyExW              10009404 f   coredll:COREDLL.dll
+ 0001:00008414       EventModify                10009414 f   coredll:COREDLL.dll
+ 0001:00008424       CreateEventW               10009424 f   coredll:COREDLL.dll
+ 0001:00008434       SetLastError               10009434 f   coredll:COREDLL.dll
+ 0001:00008444       NKDbgPrintfW               10009444 f   coredll:COREDLL.dll
+ 0001:00008454       LocalAlloc                 10009454 f   coredll:COREDLL.dll
+ 0001:00008464       LocalFree                  10009464 f   coredll:COREDLL.dll
+ 0001:00008474       WaitForSingleObject        10009474 f   coredll:COREDLL.dll
+ 0001:00008484       FreePhysMem                10009484 f   coredll:COREDLL.dll
+ 0001:00008494       CloseHandle                10009494 f   coredll:COREDLL.dll
+ 0001:000084a4       AllocPhysMem               100094a4 f   coredll:COREDLL.dll
+ 0001:000084b4       GetProcAddressW            100094b4 f   coredll:COREDLL.dll
+ 0001:000084c4       LoadDriver                 100094c4 f   coredll:COREDLL.dll
+ 0001:000084d4       FreeLibrary                100094d4 f   coredll:COREDLL.dll
+ 0001:000084e4       Sleep                      100094e4 f   coredll:COREDLL.dll
+ 0001:000084f4       CeGetThreadPriority        100094f4 f   coredll:COREDLL.dll
+ 0001:00008504       CeSetThreadPriority        10009504 f   coredll:COREDLL.dll
+ 0001:00008514       CreateThread               10009514 f   coredll:COREDLL.dll
+ 0001:00008524       __GetUserKData             10009524 f   coredll:COREDLL.dll
+ 0001:00008534       GetTickCount               10009534 f   coredll:COREDLL.dll
+ 0001:00008544       RaiseException             10009544 f   coredll:COREDLL.dll
+ 0001:00008658       _DllMainCRTStartup         10009658 f   corelib0:pegdmain.obj
+ 0001:00008688       __GSHandlerCheckCommon     10009688 f   corelib0:gshandler.obj
+ 0001:000086c4       __GSHandlerCheck           100096c4 f   corelib0:gshandler.obj
+ 0001:000086e8       __security_init_cookie     100096e8 f   corelib0:seccinit.obj
+ 0001:00008744       __security_check_cookie    10009744 f   corelib0:armsecgs.obj
+ 0001:00008758       __gsfailure                10009758 f   corelib0:armsecgs.obj
+ 0001:00008898       _cexit                     10009898 f   corelib0:cexit.obj
+ 0001:000088b4       _initterm                  100098b4 f   corelib0:crt0dat.obj
+ 0001:000088e8       _cinit                     100098e8 f   corelib0:crt0dat.obj
+ 0001:0000891c       ??3@YAXPAX@Z               1000991c f   corelib1:COREDLL.dll
+ 0001:0000892c       ??2@YAPAXI@Z               1000992c f   corelib1:COREDLL.dll
+ 0001:0000893c       _purecall                  1000993c f   corelib1:COREDLL.dll
+ 0001:0000894c       memset                     1000994c f   corelib1:COREDLL.dll
+ 0001:0000895c       memcpy                     1000995c f   corelib1:COREDLL.dll
+ 0001:0000896c       memcmp                     1000996c f   corelib1:COREDLL.dll
+ 0001:0000897c       __C_specific_handler       1000997c f   corelib1:COREDLL.dll
+ 0001:0000898c       _XcptFilter                1000998c f   corelib1:COREDLL.dll
+ 0001:0000899c       __security_gen_cookie2     1000999c f   corelib1:COREDLL.dll
+ 0001:000089ac       __report_gsfailure         100099ac f   corelib1:COREDLL.dll
+ 0001:000089bc       free                       100099bc f   corelib1:COREDLL.dll
+ 0001:000089cc       malloc                     100099cc f   corelib1:COREDLL.dll
+ 0001:000089dc       ??0CMhcd@@QAA@PAXPAVCPhysMem@@PBGRAEK@Z 100099dc f   OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008a34       ?SignalCheckForDoneTransfers@CHW@@UAAXEE@Z 10009a34 f i OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008a48       ?SignalCheckForDoneDMA@CHW@@UAAXE@Z 10009a48 f i OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008a5c       ?SetSignalDisconnectACK@CHW@@UAAXH@Z 10009a5c f i OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008a64       ?AddedTt@CMhcd@@UAAHEE@Z   10009a64 f i OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008a78       ?DeleteTt@CMhcd@@UAAHEEH@Z 10009a78 f i OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008a8c       ?SetSignalDisconnectACK@CMhcd@@UAAXH@Z 10009a8c f i OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008a94       ??1CMhcd@@UAA@XZ           10009a94 f   OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008afc       ?DeviceDeInitialize@CMhcd@@UAAXXZ 10009afc f   OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008b60       ?DeviceInitialize@CMhcd@@UAAHXZ 10009b60 f   OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008ce8       ?SignalHubChangeEvent@CMhcd@@UAAHH@Z 10009ce8 f   OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008cf8       ?CreateHCDObject@@YAPAVCHcd@@PAXPAVCPhysMem@@PBGRAEK@Z 10009cf8 f   OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008d5c       ??_ECMhcd@@UAAPAXI@Z       10009d5c f i OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008d5c       ??_GCMhcd@@UAAPAXI@Z       10009d5c f i OMAP3530_musbhcd_mdd:cmhcd.obj
+ 0001:00008d84       ??0CQTransfer@@QAA@QAVCPipe@@QAVCPhysMem@@USTRANSFER@@@Z 10009d84 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008df0       ??_GCQTransfer@@UAAPAXI@Z  10009df0 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008df0       ??_ECQTransfer@@UAAPAXI@Z  10009df0 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008e18       ?ChangeMaxPacketSize@CPipeAbs@@UAAXG@Z 10009e18 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008e1c       ??_ECPipeAbs@@UAAPAXI@Z    10009e1c f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008e1c       ??_GCPipeAbs@@UAAPAXI@Z    10009e1c f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008e44       ??0CPipe@@QAA@QBU_USB_ENDPOINT_DESCRIPTOR@@HHEEEHQAVCMhcd@@@Z 10009e44 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008f80       ?SetReservedDeviceAddr@CPipe@@UAAHE@Z 10009f80 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008f8c       ?GetReservedDeviceAddr@CPipe@@UAAEXZ 10009f8c f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008f94       ?GetDataToggle@CPipe@@QAAEXZ 10009f94 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008f9c       ?SetDataToggle@CPipe@@QAAXE@Z 10009f9c f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008fac       ?IsDataToggle@CPipe@@QAAHXZ 10009fac f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00008fc8       ??1CPipe@@UAA@XZ           10009fc8 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009020       ?GetCPhysMem@CPipe@@UAAPAVCPhysMem@@XZ 1000a020 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000902c       ?IsPipeHalted@CPipe@@UAA?AW4HCD_REQUEST_STATUS@@QAH@Z 1000a02c f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009060       ?ClearHaltedFlag@CPipe@@UAAXXZ 1000a060 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009088       ?ResetEndPoint@CPipe@@UAAXXZ 1000a088 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:000090c4       ??0CQueuedPipe@@QAA@QBU_USB_ENDPOINT_DESCRIPTOR@@HHEEEHQAVCMhcd@@@Z 1000a0c4 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009128       ?GetQHead@CQueuedPipe@@UAAPAVCQH@@XZ 1000a128 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009130       ??1CQueuedPipe@@UAA@XZ     1000a130 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009170       ?AbortTransfer@CQueuedPipe@@UAA?AW4HCD_REQUEST_STATUS@@Q6AKPAX@ZQAXPBX@Z 1000a170 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009328       ?ClearHaltedFlag@CQueuedPipe@@UAAXXZ 1000a328 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009350       ?AbortQueue@CQueuedPipe@@IAAXXZ 1000a350 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009420       ?IssueTransfer@CQueuedPipe@@UAA?AW4HCD_REQUEST_STATUS@@EQ6AKPAX@ZQAXKQBXKKQBKK2K3QAK5QAH55@Z 1000a420 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000969c       ?ScheduleTransfer@CQueuedPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000a69c f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:000097e8       ?ProcessEP@CQueuedPipe@@UAAHKH@Z 1000a7e8 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009840       ?CheckForDoneTransfers@CQueuedPipe@@UAAHXZ 1000a840 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009904       ??0CBulkPipe@@QAA@QBU_USB_ENDPOINT_DESCRIPTOR@@HHEEEHQAVCMhcd@@@Z 1000a904 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009958       ?GetTransferType@CBulkPipe@@UBA?BKXZ 1000a958 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009960       ?OpenPipe@CBulkPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000a960 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009a88       ?AreTransferParametersValid@CBulkPipe@@EBAHPBUSTRANSFER@@@Z 1000aa88 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009af4       ??0CControlPipe@@QAA@QBU_USB_ENDPOINT_DESCRIPTOR@@HHEEEHQAVCMhcd@@@Z 1000aaf4 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009b48       ?GetTransferType@CControlPipe@@UBA?BKXZ 1000ab48 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009b50       ?OpenPipe@CControlPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000ab50 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009bd4       ?ClosePipe@CControlPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000abd4 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009c54       ?IssueTransfer@CControlPipe@@UAA?AW4HCD_REQUEST_STATUS@@EQ6AKPAX@ZQAXKQBXKKQBKK2K3QAK5QAH55@Z 1000ac54 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009d48       ?ChangeMaxPacketSize@CControlPipe@@UAAXG@Z 1000ad48 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009da8       ?AreTransferParametersValid@CControlPipe@@EBAHPBUSTRANSFER@@@Z 1000ada8 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009e4c       ??0CInterruptPipe@@QAA@QBU_USB_ENDPOINT_DESCRIPTOR@@HHEEEHQAVCMhcd@@@Z 1000ae4c f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:00009ff8       ?GetTransferType@CInterruptPipe@@UBA?BKXZ 1000aff8 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a000       ?OpenPipe@CInterruptPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000b000 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a13c       ?ClosePipe@CInterruptPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000b13c f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a1bc       ?AreTransferParametersValid@CInterruptPipe@@EBAHPBUSTRANSFER@@@Z 1000b1bc f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a228       ?CreateBulkPipe@@YAPAVCPipeAbs@@QBU_USB_ENDPOINT_DESCRIPTOR@@HHEEEHQAVCHcd@@@Z 1000b228 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a298       ?CreateControlPipe@@YAPAVCPipeAbs@@QBU_USB_ENDPOINT_DESCRIPTOR@@HHEEEHQAVCHcd@@@Z 1000b298 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a308       ?CreateInterruptPipe@@YAPAVCPipeAbs@@QBU_USB_ENDPOINT_DESCRIPTOR@@HHEEEHQAVCHcd@@@Z 1000b308 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a378       ??_ECPipe@@UAAPAXI@Z       1000b378 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a378       ??_GCPipe@@UAAPAXI@Z       1000b378 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a3a0       ??_GCQueuedPipe@@UAAPAXI@Z 1000b3a0 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a3a0       ??_ECQueuedPipe@@UAAPAXI@Z 1000b3a0 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a3c8       ?ClosePipe@CBulkPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000b3c8 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a448       ??1CInterruptPipe@@UAA@XZ  1000b448 f   OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a4a4       ??_ECControlPipe@@UAAPAXI@Z 1000b4a4 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a4a4       ??_GCControlPipe@@UAAPAXI@Z 1000b4a4 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a4e0       ??_GCInterruptPipe@@UAAPAXI@Z 1000b4e0 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a4e0       ??_ECInterruptPipe@@UAAPAXI@Z 1000b4e0 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a508       ??_ECBulkPipe@@UAAPAXI@Z   1000b508 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a508       ??_GCBulkPipe@@UAAPAXI@Z   1000b508 f i OMAP3530_musbhcd_mdd:cpipe.obj
+ 0001:0000a544       ??0TransactionTrasnlate@@QAA@EEQAXPAV0@@Z 1000b544 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a588       ??1TransactionTrasnlate@@QAA@XZ 1000b588 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a5c0       ?FindBestTimeSlot@TransactionTrasnlate@@AAAHGGPAU_ENDPOINTBUGETLIST@@PAK@Z 1000b5c0 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a614       ?InsertEp@TransactionTrasnlate@@AAAHKPAU_EndpointBuget@@@Z 1000b614 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a6f8       ?RemoveEp@TransactionTrasnlate@@AAAHKPAU_EndpointBuget@@@Z 1000b6f8 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a7a8       ??0USB2lib@@QAA@XZ         1000b7a8 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a808       ?DeleteTt@USB2lib@@QAAHEEH@Z 1000b808 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a898       ?GetTT@USB2lib@@QAAPAVTransactionTrasnlate@@EEH@Z 1000b898 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a8ec       ?Compute_nonsplit_overhead@USB2lib@@AAAHPAU_EndpointBuget@@@Z 1000b8ec f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a95c       ?ConvertBtoHFrame@USB2lib@@AAAXEEPAE0@Z 1000b95c f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000a9a0       ?AddedEp@TransactionTrasnlate@@QAAHPAU_EndpointBuget@@@Z 1000b9a0 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000aba8       ?DeletedEp@TransactionTrasnlate@@QAAHPAU_EndpointBuget@@@Z 1000bba8 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000ac14       ??1USB2lib@@QAA@XZ         1000bc14 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000ac64       ?AddedTt@USB2lib@@QAAHEE@Z 1000bc64 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000acf4       ?AllocUsb2BusTime@USB2lib@@QAAHEEHPAU_EndpointBuget@@@Z 1000bcf4 f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000afcc       ?FreeUsb2BusTime@USB2lib@@QAAXEEHPAU_EndpointBuget@@@Z 1000bfcc f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000b08c       ?GetSMASK@USB2lib@@QAAEPAU_EndpointBuget@@@Z 1000c08c f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000b10c       ?GetCMASK@USB2lib@@QAAEPAU_EndpointBuget@@@Z 1000c10c f   OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0001:0000b200       ?DeInit@CBusyPipeList@@QAAXXZ 1000c200 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b294       ?SignalCheckForDoneDMA@CBusyPipeList@@QAAHE@Z 1000c294 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b2cc       ?SignalCheckForDoneTransfers@CBusyPipeList@@QAAXEE@Z 1000c2cc f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b2f8       ?CheckForDoneTransfersThread@CBusyPipeList@@AAAKXZ 1000c2f8 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b5b8       ?AddToBusyPipeList@CBusyPipeList@@QAAHQAVCPipe@@H@Z 1000c5b8 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b760       ?SignalDisconnectComplete@CBusyPipeList@@QAAHPAX@Z 1000c760 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b7c4       ?DeInitialize@CHW@@UAAXXZ  1000c7c4 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b7d8       ?EnterOperationalState@CHW@@QAAXXZ 1000c7d8 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b7dc       ?GetFrameNumber@CHW@@UAAHPAK@Z 1000c7dc f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b804       ?GetFrameLength@CHW@@UAAHPAG@Z 1000c804 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b818       ?SetFrameLength@CHW@@UAAHPAXG@Z 1000c818 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b820       ?StopAdjustingFrame@CHW@@UAAHXZ 1000c820 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b828       ?DidPortStatusChange@CHW@@UAAHE@Z 1000c828 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b88c       ?GetPortStatus@CHW@@UAAHEAAU_USB_HUB_AND_PORT_STATUS@@@Z 1000c88c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000b994       ?RootHubFeature@CHW@@UAAHEEG@Z 1000c994 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000ba24       ?ResetAndEnablePort@CHW@@UAAHE@Z 1000ca24 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000ba80       ?DisablePort@CHW@@UAAXE@Z  1000ca80 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000ba84       ?AcquireDMAChannel@CHW@@QAAEPAVCPipe@@@Z 1000ca84 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000bbb8       ?DeviceInfo2Channel@CHW@@QAAEPAVCPipe@@@Z 1000cbb8 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000bc54       ?DumpRxCSR@CHW@@QAAXE@Z    1000cc54 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000bc8c       ?AcquirePhysicalEndPoint@CHW@@QAAEPAVCPipe@@@Z 1000cc8c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000be4c       ?ReleasePhysicalEndPoint@CHW@@QAAHPAVCPipe@@HH@Z 1000ce4c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c02c       ?GetCurrentToggleBit@CHW@@QAAEEE@Z 1000d02c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c084       ?SignalHubChangeEvent@CHW@@UAAHH@Z 1000d084 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c0a8       ?SetDeviceAddress@CHW@@UAAXEEEEE@Z 1000d0a8 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c184       ?IsDMASupport@CHW@@UAAHXZ  1000d184 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c19c       ?GetDMAMode@CHW@@UAAKXZ    1000d19c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c1b4       ?IsHostConnect@CHW@@UAAHXZ 1000d1b4 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c1e0       ?CheckDMAResult@CHW@@QAAKPAXE@Z 1000d1e0 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c224       ?RestoreRxConfig@CHW@@QAAHPAXE@Z 1000d224 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c28c       ?UpdateDataToggle@CHW@@UAAHQAVCPipe@@HH@Z 1000d28c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c474       ?InitFIFO@CHW@@UAAHQAVCPipe@@@Z 1000d474 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c5a0       ?ConfigEP@CHW@@UAAHQBU_USB_ENDPOINT_DESCRIPTOR@@EEEEHEH@Z 1000d5a0 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000c8c0       ?CheckTxCSR@CHW@@QAAKE@Z   1000d8c0 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000ca5c       ?CheckRxCSR@CHW@@QAAKE@Z   1000da5c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000cd14       ?ReadFIFO@CHW@@UAAKPAXE0KPAH@Z 1000dd14 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000ce90       ?ClearDMAChannel@CHW@@QAAHE@Z 1000de90 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000cf04       ?ProcessDMAChannel@CHW@@QAAHPAXEEH0KK@Z 1000df04 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000cfd0       ?WriteDMA@CHW@@UAAHPAXEE0KK0@Z 1000dfd0 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d12c       ?WriteFIFO@CHW@@UAAHPAXE0K@Z 1000e12c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d1c0       ?SendOutDMA@CHW@@UAAHEPAX@Z 1000e1c0 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d234       ?ResetEndPoint@CHW@@QAAXE@Z 1000e234 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d270       ?LockEP0@CHW@@UAAHE@Z      1000e270 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d2b8       ?UnlockEP0@CHW@@UAAXE@Z    1000e2b8 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d2ec       ?IsDeviceLockEP0@CHW@@UAAHE@Z 1000e2ec f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d300       Host_ResumeIRQ             1000e300 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d308       Host_ProcessEPxRx          1000e308 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d338       Host_ProcessEPxTx          1000e338 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d368       Host_ProcessEP0            1000e368 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d398       Host_Connect               1000e398 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d3e8       Host_Disconnect            1000e3e8 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d42c       Host_Suspend               1000e42c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d434       Host_ProcessDMA            1000e434 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d45c       ?CheckForDoneTransfersThreadStub@CBusyPipeList@@CAKPAX@Z 1000e45c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d46c       ??0CHW@@QAA@QAVCPhysMem@@PAXK@Z 1000e46c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d558       ??1CHW@@UAA@XZ             1000e558 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d5a0       ?WaitForPortStatusChange@CHW@@UAAHPAX@Z 1000e5a0 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d6b8       ?ReleaseDMAChannel@CHW@@QAAHPAVCPipe@@E@Z 1000e6b8 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d720       ?PowerMgmtCallback@CHW@@UAAXH@Z 1000e720 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d788       ?ReadDMA@CHW@@QAAKPAXEE0KKPAVCQTD@@@Z 1000e788 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000d924       ?ProcessTD@CHW@@UAAHEPAX@Z 1000e924 f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000df9c       ?Init@CBusyPipeList@@QAAHXZ 1000ef9c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000e06c       ?RemoveFromBusyPipeList@CBusyPipeList@@QAAXQAVCPipe@@@Z 1000f06c f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000e1c4       ??_ECHW@@UAAPAXI@Z         1000f1c4 f i OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000e1c4       ??_GCHW@@UAAPAXI@Z         1000f1c4 f i OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000e1ec       ?Initialize@CHW@@UAAHXZ    1000f1ec f   OMAP3530_musbhcd_mdd:chw.obj
+ 0001:0000e264       ??0CTransfer@@QAA@QAVCPipe@@QAVCPhysMem@@USTRANSFER@@@Z 1000f264 f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000e2ec       ??1CTransfer@@UAA@XZ       1000f2ec f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000e340       ?Init@CTransfer@@UAAHXZ    1000f340 f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000e4d8       ?AddTransfer@CQTransfer@@UAAHXZ 1000f4d8 f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000e944       ?AbortTransfer@CQTransfer@@QAAHXZ 1000f944 f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000e9b8       ?ProcessResponse@CQTransfer@@QAAKKPAVCQTD@@@Z 1000f9b8 f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000eb64       ?ProcessEP@CQTransfer@@QAAHKH@Z 1000fb64 f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000ecb8       ?IsTransferDone@CQTransfer@@QAAHXZ 1000fcb8 f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000ed64       ??_GCTransfer@@UAAPAXI@Z   1000fd64 f i OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000ed64       ??_ECTransfer@@UAAPAXI@Z   1000fd64 f i OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000ed8c       ??1CQTransfer@@UAA@XZ      1000fd8c f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000edd8       ?DoneTransfer@CQTransfer@@QAAHXZ 1000fdd8 f   OMAP3530_musbhcd_mdd:trans.obj
+ 0001:0000f070       ??0CQTD@@QAA@PAVCQTransfer@@PAVCQH@@@Z 10010070 f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f08c       ?ClearRxPktRdy@CQTD@@QAAXXZ 1001008c f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f15c       ?QueueNextTD@CQTD@@QAAPAV1@PAV1@@Z 1001015c f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f16c       ?DeActiveTD@CQTD@@QAAXXZ   1001016c f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f2d0       ??0CQH@@QAA@PAVCPipe@@@Z   100102d0 f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f31c       ?IsActive@CQH@@QAAHXZ      1001031c f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f354       ?IssueTransfer@CQH@@QAAKPAVCQTD@@@Z 10010354 f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f4fc       ?SetMaxPacketLength@CQH@@QAAXK@Z 100104fc f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f500       ?ReadDataIN@CQTD@@QAAKPAK@Z 10010500 f   OMAP3530_musbhcd_mdd:ctd.obj
+ 0001:0000f7cc       HcdPdd_DllMain             100107cc f   OMAP3530_musbhcd:system.obj
+ 0001:0000fb58       HcdPdd_PreTransferActivation 10010b58 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fbc8       HcdPdd_PostTransferDeactivation 10010bc8 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fc10       HcdPdd_Init                10010c10 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fd3c       HcdPdd_CheckConfigPower    10010d3c f   OMAP3530_musbhcd:system.obj
+ 0001:0000fd5c       HcdPdd_PowerUp             10010d5c f   OMAP3530_musbhcd:system.obj
+ 0001:0000fd60       HcdPdd_PowerDown           10010d60 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fd64       HcdPdd_Deinit              10010d64 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fdd0       HcdPdd_Open                10010dd0 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fdd4       HcdPdd_Close               10010dd4 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fddc       HcdPdd_Read                10010ddc f   OMAP3530_musbhcd:system.obj
+ 0001:0000fde4       HcdPdd_Write               10010de4 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fdec       HcdPdd_Seek                10010dec f   OMAP3530_musbhcd:system.obj
+ 0001:0000fdf4       HcdPdd_IOControl           10010df4 f   OMAP3530_musbhcd:system.obj
+ 0001:0000fdfc       HalFreeCommonBuffer        10010dfc f   ceddk:CEDDK.dll
+ 0001:0000fe0c       HalAllocateCommonBuffer    10010e0c f   ceddk:CEDDK.dll
+ 0001:0000fe1c       CloseBusAccessHandle       10010e1c f   ceddk:CEDDK.dll
+ 0001:0000fe2c       InterlockedExchange        10010e2c f   coredll:COREDLL.dll
+ 0001:0000fe3c       TerminateProcess           10010e3c f   coredll:COREDLL.dll
+ 0001:0000fe4c       TerminateThread            10010e4c f   coredll:COREDLL.dll
+ 0001:0000fe5c       WaitForMultipleObjects     10010e5c f   coredll:COREDLL.dll
+ 0001:0000fe6c       SetInterruptEvent          10010e6c f   coredll:COREDLL.dll
+ 0001:0000fe7c       FreeIntChainHandler        10010e7c f   coredll:COREDLL.dll
+ 0001:0000fe8c       DDKReg_GetWindowInfo       10010e8c f   coredll:COREDLL.dll
+ 0001:0000fe9c       InterlockedIncrement       10010e9c f   coredll:COREDLL.dll
+ 0001:0000feac       InterlockedDecrement       10010eac f   coredll:COREDLL.dll
+ 0001:0000febc       GetModuleHandleW           10010ebc f   coredll:COREDLL.dll
+ 0001:0000fecc       __rt_udiv                  10010ecc f   corelib1:COREDLL.dll
+ 0001:0000fedc       wcsncpy                    10010edc f   corelib1:COREDLL.dll
+ 0001:0000ff90       __IMPORT_DESCRIPTOR_CEDDK  10010f90     ceddk:CEDDK.dll
+ 0001:0000ffa4       __IMPORT_DESCRIPTOR_COREDLL 10010fa4     coredll:COREDLL.dll
+ 0001:0000ffb8       __NULL_IMPORT_DESCRIPTOR   10010fb8     ceddk:CEDDK.dll
+ 0002:00000000       __imp_CreateBusAccessHandle 10012000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_BusChildIoControl    10012004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_HalAllocateCommonBuffer 10012008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_HalFreeCommonBuffer  1001200c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_CloseBusAccessHandle 10012010     ceddk:CEDDK.dll
+ 0002:00000014       \177CEDDK_NULL_THUNK_DATA  10012014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_RegCloseKey          10012018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_RegQueryValueExW     1001201c     coredll:COREDLL.dll
+ 0002:00000020       __imp_OpenDeviceKey        10012020     coredll:COREDLL.dll
+ 0002:00000024       __imp_LeaveCriticalSection 10012024     coredll:COREDLL.dll
+ 0002:00000028       __imp_EnterCriticalSection 10012028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_RegOpenKeyExW        1001202c     coredll:COREDLL.dll
+ 0002:00000030       __imp_EventModify          10012030     coredll:COREDLL.dll
+ 0002:00000034       __imp_CreateEventW         10012034     coredll:COREDLL.dll
+ 0002:00000038       __imp_SetLastError         10012038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_NKDbgPrintfW         1001203c     coredll:COREDLL.dll
+ 0002:00000040       __imp_LocalAlloc           10012040     coredll:COREDLL.dll
+ 0002:00000044       __imp_LocalFree            10012044     coredll:COREDLL.dll
+ 0002:00000048       __imp_WaitForSingleObject  10012048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_FreePhysMem          1001204c     coredll:COREDLL.dll
+ 0002:00000050       __imp_CloseHandle          10012050     coredll:COREDLL.dll
+ 0002:00000054       __imp_AllocPhysMem         10012054     coredll:COREDLL.dll
+ 0002:00000058       __imp_GetProcAddressW      10012058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_LoadDriver           1001205c     coredll:COREDLL.dll
+ 0002:00000060       __imp_DisableThreadLibraryCalls 10012060     coredll:COREDLL.dll
+ 0002:00000064       __imp_Sleep                10012064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CeGetThreadPriority  10012068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_CeSetThreadPriority  1001206c     coredll:COREDLL.dll
+ 0002:00000070       __imp_CreateThread         10012070     coredll:COREDLL.dll
+ 0002:00000074       __imp___GetUserKData       10012074     coredll:COREDLL.dll
+ 0002:00000078       __imp_GetTickCount         10012078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_RaiseException       1001207c     coredll:COREDLL.dll
+ 0002:00000080       __imp_??3@YAXPAX@Z         10012080     corelib1:COREDLL.dll
+ 0002:00000084       __imp_??2@YAPAXI@Z         10012084     corelib1:COREDLL.dll
+ 0002:00000088       __imp__purecall            10012088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp_memset               1001208c     corelib1:COREDLL.dll
+ 0002:00000090       __imp_memcpy               10012090     corelib1:COREDLL.dll
+ 0002:00000094       __imp_memcmp               10012094     corelib1:COREDLL.dll
+ 0002:00000098       __imp___C_specific_handler 10012098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp__XcptFilter          1001209c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp___security_gen_cookie2 100120a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp___report_gsfailure   100120a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp_free                 100120a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp_malloc               100120ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp_InitializeCriticalSection 100120b0     coredll:COREDLL.dll
+ 0002:000000b4       __imp_DeleteCriticalSection 100120b4     coredll:COREDLL.dll
+ 0002:000000b8       __imp_FreeLibrary          100120b8     coredll:COREDLL.dll
+ 0002:000000bc       __imp_InterlockedExchange  100120bc     coredll:COREDLL.dll
+ 0002:000000c0       __imp_TerminateProcess     100120c0     coredll:COREDLL.dll
+ 0002:000000c4       __imp_TerminateThread      100120c4     coredll:COREDLL.dll
+ 0002:000000c8       __imp_WaitForMultipleObjects 100120c8     coredll:COREDLL.dll
+ 0002:000000cc       __imp_SetInterruptEvent    100120cc     coredll:COREDLL.dll
+ 0002:000000d0       __imp_FreeIntChainHandler  100120d0     coredll:COREDLL.dll
+ 0002:000000d4       __imp_DDKReg_GetWindowInfo 100120d4     coredll:COREDLL.dll
+ 0002:000000d8       __imp_InterlockedIncrement 100120d8     coredll:COREDLL.dll
+ 0002:000000dc       __imp_InterlockedDecrement 100120dc     coredll:COREDLL.dll
+ 0002:000000e0       __imp_GetModuleHandleW     100120e0     coredll:COREDLL.dll
+ 0002:000000e4       __imp___rt_udiv            100120e4     corelib1:COREDLL.dll
+ 0002:000000e8       __imp_wcsncpy              100120e8     corelib1:COREDLL.dll
+ 0002:000000ec       \177COREDLL_NULL_THUNK_DATA 100120ec     coredll:COREDLL.dll
+ 0002:00000148       ?gc_HcdFuncs@@3U_HCD_FUNCS@@A 10012148     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0002:00000230       __security_cookie          10012230     corelib0:seccinit.obj
+ 0002:00000234       __security_cookie_complement 10012234     corelib0:seccinit.obj
+ 0002:000002e8       ?CMASKS@USB2lib@@0PAEA     100122e8     OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0002:00000400       maxPower                   10012400     OMAP3530_musbhcd:system.obj
+ 0002:00000404       gc_MUsbFuncs               10012404     OMAP3530_musbhcd:system.obj
+ 0002:00000428       dwMaxCurrent               10012428     OMAP3530_musbhcd:system.obj
+ 0002:0000042c       g_IstThreadPriority        1001242c     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0002:00000430       ?g_CSection@@3UCRITICAL_SECTION@@A 10012430     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0002:00000444       g_dwContext                10012444     OMAP3530_musbhcd2lib:hcddrv.obj
+ 0002:00000448       _exitflag                  10012448     corelib0:cexit.obj
+ 0002:0000044c       ?m_lRef@USB2lib@@0JA       1001244c     OMAP3530_musbhcd_mdd:usb2lib.obj
+ 0002:00000458       ?m_dwGlobalTransferID@CTransfer@@1KA 10012458     OMAP3530_musbhcd_mdd:trans.obj
+ 0002:0000045c       __onexitend                1001245c     <common>
+ 0002:00000460       __onexitbegin              10012460     <common>
+ 0002:00000464       g_pcsExit                  10012464     <common>
+ 0002:00000468       _pRawDllMain               10012468     <common>
+
+ entry point at        0001:00008658
+
+ Static symbols
+
+ 0001:0000855c       _DllMainCRTStartupHelper   1000955c f   corelib0:pegdmain.obj
+ 0001:0000879c       doexit                     1000979c f   corelib0:cexit.obj
+ 0001:0000f7d4       InitializeMHDRC            100107d4 f   OMAP3530_musbhcd:system.obj

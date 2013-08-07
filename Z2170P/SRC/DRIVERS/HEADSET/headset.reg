@@ -1,0 +1,14 @@
+; All rights reserved ADENEO EMBEDDED 2010
+
+IF BSP_HEADSET
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\HDS]
+    "Prefix"="HDS"
+    "Dll"="Headset.dll"
+    "Index"=dword:1
+    "Order"=dword:15
+    "HdstDetGpio"=dword:101		; T2_GPIO.1 => 256 + 1 = 257
+    "HdstMuteGpio"=dword:106	; T2_GPIO.6 => 256 + 6 = 262
+    
+[HKEY_LOCAL_MACHINE\Drivers\Headset]
+    "Name"="HDS1:"
+ENDIF BSP_HEADSET

@@ -1,0 +1,566 @@
+ logger
+
+ Timestamp is 51dcc2af (Wed Jul 10 10:10:55 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 0000205aH .rdata                  CODE
+ 0001:0000207c 00000023H .rdata$debug            CODE
+ 0001:000020a0 00003900H .text                   CODE
+ 0001:000059a0 000000f0H .xdata                  CODE
+ 0001:00005a90 00000014H .idata$2                CODE
+ 0001:00005aa4 00000014H .idata$3                CODE
+ 0001:00005ab8 000000b0H .idata$4                CODE
+ 0001:00005b68 0000000cH .idata$6                CODE
+ 0001:00005b74 00000000H .edata                  CODE
+ 0002:00000000 000000b0H .idata$5                DATA
+ 0002:000000b0 00000950H .data                   DATA
+ 0002:00000a00 00000804H .bss                    DATA
+ 0003:00000000 00000308H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     00011000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     00011004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     00011008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     0001100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     00011010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     00011014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     00011018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     0001101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_0CE@DBBAIMDG@?$CFs?3?5os_trans_create?5failed?5code?$DN@ 0001103c     logger.obj
+ 0001:00000060       ??_C@_09IFFPGGKG@user_main?$AA@ 00011060     logger.obj
+ 0001:0000006c       ??_C@_0CG@DPINNJFE@?$CFs?3?5Failed?5to?5create?5object?4?5cod@ 0001106c     logger.obj
+ 0001:00000092       ??_C@_00CNPNBAHC@?$AA@     00011092     logger.obj
+ 0001:00000094       ??_C@_07PIJJFBEA@tiwlan0?$AA@ 00011094     logger.obj
+ 0001:0000009c       ??_C@_0CG@BHGKFIGA@Could?5not?5find?5a?5usable?5WinSock?5@ 0001109c     osapi_um:osapi.obj
+ 0001:000000c4       ??_C@_0CE@EKKOCMKM@?$CFs?3?5zerro?5is?5returned?5by?5recvfro@ 000110c4     osapi_um:osapi.obj
+ 0001:000000e8       ??_C@_0CE@MHFALAKA@?$CFs?3?5error?5is?5returned?5by?5recvfro@ 000110e8     osapi_um:osapi.obj
+ 0001:0000010c       ??_C@_0CL@IOPGBHOE@?$CFs?3?5error?5binding?5logger?5socket?4@ 0001110c     osapi_um:osapi.obj
+ 0001:00000138       ??_C@_0CC@PHJHEFJL@?$CFs?3?5error?5opening?5socket?5socket?4@ 00011138     osapi_um:osapi.obj
+ 0001:0000015c       ??_C@_0CC@PMLEMPFG@Could?5not?5initializate?5WinSocks?4@ 0001115c     osapi_um:osapi.obj
+ 0001:00000180       ??_C@_0ED@PCJEAPMI@Disassociated?5with?5?$CK?$CK?$CK?$CK?5unspecif@ 00011180     osapi_um:ipc_event.obj
+ 0001:000001c8       ??_C@_0EI@GCKHFJKF@CLI?5Event?5?9?5Disassociated?5due?5to@ 000111c8     osapi_um:ipc_event.obj
+ 0001:00000210       ??_C@_0DE@ENBMBFNL@CLI?5Event?5?9?5Disassociated?5due?5to@ 00011210     osapi_um:ipc_event.obj
+ 0001:00000248       ??_C@_0EJ@LEAIDILC@CLI?5Event?5?9?5Disassociated?5due?5to@ 00011248     osapi_um:ipc_event.obj
+ 0001:00000294       ??_C@_0DF@MIBNCGEE@CLI?5Event?5?9?5Disassociated?5due?5to@ 00011294     osapi_um:ipc_event.obj
+ 0001:000002cc       ??_C@_0CO@FDLFBMHG@CLI?5Event?5?9?5Disassociated?5due?5to@ 000112cc     osapi_um:ipc_event.obj
+ 0001:00000300       ??_C@_0EM@IMMEBJOD@CLI?5Event?5?9?5Disassociated?5due?5to@ 00011300     osapi_um:ipc_event.obj
+ 0001:00000350       ??_C@_0EG@NAFFEKJO@CLI?5Event?5?9?5Disassociated?5due?5to@ 00011350     osapi_um:ipc_event.obj
+ 0001:00000398       ??_C@_0DH@OMMJCPLL@CLI?5Event?5?9?5Disassociated?5due?5to@ 00011398     osapi_um:ipc_event.obj
+ 0001:000003d0       ??_C@_0DE@HHPFMNJ@CLI?5Event?5?9?5Disassociated?5with?5u@ 000113d0     osapi_um:ipc_event.obj
+ 0001:00000404       ??_C@_0BG@BIMNHAEH@UNKNOWN?5EVENT?5?9?5?$CFd?$CB?5?6?$AA@ 00011404     osapi_um:ipc_event.obj
+ 0001:0000041c       ??_C@_0DE@LAJNDNOM@IPC_EVENT_RSSI_SNR_TRIGGER?5?$CIinde@ 0001141c     osapi_um:ipc_event.obj
+ 0001:00000450       ??_C@_0CL@LNIKENGJ@IPC_EVENT_WPS_SESSION_OVERLAP?5da@ 00011450     osapi_um:ipc_event.obj
+ 0001:0000047c       ??_C@_0BM@OLCDIFMD@IPC_EVENT_GWSI?5data?5len?$DN?$CFd?6?$AA@ 0001147c     osapi_um:ipc_event.obj
+ 0001:00000498       ??_C@_0DL@HGCDMBNJ@IPC_EVENT_TRAFFIC_INTENSITY_THRE@ 00011498     osapi_um:ipc_event.obj
+ 0001:000004d4       ??_C@_0CJ@LLMCHJEL@Threshold?$CIHigh?$DN0?0?5?5Low?$DN1?$CJ?5?5?5cros@ 000114d4     osapi_um:ipc_event.obj
+ 0001:00000500       ??_C@_0CJ@BDDAICAA@Direction?$CIAbove?$DN0?0?5Below?$DN1?$CJ?5cros@ 00011500     osapi_um:ipc_event.obj
+ 0001:0000052c       ??_C@_0CO@JCHLENEB@IPC_EVENT_WPA2_PREAUTHENTICATION@ 0001152c     osapi_um:ipc_event.obj
+ 0001:0000055c       ??_C@_0CI@HFCDLGKG@IPC_EVENT_EAP_AUTH_FAILURE?5data?5@ 0001155c     osapi_um:ipc_event.obj
+ 0001:00000584       ??_C@_0CI@POHKHOHA@IPC_EVENT_ROAMING_COMPLETE?5data?5@ 00011584     osapi_um:ipc_event.obj
+ 0001:000005ac       ??_C@_0CJ@GPJFOABA@IPC_EVENT_MEDIUM_TIME_CROSS?5data@ 000115ac     osapi_um:ipc_event.obj
+ 0001:000005d8       ??_C@_0EH@NENNMFOC@IPC_EVENT_TSPEC_RATE_STATUS?5ther@ 000115d8     osapi_um:ipc_event.obj
+ 0001:00000620       ??_C@_0EH@KPGMMILO@IPC_EVENT_TSPEC_RATE_STATUS?5uAC?$DN@ 00011620     osapi_um:ipc_event.obj
+ 0001:00000668       ??_C@_0EC@BPICHEFO@IPC_EVENT_TSPEC_STATUS?5there?5is?5@ 00011668     osapi_um:ipc_event.obj
+ 0001:000006ac       ??_C@_0DK@KMBHEKFO@CLI?5Event?5?9?5IPC_EVENT_TSPEC_STAT@ 000116ac     osapi_um:ipc_event.obj
+ 0001:000006e8       ??_C@_0DH@IMJLOBGP@Tspec?5Parameters?5?$CIas?5received?5th@ 000116e8     osapi_um:ipc_event.obj
+ 0001:00000720       ??_C@_0DH@HPPBEFJM@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 00011720     osapi_um:ipc_event.obj
+ 0001:00000758       ??_C@_0BD@MIEBMEKA@userPriority?5?$DN?5?$CFd?6?$AA@ 00011758     osapi_um:ipc_event.obj
+ 0001:0000076c       ??_C@_0BH@BBDDEJIJ@uNominalMSDUsize?5?$DN?5?$CFd?6?$AA@ 0001176c     osapi_um:ipc_event.obj
+ 0001:00000784       ??_C@_0BE@KHOJHKJM@uMeanDataRate?5?$DN?5?$CFd?6?$AA@ 00011784     osapi_um:ipc_event.obj
+ 0001:00000798       ??_C@_0BG@DIDNGFMA@uMinimumPHYRate?5?$DN?5?$CFd?6?$AA@ 00011798     osapi_um:ipc_event.obj
+ 0001:000007b0       ??_C@_0CB@LHPPAKG@uSurplusBandwidthAllowance?5?$DN?5?$CFd?6@ 000117b0     osapi_um:ipc_event.obj
+ 0001:000007d4       ??_C@_0BA@JFAALLBL@uAPSDFlag?5?$DN?5?$CFd?6?$AA@ 000117d4     osapi_um:ipc_event.obj
+ 0001:000007e4       ??_C@_0BN@GABDNDAA@MinimumServiceInterval?5?$DN?5?$CFd?6?$AA@ 000117e4     osapi_um:ipc_event.obj
+ 0001:00000804       ??_C@_0BN@IPJBMNHK@MaximumServiceInterval?5?$DN?5?$CFd?6?$AA@ 00011804     osapi_um:ipc_event.obj
+ 0001:00000824       ??_C@_0BD@IILGGPK@uMediumTime?5?$DN?5?$CFd?6?6?$AA@ 00011824     osapi_um:ipc_event.obj
+ 0001:00000838       ??_C@_0CA@DDJJDKFF@IPC_EVENT_LOW_RSSI?5data?5len?$DN?$CFd?6?$AA@ 00011838     osapi_um:ipc_event.obj
+ 0001:00000858       ??_C@_0CF@IHKCMNPC@IPC_EVENT_PREAUTH_EAPOL?5data?5len@ 00011858     osapi_um:ipc_event.obj
+ 0001:00000880       ??_C@_0BP@MCIEAGC@IPC_EVENT_UNBOUND?5data?5len?$DN?$CFd?6?$AA@ 00011880     osapi_um:ipc_event.obj
+ 0001:000008a0       ??_C@_0BN@IMEDNNPO@IPC_EVENT_BOUND?5data?5len?$DN?$CFd?6?$AA@ 000118a0     osapi_um:ipc_event.obj
+ 0001:000008c0       ??_C@_0DN@CJCLFNNP@IpcEvent_PrintEvent?5?9?5received?5I@ 000118c0     osapi_um:ipc_event.obj
+ 0001:00000900       ??_C@_0DM@BALLJGM@IpcEvent_PrintEvent?5?9?5received?5I@ 00011900     osapi_um:ipc_event.obj
+ 0001:0000093c       ??_C@_0DK@OFODLLOM@IpcEvent_PrintEvent?5?9?5received?5I@ 0001193c     osapi_um:ipc_event.obj
+ 0001:00000978       ??_C@_0BN@EKBPPFKG@IPC_EVENT_EAPOL?5data?5len?$DN?$CFd?6?$AA@ 00011978     osapi_um:ipc_event.obj
+ 0001:00000998       ??_C@_0CC@KKMFCCMP@IPC_EVENT_CCKM_START?5data?5len?$DN?$CFd@ 00011998     osapi_um:ipc_event.obj
+ 0001:000009bc       ??_C@_0BP@POEPPKGG@IPC_EVENT_TIMEOUT?5data?5len?$DN?$CFd?6?$AA@ 000119bc     osapi_um:ipc_event.obj
+ 0001:000009dc       ??_C@_0CB@OIABNBBH@IPC_EVENT_AUTH_SUCC?5data?5len?$DN?$CFd?6@ 000119dc     osapi_um:ipc_event.obj
+ 0001:00000a00       ??_C@_0CC@DOFHOCKC@IPC_EVENT_LINK_SPEED?5data?5len?$DN?$CFd@ 00011a00     osapi_um:ipc_event.obj
+ 0001:00000a24       ??_C@_0CF@PECNONDF@IPC_EVENT_SCAN_COMPLETE?5data?5len@ 00011a24     osapi_um:ipc_event.obj
+ 0001:00000a4c       ??_C@_0CG@PBHDEFHO@IPC_EVENT_MEDIA_SPECIFIC?5data?5le@ 00011a4c     osapi_um:ipc_event.obj
+ 0001:00000a74       ??_C@_0CF@PMIIMALJ@IPC_EVENT_DISASSOCIATED?5data?5len@ 00011a74     osapi_um:ipc_event.obj
+ 0001:00000a9c       ??_C@_0CC@KNEBKCKK@IPC_EVENT_ASSOCIATED?5data?5len?$DN?$CFd@ 00011a9c     osapi_um:ipc_event.obj
+ 0001:00000ac0       ??_C@_0BG@BJMBEMKC@IpcEvent_Handle_Event?$AA@ 00011ac0     osapi_um:ipc_event.obj
+ 0001:00000ad8       ??_C@_0CA@BIICGEPH@?$CFs?5error?3?5illegal?5ID?$CI?$CFX?5?$CB?$DN?5?$CFX?$CJ?6?$AA@ 00011ad8     osapi_um:ipc_event.obj
+ 0001:00000af8       ??_C@_0BB@HJAPLPKK@EventsThreadFunc?$AA@ 00011af8     osapi_um:ipc_event.obj
+ 0001:00000b0c       ??_C@_0CB@GLFMIHCE@?$CFs?3?5Can?8t?5create?5Events?5thread?4?6@ 00011b0c     osapi_um:ipc_event.obj
+ 0001:00000b30       ??_C@_0BA@BIKDLDGN@IpcEvent_Create?$AA@ 00011b30     osapi_um:ipc_event.obj
+ 0001:00000b40       ??_C@_1BE@OKFHIFIO@?$AAT?$AAI?$AAW?$AAL?$AAN?$AAA?$AAP?$AAI?$AA1?$AA?$AA@ 00011b40     osapi_um:ipc_sta.obj
+ 0001:00000b54       ??_C@_1M@OCFACEGK@?$AAU?$AAI?$AAO?$AA1?$AA?3?$AA?$AA@ 00011b54     osapi_um:ipc_sta.obj
+ 0001:00000b60       ??_C@_0CO@HDFMPKLG@ERROR?4?5see?5driver?5prints?5or?5logs@ 00011b60     osapi_um:ipc_sta.obj
+ 0001:00000b90       ??_C@_07BMOHHAGJ@DYNAMIC?$AA@ 00011b90     cu_common:cu_cmd.obj
+ 0001:00000b98       ??_C@_06GCFCNKMP@STATIC?$AA@ 00011b98     cu_common:cu_cmd.obj
+ 0001:00000ba0       ??_C@_07EPHEAIFE@WPA2PSK?$AA@ 00011ba0     cu_common:cu_cmd.obj
+ 0001:00000ba8       ??_C@_06FLIGIHDD@WPAPSK?$AA@ 00011ba8     cu_common:cu_cmd.obj
+ 0001:00000bb0       ??_C@_06LOOAMPBO@Shared?$AA@ 00011bb0     cu_common:cu_cmd.obj
+ 0001:00000bb8       ??_C@_04DNCDCIAE@Open?$AA@ 00011bb8     cu_common:cu_cmd.obj
+ 0001:00000bc0       ??_C@_0L@BMJIDLML@DISCONNECT?$AA@ 00011bc0     cu_common:cu_cmd.obj
+ 0001:00000bcc       ??_C@_09KGBNNNJO@CONNECTED?$AA@ 00011bcc     cu_common:cu_cmd.obj
+ 0001:00000bd8       ??_C@_0L@OPGIEADC@CONNECTING?$AA@ 00011bd8     cu_common:cu_cmd.obj
+ 0001:00000be4       ??_C@_08OGPGMOKK@SCANNING?$AA@ 00011be4     cu_common:cu_cmd.obj
+ 0001:00000bf0       ??_C@_04IMMGDCFE@IDLE?$AA@ 00011bf0     cu_common:cu_cmd.obj
+ 0001:00000bf8       ??_C@_06GIIDEEDO@Always?$AA@ 00011bf8     cu_common:cu_cmd.obj
+ 0001:00000c00       ??_C@_09FMMIECJP@When?5Idle?$AA@ 00011c00     cu_common:cu_cmd.obj
+ 0001:00000c0c       ??_C@_03BKNEFOAH@AES?$AA@  00011c0c     cu_common:cu_cmd.obj
+ 0001:00000c10       ??_C@_04HNKLFFMO@TKIP?$AA@ 00011c10     cu_common:cu_cmd.obj
+ 0001:00000c18       ??_C@_03EEILAFIH@WEP?$AA@  00011c18     cu_common:cu_cmd.obj
+ 0001:00000c1c       ??_C@_04OHJIHAFH@None?$AA@ 00011c1c     cu_common:cu_cmd.obj
+ 0001:00000c24       ??_C@_09FLJKDLLP@LONG_DOZE?$AA@ 00011c24     cu_common:cu_cmd.obj
+ 0001:00000c30       ??_C@_0L@EGACFLEN@SHORT_DOZE?$AA@ 00011c30     cu_common:cu_cmd.obj
+ 0001:00000c3c       ??_C@_04LMMJFDCN@AUTO?$AA@ 00011c3c     cu_common:cu_cmd.obj
+ 0001:00000c44       ??_C@_03EBKHDLCO@Any?$AA@  00011c44     cu_common:cu_cmd.obj
+ 0001:00000c48       ??_C@_0P@FFOGJEBJ@Infrastructure?$AA@ 00011c48     cu_common:cu_cmd.obj
+ 0001:00000c58       ??_C@_0M@MLMKHJLC@Independent?$AA@ 00011c58     cu_common:cu_cmd.obj
+ 0001:00000c64       ??_C@_06FHBILLDG@Hidden?$AA@ 00011c64     cu_common:cu_cmd.obj
+ 0001:00000c6c       ??_C@_06IBHNPBBJ@Public?$AA@ 00011c6c     cu_common:cu_cmd.obj
+ 0001:00000c74       ??_C@_04HPMIDMKH@True?$AA@ 00011c74     cu_common:cu_cmd.obj
+ 0001:00000c7c       ??_C@_05MKDOIIA@False?$AA@ 00011c7c     cu_common:cu_cmd.obj
+ 0001:00000c84       ??_C@_0BG@LPCOHBOD@Active?5Triggered?5Scan?$AA@ 00011c84     cu_common:cu_cmd.obj
+ 0001:00000c9c       ??_C@_0BH@EDCAFNIH@Passive?5Triggered?5Scan?$AA@ 00011c9c     cu_common:cu_cmd.obj
+ 0001:00000cb4       ??_C@_0BN@CNCCFEFL@Scheduled?5Passive?5Scan?5?$CISPS?$CJ?$AA@ 00011cb4     cu_common:cu_cmd.obj
+ 0001:00000cd4       ??_C@_0BD@CICODNNE@Active?5Normal?5Scan?$AA@ 00011cd4     cu_common:cu_cmd.obj
+ 0001:00000ce8       ??_C@_0BE@HIDCEC@Passive?5Normal?5Scan?$AA@ 00011ce8     cu_common:cu_cmd.obj
+ 0001:00000cfc       ??_C@_08ELFCGFHP@54?5Mbps?5?$AA@ 00011cfc     cu_common:cu_cmd.obj
+ 0001:00000d08       ??_C@_08LIGGEHD@48?5Mbps?5?$AA@ 00011d08     cu_common:cu_cmd.obj
+ 0001:00000d14       ??_C@_08HKGNBLII@36?5Mbps?5?$AA@ 00011d14     cu_common:cu_cmd.obj
+ 0001:00000d20       ??_C@_08CPDDAILG@24?5Mbps?5?$AA@ 00011d20     cu_common:cu_cmd.obj
+ 0001:00000d2c       ??_C@_08EBBBCBDM@18?5Mbps?5?$AA@ 00011d2c     cu_common:cu_cmd.obj
+ 0001:00000d38       ??_C@_08NANBDNPE@12?5Mbps?5?$AA@ 00011d38     cu_common:cu_cmd.obj
+ 0001:00000d44       ??_C@_08CPGDMIJJ@9?5Mbps?5?5?$AA@ 00011d44     cu_common:cu_cmd.obj
+ 0001:00000d50       ??_C@_08PANKAHEI@6?5Mbps?5?5?$AA@ 00011d50     cu_common:cu_cmd.obj
+ 0001:00000d5c       ??_C@_08OJFMABDB@22?5Mbps?5?$AA@ 00011d5c     cu_common:cu_cmd.obj
+ 0001:00000d68       ??_C@_08FOFODKBH@11?5Mbps?5?$AA@ 00011d68     cu_common:cu_cmd.obj
+ 0001:00000d74       ??_C@_08NPEHAHO@5?45?5Mbps?$AA@ 00011d74     cu_common:cu_cmd.obj
+ 0001:00000d80       ??_C@_08KNDGFGEE@2?5Mbps?5?5?$AA@ 00011d80     cu_common:cu_cmd.obj
+ 0001:00000d8c       ??_C@_08JELLGKIB@1?5Mbps?5?5?$AA@ 00011d8c     cu_common:cu_cmd.obj
+ 0001:00000d98       ??_C@_08BJBAMICO@Auto?5?5?5?5?$AA@ 00011d98     cu_common:cu_cmd.obj
+ 0001:00000da4       ??_C@_0O@GPJFGIMI@ET?5on?5both?5?5?5?$AA@ 00011da4     cu_common:cu_cmd.obj
+ 0001:00000db4       ??_C@_0O@GAPJGGC@ET?5on?5Prb?5Rsp?$AA@ 00011db4     cu_common:cu_cmd.obj
+ 0001:00000dc4       ??_C@_0O@KPCLBPEI@ET?5on?5Beacon?5?$AA@ 00011dc4     cu_common:cu_cmd.obj
+ 0001:00000dd4       ??_C@_0O@JIMGEEI@ET?5disabled?5?5?$AA@ 00011dd4     cu_common:cu_cmd.obj
+ 0001:00000de4       ??_C@_07LIJBGHCN@Both?5?5?5?$AA@ 00011de4     cu_common:cu_cmd.obj
+ 0001:00000dec       ??_C@_07KAFDDKGH@5?40?5GHz?$AA@ 00011dec     cu_common:cu_cmd.obj
+ 0001:00000df4       ??_C@_07DBAHHBGI@2?44?5GHz?$AA@ 00011df4     cu_common:cu_cmd.obj
+ 0001:00000dfc       ??_C@_05BOFJJAAP@Awake?$AA@ 00011dfc     cu_common:cu_cmd.obj
+ 0001:00000e04       ??_C@_0L@NIEOCJBN@Power?5Down?$AA@ 00011e04     cu_common:cu_cmd.obj
+ 0001:00000e10       ??_C@_0BC@EKBDJBGP@Extreme?5Low?5Power?$AA@ 00011e10     cu_common:cu_cmd.obj
+ 0001:00000e24       ??_C@_07PCJELJIA@CONSOLE?$AA@ 00011e24     cu_common:cu_cmd.obj
+ 0001:00000e2c       ??_C@_02CLJDIHEM@SM?$AA@   00011e2c     cu_common:cu_cmd.obj
+ 0001:00000e30       ??_C@_0M@BBACKHFD@FATAL_ERROR?$AA@ 00011e30     cu_common:cu_cmd.obj
+ 0001:00000e3c       ??_C@_05MBDEGLCK@ERROR?$AA@ 00011e3c     cu_common:cu_cmd.obj
+ 0001:00000e44       ??_C@_07KCOHIFOP@WARNING?$AA@ 00011e44     cu_common:cu_cmd.obj
+ 0001:00000e4c       ??_C@_0M@PHDJNCCI@INFORMATION?$AA@ 00011e4c     cu_common:cu_cmd.obj
+ 0001:00000e58       ??_C@_04LGGJDDML@INIT?$AA@ 00011e58     cu_common:cu_cmd.obj
+ 0001:00000e60       ??_C@_04ECGLBLOI@?9?9?9?9?$AA@ 00011e60     cu_common:cu_cmd.obj
+ 0001:00000e68       ??_C@_0BJ@JCIBHMNP@WlanDrvIf?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011e68     cu_common:cu_cmd.obj
+ 0001:00000e84       ??_C@_0BJ@HLMMDEMF@cmdinterpretoid?5?5?5?5?5?5?5?5?5?$AA@ 00011e84     cu_common:cu_cmd.obj
+ 0001:00000ea0       ??_C@_0BJ@CFDIMNPF@roamingMngr_manualSM?5?5?5?5?$AA@ 00011ea0     cu_common:cu_cmd.obj
+ 0001:00000ebc       ??_C@_0BJ@JALIHDEN@roamingMngr_autoSM?5?5?5?5?5?5?$AA@ 00011ebc     cu_common:cu_cmd.obj
+ 0001:00000ed8       ??_C@_0BJ@FNAJCEFA@externalSec?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011ed8     cu_common:cu_cmd.obj
+ 0001:00000ef4       ??_C@_0BJ@GELPODIC@stack?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011ef4     cu_common:cu_cmd.obj
+ 0001:00000f10       ??_C@_0BJ@CKIGMIGA@report?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011f10     cu_common:cu_cmd.obj
+ 0001:00000f2c       ??_C@_0BJ@BENNKGCG@rate?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011f2c     cu_common:cu_cmd.obj
+ 0001:00000f48       ??_C@_0BJ@HNGJBNBK@queue?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011f48     cu_common:cu_cmd.obj
+ 0001:00000f64       ??_C@_0BJ@NMOIILLB@mem?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011f64     cu_common:cu_cmd.obj
+ 0001:00000f80       ??_C@_0BJ@LPOIPJMF@GenSM?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011f80     cu_common:cu_cmd.obj
+ 0001:00000f9c       ??_C@_0BJ@KFIIDDI@fsm?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011f9c     cu_common:cu_cmd.obj
+ 0001:00000fb8       ??_C@_0BJ@PPFFKIHP@freq?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011fb8     cu_common:cu_cmd.obj
+ 0001:00000fd4       ??_C@_0BJ@FPPGIKDP@context?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011fd4     cu_common:cu_cmd.obj
+ 0001:00000ff0       ??_C@_0BJ@NEOOKEMF@WspiBusDrv?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00011ff0     cu_common:cu_cmd.obj
+ 0001:0000100c       ??_C@_0BJ@GABMBMNH@TxnQueue?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001200c     cu_common:cu_cmd.obj
+ 0001:00001028       ??_C@_0BJ@IJGJNDEK@SdioBusDrv?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012028     cu_common:cu_cmd.obj
+ 0001:00001044       ??_C@_0BJ@KBAHIGME@TwIf?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012044     cu_common:cu_cmd.obj
+ 0001:00001060       ??_C@_0BJ@GAELGAJP@TWDriverTx?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012060     cu_common:cu_cmd.obj
+ 0001:0000107c       ??_C@_0BJ@MJLGLFOG@TWDriverRadio?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001207c     cu_common:cu_cmd.obj
+ 0001:00001098       ??_C@_0BJ@LNPJGFBO@TWDriverCtrl?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012098     cu_common:cu_cmd.obj
+ 0001:000010b4       ??_C@_0BJ@MMLNNOAI@TWDriver?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000120b4     cu_common:cu_cmd.obj
+ 0001:000010d0       ??_C@_0BJ@PCFBGCO@ScanSrvSM?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000120d0     cu_common:cu_cmd.obj
+ 0001:000010ec       ??_C@_0BJ@ENJAKLBI@ScanSrv?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000120ec     cu_common:cu_cmd.obj
+ 0001:00001108       ??_C@_0BJ@KMGDMKOB@PowerSrvSM?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012108     cu_common:cu_cmd.obj
+ 0001:00001124       ??_C@_0BJ@KLEGJAMI@PowerSrv?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012124     cu_common:cu_cmd.obj
+ 0001:00001140       ??_C@_0BJ@ONCGMAIC@MeasurementSrvSM?5?5?5?5?5?5?5?5?$AA@ 00012140     cu_common:cu_cmd.obj
+ 0001:0000115c       ??_C@_0BJ@ENIBCFPC@measurementSrvDbgPrint?5?5?$AA@ 0001215c     cu_common:cu_cmd.obj
+ 0001:00001178       ??_C@_0BJ@KOPPHLLA@MeasurementSrv?5?5?5?5?5?5?5?5?5?5?$AA@ 00012178     cu_common:cu_cmd.obj
+ 0001:00001194       ??_C@_0BJ@BINIKEGL@MacServices?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012194     cu_common:cu_cmd.obj
+ 0001:000011b0       ??_C@_0BJ@OAPBICC@txXfer?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000121b0     cu_common:cu_cmd.obj
+ 0001:000011cc       ??_C@_0BJ@LEICJDCF@txResult?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000121cc     cu_common:cu_cmd.obj
+ 0001:000011e8       ??_C@_0BJ@NFPKDKFI@RxXfer?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000121e8     cu_common:cu_cmd.obj
+ 0001:00001204       ??_C@_0BJ@ECPPHJJF@HwInit?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012204     cu_common:cu_cmd.obj
+ 0001:00001220       ??_C@_0BJ@CCIENEGG@FwEvent?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012220     cu_common:cu_cmd.obj
+ 0001:0000123c       ??_C@_0BJ@JCBBJMMJ@fwDebug?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001223c     cu_common:cu_cmd.obj
+ 0001:00001258       ??_C@_0BJ@DLDDPCKC@eventMbox?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012258     cu_common:cu_cmd.obj
+ 0001:00001274       ??_C@_0BJ@ELKLLMDA@CmdMBox?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012274     cu_common:cu_cmd.obj
+ 0001:00001290       ??_C@_0BJ@DEINIAIG@txHwQueue?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012290     cu_common:cu_cmd.obj
+ 0001:000012ac       ??_C@_0BJ@HEDLPHAL@txCtrlBlk?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000122ac     cu_common:cu_cmd.obj
+ 0001:000012c8       ??_C@_0BJ@EMHJLDKK@RxQueue?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000122c8     cu_common:cu_cmd.obj
+ 0001:000012e4       ??_C@_0BJ@IMDMNDJL@CmdQueue?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000122e4     cu_common:cu_cmd.obj
+ 0001:00001300       ??_C@_0BJ@JHEODECH@CmdBldItrIE?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012300     cu_common:cu_cmd.obj
+ 0001:0000131c       ??_C@_0BJ@CMNEMBG@CmdBldItr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001231c     cu_common:cu_cmd.obj
+ 0001:00001338       ??_C@_0BJ@IMJOEFND@CmdBldCmdIE?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012338     cu_common:cu_cmd.obj
+ 0001:00001354       ??_C@_0BJ@BJBNDNOC@CmdBldCmd?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012354     cu_common:cu_cmd.obj
+ 0001:00001370       ??_C@_0BJ@CCNDGNDJ@CmdBldCfgIE?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012370     cu_common:cu_cmd.obj
+ 0001:0000138c       ??_C@_0BJ@LHFABFAI@CmdBldCfg?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001238c     cu_common:cu_cmd.obj
+ 0001:000013a8       ??_C@_0BJ@LGKPNMMH@CmdBld?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000123a8     cu_common:cu_cmd.obj
+ 0001:000013c4       ??_C@_0BJ@JAMOMDIN@trafficAdmControl?5?5?5?5?5?5?5?$AA@ 000123c4     cu_common:cu_cmd.obj
+ 0001:000013e0       ??_C@_0BJ@NGLHBMG@templates?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000123e0     cu_common:cu_cmd.obj
+ 0001:000013fc       ??_C@_0BJ@FDGFFECJ@systemConfig?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000123fc     cu_common:cu_cmd.obj
+ 0001:00001418       ??_C@_0BJ@EIAGDMKF@StaCap?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012418     cu_common:cu_cmd.obj
+ 0001:00001434       ??_C@_0BJ@FGOBDLLK@siteMgr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012434     cu_common:cu_cmd.obj
+ 0001:00001450       ??_C@_0BJ@CFNPHPHO@siteHash?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012450     cu_common:cu_cmd.obj
+ 0001:0000146c       ??_C@_0BJ@LPGBHIOA@sharedKeyAuthSm?5?5?5?5?5?5?5?5?5?$AA@ 0001246c     cu_common:cu_cmd.obj
+ 0001:00001488       ??_C@_0BJ@EGAFMFK@scr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012488     cu_common:cu_cmd.obj
+ 0001:000014a4       ??_C@_0BJ@OGLPOAPL@scanResultTable?5?5?5?5?5?5?5?5?5?$AA@ 000124a4     cu_common:cu_cmd.obj
+ 0001:000014c0       ??_C@_0BJ@JHABMGBI@ScanCncnSmSpecific?5?5?5?5?5?5?$AA@ 000124c0     cu_common:cu_cmd.obj
+ 0001:000014dc       ??_C@_0BJ@KLPGNKDH@ScanCncnSm?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000124dc     cu_common:cu_cmd.obj
+ 0001:000014f8       ??_C@_0BJ@OHINEFB@ScanCncnOsSm?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000124f8     cu_common:cu_cmd.obj
+ 0001:00001514       ??_C@_0BJ@JGPELHI@ScanCncnApp?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012514     cu_common:cu_cmd.obj
+ 0001:00001530       ??_C@_0BJ@LLOMPLGD@ScanCncn?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012530     cu_common:cu_cmd.obj
+ 0001:0000154c       ??_C@_0BJ@CPMOKBPE@roamingInt?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001254c     cu_common:cu_cmd.obj
+ 0001:00001568       ??_C@_0BJ@NNAJMEOB@qosMngr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012568     cu_common:cu_cmd.obj
+ 0001:00001584       ??_C@_0BJ@FDCBBJCI@PowerMgrKeepAlive?5?5?5?5?5?5?5?$AA@ 00012584     cu_common:cu_cmd.obj
+ 0001:000015a0       ??_C@_0BJ@JGGDGOMG@PowerMgrDbgPrint?5?5?5?5?5?5?5?5?$AA@ 000125a0     cu_common:cu_cmd.obj
+ 0001:000015bc       ??_C@_0BJ@HEBIBBDM@PowerMgr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000125bc     cu_common:cu_cmd.obj
+ 0001:000015d8       ??_C@_0BJ@NCCACAKL@openAuthSm?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000125d8     cu_common:cu_cmd.obj
+ 0001:000015f4       ??_C@_0BJ@NOHNFILC@mlmeSm?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000125f4     cu_common:cu_cmd.obj
+ 0001:00001610       ??_C@_0BJ@MEBCKDAM@mlmeParser?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012610     cu_common:cu_cmd.obj
+ 0001:0000162c       ??_C@_0BJ@BOBHPALM@mlmeBuilder?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001262c     cu_common:cu_cmd.obj
+ 0001:00001648       ??_C@_0BJ@CNGEPDBF@healthMonitor?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012648     cu_common:cu_cmd.obj
+ 0001:00001664       ??_C@_0BJ@NOKOIIHJ@currBss?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012664     cu_common:cu_cmd.obj
+ 0001:00001680       ??_C@_0BJ@ENPKFJCE@authSm?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012680     cu_common:cu_cmd.obj
+ 0001:0000169c       ??_C@_0BJ@INOOCAOE@assocSM?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001269c     cu_common:cu_cmd.obj
+ 0001:000016b8       ??_C@_0BJ@GPNBAKF@txPort?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000126b8     cu_common:cu_cmd.obj
+ 0001:000016d4       ??_C@_0BJ@BPMHBAEH@txMgmtQueue?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000126d4     cu_common:cu_cmd.obj
+ 0001:000016f0       ??_C@_0BJ@MMHMAAAL@txDataQueue?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000126f0     cu_common:cu_cmd.obj
+ 0001:0000170c       ??_C@_0BJ@GNONADJF@TxDataClsfr?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001270c     cu_common:cu_cmd.obj
+ 0001:00001728       ??_C@_0BJ@KFLHOIJE@txCtrlServ?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012728     cu_common:cu_cmd.obj
+ 0001:00001744       ??_C@_0BJ@HLAIJIOH@txCtrlParams?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012744     cu_common:cu_cmd.obj
+ 0001:00001760       ??_C@_0BJ@CFLLBDEC@txCtrl?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012760     cu_common:cu_cmd.obj
+ 0001:0000177c       ??_C@_0BJ@CDHFKEAE@TrafficMonitor?5?5?5?5?5?5?5?5?5?5?$AA@ 0001277c     cu_common:cu_cmd.obj
+ 0001:00001798       ??_C@_0BJ@LNLNGKGK@rx?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012798     cu_common:cu_cmd.obj
+ 0001:000017b4       ??_C@_0BJ@DMHNBNLH@RateAdaptation?5?5?5?5?5?5?5?5?5?5?$AA@ 000127b4     cu_common:cu_cmd.obj
+ 0001:000017d0       ??_C@_0BJ@OJJAKAJG@GeneralUtil?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000127d0     cu_common:cu_cmd.obj
+ 0001:000017ec       ??_C@_0BJ@INIGOLGF@Ctrl?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000127ec     cu_common:cu_cmd.obj
+ 0001:00001808       ??_C@_0BJ@BCLCALJP@EvHandler?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012808     cu_common:cu_cmd.obj
+ 0001:00001824       ??_C@_0BJ@BDAKGLDO@DrvMain?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012824     cu_common:cu_cmd.obj
+ 0001:00001840       ??_C@_0BJ@PJEDIJIO@CmdHndlr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012840     cu_common:cu_cmd.obj
+ 0001:0000185c       ??_C@_0BJ@NEHNCIGF@CmdDispatcher?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001285c     cu_common:cu_cmd.obj
+ 0001:00001878       ??_C@_0BJ@PNNDGMOH@unicastKeySM?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012878     cu_common:cu_cmd.obj
+ 0001:00001894       ??_C@_0BJ@IGBOGACK@unicastKeyNone?5?5?5?5?5?5?5?5?5?5?$AA@ 00012894     cu_common:cu_cmd.obj
+ 0001:000018b0       ??_C@_0BJ@HLLCJMEH@unicastKey802_1x?5?5?5?5?5?5?5?5?$AA@ 000128b0     cu_common:cu_cmd.obj
+ 0001:000018cc       ??_C@_0BJ@JPPFLJPB@smeSm?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000128cc     cu_common:cu_cmd.obj
+ 0001:000018e8       ??_C@_0BJ@EGFPDKKM@smeSelect?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000128e8     cu_common:cu_cmd.obj
+ 0001:00001904       ??_C@_0BJ@BBJLCMFG@sme?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012904     cu_common:cu_cmd.obj
+ 0001:00001920       ??_C@_0BJ@NPBHNHJA@rsn?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012920     cu_common:cu_cmd.obj
+ 0001:0000193c       ??_C@_0BJ@HLKHIGFI@mainSecSm?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0001293c     cu_common:cu_cmd.obj
+ 0001:00001958       ??_C@_0BJ@FBLMDEOD@mainSecNull?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012958     cu_common:cu_cmd.obj
+ 0001:00001974       ??_C@_0BJ@IFDLMMDH@mainSecKeysOnly?5?5?5?5?5?5?5?5?5?$AA@ 00012974     cu_common:cu_cmd.obj
+ 0001:00001990       ??_C@_0BJ@HJECOCDO@mainKeysSm?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012990     cu_common:cu_cmd.obj
+ 0001:000019ac       ??_C@_0BJ@OIFIOBBI@keyParserWep?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000129ac     cu_common:cu_cmd.obj
+ 0001:000019c8       ??_C@_0BJ@JFBNNAPC@keyParserExternal?5?5?5?5?5?5?5?$AA@ 000129c8     cu_common:cu_cmd.obj
+ 0001:000019e4       ??_C@_0BJ@BELAKEBP@keyParser?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 000129e4     cu_common:cu_cmd.obj
+ 0001:00001a00       ??_C@_0BJ@JCEGHINA@keyDeriveWep?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012a00     cu_common:cu_cmd.obj
+ 0001:00001a1c       ??_C@_0BJ@JHJDCAAK@keyDeriveTkip?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012a1c     cu_common:cu_cmd.obj
+ 0001:00001a38       ??_C@_0BJ@IMENOGOB@keyDeriveCkip?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012a38     cu_common:cu_cmd.obj
+ 0001:00001a54       ??_C@_0BJ@FLJBAKHB@keyDeriveAes?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012a54     cu_common:cu_cmd.obj
+ 0001:00001a70       ??_C@_0BJ@GOKODNNH@keyDerive?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012a70     cu_common:cu_cmd.obj
+ 0001:00001a8c       ??_C@_0BJ@IJNIOFKM@connInfra?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012a8c     cu_common:cu_cmd.obj
+ 0001:00001aa8       ??_C@_0BJ@ECJEHGKB@connIbss?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012aa8     cu_common:cu_cmd.obj
+ 0001:00001ac4       ??_C@_0BJ@OHBHOCGL@conn?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012ac4     cu_common:cu_cmd.obj
+ 0001:00001ae0       ??_C@_0BJ@EDFMPAAN@broadcastKeySM?5?5?5?5?5?5?5?5?5?5?$AA@ 00012ae0     cu_common:cu_cmd.obj
+ 0001:00001afc       ??_C@_0BJ@LINAINMD@broadcastKeyNone?5?5?5?5?5?5?5?5?$AA@ 00012afc     cu_common:cu_cmd.obj
+ 0001:00001b18       ??_C@_0BJ@NMCDAILE@broadcastKey802_1x?5?5?5?5?5?5?$AA@ 00012b18     cu_common:cu_cmd.obj
+ 0001:00001b34       ??_C@_0BJ@GOHKHKML@apConn?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012b34     cu_common:cu_cmd.obj
+ 0001:00001b50       ??_C@_0BJ@OALMNKNI@admCtrlWpa2?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012b50     cu_common:cu_cmd.obj
+ 0001:00001b6c       ??_C@_0BJ@MFIPEAG@admCtrlWpa?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012b6c     cu_common:cu_cmd.obj
+ 0001:00001b88       ??_C@_0BJ@KHOICOPI@admCtrlWep?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012b88     cu_common:cu_cmd.obj
+ 0001:00001ba4       ??_C@_0BJ@HMLNLIJH@admCtrlNone?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012ba4     cu_common:cu_cmd.obj
+ 0001:00001bc0       ??_C@_0BJ@OOBPPBMI@admCtrl?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012bc0     cu_common:cu_cmd.obj
+ 0001:00001bdc       ??_C@_0BJ@HOJFENFL@TransmitPowerCcx?5?5?5?5?5?5?5?5?$AA@ 00012bdc     cu_common:cu_cmd.obj
+ 0001:00001bf8       ??_C@_0BJ@MFGGOLFF@rogueAp?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012bf8     cu_common:cu_cmd.obj
+ 0001:00001c14       ??_C@_0BJ@NAKEGBNM@ccxTSMngr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012c14     cu_common:cu_cmd.obj
+ 0001:00001c30       ??_C@_0BJ@DKHOCFAA@ccxRMMngr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012c30     cu_common:cu_cmd.obj
+ 0001:00001c4c       ??_C@_0BJ@NICPBNCI@ccxMngr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012c4c     cu_common:cu_cmd.obj
+ 0001:00001c68       ??_C@_0BJ@FGMEINKB@admCtrlCcx?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012c68     cu_common:cu_cmd.obj
+ 0001:00001c84       ??_C@_0BJ@DDPJBPP@scanMngr?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012c84     cu_common:cu_cmd.obj
+ 0001:00001ca0       ??_C@_0BJ@MNJGKJDN@roamingMngr?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012ca0     cu_common:cu_cmd.obj
+ 0001:00001cbc       ??_C@_0BJ@LJHGPCFI@SwitchChannel?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012cbc     cu_common:cu_cmd.obj
+ 0001:00001cd8       ??_C@_0BJ@DHIIIMNO@spectrumMngmntMgr?5?5?5?5?5?5?5?$AA@ 00012cd8     cu_common:cu_cmd.obj
+ 0001:00001cf4       ??_C@_0BJ@PCAFICJK@SoftGemini?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012cf4     cu_common:cu_cmd.obj
+ 0001:00001d10       ??_C@_0BJ@IENLDJMB@requestHandler?5?5?5?5?5?5?5?5?5?5?$AA@ 00012d10     cu_common:cu_cmd.obj
+ 0001:00001d2c       ??_C@_0BJ@ODGJMLKN@regulatoryDomain?5?5?5?5?5?5?5?5?$AA@ 00012d2c     cu_common:cu_cmd.obj
+ 0001:00001d48       ??_C@_0BJ@FKAPMJAE@measurementMgrSM?5?5?5?5?5?5?5?5?$AA@ 00012d48     cu_common:cu_cmd.obj
+ 0001:00001d64       ??_C@_0BJ@BJNGHCDG@measurementMgr?5?5?5?5?5?5?5?5?5?5?$AA@ 00012d64     cu_common:cu_cmd.obj
+ 0001:00001d80       ??_C@_0BJ@GMHCIHOA@timer?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 00012d80     cu_common:cu_cmd.obj
+ 0001:00001d9c       ??_C@_07MKALMBDJ@Timeout?$AA@ 00012d9c     cu_common:cu_cmd.obj
+ 0001:00001da4       ??_C@_0BL@BPPJJKKB@IPC_EVENT_RSSI_SNR_TRIGGER?$AA@ 00012da4     cu_common:cu_cmd.obj
+ 0001:00001dc0       ??_C@_0BO@OGHPOKID@IPC_EVENT_WPS_SESSION_OVERLAP?$AA@ 00012dc0     cu_common:cu_cmd.obj
+ 0001:00001de0       ??_C@_0L@IPKBALHI@ScanFailed?$AA@ 00012de0     cu_common:cu_cmd.obj
+ 0001:00001dec       ??_C@_0CO@KJMIJIDA@IPC_EVENT_TRAFFIC_INTENSITY_THRE@ 00012dec     cu_common:cu_cmd.obj
+ 0001:00001e1c       ??_C@_0CB@JICNODLE@IPC_EVENT_WPA2_PREAUTHENTICATION@ 00012e1c     cu_common:cu_cmd.obj
+ 0001:00001e40       ??_C@_0BK@MCNGKKKJ@EAP?9FAST?1LEAP?5Auth?5Failed?$AA@ 00012e40     cu_common:cu_cmd.obj
+ 0001:00001e5c       ??_C@_0BB@DAEICJFB@ROAMING_COMPLETE?$AA@ 00012e5c     cu_common:cu_cmd.obj
+ 0001:00001e70       ??_C@_0BM@KFKMCLEI@IPC_EVENT_MEDIUM_TIME_CROSS?$AA@ 00012e70     cu_common:cu_cmd.obj
+ 0001:00001e8c       ??_C@_0BM@EGPKALJD@IPC_EVENT_TSPEC_RATE_STATUS?$AA@ 00012e8c     cu_common:cu_cmd.obj
+ 0001:00001ea8       ??_C@_0BH@NLNLJIPL@IPC_EVENT_TSPEC_STATUS?$AA@ 00012ea8     cu_common:cu_cmd.obj
+ 0001:00001ec0       ??_C@_08NCNCBKIE@Low?5RSSI?$AA@ 00012ec0     cu_common:cu_cmd.obj
+ 0001:00001ecc       ??_C@_07BNPFLMGG@Unbound?$AA@ 00012ecc     cu_common:cu_cmd.obj
+ 0001:00001ed4       ??_C@_05IPGANIA@Bound?$AA@ 00012ed4     cu_common:cu_cmd.obj
+ 0001:00001edc       ??_C@_0BN@HHACIDKG@IPC_EVENT_RE_AUTH_TERMINATED?$AA@ 00012edc     cu_common:cu_cmd.obj
+ 0001:00001efc       ??_C@_0BM@MDOJIEAH@IPC_EVENT_RE_AUTH_COMPLETED?$AA@ 00012efc     cu_common:cu_cmd.obj
+ 0001:00001f18       ??_C@_0BK@BCKBECLD@IPC_EVENT_RE_AUTH_STARTED?$AA@ 00012f18     cu_common:cu_cmd.obj
+ 0001:00001f34       ??_C@_05JIDMHBCM@EAPOL?$AA@ 00012f34     cu_common:cu_cmd.obj
+ 0001:00001f3c       ??_C@_0P@IHILOBPM@Media_Specific?$AA@ 00012f3c     cu_common:cu_cmd.obj
+ 0001:00001f4c       ??_C@_0M@ELDBCOIE@ScanStopped?$AA@ 00012f4c     cu_common:cu_cmd.obj
+ 0001:00001f58       ??_C@_0N@FBKMEOCD@ScanComplete?$AA@ 00012f58     cu_common:cu_cmd.obj
+ 0001:00001f68       ??_C@_0BH@LEGIOKM@Authentication?5Success?$AA@ 00012f68     cu_common:cu_cmd.obj
+ 0001:00001f80       ??_C@_09BEFONHAB@LinkSpeed?$AA@ 00012f80     cu_common:cu_cmd.obj
+ 0001:00001f8c       ??_C@_0O@HKAFIBLA@Disassociated?$AA@ 00012f8c     cu_common:cu_cmd.obj
+ 0001:00001f9c       ??_C@_0L@MEACDNBE@Associated?$AA@ 00012f9c     cu_common:cu_cmd.obj
+ 0001:00001fa8       ??_C@_06MHJDLBHA@ACTIVE?$AA@ 00012fa8     cu_common:cu_cmd.obj
+ 0001:00001fb0       ??_C@_08PCNABPCD@INACTIVE?$AA@ 00012fb0     cu_common:cu_cmd.obj
+ 0001:00001fbc       ??_C@_0L@GPNJIJEA@SME?5Manual?$AA@ 00012fbc     cu_common:cu_cmd.obj
+ 0001:00001fc8       ??_C@_08HJMBIIIF@SME?5Auto?$AA@ 00012fc8     cu_common:cu_cmd.obj
+ 0001:00001fd4       ??_C@_04LBDCJOFB@Auto?$AA@ 00012fd4     cu_common:cu_cmd.obj
+ 0001:00001fdc       ??_C@_05CFHNBBJ@Infr?4?$AA@ 00012fdc     cu_common:cu_cmd.obj
+ 0001:00001fe4       ??_C@_06HOIMDJCI@AD?9Hoc?$AA@ 00012fe4     cu_common:cu_cmd.obj
+ 0001:00001fec       ??_C@_0DE@HDMKCFPO@ERROR?5?9?5CuCmd_Create?5?9?5cant?5allo@ 00012fec     cu_common:cu_cmd.obj
+ 0001:00002020       ??_C@_0DH@CPADMOJH@ERROR?5?9?5CuCommon_Create?5?9?5cant?5a@ 00013020     cu_common:cu_common.obj
+ 0001:00002058       ??_C@_0M@HELGNCDO@Winsock?52?42?$AA@ 00013058     ws2:wceinit.obj
+ 0001:00002064       ??_C@_1BG@PENMOFNG@?$AAW?$AAS?$AAP?$AAS?$AAt?$AAa?$AAr?$AAt?$AAu?$AAp?$AA?$AA@ 00013064     ws2:socket.obj
+ 0001:000020a8       os_trans_create            000130a8 f   os_trans.obj
+ 0001:00002124       user_main                  00013124 f   logger.obj
+ 0001:000021a8       g_tester_send_event        000131a8 f   logger.obj
+ 0001:000021ac       GetLastError               000131ac f   coredll:COREDLL.dll
+ 0001:000021bc       main                       000131bc f   osapi_um:osapi.obj
+ 0001:000021d4       os_error_printf            000131d4 f   osapi_um:osapi.obj
+ 0001:0000223c       os_Printf                  0001323c f   osapi_um:osapi.obj
+ 0001:0000224c       os_MemoryCAlloc            0001324c f   osapi_um:osapi.obj
+ 0001:0000225c       os_MemoryFree              0001325c f   osapi_um:osapi.obj
+ 0001:0000238c       IpcEvent_Handle_Event      0001338c f   osapi_um:ipc_event.obj
+ 0001:00002820       IpcEvent_Create            00013820 f   osapi_um:ipc_event.obj
+ 0001:00002a14       IpcEvent_Destroy           00013a14 f   osapi_um:ipc_event.obj
+ 0001:00002a7c       CuOs_Create                00013a7c f   osapi_um:cu_os.obj
+ 0001:00002a84       CuOs_Destroy               00013a84 f   osapi_um:cu_os.obj
+ 0001:00002a88       IpcSta_Create              00013a88 f   osapi_um:ipc_sta.obj
+ 0001:00002a90       IpcSta_Destroy             00013a90 f   osapi_um:ipc_sta.obj
+ 0001:00002a94       IPC_STA_Private_Send       00013a94 f   osapi_um:ipc_sta.obj
+ 0001:00002e68       CuCmd_Destroy              00013e68 f   cu_common:cu_cmd.obj
+ 0001:00002eb0       CuCmd_Create               00013eb0 f   cu_common:cu_cmd.obj
+ 0001:00002f6c       CuCommon_Destroy           00013f6c f   cu_common:cu_common.obj
+ 0001:00002f94       CuCommon_Create            00013f94 f   cu_common:cu_common.obj
+ 0001:00003000       Started                    00014000 f   ws2:wceinit.obj
+ 0001:00003028       WSAStartup                 00014028 f   ws2:wceinit.obj
+ 0001:000031bc       WSACleanup                 000141bc f   ws2:wceinit.obj
+ 0001:00003290       NewSocketHandle            00014290 f   ws2:socket.obj
+ 0001:00003334       _FindSocketHandle          00014334 f   ws2:socket.obj
+ 0001:0000336c       RefSocketHandle            0001436c f   ws2:socket.obj
+ 0001:0000344c       _FindProvider              0001444c f   ws2:socket.obj
+ 0001:0000349c       FreeProvider               0001449c f   ws2:socket.obj
+ 0001:000034f0       FreeProviders              000144f0 f   ws2:socket.obj
+ 0001:00003554       DerefProvider              00014554 f   ws2:socket.obj
+ 0001:00003628       GetProvider                00014628 f   ws2:socket.obj
+ 0001:00003940       WPUCreateSocketHandle      00014940 f   ws2:socket.obj
+ 0001:00003c58       WPUGetProviderPath         00014c58 f   ws2:socket.obj
+ 0001:00003e3c       WPUQuerySocketHandleContext 00014e3c f   ws2:socket.obj
+ 0001:00003ef8       CloseAllSockets            00014ef8 f   ws2:socket.obj
+ 0001:000040d8       DerefSocket                000150d8 f   ws2:socket.obj
+ 0001:000041a0       DerefSocketHandle          000151a0 f   ws2:socket.obj
+ 0001:00004274       WSASocketW                 00015274 f   ws2:socket.obj
+ 0001:000044e0       socket                     000154e0 f   ws2:socket.obj
+ 0001:00004508       closesocket                00015508 f   ws2:socket.obj
+ 0001:0000460c       WPUCloseSocketHandle       0001560c f   ws2:socket.obj
+ 0001:0000468c       CheckSockaddr              0001568c f   ws2:addr.obj
+ 0001:000046f4       bind                       000156f4 f   ws2:addr.obj
+ 0001:0000479c       htons                      0001579c f   ws2:addr.obj
+ 0001:000047b8       htonl                      000157b8 f   ws2:addr.obj
+ 0001:000047d8       WSARecvFrom                000157d8 f   ws2:comm.obj
+ 0001:000048e8       recvfrom                   000158e8 f   ws2:comm.obj
+ 0001:00004958       SetErrorCode               00015958 f   ws2:upcalls.obj
+ 0001:00004990       WPUCreateEvent             00015990 f   ws2:upcalls.obj
+ 0001:000049cc       WPUCloseEvent              000159cc f   ws2:upcalls.obj
+ 0001:00004a00       WPUModifyIFSHandle         00015a00 f   ws2:upcalls.obj
+ 0001:00004a28       WPUPostMessage             00015a28 f   ws2:upcalls.obj
+ 0001:00004a38       WPUQueryBlockingCallback   00015a38 f   ws2:upcalls.obj
+ 0001:00004a98       WPUQueueApc                00015a98 f   ws2:upcalls.obj
+ 0001:00004ab8       WPUResetEvent              00015ab8 f   ws2:upcalls.obj
+ 0001:00004af0       WPUSetEvent                00015af0 f   ws2:upcalls.obj
+ 0001:00004b28       WPUOpenCurrentThread       00015b28 f   ws2:upcalls.obj
+ 0001:00004b44       WPUCloseThread             00015b44 f   ws2:upcalls.obj
+ 0001:00004b60       WSAGetLastError            00015b60 f   ws2:upcalls.obj
+ 0001:00004b70       DeleteNsProvider           00015b70 f   ws2:rnr.obj
+ 0001:00004bcc       DerefNsProvider            00015bcc f   ws2:rnr.obj
+ 0001:00004c88       FreeNsProviders            00015c88 f   ws2:rnr.obj
+ 0001:00004cf4       FreeNsLookup               00015cf4 f   ws2:rnr.obj
+ 0001:00004d34       DerefLookup                00015d34 f   ws2:rnr.obj
+ 0001:00004d80       FreeLookups                00015d80 f   ws2:rnr.obj
+ 0001:00004dd4       __WSAFDIsSet               00015dd4 f   ws2:select.obj
+ 0001:00004e18       WPUFDIsSet                 00015e18 f   ws2:select.obj
+ 0001:0000520c       mainACRTStartup            0001620c f   corelib0:mainacrt.obj
+ 0001:00005230       __GSHandlerCheckCommon     00016230 f   corelib0:gshandler.obj
+ 0001:0000526c       __GSHandlerCheck           0001626c f   corelib0:gshandler.obj
+ 0001:00005290       __security_init_cookie     00016290 f   corelib0:seccinit.obj
+ 0001:000052ec       __security_check_cookie    000162ec f   corelib0:armsecgs.obj
+ 0001:00005300       __gsfailure                00016300 f   corelib0:armsecgs.obj
+ 0001:00005344       __GSHandlerCheck_SEH       00016344 f   corelib0:gshandlerseh.obj
+ 0001:00005490       exit                       00016490 f   corelib0:cexit.obj
+ 0001:000054a8       _exit                      000164a8 f   corelib0:cexit.obj
+ 0001:000054e8       _initterm                  000164e8 f   corelib0:crt0dat.obj
+ 0001:0000551c       _cinit                     0001651c f   corelib0:crt0dat.obj
+ 0001:00005558       _onexit                    00016558 f   corelib0:onexit.obj
+ 0001:000056e0       atexit                     000166e0 f   corelib0:onexit.obj
+ 0001:00005700       printf                     00016700 f   corelib1:COREDLL.dll
+ 0001:00005710       fprintf                    00016710 f   corelib1:COREDLL.dll
+ 0001:00005720       _getstdfilex               00016720 f   corelib1:COREDLL.dll
+ 0001:00005730       memcpy                     00016730 f   corelib1:COREDLL.dll
+ 0001:00005740       vsprintf                   00016740 f   corelib1:COREDLL.dll
+ 0001:00005750       calloc                     00016750 f   corelib1:COREDLL.dll
+ 0001:00005760       malloc                     00016760 f   corelib1:COREDLL.dll
+ 0001:00005770       free                       00016770 f   corelib1:COREDLL.dll
+ 0001:00005780       memset                     00016780 f   corelib1:COREDLL.dll
+ 0001:00005790       memcmp                     00016790 f   corelib1:COREDLL.dll
+ 0001:000057a0       _isctype                   000167a0 f   corelib1:COREDLL.dll
+ 0001:000057b0       __C_specific_handler       000167b0 f   corelib1:COREDLL.dll
+ 0001:000057c0       wcscpy                     000167c0 f   corelib1:COREDLL.dll
+ 0001:000057d0       wcslen                     000167d0 f   corelib1:COREDLL.dll
+ 0001:000057e0       wcstombs                   000167e0 f   corelib1:COREDLL.dll
+ 0001:000057f0       _XcptFilter                000167f0 f   corelib1:COREDLL.dll
+ 0001:00005800       __security_gen_cookie2     00016800 f   corelib1:COREDLL.dll
+ 0001:00005810       __report_gsfailure         00016810 f   corelib1:COREDLL.dll
+ 0001:00005820       realloc                    00016820 f   corelib1:COREDLL.dll
+ 0001:00005830       _msize                     00016830 f   corelib1:COREDLL.dll
+ 0001:00005840       CreateThread               00016840 f   coredll:COREDLL.dll
+ 0001:00005850       CloseHandle                00016850 f   coredll:COREDLL.dll
+ 0001:00005860       TerminateThread            00016860 f   coredll:COREDLL.dll
+ 0001:00005870       DeviceIoControl            00016870 f   coredll:COREDLL.dll
+ 0001:00005880       SetLastError               00016880 f   coredll:COREDLL.dll
+ 0001:00005890       CreateFileW                00016890 f   coredll:COREDLL.dll
+ 0001:000058a0       LocalAlloc                 000168a0 f   coredll:COREDLL.dll
+ 0001:000058b0       LocalFree                  000168b0 f   coredll:COREDLL.dll
+ 0001:000058c0       LeaveCriticalSection       000168c0 f   coredll:COREDLL.dll
+ 0001:000058d0       EnterCriticalSection       000168d0 f   coredll:COREDLL.dll
+ 0001:000058e0       DeleteCriticalSection      000168e0 f   coredll:COREDLL.dll
+ 0001:000058f0       InitializeCriticalSection  000168f0 f   coredll:COREDLL.dll
+ 0001:00005900       EventModify                00016900 f   coredll:COREDLL.dll
+ 0001:00005910       FreeLibrary                00016910 f   coredll:COREDLL.dll
+ 0001:00005920       GetProcAddressW            00016920 f   coredll:COREDLL.dll
+ 0001:00005930       LoadLibraryW               00016930 f   coredll:COREDLL.dll
+ 0001:00005940       __GetUserKData             00016940 f   coredll:COREDLL.dll
+ 0001:00005950       CreateEventW               00016950 f   coredll:COREDLL.dll
+ 0001:00005960       GetModuleFileNameW         00016960 f   coredll:COREDLL.dll
+ 0001:00005970       InterlockedExchange        00016970 f   coredll:COREDLL.dll
+ 0001:00005980       TerminateProcess           00016980 f   coredll:COREDLL.dll
+ 0001:00005990       InterlockedCompareExchange 00016990 f   coredll:COREDLL.dll
+ 0001:00005a90       __IMPORT_DESCRIPTOR_COREDLL 00016a90     coredll:COREDLL.dll
+ 0001:00005aa4       __NULL_IMPORT_DESCRIPTOR   00016aa4     coredll:COREDLL.dll
+ 0002:00000000       __imp_GetLastError         00017000     coredll:COREDLL.dll
+ 0002:00000004       __imp_printf               00017004     corelib1:COREDLL.dll
+ 0002:00000008       __imp_fprintf              00017008     corelib1:COREDLL.dll
+ 0002:0000000c       __imp__getstdfilex         0001700c     corelib1:COREDLL.dll
+ 0002:00000010       __imp_memcpy               00017010     corelib1:COREDLL.dll
+ 0002:00000014       __imp_vsprintf             00017014     corelib1:COREDLL.dll
+ 0002:00000018       __imp_calloc               00017018     corelib1:COREDLL.dll
+ 0002:0000001c       __imp_malloc               0001701c     corelib1:COREDLL.dll
+ 0002:00000020       __imp_free                 00017020     corelib1:COREDLL.dll
+ 0002:00000024       __imp_memset               00017024     corelib1:COREDLL.dll
+ 0002:00000028       __imp_memcmp               00017028     corelib1:COREDLL.dll
+ 0002:0000002c       __imp__isctype             0001702c     corelib1:COREDLL.dll
+ 0002:00000030       __imp___C_specific_handler 00017030     corelib1:COREDLL.dll
+ 0002:00000034       __imp_wcscpy               00017034     corelib1:COREDLL.dll
+ 0002:00000038       __imp_wcslen               00017038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp_wcstombs             0001703c     corelib1:COREDLL.dll
+ 0002:00000040       __imp__XcptFilter          00017040     corelib1:COREDLL.dll
+ 0002:00000044       __imp___security_gen_cookie2 00017044     corelib1:COREDLL.dll
+ 0002:00000048       __imp___report_gsfailure   00017048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp_realloc              0001704c     corelib1:COREDLL.dll
+ 0002:00000050       __imp__msize               00017050     corelib1:COREDLL.dll
+ 0002:00000054       __imp_CreateThread         00017054     coredll:COREDLL.dll
+ 0002:00000058       __imp_CloseHandle          00017058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_TerminateThread      0001705c     coredll:COREDLL.dll
+ 0002:00000060       __imp_DeviceIoControl      00017060     coredll:COREDLL.dll
+ 0002:00000064       __imp_SetLastError         00017064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CreateFileW          00017068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_LocalAlloc           0001706c     coredll:COREDLL.dll
+ 0002:00000070       __imp_LocalFree            00017070     coredll:COREDLL.dll
+ 0002:00000074       __imp_LeaveCriticalSection 00017074     coredll:COREDLL.dll
+ 0002:00000078       __imp_EnterCriticalSection 00017078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_DeleteCriticalSection 0001707c     coredll:COREDLL.dll
+ 0002:00000080       __imp_InitializeCriticalSection 00017080     coredll:COREDLL.dll
+ 0002:00000084       __imp_EventModify          00017084     coredll:COREDLL.dll
+ 0002:00000088       __imp_FreeLibrary          00017088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_GetProcAddressW      0001708c     coredll:COREDLL.dll
+ 0002:00000090       __imp_LoadLibraryW         00017090     coredll:COREDLL.dll
+ 0002:00000094       __imp___GetUserKData       00017094     coredll:COREDLL.dll
+ 0002:00000098       __imp_CreateEventW         00017098     coredll:COREDLL.dll
+ 0002:0000009c       __imp_GetModuleFileNameW   0001709c     coredll:COREDLL.dll
+ 0002:000000a0       __imp_InterlockedExchange  000170a0     coredll:COREDLL.dll
+ 0002:000000a4       __imp_TerminateProcess     000170a4     coredll:COREDLL.dll
+ 0002:000000a8       __imp_InterlockedCompareExchange 000170a8     coredll:COREDLL.dll
+ 0002:000000ac       \177COREDLL_NULL_THUNK_DATA 000170ac     coredll:COREDLL.dll
+ 0002:000000b0       logger_welcome_message     000170b0     logger.obj
+ 0002:000000d0       ChanFreq                   000170d0     cu_common:cu_cmd.obj
+ 0002:0000094c       UpCalls                    0001794c     ws2:socket.obj
+ 0002:00000988       HostnameGuid               00017988     ws2:gxy.obj
+ 0002:00000998       AddressGuid                00017998     ws2:gxy.obj
+ 0002:000009a8       InetHostName               000179a8     ws2:gxy.obj
+ 0002:000009b8       IANAGuid                   000179b8     ws2:gxy.obj
+ 0002:000009c8       AtmaGuid                   000179c8     ws2:gxy.obj
+ 0002:000009d8       Ipv6Guid                   000179d8     ws2:gxy.obj
+ 0002:000009e8       AfProtocols                000179e8     ws2:gxy.obj
+ 0002:000009f8       __security_cookie          000179f8     corelib0:seccinit.obj
+ 0002:000009fc       __security_cookie_complement 000179fc     corelib0:seccinit.obj
+ 0002:00001024       __argv                     00018024     corelib0:mainacrt.obj
+ 0002:00001028       __argc                     00018028     corelib0:mainacrt.obj
+ 0002:00001030       _exitflag                  00018030     corelib0:cexit.obj
+ 0002:00001034       IpcEvent                   00018034     <common>
+ 0002:00001038       EventsPort                 00018038     <common>
+ 0002:0000103c       s_pNsLookups               0001803c     <common>
+ 0002:00001040       s_pNsProviders             00018040     <common>
+ 0002:00001060       s_NsLookupsLock            00018060     <common>
+ 0002:00001080       s_NsProvListLock           00018080     <common>
+ 0002:000010a0       s_ProviderListLock         000180a0     <common>
+ 0002:000010c0       v_apWsSocks                000180c0     <common>
+ 0002:000011c0       v_fClosingAll              000181c0     <common>
+ 0002:000011c4       s_pProviderList            000181c4     <common>
+ 0002:000011c8       v_fCleaningUp              000181c8     <common>
+ 0002:000011cc       s_cDllRefs                 000181cc     <common>
+ 0002:000011d0       v_fProcessDetached         000181d0     <common>
+ 0002:000011e0       v_DllCS                    000181e0     <common>
+ 0002:000011f4       v_hDll                     000181f4     <common>
+ 0002:000011f8       __onexitend                000181f8     <common>
+ 0002:000011fc       __onexitbegin              000181fc     <common>
+ 0002:00001200       g_pcsExit                  00018200     <common>
+
+ entry point at        0001:0000520c
+
+ Static symbols
+
+ 0001:0000226c       IpcProcessEventDisassosiated 0001326c f   osapi_um:ipc_event.obj
+ 0001:00002770       EventsThreadFunc           00013770 f   osapi_um:ipc_event.obj
+ 0001:00002c54       CuCmd_Init_Scan_Params     00013c54 f   cu_common:cu_cmd.obj
+ 0001:00004e28       ?crtstart_FreeArguments@@YAXXZ 00015e28 f   corelib0:mainacrt.obj
+ 0001:00004e48       ?crtstart_CountSpaceA@@YAXAAH0PBD@Z 00015e48 f   corelib0:mainacrt.obj
+ 0001:00004f14       ?crtstart_ParseArgsWA@@YAHPBG0AAHAAPAPAD@Z 00015f14 f   corelib0:mainacrt.obj
+ 0001:00005120       ?mainCRTStartupHelper@@YAXPAUHINSTANCE__@@PBG@Z 00016120 f   corelib0:mainacrt.obj
+ 0001:00005394       doexit                     00016394 f   corelib0:cexit.obj

@@ -1,0 +1,147 @@
+ simple
+
+ Timestamp is 51ede8d2 (Tue Jul 23 10:22:10 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000540H .rdata                  CODE
+ 0001:00000560 00000023H .rdata$debug            CODE
+ 0001:00000584 0000182cH .text                   CODE
+ 0001:00001db0 00000014H .xdata                  CODE
+ 0001:00001dc4 00000014H .idata$2                CODE
+ 0001:00001dd8 00000014H .idata$3                CODE
+ 0001:00001dec 00000064H .idata$4                CODE
+ 0001:00001e50 0000000cH .idata$6                CODE
+ 0001:00001e5c 00000000H .edata                  CODE
+ 0002:00000000 00000064H .idata$5                DATA
+ 0002:00000064 00000008H .data                   DATA
+ 0002:00000080 00205fccH .bss                    DATA
+ 0003:00000000 00000058H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     00011000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     00011004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     00011008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     0001100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     00011010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     00011014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     00011018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     0001101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1DM@DNKLGIOF@?$AAR?$AAa?$AAt?$AAe?$AAs?$AA?5?$AAi?$AAn?$AA?5?$AAm?$AAi?$AAl?$AAl?$AAi?$AAo?$AAn?$AAs?$AA?5?$AAp?$AAe?$AAr?$AA?5?$AAs?$AAe?$AAc?$AAo?$AAn?$AAd?$AA?6?$AA?$AA@ 0001103c     Simple.obj
+ 0001:00000078       ??_C@_1DI@CCHBFALN@?$AAM?$AAu?$AAl?$AAt?$AAi?$AAp?$AAy?$AA?5?$AAb?$AAy?$AA?5?$AA4?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAM?$AAB?$AA?1?$AAs?$AAe?$AAc?$AAo?$AAn?$AAd?$AA?6?$AA?$AA@ 00011078     Simple.obj
+ 0001:000000b0       ??_C@_1BK@EAFPKOGB@?$AAT?$AAe?$AAs?$AAt?$AA?5?$AAR?$AAe?$AAs?$AAu?$AAl?$AAt?$AAs?$AA?$AA@ 000110b0     Simple.obj
+ 0001:000000cc       ??_C@_1CI@KNFOBMCD@?$AA?2?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AAs?$AA?2?$AAs?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?4?$AAl?$AAo?$AAg?$AA?$AA@ 000110cc     Simple.obj
+ 0001:000000f4       ??_C@_1DM@DJDBBOAO@?$AAN?$AAo?$AAn?$AA?9?$AAc?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?1?$AAb?$AAu?$AAf?$AAf?$AAe?$AAr?$AAe?$AAd?$AA?5?$AAr?$AAe?$AAs?$AAu?$AAl?$AAt?$AAs?$AA?3?$AA?6?$AA?$AA@ 000110f4     Simple.obj
+ 0001:00000130       ??_C@_1DK@ICILDMIG@?$AAR?$AAA?$AAM?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAr?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AA?5?$AA?$CF?$AA0?$AA?4?$AA2?$AAf?$AA?5?$AA?$CI?$AAl?$AAd?$AAr?$AA?$CJ?$AA?6?$AA?$AA@ 00011130     Simple.obj
+ 0001:0000016c       ??_C@_1DK@NOIFPIIC@?$AAR?$AAA?$AAM?$AA?5?$AAw?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAr?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AA?$CF?$AA0?$AA?4?$AA2?$AAf?$AA?5?$AA?$CI?$AAs?$AAt?$AAr?$AA?$CJ?$AA?6?$AA?$AA@ 0001116c     Simple.obj
+ 0001:000001a8       ??_C@_1DK@CHBABPAB@?$AAR?$AAA?$AAM?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAr?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AA?5?$AA?$CF?$AA0?$AA?4?$AA2?$AAf?$AA?5?$AA?$CI?$AAl?$AAd?$AAm?$AA?$CJ?$AA?6?$AA?$AA@ 000111a8     Simple.obj
+ 0001:000001e4       ??_C@_1DK@HLBONLAF@?$AAR?$AAA?$AAM?$AA?5?$AAw?$AAr?$AAi?$AAt?$AAe?$AA?5?$AAr?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AA?$CF?$AA0?$AA?4?$AA2?$AAf?$AA?5?$AA?$CI?$AAs?$AAt?$AAm?$AA?$CJ?$AA?6?$AA?$AA@ 000111e4     Simple.obj
+ 0001:00000220       ??_C@_1CO@EGNLBNLK@?$AAe?$AAx?$AAe?$AAc?$AAu?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAr?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AA?$CF?$AA0?$AA?4?$AA2?$AAf?$AA?6?$AA?$AA@ 00011220     Simple.obj
+ 0001:00000250       ??_C@_1CC@LDJCFHN@?$AAC?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?5?$AAr?$AAe?$AAs?$AAu?$AAl?$AAt?$AAs?$AA?3?$AA?6?$AA?$AA@ 00011250     Simple.obj
+ 0001:00000274       ??_C@_1DI@JHOHLGDB@?$AAR?$AAA?$AAM?$AA?5?$AAD?$AAW?$AAO?$AAR?$AAD?$AA?5?$AAc?$AAo?$AAp?$AAy?$AA?5?$AAr?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AA?$CF?$AA0?$AA?4?$AA2?$AAf?$AA?6?$AA?$AA@ 00011274     Simple.obj
+ 0001:000002b0       ??_C@_1GO@OHODDFAP@?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AAD?$AAW?$AAO?$AAR?$AAD?$AA?5?$AAn?$AAo?$AAn?$AA?9?$AAc?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?0?$AA?5?$AAn?$AAo?$AAn?$AA?9?$AAb?$AAu@ 000112b0     Simple.obj
+ 0001:00000320       ??_C@_1HA@HCKIILFF@?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AAD?$AAW?$AAO?$AAR?$AAD?$AA?5?$AAn?$AAo?$AAn?$AA?9?$AAc?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?0?$AA?5?$AAn?$AAo?$AAn?$AA?9?$AAb?$AAu@ 00011320     Simple.obj
+ 0001:00000390       ??_C@_1HC@KNKDDNJM@?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AA4?$AA?9?$AAD?$AAW?$AAO?$AAR?$AAD?$AA?5?$AAn?$AAo?$AAn?$AA?9?$AAc?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?0?$AA?5?$AAn?$AAo?$AAn?$AA?9@ 00011390     Simple.obj
+ 0001:00000408       ??_C@_1HE@CGBPJAPO@?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AA4?$AA?9?$AAD?$AAW?$AAO?$AAR?$AAD?$AA?5?$AAn?$AAo?$AAn?$AA?9?$AAc?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?0?$AA?5?$AAn?$AAo?$AAn?$AA?9@ 00011408     Simple.obj
+ 0001:0000047c       ??_C@_1CI@LHEMLFMH@?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AAM?$AAI?$AAP?$AAS?$AA?5?$AAt?$AAe?$AAs?$AAt?$AA?$AN?$AA?6?$AA?$AA@ 0001147c     Simple.obj
+ 0001:000004a4       ??_C@_1DG@IPCBCICP@?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AAC?$AAa?$AAn?$AA?8?$AAt?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAS?$AAI?$AAD?$AA1?$AA?3?$AA?$AN?$AA?6?$AA?$AA@ 000114a4     Simple.obj
+ 0001:000004e0       ??_C@_1HE@JFPHOMKF@?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?3?$AA?5?$AAS?$AAI?$AAM?$AAP?$AAL?$AAE?$AAD?$AAL?$AAL?$AA_?$AAI?$AAO?$AAC?$AAT?$AAL?$AA_?$AAA?$AAL?$AAL?$AAO?$AAC?$AAA?$AAT?$AAE@ 000114e0     Simple.obj
+ 0001:00000554       ??_C@_1M@FAAHJNNM@?$AAS?$AAI?$AAD?$AA1?$AA?3?$AA?$AA@ 00011554     Simple.obj
+ 0001:00000584       GetTimeDeltaUs             00011584 f   Simple.obj
+ 0001:000005e0       WinMain                    000115e0 f   Simple.obj
+ 0001:00000be0       InstructionTestLoop        00011be0 f   TestLoop.obj
+ 0001:00000d78       GetCacheControl            00011d78 f   TestLoop.obj
+ 0001:00000d80       PutCacheControl            00011d80 f   TestLoop.obj
+ 0001:00000d88       GpioTestLoop               00011d88 f   TestLoop.obj
+ 0001:000010b8       MemoryWriteTestLoop        000120b8 f   TestLoop.obj
+ 0001:00001258       MemoryReadTestLoop         00012258 f   TestLoop.obj
+ 0001:000013f8       MultipleMemoryWriteTestLoop 000123f8 f   TestLoop.obj
+ 0001:0000159c       MultipleMemoryReadTestLoop 0001259c f   TestLoop.obj
+ 0001:00001748       MemoryBlockReadTestLoop    00012748 f   TestLoop.obj
+ 0001:00001964       QueryPerformanceFrequency  00012964 f   coredll:COREDLL.dll
+ 0001:00001974       QueryPerformanceCounter    00012974 f   coredll:COREDLL.dll
+ 0001:00001984       CloseHandle                00012984 f   coredll:COREDLL.dll
+ 0001:00001994       WriteFile                  00012994 f   coredll:COREDLL.dll
+ 0001:000019a4       MessageBoxW                000129a4 f   coredll:COREDLL.dll
+ 0001:000019b4       GetForegroundWindow        000129b4 f   coredll:COREDLL.dll
+ 0001:000019c4       NKDbgPrintfW               000129c4 f   coredll:COREDLL.dll
+ 0001:000019d4       DeviceIoControl            000129d4 f   coredll:COREDLL.dll
+ 0001:000019e4       CreateFileW                000129e4 f   coredll:COREDLL.dll
+ 0001:000019f4       Sleep                      000129f4 f   coredll:COREDLL.dll
+ 0001:00001a84       WinMainCRTStartup          00012a84 f   corelib0:pegwmain.obj
+ 0001:00001bb4       exit                       00012bb4 f   corelib0:cexit.obj
+ 0001:00001bcc       _exit                      00012bcc f   corelib0:cexit.obj
+ 0001:00001c0c       _initterm                  00012c0c f   corelib0:crt0dat.obj
+ 0001:00001c40       _cinit                     00012c40 f   corelib0:crt0dat.obj
+ 0001:00001c74       __security_init_cookie     00012c74 f   corelib0:seccinit.obj
+ 0001:00001cd0       __rt_sdiv64by64            00012cd0 f   corelib1:COREDLL.dll
+ 0001:00001ce0       __muld                     00012ce0 f   corelib1:COREDLL.dll
+ 0001:00001cf0       __divd                     00012cf0 f   corelib1:COREDLL.dll
+ 0001:00001d00       swprintf                   00012d00 f   corelib1:COREDLL.dll
+ 0001:00001d10       wcslen                     00012d10 f   corelib1:COREDLL.dll
+ 0001:00001d20       wcscat                     00012d20 f   corelib1:COREDLL.dll
+ 0001:00001d30       __utod                     00012d30 f   corelib1:COREDLL.dll
+ 0001:00001d40       _XcptFilter                00012d40 f   corelib1:COREDLL.dll
+ 0001:00001d50       __C_specific_handler       00012d50 f   corelib1:COREDLL.dll
+ 0001:00001d60       free                       00012d60 f   corelib1:COREDLL.dll
+ 0001:00001d70       __security_gen_cookie2     00012d70 f   corelib1:COREDLL.dll
+ 0001:00001d80       DeleteCriticalSection      00012d80 f   coredll:COREDLL.dll
+ 0001:00001d90       InterlockedExchange        00012d90 f   coredll:COREDLL.dll
+ 0001:00001da0       TerminateProcess           00012da0 f   coredll:COREDLL.dll
+ 0001:00001dc4       __IMPORT_DESCRIPTOR_COREDLL 00012dc4     coredll:COREDLL.dll
+ 0001:00001dd8       __NULL_IMPORT_DESCRIPTOR   00012dd8     coredll:COREDLL.dll
+ 0002:00000000       __imp_QueryPerformanceFrequency 00013000     coredll:COREDLL.dll
+ 0002:00000004       __imp_QueryPerformanceCounter 00013004     coredll:COREDLL.dll
+ 0002:00000008       __imp_CloseHandle          00013008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_WriteFile            0001300c     coredll:COREDLL.dll
+ 0002:00000010       __imp_MessageBoxW          00013010     coredll:COREDLL.dll
+ 0002:00000014       __imp_GetForegroundWindow  00013014     coredll:COREDLL.dll
+ 0002:00000018       __imp_NKDbgPrintfW         00013018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_DeviceIoControl      0001301c     coredll:COREDLL.dll
+ 0002:00000020       __imp_CreateFileW          00013020     coredll:COREDLL.dll
+ 0002:00000024       __imp_Sleep                00013024     coredll:COREDLL.dll
+ 0002:00000028       __imp___rt_sdiv64by64      00013028     corelib1:COREDLL.dll
+ 0002:0000002c       __imp___muld               0001302c     corelib1:COREDLL.dll
+ 0002:00000030       __imp___divd               00013030     corelib1:COREDLL.dll
+ 0002:00000034       __imp_swprintf             00013034     corelib1:COREDLL.dll
+ 0002:00000038       __imp_wcslen               00013038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp_wcscat               0001303c     corelib1:COREDLL.dll
+ 0002:00000040       __imp___utod               00013040     corelib1:COREDLL.dll
+ 0002:00000044       __imp__XcptFilter          00013044     corelib1:COREDLL.dll
+ 0002:00000048       __imp___C_specific_handler 00013048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp_free                 0001304c     corelib1:COREDLL.dll
+ 0002:00000050       __imp___security_gen_cookie2 00013050     corelib1:COREDLL.dll
+ 0002:00000054       __imp_DeleteCriticalSection 00013054     coredll:COREDLL.dll
+ 0002:00000058       __imp_InterlockedExchange  00013058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_TerminateProcess     0001305c     coredll:COREDLL.dll
+ 0002:00000060       \177COREDLL_NULL_THUNK_DATA 00013060     coredll:COREDLL.dll
+ 0002:00000064       __security_cookie          00013064     corelib0:seccinit.obj
+ 0002:00000068       __security_cookie_complement 00013068     corelib0:seccinit.obj
+ 0002:00000080       _exitflag                  00013080     corelib0:cexit.obj
+ 0002:000000a0       pbuf2                      000130a0     <common>
+ 0002:001000a0       PerformanceFrequency       001130a0     <common>
+ 0002:001000c0       pbuf1                      001130c0     <common>
+ 0002:002000c0       ResultString               002130c0     <common>
+ 0002:002020c0       FinalResultString          002150c0     <common>
+ 0002:00206040       __onexitend                00219040     <common>
+ 0002:00206044       __onexitbegin              00219044     <common>
+ 0002:00206048       g_pcsExit                  00219048     <common>
+
+ entry point at        0001:00001a84
+
+ Static symbols
+
+ 0001:00001a0c       WinMainCRTStartupHelper    00012a0c f   corelib0:pegwmain.obj
+ 0001:00001ab8       doexit                     00012ab8 f   corelib0:cexit.obj

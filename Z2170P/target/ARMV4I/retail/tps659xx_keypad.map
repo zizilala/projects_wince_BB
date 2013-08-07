@@ -1,0 +1,196 @@
+ tps659xx_keypad
+
+ Timestamp is 51ede8c5 (Tue Jul 23 10:21:57 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 000009e4H .rdata                  CODE
+ 0001:00000a04 0000002cH .rdata$debug            CODE
+ 0001:00000a30 00001b3cH .text                   CODE
+ 0001:00002570 00000060H .xdata                  CODE
+ 0001:000025d0 00000028H .idata$2                CODE
+ 0001:000025f8 00000014H .idata$3                CODE
+ 0001:0000260c 00000090H .idata$4                CODE
+ 0001:0000269c 00000016H .idata$6                CODE
+ 0001:000026c0 000000a3H .edata                  CODE
+ 0002:00000000 00000090H .idata$5                DATA
+ 0002:00000090 00000450H .data                   DATA
+ 0002:000004e0 00000014H .bss                    DATA
+ 0003:00000000 00000120H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BK@MBPNPOKM@?$AAK?$AAe?$AAy?$AAp?$AAa?$AAd?$AAL?$AAe?$AAd?$AAN?$AAu?$AAm?$AA?$AA@ 1000103c     keypad.obj
+ 0001:00000058       ??_C@_1CG@CGBLFBGH@?$AAK?$AAe?$AAy?$AAp?$AAa?$AAd?$AAL?$AAi?$AAg?$AAh?$AAt?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$AA@ 10001058     keypad.obj
+ 0001:00000080       ??_C@_1BE@MAKEJFGC@?$AAP?$AAo?$AAw?$AAe?$AAr?$AAM?$AAa?$AAs?$AAk?$AA?$AA@ 10001080     keypad.obj
+ 0001:00000094       ??_C@_1BK@NNCBJPIE@?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AAO?$AAf?$AAf?$AAK?$AAe?$AAy?$AA?$AA@ 10001094     keypad.obj
+ 0001:000000b0       ??_C@_1BG@LIOJCANL@?$AAN?$AAe?$AAx?$AAt?$AAR?$AAe?$AAp?$AAe?$AAa?$AAt?$AA?$AA@ 100010b0     keypad.obj
+ 0001:000000c8       ??_C@_1BI@DEPDCBKF@?$AAF?$AAi?$AAr?$AAs?$AAt?$AAR?$AAe?$AAp?$AAe?$AAa?$AAt?$AA?$AA@ 100010c8     keypad.obj
+ 0001:000000e0       ??_C@_1BK@LFBEMINK@?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAP?$AAe?$AAr?$AAi?$AAo?$AAd?$AA?$AA@ 100010e0     keypad.obj
+ 0001:000000fc       ??_C@_1CA@BCDOPOGB@?$AAD?$AAe?$AAb?$AAo?$AAu?$AAn?$AAc?$AAe?$AAC?$AAo?$AAu?$AAn?$AAt?$AAe?$AAr?$AA?$AA@ 100010fc     keypad.obj
+ 0001:0000011c       ??_C@_1BK@PCIKFLJA@?$AAC?$AAl?$AAo?$AAc?$AAk?$AAD?$AAi?$AAv?$AAi?$AAd?$AAe?$AAr?$AA?$AA@ 1000111c     keypad.obj
+ 0001:00000138       ??_C@_1BG@GJAODHJH@?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AAW?$AAa?$AAk?$AAe?$AA?$AA@ 10001138     keypad.obj
+ 0001:00000150       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001150     keypad.obj
+ 0001:000001f8       DEVICE_IFC_TWL_GUID        100011f8     keypad.obj
+ 0001:00000320       ??_C@_1GK@HKLOGBGD@?$AAW?$AAA?$AAR?$AAN?$AA?3?$AA?5?$AAK?$AAP?$AAD?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AAP?$AAo?$AAw?$AAe?$AAr?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi@ 10001320     keypad.obj
+ 0001:00000390       ??_C@_1GI@MFFMFLPL@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAK?$AAP?$AAD?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?3?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr?$AAe?$AAc?$AAt?$AA?5@ 10001390     keypad.obj
+ 0001:000003f8       ??_C@_1CK@MHJHMPML@?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAi?$AAo?$AAc?$AAt?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 100013f8     keypad.obj
+ 0001:00000428       ??_C@_1EA@BHHDBCBL@?$AAK?$AAP?$AAD?$AA?3?$AA?5?$AAR?$AAe?$AAc?$AAe?$AAi?$AAv?$AAe?$AAd?$AA?5?$AAI?$AAO?$AAC?$AAT?$AAL?$AA_?$AAP?$AAO?$AAW?$AAE?$AAR?$AA_?$AAG?$AAE?$AAT?$AA?$AN?$AA?6?$AA?$AA@ 10001428     keypad.obj
+ 0001:00000468       ??_C@_1EE@NKFDJLND@?$AAK?$AAP?$AAD?$AA?3?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAs?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAr?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AA?5?$AAD?$AA?$CF?$AAu?$AA?5?$AA?$AN@ 10001468     keypad.obj
+ 0001:000004ac       ??_C@_1CK@OBPLBNBH@?$AAE?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAi?$AAo?$AAc?$AAt?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 100014ac     keypad.obj
+ 0001:000004d8       ??_C@_1FM@PJGOFBDI@?$AAP?$AAh?$AAy?$AAs?$AAi?$AAc?$AAa?$AAl?$AAS?$AAt?$AAa?$AAt?$AAe?$AAT?$AAo?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?3?$AA?5?$AA?$FL?$AA?$CF?$AAd@ 100014d8     keypad.obj
+ 0001:00000538       ??_C@_1GI@NNCNBHH@?$AA?5?$AAK?$AAP?$AAD?$AA_?$AAI?$AAn?$AAt?$AAr?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?3?$AA?5?$AAM?$AAa?$AAp?$AAp?$AAe?$AAd?$AA?5?$AAp?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAa?$AAn@ 10001538     keypad.obj
+ 0001:000005a0       ??_C@_1EK@OBDNJICF@?$AA?5?$AAK?$AAP?$AAD?$AA_?$AAI?$AAn?$AAt?$AAr?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?3?$AA?5?$AAM?$AAa?$AAp?$AAp?$AAe?$AAd?$AA?5?$AAv?$AAk?$AAe?$AAy?$AA?3?$AA?5?$AA0?$AAx@ 100015a0     keypad.obj
+ 0001:000005ec       ??_C@_1DC@LILGGEOG@?$AA?5?$AAS?$AAe?$AAn?$AAd?$AAK?$AAe?$AAy?$AAP?$AAa?$AAd?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?3?$AA?5?$AA2?$AA2?$AA2?$AA2?$AA?$AN?$AA?6?$AA?$AA@ 100015ec     keypad.obj
+ 0001:00000620       ??_C@_1DM@PKCAIIJM@?$AA?5?$AAk?$AAe?$AAy?$AAb?$AAd?$AA_?$AAe?$AAv?$AAe?$AAn?$AAt?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?5?$AA?$CF?$AAd?$AA?5?$AA?$CF?$AAd?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001620     keypad.obj
+ 0001:0000065c       ??_C@_1DE@CLCBCHKJ@?$AA?5?$AAS?$AAe?$AAn?$AAd?$AAK?$AAe?$AAy?$AAP?$AAa?$AAd?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?3?$AA?5?$AA1?$AA1?$AA1?$AA1?$AA1?$AA?$AN?$AA?6?$AA?$AA@ 1000165c     keypad.obj
+ 0001:00000690       ??_C@_1DO@HFBDPGNP@?$AA?5?$AAP?$AAr?$AAe?$AAs?$AAs?$AAe?$AAd?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AAK?$AAe?$AAy?$AAs?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA2?$AAX?$AA?$AN?$AA?6?$AA?$AA@ 10001690     keypad.obj
+ 0001:000006d0       ??_C@_1EK@OOAHNOJF@?$AA?5?$AAP?$AAr?$AAe?$AAs?$AAs?$AAe?$AAd?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AAK?$AAe?$AAy?$AAs?$AA?3?$AA?5?$AAK?$AAe?$AAy?$AA?5?$AAU?$AAp?$AA?3?$AA?5?$AA0?$AAx@ 100016d0     keypad.obj
+ 0001:00000720       ??_C@_1EO@OKMNCGKP@?$AA?5?$AAP?$AAr?$AAe?$AAs?$AAs?$AAe?$AAd?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AAK?$AAe?$AAy?$AAs?$AA?3?$AA?5?$AAK?$AAe?$AAy?$AA?5?$AAD?$AAo?$AAw?$AAn?$AA?3?$AA?5@ 10001720     keypad.obj
+ 0001:00000770       ??_C@_1EI@MBMNALEM@?$AA?5?$AAK?$AAP?$AAD?$AA_?$AAI?$AAn?$AAt?$AAr?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?3?$AA?5?$AAK?$AAe?$AAy?$AA?5?$AAR?$AAe?$AAp?$AAe?$AAa?$AAt?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF@ 10001770     keypad.obj
+ 0001:000007b8       ??_C@_1GK@OIDADBP@?$AA?5?$AAK?$AAP?$AAD?$AA_?$AAI?$AAn?$AAt?$AAr?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?3?$AA?5?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAr?$AAe?$AAp?$AAe?$AAa?$AAt?$AA?3?$AA?5?$AA0@ 100017b8     keypad.obj
+ 0001:000008b8       g_keypadVK                 100018b8     vk_map.obj
+ 0001:000008f8       g_powerVK                  100018f8     vk_map.obj
+ 0001:000008fc       g_keypadRemap              100018fc     vk_map.obj
+ 0001:00000904       g_powerRemap               10001904     vk_map.obj
+ 0001:00000950       g_keypadRepeat             10001950     vk_map.obj
+ 0001:00000958       g_powerRepeat              10001958     vk_map.obj
+ 0001:00000960       g_keypadExtraSeq           10001960     vk_map.obj
+ 0001:000009f8       ??_C@_1M@MOBNNOLN@?$AAT?$AAW?$AAL?$AA1?$AA?3?$AA?$AA@ 100019f8     triton_device:twl_access.obj
+ 0001:00000a30       SetPowerState              10001a30 f   keypad.obj
+ 0001:00000a78       KPD_Deinit                 10001a78 f   keypad.obj
+ 0001:00000b6c       KPD_Open                   10001b6c f   keypad.obj
+ 0001:00000b70       KPD_Close                  10001b70 f   keypad.obj
+ 0001:00000b80       KPD_IOControl              10001b80 f   keypad.obj
+ 0001:00001130       KPD_LightThread            10002130 f   keypad.obj
+ 0001:00001214       DllMain                    10002214 f   keypad.obj
+ 0001:0000124c       SendKeyPadEvent            1000224c f   keypad.obj
+ 0001:0000147c       PressedReleasedKeys        1000247c f   keypad.obj
+ 0001:0000175c       KPD_IntrThread             1000275c f   keypad.obj
+ 0001:00001a04       KPD_Init                   10002a04 f   keypad.obj
+ 0001:00001bd8       TWLOpen                    10002bd8 f   triton_device:twl_access.obj
+ 0001:00001c98       TWLClose                   10002c98 f   triton_device:twl_access.obj
+ 0001:00001cb8       TWLReadRegs                10002cb8 f   triton_device:twl_access.obj
+ 0001:00001d44       TWLWriteRegs               10002d44 f   triton_device:twl_access.obj
+ 0001:00001dcc       TWLInterruptInitialize     10002dcc f   triton_device:twl_access.obj
+ 0001:00001e44       TWLInterruptMask           10002e44 f   triton_device:twl_access.obj
+ 0001:00001eb0       TWLInterruptDisable        10002eb0 f   triton_device:twl_access.obj
+ 0001:00001f18       TWLWakeEnable              10002f18 f   triton_device:twl_access.obj
+ 0001:00001f84       GetDeviceRegistryParams    10002f84 f   ceddk:CEDDK.dll
+ 0001:00001f94       EventModify                10002f94 f   coredll:COREDLL.dll
+ 0001:00001fa4       NKDbgPrintfW               10002fa4 f   coredll:COREDLL.dll
+ 0001:00001fb4       LocalFree                  10002fb4 f   coredll:COREDLL.dll
+ 0001:00001fc4       CloseHandle                10002fc4 f   coredll:COREDLL.dll
+ 0001:00001fd4       WaitForSingleObject        10002fd4 f   coredll:COREDLL.dll
+ 0001:00001fe4       ChangeDisplaySettingsEx    10002fe4 f   coredll:COREDLL.dll
+ 0001:00001ff4       NLedSetDevice              10002ff4 f   coredll:COREDLL.dll
+ 0001:00002004       CeSetThreadPriority        10003004 f   coredll:COREDLL.dll
+ 0001:00002014       DisableThreadLibraryCalls  10003014 f   coredll:COREDLL.dll
+ 0001:00002024       RegisterDbgZones           10003024 f   coredll:COREDLL.dll
+ 0001:00002034       MapVirtualKeyW             10003034 f   coredll:COREDLL.dll
+ 0001:00002044       keybd_event                10003044 f   coredll:COREDLL.dll
+ 0001:00002054       PowerPolicyNotify          10003054 f   coredll:COREDLL.dll
+ 0001:00002064       GetTickCount               10003064 f   coredll:COREDLL.dll
+ 0001:00002074       LocalAlloc                 10003074 f   coredll:COREDLL.dll
+ 0001:00002084       CreateThread               10003084 f   coredll:COREDLL.dll
+ 0001:00002094       CreateEventW               10003094 f   coredll:COREDLL.dll
+ 0001:000020a4       __GetUserKData             100030a4 f   coredll:COREDLL.dll
+ 0001:000020b4       DeviceIoControl            100030b4 f   coredll:COREDLL.dll
+ 0001:000020c4       CreateFileW                100030c4 f   coredll:COREDLL.dll
+ 0001:000020d4       ReadFile                   100030d4 f   coredll:COREDLL.dll
+ 0001:000020e4       SetFilePointer             100030e4 f   coredll:COREDLL.dll
+ 0001:000020f4       WriteFile                  100030f4 f   coredll:COREDLL.dll
+ 0001:00002208       _DllMainCRTStartup         10003208 f   corelib0:pegdmain.obj
+ 0001:00002238       __GSHandlerCheckCommon     10003238 f   corelib0:gshandler.obj
+ 0001:00002274       __GSHandlerCheck           10003274 f   corelib0:gshandler.obj
+ 0001:00002298       __security_init_cookie     10003298 f   corelib0:seccinit.obj
+ 0001:000022f4       __security_check_cookie    100032f4 f   corelib0:armsecgs.obj
+ 0001:00002308       __gsfailure                10003308 f   corelib0:armsecgs.obj
+ 0001:00002448       _cexit                     10003448 f   corelib0:cexit.obj
+ 0001:00002464       _initterm                  10003464 f   corelib0:crt0dat.obj
+ 0001:00002498       _cinit                     10003498 f   corelib0:crt0dat.obj
+ 0001:000024cc       __C_specific_handler       100034cc f   corelib1:COREDLL.dll
+ 0001:000024dc       memset                     100034dc f   corelib1:COREDLL.dll
+ 0001:000024ec       memcpy                     100034ec f   corelib1:COREDLL.dll
+ 0001:000024fc       _XcptFilter                100034fc f   corelib1:COREDLL.dll
+ 0001:0000250c       __security_gen_cookie2     1000350c f   corelib1:COREDLL.dll
+ 0001:0000251c       __report_gsfailure         1000351c f   corelib1:COREDLL.dll
+ 0001:0000252c       free                       1000352c f   corelib1:COREDLL.dll
+ 0001:0000253c       DeleteCriticalSection      1000353c f   coredll:COREDLL.dll
+ 0001:0000254c       InterlockedExchange        1000354c f   coredll:COREDLL.dll
+ 0001:0000255c       TerminateProcess           1000355c f   coredll:COREDLL.dll
+ 0001:000025d0       __IMPORT_DESCRIPTOR_CEDDK  100035d0     ceddk:CEDDK.dll
+ 0001:000025e4       __IMPORT_DESCRIPTOR_COREDLL 100035e4     coredll:COREDLL.dll
+ 0001:000025f8       __NULL_IMPORT_DESCRIPTOR   100035f8     ceddk:CEDDK.dll
+ 0002:00000000       __imp_GetDeviceRegistryParams 10004000     ceddk:CEDDK.dll
+ 0002:00000004       \177CEDDK_NULL_THUNK_DATA  10004004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_EventModify          10004008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_NKDbgPrintfW         1000400c     coredll:COREDLL.dll
+ 0002:00000010       __imp_LocalFree            10004010     coredll:COREDLL.dll
+ 0002:00000014       __imp_CloseHandle          10004014     coredll:COREDLL.dll
+ 0002:00000018       __imp_WaitForSingleObject  10004018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_ChangeDisplaySettingsEx 1000401c     coredll:COREDLL.dll
+ 0002:00000020       __imp_NLedSetDevice        10004020     coredll:COREDLL.dll
+ 0002:00000024       __imp_CeSetThreadPriority  10004024     coredll:COREDLL.dll
+ 0002:00000028       __imp_DisableThreadLibraryCalls 10004028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_RegisterDbgZones     1000402c     coredll:COREDLL.dll
+ 0002:00000030       __imp_MapVirtualKeyW       10004030     coredll:COREDLL.dll
+ 0002:00000034       __imp_keybd_event          10004034     coredll:COREDLL.dll
+ 0002:00000038       __imp_PowerPolicyNotify    10004038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_GetTickCount         1000403c     coredll:COREDLL.dll
+ 0002:00000040       __imp_LocalAlloc           10004040     coredll:COREDLL.dll
+ 0002:00000044       __imp_CreateThread         10004044     coredll:COREDLL.dll
+ 0002:00000048       __imp_CreateEventW         10004048     coredll:COREDLL.dll
+ 0002:0000004c       __imp___GetUserKData       1000404c     coredll:COREDLL.dll
+ 0002:00000050       __imp_DeviceIoControl      10004050     coredll:COREDLL.dll
+ 0002:00000054       __imp_CreateFileW          10004054     coredll:COREDLL.dll
+ 0002:00000058       __imp_ReadFile             10004058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_SetFilePointer       1000405c     coredll:COREDLL.dll
+ 0002:00000060       __imp_WriteFile            10004060     coredll:COREDLL.dll
+ 0002:00000064       __imp___C_specific_handler 10004064     corelib1:COREDLL.dll
+ 0002:00000068       __imp_memset               10004068     corelib1:COREDLL.dll
+ 0002:0000006c       __imp_memcpy               1000406c     corelib1:COREDLL.dll
+ 0002:00000070       __imp__XcptFilter          10004070     corelib1:COREDLL.dll
+ 0002:00000074       __imp___security_gen_cookie2 10004074     corelib1:COREDLL.dll
+ 0002:00000078       __imp___report_gsfailure   10004078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp_free                 1000407c     corelib1:COREDLL.dll
+ 0002:00000080       __imp_DeleteCriticalSection 10004080     coredll:COREDLL.dll
+ 0002:00000084       __imp_InterlockedExchange  10004084     coredll:COREDLL.dll
+ 0002:00000088       __imp_TerminateProcess     10004088     coredll:COREDLL.dll
+ 0002:0000008c       \177COREDLL_NULL_THUNK_DATA 1000408c     coredll:COREDLL.dll
+ 0002:00000090       dpCurSettings              10004090     keypad.obj
+ 0002:000004d8       __security_cookie          100044d8     corelib0:seccinit.obj
+ 0002:000004dc       __security_cookie_complement 100044dc     corelib0:seccinit.obj
+ 0002:000004e0       _exitflag                  100044e0     corelib0:cexit.obj
+ 0002:000004e4       __onexitend                100044e4     <common>
+ 0002:000004e8       __onexitbegin              100044e8     <common>
+ 0002:000004ec       g_pcsExit                  100044ec     <common>
+ 0002:000004f0       _pRawDllMain               100044f0     <common>
+
+ entry point at        0001:00002208
+
+ Static symbols
+
+ 0001:00000dfc       VirtualKeyRemap            10001dfc f   keypad.obj
+ 0001:000015b8       AutoRepeat                 100025b8 f   keypad.obj
+ 0001:0000210c       _DllMainCRTStartupHelper   1000310c f   corelib0:pegdmain.obj
+ 0001:0000234c       doexit                     1000334c f   corelib0:cexit.obj

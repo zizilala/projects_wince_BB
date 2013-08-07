@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\usbfnpdd.obj\
+    obj\ARMV4I\retail\usbperipheral.obj\
+    obj\ARMV4I\retail\cppidma.obj
+

@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\main.obj\
+    obj\ARMV4I\retail\globals.obj\
+    obj\ARMV4I\retail\fstest.obj
+

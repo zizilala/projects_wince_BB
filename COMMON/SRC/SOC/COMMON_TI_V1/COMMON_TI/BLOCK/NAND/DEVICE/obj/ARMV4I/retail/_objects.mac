@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\fmd.obj\
+    obj\ARMV4I\retail\gpmc_ecc.obj\
+    obj\ARMV4I\retail\omap_bch_decoder.obj
+

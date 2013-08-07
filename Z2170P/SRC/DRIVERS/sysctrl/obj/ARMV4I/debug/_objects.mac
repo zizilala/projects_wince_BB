@@ -1,0 +1,12 @@
+OBJECTS=\
+    obj\ARMV4I\debug\sysctrl.res\
+    obj\ARMV4I\debug\sysctrl.obj\
+    obj\ARMV4I\debug\startup.obj\
+    obj\ARMV4I\debug\TrayIcon.obj\
+    obj\ARMV4I\debug\power.obj\
+    obj\ARMV4I\debug\LED.obj\
+    obj\ARMV4I\debug\fmdutil.obj\
+    obj\ARMV4I\debug\flash.obj\
+    obj\ARMV4I\debug\ComProtocol.obj\
+    obj\ARMV4I\debug\ChkDevice.obj
+

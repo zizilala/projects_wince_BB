@@ -1,0 +1,62 @@
+ sysctrl
+
+ Timestamp is 51ede8cf (Tue Jul 23 10:22:07 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000006cH .rdata                  CODE
+ 0001:0000006c 00000024H .rdata$debug            CODE
+ 0001:00000090 000001b4H .text                   CODE
+ 0001:00000244 00000014H .idata$2                CODE
+ 0001:00000258 00000014H .idata$3                CODE
+ 0001:0000026c 0000001cH .idata$4                CODE
+ 0001:00000288 0000000cH .idata$6                CODE
+ 0001:000002a0 000000ffH .edata                  CODE
+ 0002:00000000 0000001cH .idata$5                DATA
+ 0002:0000001c 00000004H .bss                    DATA
+ 0003:00000000 00000068H .pdata                  DATA
+ 0004:00000000 00000280H .rsrc$01                DATA
+ 0004:00000280 00004aecH .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:0000001c       ??_C@_19BDAJEHDN@?$AAo?$AAp?$AAe?$AAn?$AA?$AA@ 1000101c     startup.obj
+ 0001:00000028       ??_C@_1CK@MGOEHGKG@?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AA?1?$AAS?$AAh?$AAe?$AAl?$AAl?$AAA?$AAP?$AAI?$AAR?$AAe?$AAa?$AAd?$AAy?$AA?$AA@ 10001028     startup.obj
+ 0001:00000054       ??_C@_1BI@HFDPHINN@?$AAK?$AAe?$AAy?$AAH?$AAo?$AAo?$AAk?$AA?4?$AAe?$AAx?$AAe?$AA?$AA@ 10001054     startup.obj
+ 0001:00000090       DllMain                    10001090 f   sysctrl.obj
+ 0001:000000a8       ?SYS_Init@@YAKK@Z          100010a8 f   sysctrl.obj
+ 0001:000000e8       ?SYS_Deinit@@YAHK@Z        100010e8 f   sysctrl.obj
+ 0001:000000f0       ?SYS_Open@@YAHKKK@Z        100010f0 f   sysctrl.obj
+ 0001:000000f8       ?SYS_Close@@YAHK@Z         100010f8 f   sysctrl.obj
+ 0001:00000100       ?SYS_Read@@YAKKPAIK@Z      10001100 f   sysctrl.obj
+ 0001:00000108       ?SYS_Write@@YAKKPAIK@Z     10001108 f   sysctrl.obj
+ 0001:00000110       ?SYS_Seek@@YAKKJK@Z        10001110 f   sysctrl.obj
+ 0001:00000118       ?SYS_PowerUp@@YAHXZ        10001118 f   sysctrl.obj
+ 0001:00000120       ?SYS_PowerDown@@YAHXZ      10001120 f   sysctrl.obj
+ 0001:00000128       ?SYS_IOControl@@YAHKKPAXK0KPAK@Z 10001128 f   sysctrl.obj
+ 0001:00000130       ?LaunchProgram@@YAXPBG0@Z  10001130 f   startup.obj
+ 0001:00000198       ?StartupThread@@YAKPAX@Z   10001198 f   startup.obj
+ 0001:000001e4       CloseHandle                100011e4 f   coredll:COREDLL.dll
+ 0001:000001f4       CreateThread               100011f4 f   coredll:COREDLL.dll
+ 0001:00000204       ShellExecuteEx             10001204 f   coredll:COREDLL.dll
+ 0001:00000214       WaitForSingleObject        10001214 f   coredll:COREDLL.dll
+ 0001:00000224       CreateEventW               10001224 f   coredll:COREDLL.dll
+ 0001:00000234       memset                     10001234 f   corelib1:COREDLL.dll
+ 0001:00000244       __IMPORT_DESCRIPTOR_COREDLL 10001244     coredll:COREDLL.dll
+ 0001:00000258       __NULL_IMPORT_DESCRIPTOR   10001258     coredll:COREDLL.dll
+ 0002:00000000       __imp_CreateThread         10002000     coredll:COREDLL.dll
+ 0002:00000004       __imp_ShellExecuteEx       10002004     coredll:COREDLL.dll
+ 0002:00000008       __imp_WaitForSingleObject  10002008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_CreateEventW         1000200c     coredll:COREDLL.dll
+ 0002:00000010       __imp_memset               10002010     corelib1:COREDLL.dll
+ 0002:00000014       __imp_CloseHandle          10002014     coredll:COREDLL.dll
+ 0002:00000018       \177COREDLL_NULL_THUNK_DATA 10002018     coredll:COREDLL.dll
+ 0002:0000001c       ?ghInstance@@3PAUHINSTANCE__@@A 1000201c     sysctrl.obj
+
+ entry point at        0001:00000090
+
+ Static symbols
+

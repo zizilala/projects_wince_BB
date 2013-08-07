@@ -1,0 +1,152 @@
+ i2cproxy
+
+ Timestamp is 51ecc712 (Mon Jul 22 13:45:54 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000e34H .rdata                  CODE
+ 0001:00000e54 00000025H .rdata$debug            CODE
+ 0001:00000e7c 00000c00H .text                   CODE
+ 0001:00001a7c 00000014H .xdata                  CODE
+ 0001:00001a90 00000028H .idata$2                CODE
+ 0001:00001ab8 00000014H .idata$3                CODE
+ 0001:00001acc 00000050H .idata$4                CODE
+ 0001:00001b1c 00000016H .idata$6                CODE
+ 0001:00001b40 000000d6H .edata                  CODE
+ 0002:00000000 00000050H .idata$5                DATA
+ 0002:00000050 0000044cH .data                   DATA
+ 0002:0000049c 0000004cH .bss                    DATA
+ 0003:00000000 000000c8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1M@EENNDIOJ@?$AAI?$AAn?$AAd?$AAe?$AAx?$AA?$AA@ 1000103c     i2cproxy.obj
+ 0001:00000060       ??_C@_1CO@PFNAJHMM@?$AA?9?$AAI?$AA2?$AAC?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AA?$CI?$AAr?$AAc?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001060     i2cproxy.obj
+ 0001:00000090       ??_C@_1HA@PAMFLOPH@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAI?$AA2?$AAC?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr@ 10001090     i2cproxy.obj
+ 0001:00000100       ??_C@_1CM@CBAGIHJE@?$AA?$CL?$AAI?$AA2?$AAC?$AA_?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001100     i2cproxy.obj
+ 0001:00000130       ??_C@_1FE@CBNMAOJK@?$AA?9?$AAI?$AA2?$AAC?$AA_?$AAO?$AAp?$AAe?$AAn?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 10001130     i2cproxy.obj
+ 0001:00000188       ??_C@_1GM@MFIPLNBG@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAI?$AA2?$AAC?$AA_?$AAO?$AAp?$AAe?$AAn?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr?$AAe?$AAc@ 10001188     i2cproxy.obj
+ 0001:000001f8       ??_C@_1EI@KGOLOKEE@?$AA?$CL?$AAI?$AA2?$AAC?$AA_?$AAO?$AAp?$AAe?$AAn?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 100011f8     i2cproxy.obj
+ 0001:00000240       ??_C@_1DA@DEJCFAOP@?$AA?9?$AAI?$AA2?$AAC?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$DN?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001240     i2cproxy.obj
+ 0001:00000270       ??_C@_1GO@KLPNOEAM@?$AAT?$AAL?$AAD?$AA?3?$AA?5?$AA?$CB?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CI?$AAI?$AA2?$AAC?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$CJ?$AA?5?$AA?9?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr?$AAe@ 10001270     i2cproxy.obj
+ 0001:000002e0       ??_C@_1CK@HBELKLFD@?$AA?$CL?$AAI?$AA2?$AAC?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 100012e0     i2cproxy.obj
+ 0001:0000030c       ??_C@_1CO@NDEBDHCG@?$AA?9?$AAI?$AA2?$AAC?$AA_?$AAR?$AAe?$AAa?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$DN?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 1000130c     i2cproxy.obj
+ 0001:00000340       ??_C@_1EA@CNELEJHA@?$AA?$CL?$AAI?$AA2?$AAC?$AA_?$AAR?$AAe?$AAa?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAX?$AA?0?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001340     i2cproxy.obj
+ 0001:00000380       ??_C@_1DA@OBCJIOGG@?$AA?9?$AAI?$AA2?$AAC?$AA_?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$DN?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001380     i2cproxy.obj
+ 0001:000003b0       ??_C@_1EC@KACFNGNF@?$AA?$CL?$AAI?$AA2?$AAC?$AA_?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAX?$AA?0?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN?$AA?6@ 100013b0     i2cproxy.obj
+ 0001:000003f4       ??_C@_1CI@NEBFNGHM@?$AA?9?$AAI?$AA2?$AAC?$AA_?$AAS?$AAe?$AAe?$AAk?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 100013f4     i2cproxy.obj
+ 0001:0000041c       ??_C@_1DI@FEBNDHOG@?$AA?$CL?$AAI?$AA2?$AAC?$AA_?$AAS?$AAe?$AAe?$AAk?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA?$CF?$AAd?$AA?0?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 1000141c     i2cproxy.obj
+ 0001:00000454       ??_C@_1DE@OALDHHDG@?$AA?9?$AAI?$AA2?$AAC?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$CI?$AAr?$AAc?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$CJ?$AA?$AN?$AA?6?$AA?$AA@ 10001454     i2cproxy.obj
+ 0001:00000488       ??_C@_1GI@NHDPFLFB@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAI?$AA2?$AAC?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?3?$AA?5?$AAI?$AAn?$AAc?$AAo?$AAr?$AAr?$AAe?$AAc?$AAt?$AA?5@ 10001488     i2cproxy.obj
+ 0001:000004f0       ??_C@_1IC@CBOLJLFH@?$AA?$CL?$AAI?$AA2?$AAC?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA?5?$AA0@ 100014f0     i2cproxy.obj
+ 0001:00000574       ??_C@_1CI@BNHLAHFB@?$AA?9?$AAI?$AA2?$AAC?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?$CI?$AAr?$AAc?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001574     i2cproxy.obj
+ 0001:000005a0       ??_C@_1GM@LOCCFLOH@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAI?$AA2?$AAC?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAp?$AAa?$AAr@ 100015a0     i2cproxy.obj
+ 0001:0000060c       ??_C@_1M@IMFGGFBL@?$AAB?$AAU?$AAS?$AA1?$AA?3?$AA?$AA@ 1000160c     i2cproxy.obj
+ 0001:00000618       ??_C@_1HE@CDNEMKPL@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAI?$AA2?$AAC?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe@ 10001618     i2cproxy.obj
+ 0001:00000840       ??_C@_15BMCNAON@?$AAR?$AAX?$AA?$AA@ 10001840     OMAP3530_soccfg:devicemap.obj
+ 0001:00000848       ??_C@_15NHJLDDPA@?$AAT?$AAX?$AA?$AA@ 10001848     OMAP3530_soccfg:devicemap.obj
+ 0001:00000850       ??_C@_17GHFABBII@?$AAM?$AAM?$AAU?$AA?$AA@ 10001850     OMAP3530_soccfg:devicemap.obj
+ 0001:00000858       ??_C@_19EMJFMDEF@?$AAI?$AAR?$AAQ?$AA3?$AA?$AA@ 10001858     OMAP3530_soccfg:devicemap.obj
+ 0001:00000864       ??_C@_19PECJKECA@?$AAI?$AAR?$AAQ?$AA2?$AA?$AA@ 10001864     OMAP3530_soccfg:devicemap.obj
+ 0001:00000870       ??_C@_19OGJMALMO@?$AAI?$AAR?$AAQ?$AA1?$AA?$AA@ 10001870     OMAP3530_soccfg:devicemap.obj
+ 0001:0000087c       ??_C@_19FOCAGMKL@?$AAI?$AAR?$AAQ?$AA0?$AA?$AA@ 1000187c     OMAP3530_soccfg:devicemap.obj
+ 0001:00000888       ??_C@_1BC@JBFPJMDB@?$AAo?$AAv?$AAe?$AAr?$AAf?$AAl?$AAo?$AAw?$AA?$AA@ 10001888     OMAP3530_soccfg:devicemap.obj
+ 0001:00000930       s_DeviceAddressMap         10001930     OMAP3530_soccfg:devicemap.obj
+ 0001:00000b30       s_DeviceIrqMap             10001b30     OMAP3530_soccfg:devicemap.obj
+ 0001:00000e7c       ?I2C_Deinit@@YAHK@Z        10001e7c f   i2cproxy.obj
+ 0001:00000f1c       ?I2C_Open@@YAKKKK@Z        10001f1c f   i2cproxy.obj
+ 0001:00001004       ?I2C_Close@@YAHK@Z         10002004 f   i2cproxy.obj
+ 0001:00001098       ?I2C_Read@@YAKKPAXK@Z      10002098 f   i2cproxy.obj
+ 0001:00001140       ?I2C_Write@@YAKKPBXK@Z     10002140 f   i2cproxy.obj
+ 0001:000011e8       ?I2C_Seek@@YAHKJG@Z        100021e8 f   i2cproxy.obj
+ 0001:0000126c       ?I2C_IOControl@@YAHKKPAEK0KPAK@Z 1000226c f   i2cproxy.obj
+ 0001:0000138c       DllMain                    1000238c f   i2cproxy.obj
+ 0001:000013bc       ?I2C_Init@@YAKPBGPBX@Z     100023bc f   i2cproxy.obj
+ 0001:000014c8       LocalFree                  100024c8 f   coredll:COREDLL.dll
+ 0001:000014d8       DeleteCriticalSection      100024d8 f   coredll:COREDLL.dll
+ 0001:000014e8       CloseHandle                100024e8 f   coredll:COREDLL.dll
+ 0001:000014f8       NKDbgPrintfW               100024f8 f   coredll:COREDLL.dll
+ 0001:00001508       LocalAlloc                 10002508 f   coredll:COREDLL.dll
+ 0001:00001518       DisableThreadLibraryCalls  10002518 f   coredll:COREDLL.dll
+ 0001:00001528       RegisterDbgZones           10002528 f   coredll:COREDLL.dll
+ 0001:00001538       CreateFileW                10002538 f   coredll:COREDLL.dll
+ 0001:00001548       InitializeCriticalSection  10002548 f   coredll:COREDLL.dll
+ 0001:00001558       I2COpen                    10002558 f   ceddk_i2c_lib:i2c.obj
+ 0001:000015ec       I2CSetSlaveAddress         100025ec f   ceddk_i2c_lib:i2c.obj
+ 0001:0000160c       I2CSetSubAddressMode       1000260c f   ceddk_i2c_lib:i2c.obj
+ 0001:0000162c       I2CSetBaudIndex            1000262c f   ceddk_i2c_lib:i2c.obj
+ 0001:0000164c       I2CClose                   1000264c f   ceddk_i2c_lib:i2c.obj
+ 0001:0000166c       I2CRead                    1000266c f   ceddk_i2c_lib:i2c.obj
+ 0001:0000168c       I2CWrite                   1000268c f   ceddk_i2c_lib:i2c.obj
+ 0001:000016ac       SOCGetI2CDeviceByBus       100026ac f   OMAP3530_soccfg:soccfg.obj
+ 0001:000016dc       GetDeviceRegistryParams    100026dc f   ceddk:CEDDK.dll
+ 0001:000017f0       _DllMainCRTStartup         100027f0 f   corelib0:pegdmain.obj
+ 0001:0000191c       _cexit                     1000291c f   corelib0:cexit.obj
+ 0001:00001938       _initterm                  10002938 f   corelib0:crt0dat.obj
+ 0001:0000196c       _cinit                     1000296c f   corelib0:crt0dat.obj
+ 0001:000019a0       __security_init_cookie     100029a0 f   corelib0:seccinit.obj
+ 0001:000019fc       memset                     100029fc f   corelib1:COREDLL.dll
+ 0001:00001a0c       _XcptFilter                10002a0c f   corelib1:COREDLL.dll
+ 0001:00001a1c       __C_specific_handler       10002a1c f   corelib1:COREDLL.dll
+ 0001:00001a2c       free                       10002a2c f   corelib1:COREDLL.dll
+ 0001:00001a3c       __security_gen_cookie2     10002a3c f   corelib1:COREDLL.dll
+ 0001:00001a4c       KernelIoControl            10002a4c f   coredll:COREDLL.dll
+ 0001:00001a5c       InterlockedExchange        10002a5c f   coredll:COREDLL.dll
+ 0001:00001a6c       TerminateProcess           10002a6c f   coredll:COREDLL.dll
+ 0001:00001a90       __IMPORT_DESCRIPTOR_COREDLL 10002a90     coredll:COREDLL.dll
+ 0001:00001aa4       __IMPORT_DESCRIPTOR_CEDDK  10002aa4     ceddk:CEDDK.dll
+ 0001:00001ab8       __NULL_IMPORT_DESCRIPTOR   10002ab8     coredll:COREDLL.dll
+ 0002:00000000       __imp_GetDeviceRegistryParams 10003000     ceddk:CEDDK.dll
+ 0002:00000004       \177CEDDK_NULL_THUNK_DATA  10003004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_CloseHandle          10003008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_NKDbgPrintfW         1000300c     coredll:COREDLL.dll
+ 0002:00000010       __imp_LocalAlloc           10003010     coredll:COREDLL.dll
+ 0002:00000014       __imp_DeleteCriticalSection 10003014     coredll:COREDLL.dll
+ 0002:00000018       __imp_RegisterDbgZones     10003018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_CreateFileW          1000301c     coredll:COREDLL.dll
+ 0002:00000020       __imp_InitializeCriticalSection 10003020     coredll:COREDLL.dll
+ 0002:00000024       __imp_DisableThreadLibraryCalls 10003024     coredll:COREDLL.dll
+ 0002:00000028       __imp_LocalFree            10003028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_memset               1000302c     corelib1:COREDLL.dll
+ 0002:00000030       __imp__XcptFilter          10003030     corelib1:COREDLL.dll
+ 0002:00000034       __imp___C_specific_handler 10003034     corelib1:COREDLL.dll
+ 0002:00000038       __imp_free                 10003038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp___security_gen_cookie2 1000303c     corelib1:COREDLL.dll
+ 0002:00000040       __imp_KernelIoControl      10003040     coredll:COREDLL.dll
+ 0002:00000044       __imp_InterlockedExchange  10003044     coredll:COREDLL.dll
+ 0002:00000048       __imp_TerminateProcess     10003048     coredll:COREDLL.dll
+ 0002:0000004c       \177COREDLL_NULL_THUNK_DATA 1000304c     coredll:COREDLL.dll
+ 0002:00000050       dpCurSettings              10003050     i2cproxy.obj
+ 0002:00000494       __security_cookie          10003494     corelib0:seccinit.obj
+ 0002:00000498       __security_cookie_complement 10003498     corelib0:seccinit.obj
+ 0002:000004d4       _exitflag                  100034d4     corelib0:cexit.obj
+ 0002:000004d8       __onexitend                100034d8     <common>
+ 0002:000004dc       __onexitbegin              100034dc     <common>
+ 0002:000004e0       g_pcsExit                  100034e0     <common>
+ 0002:000004e4       _pRawDllMain               100034e4     <common>
+
+ entry point at        0001:000017f0
+
+ Static symbols
+
+ 0001:000016f4       _DllMainCRTStartupHelper   100026f4 f   corelib0:pegdmain.obj
+ 0001:00001820       doexit                     10002820 f   corelib0:cexit.obj

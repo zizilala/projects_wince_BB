@@ -1,0 +1,11 @@
+IF BSP_OMAP_HDQ
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\HDQ]
+    "Prefix"="HDQ"
+    "Dll"="omap_hdq.dll"
+    "Index"=dword:1
+    "Order"=dword:9
+    "Flags"=dword:00010000
+    "priority256"=dword:87
+    "PowerFlags"=dword:00000103         ; send pre/post device state changes
+    "IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+ENDIF BSP_OMAP_HDQ

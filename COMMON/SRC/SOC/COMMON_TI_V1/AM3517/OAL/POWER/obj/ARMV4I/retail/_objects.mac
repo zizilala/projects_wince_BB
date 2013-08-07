@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\power.obj\
+    obj\ARMV4I\retail\restore.obj
+

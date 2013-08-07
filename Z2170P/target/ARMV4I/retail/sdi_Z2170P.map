@@ -1,0 +1,159 @@
+ sdi_Z2170P
+
+ Timestamp is 51dcc2aa (Wed Jul 10 10:10:50 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000a1cH .rdata                  CODE
+ 0001:00000a1c 00000027H .rdata$debug            CODE
+ 0001:00000a44 00001a2cH .text                   CODE
+ 0001:00002470 0000003cH .xdata                  CODE
+ 0001:000024ac 00000028H .idata$2                CODE
+ 0001:000024d4 00000014H .idata$3                CODE
+ 0001:000024e8 0000007cH .idata$4                CODE
+ 0001:00002564 00000016H .idata$6                CODE
+ 0001:00002580 000001feH .edata                  CODE
+ 0002:00000000 0000007cH .idata$5                DATA
+ 0002:0000007c 00000004H .data                   DATA
+ 0002:00000080 00000084H .bss                    DATA
+ 0003:00000000 00000118H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:000000b0       ??_C@_1GE@BEBIAHEB@?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?5?$AAD?$AAl?$AAl?$AAE?$AAn?$AAt?$AAr?$AAy?$AA?5?$AA?3?$AA?3?$AA?5?$AAd?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AA?5@ 100010b0     SdioDrv.obj
+ 0001:00000118       ??_C@_0FD@FCEBPEKG@sdioDrv_InitDma?$CI?$CJ?5DmaAllocateCha@ 10001118     SdioDrv.obj
+ 0001:0000016c       ??_C@_0DI@HPAJKHKN@sdioDrv_SetPowerState?$CI?$CJ?5SetDevic@ 1000116c     SdioDrv.obj
+ 0001:000001a8       ??_C@_1KA@NLGADCO@?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?5?$AAs?$AAd?$AAi?$AAo?$AAD?$AAr?$AAv?$AA_?$AAS?$AAe?$AAt?$AAP?$AAo?$AAw?$AAe?$AAr?$AAS?$AAt?$AAa?$AAt@ 100011a8     SdioDrv.obj
+ 0001:00000248       ??_C@_0DC@GBPEGO@sdioDrv_InterruptDone?$CI?$CJ?5read?5cha@ 10001248     SdioDrv.obj
+ 0001:0000027c       ??_C@_0CP@LPICGCLM@sdiodrv_IST?$CI?$CJ?5WaitForSingleObjec@ 1000127c     SdioDrv.obj
+ 0001:000002ac       ??_C@_0CP@HJCHDJOF@sdiodrv_IST?$CI?$CJ?5sdioDrv_InterruptD@ 100012ac     SdioDrv.obj
+ 0001:000002dc       ??_C@_0DF@PCJEAMEF@MMC?5clock?5not?5stoped?0?5clock?5freq@ 100012dc     SdioDrv.obj
+ 0001:00000314       ??_C@_0DD@MPDCPKLN@sdioDrv_SetClock?$CI?$CJ?5clock?5not?5sta@ 10001314     SdioDrv.obj
+ 0001:00000348       ??_C@_0DD@MBNGLJE@sdioDrv_ResetMmc?$CI?$CJ?5MMC?5reset?5FAI@ 10001348     SdioDrv.obj
+ 0001:0000037c       ??_C@_0CL@FIKHGCKJ@sdiodrv_init?$CI?$CJ?5?9?5sdioDrv_InitDma@ 1000137c     SdioDrv.obj
+ 0001:000003a8       ??_C@_0DH@PBAGBCLK@sdioDrv_ExecuteCmd?$CI?$CJ?5SDIO?5Comman@ 100013a8     SdioDrv.obj
+ 0001:000003e0       ??_C@_0DL@OMHOPNKH@sdioDrv_SendDataXferCmd?$CI?$CJ?5SDIO?5C@ 100013e0     SdioDrv.obj
+ 0001:0000041c       ??_C@_0DE@OFBHGGPF@sdioDrv_DataXferSync?$CI?$CJ?5transfer?5@ 1000141c     SdioDrv.obj
+ 0001:00000450       ??_C@_0BN@FDJEAGID@sdioDrv_ReadSync?$CI?$CJ?5FAILED?$CB?$CB?6?$AA@ 10001450     SdioDrv.obj
+ 0001:00000470       ??_C@_1JG@JEMJLEJC@?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?5?$AAs?$AAd?$AAi?$AAo?$AAD?$AAr?$AAv?$AA_?$AAR?$AAe?$AAa?$AAd?$AAS?$AAy?$AAn?$AAc?$AA?5?$AA?3?$AA?5?$AAs@ 10001470     SdioDrv.obj
+ 0001:00000508       ??_C@_1JI@PIJOFPAD@?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?5?$AAs?$AAd?$AAi?$AAo?$AAD?$AAr?$AAv?$AA_?$AAW?$AAr?$AAi?$AAt?$AAe?$AAS?$AAy?$AAn?$AAc?$AA?5?$AA?3?$AA?5@ 10001508     SdioDrv.obj
+ 0001:000005a0       ??_C@_0DK@GFGEPNPB@sdioDrv_ReadSyncBytes?$CI?$CJ?5SDIO?5Com@ 100015a0     SdioDrv.obj
+ 0001:000005dc       ??_C@_0DL@OGODDMEL@sdioDrv_WriteSyncBytes?$CI?$CJ?5SDIO?5Co@ 100015dc     SdioDrv.obj
+ 0001:00000618       ??_C@_0DF@GEOFMEGC@sdioDrv_InitDma?$CI?$CJ?5HalAllocateCom@ 10001618     SdioDrv.obj
+ 0001:00000650       ??_C@_0CI@BNEHIOMF@sdiodrv_init?$CI?$CJ?5CreateThread?5FAIL@ 10001650     SdioDrv.obj
+ 0001:00000678       ??_C@_0CP@INLAMNHL@sdiodrv_init?$CI?$CJ?5InterruptInitiali@ 10001678     SdioDrv.obj
+ 0001:000006a8       ??_C@_0CH@LJJFKOP@sdiodrv_init?$CI?$CJ?5CreateEvent?5FAILE@ 100016a8     SdioDrv.obj
+ 0001:000006d0       ??_C@_0EG@GOGAOEJA@sdiodrv_init?$CI?$CJ?5KernelIoControl?$CII@ 100016d0     SdioDrv.obj
+ 0001:00000718       ??_C@_0DB@BJAJMKGH@sdiodrv_init?$CI?$CJ?5CreateBusAccessHa@ 10001718     SdioDrv.obj
+ 0001:00000750       ??_C@_0EJ@JFHOLANC@sdiodrv_init?$CI?$CJ?5MmMapIoSpace?5FAIL@ 10001750     SdioDrv.obj
+ 0001:000007a0       ??_C@_0EP@HPLJHMID@sdiodrv_init?$CI?$CJ?5MmMapIoSpace?5FAIL@ 100017a0     SdioDrv.obj
+ 0001:000007f0       ??_C@_0EH@OADPPDNO@sdiodrv_init?$CI?$CJ?5MmMapIoSpace?5FAIL@ 100017f0     SdioDrv.obj
+ 0001:000008c8       ??_C@_1M@GJIMDHLB@?$AAD?$AAM?$AAA?$AA1?$AA?3?$AA?$AA@ 100018c8     ceddk_dma_lib:dma.obj
+ 0001:000008d8       ??_C@_1HE@JBPHHPPH@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAy?$AAi?$AAn?$AAg?$AA?5?$AAt@ 100018d8     ceddk_dma_lib:dma.obj
+ 0001:00000950       ??_C@_1GM@DOJMJKAG@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAy?$AAi?$AAn?$AAg?$AA?5?$AAt@ 10001950     ceddk_dma_lib:dma.obj
+ 0001:000009c0       ??_C@_1FM@OLMMJHOB@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAf?$AAr?$AAe?$AAe?$AA?8?$AAi?$AAn?$AAg@ 100019c0     ceddk_dma_lib:dma.obj
+ 0001:00000a44       DmaConfigure               10001a44 f i SdioDrv.obj
+ 0001:00000b28       DllEntry                   10001b28 f   SdioDrv.obj
+ 0001:00000b54       SDI_Deinit                 10001b54 f   SdioDrv.obj
+ 0001:00000c44       SDI_Open                   10001c44 f   SdioDrv.obj
+ 0001:00000c4c       SDI_Close                  10001c4c f   SdioDrv.obj
+ 0001:00000c54       SDI_Read                   10001c54 f   SdioDrv.obj
+ 0001:00000c5c       SDI_Write                  10001c5c f   SdioDrv.obj
+ 0001:00001288       sdioDrv_HwCheck            10002288 f   SdioDrv.obj
+ 0001:00001298       sdioDrv_ConnectBus         10002298 f   SdioDrv.obj
+ 0001:000012f0       sdioDrv_DisconnectBus      100022f0 f   SdioDrv.obj
+ 0001:00001394       sdioDrv_ExecuteCmd         10002394 f   SdioDrv.obj
+ 0001:00001648       sdioDrv_ReadSync           10002648 f   SdioDrv.obj
+ 0001:000016c0       sdioDrv_ReadAsync          100026c0 f   SdioDrv.obj
+ 0001:000017b0       sdioDrv_WriteSync          100027b0 f   SdioDrv.obj
+ 0001:00001810       sdioDrv_WriteAsync         10002810 f   SdioDrv.obj
+ 0001:00001908       sdioDrv_ReadSyncBytes      10002908 f   SdioDrv.obj
+ 0001:000019d4       sdioDrv_WriteSyncBytes     100029d4 f   SdioDrv.obj
+ 0001:00001a9c       sdiodrv_clkset             10002a9c f   SdioDrv.obj
+ 0001:00001b08       sdiodrv_clkstop            10002b08 f   SdioDrv.obj
+ 0001:00001b64       SDI_Init                   10002b64 f   SdioDrv.obj
+ 0001:00001e54       HalFreeCommonBuffer        10002e54 f   ceddk:CEDDK.dll
+ 0001:00001e64       MmUnmapIoSpace             10002e64 f   ceddk:CEDDK.dll
+ 0001:00001e74       SetDevicePowerState        10002e74 f   ceddk:CEDDK.dll
+ 0001:00001e84       HalAllocateCommonBuffer    10002e84 f   ceddk:CEDDK.dll
+ 0001:00001e94       CreateBusAccessHandle      10002e94 f   ceddk:CEDDK.dll
+ 0001:00001ea4       MmMapIoSpace               10002ea4 f   ceddk:CEDDK.dll
+ 0001:00001eb4       EventModify                10002eb4 f   coredll:COREDLL.dll
+ 0001:00001ec4       DisableThreadLibraryCalls  10002ec4 f   coredll:COREDLL.dll
+ 0001:00001ed4       NKDbgPrintfW               10002ed4 f   coredll:COREDLL.dll
+ 0001:00001ee4       WaitForSingleObject        10002ee4 f   coredll:COREDLL.dll
+ 0001:00001ef4       CloseHandle                10002ef4 f   coredll:COREDLL.dll
+ 0001:00001f04       KernelIoControl            10002f04 f   coredll:COREDLL.dll
+ 0001:00001f14       InterruptDone              10002f14 f   coredll:COREDLL.dll
+ 0001:00001f24       GetTickCount               10002f24 f   coredll:COREDLL.dll
+ 0001:00001f34       CeSetThreadPriority        10002f34 f   coredll:COREDLL.dll
+ 0001:00001f44       CreateThread               10002f44 f   coredll:COREDLL.dll
+ 0001:00001f54       InterruptInitialize        10002f54 f   coredll:COREDLL.dll
+ 0001:00001f64       CreateEventW               10002f64 f   coredll:COREDLL.dll
+ 0001:00001f74       LoadDmaDriver              10002f74 f   ceddk_dma_lib:dma.obj
+ 0001:00001fdc       DmaEnableInterrupts        10002fdc f   ceddk_dma_lib:dma.obj
+ 0001:000020dc       DmaGetLogicalChannel       100030dc f   ceddk_dma_lib:dma.obj
+ 0001:000021a0       DmaFreeChannel             100031a0 f   ceddk_dma_lib:dma.obj
+ 0001:000022c4       DmaAllocateChannel         100032c4 f   ceddk_dma_lib:dma.obj
+ 0001:000023c0       memset                     100033c0 f   corelib1:COREDLL.dll
+ 0001:000023d0       printf                     100033d0 f   corelib1:COREDLL.dll
+ 0001:000023e0       __rt_sdiv                  100033e0 f   corelib1:COREDLL.dll
+ 0001:000023f0       __rt_udiv                  100033f0 f   corelib1:COREDLL.dll
+ 0001:00002400       memcpy                     10003400 f   corelib1:COREDLL.dll
+ 0001:00002410       __C_specific_handler       10003410 f   corelib1:COREDLL.dll
+ 0001:00002420       __GetUserKData             10003420 f   coredll:COREDLL.dll
+ 0001:00002430       CreateFileW                10003430 f   coredll:COREDLL.dll
+ 0001:00002440       DeviceIoControl            10003440 f   coredll:COREDLL.dll
+ 0001:00002450       LocalFree                  10003450 f   coredll:COREDLL.dll
+ 0001:00002460       LocalAlloc                 10003460 f   coredll:COREDLL.dll
+ 0001:000024ac       __IMPORT_DESCRIPTOR_CEDDK  100034ac     ceddk:CEDDK.dll
+ 0001:000024c0       __IMPORT_DESCRIPTOR_COREDLL 100034c0     coredll:COREDLL.dll
+ 0001:000024d4       __NULL_IMPORT_DESCRIPTOR   100034d4     ceddk:CEDDK.dll
+ 0002:00000000       __imp_MmUnmapIoSpace       10004000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_SetDevicePowerState  10004004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_HalAllocateCommonBuffer 10004008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_CreateBusAccessHandle 1000400c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_MmMapIoSpace         10004010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_HalFreeCommonBuffer  10004014     ceddk:CEDDK.dll
+ 0002:00000018       \177CEDDK_NULL_THUNK_DATA  10004018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_EventModify          1000401c     coredll:COREDLL.dll
+ 0002:00000020       __imp_DisableThreadLibraryCalls 10004020     coredll:COREDLL.dll
+ 0002:00000024       __imp_NKDbgPrintfW         10004024     coredll:COREDLL.dll
+ 0002:00000028       __imp_WaitForSingleObject  10004028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_CloseHandle          1000402c     coredll:COREDLL.dll
+ 0002:00000030       __imp_KernelIoControl      10004030     coredll:COREDLL.dll
+ 0002:00000034       __imp_InterruptDone        10004034     coredll:COREDLL.dll
+ 0002:00000038       __imp_GetTickCount         10004038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_CeSetThreadPriority  1000403c     coredll:COREDLL.dll
+ 0002:00000040       __imp_CreateThread         10004040     coredll:COREDLL.dll
+ 0002:00000044       __imp_InterruptInitialize  10004044     coredll:COREDLL.dll
+ 0002:00000048       __imp_CreateEventW         10004048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_memset               1000404c     corelib1:COREDLL.dll
+ 0002:00000050       __imp_printf               10004050     corelib1:COREDLL.dll
+ 0002:00000054       __imp___rt_sdiv            10004054     corelib1:COREDLL.dll
+ 0002:00000058       __imp___rt_udiv            10004058     corelib1:COREDLL.dll
+ 0002:0000005c       __imp_memcpy               1000405c     corelib1:COREDLL.dll
+ 0002:00000060       __imp___C_specific_handler 10004060     corelib1:COREDLL.dll
+ 0002:00000064       __imp___GetUserKData       10004064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CreateFileW          10004068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_DeviceIoControl      1000406c     coredll:COREDLL.dll
+ 0002:00000070       __imp_LocalFree            10004070     coredll:COREDLL.dll
+ 0002:00000074       __imp_LocalAlloc           10004074     coredll:COREDLL.dll
+ 0002:00000078       \177COREDLL_NULL_THUNK_DATA 10004078     coredll:COREDLL.dll
+ 0002:0000007c       g_ssd_debug_level          1000407c     SdioDrv.obj
+ 0002:00000100       g_hDmaDrv                  10004100     ceddk_dma_lib:dma.obj
+
+ entry point at        0001:00000b28
+
+ Static symbols
+
+ 0001:00000c64       sdioDrv_InitDma            10001c64 f   SdioDrv.obj
+ 0001:00000e90       sdiodrv_IST                10001e90 f   SdioDrv.obj
+ 0001:00000fa0       sdioDrv_PollStatus         10001fa0 f   SdioDrv.obj
+ 0001:00000fe0       sdioDrv_SetClock           10001fe0 f   SdioDrv.obj
+ 0001:000010f0       sdioDrv_InitHw             100020f0 f   SdioDrv.obj
+ 0001:00001444       sdioDrv_SendDataXferCmd    10002444 f   SdioDrv.obj
+ 0001:00001500       sdioDrv_DataXferSync       10002500 f   SdioDrv.obj

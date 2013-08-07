@@ -1,0 +1,72 @@
+REGION XIPKERN
+	nk.exe
+	kitl.dll
+	kernel.dll
+	kd.dll
+	hd.dll
+	osaxst0.dll
+	osaxst1.dll
+	oalioctl.dll
+        coredll.dll
+	k.coredll.dll
+	locale.dll
+	sorting.dll
+	normalize.dll
+	fpcrt.dll   
+	k.fpcrt.dll
+	filesys.dll
+	romfsd.dll
+	device.dll
+        udevice.exe
+	devmgr.dll
+	regenum.dll
+	busenum.dll
+	relfsd.dll
+	relfsdext.dll
+	pm.dll
+	binfs.dll
+	fsdmgr.dll
+        exfat.dll
+        diskcache.dll 
+	mspart.dll
+        fatutil.dll
+        cachefilt.dll
+	k.ceddk.dll
+	ceddk.dll
+        kbdus.dll
+        k.iphlpapi.dll 
+	initobj.dat
+	boot.hv
+	user.hv
+        default.hv
+	initdb.ini
+	wince.nls
+	locale.nls
+	en-US.nlx
+	SortDefault.nls
+        msfilter.dll
+        mlang.dll
+        imaging.dll
+        ceddk.dll
+        omapbus.dll
+        omap_nand.dll
+        pmext.dll
+        ti_constraintadapters.dll
+        ti_policies.dll  
+        ti_cpuloadpolicy.dll
+        ti_systemstatepolicy.dll
+        omap_sdma.dll
+        tps659xx_gpio.dll
+        omap_gpio.dll
+        tps659xx.dll
+        aygshell.dll
+        ceconfig.h
+        bounce.lnk
+        bubbles.lnk
+        carousel.lnk
+        
+
+ 
+
+
+

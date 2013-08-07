@@ -1,0 +1,24 @@
+
+TARGETNAME=nand_test_driver
+
+RELEASETYPE=PLATFORM
+TARGETTYPE=DYNLINK
+SYNCHRONIZE_DRAIN=1
+DEFFILE=nand_test.def
+DLLENTRY=DllMain
+
+CDEFINES=$(CDEFINES)
+INCLUDES=$(INCLUDES); \
+                   ..\ ; \
+
+SOURCELIBS= \
+    $(_TILIBS)\common_ti_fmd_nand_device.lib \
+
+TARGETLIBS= \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\ceddk.lib \
+    $(_TARGETPLATLIB)\$(_CPUDEPPATH)\bspcfg.lib 
+
+SOURCES= \
+    nand_test_driver.c
+

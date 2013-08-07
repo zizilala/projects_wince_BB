@@ -1,0 +1,148 @@
+ omap_vrfb
+
+ Timestamp is 51ede8c6 (Tue Jul 23 10:21:58 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00000190H .rdata                  CODE
+ 0001:000001b0 00000026H .rdata$debug            CODE
+ 0001:000001d8 0000152cH .text                   CODE
+ 0001:00001704 00000014H .xdata                  CODE
+ 0001:00001718 00000028H .idata$2                CODE
+ 0001:00001740 00000014H .idata$3                CODE
+ 0001:00001754 00000088H .idata$4                CODE
+ 0001:000017dc 00000016H .idata$6                CODE
+ 0001:00001800 00000098H .edata                  CODE
+ 0002:00000000 00000088H .idata$5                DATA
+ 0002:00000088 000005d0H .data                   DATA
+ 0002:00000658 00000014H .bss                    DATA
+ 0003:00000000 000000b8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1CG@HPFELENL@?$AAN?$AAu?$AAm?$AAD?$AAi?$AAs?$AAp?$AAl?$AAa?$AAy?$AAC?$AAo?$AAn?$AAt?$AAe?$AAx?$AAt?$AAs?$AA?$AA@ 1000103c     common_ti_vrfb:omap_vrfb.obj
+ 0001:000000f8       DEVICE_IFC_VRFB_GUID       100010f8     common_ti_vrfb:omap_vrfb.obj
+ 0001:000001d8       VRF_Deinit                 100011d8 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:00000270       VRF_Open                   10001270 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:000002dc       VRF_Close                  100012dc f   common_ti_vrfb:omap_vrfb.obj
+ 0001:00000320       VRFB_ReleaseView           10001320 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:000003d8       VRFB_GetViewInfo           100013d8 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:00000544       VRFB_RotateView            10001544 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:00000658       VRFB_NumDisplayViews       10001658 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:00000680       VRFB_GetDisplayView        10001680 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:000006bc       VRFB_GetDisplayViewInfo    100016bc f   common_ti_vrfb:omap_vrfb.obj
+ 0001:000008dc       DllMain                    100018dc f   common_ti_vrfb:omap_vrfb.obj
+ 0001:0000090c       VRF_Init                   1000190c f   common_ti_vrfb:omap_vrfb.obj
+ 0001:00000ab8       VRFB_AllocateView          10001ab8 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:00000d3c       VRFB_UpdateView            10001d3c f   common_ti_vrfb:omap_vrfb.obj
+ 0001:00000e68       VRF_IOControl              10001e68 f   common_ti_vrfb:omap_vrfb.obj
+ 0001:000011ec       SOCGetVRFBDevice           100021ec f   OMAP3530_soccfg:soccfg.obj
+ 0001:000011f4       MmUnmapIoSpace             100021f4 f   ceddk:CEDDK.dll
+ 0001:00001204       EnableDeviceClocks         10002204 f   ceddk:CEDDK.dll
+ 0001:00001214       MmMapIoSpace               10002214 f   ceddk:CEDDK.dll
+ 0001:00001224       GetAddressByDevice         10002224 f   ceddk:CEDDK.dll
+ 0001:00001234       GetDeviceRegistryParams    10002234 f   ceddk:CEDDK.dll
+ 0001:00001244       HalContextUpdateDirtyRegister 10002244 f   ceddk:CEDDK.dll
+ 0001:00001254       KernelLibIoControl         10002254 f   coredll:COREDLL.dll
+ 0001:00001264       __GetUserKData             10002264 f   coredll:COREDLL.dll
+ 0001:00001274       LocalFree                  10002274 f   coredll:COREDLL.dll
+ 0001:00001284       DeleteCriticalSection      10002284 f   coredll:COREDLL.dll
+ 0001:00001294       VirtualFree                10002294 f   coredll:COREDLL.dll
+ 0001:000012a4       InterlockedIncrement       100022a4 f   coredll:COREDLL.dll
+ 0001:000012b4       LocalAlloc                 100022b4 f   coredll:COREDLL.dll
+ 0001:000012c4       InterlockedDecrement       100022c4 f   coredll:COREDLL.dll
+ 0001:000012d4       FreePhysMem                100022d4 f   coredll:COREDLL.dll
+ 0001:000012e4       VirtualCopy                100022e4 f   coredll:COREDLL.dll
+ 0001:000012f4       DisableThreadLibraryCalls  100022f4 f   coredll:COREDLL.dll
+ 0001:00001304       RegisterDbgZones           10002304 f   coredll:COREDLL.dll
+ 0001:00001314       VirtualAlloc               10002314 f   coredll:COREDLL.dll
+ 0001:00001324       InitializeCriticalSection  10002324 f   coredll:COREDLL.dll
+ 0001:00001334       AllocPhysMem               10002334 f   coredll:COREDLL.dll
+ 0001:00001344       SetLastError               10002344 f   coredll:COREDLL.dll
+ 0001:00001354       CeSafeCopyMemory           10002354 f   coredll:COREDLL.dll
+ 0001:00001364       GetCallerProcess           10002364 f   coredll:COREDLL.dll
+ 0001:00001478       _DllMainCRTStartup         10002478 f   corelib0:pegdmain.obj
+ 0001:000015a4       _cexit                     100025a4 f   corelib0:cexit.obj
+ 0001:000015c0       _initterm                  100025c0 f   corelib0:crt0dat.obj
+ 0001:000015f4       _cinit                     100025f4 f   corelib0:crt0dat.obj
+ 0001:00001628       __security_init_cookie     10002628 f   corelib0:seccinit.obj
+ 0001:00001684       memset                     10002684 f   corelib1:COREDLL.dll
+ 0001:00001694       memcmp                     10002694 f   corelib1:COREDLL.dll
+ 0001:000016a4       _XcptFilter                100026a4 f   corelib1:COREDLL.dll
+ 0001:000016b4       __C_specific_handler       100026b4 f   corelib1:COREDLL.dll
+ 0001:000016c4       free                       100026c4 f   corelib1:COREDLL.dll
+ 0001:000016d4       __security_gen_cookie2     100026d4 f   corelib1:COREDLL.dll
+ 0001:000016e4       InterlockedExchange        100026e4 f   coredll:COREDLL.dll
+ 0001:000016f4       TerminateProcess           100026f4 f   coredll:COREDLL.dll
+ 0001:00001718       __IMPORT_DESCRIPTOR_CEDDK  10002718     ceddk:CEDDK.dll
+ 0001:0000172c       __IMPORT_DESCRIPTOR_COREDLL 1000272c     coredll:COREDLL.dll
+ 0001:00001740       __NULL_IMPORT_DESCRIPTOR   10002740     ceddk:CEDDK.dll
+ 0002:00000000       __imp_EnableDeviceClocks   10003000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_MmMapIoSpace         10003004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_GetAddressByDevice   10003008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_GetDeviceRegistryParams 1000300c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_HalContextUpdateDirtyRegister 10003010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_MmUnmapIoSpace       10003014     ceddk:CEDDK.dll
+ 0002:00000018       \177CEDDK_NULL_THUNK_DATA  10003018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_KernelLibIoControl   1000301c     coredll:COREDLL.dll
+ 0002:00000020       __imp___GetUserKData       10003020     coredll:COREDLL.dll
+ 0002:00000024       __imp_LocalFree            10003024     coredll:COREDLL.dll
+ 0002:00000028       __imp_DeleteCriticalSection 10003028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_VirtualFree          1000302c     coredll:COREDLL.dll
+ 0002:00000030       __imp_InterlockedIncrement 10003030     coredll:COREDLL.dll
+ 0002:00000034       __imp_LocalAlloc           10003034     coredll:COREDLL.dll
+ 0002:00000038       __imp_InterlockedDecrement 10003038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_FreePhysMem          1000303c     coredll:COREDLL.dll
+ 0002:00000040       __imp_VirtualCopy          10003040     coredll:COREDLL.dll
+ 0002:00000044       __imp_DisableThreadLibraryCalls 10003044     coredll:COREDLL.dll
+ 0002:00000048       __imp_RegisterDbgZones     10003048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_VirtualAlloc         1000304c     coredll:COREDLL.dll
+ 0002:00000050       __imp_InitializeCriticalSection 10003050     coredll:COREDLL.dll
+ 0002:00000054       __imp_AllocPhysMem         10003054     coredll:COREDLL.dll
+ 0002:00000058       __imp_SetLastError         10003058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_CeSafeCopyMemory     1000305c     coredll:COREDLL.dll
+ 0002:00000060       __imp_GetCallerProcess     10003060     coredll:COREDLL.dll
+ 0002:00000064       __imp_memset               10003064     corelib1:COREDLL.dll
+ 0002:00000068       __imp_memcmp               10003068     corelib1:COREDLL.dll
+ 0002:0000006c       __imp__XcptFilter          1000306c     corelib1:COREDLL.dll
+ 0002:00000070       __imp___C_specific_handler 10003070     corelib1:COREDLL.dll
+ 0002:00000074       __imp_free                 10003074     corelib1:COREDLL.dll
+ 0002:00000078       __imp___security_gen_cookie2 10003078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp_InterlockedExchange  1000307c     coredll:COREDLL.dll
+ 0002:00000080       __imp_TerminateProcess     10003080     coredll:COREDLL.dll
+ 0002:00000084       \177COREDLL_NULL_THUNK_DATA 10003084     coredll:COREDLL.dll
+ 0002:00000088       dpCurSettings              10003088     common_ti_vrfb:omap_vrfb.obj
+ 0002:000004d0       g_VrfbContextList          100034d0     common_ti_vrfb:omap_vrfb.obj
+ 0002:00000650       __security_cookie          10003650     corelib0:seccinit.obj
+ 0002:00000654       __security_cookie_complement 10003654     corelib0:seccinit.obj
+ 0002:00000658       _exitflag                  10003658     corelib0:cexit.obj
+ 0002:0000065c       __onexitend                1000365c     <common>
+ 0002:00000660       __onexitbegin              10003660     <common>
+ 0002:00000664       g_pcsExit                  10003664     <common>
+ 0002:00000668       _pRawDllMain               10003668     <common>
+
+ entry point at        0001:00001478
+
+ Static symbols
+
+ 0001:0000137c       _DllMainCRTStartupHelper   1000237c f   corelib0:pegdmain.obj
+ 0001:000014a8       doexit                     100024a8 f   corelib0:cexit.obj

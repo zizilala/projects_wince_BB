@@ -1,0 +1,23 @@
+# All rights reserved ADENEO EMBEDDED 2010
+!if 0
+;================================================================================
+;             Texas Instruments OMAP(TM) Platform Software
+; (c) Copyright Texas Instruments, Incorporated. All Rights Reserved.
+;
+; Use of this software is controlled by the terms and conditions found
+; in the license agreement under which this software has been supplied.
+;
+;================================================================================
+!endif
+
+TARGETNAME=bsp_kitl_ethdrv_usbfn
+TARGETTYPE=LIBRARY
+
+CDEFINES=$(CDEFINES) -DCEDDK_USEDDKMACRO -DBUILDING_KITL
+
+!IF "$(BSP_OMAP_MUSBOTG_TPS659XX)" == "1"
+CDEFINES=$(CDEFINES) -DBSP_OMAP_MUSBOTG_TPS659XX
+!ENDIF
+
+SOURCES= \
+	..\trans.c

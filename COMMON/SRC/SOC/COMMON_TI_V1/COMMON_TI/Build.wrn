@@ -1,0 +1,6 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [00:0000000030:WARNS ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\BOOT\eboot\ does not exist.
+BUILD: [00:0000000033:WARNS ] Directory: C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\BOOT\eboot\ does not exist.
+BUILD: [01:0000000326:WARNN ] C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\dcache.s(56) warning : A0241: Instruction clz not supported for -cpu "-arch 4t"
+BUILD: [01:0000000328:WARNN ] C:\WINCE600\PLATFORM\COMMON\SRC\SOC\COMMON_TI_V1\COMMON_TI\OAL\CORTEXA8_CACHE\dcache.s(140) warning : A0241: Instruction clz not supported for -cpu "-arch 4t"
+BUILD: [01:0000001874:WARNN ] haldebug.obj : warning LNK4221: no public symbols found; archive member will be inaccessible

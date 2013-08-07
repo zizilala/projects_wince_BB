@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\retail\debug.obj\
+    obj\ARMV4I\retail\tps659xx_audio.obj
+

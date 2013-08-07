@@ -1,0 +1,256 @@
+ TSC2046_touch
+
+ Timestamp is 51ecc6ff (Mon Jul 22 13:45:35 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 000006baH .rdata                  CODE
+ 0001:000006dc 0000002aH .rdata$debug            CODE
+ 0001:00000708 00002cf8H .text                   CODE
+ 0001:00003400 0000002cH .xdata                  CODE
+ 0001:0000342c 00000028H .idata$2                CODE
+ 0001:00003454 00000014H .idata$3                CODE
+ 0001:00003468 000000c4H .idata$4                CODE
+ 0001:0000352c 00000016H .idata$6                CODE
+ 0001:00003550 00000161H .edata                  CODE
+ 0002:00000000 000000c4H .idata$5                DATA
+ 0002:000000c8 000000ccH .data                   DATA
+ 0002:000001a0 000000fcH .bss                    DATA
+ 0003:00000000 000001b8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BI@OMDEANNH@?$AAS?$AAP?$AAI?$AAB?$AAa?$AAu?$AAd?$AAr?$AAa?$AAt?$AAe?$AA?$AA@ 1000103c     touchscreen.obj
+ 0001:00000054       ??_C@_1CM@FGLBKGFE@?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAs?$AAD?$AAr?$AAo?$AAp?$AAp?$AAe?$AAd?$AA?$AA@ 10001054     touchscreen.obj
+ 0001:00000080       ??_C@_1BA@PJOGJEE@?$AAS?$AAP?$AAI?$AAA?$AAd?$AAd?$AAr?$AA?$AA@ 10001080     touchscreen.obj
+ 0001:00000090       ??_C@_1O@GCCHEIII@?$AAS?$AAP?$AAI?$AAB?$AAu?$AAs?$AA?$AA@ 10001090     touchscreen.obj
+ 0001:000000a0       ??_C@_1CA@ENFPPIBL@?$AAP?$AAe?$AAn?$AAU?$AAp?$AAD?$AAe?$AAb?$AAo?$AAu?$AAn?$AAc?$AAe?$AAM?$AAS?$AA?$AA@ 100010a0     touchscreen.obj
+ 0001:000000c0       ??_C@_1BA@NAGANOEM@?$AAP?$AAe?$AAn?$AAG?$AAP?$AAI?$AAO?$AA?$AA@ 100010c0     touchscreen.obj
+ 0001:000000d0       ??_C@_1BG@KHEAEOIK@?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAR?$AAa?$AAt?$AAe?$AA?$AA@ 100010d0     touchscreen.obj
+ 0001:000000e8       ??_C@_1DE@CLFJDOFC@?$AA?2?$AAH?$AAA?$AAR?$AAD?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AAM?$AAA?$AAP?$AA?2?$AAT?$AAO?$AAU?$AAC?$AAH?$AA?$AA@ 100010e8     touchscreen.obj
+ 0001:000001c8       MIN_CAL_COUNT              100011c8     touchscreen.obj
+ 0001:000001d0       ??_C@_1GI@JJECIELC@?$AAt?$AAo?$AAu?$AAc?$AAh?$AAp?$AA?3?$AA?5?$AAc?$AAa?$AAl?$AAi?$AAb?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAn?$AAe?$AAw?$AA?5?$AAc?$AAa?$AAl?$AAi?$AAb?$AAr?$AAa@ 100011d0     touchscreen.obj
+ 0001:00000238       ??_C@_1FI@LNOAEKNM@?$AAt?$AAo?$AAu?$AAc?$AAh?$AAp?$AA?3?$AA?5?$AAc?$AAa?$AAl?$AAi?$AAb?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAC?$AAa?$AAn?$AA?8?$AAt?$AA?5?$AAf?$AAi?$AAn?$AAd?$AA?5@ 10001238     touchscreen.obj
+ 0001:00000290       ??_C@_1CM@DKJPPKPA@?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AA?1?$AAG?$AAw?$AAe?$AAA?$AAp?$AAi?$AAS?$AAe?$AAt?$AAR?$AAe?$AAa?$AAd?$AAy?$AA?$AA@ 10001290     touchscreen.obj
+ 0001:000002bc       ??_C@_1CA@BNLIHNAH@?$AAC?$AAa?$AAl?$AAi?$AAb?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AAD?$AAa?$AAt?$AAa?$AA?$AA@ 100012bc     touchscreen.obj
+ 0001:000002dc       ??_C@_1DC@PPKDPGKC@?$AAH?$AAA?$AAR?$AAD?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AAM?$AAA?$AAP?$AA?2?$AAT?$AAO?$AAU?$AAC?$AAH?$AA?$AA@ 100012dc     touchscreen.obj
+ 0001:00000310       ??_C@_1DC@HHPHEMLK@?$AAP?$AAd?$AAd?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAH?$AAa?$AAr?$AAd?$AAw?$AAa?$AAr?$AAe?$AA?9?$AA?$AN?$AA?6?$AA?$AA@ 10001310     touchscreen.obj
+ 0001:00000348       ??_C@_1EK@GEMADHBH@?$AAP?$AAd?$AAd?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAH?$AAa?$AAr?$AAd?$AAw?$AAa?$AAr?$AAe?$AA?3?$AA?5?$AAT?$AAP?$AA_?$AAI?$AAR?$AAQ?$AA?5?$AA?$DN?$AA?5@ 10001348     touchscreen.obj
+ 0001:00000398       ??_C@_1EC@LKNFFPIM@?$AAP?$AAd?$AAd?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAH?$AAa?$AAr?$AAd?$AAw?$AAa?$AAr?$AAe?$AA?3?$AA?5?$AAO?$AAp?$AAe?$AAn?$AA?5?$AA?$CF?$AAs?$AA?$AN?$AA?6@ 10001398     touchscreen.obj
+ 0001:000003dc       ??_C@_1DC@LBJIEFDN@?$AAP?$AAd?$AAd?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAH?$AAa?$AAr?$AAd?$AAw?$AAa?$AAr?$AAe?$AA?$CL?$AA?$AN?$AA?6?$AA?$AA@ 100013dc     touchscreen.obj
+ 0001:00000410       ??_C@_1DA@HKFONNCH@?$AAD?$AAd?$AAs?$AAi?$AAT?$AAo?$AAu?$AAc?$AAh?$AAP?$AAa?$AAn?$AAe?$AAl?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?9?$AA?$AN?$AA?6?$AA?$AA@ 10001410     touchscreen.obj
+ 0001:00000440       ??_C@_1DA@LMDBNEKA@?$AAD?$AAd?$AAs?$AAi?$AAT?$AAo?$AAu?$AAc?$AAh?$AAP?$AAa?$AAn?$AAe?$AAl?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?$CL?$AA?$AN?$AA?6?$AA?$AA@ 10001440     touchscreen.obj
+ 0001:00000470       ??_C@_1GI@MGLMFFFE@?$AAM?$AAa?$AAx?$AAi?$AAm?$AAu?$AAm?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AA?$CF?$AAu?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAe?$AAd?$AAs?$AA?5?$AAc?$AAa?$AAl?$AAi?$AAb?$AAr?$AAa@ 10001470     tch_cal:calibrat.obj
+ 0001:000004d8       ??_C@_1DI@HBBBNELP@?$AAM?$AAa?$AAx?$AAi?$AAm?$AAu?$AAm?$AA?5?$AAA?$AAl?$AAl?$AAo?$AAw?$AAe?$AAd?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?$AN?$AA?6?$AA?$AA@ 100014d8     tch_cal:calibrat.obj
+ 0001:00000510       ??_C@_1BI@KKLLCJMC@?$AAM?$AAa?$AAx?$AAC?$AAa?$AAl?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$AA@ 10001510     tch_cal:calibrat.obj
+ 0001:00000528       ??_C@_1FO@JLBFGOAH@?$AAT?$AAo?$AAu?$AAc?$AAh?$AAP?$AAa?$AAn?$AAe?$AAl?$AAS?$AAe?$AAt?$AAC?$AAa?$AAl?$AAi?$AAb?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AAd?$AAe?$AAl?$AAt?$AAa?$AA?5@ 10001528     tch_cal:calibrat.obj
+ 0001:00000588       ??_C@_1CO@IBMILJAB@?$AA?7?$AAC?$AAa?$AAl?$AAi?$AAb?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?4?$AA?$AN?$AA?6?$AA?$AA@ 10001588     tch_cal:calibrat.obj
+ 0001:000005b8       ??_C@_1DI@KAFCCODB@?$AAM?$AA?5?$AA?$CF?$AAl?$AAd?$AA?0?$AA?$CF?$AAl?$AAd?$AA?5?$AA?5?$AA?$CF?$AAl?$AAd?$AA?0?$AA?$CF?$AAl?$AAd?$AA?5?$AA?5?$AA?$CF?$AAl?$AAd?$AA?0?$AA?$CF?$AAl?$AAd?$AA?$AA@ 100015b8     tchmdd:tchmain.obj
+ 0001:000005f0       ??_C@_1FA@JCKIIMMD@?$AAT?$AAO?$AAU?$AAC?$AAH?$AA?3?$AAT?$AAh?$AAr?$AAd?$AAP?$AAr?$AAi?$AAo?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?0?$AA?5?$AAT?$AAh?$AAr?$AAd?$AAH?$AAi?$AAg?$AAh?$AAP?$AAr?$AAi@ 100015f0     tchmdd:tchmain.obj
+ 0001:00000640       ??_C@_1CA@IHOLOKEO@?$AAH?$AAi?$AAg?$AAh?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001640     tchmdd:tchmain.obj
+ 0001:00000660       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001660     tchmdd:tchmain.obj
+ 0001:00000678       ??_C@_1CO@HCHNLANK@?$AA?2?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAs?$AA?2?$AAB?$AAu?$AAi?$AAl?$AAt?$AAI?$AAn?$AA?2?$AAT?$AAo?$AAu?$AAc?$AAh?$AA?$AA@ 10001678     tchmdd:tchmain.obj
+ 0001:000006a8       ??_C@_1BM@IOLIHJIC@?$AAA?$AAc?$AAt?$AAi?$AAv?$AAi?$AAt?$AAy?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?$AA@ 100016a8     tchmdd:tchmain.obj
+ 0001:000006c4       ??_C@_1BG@JBGCDLHB@?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?2?$AAG?$AAW?$AAE?$AA?$AA@ 100016c4     tchmdd:tchmain.obj
+ 0001:00000708       TouchDriverCalibrationPointGet 10001708 f   touchscreen.obj
+ 0001:000007e0       DdsiTouchPanelGetDeviceCaps 100017e0 f   touchscreen.obj
+ 0001:00000864       DdsiTouchPanelSetMode      10001864 f   touchscreen.obj
+ 0001:000008a0       DdsiTouchPanelAttach       100018a0 f   touchscreen.obj
+ 0001:000008b8       DdsiTouchPanelDetach       100018b8 f   touchscreen.obj
+ 0001:000008d0       DdsiTouchPanelPowerHandler 100018d0 f   touchscreen.obj
+ 0001:000008f4       ?PddDeinitializeHardware@@YAXXZ 100018f4 f   touchscreen.obj
+ 0001:00000940       ?PddGetTouchData@@YAHPAI0@Z 10001940 f   touchscreen.obj
+ 0001:00000ccc       ?StartCalibrationThread@@YAXXZ 10001ccc f   touchscreen.obj
+ 0001:00000d08       DdsiTouchPanelDisable      10001d08 f   touchscreen.obj
+ 0001:00000d60       DdsiTouchPanelGetPoint     10001d60 f   touchscreen.obj
+ 0001:00000f18       ?PddInitializeHardware@@YAHXZ 10001f18 f   touchscreen.obj
+ 0001:00001084       DdsiTouchPanelEnable       10002084 f   touchscreen.obj
+ 0001:00001140       ComputeMatrix33            10002140 f   tch_cal:calibrat.obj
+ 0001:00001284       TouchPanelCalibrateAPoint  10002284 f   tch_cal:calibrat.obj
+ 0001:00001340       ErrorAnalysis              10002340 f   tch_cal:calibrat.obj
+ 0001:00001490       TouchPanelSetCalibration   10002490 f   tch_cal:calibrat.obj
+ 0001:00001a78       LargeNumSet                10002a78 f   tch_cal:largenum.obj
+ 0001:00001ab8       IsLargeNumNotZero          10002ab8 f   tch_cal:largenum.obj
+ 0001:00001ae8       IsLargeNumNegative         10002ae8 f   tch_cal:largenum.obj
+ 0001:00001afc       IsLargeNumMagGreaterThan   10002afc f   tch_cal:largenum.obj
+ 0001:00001b48       LargeNumMagInc             10002b48 f   tch_cal:largenum.obj
+ 0001:00001b7c       LargeNumMagAdd             10002b7c f   tch_cal:largenum.obj
+ 0001:00001be8       LargeNumMagSub             10002be8 f   tch_cal:largenum.obj
+ 0001:00001c58       LargeNumAdd                10002c58 f   tch_cal:largenum.obj
+ 0001:00001d04       LargeNumSub                10002d04 f   tch_cal:largenum.obj
+ 0001:00001db0       LargeNumMulUint32          10002db0 f   tch_cal:largenum.obj
+ 0001:00001e18       LargeNumMult               10002e18 f   tch_cal:largenum.obj
+ 0001:00001f74       LargeNumSignedFormat       10002f74 f   tch_cal:largenum.obj
+ 0001:00001fb8       LargeNumRAShift            10002fb8 f   tch_cal:largenum.obj
+ 0001:000020a4       LargeNumDivInt32           100030a4 f   tch_cal:largenum.obj
+ 0001:000021c8       LargeNumBits               100031c8 f   tch_cal:largenum.obj
+ 0001:00002230       TouchPanelDllEntry         10003230 f   tchmdd:tchbasic.obj
+ 0001:00002274       DllMain                    10003274 f   tchmdd:tchbasic.obj
+ 0001:000026ec       TouchPanelGetDeviceCaps    100036ec f   tchmdd:tchmain.obj
+ 0001:00002758       TouchPanelSetMode          10003758 f   tchmdd:tchmain.obj
+ 0001:000027e4       TouchPanelPowerHandler     100037e4 f   tchmdd:tchmain.obj
+ 0001:000027f4       TouchPanelEnable           100037f4 f   tchmdd:tchmain.obj
+ 0001:00002a20       TouchPanelDisable          10003a20 f   tchmdd:tchmain.obj
+ 0001:00002b40       TouchPanelReadCalibrationPoint 10003b40 f   tchmdd:tchmain.obj
+ 0001:00002d08       TouchPanelReadCalibrationAbort 10003d08 f   tchmdd:tchmain.obj
+ 0001:00002d58       SetLastError               10003d58 f   coredll:COREDLL.dll
+ 0001:00002d68       InterruptMask              10003d68 f   coredll:COREDLL.dll
+ 0001:00002d78       Sleep                      10003d78 f   coredll:COREDLL.dll
+ 0001:00002d88       NKDbgPrintfW               10003d88 f   coredll:COREDLL.dll
+ 0001:00002d98       TouchCalibrate             10003d98 f   coredll:COREDLL.dll
+ 0001:00002da8       CloseHandle                10003da8 f   coredll:COREDLL.dll
+ 0001:00002db8       WaitForSingleObject        10003db8 f   coredll:COREDLL.dll
+ 0001:00002dc8       OpenEventW                 10003dc8 f   coredll:COREDLL.dll
+ 0001:00002dd8       RegCloseKey                10003dd8 f   coredll:COREDLL.dll
+ 0001:00002de8       RegQueryValueExW           10003de8 f   coredll:COREDLL.dll
+ 0001:00002df8       RegOpenKeyExW              10003df8 f   coredll:COREDLL.dll
+ 0001:00002e08       CreateThread               10003e08 f   coredll:COREDLL.dll
+ 0001:00002e18       KernelIoControl            10003e18 f   coredll:COREDLL.dll
+ 0001:00002e28       InterruptDone              10003e28 f   coredll:COREDLL.dll
+ 0001:00002e38       DisableThreadLibraryCalls  10003e38 f   coredll:COREDLL.dll
+ 0001:00002e48       EventModify                10003e48 f   coredll:COREDLL.dll
+ 0001:00002e58       InitializeCriticalSection  10003e58 f   coredll:COREDLL.dll
+ 0001:00002e68       CreateEventW               10003e68 f   coredll:COREDLL.dll
+ 0001:00002e78       ExitThread                 10003e78 f   coredll:COREDLL.dll
+ 0001:00002e88       GetTickCount               10003e88 f   coredll:COREDLL.dll
+ 0001:00002e98       LeaveCriticalSection       10003e98 f   coredll:COREDLL.dll
+ 0001:00002ea8       EnterCriticalSection       10003ea8 f   coredll:COREDLL.dll
+ 0001:00002eb8       CeSetThreadPriority        10003eb8 f   coredll:COREDLL.dll
+ 0001:00002ec8       InterruptInitialize        10003ec8 f   coredll:COREDLL.dll
+ 0001:00002ed8       InterruptDisable           10003ed8 f   coredll:COREDLL.dll
+ 0001:00002ee8       DeleteCriticalSection      10003ee8 f   coredll:COREDLL.dll
+ 0001:00002ef8       GPIOClose                  10003ef8 f   ceddk:CEDDK.dll
+ 0001:00002f08       SPIClose                   10003f08 f   ceddk:CEDDK.dll
+ 0001:00002f18       GPIOGetBit                 10003f18 f   ceddk:CEDDK.dll
+ 0001:00002f28       SPIWriteRead               10003f28 f   ceddk:CEDDK.dll
+ 0001:00002f38       SPIConfigure               10003f38 f   ceddk:CEDDK.dll
+ 0001:00002f48       SPIOpen                    10003f48 f   ceddk:CEDDK.dll
+ 0001:00002f58       GPIOIoControl              10003f58 f   ceddk:CEDDK.dll
+ 0001:00002f68       GPIOSetMode                10003f68 f   ceddk:CEDDK.dll
+ 0001:00002f78       GPIOOpen                   10003f78 f   ceddk:CEDDK.dll
+ 0001:00002f88       GetDeviceRegistryParams    10003f88 f   ceddk:CEDDK.dll
+ 0001:00002f98       IsDVIMode                  10003f98 f   ceddk:CEDDK.dll
+ 0001:00002fa8       GPIOGetSystemIrq           10003fa8 f   ceddk:CEDDK.dll
+ 0001:000030bc       _DllMainCRTStartup         100040bc f   corelib0:pegdmain.obj
+ 0001:000030ec       __GSHandlerCheckCommon     100040ec f   corelib0:gshandler.obj
+ 0001:00003128       __GSHandlerCheck           10004128 f   corelib0:gshandler.obj
+ 0001:0000314c       __security_init_cookie     1000414c f   corelib0:seccinit.obj
+ 0001:000031a8       __security_check_cookie    100041a8 f   corelib0:armsecgs.obj
+ 0001:000031bc       __gsfailure                100041bc f   corelib0:armsecgs.obj
+ 0001:000032fc       _cexit                     100042fc f   corelib0:cexit.obj
+ 0001:00003318       _initterm                  10004318 f   corelib0:crt0dat.obj
+ 0001:0000334c       _cinit                     1000434c f   corelib0:crt0dat.obj
+ 0001:00003380       __rt_udiv                  10004380 f   corelib1:COREDLL.dll
+ 0001:00003390       _XcptFilter                10004390 f   corelib1:COREDLL.dll
+ 0001:000033a0       __C_specific_handler       100043a0 f   corelib1:COREDLL.dll
+ 0001:000033b0       __security_gen_cookie2     100043b0 f   corelib1:COREDLL.dll
+ 0001:000033c0       __report_gsfailure         100043c0 f   corelib1:COREDLL.dll
+ 0001:000033d0       free                       100043d0 f   corelib1:COREDLL.dll
+ 0001:000033e0       InterlockedExchange        100043e0 f   coredll:COREDLL.dll
+ 0001:000033f0       TerminateProcess           100043f0 f   coredll:COREDLL.dll
+ 0001:0000342c       __IMPORT_DESCRIPTOR_COREDLL 1000442c     coredll:COREDLL.dll
+ 0001:00003440       __IMPORT_DESCRIPTOR_CEDDK  10004440     ceddk:CEDDK.dll
+ 0001:00003454       __NULL_IMPORT_DESCRIPTOR   10004454     coredll:COREDLL.dll
+ 0002:00000000       __imp_IsDVIMode            10005000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_GetDeviceRegistryParams 10005004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_GPIOOpen             10005008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_GPIOSetMode          1000500c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_GPIOIoControl        10005010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_SPIOpen              10005014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_SPIConfigure         10005018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_SPIWriteRead         1000501c     ceddk:CEDDK.dll
+ 0002:00000020       __imp_GPIOGetBit           10005020     ceddk:CEDDK.dll
+ 0002:00000024       __imp_SPIClose             10005024     ceddk:CEDDK.dll
+ 0002:00000028       __imp_GPIOClose            10005028     ceddk:CEDDK.dll
+ 0002:0000002c       __imp_GPIOGetSystemIrq     1000502c     ceddk:CEDDK.dll
+ 0002:00000030       \177CEDDK_NULL_THUNK_DATA  10005030     ceddk:CEDDK.dll
+ 0002:00000034       __imp_InterruptDone        10005034     coredll:COREDLL.dll
+ 0002:00000038       __imp_DisableThreadLibraryCalls 10005038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_EventModify          1000503c     coredll:COREDLL.dll
+ 0002:00000040       __imp_InitializeCriticalSection 10005040     coredll:COREDLL.dll
+ 0002:00000044       __imp_CreateEventW         10005044     coredll:COREDLL.dll
+ 0002:00000048       __imp_ExitThread           10005048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_KernelIoControl      1000504c     coredll:COREDLL.dll
+ 0002:00000050       __imp_LeaveCriticalSection 10005050     coredll:COREDLL.dll
+ 0002:00000054       __imp_EnterCriticalSection 10005054     coredll:COREDLL.dll
+ 0002:00000058       __imp_CeSetThreadPriority  10005058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_InterruptInitialize  1000505c     coredll:COREDLL.dll
+ 0002:00000060       __imp_InterruptDisable     10005060     coredll:COREDLL.dll
+ 0002:00000064       __imp_DeleteCriticalSection 10005064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CreateThread         10005068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_RegOpenKeyExW        1000506c     coredll:COREDLL.dll
+ 0002:00000070       __imp_RegQueryValueExW     10005070     coredll:COREDLL.dll
+ 0002:00000074       __imp_RegCloseKey          10005074     coredll:COREDLL.dll
+ 0002:00000078       __imp_OpenEventW           10005078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_WaitForSingleObject  1000507c     coredll:COREDLL.dll
+ 0002:00000080       __imp_CloseHandle          10005080     coredll:COREDLL.dll
+ 0002:00000084       __imp_TouchCalibrate       10005084     coredll:COREDLL.dll
+ 0002:00000088       __imp_NKDbgPrintfW         10005088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_Sleep                1000508c     coredll:COREDLL.dll
+ 0002:00000090       __imp_InterruptMask        10005090     coredll:COREDLL.dll
+ 0002:00000094       __imp_GetTickCount         10005094     coredll:COREDLL.dll
+ 0002:00000098       __imp_SetLastError         10005098     coredll:COREDLL.dll
+ 0002:0000009c       __imp___rt_udiv            1000509c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp___rt_sdiv            100050a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp__XcptFilter          100050a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp___C_specific_handler 100050a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp___security_gen_cookie2 100050ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp___report_gsfailure   100050b0     corelib1:COREDLL.dll
+ 0002:000000b4       __imp_free                 100050b4     corelib1:COREDLL.dll
+ 0002:000000b8       __imp_InterlockedExchange  100050b8     coredll:COREDLL.dll
+ 0002:000000bc       __imp_TerminateProcess     100050bc     coredll:COREDLL.dll
+ 0002:000000c0       \177COREDLL_NULL_THUNK_DATA 100050c0     coredll:COREDLL.dll
+ 0002:00000188       gdwTouchIstTimeout         10005188     tchmdd:tchmain.obj
+ 0002:0000018c       __security_cookie          1000518c     corelib0:seccinit.obj
+ 0002:00000190       __security_cookie_complement 10005190     corelib0:seccinit.obj
+ 0002:000001a0       gIntrTouchChanged          100051a0     touchscreen.obj
+ 0002:000001a4       gIntrTouch                 100051a4     touchscreen.obj
+ 0002:00000200       v_pfnCgrCallback           10005200     tchmdd:tchbasic.obj
+ 0002:0000022c       _bTchThreadHighPriority    1000522c     tchmdd:tchmain.obj
+ 0002:00000230       hThread                    10005230     tchmdd:tchmain.obj
+ 0002:00000238       _exitflag                  10005238     corelib0:cexit.obj
+ 0002:0000023c       v_pfnPointCallback         1000523c     <common>
+ 0002:00000240       CalibrationState           10005240     <common>
+ 0002:00000244       ghevCalibrationActivity    10005244     <common>
+ 0002:00000248       culReferenceCount          10005248     <common>
+ 0002:0000024c       DisplayHeight              1000524c     <common>
+ 0002:00000260       csMutex                    10005260     <common>
+ 0002:00000274       hTouchPanelEvent           10005274     <common>
+ 0002:00000278       hCalibrationSampleAvailable 10005278     <common>
+ 0002:0000027c       DisplayWidth               1000527c     <common>
+ 0002:00000280       lCalibrationYCoord         10005280     <common>
+ 0002:00000284       lCalibrationXCoord         10005284     <common>
+ 0002:00000288       v_pfnCgrPointCallback      10005288     <common>
+ 0002:0000028c       __onexitend                1000528c     <common>
+ 0002:00000290       __onexitbegin              10005290     <common>
+ 0002:00000294       g_pcsExit                  10005294     <common>
+ 0002:00000298       _pRawDllMain               10005298     <common>
+
+ entry point at        0001:000030bc
+
+ Static symbols
+
+ 0001:00000b50       ?CalibrationThread@@YAKXZ  10001b50 f   touchscreen.obj
+ 0001:00002284       TouchPanelpISR             10003284 f   tchmdd:tchmain.obj
+ 0001:00002614       TouchPanelpGetPriority     10003614 f   tchmdd:tchmain.obj
+ 0001:00002fc0       _DllMainCRTStartupHelper   10003fc0 f   corelib0:pegdmain.obj
+ 0001:00003200       doexit                     10004200 f   corelib0:cexit.obj

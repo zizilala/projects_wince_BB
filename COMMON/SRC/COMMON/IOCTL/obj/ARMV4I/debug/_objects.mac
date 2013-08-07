@@ -1,0 +1,11 @@
+OBJECTS=\
+    obj\ARMV4I\debug\imgupd.obj\
+    obj\ARMV4I\debug\ioctl.obj\
+    obj\ARMV4I\debug\deviceid.obj\
+    obj\ARMV4I\debug\randomseed.obj\
+    obj\ARMV4I\debug\deviceinfo.obj\
+    obj\ARMV4I\debug\securekeys.obj\
+    obj\ARMV4I\debug\procinfo.obj\
+    obj\ARMV4I\debug\reginit.obj\
+    obj\ARMV4I\debug\uuid.obj
+

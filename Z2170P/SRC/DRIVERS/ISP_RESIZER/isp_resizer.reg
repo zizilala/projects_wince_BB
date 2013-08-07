@@ -1,0 +1,7 @@
+IF BSP_OMAP_ISP_RESIZER
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Resizer]
+    "Prefix"="RSZ"
+    "Dll"="omap_isp_resizer.dll"
+    "Index"=dword:1
+    "Order"=dword:15
+ENDIF BSP_OMAP_ISP_RESIZER     

@@ -1,0 +1,168 @@
+ ti_cpuloadpolicy
+
+ Timestamp is 51ede8c8 (Tue Jul 23 10:22:00 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 0000050cH .rdata                  CODE
+ 0001:0000052c 0000002dH .rdata$debug            CODE
+ 0001:0000055c 00000d30H .text                   CODE
+ 0001:0000128c 00000018H .xdata                  CODE
+ 0001:000012a4 00000028H .idata$2                CODE
+ 0001:000012cc 00000014H .idata$3                CODE
+ 0001:000012e0 00000094H .idata$4                CODE
+ 0001:00001374 00000016H .idata$6                CODE
+ 0001:00001390 00000072H .edata                  CODE
+ 0002:00000000 00000094H .idata$5                DATA
+ 0002:00000098 0000044cH .data                   DATA
+ 0002:000004e8 00000314H .bss                    DATA
+ 0003:00000000 00000088H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BK@GGPFJAKI@?$AAO?$AAp?$AAm?$AAT?$AAh?$AAr?$AAe?$AAs?$AAh?$AAo?$AAl?$AAd?$AA?$AA@ 1000103c     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000058       ??_C@_1BK@JBFHLCFD@?$AAO?$AAp?$AAm?$AAF?$AAr?$AAe?$AAq?$AAu?$AAe?$AAn?$AAc?$AAy?$AA?$AA@ 10001058     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000074       ??_C@_1BA@PHGEHICJ@?$AAB?$AAo?$AAo?$AAt?$AAO?$AAp?$AAm?$AA?$AA@ 10001074     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000084       ??_C@_1BG@PIFCPJOI@?$AAN?$AAo?$AAm?$AAi?$AAn?$AAa?$AAl?$AAO?$AAp?$AAm?$AA?$AA@ 10001084     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:0000009c       ??_C@_1BC@PCJGMNEF@?$AAF?$AAl?$AAo?$AAo?$AAr?$AAO?$AAp?$AAm?$AA?$AA@ 1000109c     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:000000b0       ??_C@_1BG@MDMFEMEA@?$AAC?$AAe?$AAi?$AAl?$AAi?$AAn?$AAg?$AAO?$AAp?$AAm?$AA?$AA@ 100010b0     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:000000c8       ??_C@_17MABAPADF@?$AAi?$AAr?$AAq?$AA?$AA@ 100010c8     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:000000d0       ??_C@_1BI@KFGACGKF@?$AAB?$AAo?$AAo?$AAt?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$AA@ 100010d0     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:000000e8       ??_C@_1BM@IFDCDHND@?$AAB?$AAo?$AAo?$AAt?$AAE?$AAv?$AAe?$AAn?$AAt?$AAN?$AAa?$AAm?$AAe?$AA?$AA@ 100010e8     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000104       ??_C@_1BI@OJGHJKJA@?$AAp?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001104     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:0000011c       ??_C@_1CG@DGBBDLHK@?$AAI?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AAT?$AAh?$AAr?$AAe?$AAs?$AAh?$AAo?$AAl?$AAd?$AA?$AA@ 1000111c     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000144       ??_C@_1BM@CDPNPEPF@?$AAM?$AAo?$AAn?$AAi?$AAt?$AAo?$AAr?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AA?$AA@ 10001144     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000160       ??_C@_1BM@KHABJPHC@?$AAM?$AAo?$AAn?$AAi?$AAt?$AAo?$AAr?$AAP?$AAe?$AAr?$AAi?$AAo?$AAd?$AA?$AA@ 10001160     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:000002b8       ??_C@_1GC@IJBIJFID@?$AAo?$AAp?$AAm?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AA?$DN?$AAO?$AAP?$AAM?$AA?$CF?$AAd?$AA?0?$AA?5?$AAo?$AAp?$AAm?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AA?$DN?$AAO?$AAP?$AAM@ 100012b8     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000320       ??_C@_1FM@HPFHHCFK@?$AAC?$AAP?$AAU?$AAL?$AAD?$AA_?$AAI?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AA?5?$AAU?$AAn?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?5?$AAC?$AAP@ 10001320     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:0000037c       ??_C@_19BINEIDCP@?$AAD?$AAV?$AAF?$AAS?$AA?$AA@ 1000137c     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000388       ??_C@_1JC@FFHPOPCB@?$AAC?$AAP?$AAU?$AAL?$AAD?$AA_?$AAI?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?1?$AAM?$AAi?$AAs?$AAs?$AAi?$AAn@ 10001388     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000420       ??_C@_1EK@LKAEFDF@?$AAf?$AAr?$AAe?$AAq?$AAu?$AAe?$AAn?$AAc?$AAy?$AA?$DN?$AA?$CF?$AAd?$AA?0?$AA?5?$AAf?$AAl?$AAo?$AAo?$AAr?$AA?$DN?$AA?$CF?$AAd?$AA?0?$AA?5?$AAc?$AAe?$AAi?$AAl?$AAi?$AAn?$AAg?$AA?$DN@ 10001420     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000470       ??_C@_1JG@OBJIFLGH@?$AAC?$AAP?$AAU?$AAL?$AAD?$AA_?$AAI?$AAn?$AAi?$AAt?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?3?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?1?$AAM?$AAi?$AAs?$AAs?$AAi?$AAn@ 10001470     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000508       ??_C@_1M@FBGIFOCP@?$AA?2?$AA3?$AA5?$AA1?$AA7?$AA?$AA@ 10001508     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000514       ??_C@_1M@LKEIENOA@?$AA?2?$AA3?$AA5?$AAx?$AAx?$AA?$AA@ 10001514     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000520       ??_C@_1M@PIGNEKJN@?$AA?2?$AA3?$AA7?$AAx?$AAx?$AA?$AA@ 10001520     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:0000055c       ?DvfsConstraintCallback@@YAHPAXK0I@Z 1000155c f   ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:000005a4       ?UpdateTimeBuckets@@YAXPAUBucketInfo_t@@K@Z 100015a4 f   ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000608       ?CpuLoadThreadFn@@YAKPAX@Z 10001608 f   ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000820       ?CPULD_InitPolicy@@YAPAXPBG@Z 10001820 f   ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000ba4       ?CPULD_DeinitPolicy@@YAHPAX@Z 10001ba4 f   ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000c64       DllMain                    10001c64 f   ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0001:00000c94       PmxUpdateConstraint        10001c94 f   ceddk:CEDDK.dll
+ 0001:00000ca4       PmxRegisterConstraintCallback 10001ca4 f   ceddk:CEDDK.dll
+ 0001:00000cb4       PmxSetConstraintById       10001cb4 f   ceddk:CEDDK.dll
+ 0001:00000cc4       GetDeviceRegistryParams    10001cc4 f   ceddk:CEDDK.dll
+ 0001:00000cd4       PmxReleaseConstraint       10001cd4 f   ceddk:CEDDK.dll
+ 0001:00000ce4       PmxUnregisterConstraintCallback 10001ce4 f   ceddk:CEDDK.dll
+ 0001:00000cf4       EventModify                10001cf4 f   coredll:COREDLL.dll
+ 0001:00000d04       InterruptMask              10001d04 f   coredll:COREDLL.dll
+ 0001:00000d14       NKDbgPrintfW               10001d14 f   coredll:COREDLL.dll
+ 0001:00000d24       GetIdleTime                10001d24 f   coredll:COREDLL.dll
+ 0001:00000d34       GetTickCount               10001d34 f   coredll:COREDLL.dll
+ 0001:00000d44       WaitForSingleObject        10001d44 f   coredll:COREDLL.dll
+ 0001:00000d54       CeSetThreadPriority        10001d54 f   coredll:COREDLL.dll
+ 0001:00000d64       CreateThread               10001d64 f   coredll:COREDLL.dll
+ 0001:00000d74       LocalAlloc                 10001d74 f   coredll:COREDLL.dll
+ 0001:00000d84       InterruptInitialize        10001d84 f   coredll:COREDLL.dll
+ 0001:00000d94       CreateEventW               10001d94 f   coredll:COREDLL.dll
+ 0001:00000da4       KernelIoControl            10001da4 f   coredll:COREDLL.dll
+ 0001:00000db4       LocalFree                  10001db4 f   coredll:COREDLL.dll
+ 0001:00000dc4       InterruptDisable           10001dc4 f   coredll:COREDLL.dll
+ 0001:00000dd4       CloseHandle                10001dd4 f   coredll:COREDLL.dll
+ 0001:00000de4       DisableThreadLibraryCalls  10001de4 f   coredll:COREDLL.dll
+ 0001:00000df4       RegisterDbgZones           10001df4 f   coredll:COREDLL.dll
+ 0001:00000f08       _DllMainCRTStartup         10001f08 f   corelib0:pegdmain.obj
+ 0001:00000f38       __GSHandlerCheckCommon     10001f38 f   corelib0:gshandler.obj
+ 0001:00000f74       __GSHandlerCheck           10001f74 f   corelib0:gshandler.obj
+ 0001:00000f98       __security_init_cookie     10001f98 f   corelib0:seccinit.obj
+ 0001:00000ff4       __security_check_cookie    10001ff4 f   corelib0:armsecgs.obj
+ 0001:00001008       __gsfailure                10002008 f   corelib0:armsecgs.obj
+ 0001:00001148       _cexit                     10002148 f   corelib0:cexit.obj
+ 0001:00001164       _initterm                  10002164 f   corelib0:crt0dat.obj
+ 0001:00001198       _cinit                     10002198 f   corelib0:crt0dat.obj
+ 0001:000011cc       __rt_udiv                  100021cc f   corelib1:COREDLL.dll
+ 0001:000011dc       memset                     100021dc f   corelib1:COREDLL.dll
+ 0001:000011ec       wcscat                     100021ec f   corelib1:COREDLL.dll
+ 0001:000011fc       wcscpy                     100021fc f   corelib1:COREDLL.dll
+ 0001:0000120c       _XcptFilter                1000220c f   corelib1:COREDLL.dll
+ 0001:0000121c       __C_specific_handler       1000221c f   corelib1:COREDLL.dll
+ 0001:0000122c       __security_gen_cookie2     1000222c f   corelib1:COREDLL.dll
+ 0001:0000123c       __report_gsfailure         1000223c f   corelib1:COREDLL.dll
+ 0001:0000124c       free                       1000224c f   corelib1:COREDLL.dll
+ 0001:0000125c       DeleteCriticalSection      1000225c f   coredll:COREDLL.dll
+ 0001:0000126c       InterlockedExchange        1000226c f   coredll:COREDLL.dll
+ 0001:0000127c       TerminateProcess           1000227c f   coredll:COREDLL.dll
+ 0001:000012a4       __IMPORT_DESCRIPTOR_CEDDK  100022a4     ceddk:CEDDK.dll
+ 0001:000012b8       __IMPORT_DESCRIPTOR_COREDLL 100022b8     coredll:COREDLL.dll
+ 0001:000012cc       __NULL_IMPORT_DESCRIPTOR   100022cc     ceddk:CEDDK.dll
+ 0002:00000000       __imp_PmxRegisterConstraintCallback 10003000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_PmxSetConstraintById 10003004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_GetDeviceRegistryParams 10003008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_PmxReleaseConstraint 1000300c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_PmxUnregisterConstraintCallback 10003010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_PmxUpdateConstraint  10003014     ceddk:CEDDK.dll
+ 0002:00000018       \177CEDDK_NULL_THUNK_DATA  10003018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_EventModify          1000301c     coredll:COREDLL.dll
+ 0002:00000020       __imp_InterruptMask        10003020     coredll:COREDLL.dll
+ 0002:00000024       __imp_NKDbgPrintfW         10003024     coredll:COREDLL.dll
+ 0002:00000028       __imp_GetIdleTime          10003028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_GetTickCount         1000302c     coredll:COREDLL.dll
+ 0002:00000030       __imp_WaitForSingleObject  10003030     coredll:COREDLL.dll
+ 0002:00000034       __imp_CeSetThreadPriority  10003034     coredll:COREDLL.dll
+ 0002:00000038       __imp_CreateThread         10003038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_LocalAlloc           1000303c     coredll:COREDLL.dll
+ 0002:00000040       __imp_InterruptInitialize  10003040     coredll:COREDLL.dll
+ 0002:00000044       __imp_CreateEventW         10003044     coredll:COREDLL.dll
+ 0002:00000048       __imp_KernelIoControl      10003048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_LocalFree            1000304c     coredll:COREDLL.dll
+ 0002:00000050       __imp_InterruptDisable     10003050     coredll:COREDLL.dll
+ 0002:00000054       __imp_CloseHandle          10003054     coredll:COREDLL.dll
+ 0002:00000058       __imp_DisableThreadLibraryCalls 10003058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_RegisterDbgZones     1000305c     coredll:COREDLL.dll
+ 0002:00000060       __imp___rt_udiv            10003060     corelib1:COREDLL.dll
+ 0002:00000064       __imp_memset               10003064     corelib1:COREDLL.dll
+ 0002:00000068       __imp_wcscat               10003068     corelib1:COREDLL.dll
+ 0002:0000006c       __imp_wcscpy               1000306c     corelib1:COREDLL.dll
+ 0002:00000070       __imp__XcptFilter          10003070     corelib1:COREDLL.dll
+ 0002:00000074       __imp___C_specific_handler 10003074     corelib1:COREDLL.dll
+ 0002:00000078       __imp___security_gen_cookie2 10003078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp___report_gsfailure   1000307c     corelib1:COREDLL.dll
+ 0002:00000080       __imp_free                 10003080     corelib1:COREDLL.dll
+ 0002:00000084       __imp_DeleteCriticalSection 10003084     coredll:COREDLL.dll
+ 0002:00000088       __imp_InterlockedExchange  10003088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_TerminateProcess     1000308c     coredll:COREDLL.dll
+ 0002:00000090       \177COREDLL_NULL_THUNK_DATA 10003090     coredll:COREDLL.dll
+ 0002:00000098       dpCurSettings              10003098     ti_cpuloadpolicy_lib:cpuloadpolicy.obj
+ 0002:000004dc       __security_cookie          100034dc     corelib0:seccinit.obj
+ 0002:000004e0       __security_cookie_complement 100034e0     corelib0:seccinit.obj
+ 0002:000007e8       _exitflag                  100037e8     corelib0:cexit.obj
+ 0002:000007ec       __onexitend                100037ec     <common>
+ 0002:000007f0       __onexitbegin              100037f0     <common>
+ 0002:000007f4       g_pcsExit                  100037f4     <common>
+ 0002:000007f8       _pRawDllMain               100037f8     <common>
+
+ entry point at        0001:00000f08
+
+ Static symbols
+
+ 0001:00000e0c       _DllMainCRTStartupHelper   10001e0c f   corelib0:pegdmain.obj
+ 0001:0000104c       doexit                     1000204c f   corelib0:cexit.obj

@@ -1,0 +1,16 @@
+
+IF BSP_TPS659XX_RTC
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\RTC]
+    "Prefix"="RTC"
+    "Dll"="tps659xx_rtc.dll"
+    "Index"=dword:1
+    "Order"=dword:12
+
+    "PowerFlags"=dword:00000103              ; send pre/post device state changes
+    "SecureOffset"=dword:0
+    
+    ; CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID
+    "IClass"=multi_sz:"{A32942B7-920C-486b-B0E6-92A702A99B35}"
+   
+ENDIF ; BSP_TPS659XX_RTC    

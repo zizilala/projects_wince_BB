@@ -1,0 +1,348 @@
+; All rights reserved ADENEO EMBEDDED 2010
+
+IF BSP_OMAP_MCBSP1
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MCP1]
+    "Prefix"="MCP"
+    "Dll"="omap_mcbsp.dll"
+    "Index"=dword:1
+    "Order"=dword:13
+    "Port"=dword:1
+    "PowerFlags"=dword:00000103                         ; send pre/post device state changes
+    "McBSPProfile"=dword:1                  ; 0->I2S Slave Mode, 1->I2S Master Mode, 2-> TDM mode      
+;  ### Physical address: MCBSPLP1, SDMA, MCBSP1-SIDETONE (Note: McBSP1 does not have SIDETONE)
+    "MemBase"=multi_sz:"48074000", "48056000", "00000000"
+    "MemLen"=multi_sz:"00001000", "00001000", "00000000"
+    "DmaTxSyncMap"=dword:1F             ; SDMA_REQ_MCBSP1_TX
+    "DmaRxSyncMap"=dword:20             ; SDMA_REQ_MCBSP1_RX
+    "TxPriority"=dword:6E               ; Tx Thread priority 110
+    "RxPriority"=dword:6E               ; Rx Thread priority 110
+    "TxBufferSize"=dword:1000            ; Tx DMA Buffer size 0x1000
+    "RxBufferSize"=dword:1000            ; Rx DMA Buffer size 0x1000
+    "UseRegistryForMcbsp"=dword:1       ; Either 0 (use default setup) or 1 (use registry)
+; ### MCBSP configuration ###
+    "LoopbackMode"=dword:0              ; Either 0 (no loopback) or 1 (loopback)
+    "WordsPerFrame"=dword:1             ; Range 1-128 words
+    "WordLength"=dword:10               ; Range 8, 12, 16, 20, 24, or 32 bits
+    "WordLength2"=dword:10              ; Range 8, 12, 16, 20, 24, or 32 bits
+    "ReverseModeTx"=dword:0             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayTx"=dword:1               ; Range 0, 1, or 2 bits
+    "ClockModeTx"=dword:1               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceTx"=dword:3         ; Range 0 (ext), 2 (int xmit), or 3 (int SRG)
+    "PhaseTx"=dword:1                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityTx"=dword:0           ; Either 0 (data driven on rising edge) or 1 (falling)
+    "FrameSyncPolarityTx"=dword:0       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdTx"=dword:7F          ; Range 0-127 words for McBsp1,3,4,5
+    "ReverseModeRx"=dword:0             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayRx"=dword:1               ; Range 0, 1, or 2 bits
+    "ClockModeRx"=dword:1               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceRx"=dword:1         ; Either 0 (external) or 1 (internal)
+    "PhaseRx"=dword:1                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityRx"=dword:1           ; Either 0 (data sampled on falling edge) or 1 (rising)
+    "FrameSyncPolarityRx"=dword:0       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdRx"=dword:3F          ; Range 0-127 words for McBsp1,3,4,5
+    "ClockSourceSrg"=dword:0            ; Range 0 (rising CLKS), 1, (falling CLKS) 2 (CPU), 3 (CLKRI), or 4 (CLKXI)
+    "FrameWidthSrg"=dword:10            ; Range 1-256
+    "ClockDividerSrg"=dword:43          ; Range 0-255
+    "ClockResyncSrg"=dword:0            ; Either 0 (no resync) or 1 (resync)
+    "CLKSPinSource"=dword:0				; Either 0 (external) or 1 (internal)
+    "JustificationMode"=dword:0         ; Range 0 (right, zero fill), 1 (right, sign fill), or 2 (left)
+; ### TDM Mode configuration ###
+    "TDMWordsPerFrame"=dword:1                          ; Range 1-128 words
+    "PartitionMode"=dword:0                             ; 0-> 2-partition mode, 1-> 8-partition mode
+    "NumOfTxChannels"=dword:2                           ; Number of TX channels to be enabled
+    "EnableMcBSPTxChannels"=multi_sz:"0","1","90","90"
+    "NumOfRxChannels"=dword:2                           ; Number of RX channels to be enabled
+    "EnableMcBSPRxChannels"=multi_sz:"0","1","90","90"
+; ### IClass GUID ###
+    ; PMCLASS_PMEXT_GUID
+    "IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+
+ENDIF BSP_OMAP_MCBSP1
+
+IF BSP_OMAP_MCBSP2
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MCP2]
+    "Prefix"="MCP"
+    "Dll"="omap_mcbsp.dll"
+    "Index"=dword:2
+    "Order"=dword:13
+    "Port"=dword:2
+    "PowerFlags"=dword:00000103                         ; send pre/post device state changes
+    "McBSPProfile"=dword:0                  ; 0->I2S Slave Mode, 1->I2S Master Mode, 2-> TDM mode  
+;  ### Physical address: MCBSPLP2, SDMA, MCBSP2-SIDETONE
+    "MemBase"=multi_sz:"49022000", "48056000", "49028000"
+    "MemLen"=multi_sz:"00001000", "00001000", "00001000"  
+    "DmaTxSyncMap"=dword:21             ; SDMA_REQ_MCBSP2_TX
+    "DmaRxSyncMap"=dword:22             ; SDMA_REQ_MCBSP2_RX
+    "TxPriority"=dword:82                               ; Tx Thread priority 130
+    "RxPriority"=dword:82                               ; Rx Thread priority 130
+    "TxBufferSize"=dword:2000                           ; Tx DMA Buffer size 0x2000
+    "RxBufferSize"=dword:2000                           ; Rx DMA Buffer size 0x2000
+    "UseRegistryForMcbsp"=dword:1                       ; Either 0 (use default setup) or 1 (use registry)
+; ### MCBSP configuration ###
+    "LoopbackMode"=dword:0                              ; Either 0 (no loopback) or 1 (loopback)
+    "WordsPerFrame"=dword:1                             ; Range 1-128 words
+    "WordLength"=dword:20               ; Range 8, 12, 16, 20, 24, or 32 bits
+    "WordLength2"=dword:20              ; Range 8, 12, 16, 20, 24, or 32 bits
+    "WordsPerFrame"=dword:1             ; Range 1-128 words
+    "TDMWordsPerFrame"=dword:4          ; (takes 3-1 words =>2 words) Range 1-128 words  
+    "PartitionMode"=dword:0             ; 0-> 2-partition mode, 1-> 8-partition mode
+    "NumOfTxChannels"=dword:4         ; Number of channels to be enabled
+    ;in XCERA bit 0->L2 bit 1->L1 bit 2->R2 and bit 3->R1      
+    "EnableMcBSPTxChannels"=multi_sz:"0","2","0","2"
+    "NumOfRxChannels"=dword:4         ; Number of channels to be enabled 
+    ;in RCERA bit 0->L1 bit 1->L2 bit 2->R1 and bit 3->R2       
+    "EnableMcBSPRxChannels"=multi_sz:"0","1","0","1"
+    "DualPhase"=dword:1                 ; Either 0 (false) or 1 (true)
+    "DataDelay"=dword:1                 ; Range 0, 1, or 2 bits
+    "FrameSyncSourceTx"=dword:0         ; Range 0 (ext), 2 (int xmit), or 3 (int SRG)
+    "PhaseTx"=dword:0                                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityTx"=dword:0                           ; Either 0 (data driven on rising edge) or 1 (falling)
+    "FrameSyncPolarityTx"=dword:0                       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdTx"=dword:3FF                         ; Range 0-1023 words for McBsp2
+    "ReverseModeRx"=dword:0                             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayRx"=dword:1                               ; Range 0, 1, or 2 bits
+    "ClockModeRx"=dword:0                               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceRx"=dword:0         ; Either 0 (external) or 1 (internal)
+    "PhaseRx"=dword:0                                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityRx"=dword:1                           ; Either 0 (data sampled on falling edge) or 1 (rising)
+    "FrameSyncPolarityRx"=dword:0       ; Either 0 (active high) or 1 (active low)
+    "ClockPolarityTx"=dword:1           ; Either 0 (data driven on rising edge) or 1 (falling)
+    "ClockPolarityRx"=dword:1           ; Either 0 (data sampled on falling edge) or 1 (rising)
+    "ClockSourceSrg"=dword:4            ; Range 0 (rising CLKS), 1, (falling CLKS) 2 (CPU), 3 (CLKRI), or 4 (CLKXI)
+    "FrameWidthSrg"=dword:10            ; Range 1-256
+    "ClockDividerSrg"=dword:0           ; Range 0-255
+    "ClockResyncSrg"=dword:0            ; Either 0 (no resync) or 1 (resync)
+    "CLKSPinSource"=dword:0				; Either 0 (external) or 1 (internal)
+    "JustificationMode"=dword:0         ; Range 0 (right, zero fill), 1 (right, sign fill), or 2 (left)
+; ### TDM Mode configuration ###
+    "TDMWordsPerFrame"=dword:4                          ; Range 1-128 words
+    "PartitionMode"=dword:0                             ; 0-> 2-partition mode, 1-> 8-partition mode
+    "NumOfTxChannels"=dword:4                           ; Number of TX channels to be enabled
+    "EnableMcBSPTxChannels"=multi_sz:"0","2","0","2"
+    "NumOfRxChannels"=dword:4                           ; Number of RX channels to be enabled
+    "EnableMcBSPRxChannels"=multi_sz:"0","1","0","1"
+; ### SIDETONE configuration ###
+    "SideToneFIRCoeff"=hex:\
+        1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+    "SideToneGain"=dword:1                              ; side tone gain ranging from 0 to FFFF
+; ### IClass GUID ###
+    ; PMCLASS_PMEXT_GUID
+    "IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+ENDIF BSP_OMAP_MCBSP2
+
+IF BSP_OMAP_MCBSP3
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MCP3]
+    "Prefix"="MCP"
+    "Dll"="omap_mcbsp.dll"
+    "Index"=dword:3
+    "Order"=dword:13
+    "Port"=dword:3
+    "PowerFlags"=dword:00000103                         ; send pre/post device state changes
+    "McBSPProfile"=dword:0                  ; 0->I2S Mode, 1-> TDM mode      
+;  ### Physical address: MCBSPLP3, SDMA, MCBSP3-SIDETONE
+    "MemBase"=multi_sz:"49024000", "48056000", "4902A000"
+    "MemLen"=multi_sz:"00001000", "00001000", "00001000"
+    "DmaTxSyncMap"=dword:11             ; SDMA_REQ_MCBSP3_TX
+    "DmaRxSyncMap"=dword:12             ; SDMA_REQ_MCBSP3_RX
+    "TxPriority"=dword:82                               ; Tx Thread priority 130
+    "RxPriority"=dword:82                               ; Rx Thread priority 130
+    "TxBufferSize"=dword:2000                           ; Tx DMA Buffer size 0x2000
+    "RxBufferSize"=dword:2000                           ; Rx DMA Buffer size 0x2000
+    "UseRegistryForMcbsp"=dword:1                       ; Either 0 (use default setup) or 1 (use registry)
+; ### MCBSP configuration ###
+    "LoopbackMode"=dword:1                              ; Either 0 (no loopback) or 1 (loopback)
+    "WordsPerFrame"=dword:4                             ; Range 1-128 words
+    "WordLength"=dword:8                ; Range 8, 12, 16, 20, 24, or 32 bits
+    "WordLength2"=dword:8               ; Range 8, 12, 16, 20, 24, or 32 bits
+    "ReverseModeTx"=dword:1                             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayTx"=dword:1                               ; Range 0, 1, or 2 bits
+    "ClockModeTx"=dword:1                               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceTx"=dword:3         ; Range 0 (ext), 2 (int xmit), or 3 (int SRG)
+    "PhaseTx"=dword:0                                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityTx"=dword:1                           ; Either 0 (data driven on rising edge) or 1 (falling)
+    "FrameSyncPolarityTx"=dword:1                       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdTx"=dword:7F                          ; Range 0-127 words for McBsp1,3,4,5
+    "ReverseModeRx"=dword:1                             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayRx"=dword:1                               ; Range 0, 1, or 2 bits
+    "ClockModeRx"=dword:1                               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceRx"=dword:1         ; Either 0 (external) or 1 (internal)
+    "PhaseRx"=dword:0                                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityRx"=dword:0                           ; Either 0 (data sampled on falling edge) or 1 (rising)
+    "FrameSyncPolarityRx"=dword:0       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdRx"=dword:F                           ; Range 0-127 words for McBsp1,3,4,5
+    "ClockSourceSrg"=dword:2            ; Range 0 (rising CLKS), 1, (falling CLKS) 2 (CPU), 3 (CLKRI), or 4 (CLKXI)
+    "FrameWidthSrg"=dword:2             ; Range 1-256
+    "ClockDividerSrg"=dword:80          ; Range 0-255
+    "ClockResyncSrg"=dword:0            ; Either 0 (no resync) or 1 (resync)
+    "CLKSPinSource"=dword:0				; Either 0 (external) or 1 (internal)
+    "JustificationMode"=dword:0         ; Range 0 (right, zero fill), 1 (right, sign fill), or 2 (left)
+; ### TDM Mode configuration ###
+    "TDMWordsPerFrame"=dword:1                          ; Range 1-128 words
+    "PartitionMode"=dword:0                             ; 0-> 2-partition mode, 1-> 8-partition mode
+    "NumOfTxChannels"=dword:2                           ; Number of TX channels to be enabled
+    "EnableMcBSPTxChannels"=multi_sz:"0","1","90","90"
+    "NumOfRxChannels"=dword:2                           ; Number of RX channels to be enabled
+    "EnableMcBSPRxChannels"=multi_sz:"0","1","90","90"
+; ### SIDETONE configuration  - There is no SIDETONE support in McBSP1###
+    "SideToneFIRCoeff"=hex:\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+    "SideToneGain"=dword:0                              ; side tone gain ranging from 0 to FFFF
+; ### IClass GUID ###
+    ; PMCLASS_PMEXT_GUID
+    "IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+
+ENDIF BSP_OMAP_MCBSP3
+
+IF BSP_OMAP_MCBSP4
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MCP4]
+    "Prefix"="MCP"
+    "Dll"="omap_mcbsp.dll"
+    "Index"=dword:4
+    "Order"=dword:13
+    "Port"=dword:4
+    "PowerFlags"=dword:00000103                         ; send pre/post device state changes
+    "McBSPProfile"=dword:0                  ; 0->I2S Mode, 1-> TDM mode      
+    "DmaTxSyncMap"=dword:13             ; SDMA_REQ_MCBSP4_TX
+    "DmaRxSyncMap"=dword:14             ; SDMA_REQ_MCBSP4_RX
+; ### Physical address: MCBSPLP4, SDMA, MCBSP4-SIDETONE (Note: McBSP4 does not have SIDETONE)
+    "MemBase"=multi_sz:"49026000", "48056000", "4902A000"
+    "MemLen"=multi_sz:"00001000", "00001000", "00001000"
+    "TxPriority"=dword:82                               ; Tx Thread priority 130
+    "RxPriority"=dword:82                               ; Rx Thread priority 130
+    "TxBufferSize"=dword:2000                           ; Tx DMA Buffer size 0x2000
+    "RxBufferSize"=dword:2000                           ; Rx DMA Buffer size 0x2000
+    "UseRegistryForMcbsp"=dword:1                       ; Either 0 (use default setup) or 1 (use registry)
+; ### MCBSP configuration ###
+    "LoopbackMode"=dword:1                              ; Either 0 (no loopback) or 1 (loopback)
+    "WordsPerFrame"=dword:4                             ; Range 1-128 words
+    "WordLength"=dword:8                ; Range 8, 12, 16, 20, 24, or 32 bits
+    "WordLength2"=dword:8               ; Range 8, 12, 16, 20, 24, or 32 bits
+    "ReverseModeTx"=dword:1                             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayTx"=dword:1                               ; Range 0, 1, or 2 bits
+    "ClockModeTx"=dword:1                               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceTx"=dword:3         ; Range 0 (ext), 2 (int xmit), or 3 (int SRG)
+    "PhaseTx"=dword:0                                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityTx"=dword:1                           ; Either 0 (data driven on rising edge) or 1 (falling)
+    "FrameSyncPolarityTx"=dword:1                       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdTx"=dword:7F                          ; Range 0-127 words for McBsp1,3,4,5
+    "ReverseModeRx"=dword:1                             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayRx"=dword:1                               ; Range 0, 1, or 2 bits
+    "ClockModeRx"=dword:1                               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceRx"=dword:1         ; Either 0 (external) or 1 (internal)
+    "PhaseRx"=dword:0                                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityRx"=dword:0                           ; Either 0 (data sampled on falling edge) or 1 (rising)
+    "FrameSyncPolarityRx"=dword:0       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdRx"=dword:F                           ; Range 0-127 words for McBsp1,3,4,5
+    "ClockSourceSrg"=dword:2            ; Range 0 (rising CLKS), 1, (falling CLKS) 2 (CPU), 3 (CLKRI), or 4 (CLKXI)
+    "FrameWidthSrg"=dword:2             ; Range 1-256
+    "ClockDividerSrg"=dword:80          ; Range 0-255
+    "ClockResyncSrg"=dword:0            ; Either 0 (no resync) or 1 (resync)
+    "CLKSPinSource"=dword:0				; Either 0 (external) or 1 (internal)
+    "JustificationMode"=dword:0         ; Range 0 (right, zero fill), 1 (right, sign fill), or 2 (left)
+; ### TDM Mode configuration ###
+    "TDMWordsPerFrame"=dword:1                          ; Range 1-128 words
+    "PartitionMode"=dword:0                             ; 0-> 2-partition mode, 1-> 8-partition mode
+    "NumOfTxChannels"=dword:2                           ; Number of TX channels to be enabled
+    "EnableMcBSPTxChannels"=multi_sz:"0","1","90","90"
+    "NumOfRxChannels"=dword:2                           ; Number of RX channels to be enabled
+    "EnableMcBSPRxChannels"=multi_sz:"0","1","90","90"
+; ### SIDETONE configuration  - There is no SIDETONE support in McBSP1###
+    "SideToneFIRCoeff"=hex:\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+    "SideToneGain"=dword:0                              ; side tone gain ranging from 0 to FFFF
+; ### IClass GUID ###
+    ; PMCLASS_PMEXT_GUID
+    "IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+
+ENDIF BSP_OMAP_MCBSP4
+
+IF BSP_OMAP_MCBSP5
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MCP5]
+    "Prefix"="MCP"
+    "Dll"="omap_mcbsp.dll"
+    "Index"=dword:5
+    "Order"=dword:13
+    "Port"=dword:5
+    "PowerFlags"=dword:00000103                         ; send pre/post device state changes
+    "McBSPProfile"=dword:0                  ; 0->I2S Mode, 1-> TDM mode      
+    "DmaTxSyncMap"=dword:15             ; SDMA_REQ_MCBSP5_TX
+    "DmaRxSyncMap"=dword:16             ; SDMA_REQ_MCBSP5_RX
+;  ### Physical address: MCBSPLP5, SDMA, MCBSP5-SIDETONE (Note: McBSP5 does not have SIDETONE)
+    "MemBase"=multi_sz:"48096000", "48056000", "4902A000"
+    "MemLen"=multi_sz:"00001000", "00001000", "00001000"
+    "TxPriority"=dword:82                               ; Tx Thread priority 130
+    "RxPriority"=dword:82                               ; Rx Thread priority 130
+    "TxBufferSize"=dword:2000                           ; Tx DMA Buffer size 0x2000
+    "RxBufferSize"=dword:2000                           ; Rx DMA Buffer size 0x2000
+    "UseRegistryForMcbsp"=dword:1                       ; Either 0 (use default setup) or 1 (use registry)
+; ### MCBSP configuration ###
+    "LoopbackMode"=dword:1                              ; Either 0 (no loopback) or 1 (loopback)
+    "WordsPerFrame"=dword:4                             ; Range 1-128 words
+    "WordLength"=dword:8                ; Range 8, 12, 16, 20, 24, or 32 bits
+    "WordLength2"=dword:8               ; Range 8, 12, 16, 20, 24, or 32 bits
+    "ReverseModeTx"=dword:1                             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayTx"=dword:1                               ; Range 0, 1, or 2 bits
+    "ClockModeTx"=dword:1                               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceTx"=dword:3         ; Range 0 (ext), 2 (int xmit), or 3 (int SRG)
+    "PhaseTx"=dword:0                                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityTx"=dword:1                           ; Either 0 (data driven on rising edge) or 1 (falling)
+    "FrameSyncPolarityTx"=dword:1                       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdTx"=dword:7F                          ; Range 0-127 words for McBsp1,3,4,5
+    "ReverseModeRx"=dword:1                             ; Either 0 (MSB first) or 1 (LSB first)
+    "DataDelayRx"=dword:1                               ; Range 0, 1, or 2 bits
+    "ClockModeRx"=dword:1                               ; Either 0 (external) or 1 (internal)
+    "FrameSyncSourceRx"=dword:1         ; Either 0 (external) or 1 (internal)
+    "PhaseRx"=dword:0                                   ; Either 0 (single) or 1 (dual)
+    "ClockPolarityRx"=dword:0                           ; Either 0 (data sampled on falling edge) or 1 (rising)
+    "FrameSyncPolarityRx"=dword:0       ; Either 0 (active high) or 1 (active low)
+    "FifoThresholdRx"=dword:F                           ; Range 0-127 words for McBsp1,3,4,5
+    "ClockSourceSrg"=dword:2            ; Range 0 (rising CLKS), 1, (falling CLKS) 2 (CPU), 3 (CLKRI), or 4 (CLKXI)
+    "FrameWidthSrg"=dword:2             ; Range 1-256
+    "ClockDividerSrg"=dword:80          ; Range 0-255
+    "ClockResyncSrg"=dword:0            ; Either 0 (no resync) or 1 (resync)
+    "CLKSPinSource"=dword:0				; Either 0 (external) or 1 (internal)
+    "JustificationMode"=dword:0         ; Range 0 (right, zero fill), 1 (right, sign fill), or 2 (left)
+; ### TDM Mode configuration ###
+    "TDMWordsPerFrame"=dword:1                          ; Range 1-128 words
+    "PartitionMode"=dword:0                             ; 0-> 2-partition mode, 1-> 8-partition mode
+    "NumOfTxChannels"=dword:2                           ; Number of TX channels to be enabled
+    "EnableMcBSPTxChannels"=multi_sz:"0","1","90","90"
+    "NumOfRxChannels"=dword:2                           ; Number of RX channels to be enabled
+    "EnableMcBSPRxChannels"=multi_sz:"0","1","90","90"
+; ### SIDETONE configuration  - There is no SIDETONE support in McBSP1###
+    "SideToneFIRCoeff"=hex:\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+    "SideToneGain"=dword:0                              ; side tone gain ranging from 0 to FFFF
+; ### IClass GUID ###
+    ; PMCLASS_PMEXT_GUID
+    "IClass"=multi_sz:"{0AE2066F-89A2-4D70-8FC2-29AEFA68413C}"
+
+ENDIF BSP_OMAP_MCBSP5

@@ -1,0 +1,465 @@
+ ceddk
+
+ Timestamp is 51ecc6fa (Mon Jul 22 13:45:30 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00001644H .rdata                  CODE
+ 0001:00001664 00000022H .rdata$debug            CODE
+ 0001:00001688 00006958H .text                   CODE
+ 0001:00007fe0 000000c0H .xdata                  CODE
+ 0001:000080a0 00000014H .idata$2                CODE
+ 0001:000080b4 00000014H .idata$3                CODE
+ 0001:000080c8 0000010cH .idata$4                CODE
+ 0001:000081d4 0000000cH .idata$6                CODE
+ 0001:000081e0 00001758H .edata                  CODE
+ 0002:00000000 0000010cH .idata$5                DATA
+ 0002:00000110 00000168H .data                   DATA
+ 0002:00000278 00000148H .bss                    DATA
+ 0003:00000000 000006e0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:00000040       ??_C@_1EI@NDGNIHKN@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAa?$AAd?$AA?5?$AAD?$AAi?$AAs?$AAp?$AAl?$AAa?$AAy?$AA?5?$AAr?$AAe?$AAs?$AAo?$AAl?$AAu?$AAt?$AAi?$AAo@ 10001040     temp.obj
+ 0001:00000088       ??_C@_1DK@LGDNMNLJ@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAo?$AAn?$AAv?$AAe?$AAr?$AAt?$AA?5?$AAC?$AAA?$AA?5?$AAt?$AAo?$AA?5?$AAP?$AAA?$AA?$AN?$AA?6?$AA?$AA@ 10001088     temp.obj
+ 0001:000000c4       ??_C@_1M@CHDFHAJ@?$AAG?$AAI?$AAO?$AA1?$AA?3?$AA?$AA@ 100010c4     gpio.obj
+ 0001:000000d0       ??_C@_1M@IEOHCFKH@?$AAG?$AAI?$AAO?$AA2?$AA?3?$AA?$AA@ 100010d0     gpio.obj
+ 0001:00000290       DEVICE_IFC_GPIO_GUID       10001290     common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00000340       I2CDefaultI2CTimeout       10001340     bspcfg:bspcfg.obj
+ 0001:00000348       g_BSP_icL1Level            10001348     bspcfg:bspcfg.obj
+ 0001:000005e8       DEVICE_IFC_SPI_GUID        100015e8     ceddk_spi_lib:mcspi.obj
+ 0001:000005f8       ??_C@_1EA@FGNHCGNB@?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAr?$AAy?$AA?3?$AA?5?$AAm?$AAi?$AAs?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAs?$AAt?$AAr?$AAi?$AAn?$AAg?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?$AN?$AA?6?$AA?$AA@ 100015f8     ceddk_reg_lib:registry.obj
+ 0001:00000638       ??_C@_1DO@MCOMFDBG@?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAr?$AAy?$AA?3?$AA?5?$AAm?$AAi?$AAs?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAd?$AAw?$AAo?$AAr?$AAd?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?$AN?$AA?6?$AA?$AA@ 10001638     ceddk_reg_lib:registry.obj
+ 0001:00000678       ??_C@_1EO@IOCGNGDN@?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAr?$AAy?$AA?3?$AA?5?$AAb?$AAa?$AAd?$AA?5?$AAm?$AAu?$AAl?$AAt?$AAi?$AAd?$AAw?$AAo?$AAr?$AAd?$AA?5?$AAs?$AAt?$AAr?$AAi?$AAn?$AAg?$AA?5@ 10001678     ceddk_reg_lib:registry.obj
+ 0001:000006c8       ??_C@_1IE@MEPOILFJ@?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAr?$AAy?$AA?3?$AA?5?$AAm?$AAu?$AAl?$AAt?$AAi?$AAd?$AAw?$AAo?$AAr?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAR?$AAE?$AAG?$AA_?$AAD?$AAW?$AAO@ 100016c8     ceddk_reg_lib:registry.obj
+ 0001:00000750       ??_C@_1EI@MOBDLJII@?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAr?$AAy?$AA?3?$AA?5?$AAm?$AAi?$AAs?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAm?$AAu?$AAl?$AAt?$AAi?$AAd?$AAw?$AAo?$AAr?$AAd?$AA?5?$AA?$CC?$AA?$CF?$AAs@ 10001750     ceddk_reg_lib:registry.obj
+ 0001:00000798       ??_C@_1DK@FFJGJOJE@?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAr?$AAy?$AA?3?$AA?5?$AAm?$AAi?$AAs?$AAs?$AAi?$AAn?$AAg?$AA?5?$AAb?$AAi?$AAn?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?$AN?$AA?6?$AA?$AA@ 10001798     ceddk_reg_lib:registry.obj
+ 0001:000007d4       ??_C@_1DG@HMCHMIHB@?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAr?$AAy?$AA?3?$AA?5?$AAc?$AAa?$AAn?$AA?8?$AAt?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAk?$AAe?$AAy?$AA?$AN?$AA?6?$AA?$AA@ 100017d4     ceddk_reg_lib:registry.obj
+ 0001:000008a0       ??_C@_1M@GJIMDHLB@?$AAD?$AAM?$AAA?$AA1?$AA?3?$AA?$AA@ 100018a0     ceddk_dma_lib:dma.obj
+ 0001:000008b0       ??_C@_1HE@JBPHHPPH@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAy?$AAi?$AAn?$AAg?$AA?5?$AAt@ 100018b0     ceddk_dma_lib:dma.obj
+ 0001:00000928       ??_C@_1HG@KKAEFBLK@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAy?$AAi?$AAn?$AAg?$AA?5?$AAt@ 10001928     ceddk_dma_lib:dma.obj
+ 0001:000009a0       ??_C@_1HM@LPPDCJDJ@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAy?$AAi?$AAn?$AAg?$AA?5?$AAt@ 100019a0     ceddk_dma_lib:dma.obj
+ 0001:00000a20       ??_C@_1GM@DOJMJKAG@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAt?$AAr?$AAy?$AAi?$AAn?$AAg?$AA?5?$AAt@ 10001a20     ceddk_dma_lib:dma.obj
+ 0001:00000a90       ??_C@_1FI@DFDPOLAA@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAD?$AAm?$AAa?$AAD?$AAi?$AAs?$AAa?$AAb@ 10001a90     ceddk_dma_lib:dma.obj
+ 0001:00000ae8       ??_C@_1FM@OLMMJHOB@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$CB?$AA?5?$AAC?$AAE?$AAD?$AAD?$AAK?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAf?$AAr?$AAe?$AAe?$AA?8?$AAi?$AAn?$AAg@ 10001ae8     ceddk_dma_lib:dma.obj
+ 0001:00000b44       ??_C@_1CC@CELKBIKF@?$AAO?$AAm?$AAa?$AAp?$AAP?$AAm?$AAE?$AAx?$AAt?$AAe?$AAn?$AAs?$AAi?$AAo?$AAn?$AAs?$AA?$AA@ 10001b44     ceddk_pmext_lib:pmext.obj
+ 0001:00000b68       ??_C@_17DJMMGLBL@?$AAD?$AAl?$AAl?$AA?$AA@ 10001b68     ceddk_pmext_lib:pmext.obj
+ 0001:00000b70       ??_C@_1GO@EKFPKFFC@?$AA?2?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AA?2?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAS?$AAe?$AAt?$AA?2?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo@ 10001b70     ceddk_pmext_lib:pmext.obj
+ 0001:00000d90       ??_C@_04JCONDJKL@DDKN?$AA@ 10001d90     ddk_bus:notify.obj
+ 0001:00000d98       dmaDriverPath              10001d98     ddk_dma:ddk_dma.obj
+ 0001:00000db0       dmaDriverName              10001db0     ddk_dma:ddk_dma.obj
+ 0001:00000dc8       ??_C@_1II@DMGIDHM@?$AAH?$AAa?$AAl?$AAA?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AAC?$AAo?$AAm?$AAm?$AAo?$AAn?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?3?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5@ 10001dc8     ddk_dma:ddk_dma.obj
+ 0001:00000e50       ??_C@_1II@KHPKJBHC@?$AAH?$AAa?$AAl?$AAA?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AAC?$AAo?$AAm?$AAm?$AAo?$AAn?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?3?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5@ 10001e50     ddk_dma:ddk_dma.obj
+ 0001:00000ed8       ??_C@_1BE@PFMCPGJC@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AAP?$AAr?$AAi?$AA?$AA@ 10001ed8     ddk_time:ddk_time.obj
+ 0001:00000eec       ??_C@_1CC@LCBAJDIB@?$AAI?$AAn?$AAi?$AAt?$AAS?$AAt?$AAa?$AAl?$AAl?$AAC?$AAo?$AAu?$AAn?$AAt?$AAe?$AAr?$AA?$AA@ 10001eec     ddk_time:ddk_time.obj
+ 0001:00000f10       ??_C@_1CC@LLDIACGB@?$AAM?$AAa?$AAx?$AAC?$AAa?$AAl?$AAi?$AAb?$AAA?$AAt?$AAt?$AAe?$AAm?$AAp?$AAt?$AAs?$AA?$AA@ 10001f10     ddk_time:ddk_time.obj
+ 0001:00000f34       ??_C@_1CG@KGDKIHGE@?$AAN?$AAu?$AAm?$AAC?$AAa?$AAl?$AAi?$AAb?$AAA?$AAc?$AAc?$AAe?$AAp?$AAt?$AAH?$AAi?$AAt?$AAs?$AA?$AA@ 10001f34     ddk_time:ddk_time.obj
+ 0001:00000f5c       ??_C@_1BK@EPHPAOMP@?$AAS?$AAt?$AAa?$AAl?$AAl?$AAC?$AAo?$AAu?$AAn?$AAt?$AAe?$AAr?$AA?$AA@ 10001f5c     ddk_time:ddk_time.obj
+ 0001:00000f78       ??_C@_1CM@GACOAEOD@?$AAC?$AAa?$AAl?$AAi?$AAb?$AAr?$AAa?$AAt?$AAe?$AAS?$AAt?$AAa?$AAl?$AAl?$AAC?$AAo?$AAu?$AAn?$AAt?$AAe?$AAr?$AA?$AA@ 10001f78     ddk_time:ddk_time.obj
+ 0001:00000fa4       ??_C@_1BK@OOAFBID@?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm?$AA?2?$AAC?$AAe?$AAd?$AAd?$AAk?$AA?$AA@ 10001fa4     ddk_time:ddk_time.obj
+ 0001:00000fc0       ??_C@_1CA@DDPBCKNC@?$AAR?$AAe?$AAg?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAK?$AAe?$AAy?$AAE?$AAx?$AAW?$AA?$AA@ 10001fc0     ddk_time:ddk_time.obj
+ 0001:00000fe0       ??_C@_1BI@FBGIJHPE@?$AAR?$AAe?$AAg?$AAC?$AAl?$AAo?$AAs?$AAe?$AAK?$AAe?$AAy?$AA?$AA@ 10001fe0     ddk_time:ddk_time.obj
+ 0001:00000ff8       ??_C@_1CC@KOJKGDIE@?$AAR?$AAe?$AAg?$AAQ?$AAu?$AAe?$AAr?$AAy?$AAV?$AAa?$AAl?$AAu?$AAe?$AAE?$AAx?$AAW?$AA?$AA@ 10001ff8     ddk_time:ddk_time.obj
+ 0001:0000101c       ??_C@_1BO@FJAFIJCI@?$AAR?$AAe?$AAg?$AAS?$AAe?$AAt?$AAV?$AAa?$AAl?$AAu?$AAe?$AAE?$AAx?$AAW?$AA?$AA@ 1000201c     ddk_time:ddk_time.obj
+ 0001:0000103c       ??_C@_1BI@CJKPFBEK@?$AAc?$AAo?$AAr?$AAe?$AAd?$AAl?$AAl?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 1000203c     ddk_time:ddk_time.obj
+ 0001:00001054       ??_C@_15BMCNAON@?$AAR?$AAX?$AA?$AA@ 10002054     OMAP3530_soccfg:devicemap.obj
+ 0001:0000105c       ??_C@_15NHJLDDPA@?$AAT?$AAX?$AA?$AA@ 1000205c     OMAP3530_soccfg:devicemap.obj
+ 0001:00001064       ??_C@_17GHFABBII@?$AAM?$AAM?$AAU?$AA?$AA@ 10002064     OMAP3530_soccfg:devicemap.obj
+ 0001:0000106c       ??_C@_19EMJFMDEF@?$AAI?$AAR?$AAQ?$AA3?$AA?$AA@ 1000206c     OMAP3530_soccfg:devicemap.obj
+ 0001:00001078       ??_C@_19PECJKECA@?$AAI?$AAR?$AAQ?$AA2?$AA?$AA@ 10002078     OMAP3530_soccfg:devicemap.obj
+ 0001:00001084       ??_C@_19OGJMALMO@?$AAI?$AAR?$AAQ?$AA1?$AA?$AA@ 10002084     OMAP3530_soccfg:devicemap.obj
+ 0001:00001090       ??_C@_19FOCAGMKL@?$AAI?$AAR?$AAQ?$AA0?$AA?$AA@ 10002090     OMAP3530_soccfg:devicemap.obj
+ 0001:0000109c       ??_C@_1BC@JBFPJMDB@?$AAo?$AAv?$AAe?$AAr?$AAf?$AAl?$AAo?$AAw?$AA?$AA@ 1000209c     OMAP3530_soccfg:devicemap.obj
+ 0001:00001140       s_DeviceAddressMap         10002140     OMAP3530_soccfg:devicemap.obj
+ 0001:00001340       s_DeviceIrqMap             10002340     OMAP3530_soccfg:devicemap.obj
+ 0001:00001688       BusClockRequest            10002688 f   temp.obj
+ 0001:00001690       BusClockRelease            10002690 f   temp.obj
+ 0001:00001698       BusSourceClocks            10002698 f   temp.obj
+ 0001:000016a0       GetDisplayResolutionFromBootArgs 100026a0 f   temp.obj
+ 0001:000016f4       IsDVIMode                  100026f4 f   temp.obj
+ 0001:00001720       ConvertCAtoPA              10002720 f   temp.obj
+ 0001:0000178c       BSPGpioInit                1000278c f   gpio.obj
+ 0001:000017c0       SOCGetGPIODeviceByBank     100027c0 f   OMAP3530_soccfg:soccfg.obj
+ 0001:00001820       GetAddressByDevice         10002820 f   common_ti_devicesmap:devicemap.obj
+ 0001:00001870       GetDeviceByAddress         10002870 f   common_ti_devicesmap:devicemap.obj
+ 0001:000018d4       GetIrqByDevice             100028d4 f   common_ti_devicesmap:devicemap.obj
+ 0001:000019ac       GPIOInit                   100029ac f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001ac4       GPIOOpen                   10002ac4 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001b00       GPIOClose                  10002b00 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001b04       GPIOSetBit                 10002b04 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001ba8       GPIOClrBit                 10002ba8 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001c4c       GPIOGetBit                 10002c4c f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001d08       GPIOSetMode                10002d08 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001db0       GPIOGetMode                10002db0 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001e6c       GPIOPullup                 10002e6c f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001ee0       GPIOPulldown               10002ee0 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001f54       GPIOInterruptInitialize    10002f54 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00001fd0       GPIOInterruptMask          10002fd0 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00002044       GPIOInterruptDisable       10003044 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:000020b0       GPIOInterruptDone          100030b0 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:0000211c       GPIOGetSystemIrq           1000311c f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00002188       GPIOInterruptWakeUp        10003188 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:00002204       GPIOIoControl              10003204 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:000022c8       BSPInsertGpioDevice        100032c8 f   bspcfg:bspcfg.obj
+ 0001:0000231c       BSPGetGpioDevicesTable     1000331c f   bspcfg:bspcfg.obj
+ 0001:00002328       I2COpen                    10003328 f   ceddk_i2c_lib:i2c.obj
+ 0001:000023bc       I2CSetSlaveAddress         100033bc f   ceddk_i2c_lib:i2c.obj
+ 0001:000023dc       I2CSetSubAddressMode       100033dc f   ceddk_i2c_lib:i2c.obj
+ 0001:000023fc       I2CSetBaudIndex            100033fc f   ceddk_i2c_lib:i2c.obj
+ 0001:0000241c       I2CSetTimeout              1000341c f   ceddk_i2c_lib:i2c.obj
+ 0001:0000243c       I2CClose                   1000343c f   ceddk_i2c_lib:i2c.obj
+ 0001:0000245c       I2CRead                    1000345c f   ceddk_i2c_lib:i2c.obj
+ 0001:0000247c       I2CWrite                   1000347c f   ceddk_i2c_lib:i2c.obj
+ 0001:0000249c       I2CLock                    1000349c f   ceddk_i2c_lib:i2c.obj
+ 0001:000024bc       I2CUnlock                  100034bc f   ceddk_i2c_lib:i2c.obj
+ 0001:000024dc       I2CSetManualDriveMode      100034dc f   ceddk_i2c_lib:i2c.obj
+ 0001:000024fc       I2CDriveSCL                100034fc f   ceddk_i2c_lib:i2c.obj
+ 0001:0000251c       I2CDriveSDA                1000351c f   ceddk_i2c_lib:i2c.obj
+ 0001:000025b0       EnableDeviceClockAutoIdle  100035b0 f   ceddk_clock_lib:clock.obj
+ 0001:00002600       EnableDeviceClocks         10003600 f   ceddk_clock_lib:clock.obj
+ 0001:00002650       EnableDeviceIClock         10003650 f   ceddk_clock_lib:clock.obj
+ 0001:000026a0       EnableDeviceFClock         100036a0 f   ceddk_clock_lib:clock.obj
+ 0001:000026f0       SelectDeviceSourceClocks   100036f0 f   ceddk_clock_lib:clock.obj
+ 0001:00002748       GetSystemClockFrequency    10003748 f   ceddk_clock_lib:clock.obj
+ 0001:00002778       PrcmDeviceGetContextState  10003778 f   ceddk_clock_lib:clock.obj
+ 0001:000027c8       SPIOpen                    100037c8 f   ceddk_spi_lib:mcspi.obj
+ 0001:0000286c       SPIClose                   1000386c f   ceddk_spi_lib:mcspi.obj
+ 0001:0000288c       SPILockController          1000388c f   ceddk_spi_lib:mcspi.obj
+ 0001:000028f8       SPIUnlockController        100038f8 f   ceddk_spi_lib:mcspi.obj
+ 0001:00002958       SPIEnableChannel           10003958 f   ceddk_spi_lib:mcspi.obj
+ 0001:000029b8       SPIDisableChannel          100039b8 f   ceddk_spi_lib:mcspi.obj
+ 0001:00002a18       SPIConfigure               10003a18 f   ceddk_spi_lib:mcspi.obj
+ 0001:00002a88       SPISetSlaveMode            10003a88 f   ceddk_spi_lib:mcspi.obj
+ 0001:00002ae8       SPIRead                    10003ae8 f   ceddk_spi_lib:mcspi.obj
+ 0001:00002b48       SPIWrite                   10003b48 f   ceddk_spi_lib:mcspi.obj
+ 0001:00002ba8       SPIWriteRead               10003ba8 f   ceddk_spi_lib:mcspi.obj
+ 0001:00002c14       SPIAsyncWriteRead          10003c14 f   ceddk_spi_lib:mcspi.obj
+ 0001:00002c80       SPIWaitForAsyncWriteReadComplet 10003c80 f   ceddk_spi_lib:mcspi.obj
+ 0001:0000315c       GetDeviceRegistryParams    1000415c f   ceddk_reg_lib:registry.obj
+ 0001:00003330       SetDeviceRegistryParams    10004330 f   ceddk_reg_lib:registry.obj
+ 0001:00003418       LoadDmaDriver              10004418 f   ceddk_dma_lib:dma.obj
+ 0001:00003480       DmaEnableInterrupts        10004480 f   ceddk_dma_lib:dma.obj
+ 0001:00003580       DmaGetLogicalChannelId     10004580 f   ceddk_dma_lib:dma.obj
+ 0001:00003640       DmaInterruptDone           10004640 f   ceddk_dma_lib:dma.obj
+ 0001:00003724       DmaGetLogicalChannel       10004724 f   ceddk_dma_lib:dma.obj
+ 0001:000037e8       DmaDisableStandby          100047e8 f   ceddk_dma_lib:dma.obj
+ 0001:0000390c       DmaFreeChannel             1000490c f   ceddk_dma_lib:dma.obj
+ 0001:00003a30       DmaAllocateChannel         10004a30 f   ceddk_dma_lib:dma.obj
+ 0001:00003b2c       HalContextUpdateDirtyRegister 10004b2c f   ceddk_pmext_lib:pmext.obj
+ 0001:00003cc0       PmxSendDeviceNotification  10004cc0 f   ceddk_pmext_lib:pmext.obj
+ 0001:00003d4c       PmxSetConstraintByClass    10004d4c f   ceddk_pmext_lib:pmext.obj
+ 0001:00003db0       PmxSetConstraintById       10004db0 f   ceddk_pmext_lib:pmext.obj
+ 0001:00003e14       PmxUpdateConstraint        10004e14 f   ceddk_pmext_lib:pmext.obj
+ 0001:00003e78       PmxReleaseConstraint       10004e78 f   ceddk_pmext_lib:pmext.obj
+ 0001:00003eb8       PmxRegisterConstraintCallback 10004eb8 f   ceddk_pmext_lib:pmext.obj
+ 0001:00003f24       PmxUnregisterConstraintCallback 10004f24 f   ceddk_pmext_lib:pmext.obj
+ 0001:00003f74       PmxOpenPolicy              10004f74 f   ceddk_pmext_lib:pmext.obj
+ 0001:00003fbc       PmxNotifyPolicy            10004fbc f   ceddk_pmext_lib:pmext.obj
+ 0001:0000401c       PmxClosePolicy             1000501c f   ceddk_pmext_lib:pmext.obj
+ 0001:0000405c       PmxLoadConstraint          1000505c f   ceddk_pmext_lib:pmext.obj
+ 0001:000040a4       PmxLoadPolicy              100050a4 f   ceddk_pmext_lib:pmext.obj
+ 0001:0000415c       RequestPad                 1000515c f   ceddk_padcfg_lib:padcfg.obj
+ 0001:00004198       ReleasePad                 10005198 f   ceddk_padcfg_lib:padcfg.obj
+ 0001:000041d4       ConfigurePad               100051d4 f   ceddk_padcfg_lib:padcfg.obj
+ 0001:00004218       RequestAndConfigurePad     10005218 f   ceddk_padcfg_lib:padcfg.obj
+ 0001:0000425c       RequestAndConfigurePadArray 1000525c f   ceddk_padcfg_lib:padcfg.obj
+ 0001:00004298       ReleasePadArray            10005298 f   ceddk_padcfg_lib:padcfg.obj
+ 0001:000042d4       ReleaseDevicePads          100052d4 f   ceddk_padcfg_lib:padcfg.obj
+ 0001:00004310       RequestDevicePads          10005310 f   ceddk_padcfg_lib:padcfg.obj
+ 0001:00004354       CreateBusAccessHandle      10005354 f   ceddk_bus_lib:bus.obj
+ 0001:000044c8       CloseBusAccessHandle       100054c8 f   ceddk_bus_lib:bus.obj
+ 0001:00004524       SetDevicePowerState        10005524 f   ceddk_bus_lib:bus.obj
+ 0001:000045cc       GetDevicePowerState        100055cc f   ceddk_bus_lib:bus.obj
+ 0001:00004664       TranslateBusAddr           10005664 f   ceddk_bus_lib:bus.obj
+ 0001:00004750       TranslateSystemAddr        10005750 f   ceddk_bus_lib:bus.obj
+ 0001:0000482c       SetDeviceConfigurationData 1000582c f   ceddk_bus_lib:bus.obj
+ 0001:00004910       GetDeviceConfigurationData 10005910 f   ceddk_bus_lib:bus.obj
+ 0001:000049f4       GetParentDeviceInfo        100059f4 f   ceddk_bus_lib:bus.obj
+ 0001:00004a3c       GetChildDeviceRemoveState  10005a3c f   ceddk_bus_lib:bus.obj
+ 0001:00004ad0       GetBusNamePrefix           10005ad0 f   ceddk_bus_lib:bus.obj
+ 0001:00004b68       BusTransBusAddrToVirtual   10005b68 f   ceddk_bus_lib:bus.obj
+ 0001:00004bf8       BusTransBusAddrToStatic    10005bf8 f   ceddk_bus_lib:bus.obj
+ 0001:00004cb0       BusIoControl               10005cb0 f   ceddk_bus_lib:bus.obj
+ 0001:00004d68       BusChildIoControl          10005d68 f   ceddk_bus_lib:bus.obj
+ 0001:00004dfc       READ_REGISTER_UCHAR        10005dfc f   ddk_io:ddk_io.obj
+ 0001:00004e04       READ_REGISTER_USHORT       10005e04 f   ddk_io:ddk_io.obj
+ 0001:00004e0c       READ_REGISTER_ULONG        10005e0c f   ddk_io:ddk_io.obj
+ 0001:00004e14       READ_REGISTER_BUFFER_UCHAR 10005e14 f   ddk_io:ddk_io.obj
+ 0001:00004e30       READ_REGISTER_BUFFER_USHORT 10005e30 f   ddk_io:ddk_io.obj
+ 0001:00004e4c       READ_REGISTER_BUFFER_ULONG 10005e4c f   ddk_io:ddk_io.obj
+ 0001:00004e68       WRITE_REGISTER_UCHAR       10005e68 f   ddk_io:ddk_io.obj
+ 0001:00004e70       WRITE_REGISTER_USHORT      10005e70 f   ddk_io:ddk_io.obj
+ 0001:00004e78       WRITE_REGISTER_ULONG       10005e78 f   ddk_io:ddk_io.obj
+ 0001:00004e80       WRITE_REGISTER_BUFFER_UCHAR 10005e80 f   ddk_io:ddk_io.obj
+ 0001:00004e9c       WRITE_REGISTER_BUFFER_USHORT 10005e9c f   ddk_io:ddk_io.obj
+ 0001:00004eb8       WRITE_REGISTER_BUFFER_ULONG 10005eb8 f   ddk_io:ddk_io.obj
+ 0001:00004ed4       READ_PORT_UCHAR            10005ed4 f   ddk_io:ddk_io.obj
+ 0001:00004edc       READ_PORT_USHORT           10005edc f   ddk_io:ddk_io.obj
+ 0001:00004ee4       READ_PORT_ULONG            10005ee4 f   ddk_io:ddk_io.obj
+ 0001:00004eec       READ_PORT_BUFFER_UCHAR     10005eec f   ddk_io:ddk_io.obj
+ 0001:00004f08       READ_PORT_BUFFER_USHORT    10005f08 f   ddk_io:ddk_io.obj
+ 0001:00004f24       READ_PORT_BUFFER_ULONG     10005f24 f   ddk_io:ddk_io.obj
+ 0001:00004f40       WRITE_PORT_UCHAR           10005f40 f   ddk_io:ddk_io.obj
+ 0001:00004f48       WRITE_PORT_USHORT          10005f48 f   ddk_io:ddk_io.obj
+ 0001:00004f50       WRITE_PORT_ULONG           10005f50 f   ddk_io:ddk_io.obj
+ 0001:00004f58       WRITE_PORT_BUFFER_UCHAR    10005f58 f   ddk_io:ddk_io.obj
+ 0001:00004f74       WRITE_PORT_BUFFER_USHORT   10005f74 f   ddk_io:ddk_io.obj
+ 0001:00004f90       WRITE_PORT_BUFFER_ULONG    10005f90 f   ddk_io:ddk_io.obj
+ 0001:00005098       CeDriverMapCallbackFunction 10006098 f   ddk_bus:notify.obj
+ 0001:0000513c       CeDriverPerformCallback    1000613c f   ddk_bus:notify.obj
+ 0001:00005174       CeDriverGetDirectCaller    10006174 f   ddk_bus:notify.obj
+ 0001:000051bc       CeDriverDuplicateCallerHandle 100061bc f   ddk_bus:notify.obj
+ 0001:00005268       HalGetBusDataByOffset      10006268 f   ddk_bus:ddk_bus.obj
+ 0001:00005270       HalSetBusDataByOffset      10006270 f   ddk_bus:ddk_bus.obj
+ 0001:00005278       HalTranslateBusAddress     10006278 f   ddk_bus:ddk_bus.obj
+ 0001:000052a4       HalTranslateSystemAddress  100062a4 f   ddk_bus:ddk_bus.obj
+ 0001:000052bc       HalAllocateCommonBuffer    100062bc f   ddk_dma:ddk_dma.obj
+ 0001:00005380       HalFreeCommonBuffer        10006380 f   ddk_dma:ddk_dma.obj
+ 0001:000053a0       GetDMAAdapterHandle        100063a0 f   ddk_dma:ddk_dma.obj
+ 0001:000054b8       DMAGetAdapter              100064b8 f   ddk_dma:ddk_dma.obj
+ 0001:00005528       DMAAllocateChannel         10006528 f   ddk_dma:ddk_dma.obj
+ 0001:000055e4       DMAFreeChannel             100065e4 f   ddk_dma:ddk_dma.obj
+ 0001:0000565c       DMAIssueTransfer           1000665c f   ddk_dma:ddk_dma.obj
+ 0001:00005738       DMAIssueMultiBufferTransfer 10006738 f   ddk_dma:ddk_dma.obj
+ 0001:00005804       DMACancelTransfer          10006804 f   ddk_dma:ddk_dma.obj
+ 0001:0000587c       DMAStartTransfer           1000687c f   ddk_dma:ddk_dma.obj
+ 0001:000058f4       DMACloseTransfer           100068f4 f   ddk_dma:ddk_dma.obj
+ 0001:0000596c       DMAGetStatus               1000696c f   ddk_dma:ddk_dma.obj
+ 0001:00005a14       DMAGetContexts             10006a14 f   ddk_dma:ddk_dma.obj
+ 0001:00005abc       DMAIssueRawTransfer        10006abc f   ddk_dma:ddk_dma.obj
+ 0001:00005b68       DMARawTransferControl      10006b68 f   ddk_dma:ddk_dma.obj
+ 0001:00005c00       OALDMAAllocBuffer          10006c00 f   ddk_dma:ddk_dma.obj
+ 0001:00005cec       OALDMAFreeBuffer           10006cec f   ddk_dma:ddk_dma.obj
+ 0001:00005db0       ?CreateBufferedBuffer@CUserDmaBuffer@@AAAHPAXKH@Z 10006db0 f   ddk_dma:ddk_dma_buf.obj
+ 0001:00005e28       ?FlushDMABuffer@CUserDmaBuffer@@QAAHXZ 10006e28 f   ddk_dma:ddk_dma_buf.obj
+ 0001:00005f08       ?DMAGetBufferPhysAddr@CUserDmaBuffer@@QAAKKQAU_CE_DMA_BUFFER_BLOCK@@@Z 10006f08 f   ddk_dma:ddk_dma_buf.obj
+ 0001:00006020       ?DMAGetBufferPhysAddr@CUserDmaBufferList@@QAAKKQAU_CE_DMA_BUFFER_BLOCK@@@Z 10007020 f   ddk_dma:ddk_dma_buf.obj
+ 0001:000060bc       ?FlushDMABuffer@CUserDmaBufferList@@QAAHXZ 100070bc f   ddk_dma:ddk_dma_buf.obj
+ 0001:0000612c       ?DMATransferOnBlocks@CUserDmaBufferList@@QAAHPAXPAPAXK0000T_LARGE_INTEGER@@@Z 1000712c f   ddk_dma:ddk_dma_buf.obj
+ 0001:000061e0       ??1CUserDmaBuffer@@QAA@XZ  100071e0 f   ddk_dma:ddk_dma_buf.obj
+ 0001:00006294       ?Init@CUserDmaBuffer@@QAAHAAVCUserDmaBufferList@@PAXK@Z 10007294 f   ddk_dma:ddk_dma_buf.obj
+ 0001:00006640       DMAGetBufferPhysAddr       10007640 f   ddk_dma:ddk_dma_buf.obj
+ 0001:00006670       DMATransferOnBlocks        10007670 f   ddk_dma:ddk_dma_buf.obj
+ 0001:000066e0       DMAFlushBlockBuffer        100076e0 f   ddk_dma:ddk_dma_buf.obj
+ 0001:00006710       ??_ECUserDmaBuffer@@QAAPAXI@Z 10007710 f i ddk_dma:ddk_dma_buf.obj
+ 0001:00006780       ?Init@CUserDmaBufferList@@QAAHPAU_CE_DMA_ADAPTER@@KQBQAXQBK@Z 10007780 f   ddk_dma:ddk_dma_buf.obj
+ 0001:000068ec       DMACloseBuffer             100078ec f   ddk_dma:ddk_dma_buf.obj
+ 0001:0000692c       DMAOpenBuffer              1000792c f   ddk_dma:ddk_dma_buf.obj
+ 0001:000069e8       MmMapIoSpace               100079e8 f   ddk_map:ddk_map.obj
+ 0001:00006ab0       MmUnmapIoSpace             10007ab0 f   ddk_map:ddk_map.obj
+ 0001:00006adc       TransBusAddrToVirtual      10007adc f   ddk_map:ddk_map.obj
+ 0001:00006b60       TransBusAddrToStatic       10007b60 f   ddk_map:ddk_map.obj
+ 0001:00006c28       StallOneMicrosecond        10007c28 f   ddk_time:ddk_time.obj
+ 0001:00006c60       BeginCalibration           10007c60 f   ddk_time:ddk_time.obj
+ 0001:00006e84       CalibrateStallCounter      10007e84 f   ddk_time:ddk_time.obj
+ 0001:00007160       StallExecution             10008160 f   ddk_time:ddk_time.obj
+ 0001:00007234       ?Initialize@CPowerLock@@QAA_NP6A?AW4_CEDEVICE_POWER_STATE@@KW42@@ZK_NK@Z 10008234 f   ddk_power:ddk_power.obj
+ 0001:00007394       ?AcquirePowerLevel@CPowerLock@@QAA_NW4_CEDEVICE_POWER_STATE@@@Z 10008394 f   ddk_power:ddk_power.obj
+ 0001:00007458       ?ReleasePowerLevel@CPowerLock@@QAAXW4_CEDEVICE_POWER_STATE@@@Z 10008458 f   ddk_power:ddk_power.obj
+ 0001:00007508       ?SetPowerLevel@CPowerLock@@QAA_NW4_CEDEVICE_POWER_STATE@@P6AXK0@Z@Z 10008508 f   ddk_power:ddk_power.obj
+ 0001:00007630       DDKPwr_Initialize          10008630 f   ddk_power:ddk_power.obj
+ 0001:000076a8       DDKPwr_Deinitialize        100086a8 f   ddk_power:ddk_power.obj
+ 0001:000076f4       DDKPwr_RequestLevel        100086f4 f   ddk_power:ddk_power.obj
+ 0001:0000773c       DDKPwr_ReleaseLevel        1000873c f   ddk_power:ddk_power.obj
+ 0001:00007780       DDKPwr_GetDeviceLevel      10008780 f   ddk_power:ddk_power.obj
+ 0001:000077ac       DDKPwr_SetDeviceLevel      100087ac f   ddk_power:ddk_power.obj
+ 0001:000077f0       NKDbgPrintfW               100087f0 f   coredll:COREDLL.dll
+ 0001:00007800       KernelIoControl            10008800 f   coredll:COREDLL.dll
+ 0001:00007810       LocalAlloc                 10008810 f   coredll:COREDLL.dll
+ 0001:00007820       DeviceIoControl            10008820 f   coredll:COREDLL.dll
+ 0001:00007830       CreateFileW                10008830 f   coredll:COREDLL.dll
+ 0001:00007840       CloseHandle                10008840 f   coredll:COREDLL.dll
+ 0001:00007850       LocalFree                  10008850 f   coredll:COREDLL.dll
+ 0001:00007860       ReadFile                   10008860 f   coredll:COREDLL.dll
+ 0001:00007870       WriteFile                  10008870 f   coredll:COREDLL.dll
+ 0001:00007880       RegQueryValueExW           10008880 f   coredll:COREDLL.dll
+ 0001:00007890       RegCloseKey                10008890 f   coredll:COREDLL.dll
+ 0001:000078a0       RegOpenKeyExW              100088a0 f   coredll:COREDLL.dll
+ 0001:000078b0       OpenDeviceKey              100088b0 f   coredll:COREDLL.dll
+ 0001:000078c0       RegSetValueExW             100088c0 f   coredll:COREDLL.dll
+ 0001:000078d0       __GetUserKData             100088d0 f   coredll:COREDLL.dll
+ 0001:000078e0       FreeLibrary                100088e0 f   coredll:COREDLL.dll
+ 0001:000078f0       GetProcAddressW            100088f0 f   coredll:COREDLL.dll
+ 0001:00007900       LoadLibraryW               10008900 f   coredll:COREDLL.dll
+ 0001:00007910       GetDeviceInformationByDeviceHandle 10008910 f   coredll:COREDLL.dll
+ 0001:00007920       GetDeviceHandleFromContext 10008920 f   coredll:COREDLL.dll
+ 0001:00007930       SetLastError               10008930 f   coredll:COREDLL.dll
+ 0001:00007940       CreateStaticMapping        10008940 f   coredll:COREDLL.dll
+ 0001:00007950       GetDirectCallerProcessId   10008950 f   coredll:COREDLL.dll
+ 0001:00007960       InterlockedExchange        10008960 f   coredll:COREDLL.dll
+ 0001:00007970       RegisterAPISet             10008970 f   coredll:COREDLL.dll
+ 0001:00007980       CreateAPISet               10008980 f   coredll:COREDLL.dll
+ 0001:00007990       CreateAPIHandle            10008990 f   coredll:COREDLL.dll
+ 0001:000079a0       REL_UDriverProcIoControl   100089a0 f   coredll:COREDLL.dll
+ 0001:000079b0       DuplicateHandle            100089b0 f   coredll:COREDLL.dll
+ 0001:000079c0       FreePhysMem                100089c0 f   coredll:COREDLL.dll
+ 0001:000079d0       GetLastError               100089d0 f   coredll:COREDLL.dll
+ 0001:000079e0       AllocPhysMem               100089e0 f   coredll:COREDLL.dll
+ 0001:000079f0       CeSafeCopyMemory           100089f0 f   coredll:COREDLL.dll
+ 0001:00007a00       CacheRangeFlush            10008a00 f   coredll:COREDLL.dll
+ 0001:00007a10       UnlockPages                10008a10 f   coredll:COREDLL.dll
+ 0001:00007a20       LockPages                  10008a20 f   coredll:COREDLL.dll
+ 0001:00007a30       VirtualFree                10008a30 f   coredll:COREDLL.dll
+ 0001:00007a40       VirtualCopy                10008a40 f   coredll:COREDLL.dll
+ 0001:00007a50       VirtualAlloc               10008a50 f   coredll:COREDLL.dll
+ 0001:00007a60       CeSetThreadPriority        10008a60 f   coredll:COREDLL.dll
+ 0001:00007a70       QueryPerformanceCounter    10008a70 f   coredll:COREDLL.dll
+ 0001:00007a80       QueryPerformanceFrequency  10008a80 f   coredll:COREDLL.dll
+ 0001:00007a90       CeGetThreadPriority        10008a90 f   coredll:COREDLL.dll
+ 0001:00007aa0       EventModify                10008aa0 f   coredll:COREDLL.dll
+ 0001:00007ab0       DeleteCriticalSection      10008ab0 f   coredll:COREDLL.dll
+ 0001:00007ac0       CreateEventW               10008ac0 f   coredll:COREDLL.dll
+ 0001:00007ad0       InitializeCriticalSection  10008ad0 f   coredll:COREDLL.dll
+ 0001:00007ae0       WaitForSingleObject        10008ae0 f   coredll:COREDLL.dll
+ 0001:00007af0       LeaveCriticalSection       10008af0 f   coredll:COREDLL.dll
+ 0001:00007b00       EnterCriticalSection       10008b00 f   coredll:COREDLL.dll
+ 0001:00007b10       DllMain                    10008b10 f   corelib0:dllmain.obj
+ 0001:00007c2c       _DllMainCRTStartup         10008c2c f   corelib0:pegdmain.obj
+ 0001:00007c5c       __GSHandlerCheckCommon     10008c5c f   corelib0:gshandler.obj
+ 0001:00007c98       __GSHandlerCheck           10008c98 f   corelib0:gshandler.obj
+ 0001:00007cbc       __security_init_cookie     10008cbc f   corelib0:seccinit.obj
+ 0001:00007d18       __security_check_cookie    10008d18 f   corelib0:armsecgs.obj
+ 0001:00007d2c       __gsfailure                10008d2c f   corelib0:armsecgs.obj
+ 0001:00007e6c       _cexit                     10008e6c f   corelib0:cexit.obj
+ 0001:00007e88       _initterm                  10008e88 f   corelib0:crt0dat.obj
+ 0001:00007ebc       _cinit                     10008ebc f   corelib0:crt0dat.obj
+ 0001:00007ef0       wcscmp                     10008ef0 f   corelib1:COREDLL.dll
+ 0001:00007f00       memcpy                     10008f00 f   corelib1:COREDLL.dll
+ 0001:00007f10       memset                     10008f10 f   corelib1:COREDLL.dll
+ 0001:00007f20       __stou                     10008f20 f   corelib1:COREDLL.dll
+ 0001:00007f30       wcslen                     10008f30 f   corelib1:COREDLL.dll
+ 0001:00007f40       wcstoul                    10008f40 f   corelib1:COREDLL.dll
+ 0001:00007f50       __C_specific_handler       10008f50 f   corelib1:COREDLL.dll
+ 0001:00007f60       ??2@YAPAXI@Z               10008f60 f   corelib1:COREDLL.dll
+ 0001:00007f70       ??3@YAXPAX@Z               10008f70 f   corelib1:COREDLL.dll
+ 0001:00007f80       _XcptFilter                10008f80 f   corelib1:COREDLL.dll
+ 0001:00007f90       __security_gen_cookie2     10008f90 f   corelib1:COREDLL.dll
+ 0001:00007fa0       __report_gsfailure         10008fa0 f   corelib1:COREDLL.dll
+ 0001:00007fb0       free                       10008fb0 f   corelib1:COREDLL.dll
+ 0001:00007fc0       DisableThreadLibraryCalls  10008fc0 f   coredll:COREDLL.dll
+ 0001:00007fd0       TerminateProcess           10008fd0 f   coredll:COREDLL.dll
+ 0001:000080a0       __IMPORT_DESCRIPTOR_COREDLL 100090a0     coredll:COREDLL.dll
+ 0001:000080b4       __NULL_IMPORT_DESCRIPTOR   100090b4     coredll:COREDLL.dll
+ 0002:00000000       __imp_NKDbgPrintfW         1000b000     coredll:COREDLL.dll
+ 0002:00000004       __imp_KernelIoControl      1000b004     coredll:COREDLL.dll
+ 0002:00000008       __imp_LocalAlloc           1000b008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_DeviceIoControl      1000b00c     coredll:COREDLL.dll
+ 0002:00000010       __imp_CreateFileW          1000b010     coredll:COREDLL.dll
+ 0002:00000014       __imp_CloseHandle          1000b014     coredll:COREDLL.dll
+ 0002:00000018       __imp_LocalFree            1000b018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_ReadFile             1000b01c     coredll:COREDLL.dll
+ 0002:00000020       __imp_WriteFile            1000b020     coredll:COREDLL.dll
+ 0002:00000024       __imp_RegQueryValueExW     1000b024     coredll:COREDLL.dll
+ 0002:00000028       __imp_RegCloseKey          1000b028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_RegOpenKeyExW        1000b02c     coredll:COREDLL.dll
+ 0002:00000030       __imp_OpenDeviceKey        1000b030     coredll:COREDLL.dll
+ 0002:00000034       __imp_RegSetValueExW       1000b034     coredll:COREDLL.dll
+ 0002:00000038       __imp___GetUserKData       1000b038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_FreeLibrary          1000b03c     coredll:COREDLL.dll
+ 0002:00000040       __imp_GetProcAddressW      1000b040     coredll:COREDLL.dll
+ 0002:00000044       __imp_LoadLibraryW         1000b044     coredll:COREDLL.dll
+ 0002:00000048       __imp_GetDeviceInformationByDeviceHandle 1000b048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_GetDeviceHandleFromContext 1000b04c     coredll:COREDLL.dll
+ 0002:00000050       __imp_SetLastError         1000b050     coredll:COREDLL.dll
+ 0002:00000054       __imp_CreateStaticMapping  1000b054     coredll:COREDLL.dll
+ 0002:00000058       __imp_GetDirectCallerProcessId 1000b058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_InterlockedExchange  1000b05c     coredll:COREDLL.dll
+ 0002:00000060       __imp_RegisterAPISet       1000b060     coredll:COREDLL.dll
+ 0002:00000064       __imp_CreateAPISet         1000b064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CreateAPIHandle      1000b068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_REL_UDriverProcIoControl 1000b06c     coredll:COREDLL.dll
+ 0002:00000070       __imp_DuplicateHandle      1000b070     coredll:COREDLL.dll
+ 0002:00000074       __imp_FreePhysMem          1000b074     coredll:COREDLL.dll
+ 0002:00000078       __imp_GetLastError         1000b078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_AllocPhysMem         1000b07c     coredll:COREDLL.dll
+ 0002:00000080       __imp_CeSafeCopyMemory     1000b080     coredll:COREDLL.dll
+ 0002:00000084       __imp_CacheRangeFlush      1000b084     coredll:COREDLL.dll
+ 0002:00000088       __imp_UnlockPages          1000b088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_LockPages            1000b08c     coredll:COREDLL.dll
+ 0002:00000090       __imp_VirtualFree          1000b090     coredll:COREDLL.dll
+ 0002:00000094       __imp_VirtualCopy          1000b094     coredll:COREDLL.dll
+ 0002:00000098       __imp_VirtualAlloc         1000b098     coredll:COREDLL.dll
+ 0002:0000009c       __imp_CeSetThreadPriority  1000b09c     coredll:COREDLL.dll
+ 0002:000000a0       __imp_QueryPerformanceCounter 1000b0a0     coredll:COREDLL.dll
+ 0002:000000a4       __imp_QueryPerformanceFrequency 1000b0a4     coredll:COREDLL.dll
+ 0002:000000a8       __imp_CeGetThreadPriority  1000b0a8     coredll:COREDLL.dll
+ 0002:000000ac       __imp_EventModify          1000b0ac     coredll:COREDLL.dll
+ 0002:000000b0       __imp_DeleteCriticalSection 1000b0b0     coredll:COREDLL.dll
+ 0002:000000b4       __imp_CreateEventW         1000b0b4     coredll:COREDLL.dll
+ 0002:000000b8       __imp_InitializeCriticalSection 1000b0b8     coredll:COREDLL.dll
+ 0002:000000bc       __imp_WaitForSingleObject  1000b0bc     coredll:COREDLL.dll
+ 0002:000000c0       __imp_LeaveCriticalSection 1000b0c0     coredll:COREDLL.dll
+ 0002:000000c4       __imp_EnterCriticalSection 1000b0c4     coredll:COREDLL.dll
+ 0002:000000c8       __imp_wcscmp               1000b0c8     corelib1:COREDLL.dll
+ 0002:000000cc       __imp_memcpy               1000b0cc     corelib1:COREDLL.dll
+ 0002:000000d0       __imp_memset               1000b0d0     corelib1:COREDLL.dll
+ 0002:000000d4       __imp___stou               1000b0d4     corelib1:COREDLL.dll
+ 0002:000000d8       __imp_wcslen               1000b0d8     corelib1:COREDLL.dll
+ 0002:000000dc       __imp_wcstoul              1000b0dc     corelib1:COREDLL.dll
+ 0002:000000e0       __imp___C_specific_handler 1000b0e0     corelib1:COREDLL.dll
+ 0002:000000e4       __imp_??2@YAPAXI@Z         1000b0e4     corelib1:COREDLL.dll
+ 0002:000000e8       __imp_??3@YAXPAX@Z         1000b0e8     corelib1:COREDLL.dll
+ 0002:000000ec       __imp___rt_sdiv64by64      1000b0ec     corelib1:COREDLL.dll
+ 0002:000000f0       __imp__XcptFilter          1000b0f0     corelib1:COREDLL.dll
+ 0002:000000f4       __imp___security_gen_cookie2 1000b0f4     corelib1:COREDLL.dll
+ 0002:000000f8       __imp___report_gsfailure   1000b0f8     corelib1:COREDLL.dll
+ 0002:000000fc       __imp_free                 1000b0fc     corelib1:COREDLL.dll
+ 0002:00000100       __imp_DisableThreadLibraryCalls 1000b100     coredll:COREDLL.dll
+ 0002:00000104       __imp_TerminateProcess     1000b104     coredll:COREDLL.dll
+ 0002:00000108       \177COREDLL_NULL_THUNK_DATA 1000b108     coredll:COREDLL.dll
+ 0002:00000110       g_dwMeasuredSysClkFreq     1000b110     bspcfg:bspcfg.obj
+ 0002:00000114       _rgScaleTable              1000b114     bspcfg:bspcfg.obj
+ 0002:00000138       _rgI2CDevice               1000b138     bspcfg:bspcfg.obj
+ 0002:00000218       SupportedNands             1000b218     bspcfg:bspcfg.obj
+ 0002:00000254       BSPGpioTables              1000b254     bspcfg:bspcfg.obj
+ 0002:0000026c       g_hDma                     1000b26c     ddk_dma:ddk_dma.obj
+ 0002:00000270       __security_cookie          1000b270     corelib0:seccinit.obj
+ 0002:00000274       __security_cookie_complement 1000b274     corelib0:seccinit.obj
+ 0002:00000318       g_hDmaDrv                  1000b318     ceddk_dma_lib:dma.obj
+ 0002:00000380       ?ghAPIHandle@@3PAXA        1000b380     ddk_bus:notify.obj
+ 0002:00000394       _exitflag                  1000b394     corelib0:cexit.obj
+ 0002:00000398       g_NumCalibAcceptHits       1000b398     <common>
+ 0002:0000039c       g_fStallCounterSet         1000b39c     <common>
+ 0002:000003a0       g_StallCounter             1000b3a0     <common>
+ 0002:000003a4       g_InitStallCounter         1000b3a4     <common>
+ 0002:000003a8       g_MaxCalibAttempts         1000b3a8     <common>
+ 0002:000003ac       g_StallDummy               1000b3ac     <common>
+ 0002:000003b0       __onexitend                1000b3b0     <common>
+ 0002:000003b4       __onexitbegin              1000b3b4     <common>
+ 0002:000003b8       g_pcsExit                  1000b3b8     <common>
+ 0002:000003bc       _pRawDllMain               1000b3bc     <common>
+
+ entry point at        0001:00007c2c
+
+ Static symbols
+
+ 0001:00001960       GetGroupByID               10002960 f   common_ti_device_gpiodispatch:gpio_dispatch.obj
+ 0001:0000253c       ClockInitialize            1000353c f   ceddk_clock_lib:clock.obj
+ 0001:00002ce8       GetStringParam             10003ce8 f   ceddk_reg_lib:registry.obj
+ 0001:00002e4c       GetMultiDWordParam         10003e4c f   ceddk_reg_lib:registry.obj
+ 0001:00003050       GetBinParam                10004050 f   ceddk_reg_lib:registry.obj
+ 0001:00003b98       ?LoadPmExt@@YAHXZ          10004b98 f   ceddk_pmext_lib:pmext.obj
+ 0001:000040ec       __InitPadCfgfnTable        100050ec f   ceddk_padcfg_lib:padcfg.obj
+ 0001:00004fac       ?DevCloseFileHandle@@YAHP6AHKPAXK0KPAKPAU_OVERLAPPED@@@Z@Z 10005fac f   ddk_bus:notify.obj
+ 0001:00004fbc       ?DevDeviceIoControl@@YAHP6AHKPAXK0KPAKPAU_OVERLAPPED@@@ZK0K0K12@Z 10005fbc f   ddk_bus:notify.obj
+ 0001:00007b30       _DllMainCRTStartupHelper   10008b30 f   corelib0:pegdmain.obj
+ 0001:00007d70       doexit                     10008d70 f   corelib0:cexit.obj

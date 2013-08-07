@@ -1,0 +1,4 @@
+OBJECTS=\
+    obj\ARMV4I\debug\globals.obj\
+    obj\ARMV4I\debug\counts.obj
+

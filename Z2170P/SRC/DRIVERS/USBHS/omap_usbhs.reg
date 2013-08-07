@@ -1,0 +1,51 @@
+; All rights reserved ADENEO EMBEDDED 2010
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;
+; Use of this sample source code is subject to the terms of the Microsoft
+; license agreement under which you licensed this sample source code. If
+; you did not accept the terms of the license agreement, you are not
+; authorized to use this sample source code. For the terms of the license,
+; please see the license agreement between you and Microsoft or, if applicable,
+; see the LICENSE.RTF on your install media or the root of your tools installation.
+; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES.
+;
+
+#if (defined BSP_OMAP_USB_HOST1 || defined BSP_OMAP_USB_HOST2)
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\USBEHCI]
+    "Dll"="omap_ehcihcd.dll"
+    "Prefix"="EHC"
+    "Order"=dword:46
+    "Index"=dword:1
+    ; The EVM2 ECHI port uses a transceiver that has problems with the EHCI 
+	; controller PHY interface, it will fail after USB bus suspend/resume.
+    ; Designs that use a compatible transceiver can enable this feature.
+    "BusSuspendResume"=dword:0     ; 0 = bus suspend/resume disabled, 1 = enabled
+
+    ; Set the mode for any hsusb ports (mm1, mm2 and mm3) that are use a 12 pin high speed interface
+    ;  0 (not used or uses low/full speed serial interface), 1 (ULPI PHY), 2 (ULPI TLL)
+
+IF BSP_OMAP_USB_HOST2    
+    ; HS USB port 2 (MM2) must be set to mode 1 if using the EVM2
+    "Port2Mode"=dword:1
+    ; EVM2 using GPIO22 to enable VBUS for the HSUSB host port
+    "Port2PwrGpio"=dword:16 ; GPIO_22
+    "Port2PwrLevel"=dword:1
+    "Port2RstGpio"=dword:15    ; GPIO_21
+ELSE
+    "Port2Mode"=dword:0
+ENDIF 
+
+    "Port1Mode"=dword:0 ; Port 1 is not supported on this board
+    "Port3Mode"=dword:0 ; Port 3 is not supported on this board        
+
+    "MemBase"=dword:48064000         
+    "MemLen"=dword:00001000
+    "BusIoctl"=dword:2a0048
+    "InterfaceType"=dword:0
+
+    ; CE_DRIVER_BUS_GUID, CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID   
+    "IClass"=multi_sz:"{6F40791D-300E-44E4-BC38-E0E63CA8375C}=%b",
+                      "{A32942B7-920C-486b-B0E6-92A702A99B35}"
+#endif

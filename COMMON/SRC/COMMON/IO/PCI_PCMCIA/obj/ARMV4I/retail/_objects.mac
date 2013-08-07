@@ -1,0 +1,6 @@
+OBJECTS=\
+    obj\ARMV4I\retail\data.obj\
+    obj\ARMV4I\retail\power.obj\
+    obj\ARMV4I\retail\trans.obj\
+    obj\ARMV4I\retail\ioctl.obj
+

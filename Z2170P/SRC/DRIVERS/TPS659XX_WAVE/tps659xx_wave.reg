@@ -1,0 +1,92 @@
+; All rights reserved ADENEO EMBEDDED 2010
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;
+; Use of this sample source code is subject to the terms of the Microsoft
+; license agreement under which you licensed this sample source code. If
+; you did not accept the terms of the license agreement, you are not
+; authorized to use this sample source code. For the terms of the license,
+; please see the license agreement between you and Microsoft or, if applicable,
+; see the LICENSE.RTF on your install media or the root of your tools installation.
+; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES.
+;
+
+IF BSP_TPS659XX_WAVE
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\WaveDev]
+    "Prefix"="WAV"
+	"Dll"="tps659xx_wave.dll"
+    "Flags"=dword:00010000
+    "Index"=dword:1
+    "Order"=dword:20
+    "ExternalPortDriver"="MCP2:"
+    ; CE_DRIVER_WAVEDEV_GUID, CE_DRIVER_WAVEDEV_UNIFIED_GUID, CE_DRIVER_POWER_MANAGEABLE_GENERIC_GUID
+   "IClass"=multi_sz:"{E92BC203-8354-4043-A06F-2A170BF6F227}",
+                     "{37168569-61C4-45fd-BD54-9442C7DBA46F}",
+                     "{A32942B7-920C-486b-B0E6-92A702A99B35}"  
+                     
+    "StreamAttenMax"=dword:2c     ; -44 dB, for Smartphone
+; ### Audio profile settings ###
+    "AudioProfile"=dword:0                              ; I2S Slave->0, I2S Master->1, TDM Profile->2
+    "NumOfPlayChannels"=dword:4                         ; Number of channels to be enabled    
+    "EnableAudioPlayChannels"=multi_sz:"0","2","0","2"
+    "NumOfRecChannels"=dword:4                          ; Number of channels to be enabled    
+    "EnableAudioRecChannels"=multi_sz:"0","1","0","1"      
+    "DASFHwCodecAdpaterPath"="hwcodecadapter.dll"       ; HW codec adpater DLL path
+
+; ### Default Audio Routing
+	; 1 = Handset, 2 = Headset, 3 = Carkit (N/A), 4 = Speaker, 5 = BTHeadset (N/A), 6 = AuxHeadset
+    "AudioRoute"=dword:6
+
+; ### TPS659XX Input and Output path gains, study wave driver code and read TPS659XX TRM to understand settings ###
+    ; 
+    ; All TPS659XX register values are a single byte, example values are in hex
+    ;
+    ; ATXL1PGA, ATXR1PGA: L and R mic input digital gain
+    ;   gain in dB (0 = 0dB, 1f = 31 dB)
+    ;
+    ; ANAMIC_GAIN: R/L mic input analog gain
+    ;   upper nibble is right gain, lower is left gain
+    ;   0 = 0dB, 1 = 6 dB, 2 = 12 dB, 3 = 18dB, 4 = 24dB, 5 = 30dB
+    ;
+    ; ARXL2PGA, ARXR2PGA: L and R output digital gain
+    ;   Upper 2 bits = coarse gain, 0 = 0dB, 1 = 6dB, 2 = 12dB, 3=12dB (possible documentation error, may be 3=18dB)
+    ;   Lower 6 bits = fine gain, 0 = mute, 1 = -62dB, 2 = -61dB, 3e = -1dB, 3f = 0dB
+    ;
+    ; ARXL2_APGA_CTL, ARXR2_APGA_CTL: L and R output analog gain
+    ;   Note that bits are shifted by driver into ARXL2_GAIN_SET/ARXR2_GAIN_SET field in register.
+    ;   0 = 12dB, 1 = 10dB, 2 = 8dB, 3 = 6dB, 4 = 4dB, 5 = 2dB, 6 = 0dB, 7 = -2dB, 8 = -4dB, 9 = -6dB, 
+    ;   a = -8dB, b = -10dB, c = -12dB, d = -14dB, e = -16dB, f = -18db, 10 = -20dB, 11 = -22dB, 12 = -24dB
+    
+    ; Main Mic input gains (mono in), used for handsfree speaker mode
+    "HwCodecInMainMicDigitalGain"=dword:F               ; 15dB, controls TPS659XX ATXL1PGA register
+    "HwCodecInMainMicAnalogGain"=dword:4                ; 24dB, controls TPS659XX ANAMIC_GAIN  register (L only)
+
+    ; Sub Mic gains (mono in), currently not used
+    "HwCodecInSubMicDigitalGain"=dword:F                ; 15dB, controls TPS659XX ATXR1PGA register
+    "HwCodecInSubMicAnalogGain"=dword:4                 ; 24dB, controls TPS659XX ANAMIC_GAIN  register (L only)
+
+    ; Mic input gains (mono in), used for Headset/Mic mode
+    "HwCodecInHeadsetMicDigitalGain"=dword:F            ; 15dB, controls TPS659XX ATXL1PGA register
+    "HwCodecInHeadsetMicAnalogGain"=dword:2             ; 12dB, controls TPS659XX ANAMIC_GAIN  register (L only)
+
+    ; Aux input gains (stereo in), used for Headset/Aux mode (default mode for EVM/EVM2)
+    "HwCodecInHeadsetAuxDigitalGain"=dword:F            ; 15dB, controls TPS659XX ATXL1PGA, TPS659XX ATXR1PGA registers
+    "HwCodecInHeadsetAuxAnalogGain"=dword:0             ; 0dB, controls TPS659XX ANAMIC_GAIN  registers (L and R)
+
+    ; Stereo Speaker output gains (stereo out), used for Stereo Speaker mode (hands free speaker)
+    "HwCodecOutStereoSpeakerDigitalGain"=dword:b5       ; 12dB coarse gain and -53dB fine gain, controls TPS659XX ARXL2PGA and ARXR2PGA registers
+    "HwCodecOutStereoSpeakerAnalogGain"=dword:0         ; 12dB, controls TPS659XX ARXL2_APGA_CTL and ARXR2_APGA_CTL registers
+    
+    ; Stereo Headset output gains (stereo out), used for Headset/Aux mode (default mode for EVM/EVM2)
+    "HwCodecOutStereoHeadsetDigitalGain"=dword:bf       ; 12dB coarse gain and 0dB fine gain, controls TPS659XX ARXL2PGA and ARXR2PGA registers
+    "HwCodecOutStereoHeadsetAnalogGain"=dword:0         ; 12dB, controls TPS659XX ARXL2_APGA_CTL and ARXR2_APGA_CTL registers
+
+    ; Headset output gains (stereo out), used for Headset/Mic mode
+    "HwCodecOutHeadsetMicDigitalGain"=dword:AA          ; 12dB coarse gain and -21dB fine gain, controls TPS659XX ARXL2PGA and TPS659XX ARXR2PGA registers
+    "HwCodecOutHeadsetMicAnalogGain"=dword:0            ; 12dB, controls TPS659XX ARXL2_APGA_CTL and ARXR2_APGA_CTL registers
+
+[HKEY_LOCAL_MACHINE\Drivers\Speaker]
+    "Name"="WAV1:"
+                     
+ENDIF

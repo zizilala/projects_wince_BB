@@ -1,0 +1,1104 @@
+<!--
+Copyright (c) Microsoft Corporation.  All rights reserved.
+-->
+<!--
+Use of this sample source code is subject to the terms of the Microsoft
+license agreement under which you licensed this sample source code. If
+you did not accept the terms of the license agreement, you are not
+authorized to use this sample source code. For the terms of the license,
+please see the license agreement between you and Microsoft or, if applicable,
+see the LICENSE.RTF on your install media or the root of your tools installation.
+THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+-->
+<!--
+Copyright (c) 2010 Texas Instruments Incorporated - http://www.ti.com/
+All rights reserved.
+-->
+<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Computex_Demo_2.Page"
+	xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	mc:Ignorable="d">
+	<UserControl.Resources>
+		<Style x:Key="BrowserButton" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid x:Name="Browser" Background="#00000000">
+							<vsm:VisualStateManager.VisualStateGroups>
+								<vsm:VisualStateGroup x:Name="FocusStates">
+									<vsm:VisualState x:Name="Unfocused"/>
+									<vsm:VisualState x:Name="Focused"/>
+								</vsm:VisualStateGroup>
+								<vsm:VisualStateGroup x:Name="CommonStates">
+									<vsm:VisualStateGroup.Transitions>
+									</vsm:VisualStateGroup.Transitions>
+									<vsm:VisualState x:Name="MouseOver">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="MouseOver1" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Browser_Label" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Normal"/>
+									<vsm:VisualState x:Name="Pressed">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Pressed1" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="MouseOver1" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Browser_Label" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.75"/>
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Disabled"/>
+								</vsm:VisualStateGroup>
+							</vsm:VisualStateManager.VisualStateGroups>
+							<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="2" Height="250" Stroke="{x:Null}" x:Name="Pressed1" Visibility="Collapsed">
+								<Rectangle.Fill>
+									<RadialGradientBrush>
+										<RadialGradientBrush.RelativeTransform>
+											<TransformGroup>
+												<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="3.44" ScaleY="1.963"/>
+												<SkewTransform CenterX="0.5" CenterY="0.5"/>
+												<RotateTransform CenterX="0.5" CenterY="0.5"/>
+												<TranslateTransform X="0.015" Y="-0.5"/>
+											</TransformGroup>
+										</RadialGradientBrush.RelativeTransform>
+										<GradientStop Color="#FFFFFFFF" Offset="0.134"/>
+										<GradientStop Color="#00F2D46D" Offset="1"/>
+									</RadialGradientBrush>
+								</Rectangle.Fill>
+							</Rectangle>
+							<Grid x:Name="MouseOver1" Visibility="Collapsed">
+								<Path Margin="0,0.092,0,111.908" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="1" Data="M0,5 C0,2.2385762 2.2385762,0 5,0 L170,0 C1.9248421,4.000011 -8.9483136E-13,130.76158 -8.9483136E-13,128.00015 z" d:LayoutOverrides="Width">
+									<Path.Fill>
+										<RadialGradientBrush>
+											<RadialGradientBrush.RelativeTransform>
+												<TransformGroup>
+													<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.773" ScaleY="1.562"/>
+													<SkewTransform CenterX="0.5" CenterY="0.5"/>
+													<RotateTransform CenterX="0.5" CenterY="0.5"/>
+													<TranslateTransform X="-0.467" Y="-0.497"/>
+												</TransformGroup>
+											</RadialGradientBrush.RelativeTransform>
+											<GradientStop Color="#66FFFFFF"/>
+											<GradientStop Color="#00FFFFFF" Offset="1"/>
+										</RadialGradientBrush>
+									</Path.Fill>
+								</Path>
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="2" Height="250" Stroke="{x:Null}" x:Name="Mouse_Over">
+									<Rectangle.Fill>
+										<RadialGradientBrush>
+											<RadialGradientBrush.RelativeTransform>
+												<TransformGroup>
+													<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="2.249" ScaleY="1.931"/>
+													<SkewTransform CenterX="0.5" CenterY="0.5"/>
+													<RotateTransform CenterX="0.5" CenterY="0.5"/>
+													<TranslateTransform X="0.037" Y="0.583"/>
+												</TransformGroup>
+											</RadialGradientBrush.RelativeTransform>
+											<GradientStop Color="#FFFFEF86" Offset="0.344"/>
+											<GradientStop Color="#FFFFFFFF" Offset="0.237"/>
+											<GradientStop Color="#00F2D46D" Offset="0.625"/>
+										</RadialGradientBrush>
+									</Rectangle.Fill>
+								</Rectangle>
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="3" Height="250" Fill="{x:Null}">
+									<Rectangle.Stroke>
+										<LinearGradientBrush EndPoint="1.038,1.021" StartPoint="0.005,0.021">
+											<GradientStop Color="#00333333"/>
+											<GradientStop Color="#192D2D2D" Offset="0.795"/>
+											<GradientStop Color="#00333333" Offset="1"/>
+											<GradientStop Color="#19484848" Offset="0.299"/>
+										</LinearGradientBrush>
+									</Rectangle.Stroke>
+								</Rectangle>
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="3" Height="250" Fill="{x:Null}" x:Name="rectangle">
+									<Rectangle.Stroke>
+										<LinearGradientBrush EndPoint="1.038,1.021" StartPoint="0.005,0.021">
+											<GradientStop Color="#BFFFFFFF"/>
+											<GradientStop Color="#00FFFFFF" Offset="0.634"/>
+											<GradientStop Color="#BFFFFFFF" Offset="1"/>
+											<GradientStop Color="#19FFFFFF" Offset="0.42"/>
+										</LinearGradientBrush>
+									</Rectangle.Stroke>
+								</Rectangle>
+							</Grid>
+							<Image Margin="0,0,0,0" Width="205.974" Source="\windows\Bubbles_BrowserIconBlack.png" Stretch="Uniform" HorizontalAlignment="Center" x:Name="Browser_Icon" VerticalAlignment="Center"/>
+							<Image Height="43.995" VerticalAlignment="Bottom" Width="139.983" Source="\windows\Bubbles_BrowserLabel.png" Stretch="Uniform" HorizontalAlignment="Center" Margin="0,0,0,8" x:Name="Browser_Label" Visibility="Collapsed"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="MediaButton" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid x:Name="Media" Background="#00000000">
+							<vsm:VisualStateManager.VisualStateGroups>
+								<vsm:VisualStateGroup x:Name="FocusStates">
+									<vsm:VisualState x:Name="Unfocused"/>
+									<vsm:VisualState x:Name="Focused"/>
+								</vsm:VisualStateGroup>
+								<vsm:VisualStateGroup x:Name="CommonStates">
+									<vsm:VisualState x:Name="MouseOver">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Media_Label" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="MouseOver3" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Normal"/>
+									<vsm:VisualState x:Name="Pressed">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Pressed1" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="MouseOver3" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Media_Label" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[0].(GradientStop.Color)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Color)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[1].(GradientStop.Color)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[2].(GradientStop.Color)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Offset)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.415"/>
+											</DoubleAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.75"/>
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Disabled"/>
+								</vsm:VisualStateGroup>
+							</vsm:VisualStateManager.VisualStateGroups>
+							<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="2" Stroke="{x:Null}" x:Name="Pressed1" Visibility="Collapsed">
+								<Rectangle.Fill>
+									<RadialGradientBrush>
+										<RadialGradientBrush.RelativeTransform>
+											<TransformGroup>
+												<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="3.44" ScaleY="1.963"/>
+												<SkewTransform CenterX="0.5" CenterY="0.5"/>
+												<RotateTransform CenterX="0.5" CenterY="0.5"/>
+												<TranslateTransform X="0.015" Y="-0.5"/>
+											</TransformGroup>
+										</RadialGradientBrush.RelativeTransform>
+										<GradientStop Color="#FFFFFFFF" Offset="0.134"/>
+										<GradientStop Color="#00F2D46D" Offset="1"/>
+									</RadialGradientBrush>
+								</Rectangle.Fill>
+							</Rectangle>
+							<Grid x:Name="MouseOver3" Visibility="Collapsed">
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="2" Height="250" Stroke="{x:Null}" x:Name="Mouse_Over">
+									<Rectangle.Fill>
+										<RadialGradientBrush>
+											<RadialGradientBrush.RelativeTransform>
+												<TransformGroup>
+													<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="2.249" ScaleY="1.931"/>
+													<SkewTransform CenterX="0.5" CenterY="0.5"/>
+													<RotateTransform CenterX="0.5" CenterY="0.5"/>
+													<TranslateTransform X="0.037" Y="0.583"/>
+												</TransformGroup>
+											</RadialGradientBrush.RelativeTransform>
+											<GradientStop Color="#FFFFEF86" Offset="0.344"/>
+											<GradientStop Color="#FFFFFFFF" Offset="0.237"/>
+											<GradientStop Color="#00F2D46D" Offset="0.625"/>
+										</RadialGradientBrush>
+									</Rectangle.Fill>
+								</Rectangle>
+								<Path Margin="0,0.092,0,111.908" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="1" Data="M0,5 C0,2.2385762 2.2385762,0 5,0 L170,0 C1.9248421,4.000011 -8.9483136E-13,130.76158 -8.9483136E-13,128.00015 z">
+									<Path.Fill>
+										<RadialGradientBrush>
+											<RadialGradientBrush.RelativeTransform>
+												<TransformGroup>
+													<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.773" ScaleY="1.562"/>
+													<SkewTransform CenterX="0.5" CenterY="0.5"/>
+													<RotateTransform CenterX="0.5" CenterY="0.5"/>
+													<TranslateTransform X="-0.467" Y="-0.497"/>
+												</TransformGroup>
+											</RadialGradientBrush.RelativeTransform>
+											<GradientStop Color="#66FFFFFF"/>
+											<GradientStop Color="#00FFFFFF" Offset="1"/>
+										</RadialGradientBrush>
+									</Path.Fill>
+								</Path>
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="3" Height="250" Fill="{x:Null}">
+									<Rectangle.Stroke>
+										<LinearGradientBrush EndPoint="1.038,1.021" StartPoint="0.005,0.021">
+											<GradientStop Color="#00333333"/>
+											<GradientStop Color="#3F2D2D2D" Offset="0.795"/>
+											<GradientStop Color="#00333333" Offset="1"/>
+											<GradientStop Color="#3F484848" Offset="0.299"/>
+										</LinearGradientBrush>
+									</Rectangle.Stroke>
+								</Rectangle>
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="3" Height="250" Fill="{x:Null}" x:Name="rectangle">
+									<Rectangle.Stroke>
+										<LinearGradientBrush EndPoint="1.038,1.021" StartPoint="0.005,0.021">
+											<GradientStop Color="#BFFFFFFF"/>
+											<GradientStop Color="#00FFFFFF" Offset="0.634"/>
+											<GradientStop Color="#BFFFFFFF" Offset="1"/>
+											<GradientStop Color="#19FFFFFF" Offset="0.42"/>
+										</LinearGradientBrush>
+									</Rectangle.Stroke>
+								</Rectangle>
+							</Grid>
+							<Image Width="131.984" Source="\windows\Bubbles_MediaIconBlack.png" Stretch="Uniform" x:Name="Media_Icon" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,7,11"/>
+							<Image Height="44.994" VerticalAlignment="Bottom" Width="109.986" Source="\windows\Bubbles_MediaLabel.png" Stretch="Uniform" HorizontalAlignment="Center" Margin="0,0,0,8" x:Name="Media_Label" Visibility="Collapsed"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="StyleButton" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid x:Name="Style" Background="#00000000">
+							<vsm:VisualStateManager.VisualStateGroups>
+								<vsm:VisualStateGroup x:Name="FocusStates">
+									<vsm:VisualState x:Name="Unfocused"/>
+									<vsm:VisualState x:Name="Focused"/>
+								</vsm:VisualStateGroup>
+								<vsm:VisualStateGroup x:Name="CommonStates">
+									<vsm:VisualState x:Name="MouseOver">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="MouseOver3" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Style_Label" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Normal"/>
+									<vsm:VisualState x:Name="Pressed">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Pressed1" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="MouseOver3" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FDFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Style_Label" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.75"/>
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Disabled"/>
+								</vsm:VisualStateGroup>
+							</vsm:VisualStateManager.VisualStateGroups>
+							<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="2" Stroke="{x:Null}" x:Name="Pressed1" Visibility="Collapsed">
+								<Rectangle.Fill>
+									<RadialGradientBrush>
+										<RadialGradientBrush.RelativeTransform>
+											<TransformGroup>
+												<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="3.44" ScaleY="1.963"/>
+												<SkewTransform CenterX="0.5" CenterY="0.5"/>
+												<RotateTransform CenterX="0.5" CenterY="0.5"/>
+												<TranslateTransform X="0.015" Y="-0.5"/>
+											</TransformGroup>
+										</RadialGradientBrush.RelativeTransform>
+										<GradientStop Color="#FFFFFFFF" Offset="0.134"/>
+										<GradientStop Color="#00F2D46D" Offset="1"/>
+									</RadialGradientBrush>
+								</Rectangle.Fill>
+							</Rectangle>
+							<Grid x:Name="MouseOver3" Visibility="Collapsed">
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="2" Height="250" Stroke="{x:Null}" x:Name="Mouse_Over">
+									<Rectangle.Fill>
+										<RadialGradientBrush>
+											<RadialGradientBrush.RelativeTransform>
+												<TransformGroup>
+													<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="2.249" ScaleY="1.931"/>
+													<SkewTransform CenterX="0.5" CenterY="0.5"/>
+													<RotateTransform CenterX="0.5" CenterY="0.5"/>
+													<TranslateTransform X="0.037" Y="0.583"/>
+												</TransformGroup>
+											</RadialGradientBrush.RelativeTransform>
+											<GradientStop Color="#FFFFEF86" Offset="0.344"/>
+											<GradientStop Color="#FFFFFFFF" Offset="0.237"/>
+											<GradientStop Color="#00F2D46D" Offset="0.625"/>
+										</RadialGradientBrush>
+									</Rectangle.Fill>
+								</Rectangle>
+								<Path Margin="0,0.092,0,111.908" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="1" Data="M0,5 C0,2.2385762 2.2385762,0 5,0 L170,0 C1.9248421,4.000011 -8.9483136E-13,130.76158 -8.9483136E-13,128.00015 z">
+									<Path.Fill>
+										<RadialGradientBrush>
+											<RadialGradientBrush.RelativeTransform>
+												<TransformGroup>
+													<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.773" ScaleY="1.562"/>
+													<SkewTransform CenterX="0.5" CenterY="0.5"/>
+													<RotateTransform CenterX="0.5" CenterY="0.5"/>
+													<TranslateTransform X="-0.467" Y="-0.497"/>
+												</TransformGroup>
+											</RadialGradientBrush.RelativeTransform>
+											<GradientStop Color="#66FFFFFF"/>
+											<GradientStop Color="#00FFFFFF" Offset="1"/>
+										</RadialGradientBrush>
+									</Path.Fill>
+								</Path>
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="3" Height="250" Fill="{x:Null}">
+									<Rectangle.Stroke>
+										<LinearGradientBrush EndPoint="1.038,1.021" StartPoint="0.005,0.021">
+											<GradientStop Color="#00333333"/>
+											<GradientStop Color="#3F2D2D2D" Offset="0.795"/>
+											<GradientStop Color="#00333333" Offset="1"/>
+											<GradientStop Color="#3F484848" Offset="0.299"/>
+										</LinearGradientBrush>
+									</Rectangle.Stroke>
+								</Rectangle>
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="3" Height="250" Fill="{x:Null}" x:Name="rectangle">
+									<Rectangle.Stroke>
+										<LinearGradientBrush EndPoint="1.038,1.021" StartPoint="0.005,0.021">
+											<GradientStop Color="#BFFFFFFF"/>
+											<GradientStop Color="#00FFFFFF" Offset="0.634"/>
+											<GradientStop Color="#BFFFFFFF" Offset="1"/>
+											<GradientStop Color="#19FFFFFF" Offset="0.42"/>
+										</LinearGradientBrush>
+									</Rectangle.Stroke>
+								</Rectangle>
+							</Grid>
+							<Image Width="211.974" Source="\windows\Bubbles_StyleIconBlack.png" Stretch="Uniform" x:Name="Style_Icon" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+							<Image Height="53.993" VerticalAlignment="Bottom" Width="86.989" Source="\windows\Bubbles_StyleLabel.png" Stretch="Uniform" HorizontalAlignment="Center" x:Name="Style_Label" Visibility="Collapsed"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="PhotoButton" TargetType="Button">
+			<Setter Property="Background" Value="#FF1F3B53"/>
+			<Setter Property="Foreground" Value="#FF000000"/>
+			<Setter Property="Padding" Value="3"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="BorderBrush">
+				<Setter.Value>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFA3AEB9" Offset="0"/>
+						<GradientStop Color="#FF8399A9" Offset="0.375"/>
+						<GradientStop Color="#FF718597" Offset="0.375"/>
+						<GradientStop Color="#FF617584" Offset="1"/>
+					</LinearGradientBrush>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid Background="#00000000">
+							<vsm:VisualStateManager.VisualStateGroups>
+								<vsm:VisualStateGroup x:Name="CommonStates">
+									<vsm:VisualState x:Name="Normal"/>
+									<vsm:VisualState x:Name="MouseOver">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="MouseOver1" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Photo_Label" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Pressed">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Pressed1" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="MouseOver1" Storyboard.TargetProperty="(UIElement.Visibility)">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+											</ColorAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetName="Photo_Label" Storyboard.TargetProperty="(UIElement.Visibility)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<DiscreteObjectKeyFrame KeyTime="00:00:00">
+													<DiscreteObjectKeyFrame.Value>
+														<Visibility>Visible</Visibility>
+													</DiscreteObjectKeyFrame.Value>
+												</DiscreteObjectKeyFrame>
+											</ObjectAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+												<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.75"/>
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Disabled">
+										<Storyboard/>
+									</vsm:VisualState>
+								</vsm:VisualStateGroup>
+								<vsm:VisualStateGroup x:Name="FocusStates">
+									<vsm:VisualState x:Name="Focused">
+										<Storyboard/>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Unfocused"/>
+								</vsm:VisualStateGroup>
+							</vsm:VisualStateManager.VisualStateGroups>
+							<Grid x:Name="Photo" Width="185" HorizontalAlignment="Right">
+								<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="2" Stroke="{x:Null}" x:Name="Pressed1" Visibility="Collapsed" HorizontalAlignment="Stretch" Height="250">
+									<Rectangle.Fill>
+										<RadialGradientBrush>
+											<RadialGradientBrush.RelativeTransform>
+												<TransformGroup>
+													<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="3.44" ScaleY="1.963"/>
+													<SkewTransform CenterX="0.5" CenterY="0.5"/>
+													<RotateTransform CenterX="0.5" CenterY="0.5"/>
+													<TranslateTransform X="0.015" Y="-0.5"/>
+												</TransformGroup>
+											</RadialGradientBrush.RelativeTransform>
+											<GradientStop Color="#FFFFFFFF" Offset="0.134"/>
+											<GradientStop Color="#00F2D46D" Offset="1"/>
+										</RadialGradientBrush>
+									</Rectangle.Fill>
+								</Rectangle>
+								<Grid x:Name="MouseOver1" Visibility="Collapsed">
+									<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="2" Height="250" Stroke="{x:Null}" x:Name="Mouse_Over">
+										<Rectangle.Fill>
+											<RadialGradientBrush>
+												<RadialGradientBrush.RelativeTransform>
+													<TransformGroup>
+														<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="2.249" ScaleY="1.931"/>
+														<SkewTransform CenterX="0.5" CenterY="0.5"/>
+														<RotateTransform CenterX="0.5" CenterY="0.5"/>
+														<TranslateTransform X="0.037" Y="0.583"/>
+													</TransformGroup>
+												</RadialGradientBrush.RelativeTransform>
+												<GradientStop Color="#FFFFEF86" Offset="0.344"/>
+												<GradientStop Color="#FFFFFFFF" Offset="0.237"/>
+												<GradientStop Color="#00F2D46D" Offset="0.625"/>
+											</RadialGradientBrush>
+										</Rectangle.Fill>
+									</Rectangle>
+									<Path Margin="0,0.092,0,111.908" Stretch="Fill" Stroke="{x:Null}" StrokeThickness="1" Data="M0,5 C0,2.2385762 2.2385762,0 5,0 L170,0 C1.9248421,4.000011 -8.9483136E-13,130.76158 -8.9483136E-13,128.00015 z" d:LayoutOverrides="Width">
+										<Path.Fill>
+											<RadialGradientBrush>
+												<RadialGradientBrush.RelativeTransform>
+													<TransformGroup>
+														<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.773" ScaleY="1.562"/>
+														<SkewTransform CenterX="0.5" CenterY="0.5"/>
+														<RotateTransform CenterX="0.5" CenterY="0.5"/>
+														<TranslateTransform X="-0.467" Y="-0.497"/>
+													</TransformGroup>
+												</RadialGradientBrush.RelativeTransform>
+												<GradientStop Color="#66FFFFFF"/>
+												<GradientStop Color="#00FFFFFF" Offset="1"/>
+											</RadialGradientBrush>
+										</Path.Fill>
+									</Path>
+									<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="3" Height="250" Fill="{x:Null}">
+										<Rectangle.Stroke>
+											<LinearGradientBrush EndPoint="1.038,1.021" StartPoint="0.005,0.021">
+												<GradientStop Color="#00333333"/>
+												<GradientStop Color="#192D2D2D" Offset="0.795"/>
+												<GradientStop Color="#00333333" Offset="1"/>
+												<GradientStop Color="#3F484848" Offset="0.299"/>
+											</LinearGradientBrush>
+										</Rectangle.Stroke>
+									</Rectangle>
+									<Rectangle RadiusX="2" RadiusY="2" StrokeThickness="3" Height="250" Fill="{x:Null}" x:Name="rectangle">
+										<Rectangle.Stroke>
+											<LinearGradientBrush EndPoint="1.038,1.021" StartPoint="0.005,0.021">
+												<GradientStop Color="#BFFFFFFF"/>
+												<GradientStop Color="#00FFFFFF" Offset="0.634"/>
+												<GradientStop Color="#BFFFFFFF" Offset="1"/>
+												<GradientStop Color="#19FFFFFF" Offset="0.42"/>
+											</LinearGradientBrush>
+										</Rectangle.Stroke>
+									</Rectangle>
+								</Grid>
+								<Image Margin="0,0,0,0" Source="\windows\Bubbles_PhotoIconBlack.png" Stretch="Uniform" x:Name="Photo_Icon" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+								<Image Height="44.994" VerticalAlignment="Bottom" Width="106.987" Source="\windows\Bubbles_PhotoLabel.png" Stretch="Uniform" HorizontalAlignment="Center" Margin="0,0,0,8" x:Name="Photo_Label" Visibility="Collapsed"/>
+							</Grid>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="#FF000000" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Grid.Triggers><EventTrigger RoutedEvent="Grid.Loaded"><BeginStoryboard>
+		<Storyboard x:Name="Ambient_BG">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40" Value="492.214"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40" Value="799.714"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35" Value="-618.214"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35" Value="-498.786"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:14.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.2000000" Value="1087.429"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:14.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.2000000" Value="-222.001"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:20" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.7000000" Value="1055.143"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:20" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.7000000" Value="142.214"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-4.773"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30" Value="-840.286"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-21.161"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30" Value="623.358"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse14" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30" Value="1171.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse14" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30" Value="-121.358"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse15" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40" Value="-1125"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse15" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40" Value="108.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse17" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:15" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-647"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse17" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:15" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-615"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse19" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.9000000" Value="638"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse19" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.9000000" Value="-770"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse20" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.9000000" Value="-359.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse20" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00" RepeatBehavior="Forever">
+				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.9000000" Value="833"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+               </BeginStoryboard></EventTrigger></Grid.Triggers>
+         
+		<Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stroke="{x:Null}" StrokeMiterLimit="1" x:Name="Background" Visibility="Collapsed">
+			<Rectangle.Fill>
+				<RadialGradientBrush Center="739.5,532.387023925781" GradientOrigin="739.5,532.387023925781" RadiusX="908.50897216796875" RadiusY="908.50897216796875" MappingMode="Absolute">
+					<RadialGradientBrush.RelativeTransform>
+						<TransformGroup>
+							<ScaleTransform CenterX="0.92400002479553223" CenterY="1.1089999675750732" ScaleX="0.62400001287460327" ScaleY="0.62400001287460327"/>
+							<SkewTransform CenterX="0.92400002479553223" CenterY="1.1089999675750732"/>
+							<RotateTransform CenterX="0.92400002479553223" CenterY="1.1089999675750732"/>
+							<TranslateTransform X="-0.298" Y="1.496"/>
+						</TransformGroup>
+					</RadialGradientBrush.RelativeTransform>
+					<RadialGradientBrush.Transform>
+						<MatrixTransform Matrix="1,0,0,-0.621999979019165,-95,1046.88696289063"/>
+					</RadialGradientBrush.Transform>
+					<GradientStop Color="#FFEFD431"/>
+					<GradientStop Color="#FFE3B233" Offset="0.281"/>
+					<GradientStop Color="#FF9E6D32" Offset="0.701"/>
+					<GradientStop Color="#FF382A1B" Offset="1"/>
+				</RadialGradientBrush>
+			</Rectangle.Fill>
+		</Rectangle>
+		<Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stroke="{x:Null}" StrokeMiterLimit="1" x:Name="Background_Copy">
+			<Rectangle.Fill>
+				<LinearGradientBrush EndPoint="1.004,-0.001" StartPoint="-0.032,1.033">
+					<GradientStop Color="#FF132017" Offset="0.228"/>
+					<GradientStop Color="#FF061E22" Offset="0.335"/>
+					<GradientStop Color="#FF1C0E05" Offset="1"/>
+					<GradientStop Color="#FF120610" Offset="0.536"/>
+					<GradientStop Color="#FF211F10" Offset="0.08"/>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+		</Rectangle>
+		<Grid Margin="-5,-19,7,-21" x:Name="Circles" Opacity="1" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Ellipse CacheMode="BitmapCache" Margin="0,-129.849,-206.857,0" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" Height="192" VerticalAlignment="Top" x:Name="ellipse3" RenderTransformOrigin="0.5,0.5" Width="192" HorizontalAlignment="Right">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#7FCA00FF" Offset="0.955"/>
+						<GradientStop Color="#00CA00FF" Offset="1"/>
+						<GradientStop Color="#4CA927CB" Offset="0.92"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Ellipse CacheMode="BitmapCache" Margin="50.286,-230.714,0,0" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" Height="124" VerticalAlignment="Top" x:Name="ellipse5" RenderTransformOrigin="0.5,0.5" Width="124" HorizontalAlignment="Left">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#BFCA00FF" Offset="0.955"/>
+						<GradientStop Color="#00CA00FF" Offset="1"/>
+						<GradientStop Color="#4CA927CB" Offset="0.92"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Ellipse CacheMode="BitmapCache" Margin="0,0,-207,30.714" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" HorizontalAlignment="Right" Width="124" Height="124" VerticalAlignment="Bottom" x:Name="ellipse8" RenderTransformOrigin="0.5,0.5">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#BFFFEA00" Offset="0.955"/>
+						<GradientStop Color="#00FFEA00" Offset="1"/>
+						<GradientStop Color="#4CDDD46F" Offset="0.92"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Ellipse CacheMode="BitmapCache" Margin="-249.143,222.286,0,175.714" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" HorizontalAlignment="Left" Width="122" x:Name="ellipse10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#BF00A5FF" Offset="0.955"/>
+						<GradientStop Color="#0000A5FF" Offset="1"/>
+						<GradientStop Color="#4C2791CB" Offset="0.92"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Ellipse CacheMode="BitmapCache" Margin="-210.143,0,0,60.714" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" HorizontalAlignment="Left" Width="192" Height="192" VerticalAlignment="Bottom" x:Name="ellipse11" RenderTransformOrigin="0.5,0.5">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#BFFF6700" Offset="0.955"/>
+						<GradientStop Color="#00FF6700" Offset="1"/>
+						<GradientStop Color="#4CFF6700" Offset="0.924"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+		</Grid>
+		<Grid Margin="0,0,62,34" x:Name="Blurred_Dots" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Ellipse CacheMode="BitmapCache" Margin="-308.5,32.5,0,221.5" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" Width="192" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" x:Name="ellipse14">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#0093C8E5" Offset="1"/>
+						<GradientStop Color="#332791CB" Offset="0.777"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Ellipse CacheMode="BitmapCache" Margin="0,-5.5,-250,0" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" HorizontalAlignment="Right" Width="136" x:Name="ellipse15" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Height="136">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#00DF93E5" Offset="0.991"/>
+						<GradientStop Color="#26DD18E2" Offset="0.781"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Ellipse CacheMode="BitmapCache" Margin="0,0,-303.5,-73" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" Height="168" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="168" x:Name="ellipse17" RenderTransformOrigin="0.5,0.5">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#0093E5A0" Offset="1"/>
+						<GradientStop Color="#3327CB2B" Offset="0.777"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Ellipse CacheMode="BitmapCache" Margin="-38.5,0,0,-251" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" HorizontalAlignment="Left" Width="192" VerticalAlignment="Bottom" Height="192" x:Name="ellipse19" RenderTransformOrigin="0.5,0.5">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#00DDE593" Offset="1"/>
+						<GradientStop Color="#33CEE218" Offset="0.772"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Ellipse CacheMode="BitmapCache" Margin="357.5,-308.5,188.5,0" Stroke="{x:Null}" StrokeThickness="3" Opacity="0.67" VerticalAlignment="Top" Height="192" x:Name="ellipse20" RenderTransformOrigin="0.5,0.5">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.979" ScaleY="0.979"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#00DF93E5" Offset="0.991"/>
+						<GradientStop Color="#3FDD18E2" Offset="0.781"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+		</Grid>
+		<Grid CacheMode="BitmapCache" x:Name="NavBar1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Visibility="Visible">
+			<Rectangle Stroke="{x:Null}" HorizontalAlignment="Stretch" x:Name="NavBar" Opacity="1" Height="250">
+				<Rectangle.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.872" ScaleY="2.067"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform Y="0.072" X="-0.022"/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#000E526E" Offset="1"/>
+						<GradientStop Color="#FF0E526E" Offset="0.219"/>
+					</RadialGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle Height="1" VerticalAlignment="Top" Stroke="{x:Null}" Opacity="0.75" Fill="#FFC4C4C4"/>
+			<Rectangle Stroke="{x:Null}" Height="1" Margin="0,1,0,0" VerticalAlignment="Top" Opacity="1" Fill="#BFFFFFFF"/>
+			<Rectangle Stroke="{x:Null}" Fill="#FFD2D2D2" Height="1" VerticalAlignment="Bottom" Opacity="0.75" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-180"/>
+						<TranslateTransform X="-6.1230317691118863E-17" Y="1"/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Rectangle Stroke="{x:Null}" Height="1" VerticalAlignment="Bottom" Opacity="0.745" RenderTransformOrigin="0.5,0.5" Fill="#BFFFFFFF" Margin="0,0,0,-1">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-180"/>
+						<TranslateTransform X="6.1230317691118863E-17" Y="-1"/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Path Stretch="Fill" Stroke="{x:Null}" Data="M-5.0663948E-07,-2.630951E-13 L790,0 C27.999983,44.000034 0,244.52284 0,239 C0,239 0.17440581,-2.630951E-13 -5.0663948E-07,-2.630951E-13 z" VerticalAlignment="Top" Margin="0,10,0,0" Visibility="Collapsed">
+				<Path.Fill>
+					<RadialGradientBrush>
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleY="2.35" ScaleX="1.613"/>
+								<SkewTransform CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform X="-0.478" Y="-0.476"/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#00FFFFFF" Offset="1"/>
+						<GradientStop Color="#4CFFFFFF"/>
+					</RadialGradientBrush>
+				</Path.Fill>
+			</Path>
+		</Grid>
+		<StackPanel CacheMode="BitmapCache" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible">
+			<Button Height="250" Style="{StaticResource BrowserButton}" Width="185" Content="Button" x:Name="Browser"/>
+			<Button Height="250" x:Name="Photo" Style="{StaticResource PhotoButton}" Width="185" Content="Button" Margin="10,0,0,0"/>
+			<Button Height="250" Style="{StaticResource MediaButton}" Width="185" Content="Button" x:Name="Media" Margin="10,0,0,0"/>
+			<Button Height="250" Style="{StaticResource StyleButton}" Width="185" Content="Button" x:Name="Style" Margin="10,0,0,0"/>
+		</StackPanel>
+	</Grid>
+</UserControl>

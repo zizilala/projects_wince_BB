@@ -1,0 +1,5 @@
+OBJECTS=\
+    obj\ARMV4I\retail\sdmaproxy.obj\
+    obj\ARMV4I\retail\sdmapx.obj\
+    obj\ARMV4I\retail\sdmapxclient.obj
+

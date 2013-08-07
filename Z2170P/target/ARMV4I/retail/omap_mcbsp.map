@@ -1,0 +1,300 @@
+ omap_mcbsp
+
+ Timestamp is 51ede8c2 (Tue Jul 23 10:21:54 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 000011acH .rdata                  CODE
+ 0001:000011cc 00000027H .rdata$debug            CODE
+ 0001:000011f4 000034dcH .text                   CODE
+ 0001:000046d0 0000003cH .xdata                  CODE
+ 0001:0000470c 00000028H .idata$2                CODE
+ 0001:00004734 00000014H .idata$3                CODE
+ 0001:00004748 000000b8H .idata$4                CODE
+ 0001:00004800 00000016H .idata$6                CODE
+ 0001:00004820 00000099H .edata                  CODE
+ 0002:00000000 000000b8H .idata$5                DATA
+ 0002:000000b8 00000068H .data                   DATA
+ 0002:00000120 00000014H .bss                    DATA
+ 0003:00000000 000002e0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BK@BGKPHNBC@?$AAS?$AAi?$AAd?$AAe?$AAT?$AAo?$AAn?$AAe?$AAG?$AAa?$AAi?$AAn?$AA?$AA@ 1000103c     common_ti_mcbsp:mcbsp.obj
+ 0001:00000058       ??_C@_1CC@CFMCAEIC@?$AAS?$AAi?$AAd?$AAe?$AAT?$AAo?$AAn?$AAe?$AAF?$AAI?$AAR?$AAC?$AAo?$AAe?$AAf?$AAf?$AA?$AA@ 10001058     common_ti_mcbsp:mcbsp.obj
+ 0001:0000007c       ??_C@_1CM@NJLMEFHJ@?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AAM?$AAc?$AAB?$AAS?$AAP?$AAR?$AAx?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 1000107c     common_ti_mcbsp:mcbsp.obj
+ 0001:000000a8       ??_C@_1CA@IJFGJEPN@?$AAN?$AAu?$AAm?$AAO?$AAf?$AAR?$AAx?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 100010a8     common_ti_mcbsp:mcbsp.obj
+ 0001:000000c8       ??_C@_1CM@KLENBPPJ@?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AAM?$AAc?$AAB?$AAS?$AAP?$AAT?$AAx?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 100010c8     common_ti_mcbsp:mcbsp.obj
+ 0001:000000f4       ??_C@_1CA@PLKHMOHN@?$AAN?$AAu?$AAm?$AAO?$AAf?$AAT?$AAx?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AAs?$AA?$AA@ 100010f4     common_ti_mcbsp:mcbsp.obj
+ 0001:00000114       ??_C@_1BM@HLBKJNHG@?$AAP?$AAa?$AAr?$AAt?$AAi?$AAt?$AAi?$AAo?$AAn?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 10001114     common_ti_mcbsp:mcbsp.obj
+ 0001:00000130       ??_C@_1CC@JHNJBOCI@?$AAT?$AAD?$AAM?$AAW?$AAo?$AAr?$AAd?$AAs?$AAP?$AAe?$AAr?$AAF?$AAr?$AAa?$AAm?$AAe?$AA?$AA@ 10001130     common_ti_mcbsp:mcbsp.obj
+ 0001:00000154       ??_C@_1CE@NDNBPAIO@?$AAJ?$AAu?$AAs?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 10001154     common_ti_mcbsp:mcbsp.obj
+ 0001:00000178       ??_C@_1BO@BJGPPEBK@?$AAC?$AAl?$AAo?$AAc?$AAk?$AAR?$AAe?$AAs?$AAy?$AAn?$AAc?$AAS?$AAr?$AAg?$AA?$AA@ 10001178     common_ti_mcbsp:mcbsp.obj
+ 0001:00000198       ??_C@_1CA@FNLDIOCN@?$AAC?$AAl?$AAo?$AAc?$AAk?$AAD?$AAi?$AAv?$AAi?$AAd?$AAe?$AAr?$AAS?$AAr?$AAg?$AA?$AA@ 10001198     common_ti_mcbsp:mcbsp.obj
+ 0001:000001b8       ??_C@_1BM@NEGEOLJO@?$AAF?$AAr?$AAa?$AAm?$AAe?$AAW?$AAi?$AAd?$AAt?$AAh?$AAS?$AAr?$AAg?$AA?$AA@ 100011b8     common_ti_mcbsp:mcbsp.obj
+ 0001:000001d4       ??_C@_1BM@PDFDKALM@?$AAC?$AAL?$AAK?$AAS?$AAP?$AAi?$AAn?$AAS?$AAo?$AAu?$AAr?$AAc?$AAe?$AA?$AA@ 100011d4     common_ti_mcbsp:mcbsp.obj
+ 0001:000001f0       ??_C@_1BO@OBJFCJHD@?$AAC?$AAl?$AAo?$AAc?$AAk?$AAS?$AAo?$AAu?$AAr?$AAc?$AAe?$AAS?$AAr?$AAg?$AA?$AA@ 100011f0     common_ti_mcbsp:mcbsp.obj
+ 0001:00000210       ??_C@_1CA@BBAMBIEG@?$AAF?$AAi?$AAf?$AAo?$AAT?$AAh?$AAr?$AAe?$AAs?$AAh?$AAo?$AAl?$AAd?$AAR?$AAx?$AA?$AA@ 10001210     common_ti_mcbsp:mcbsp.obj
+ 0001:00000230       ??_C@_1CI@DMGDACCC@?$AAF?$AAr?$AAa?$AAm?$AAe?$AAS?$AAy?$AAn?$AAc?$AAP?$AAo?$AAl?$AAa?$AAr?$AAi?$AAt?$AAy?$AAR?$AAx?$AA?$AA@ 10001230     common_ti_mcbsp:mcbsp.obj
+ 0001:00000258       ??_C@_1CA@JCPHLKBM@?$AAC?$AAl?$AAo?$AAc?$AAk?$AAP?$AAo?$AAl?$AAa?$AAr?$AAi?$AAt?$AAy?$AAR?$AAx?$AA?$AA@ 10001258     common_ti_mcbsp:mcbsp.obj
+ 0001:00000278       ??_C@_1BA@LNNGHMHN@?$AAP?$AAh?$AAa?$AAs?$AAe?$AAR?$AAx?$AA?$AA@ 10001278     common_ti_mcbsp:mcbsp.obj
+ 0001:00000288       ??_C@_1CE@HDLLMKEM@?$AAF?$AAr?$AAa?$AAm?$AAe?$AAS?$AAy?$AAn?$AAc?$AAS?$AAo?$AAu?$AAr?$AAc?$AAe?$AAR?$AAx?$AA?$AA@ 10001288     common_ti_mcbsp:mcbsp.obj
+ 0001:000002ac       ??_C@_1BI@LLMMAOPL@?$AAC?$AAl?$AAo?$AAc?$AAk?$AAM?$AAo?$AAd?$AAe?$AAR?$AAx?$AA?$AA@ 100012ac     common_ti_mcbsp:mcbsp.obj
+ 0001:000002c4       ??_C@_1BI@HCDFPEOL@?$AAD?$AAa?$AAt?$AAa?$AAD?$AAe?$AAl?$AAa?$AAy?$AAR?$AAx?$AA?$AA@ 100012c4     common_ti_mcbsp:mcbsp.obj
+ 0001:000002dc       ??_C@_1BM@PEPDAHIH@?$AAR?$AAe?$AAv?$AAe?$AAr?$AAs?$AAe?$AAM?$AAo?$AAd?$AAe?$AAR?$AAx?$AA?$AA@ 100012dc     common_ti_mcbsp:mcbsp.obj
+ 0001:000002f8       ??_C@_1CA@MHFFPLFL@?$AAF?$AAi?$AAf?$AAo?$AAT?$AAh?$AAr?$AAe?$AAs?$AAh?$AAo?$AAl?$AAd?$AAT?$AAx?$AA?$AA@ 100012f8     common_ti_mcbsp:mcbsp.obj
+ 0001:00000318       ??_C@_1CI@OKDKOBDP@?$AAF?$AAr?$AAa?$AAm?$AAe?$AAS?$AAy?$AAn?$AAc?$AAP?$AAo?$AAl?$AAa?$AAr?$AAi?$AAt?$AAy?$AAT?$AAx?$AA?$AA@ 10001318     common_ti_mcbsp:mcbsp.obj
+ 0001:00000340       ??_C@_1CA@EEKOFJAB@?$AAC?$AAl?$AAo?$AAc?$AAk?$AAP?$AAo?$AAl?$AAa?$AAr?$AAi?$AAt?$AAy?$AAT?$AAx?$AA?$AA@ 10001340     common_ti_mcbsp:mcbsp.obj
+ 0001:00000360       ??_C@_1BA@GLIPJPGA@?$AAP?$AAh?$AAa?$AAs?$AAe?$AAT?$AAx?$AA?$AA@ 10001360     common_ti_mcbsp:mcbsp.obj
+ 0001:00000370       ??_C@_1CE@KFOCCJFB@?$AAF?$AAr?$AAa?$AAm?$AAe?$AAS?$AAy?$AAn?$AAc?$AAS?$AAo?$AAu?$AAr?$AAc?$AAe?$AAT?$AAx?$AA?$AA@ 10001370     common_ti_mcbsp:mcbsp.obj
+ 0001:00000394       ??_C@_1BI@GNJFONOG@?$AAC?$AAl?$AAo?$AAc?$AAk?$AAM?$AAo?$AAd?$AAe?$AAT?$AAx?$AA?$AA@ 10001394     common_ti_mcbsp:mcbsp.obj
+ 0001:000003ac       ??_C@_1BI@KEGMBHPG@?$AAD?$AAa?$AAt?$AAa?$AAD?$AAe?$AAl?$AAa?$AAy?$AAT?$AAx?$AA?$AA@ 100013ac     common_ti_mcbsp:mcbsp.obj
+ 0001:000003c4       ??_C@_1BM@CCKKOEJK@?$AAR?$AAe?$AAv?$AAe?$AAr?$AAs?$AAe?$AAM?$AAo?$AAd?$AAe?$AAT?$AAx?$AA?$AA@ 100013c4     common_ti_mcbsp:mcbsp.obj
+ 0001:000003e0       ??_C@_1BI@KGFAFKJI@?$AAW?$AAo?$AAr?$AAd?$AAL?$AAe?$AAn?$AAg?$AAt?$AAh?$AA2?$AA?$AA@ 100013e0     common_ti_mcbsp:mcbsp.obj
+ 0001:000003f8       ??_C@_1BG@IDHNNHLA@?$AAW?$AAo?$AAr?$AAd?$AAL?$AAe?$AAn?$AAg?$AAt?$AAh?$AA?$AA@ 100013f8     common_ti_mcbsp:mcbsp.obj
+ 0001:00000410       ??_C@_1BM@JOAEBIPC@?$AAW?$AAo?$AAr?$AAd?$AAs?$AAP?$AAe?$AAr?$AAF?$AAr?$AAa?$AAm?$AAe?$AA?$AA@ 10001410     common_ti_mcbsp:mcbsp.obj
+ 0001:0000042c       ??_C@_1BK@KALKMJLN@?$AAL?$AAo?$AAo?$AAp?$AAb?$AAa?$AAc?$AAk?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 1000142c     common_ti_mcbsp:mcbsp.obj
+ 0001:00000448       ??_C@_1CI@GFAEFODG@?$AAU?$AAs?$AAe?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAr?$AAy?$AAF?$AAo?$AAr?$AAM?$AAc?$AAb?$AAs?$AAp?$AA?$AA@ 10001448     common_ti_mcbsp:mcbsp.obj
+ 0001:00000470       ??_C@_1BK@CGEFNBAB@?$AAR?$AAx?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 10001470     common_ti_mcbsp:mcbsp.obj
+ 0001:0000048c       ??_C@_1BK@BJJLAMLA@?$AAT?$AAx?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 1000148c     common_ti_mcbsp:mcbsp.obj
+ 0001:000004a8       ??_C@_1BG@EHBPBEHF@?$AAR?$AAx?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?$AA@ 100014a8     common_ti_mcbsp:mcbsp.obj
+ 0001:000004c0       ??_C@_1BG@DFOOEOPF@?$AAT?$AAx?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?$AA@ 100014c0     common_ti_mcbsp:mcbsp.obj
+ 0001:000004d8       ??_C@_1BK@IMFNHKKP@?$AAD?$AAm?$AAa?$AAR?$AAx?$AAS?$AAy?$AAn?$AAc?$AAM?$AAa?$AAp?$AA?$AA@ 100014d8     common_ti_mcbsp:mcbsp.obj
+ 0001:000004f4       ??_C@_1BK@IHOOHHK@?$AAD?$AAm?$AAa?$AAT?$AAx?$AAS?$AAy?$AAn?$AAc?$AAM?$AAa?$AAp?$AA?$AA@ 100014f4     common_ti_mcbsp:mcbsp.obj
+ 0001:00000510       ??_C@_1O@LBBNFMDB@?$AAM?$AAe?$AAm?$AAL?$AAe?$AAn?$AA?$AA@ 10001510     common_ti_mcbsp:mcbsp.obj
+ 0001:00000520       ??_C@_1BA@INLDIDEN@?$AAM?$AAe?$AAm?$AAB?$AAa?$AAs?$AAe?$AA?$AA@ 10001520     common_ti_mcbsp:mcbsp.obj
+ 0001:00000530       ??_C@_1BK@HPNHFNHI@?$AAM?$AAc?$AAB?$AAS?$AAP?$AAP?$AAr?$AAo?$AAf?$AAi?$AAl?$AAe?$AA?$AA@ 10001530     common_ti_mcbsp:mcbsp.obj
+ 0001:00000550       DEVICE_IFC_MCBSP_GUID      10001550     common_ti_mcbsp:mcbsp.obj
+ 0001:00000980       ??_7McbspProfile_t@@6B@    10001980     common_ti_mcbsp:mcbsp.obj
+ 0001:000009b4       ??_7I2SSlaveProfile_t@@6B@ 100019b4     common_ti_mcbsp:mcbsp.obj
+ 0001:000009e8       ??_7I2SMasterProfile_t@@6B@ 100019e8     common_ti_mcbsp:mcbsp.obj
+ 0001:00000a1c       ??_7TDMProfile_t@@6B@      10001a1c     common_ti_mcbsp:mcbsp.obj
+ 0001:00000a50       ??_7DataPort_t@@6B@        10001a50     common_ti_mcbsp:dataport.obj
+ 0001:00000bb8       ??_C@_15BMCNAON@?$AAR?$AAX?$AA?$AA@ 10001bb8     OMAP3530_soccfg:devicemap.obj
+ 0001:00000bc0       ??_C@_15NHJLDDPA@?$AAT?$AAX?$AA?$AA@ 10001bc0     OMAP3530_soccfg:devicemap.obj
+ 0001:00000bc8       ??_C@_17GHFABBII@?$AAM?$AAM?$AAU?$AA?$AA@ 10001bc8     OMAP3530_soccfg:devicemap.obj
+ 0001:00000bd0       ??_C@_19EMJFMDEF@?$AAI?$AAR?$AAQ?$AA3?$AA?$AA@ 10001bd0     OMAP3530_soccfg:devicemap.obj
+ 0001:00000bdc       ??_C@_19PECJKECA@?$AAI?$AAR?$AAQ?$AA2?$AA?$AA@ 10001bdc     OMAP3530_soccfg:devicemap.obj
+ 0001:00000be8       ??_C@_19OGJMALMO@?$AAI?$AAR?$AAQ?$AA1?$AA?$AA@ 10001be8     OMAP3530_soccfg:devicemap.obj
+ 0001:00000bf4       ??_C@_19FOCAGMKL@?$AAI?$AAR?$AAQ?$AA0?$AA?$AA@ 10001bf4     OMAP3530_soccfg:devicemap.obj
+ 0001:00000c00       ??_C@_1BC@JBFPJMDB@?$AAo?$AAv?$AAe?$AAr?$AAf?$AAl?$AAo?$AAw?$AA?$AA@ 10001c00     OMAP3530_soccfg:devicemap.obj
+ 0001:00000ca8       s_DeviceAddressMap         10001ca8     OMAP3530_soccfg:devicemap.obj
+ 0001:00000ea8       s_DeviceIrqMap             10001ea8     OMAP3530_soccfg:devicemap.obj
+ 0001:000011f4       ??_GMcbspProfile_t@@UAAPAXI@Z 100021f4 f i common_ti_mcbsp:mcbsp.obj
+ 0001:000011f4       ??_EMcbspProfile_t@@UAAPAXI@Z 100021f4 f i common_ti_mcbsp:mcbsp.obj
+ 0001:0000121c       ?GetMode@I2SSlaveProfile_t@@UAA?AW4McBSPProfile_e@@XZ 1000221c f i common_ti_mcbsp:mcbsp.obj
+ 0001:00001224       ?SetTxChannelsRequested@I2SSlaveProfile_t@@UAAXXZ 10002224 f i common_ti_mcbsp:mcbsp.obj
+ 0001:00001228       ?SetRxChannelsRequested@I2SSlaveProfile_t@@UAAXXZ 10002228 f i common_ti_mcbsp:mcbsp.obj
+ 0001:0000122c       ??_EI2SSlaveProfile_t@@UAAPAXI@Z 1000222c f i common_ti_mcbsp:mcbsp.obj
+ 0001:0000122c       ??_GI2SSlaveProfile_t@@UAAPAXI@Z 1000222c f i common_ti_mcbsp:mcbsp.obj
+ 0001:00001254       ?GetMode@I2SMasterProfile_t@@UAA?AW4McBSPProfile_e@@XZ 10002254 f i common_ti_mcbsp:mcbsp.obj
+ 0001:0000125c       ?SetTxChannelsRequested@I2SMasterProfile_t@@UAAXXZ 1000225c f i common_ti_mcbsp:mcbsp.obj
+ 0001:00001260       ?SetRxChannelsRequested@I2SMasterProfile_t@@UAAXXZ 10002260 f i common_ti_mcbsp:mcbsp.obj
+ 0001:00001264       ??_GI2SMasterProfile_t@@UAAPAXI@Z 10002264 f i common_ti_mcbsp:mcbsp.obj
+ 0001:00001264       ??_EI2SMasterProfile_t@@UAAPAXI@Z 10002264 f i common_ti_mcbsp:mcbsp.obj
+ 0001:0000128c       ?GetMode@TDMProfile_t@@UAA?AW4McBSPProfile_e@@XZ 1000228c f i common_ti_mcbsp:mcbsp.obj
+ 0001:00001294       ??_GTDMProfile_t@@UAAPAXI@Z 10002294 f i common_ti_mcbsp:mcbsp.obj
+ 0001:00001294       ??_ETDMProfile_t@@UAAPAXI@Z 10002294 f i common_ti_mcbsp:mcbsp.obj
+ 0001:000012bc       MCP_Open                   100022bc f   common_ti_mcbsp:mcbsp.obj
+ 0001:00001328       MCP_Close                  10002328 f   common_ti_mcbsp:mcbsp.obj
+ 0001:0000136c       StartTransmit              1000236c f   common_ti_mcbsp:mcbsp.obj
+ 0001:000014a0       StartReceive               100024a0 f   common_ti_mcbsp:mcbsp.obj
+ 0001:00001570       StopTransmit               10002570 f   common_ti_mcbsp:mcbsp.obj
+ 0001:0000161c       StopReceive                1000261c f   common_ti_mcbsp:mcbsp.obj
+ 0001:000016c8       TxCommand                  100026c8 f   common_ti_mcbsp:mcbsp.obj
+ 0001:00001964       RxCommand                  10002964 f   common_ti_mcbsp:mcbsp.obj
+ 0001:00001c08       IST_TxDMA                  10002c08 f   common_ti_mcbsp:mcbsp.obj
+ 0001:00001da8       IST_RxDMA                  10002da8 f   common_ti_mcbsp:mcbsp.obj
+ 0001:00001f40       MCP_Deinit                 10002f40 f   common_ti_mcbsp:mcbsp.obj
+ 0001:00002038       MCP_Init                   10003038 f   common_ti_mcbsp:mcbsp.obj
+ 0001:0000231c       MCP_IOControl              1000331c f   common_ti_mcbsp:mcbsp.obj
+ 0001:0000254c       ?Initialize@McbspProfile_t@@UAAXXZ 1000354c f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002560       ?ContextRestore@McbspProfile_t@@UAAXXZ 10003560 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002574       ?EnableSampleRateGenerator@McbspProfile_t@@UAAXXZ 10003574 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002588       ?EnableTransmitter@McbspProfile_t@@UAAXXZ 10003588 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:0000259c       ?EnableReceiver@McbspProfile_t@@UAAXXZ 1000359c f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:000025b0       ?ResetSampleRateGenerator@McbspProfile_t@@UAAXXZ 100035b0 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:000025c4       ?ResetTransmitter@McbspProfile_t@@UAAXXZ 100035c4 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:000025d8       ?ResetReceiver@McbspProfile_t@@UAAXXZ 100035d8 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:000025ec       ?ClearIRQStatus@McbspProfile_t@@UAAXXZ 100035ec f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002600       ?Initialize@I2SSlaveProfile_t@@UAAXXZ 10003600 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002670       ?ContextRestore@I2SSlaveProfile_t@@UAAXXZ 10003670 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002690       ?Initialize@I2SMasterProfile_t@@UAAXXZ 10003690 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002708       ?ContextRestore@I2SMasterProfile_t@@UAAXXZ 10003708 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002728       ?Initialize@TDMProfile_t@@UAAXXZ 10003728 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002748       ?ContextRestore@TDMProfile_t@@UAAXXZ 10003748 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002768       ?SetTxChannelsRequested@TDMProfile_t@@UAAXXZ 10003768 f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:0000277c       ?SetRxChannelsRequested@TDMProfile_t@@UAAXXZ 1000377c f   common_ti_mcbsp:mcbspprofile.obj
+ 0001:00002790       DmaConfigure               10003790 f i common_ti_mcbsp:dataport.obj
+ 0001:00002874       DmaUpdate                  10003874 f i common_ti_mcbsp:dataport.obj
+ 0001:00002928       DmaStop                    10003928 f i common_ti_mcbsp:dataport.obj
+ 0001:00002994       ??0DataPort_t@@QAA@PAUMcBSPDevice_t@@@Z 10003994 f   common_ti_mcbsp:dataport.obj
+ 0001:000029fc       ?GetDataBufferSize@DataPort_t@@UBAHXZ 100039fc f i common_ti_mcbsp:dataport.obj
+ 0001:00002a04       ?ResetDataBuffer@DataPort_t@@UAAXXZ 10003a04 f i common_ti_mcbsp:dataport.obj
+ 0001:00002a10       ?UpdateSamplesPerPage@DataPort_t@@UAAXKK@Z 10003a10 f i common_ti_mcbsp:dataport.obj
+ 0001:00002a40       ?PreprocessDataForRender@DataPort_t@@UAAXW4BufferRequest_e@1@I@Z 10003a40 f i common_ti_mcbsp:dataport.obj
+ 0001:00002a44       ?PostprocessDataForCapture@DataPort_t@@UAAXW4BufferRequest_e@1@I@Z 10003a44 f i common_ti_mcbsp:dataport.obj
+ 0001:00002a48       ??1DataPort_t@@UAA@XZ      10003a48 f   common_ti_mcbsp:dataport.obj
+ 0001:00002a88       ?GetDataBuffer@DataPort_t@@UAAPAEW4BufferRequest_e@1@@Z 10003a88 f   common_ti_mcbsp:dataport.obj
+ 0001:00002ae8       ?Initialize@DataPort_t@@UAAHPAUDmaConfigInfo_t@@KGP6AKPAX@Z@Z 10003ae8 f   common_ti_mcbsp:dataport.obj
+ 0001:00002cf0       ?RestoreDMAcontext@DataPort_t@@UAAHPAUDmaConfigInfo_t@@KG@Z 10003cf0 f   common_ti_mcbsp:dataport.obj
+ 0001:00002e38       ?StartDma@DataPort_t@@UAAHH@Z 10003e38 f   common_ti_mcbsp:dataport.obj
+ 0001:00002ecc       ?StopDma@DataPort_t@@UAAHXZ 10003ecc f   common_ti_mcbsp:dataport.obj
+ 0001:00002ef4       ?SetDstPhysAddr@DataPort_t@@QAAXK@Z 10003ef4 f   common_ti_mcbsp:dataport.obj
+ 0001:00002f18       ?SetSrcPhysAddr@DataPort_t@@QAAXK@Z 10003f18 f   common_ti_mcbsp:dataport.obj
+ 0001:00002f3c       ?SwapBuffer@DataPort_t@@UAAXH@Z 10003f3c f   common_ti_mcbsp:dataport.obj
+ 0001:00002f9c       ??_EDataPort_t@@UAAPAXI@Z  10003f9c f i common_ti_mcbsp:dataport.obj
+ 0001:00002f9c       ??_GDataPort_t@@UAAPAXI@Z  10003f9c f i common_ti_mcbsp:dataport.obj
+ 0001:00002fc4       mcbsp_GetRegistryValues    10003fc4 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003444       mcbsp_ConfigureForMaster   10004444 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003544       mcbsp_ResetShadowRegisters 10004544 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:000035e0       mcbsp_ConfigureSampleRateGenerator 100045e0 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:000036d4       mcbsp_ConfigureTransmitter 100046d4 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:000037cc       mcbsp_ConfigureReceiver    100047cc f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003888       mcbsp_ClearIRQStatus       10004888 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:0000389c       mcbsp_UpdateRegisters      1000489c f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:0000396c       mcbsp_ResetSampleRateGenerator 1000496c f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003984       mcbsp_EnableSampleRateGenerator 10004984 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:0000399c       mcbsp_ResetTransmitter     1000499c f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:000039b4       mcbsp_EnableTransmitter    100049b4 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:000039cc       mcbsp_ResetReceiver        100049cc f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:000039e4       mcbsp_EnableReceiver       100049e4 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:000039fc       mcbsp_ConfigI2SProfile     100049fc f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003aac       mcbsp_ConfigTDMTxChannels  10004aac f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003c60       mcbsp_ConfigTDMRxChannels  10004c60 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003e14       mcbsp_ConfigCommonRegisters 10004e14 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003ea4       mcbsp_ConfigTDMProfile     10004ea4 f   common_ti_mcbsp:mcbspconfig.obj
+ 0001:00003f78       GetDeviceByAddress         10004f78 f   common_ti_devicesmap:devicemap.obj
+ 0001:00003fdc       ?SocMcbspDevConf@@YAXPAUMcBSPDevice_t@@@Z 10004fdc f   OMAP3530_mcbsp:mcbsp.obj
+ 0001:000040e8       SetDevicePowerState        100050e8 f   ceddk:CEDDK.dll
+ 0001:000040f8       DmaInterruptDone           100050f8 f   ceddk:CEDDK.dll
+ 0001:00004108       CloseBusAccessHandle       10005108 f   ceddk:CEDDK.dll
+ 0001:00004118       MmUnmapIoSpace             10005118 f   ceddk:CEDDK.dll
+ 0001:00004128       ReleaseDevicePads          10005128 f   ceddk:CEDDK.dll
+ 0001:00004138       RequestDevicePads          10005138 f   ceddk:CEDDK.dll
+ 0001:00004148       MmMapIoSpace               10005148 f   ceddk:CEDDK.dll
+ 0001:00004158       CreateBusAccessHandle      10005158 f   ceddk:CEDDK.dll
+ 0001:00004168       GetDeviceRegistryParams    10005168 f   ceddk:CEDDK.dll
+ 0001:00004178       DmaGetLogicalChannel       10005178 f   ceddk:CEDDK.dll
+ 0001:00004188       DmaDisableStandby          10005188 f   ceddk:CEDDK.dll
+ 0001:00004198       DmaGetLogicalChannelId     10005198 f   ceddk:CEDDK.dll
+ 0001:000041a8       DmaEnableInterrupts        100051a8 f   ceddk:CEDDK.dll
+ 0001:000041b8       DmaAllocateChannel         100051b8 f   ceddk:CEDDK.dll
+ 0001:000041c8       __GetUserKData             100051c8 f   coredll:COREDLL.dll
+ 0001:000041d8       InterlockedIncrement       100051d8 f   coredll:COREDLL.dll
+ 0001:000041e8       LocalAlloc                 100051e8 f   coredll:COREDLL.dll
+ 0001:000041f8       LocalFree                  100051f8 f   coredll:COREDLL.dll
+ 0001:00004208       InterlockedDecrement       10005208 f   coredll:COREDLL.dll
+ 0001:00004218       WaitForSingleObject        10005218 f   coredll:COREDLL.dll
+ 0001:00004228       CeSetThreadPriority        10005228 f   coredll:COREDLL.dll
+ 0001:00004238       SetLastError               10005238 f   coredll:COREDLL.dll
+ 0001:00004248       CeSafeCopyMemory           10005248 f   coredll:COREDLL.dll
+ 0001:00004258       GetCallerProcess           10005258 f   coredll:COREDLL.dll
+ 0001:00004268       InitializeCriticalSection  10005268 f   coredll:COREDLL.dll
+ 0001:00004278       CloseHandle                10005278 f   coredll:COREDLL.dll
+ 0001:00004288       FreePhysMem                10005288 f   coredll:COREDLL.dll
+ 0001:00004298       DeleteCriticalSection      10005298 f   coredll:COREDLL.dll
+ 0001:000042a8       CreateThread               100052a8 f   coredll:COREDLL.dll
+ 0001:000042b8       CreateEventW               100052b8 f   coredll:COREDLL.dll
+ 0001:000042c8       AllocPhysMem               100052c8 f   coredll:COREDLL.dll
+ 0001:000042d8       Sleep                      100052d8 f   coredll:COREDLL.dll
+ 0001:000042e8       DllMain                    100052e8 f   corelib0:dllmain.obj
+ 0001:00004404       _DllMainCRTStartup         10005404 f   corelib0:pegdmain.obj
+ 0001:00004530       _cexit                     10005530 f   corelib0:cexit.obj
+ 0001:0000454c       _initterm                  1000554c f   corelib0:crt0dat.obj
+ 0001:00004580       _cinit                     10005580 f   corelib0:crt0dat.obj
+ 0001:000045b4       __security_init_cookie     100055b4 f   corelib0:seccinit.obj
+ 0001:00004610       memcmp                     10005610 f   corelib1:COREDLL.dll
+ 0001:00004620       _purecall                  10005620 f   corelib1:COREDLL.dll
+ 0001:00004630       ??3@YAXPAX@Z               10005630 f   corelib1:COREDLL.dll
+ 0001:00004640       memset                     10005640 f   corelib1:COREDLL.dll
+ 0001:00004650       ??2@YAPAXI@Z               10005650 f   corelib1:COREDLL.dll
+ 0001:00004660       __C_specific_handler       10005660 f   corelib1:COREDLL.dll
+ 0001:00004670       _XcptFilter                10005670 f   corelib1:COREDLL.dll
+ 0001:00004680       free                       10005680 f   corelib1:COREDLL.dll
+ 0001:00004690       __security_gen_cookie2     10005690 f   corelib1:COREDLL.dll
+ 0001:000046a0       DisableThreadLibraryCalls  100056a0 f   coredll:COREDLL.dll
+ 0001:000046b0       InterlockedExchange        100056b0 f   coredll:COREDLL.dll
+ 0001:000046c0       TerminateProcess           100056c0 f   coredll:COREDLL.dll
+ 0001:0000470c       __IMPORT_DESCRIPTOR_CEDDK  1000570c     ceddk:CEDDK.dll
+ 0001:00004720       __IMPORT_DESCRIPTOR_COREDLL 10005720     coredll:COREDLL.dll
+ 0001:00004734       __NULL_IMPORT_DESCRIPTOR   10005734     ceddk:CEDDK.dll
+ 0002:00000000       __imp_SetDevicePowerState  10006000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_DmaInterruptDone     10006004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_CloseBusAccessHandle 10006008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_MmUnmapIoSpace       1000600c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_ReleaseDevicePads    10006010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_RequestDevicePads    10006014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_MmMapIoSpace         10006018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_CreateBusAccessHandle 1000601c     ceddk:CEDDK.dll
+ 0002:00000020       __imp_GetDeviceRegistryParams 10006020     ceddk:CEDDK.dll
+ 0002:00000024       __imp_DmaGetLogicalChannel 10006024     ceddk:CEDDK.dll
+ 0002:00000028       __imp_DmaDisableStandby    10006028     ceddk:CEDDK.dll
+ 0002:0000002c       __imp_DmaGetLogicalChannelId 1000602c     ceddk:CEDDK.dll
+ 0002:00000030       __imp_DmaEnableInterrupts  10006030     ceddk:CEDDK.dll
+ 0002:00000034       __imp_DmaAllocateChannel   10006034     ceddk:CEDDK.dll
+ 0002:00000038       \177CEDDK_NULL_THUNK_DATA  10006038     ceddk:CEDDK.dll
+ 0002:0000003c       __imp___GetUserKData       1000603c     coredll:COREDLL.dll
+ 0002:00000040       __imp_InterlockedIncrement 10006040     coredll:COREDLL.dll
+ 0002:00000044       __imp_LocalAlloc           10006044     coredll:COREDLL.dll
+ 0002:00000048       __imp_LocalFree            10006048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_InterlockedDecrement 1000604c     coredll:COREDLL.dll
+ 0002:00000050       __imp_WaitForSingleObject  10006050     coredll:COREDLL.dll
+ 0002:00000054       __imp_CeSetThreadPriority  10006054     coredll:COREDLL.dll
+ 0002:00000058       __imp_SetLastError         10006058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_CeSafeCopyMemory     1000605c     coredll:COREDLL.dll
+ 0002:00000060       __imp_GetCallerProcess     10006060     coredll:COREDLL.dll
+ 0002:00000064       __imp_InitializeCriticalSection 10006064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CloseHandle          10006068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_FreePhysMem          1000606c     coredll:COREDLL.dll
+ 0002:00000070       __imp_DeleteCriticalSection 10006070     coredll:COREDLL.dll
+ 0002:00000074       __imp_CreateThread         10006074     coredll:COREDLL.dll
+ 0002:00000078       __imp_CreateEventW         10006078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_AllocPhysMem         1000607c     coredll:COREDLL.dll
+ 0002:00000080       __imp_Sleep                10006080     coredll:COREDLL.dll
+ 0002:00000084       __imp_memcmp               10006084     corelib1:COREDLL.dll
+ 0002:00000088       __imp__purecall            10006088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp_??3@YAXPAX@Z         1000608c     corelib1:COREDLL.dll
+ 0002:00000090       __imp_memset               10006090     corelib1:COREDLL.dll
+ 0002:00000094       __imp_??2@YAPAXI@Z         10006094     corelib1:COREDLL.dll
+ 0002:00000098       __imp___C_specific_handler 10006098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp__XcptFilter          1000609c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp_free                 100060a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp___security_gen_cookie2 100060a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp_DisableThreadLibraryCalls 100060a8     coredll:COREDLL.dll
+ 0002:000000ac       __imp_InterlockedExchange  100060ac     coredll:COREDLL.dll
+ 0002:000000b0       __imp_TerminateProcess     100060b0     coredll:COREDLL.dll
+ 0002:000000b4       \177COREDLL_NULL_THUNK_DATA 100060b4     coredll:COREDLL.dll
+ 0002:00000118       __security_cookie          10006118     corelib0:seccinit.obj
+ 0002:0000011c       __security_cookie_complement 1000611c     corelib0:seccinit.obj
+ 0002:00000120       _exitflag                  10006120     corelib0:cexit.obj
+ 0002:00000124       __onexitend                10006124     <common>
+ 0002:00000128       __onexitbegin              10006128     <common>
+ 0002:0000012c       g_pcsExit                  1000612c     <common>
+ 0002:00000130       _pRawDllMain               10006130     <common>
+
+ entry point at        0001:00004404
+
+ Static symbols
+
+ 0001:00004308       _DllMainCRTStartupHelper   10005308 f   corelib0:pegdmain.obj
+ 0001:00004434       doexit                     10005434 f   corelib0:cexit.obj
