@@ -32,6 +32,12 @@
 #include "twl.h"
 #include "triton.h"
 #include "tps659xx_internals.h"
+//Ray 13-08-08
+#include "sdk_spi.h"
+#include "dssai.h"
+//defines SPI1, Ray 13-08-06
+HANDLE  hSPI = NULL;
+
 //------------------------------------------------------------------------------
 //
 // prototypes
@@ -46,9 +52,12 @@ void lcd_config(UINT32 framebuffer);
 void lcd_shutdown(void);
 UINT32 disable_lcd_power(void);
 UINT32 disable_lcd_backlight(void);
+
+// Fire up the LCM, Ray 13-08-06.
 void lcm_config(void);
-
-
+DWORD LCMSPIWrite(HANDLE, DWORD, VOID *);
+void OMAPDisplayController::R61526_send_command(short cmd);
+void OMAPDisplayController::R61526_send_data(short dat);
 
 //------------------------------------------------------------------------------
 //
@@ -70,59 +79,60 @@ void lcm_config(void);
 #define BSP_GFX_PIXEL_INC           0x00000001
 #define BSP_GFX_WINDOW_SKIP         0x00000000
 //------------------------------------------------------------------------------
-//defines SPI1, Ray 13-08-06
+
 
 //brief  SPI Init structure definition  
+/***************************************
 typedef struct
 {
   UINT32 SPI1_Direction;           /*!< Specifies the SPI unidirectional or bidirectional data mode.
                                          This parameter can be a value of @ref SPI_data_direction */
 
-  UINT32 SPI1_Mode;                /*!< Specifies the SPI operating mode.
+  /*UINT32 SPI1_Mode;                /*!< Specifies the SPI operating mode.
                                          This parameter can be a value of @ref SPI_mode */
 
-  UINT32 SPI1_DataSize;            /*!< Specifies the SPI data size.
+  /*UINT32 SPI1_DataSize;            /*!< Specifies the SPI data size.
                                          This parameter can be a value of @ref SPI_data_size */
 
-  UINT32 SPI1_CPOL;                /*!< Specifies the serial clock steady state.
+  /*UINT32 SPI1_CPOL;                /*!< Specifies the serial clock steady state.
                                          This parameter can be a value of @ref SPI_Clock_Polarity */
 
-  UINT32 SPI1_CPHA;                /*!< Specifies the clock active edge for the bit capture.
+  /*UINT32 SPI1_CPHA;                /*!< Specifies the clock active edge for the bit capture.
                                          This parameter can be a value of @ref SPI_Clock_Phase */
 
-  UINT32 SPI1_CS0;                 /*!< Specifies whether the NSS signal is managed by
+  /*UINT32 SPI1_CS0;                 /*!< Specifies whether the NSS signal is managed by
                                          hardware (NSS pin) or by software using the SSI bit.
                                          This parameter can be a value of @ref SPI_Slave_Select_management */
  
-  UINT32 SPI1_BaudRatePrescaler;   /*!< Specifies the Baud Rate prescaler value which will be
+  /*UINT32 SPI1_BaudRatePrescaler;   /*!< Specifies the Baud Rate prescaler value which will be
                                          used to configure the transmit and receive SCK clock.
                                          This parameter can be a value of @ref SPI_BaudRate_Prescaler
                                          @note The communication clock is derived from the master
                                                clock. The slave clock does not need to be set. */
 
-  UINT32 SPI1_FirstBit;            /*!< Specifies whether data transfers start from MSB or LSB bit.
+  /*UINT32 SPI1_FirstBit;            /*!< Specifies whether data transfers start from MSB or LSB bit.
                                          This parameter can be a value of @ref SPI_MSB_LSB_transmission */
 
-  UINT32 SPI1_CRCPolynomial;       /*!< Specifies the polynomial used for the CRC calculation. */
-}SPI_InitTypeDef;
+  /*UINT32 SPI1_CRCPolynomial;       /*!< Specifies the polynomial used for the CRC calculation. */
+/*}SPI_InitTypeDef;
 
 typedef struct
 {
   UINT32 GPIO_Pin;              /*!< Specifies the GPIO pins to be configured.
                                        This parameter can be any value of @ref GPIO_pins_define */
 
-  GPIOMode_TypeDef GPIO_Mode;     /*!< Specifies the operating mode for the selected pins.
+  /*GPIOMode_TypeDef GPIO_Mode;     /*!< Specifies the operating mode for the selected pins.
                                        This parameter can be a value of @ref GPIOMode_TypeDef */
 
-  GPIOSpeed_TypeDef GPIO_Speed;   /*!< Specifies the speed for the selected pins.
+  /*GPIOSpeed_TypeDef GPIO_Speed;   /*!< Specifies the speed for the selected pins.
                                        This parameter can be a value of @ref GPIOSpeed_TypeDef */
 
-  GPIOOType_TypeDef GPIO_OType;   /*!< Specifies the operating output type for the selected pins.
+  /*GPIOOType_TypeDef GPIO_OType;   /*!< Specifies the operating output type for the selected pins.
                                        This parameter can be a value of @ref GPIOOType_TypeDef */
 
-  GPIOPuPd_TypeDef GPIO_PuPd;     /*!< Specifies the operating Pull-up/Pull down for the selected pins.
+  /*GPIOPuPd_TypeDef GPIO_PuPd;     /*!< Specifies the operating Pull-up/Pull down for the selected pins.
                                        This parameter can be a value of @ref GPIOPuPd_TypeDef */
-}GPIO_InitTypeDef;
+/*}GPIO_InitTypeDef;*/
 //------------------------------------------------------------------------------
 
 
@@ -284,6 +294,9 @@ VOID ShowLogo(UINT32 flashAddr, UINT32 offset)
 
     //  Fire up the LCD
     lcd_config(framebufferPA); 
+	
+	//	Fire up the LCM, Ray 13-08-06.
+	lcm_config();
 }
 
 //------------------------------------------------------------------------------
@@ -336,9 +349,6 @@ BOOL ShowSDLogo()
     //  Fire up the LCD
     lcd_config(framebufferPA);
 
-	//	Fire up the LCM, Ray 13-08-06.
-	lcm_config();
-	
 	return TRUE;
 	//return FALSE;
 }
@@ -668,8 +678,10 @@ void LcdSleep(DWORD dwMilliseconds)
 {
     OALStall(1000 * dwMilliseconds);
 }
+
 //------------------------------------------------------------------------------
-//LCD_SPI_Init function starting, Ray 13-08-06.
+//LCM_SPI_Init function starting, Ray 13-08-06.
+
 /*BOOL OSPIOpen(void)
 {
 	
@@ -691,25 +703,342 @@ void LcdSleep(DWORD dwMilliseconds)
 	GPIO_InitConfig.GPIO_Pin = 
 }*/
 
-//------------------------------------------------------------------------------
-//lcm_config function starting, Ray 13-08-06.
-void LCD_SPI_Init(void)
+void OMAPDisplayController::R61526_send_command(short cmd)
 {
-	//OSPIOpen();
-	//OSPIConfigure();
-	//OSPIClose();
-	SPIOpen();
-	SPIConfigure();
-	SPIClose();
+	//LCMSPIWrite(hSPI, sizeof(short), &cmd);
+}
+
+void OMAPDisplayController::R61526_send_data(short dat)
+{
+	dat |= 0x0100;
+	//LCMSPIWrite(hSPI, sizeof(short), &dat);
+}
+
+HANDLE LCMSPIOpen(LPCTSTR pSpiName) //comport name
+{
+	HANDLE hDevice;
+	DEVICE_CONTEXT_SPI *pContext = NULL;
+
+	hDevice = CreateFile(pSpiName, GENERIC_READ | GENERIC_WRITE,    
+                         FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
+						//Write comport name, write read functional, and so on ...  
+	if(hDevice == INVALID_HANDLE_VALUE)
+		goto clean;
+	
+	// Allocate memory for our handler..
+	 if ((pContext = (DEVICE_CONTEXT_SPI *)LocalAlloc(LPTR, sizeof(DEVICE_CONTEXT_SPI))) == NULL) 
+	 {
+        CloseHandle(hDevice);
+        goto clean;
+    }
+
+	// Get function pointers.  If not possible (b/c of cross process calls), use IOCTLs instead
+	if(!DeviceIoControl(hDevice, IOCTL_DDK_GET_DRIVER_IFC, (VOID*)&DEVICE_IFC_SPI_GUID,
+		sizeof(DEVICE_IFC_SPI_GUID), &pContext->ifc, sizeof(DEVICE_IFC_SPI),NULL, NULL)){
+		//  Need to use IOCTLs instead of direct function ptrs
+        pContext->ifc.context = 0;
+	} 
+	// Save device handle
+    pContext->hDevice = hDevice;
+
+clean:
+    return pContext;
+}
+
+BOOL LCMSPIConfigure(HANDLE hContext, DWORD address, DWORD config)
+{
+	DEVICE_CONTEXT_SPI *pContext = (DEVICE_CONTEXT_SPI *)hContext;
+
+	if(pContext->ifc.context)
+	{
+		return pContext->ifc.pfnConfigure(pContext->ifc.context, address, config);
+	}else{
+		IOCTL_SPI_CONFIGURE_IN dwIn;
+		dwIn.address = address;
+		dwIn.config = config;
+
+		return DeviceIoControl(pContext->hDevice,
+								IOCTL_SPI_CONFIGURE,
+								&dwIn,
+								sizeof(dwIn),
+								NULL,
+								0,
+								NULL,
+								NULL);
+	}
 }
 
 
+VOID LCMSPIClose(HANDLE hContext)
+{
+	DEVICE_CONTEXT_SPI *pContext = (DEVICE_CONTEXT_SPI *)hContext;
+	CloseHandle(pContext->hDevice);
+	LocalFree(pContext);
+}
+
+//------------------------------------------------------------------------------
+//lcm_config function starting, Ray 13-08-06.
+
+void LCM_SPI_Init(void)
+{
+	
+	//SPIOpen();
+	//SPIConfigure();
+	//SPIClose();
+	DWORD configReg;
+	HANDLE hGPIO;
+	//11
+	hSPI = LCMSPIOpen(L"SPI1:");
+	//SPI1 gpio init
+	GPIOInit();
+	hGPIO = GPIOOpen(); 
+	GPIOSetBit(hGPIO, 171); // SPI1_clk_EN
+	GPIOSetMode(hGPIO, 171,GPIO_DIR_OUTPUT);
+	GPIOSetBit(hGPIO, 172); // SPI1_simo_EN
+	GPIOSetMode(hGPIO, 172,GPIO_DIR_OUTPUT);
+	GPIOSetBit(hGPIO, 174); // SPI1_cs0_EN
+	GPIOSetMode(hGPIO, 174,GPIO_DIR_OUTPUT);
+	
+	
+	
+	
+	configReg = MCSPI_PHA_EVEN_EDGES | MCSPI_POL_ACTIVELOW |  // mode 3
+				MCSPI_CHCONF_CLKD(3) | MCSPI_CHCONF_WL(9) |
+                MCSPI_CHCONF_TRM_TXRX | MCSPI_CSPOLARITY_ACTIVELOW |
+                MCSPI_CHCONF_DPE0;
+	//22
+	LCMSPIConfigure(hSPI, 0, configReg); // channel 0, MCSPI_CHxCONF
+	
+ 	R61526_send_command(hSPI, 0xB0); // Manufacturer Command Access Protect
+     	R61526_send_data(hSPI, 0x3F);
+     	R61526_send_data(hSPI, 0x3F);
+        Sleep(5);
+        	
+    R61526_send_command(hSPI, 0xFE);
+        R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x21);
+       	R61526_send_data(hSPI, 0xB4);
+        	
+	R61526_send_command(hSPI, 0xB3); // Frame Memory Access and Interface Setting
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x10);
+        	
+    R61526_send_command(hSPI, 0xE0); // NVM Access Control
+       	R61526_send_data(hSPI, 0x00); // NVAE: NVM access enable register. NVM access is enabled when NVAE=1
+       	R61526_send_data(hSPI, 0x40); // FTT: NVM control bit.
+       	Sleep(10);
+        	
+	R61526_send_command(hSPI, 0xB3); // Frame Memory Access and Interface Setting
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x00);
+       	
+    R61526_send_command(hSPI, 0xFE); // MAGIC - TODO
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x21);
+       	R61526_send_data(hSPI, 0x30);
+        	
+    R61526_send_command(hSPI, 0xB0); // Manufacturer Command Access Protect
+       	R61526_send_data(hSPI, 0x3F);
+       	R61526_send_data(hSPI, 0x3F);
+        	
+	R61526_send_command(hSPI, 0xB3); // Frame Memory Access and Interface Setting
+       	R61526_send_data(hSPI, 0x02);
+       	R61526_send_data(hSPI, 0x00);
+		R61526_send_data(hSPI, 0x00);
+		R61526_send_data(hSPI, 0x00);
+
+	R61526_send_command(hSPI, 0xB4); //SET interface
+       	R61526_send_data(hSPI, 0x10);
+        	
+   	R61526_send_command(hSPI, 0xC0); //Panel Driving Setting
+       	R61526_send_data(hSPI, 0x03); //GIP REV  SM GS BGR SS
+       	R61526_send_data(hSPI, 0x4F);
+        R61526_send_data(hSPI, 0x00);
+        R61526_send_data(hSPI, 0x10);
+        R61526_send_data(hSPI, 0xA2); //BLV=0 LINE
+        R61526_send_data(hSPI, 0x00);
+        R61526_send_data(hSPI, 0x01);
+        R61526_send_data(hSPI, 0x00);
+        	
+	R61526_send_command(hSPI, 0xC1); //Display Timing Setting for Normal/Partial Mode
+       	R61526_send_data(hSPI, 0x01);
+        R61526_send_data(hSPI, 0x02);
+        R61526_send_data(hSPI, 0x19);
+        R61526_send_data(hSPI, 0x08);
+		R61526_send_data(hSPI, 0x08);
+		Sleep(25);
+
+	R61526_send_command(hSPI, 0xC3); //PRTIAL MODE
+        R61526_send_data(hSPI, 0x01);
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x28);
+       	R61526_send_data(hSPI, 0x08);
+		R61526_send_data(hSPI, 0x08);
+		Sleep(25);
+
+	R61526_send_command(hSPI, 0xC4);
+       	R61526_send_data(hSPI, 0x11);
+       	R61526_send_data(hSPI, 0x01);
+       	R61526_send_data(hSPI, 0x43);
+       	R61526_send_data(hSPI, 0x04);
+
+	R61526_send_command(hSPI, 0xC8); //set gamma
+		R61526_send_data(hSPI, 0x0C);
+		R61526_send_data(hSPI, 0x0C);
+		R61526_send_data(hSPI, 0x0D);
+		R61526_send_data(hSPI, 0x14);
+		R61526_send_data(hSPI, 0x18);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x09);
+		R61526_send_data(hSPI, 0x09);
+		R61526_send_data(hSPI, 0x03);
+		R61526_send_data(hSPI, 0x05);
+		R61526_send_data(hSPI, 0x00);
+		R61526_send_data(hSPI, 0x03);
+		R61526_send_data(hSPI, 0x08);
+		R61526_send_data(hSPI, 0x07);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x15);
+		R61526_send_data(hSPI, 0x12);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x00);
+
+	R61526_send_command(hSPI, 0xC9); //set gamma
+		R61526_send_data(hSPI, 0x0C);
+		R61526_send_data(hSPI, 0x0C);
+		R61526_send_data(hSPI, 0x0D);
+		R61526_send_data(hSPI, 0x14);
+		R61526_send_data(hSPI, 0x18);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x09);
+		R61526_send_data(hSPI, 0x09);
+		R61526_send_data(hSPI, 0x03);
+		R61526_send_data(hSPI, 0x05);
+		R61526_send_data(hSPI, 0x00);
+		R61526_send_data(hSPI, 0x03);
+		R61526_send_data(hSPI, 0x08);
+		R61526_send_data(hSPI, 0x07);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x15);
+		R61526_send_data(hSPI, 0x12);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x00);
+
+	R61526_send_command(hSPI, 0xCA); //set gamma
+		R61526_send_data(hSPI, 0x0C);
+		R61526_send_data(hSPI, 0x0C);
+		R61526_send_data(hSPI, 0x0D);
+		R61526_send_data(hSPI, 0x14);
+		R61526_send_data(hSPI, 0x18);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x09);
+		R61526_send_data(hSPI, 0x09);
+		R61526_send_data(hSPI, 0x03);
+		R61526_send_data(hSPI, 0x05);
+		R61526_send_data(hSPI, 0x00);
+		R61526_send_data(hSPI, 0x03);
+		R61526_send_data(hSPI, 0x08);
+		R61526_send_data(hSPI, 0x07);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x15);
+		R61526_send_data(hSPI, 0x12);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x0E);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x0A);
+		R61526_send_data(hSPI, 0x00);
+
+	R61526_send_command(hSPI, 0xD0); //Power Setting 
+		R61526_send_data(hSPI, 0x63); //BT[2:0]=110  VCI+VCI2¡Á2  :5   -(VCI2¡Á2):
+		R61526_send_data(hSPI, 0x53);
+		R61526_send_data(hSPI, 0x82); //VC2[2:0]=010,VCI2=5V
+		R61526_send_data(hSPI, 0x3F); //VREG=5.0V
+
+    R61526_send_command(hSPI, 0xD1); //set vcom
+		R61526_send_data(hSPI, 0x6A); //VCOMH
+		R61526_send_data(hSPI, 0x64); //VDV
+
+    R61526_send_command(hSPI, 0xD2); //Power Setting (Note 1) for Normal/Partial Mode
+		R61526_send_data(hSPI, 0x03);
+		R61526_send_data(hSPI, 0x24);
+
+   	R61526_send_command(hSPI, 0xD4); //Power Setting (Note 1) for Idle Mode
+		R61526_send_data(hSPI, 0x03);
+		R61526_send_data(hSPI, 0x24);
+
+   	R61526_send_command(hSPI, 0xE2); //NVM Load Control
+		R61526_send_data(hSPI, 0x3F);
+
+    R61526_send_command(hSPI, 0x35); //set_tear_on
+		R61526_send_data(hSPI, 0x00);
+
+    R61526_send_command(hSPI, 0x36);
+		R61526_send_data(hSPI, 0x00);
+
+    R61526_send_command(hSPI, 0x3A); //set_pixel_format
+       	R61526_send_data(hSPI, 0x55); // 66 18-bits
+
+	R61526_send_command(hSPI, 0x2A); //set_column_address
+        R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0xEF);
+            
+	R61526_send_command(hSPI, 0x2B); //set_page_address:
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x00);
+       	R61526_send_data(hSPI, 0x01);
+       	R61526_send_data(hSPI, 0x3F);
+            
+    R61526_send_command(hSPI, 0x11); //exit_sleep_mode
+       	Sleep(120);
+    R61526_send_command(hSPI, 0x29); //set_display_on
+       	Sleep(30);
+    R61526_send_command(hSPI, 0x2C); //send DDRAM set
+    
+	//33
+	LCMSPIClose(hSPI);
+}
+
+DWORD LCMSPIWrite(HANDLE hContext, DWORD size, VOID *pBuffer)
+{
+	DEVICE_CONTEXT_SPI *pContext = (DEVICE_CONTEXT_SPI *)hContext;
+	if(pContext->ifc.context){
+		return pContext->ifc.pfnWrite(pContext->ifc.context, pBuffer, size);
+	}else{
+		DWORD dwCount = 0;
+		WriteFile(pContext->hDevice, pBuffer, size, &dwCount, NULL);
+		return dwCount;
+	}
+}
+
+/*/void OMAPDisplayController::R61526_send_command(short cmd)
+{
+	//LCMSPIWrite(hSPI, sizeof(short), &cmd);
+}
+
+void OMAPDisplayController::R61526_send_data(short dat)
+{
+	dat |= 0x0100;
+	//LCMSPIWrite(hSPI, sizeof(short), &dat);
+}*/
+
 void lcm_config(void)
 {
-	LCD_SPI_Init();
-	SPIWrite();
-	R61526_send_command();
-	R61526_send_data();
+	LCM_SPI_Init();
+	//LCMSPIWrite(hSPI,);
+	OMAPDisplayController::R61526_send_command(short cmd);
+	OMAPDisplayController::R61526_send_data(short dat);
 }
 
 

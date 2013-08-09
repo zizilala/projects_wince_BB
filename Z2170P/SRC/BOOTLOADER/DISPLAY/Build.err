@@ -1,28 +1,4 @@
 BUILD: [Thrd:Sequence:Type  ] Message
-BUILD: [00:0000000000:PROGC ] Build started with parameters: -c
-BUILD: [00:0000000001:PROGC ] Build started in directory: C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY
-BUILD: [00:0000000002:PROGC ] Checking for C:\WINCE600\sdk\bin\i386\srccheck.exe.
-BUILD: [00:0000000003:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, PRECOMPHEADER, COMPILE, LIB, LINK, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN for ARM.
-BUILD: [00:0000000004:PROGC ] Ignoring build database (-c specified).
-BUILD: [00:0000000005:PROGC ] Computing include file dependencies:
-BUILD: [00:0000000006:PROGC ] Checking for SDK include directory: C:\WINCE600\sdk\CE\inc.
-BUILD: [00:0000000007:PROGC ] Scan C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\
-BUILD: [00:0000000008:PROGC ] Saving C:\WINCE600\PLATFORM\Z2170P\Build.dat.
-BUILD: [00:0000000009:INFO  ] Done.
-BUILD: [00:0000000010:INFO  ] Will Build C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\bsp_logo.c because target: obj\ARMV4I\retail\bsp_logo.obj is missing.
-BUILD: [00:0000000011:PROGC ] Building COMPILE Pass in C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\ directory.
-BUILD: [00:0000000012:PROG  ] 'NMAKE.EXE TargetCompilePass  -i -c BUILDMSG=Stop.  BUILDROOT=C:\WINCE600\PLATFORM\Z2170P CLEANBUILD=1 NOLINK=1 NOPASS0=1'
-BUILD: [01:0000000013:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.default
-BUILD: [01:0000000014:INFO  ] makefile.def: BUILDROOT is C:\WINCE600\PLATFORM\Z2170P
-BUILD: [01:0000000015:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\sources.cmn
-BUILD: [01:0000000016:INFO  ] makefile.def: Including C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\sources
-BUILD: [01:0000000017:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\Sources.CE
-BUILD: [01:0000000018:INFO  ] Directory: C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY
-BUILD: [01:0000000019:INFO  ] TARGETNAME: bsp_display
-BUILD: [01:0000000020:INFO  ] makefile.def: Including C:\WINCE600\public\common\oak\misc\sources.ReleaseType_PLATFORM
-BUILD: [01:0000000021:PROGC ] Compiling .\bsp_logo.c
-BUILD: [01:0000000022:INFO  ] cl -nologo   /Gy -Foobj\ARMV4I\retail\bsp_logo.obj -c -IARM\ -I. -IC:\WINCE600\platform\COMMON\src\inc -IC:\WINCE600\platform\Z2170P\src\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TPS659xx\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\OMAP3530\inc -IC:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\DSS\inc -I	..\EBOOT\ -IC:\WINCE600\public\common\sdk\inc -IC:\WINCE600\public\common\oak\inc -IC:\WINCE600\public\common\ddk\inc -IC:\WINCE600\sdk\CE\inc -I.\Resource\0409 -Ox -Os -GF -Zi -FdC:\WINCE600\platform\Z2170P\lib\ARMV4I\retail\bsp_display.pdb -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=600 -D_WIN32_WCE=0x600 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV4I -D_ARM_ -DNDEBUG=1  -D_SOC_MODEL=OMAP3530 -D_TRITON_MODEL=TPS659xx -DCEDDK_USEDDKMACRO -D_WINCEOSVER=600 -DBSP_EVM2 -DBSP_OPM_SELECT_37XX=4 -DBSP_OPM_SELECT_35XX=5 -DBSP_RTC_WAKES_CPU -DBSP_SDRAM_BANK1_ENABLE -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252 -FAsc -Faobj\ARMV4I\retail\bsp_logo.cod -WX -QRimplicit-import- -Zi  -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -MT -U_MT -W4 /analyze   /GR- -QRarch4T -DTHUMBSUPPORT -QRinterwork-return  /GS C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c
-BUILD: [01:0000000023:INFO  ] bsp_logo.c
 BUILD: [01:0000000024:ERRORE] C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\DSS\inc\dssai.h(246) : error C2061: syntax error : identifier 'OMAPDisplayController'
 BUILD: [01:0000000025:ERRORE] C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\DSS\inc\dssai.h(246) : error C2059: syntax error : ';'
 BUILD: [01:0000000026:ERRORE] C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\DSS\inc\dssai.h(247) : error C2061: syntax error : identifier 'OMAPSurfaceManager'
@@ -58,32 +34,6 @@ BUILD: [01:0000000055:ERRORE] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY
 BUILD: [01:0000000056:ERRORE] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(706) : error C2059: syntax error : ':'
 BUILD: [01:0000000057:ERRORE] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(711) : error C2143: syntax error : missing '{' before ':'
 BUILD: [01:0000000058:ERRORE] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(711) : error C2059: syntax error : ':'
-BUILD: [01:0000000059:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(812) : warning C4013: 'R61526_send_command' undefined; assuming extern returning int
-BUILD: [01:0000000060:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(813) : warning C4013: 'R61526_send_data' undefined; assuming extern returning int
 BUILD: [01:0000000061:ERRORE] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(1040) : error C2143: syntax error : missing ';' before ':'
 BUILD: [01:0000000062:ERRORE] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(1041) : error C2045: 'OMAPDisplayController' : label redefined
 BUILD: [01:0000000063:ERRORE] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(1041) : error C2143: syntax error : missing ';' before ':'
-BUILD: [00:0000000064:PROGC ]                        Files  Warnings  Errors
-BUILD: [00:0000000065:PROGC ] Midl                       0         0       0
-BUILD: [00:0000000066:PROGC ] Message                    0         0       0
-BUILD: [00:0000000067:PROGC ] Precomp Header             0         0       0
-BUILD: [00:0000000068:PROGC ] Resource                   0         0       0
-BUILD: [00:0000000069:PROGC ] MASM                       0         0       0
-BUILD: [00:0000000070:PROGC ] SHASM                      0         0       0
-BUILD: [00:0000000071:PROGC ] ARMASM                     0         0       0
-BUILD: [00:0000000072:PROGC ] MIPSASM                    0         0       0
-BUILD: [00:0000000073:PROGC ] C++                        0         0       0
-BUILD: [00:0000000074:PROGC ] C                          1         2      38
-BUILD: [00:0000000075:PROGC ] Static Libraries           0         0       0
-BUILD: [00:0000000076:PROGC ] Exe's                      0         0       0
-BUILD: [00:0000000077:PROGC ] Dll's                      0         0       0
-BUILD: [00:0000000078:PROGC ] Preprocess deffile         0         0       0
-BUILD: [00:0000000079:PROGC ] Resx                       0         0       0
-BUILD: [00:0000000080:PROGC ] CSharp Compile             0         0       0
-BUILD: [00:0000000081:PROGC ] Other                      0         0       1
-BUILD: [00:0000000082:PROGC ] 
-BUILD: [00:0000000083:PROGC ] Total                      1         2      39
-BUILD: [00:0000000084:PROGC ] 
-BUILD: [00:0000000085:PROGC ] 2 Warnings,  39 Errors
-BUILD: [00:0000000086:PROGC ] GetSystemTimes (seconds): Idle: 0     Kernel: 1     User: 0    
-BUILD: [00:0000000087:PROGC ] Elapsed  time  (seconds): 1    

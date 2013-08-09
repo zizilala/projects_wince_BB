@@ -1,0 +1,3 @@
+BUILD: [Thrd:Sequence:Type  ] Message
+BUILD: [01:0000000059:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(812) : warning C4013: 'R61526_send_command' undefined; assuming extern returning int
+BUILD: [01:0000000060:WARNN ] C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\.\bsp_logo.c(813) : warning C4013: 'R61526_send_data' undefined; assuming extern returning int

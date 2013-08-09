@@ -31,8 +31,7 @@ typedef volatile struct
    unsigned long MCSPI_CHCTRL;            //channel control
    unsigned long MCSPI_TX;                //Transmit register
    unsigned long MCSPI_RX;                //Receive register
-}
-OMAP_MCSPI_CHANNEL_REGS;
+}OMAP_MCSPI_CHANNEL_REGS;
 
 
 typedef volatile struct
@@ -70,8 +69,7 @@ typedef volatile struct
    unsigned long MCSPI_CHCTRL3;           //offset 0x70, channel 3 control
    unsigned long MCSPI_TX3;               //offset 0x74, Transmit3 register
    unsigned long MCSPI_RX3;               //offset 0x78, Receive3 register
-}
-OMAP_MCSPI_REGS;
+}OMAP_MCSPI_REGS;
 
 
 /* Max channels for SPI */

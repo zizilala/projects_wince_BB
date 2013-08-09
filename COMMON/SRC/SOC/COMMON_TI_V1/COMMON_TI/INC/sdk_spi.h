@@ -64,6 +64,8 @@ typedef struct {
     HANDLE hDevice;
 } DEVICE_CONTEXT_SPI;
 
+
+
 //------------------------------------------------------------------------------
 
 #define IOCTL_SPI_CONFIGURE     \

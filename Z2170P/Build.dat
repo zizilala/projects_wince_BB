@@ -56,6 +56,35 @@ D|C:\WINCE600\platform\COMMON\src\inc\|b000|0|0|0|0|0|0|0|0|0|0|0|0|0|0
  F|oal_rtc.h|4|0|1C6D1EF094BF67F
  F|oal_timer.h|4|0|1C6D1EF094BF67F
 
+D|C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\DSS\inc\|b000|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+ F|dssai.h|4|0|1CE94E1020D49E2
+  I|soc_cfg.h|1
+  I|isp_resizer.h|0
+ F|dssai.h.bak|80000|0|1CE2B895C5659FF
+ F|omap_ddgpe.h|4|0|1CC161453EB7A7F
+ F|precomp.h|4|0|1CC161453EB7A7F
+  I|windows.h|0
+  I|types.h|0
+  I|winddi.h|0
+  I|emul.h|0
+  I|ceddk.h|0
+  I|ceddkex.h|0
+  I|oal.h|0
+  I|oalex.h|0
+  I|ddrawi.h|0
+  I|ddgpe.h|0
+  I|ddhfuncs.h|0
+  I|omap.h|1
+  I|omap_dss_regs.h|1
+  I|dssai.h|1
+  I|lcd.h|1
+  I|display_drvesc.h|1
+  I|omap_ddgpe.h|1
+  I|_debug.h|1
+  I|winuserm.h|0
+  I|gxinfo.h|0
+ F|_debug.h|4|0|1CC161453EB7A7F
+
 D|C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc\|b000|0|0|0|0|0|0|0|0|0|0|0|0|0|0
  F|backlight_class.h|4|0|1CC1614548410FF
  F|bsp_cfg.h|4|0|1CE8CEBE0A1B445
@@ -133,7 +162,7 @@ D|C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc\|b000|0|0|0|0|0
  F|omap_isp1504.h|4|0|1CC1614548410FF
  F|omap_led.h|4|0|1CC1614548410FF
  F|omap_mcbsp_regs.h|4|0|1CC1614548410FF
- F|omap_mcspi_regs.h|4|0|1CC1614548410FF
+ F|omap_mcspi_regs.h|4|0|1CE940D3FEF97DC
  F|omap_musbcore.h|4|0|1CC1614548410FF
  F|omap_musbd.h|4|0|1CC1614548410FF
  F|omap_pmext.h|4|0|1CC1614548410FF
@@ -181,7 +210,7 @@ D|C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\COMMON_TI\inc\|b000|0|0|0|0|0
  F|sdk_i2c.h|4|0|1CC1614548410FF
  F|sdk_padcfg.h|4|0|1CC1614548410FF
   I|omap.h|1
- F|sdk_spi.h|4|0|1CC1614548410FF
+ F|sdk_spi.h|4|0|1CE93F6A832E374
  F|soc_cfg.h|4|0|1CE2B8BFAE3BA7F
   I|sdk_gpio.h|1
  F|soc_cfg.h.bak|80000|0|1CC1614548410FF
@@ -255,6 +284,26 @@ D|C:\WINCE600\platform\COMMON\src\soc\COMMON_TI_V1\TRITON\inc\|b000|0|0|0|0|0|0|
  F|twl.h|4|0|1CC1614581797FF
   I|ceddkex.h|1
 
+D|C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\DISPLAY\|3005|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+ F|bsp_logo.c|0|0|1CE94E04EAB91E6
+  I|bsp.h|1
+  I|bsp_logo.h|1
+  I|omap_dss_regs.h|1
+  I|lcd.h|1
+  I|oalex.h|1
+  I|eboot.h|1
+  I|sdk_gpio.h|1
+  I|twl.h|1
+  I|triton.h|1
+  I|tps659xx_internals.h|1
+  I|sdk_spi.h|1
+  I|dssai.h|1
+ F|bsp_logo.c.bak|80000|0|1CE844CA458FF7F
+ F|Build.err|80000|0|1CE94E134F676FD
+ F|Build.log|80000|0|1CE94E134F676FD
+ F|Build.wrn|80000|0|1CE94E134F676FD
+ F|obj\|0|10|0
+
 D|C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\EBOOT\|b002|0|0|0|0|0|0|0|0|0|0|0|0|0|0
  F|Build.err|80000|0|1CE577A162D097F
  F|Build.log|80000|0|1CE600B5C505B7F
@@ -315,28 +364,6 @@ D|C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\EBOOT\|b002|0|0|0|0|0|0|0|0|0|0|0|0
  F|startup.s.bak|80000|0|1CC161459E15B7F
  F|stub.c|0|0|1CC161459E15B7F
   I|bsp.h|1
-
-D|C:\WINCE600\PLATFORM\Z2170P\SRC\BOOTLOADER\EBOOT\SDMEMORY\|23005|0|0|0|0|0|0|0|0|0|0|0|0|0|0
- F|boot_cfg.h|4|0|1CC16145948C4FF
- F|Build.err|80000|0|1CE928E5B69BF45
- F|Build.log|80000|0|1CE928E5B69BF45
- F|Build.wrn|80000|0|1CE928E5B69BF45
- F|cfg.c|0|0|1CE8E9D6404E3B8
-  I|eboot.h|0
-  I|bsp_logo.h|0
-  I|lcd.h|1
- F|cfg.c.bak|80000|0|1CE1AE65A4B2EFF
- F|ebootsd.bib|80000|0|1CC16145948C4FF
- F|flash.c|0|0|1CC16145948C4FF
-  I|bsp.h|1
-  I|bootpart.h|0
-  I|boot_args.h|1
-  I|eboot.h|1
-  I|nand.h|1
-  I|blcommon.h|0
-  I|oalex.h|1
- F|obj\|0|10|0
- F|sources.bak|80000|0|1CC16145948C4FF
 
 D|C:\WINCE600\platform\Z2170P\src\inc\|b000|0|0|0|0|0|0|0|0|0|0|0|0|0|0
  F|addrtab_cfg.inc|4|0|1CC16145C43B57F
@@ -517,10 +544,6 @@ D|C:\WINCE600\public\common\ddk\inc\|b000|0|0|0|0|0|0|0|0|0|0|0|0|0|0
   I|linklist.h|0
  F|wzcmsq.h|4|0|1C6D1EF094BF67F
  F|xfilter.h|4|0|1C6D1EF094BF67F
-
-D|C:\WINCE600\public\common\oak\drivers\block\msflashfmd\inc\|b000|0|0|0|0|0|0|0|0|0|0|0|0|0|0
- F|ecc.h|4|0|1C6D1EF094BF67F
-  I|windows.h|0
 
 D|C:\WINCE600\public\common\oak\inc\|b000|0|0|0|0|0|0|0|0|0|0|0|0|0|0
  F|aablt.h|4|0|1C6D1EF094BF67F

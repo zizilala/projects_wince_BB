@@ -63,7 +63,7 @@ OALLocalAlloc(
 
     DEBUGMSG(0,(TEXT("OALLocalAlloc request for %d bytes => %d block\r\n"),size,nbRequestBlock));
 
-    for (i=0;i<nbBlock;i++)
+    for (i=0; i<nbBlock; i++)
     {
         if (IS_BLOCK_USED(i))
         {
@@ -105,10 +105,7 @@ OALLocalAlloc(
     }
 }
 
-HLOCAL 
-OALLocalFree(
-    HLOCAL hMemory 
-    )
+HLOCAL  OALLocalFree(HLOCAL hMemory)
 {
     T_BLOCK_COUNT_TYPE index,start;
     T_BLOCK_COUNT_TYPE count = *((T_BLOCK_COUNT_TYPE*) ((UCHAR*) hMemory - BLOCK_COUNT_SIZE));
